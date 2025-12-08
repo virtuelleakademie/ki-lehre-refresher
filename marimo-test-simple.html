@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Marimo Test</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@marimo-team/islands@0.17.7/dist/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@marimo-team/islands@0.17.7/dist/style.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Marimo Islands Test</h1>
+    <p>If the slider below is interactive, marimo is working:</p>
+
+    <marimo-filename hidden=""></marimo-filename>
+
+    <marimo-island data-app-id="main" data-cell-id="test1" data-reactive="true">
+        <marimo-cell-output>
+            <marimo-ui-element object-id="test1-0" random-id="abc123">
+                <marimo-slider
+                    data-initial-value="5"
+                    data-label='"Test Slider"'
+                    data-start="1"
+                    data-stop="10"
+                    data-step="1"
+                    data-steps="[]"
+                    data-debounce="false"
+                    data-disabled="false"
+                    data-orientation='"horizontal"'
+                    data-show-value="true"
+                    data-include-input="false"
+                    data-full-width="false">
+                </marimo-slider>
+            </marimo-ui-element>
+        </marimo-cell-output>
+    </marimo-island>
+
+    <h2>Debugging Info</h2>
+    <div id="debug"></div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const debug = document.getElementById('debug');
+                const slider = document.querySelector('marimo-slider');
+                const island = document.querySelector('marimo-island');
+
+                let info = `
+                    <p><strong>Slider element found:</strong> ${slider ? 'Yes' : 'No'}</p>
+                    <p><strong>Island element found:</strong> ${island ? 'Yes' : 'No'}</p>
+                    <p><strong>Custom elements defined:</strong> ${customElements.get('marimo-slider') ? 'Yes' : 'No'}</p>
+                `;
+
+                if (slider) {
+                    info += `
+                        <p><strong>Slider tag name:</strong> ${slider.tagName}</p>
+                        <p><strong>Slider has shadow root:</strong> ${slider.shadowRoot ? 'Yes' : 'No'}</p>
+                        <p><strong>Slider innerHTML:</strong> ${slider.innerHTML.substring(0, 100)}</p>
+                        <p><strong>Slider computed display:</strong> ${getComputedStyle(slider).display}</p>
+                    `;
+                }
+
+                info += '<p><strong>Check console for errors (F12)</strong></p>';
+                debug.innerHTML = info;
+
+                console.log('Marimo slider element:', slider);
+                console.log('Custom element constructor:', customElements.get('marimo-slider'));
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
