@@ -1,0 +1,135 @@
+---
+title: "KI im Unterricht"
+---
+
+## Chatbot-gestützte Lehrplanung (50 Min)
+
+Wie können Sprachmodelle konkret den Unterricht unterstützen, ohne die notwendige kognitive Anstrengung der Lernenden zu umgehen?
+
+
+## Anwendungen von Chatbots im Unterricht (10 Min)
+
+Sprachmodelle können Lehrende in verschiedenen Phasen unterstützen:
+
+### 1. Planung & Vorbereitung
+
+- **Lernzielanalyse**: Chatbots helfen, Lernziele zu konkretisieren und zu strukturieren
+- **Methodenauswahl**: Vorschläge für passende didaktische Ansätze
+- **Aufgabenentwicklung**: Erstellung von Übungen und Prüfungsfragen
+
+### 2. Materialerstellung
+
+- **Arbeitsblätter**: Generierung von strukturierten Übungsmaterialien
+- **Beispiele**: Entwicklung von Fallstudien und Anwendungsbeispielen
+- **Differenzierung**: Anpassung von Materialien für verschiedene Lernniveaus
+
+### 3. Reflexion & Verbesserung
+
+- **Chatbot als Reflexionspartner**: Feedback zu Unterrichtsplanung
+- **Kritische Begleitung**: Alternative Perspektiven auf didaktische Entscheidungen
+
+::: {.callout-warning}
+## Wichtig: Die Lernparadox-Falle
+
+Denkt an Teil 2: **Produktivität ≠ Lernen**
+
+- Sprachmodelle können **Lehrende** produktiver machen (Planung, Materialien)
+- Sprachmodelle sollten **Lernende** nicht von kognitiver Anstrengung entlasten
+- Die 8 Make-it-Stick-Strategien bleiben zentral: [Strategien im Detail](./handout-make-it-stick/)
+:::
+
+
+## Gruppenarbeit: Unterrichtseinheit mit Chatbot planen (30 Min)
+
+::: {.group}
+## Ablauf der Gruppenarbeit
+
+**Gruppengrösse**: 3-4 Personen
+
+### Phase 1: Thema wählen & Planung starten (15 Min)
+
+**Aufgabe**: Wählt ein Unterrichtsthema aus eurem eigenen Lehrkontext und plant gemeinsam eine Unterrichtseinheit mit Chatbot-Unterstützung.
+
+**Schritt für Schritt:**
+
+1. **Thema festlegen** (2 Min)
+   - Wählt ein konkretes Thema aus eurem Fachbereich
+   - Definiert die Zielgruppe (z.B. Studierende im 2. Semester)
+   - Legt grobe Lernziele fest
+
+2. **Chatbot zur Lernzielanalyse nutzen** (5 Min)
+   - Nutzt ChatGPT/Claude, um eure Lernziele zu konkretisieren
+   - Fragt nach: "Wie kann ich diese Lernziele messbarer formulieren?"
+   - Lasst euch Taxonomiestufen (Bloom) vorschlagen
+
+3. **Methodenauswahl mit Chatbot** (8 Min)
+   - Fragt den Chatbot nach didaktischen Methoden für euer Thema
+   - **Wichtig**: Filtert kritisch: Welche Methoden fördern produktive Anstrengung?
+   - Wählt 2-3 Methoden aus, die ihr vertiefen wollt
+
+**Tools**: ChatGPT, Claude, oder andere verfügbare Chatbots
+
+### Phase 2: Aufgabenentwicklung (10 Min)
+
+**Aufgabe**: Entwickelt mit dem Chatbot konkrete Lernaufgaben für eure Unterrichtseinheit.
+
+1. **Aufgaben generieren** (5 Min)
+   - Lasst den Chatbot Übungsaufgaben zu eurem Thema erstellen
+   - Variiert Schwierigkeitsgrade
+   - Fragt nach Aufgaben, die kognitive Anstrengung erfordern
+
+2. **Kritisch bewerten** (5 Min)
+   - Diskutiert: Fördern diese Aufgaben tiefes Lernen?
+   - Wo müssten die Aufgaben angepasst werden?
+   - Notiert eure wichtigsten Erkenntnisse
+
+### Phase 3: Vorbereitung Präsentation (5 Min)
+
+Bereitet eine 2-minütige Präsentation vor:
+
+- **Was** habt ihr geplant? (30 Sek)
+- **Wie** hat der Chatbot euch unterstützt? (30 Sek)
+- **Eine Erkenntnis**: Was hat überrascht? Wo waren Grenzen? (1 Min)
+:::
+
+
+## Präsentation & Diskussion im Plenum (10 Min)
+
+::: {.group}
+## Austausch der Gruppen
+
+**Ablauf:**
+
+- Jede Gruppe stellt ihre Unterrichtseinheit vor (2 Min pro Gruppe)
+- Kurze Rückfragen aus dem Plenum
+
+**Leitfragen für die Diskussion:**
+
+### Gemeinsame Muster
+
+- Welche Chatbot-Unterstützung war besonders hilfreich?
+- Wo stiessen die Sprachmodelle an Grenzen?
+- Welche Prompting-Strategien haben gut funktioniert?
+
+### Kritische Reflexion
+
+- Wo besteht die Gefahr, dass Chatbots die kognitive Anstrengung der Lernenden reduzieren?
+- Wie können wir sicherstellen, dass Sprachmodelle uns als Lehrende unterstützen, ohne das Lernen zu behindern?
+:::
+
+
+## Vertiefende Ressourcen
+
+Für diejenigen, die tiefer einsteigen möchten:
+
+### Lernstrategien
+- [Die 8 Make it Stick Strategien im Detail](./handout-make-it-stick/) - Wissenschaftliche Grundlagen
+- [Produktive Anstrengung durch Design](./produktive-anstrengung/) - Wie Lernumgebungen gestaltet werden sollten
+
+### Agent-Beispiele
+- [Agent-Beispiele für jede Strategie](./agent-beispiele/) - Konkrete Umsetzungen der 8 Strategien mit KI
+
+::: {.callout-note}
+## Weiterführende Workshops
+Diese Ressourcen sind besonders nützlich, wenn ihr nach diesem Workshop eigene Agents entwickeln möchtet. Der Workshop "KI in der Lehre: Intermediate" bietet eine 60-minütige hands-on Session zum Agent-Design.
+:::
