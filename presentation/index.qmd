@@ -5,10 +5,32 @@ sidebar: presentation
 
 ## KI in der Hochschulbildung
 
+Zwei Versionen verfügbar:
+
+| Version | Dauer | Beschreibung |
+|---------|-------|--------------|
+| [Vollversion](../slides/ai-higher-ed/index.html) | ~3 Stunden | Workshop mit Diskussionen und Pausen |
+| [Kurzversion](../slides/ai-higher-ed-short/index.html) | 30 + 30 Min | Fokussierter Vortrag mit anschliessender Diskussion |
+
+---
+
+### Vollversion (~3 Stunden)
+
 <iframe
   src="../slides/ai-higher-ed/index.html"
   width="100%"
-  height="600px"
+  height="500px"
+  style="border: 1px solid #ccc; border-radius: 4px;">
+</iframe>
+
+---
+
+### Kurzversion (30 + 30 Min)
+
+<iframe
+  src="../slides/ai-higher-ed-short/index.html"
+  width="100%"
+  height="500px"
   style="border: 1px solid #ccc; border-radius: 4px;">
 </iframe>
 
