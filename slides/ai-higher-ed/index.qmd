@@ -439,43 +439,6 @@ Produktivität ≠ Kompetenzaufbau
 
 > "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
 
-## Neurologische Evidenz: "Cognitive Debt"
-
-**MIT Media Lab Studie** [@kosmynaYourBrainChatGPT2025]
-
-EEG während Essayschreiben unter drei Bedingungen:
-
-. . .
-
-::: {.columns}
-::: {.column width="33%"}
-**Nur Gehirn:**
-
-Stärkste neuronale Vernetzung
-:::
-
-::: {.column width="33%"}
-**Mit Suchmaschine:**
-
-Mittlere Vernetzung
-:::
-
-::: {.column width="33%"}
-**Mit LLM:**
-
-Schwächste Vernetzung
-:::
-:::
-
-. . .
-
-::: {.callout-warning}
-## Kritisch
-LLM-Nutzer zeigten die reduzierten Muster *auch nachdem KI entfernt wurde*.
-
-"Cognitive Debt": Kognitive Schulden akkumulieren sich.
-:::
-
 ## Desirable Difficulties: Warum Anstrengung nötig ist
 
 **Robert Bjork** [@bjorkMakingThingsHard2011]
@@ -576,7 +539,7 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 ::: {.callout-tip}
 ## Reflexion
 
-**Think:** Wo könnte KI-Unterstützung in deinem Fach "kognitive Schulden" erzeugen?
+**Think:** Wo könnte KI-Unterstützung in deinem Fach die produktive Anstrengung eliminieren, die Lernen ermöglicht?
 
 **Pair:** Diskutiere mit deinem Nachbarn.
 
