@@ -1,11 +1,10 @@
 ---
-# title: "KI in der Lehre: Intermediate"
+title: "KI in der Lehre: Refresher"
 format:
   html:
     toc: false
 about:
-  template: marquee #trestles
-#   image: "assets/logo.png"
+  template: marquee
   links:
     - icon: inbox-fill
       text: Email
@@ -16,32 +15,17 @@ about:
     - icon: lightbulb-fill
       text: Knowledge Base
       href: https://virtuelleakademie.ch/knowledge-base/
-    - icon: mortarboard-fill
-      text: Weiterbildungsangebote
-      href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
 ---
 
+## Willkommen
 
-{{< bi calendar-event >}} 12. November 2025
+Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochschulbildung.
 
-{{< bi clock >}} 9:00–12:00 Uhr
+### Inhalt
 
-<br>
+- [Präsentation](presentation/index.qmd): Aktueller Stand von KI in der Hochschulbildung
+- [Q & A](qa/index.qmd): Fragen, Antworten und weiterführende Ressourcen
 
-{{< bi calendar-event >}} 21. November 2025
+## Kontakt
 
-{{< bi clock >}} 13:00–16:00 Uhr
-
-<br>
-
-{{< bi map >}} B.2.61, HAFL Zollikofen
-
-<br>
-
-## Dozent
-
-[Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule. Er erforscht, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann.
-
-## Website
-
-{{< bi link >}} [virtuelleakademie.github.io/ki-weiterbildung-ub-hafl/](https://virtuelleakademie.github.io/ki-weiterbildung-ub-hafl/)
+[Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule.

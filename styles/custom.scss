@@ -453,13 +453,6 @@ th {
   @include border-bottom;
 }
 
-// Hide border when title block has no visible title (e.g., about pages)
-.quarto-title-block:not(:has(.title)) {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
 .quarto-title-block .quarto-title .title {
   margin-bottom: $spacing-md;
   font-weight: $font-weight-extrabold;

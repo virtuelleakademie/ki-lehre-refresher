@@ -1,0 +1,51 @@
+---
+title: "Teil 4: Die Entscheidungsregel"
+subtitle: "Wann verifizieren?"
+---
+
+## Die Eine Frage
+
+::: {.key-point}
+### Die Entscheidungsregel
+
+**Würdest du diese Information in einem formellen Dokument zitieren?**
+
+| Antwort | Konsequenz |
+|---------|------------|
+| **JA** | Extern verifizieren |
+| **NEIN** | Antwort vom Sprachmodell reicht |
+:::
+
+### Beispiele
+
+| Situation | Entscheidung |
+|-----------|--------------|
+| Brainstorming für Meeting-Agenda | Sprachmodell reicht |
+| Teilnehmerzahl für Budget-Rechnung | Verifizieren |
+| Ideen für Email-Formulierung | Sprachmodell reicht |
+| Rechtliche Grundlage für Entscheidung | Verifizieren |
+
+## Kurz-Check-out (1 Min)
+
+- Wie stark stimmst du jetzt zu: "Antworten von Sprachmodellen kann ich ohne weitere Prüfung verwenden"?
+- Wie sicher fühlst du dich jetzt, falsche Angaben von Sprachmodellen zu erkennen? (0--10)
+
+Hol deine Check-in-Notiz hervor und vergleiche deine eigenen Antworten. Kein Einsammeln; Teilen nur auf freiwilliger Basis.
+
+## Zusammenfassung
+
+Du hast heute drei Dinge erlebt:
+
+1. **Sprachmodelle können überzeugend falsch liegen.** Spezifische Zahlen, selbstbewusster Ton, trotzdem falsch.
+
+2. **Nachfragen beim Sprachmodell ist keine echte Prüfung.** Es kann sich nicht selbst verifizieren und bestätigt tendenziell deine Annahmen.
+
+3. **Lateral Reading funktioniert.** Raus aus dem Sprachmodell, eigene Suche, Primärquellen finden.
+
+::: {.key-point}
+### Nächster Schritt
+
+Probiere es diese Woche einmal aus: Wenn du eine Antwort vom Sprachmodell in einem formellen Dokument verwenden willst, verifiziere sie extern.
+
+Das [Handout](/handout.qmd) fasst die wichtigsten Punkte zusammen.
+:::

@@ -1,33 +1,43 @@
 ---
-title: "Ablauf"
+title: "Antworten von Sprachmodellen kritisch prüfen"
+subtitle: "Ein 40-Minuten Workshop zu Lateral Reading"
 ---
 
-## Workshop-Ablauf: KI für Unterricht & Beratung (3 Stunden)
+## Überblick
 
-| {{< bi clock-fill >}} Zeit | {{< bi collection-fill >}} Thema                                       | {{< bi hourglass-split >}} Dauer |
-|----------------------------|------------------------------------------------------------------------|----------------------------------|
-| **09:00 - 09:10**          | {{< bi collection-play >}} **Einstieg**                                |                                  |
-|                            | [Begrüssung](einstieg/index.qmd)                          | 10 min                           |
-| **09:10 - 09:40**          | {{< bi collection-play >}} **Teil 1: KI verstehen**                    |                                  |
-|                            | [Grundlagen: KI, Chatbots & Agents](../01-ki-verstehen/index.qmd)                | 30 min                           |
-| **09:40 - 09:55**          | {{< bi collection-play >}} **Teil 2: Lernen verstehen**                |                                  |
-|                            | [Wie Menschen lernen](../02-wie-menschen-lernen/index.qmd)             | 15 min                           |
-| **09:55 - 10:10**          | {{< bi cup-hot-fill >}} **Pause**                                      |                                  |
-|                            | Kaffee                                                                 | 15 min                           |
-| **10:10 - 11:00**          | {{< bi collection-play >}} **Teil 3: KI im Unterricht**               |                                  |
-|                            | [KI-gestützte Lehrplanung](../03-lernumgebungen/index.qmd)             | 50 min                           |
-| **11:00 - 11:30**          | {{< bi collection-play >}} **Teil 4: KI in der Beratung**             |                                  |
-|                            | [Beratungsgespräche simulieren](../04-ki-in-beratung/index.qmd)        | 30 min                           |
-| **11:30 - 12:00**          | {{< bi collection-play >}} **Abschlussdiskussion & Transfer**          |                                  |
-|                            | [KI in der Praxis: Chancen, Grenzen & Ethik](diskussion/index.qmd)     | 30 min                           |
+Dieser Workshop vermittelt eine praktische Technik zur Verifikation von Antworten aus Large Language Models (LLMs) wie Copilot, ChatGPT, Claude oder Gemini: **Lateral Reading**.
 
+Du lernst durch eigene Experimente, wann und wie du Antworten von Sprachmodellen extern verifizierst.
 
 ## Lernziele
 
-Am Ende des Workshops können die Teilnehmer:
+Nach diesem Workshop kannst du:
 
-1. **Sprachmodelle verstehen**: Grundlegende Funktionsweise und Grenzen von LLMs und Chatbots erklären
-2. **KI im Unterricht einsetzen**: Sprachmodelle gezielt zur Planung, Gestaltung und Reflexion von Lehrsituationen nutzen
-3. **KI in der Beratung einsetzen**: Beratungsgespräche mit Chatbot-Unterstützung vorbereiten und reflektieren
-4. **Verantwortungsvoll handeln**: Chancen, Grenzen und ethische Implikationen des Sprachmodell-Einsatzes reflektieren und in der Praxis berücksichtigen
-5. **Transfer leisten**: Konkrete Anwendungsideen für den eigenen Unterrichts- oder Beratungskontext entwickeln
+1. **Erkennen**, wann Antworten von Sprachmodellen externe Verifikation brauchen
+2. **Verstehen**, warum Nachfragen beim Sprachmodell keine echte Prüfung ist
+3. **Lateral Reading anwenden**, um Fakten zu überprüfen
+4. **Vertrauenswürdige Quellen** für deinen Arbeitsbereich identifizieren
+
+## Kurz-Check-in (1 Min)
+
+- Wie stark stimmst du zu: "Antworten von Sprachmodellen kann ich ohne weitere Prüfung verwenden"?
+- Wie sicher fühlst du dich darin, falsche Angaben von Sprachmodellen zu erkennen? (0--10)
+
+Notiere deine beiden Antworten kurz (Zettel oder Notiz-App). Du brauchst sie beim Check-out. Keine Abgabe.
+
+## Ablauf
+
+| Phase | Dauer | Inhalt |
+|-------|-------|--------|
+| [Einstieg](framing/index.qmd) | 30 Sek | Direkt ins Experiment |
+| [Teil 1](experiment-1/index.qmd) | 8 Min | Das Sprachmodell liegt falsch |
+| [Teil 2](experiment-2/index.qmd) | 6 Min | Warum Nachfragen nicht hilft |
+| [Teil 3](lateral-reading/index.qmd) | 22 Min | Lateral Reading üben |
+| [Teil 4](entscheidungsregel/index.qmd) | 3.5 Min | Die Entscheidungsregel |
+
+**Gesamtdauer:** 40 Minuten
+
+## Was du brauchst
+
+- Laptop oder Tablet mit Internetzugang
+- Zugang zu einem Sprachmodell (Copilot, ChatGPT, Claude, oder Gemini)
