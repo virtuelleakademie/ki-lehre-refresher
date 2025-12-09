@@ -40,12 +40,6 @@ This comprehensive report (~320 lines) provided the empirical backbone:
 - 17% worse performance when AI removed
 - Quote used: "Students attempt to use GPT-4 as a 'crutch'"
 
-#### MIT Neuroimaging Study (slide 22)
-
-- EEG during essay writing under three conditions
-- Brain connectivity systematically decreased with AI
-- "Cognitive debt" concept: reduced patterns persist after AI removal
-
 #### Cognitive Load Theory Framework (slides 9-11)
 
 - Working memory: 4±1 chunks, 15-30 seconds
@@ -203,21 +197,19 @@ This became the two-column comparison in slide 16, translated to German.
 |-------|---------|--------|
 | 20 | Central paradox statement | Jose 2025 |
 | 21 | Bastani math study | Cognitive Cost report |
-| 22 | Neurological evidence | Kosmyna 2025 |
-| 23 | Desirable difficulties | Bjork 2011 |
-| 24 | Generation effect | Slamecka 1978 |
-| 25 | Historical analogues | Dahmani 2020, Sparrow 2011 |
-| 26 | Why experts benefit, learners don't | Synthesis |
-| 27 | Think-Pair-Share | 15 min |
+| 22 | Desirable difficulties | Bjork 2011 |
+| 23 | Generation effect | Slamecka 1978 |
+| 24 | Historical analogues | Dahmani 2020, Sparrow 2011 |
+| 25 | Why experts benefit, learners don't | Synthesis |
+| 26 | Think-Pair-Share | 15 min |
 
 **Design choice for slide sequence:**
 
 1. **State the paradox** (20): Frame the cognitive dissonance
 2. **Show behavioral evidence** (21): Bastani study
-3. **Show neurological evidence** (22): MIT study
-4. **Explain the mechanism** (23-24): Desirable difficulties and generation effect
-5. **Provide historical context** (25): GPS, calculators, Google
-6. **Synthesize** (26): Expert vs. learner comparison
+3. **Explain the mechanism** (22-23): Desirable difficulties and generation effect
+4. **Provide historical context** (24): GPS, calculators, Google
+5. **Synthesize** (25): Expert vs. learner comparison
 
 This sequence moves from "what happens" to "why it happens" to "this isn't new."
 
@@ -283,7 +275,6 @@ Following project guidelines (CLAUDE.md):
 | Desirable difficulties | Erwünschte Schwierigkeiten | Direct translation preserves concept |
 | Expertise reversal effect | Expertise-Umkehr-Effekt | Hybrid preserves recognition |
 | Mind-extending/replacing | Kognition erweitern/ersetzen | Verb form more natural in German |
-| Cognitive debt | Kognitive Schulden | Maintains metaphor |
 
 ### 3.3 Retained English Quotes
 
@@ -311,9 +302,8 @@ Following the project's custom callout system:
 
 Two-column layouts were used for comparisons:
 
-- Expert vs. novice capabilities (slides 6, 16, 26)
+- Expert vs. novice capabilities (slides 6, 16, 25)
 - With AI vs. without AI results (slide 21)
-- Three-column for neurological evidence (slide 22)
 
 **Rationale:** Side-by-side comparisons make contrasts visually immediate.
 
@@ -351,7 +341,6 @@ The following references already existed in `bibliography.bib`:
 | `bjorkMakingThingsHard2011` | Desirable difficulties |
 | `clarkExtendingMindsGenerative2025` | Extended mind thesis |
 | `kalyugaExpertiseReversalEffect2009` | Expertise reversal |
-| `kosmynaYourBrainChatGPT2025` | Cognitive debt study |
 | `swellerCognitiveLoadTheory2024` | CLT |
 | `willinghamCriticalThinkingWhy2008` | Critical thinking |
 
@@ -420,7 +409,7 @@ Each premise is supported by evidence from the reports.
 | Claim | Evidence | Strength |
 |-------|----------|----------|
 | AI improves task performance | Meta-analyses, Bastani | Strong |
-| AI can harm learning | Bastani, neuroimaging | Moderate-strong |
+| AI can harm learning | Bastani | Moderate |
 | Expertise moderates effects | Meta-analysis of expertise reversal | Strong |
 | Critical thinking is domain-specific | Willingham review, transfer studies | Strong |
 | Historical tools show same pattern | GPS, calculator studies | Moderate |
