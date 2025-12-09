@@ -72,7 +72,7 @@ Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert,
 
 ## Die Bastani-Studie
 
-**Randomisierte kontrollierte Studie** [@bastaniGenerativeAICan2024]
+**Randomisierte kontrollierte Studie** [@bastaniGenerativeAICan2024] *(Einzelstudie)*
 
 ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
 
@@ -82,9 +82,9 @@ Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert,
 ::: {.column width="50%"}
 **Mit KI:**
 
-48% mehr Aufgaben korrekt gelöst
+48% mehr Aufgaben korrekt gelöst (direkter Zugang)
 
-127% mit "GPT Tutor"
+**127% mit "GPT Tutor"** (strukturierte Unterstützung)
 :::
 
 ::: {.column width="50%"}
@@ -99,6 +99,8 @@ Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert,
 . . .
 
 > "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
+
+*Hinweis: Die Schlussfolgerungen gelten v.a. für KI als Antwortgeber, nicht als pädagogisch gestalteter Tutor.*
 
 ## Das Paradox in einem Satz
 
@@ -174,6 +176,8 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 
 **Muster:** Werkzeuge, die Experten helfen, können Novizen schaden.
 
+*Aber: Diese Analogien sind begrenzt — KI ist breiter als GPS oder Taschenrechner.*
+
 # Experten vs. Lernende {background-color="#A3195B"}
 
 ## Der Expertise-Umkehr-Effekt
@@ -223,7 +227,7 @@ Profitieren von *niedriger* Unterstützung
 - Wissen zur Bewertung
 - Etablierte Grundfähigkeiten
 - Metakognitive Kontrolle
-- Erfahrung mit dem Domänengebiet
+- Risiko: **"Fliessende Inkompetenz"**
 :::
 :::
 
@@ -267,7 +271,7 @@ Was KI für Produktivität nützlich macht, macht sie für Lernen schädlich.
 
 Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 
-**Dies ist keine Einschränkung aktueller KI. Es ist ein Prinzip der Kognitionswissenschaft.**
+**Dies folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist.**
 :::
 
 ## Mind-extending vs. Mind-replacing
@@ -296,6 +300,14 @@ Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 
 **Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.**
 
+## Offene Fragen
+
+::: {.incremental}
+- **Scaffolding-Hypothese:** Werden Grundfertigkeiten nur verlernt, oder entstehen höhere Fähigkeiten gar nicht erst?
+- **Entwicklungsfrage:** Sind Lernende in sensiblen Entwicklungsphasen besonders gefährdet?
+- **Der stärkste Gegeneinwand:** "Wenn KI immer verfügbar ist, brauchen wir diese Fähigkeiten nicht mehr." — Aber wer erkennt dann Fehler? Wer erweitert Wissen?
+:::
+
 ## Abschliessende Provokationen
 
 > "If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable."
@@ -307,6 +319,10 @@ Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 . . .
 
 > "Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify."
+
+. . .
+
+> "Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt."
 
 ## Diskussion {background-color="#D4A03E"}
 
