@@ -1,6 +1,6 @@
 ---
 title: "KI in der Hochschulbildung"
-subtitle: "Aktueller Stand und Perspektiven"
+subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
 author: "Dr. Andrew Ellis"
 institute: "Virtuelle Akademie, Berner Fachhochschule"
 format:
@@ -9,23 +9,691 @@ format:
     slide-number: true
     preview-links: auto
     footer: "KI in der Lehre: Refresher"
-    navigation-mode: vertical
+    navigation-mode: linear
     controls: true
     progress: true
+    hash: true
+    center: false
+    transition: fade
+    width: 1600
+    height: 900
+    margin: 0.1
+bibliography: ../../bibliography.bib
+filters:
+  - timer
 ---
 
-## Einführung
+# Teil 1: Was KI heute kann {background-color="#A3195B"}
 
-Inhalt folgt.
+## Die zentrale Frage
 
-## Aktueller Stand
+::: {.columns}
+::: {.column width="50%"}
+**Was KI kann:**
 
-Inhalt folgt.
+- Anwaltsprüfungen bestehen
+- Code schreiben und debuggen
+- Krankheiten diagnostizieren
+- Wissenschaftliche Texte verfassen
+- Komplexe Analysen durchführen
+:::
 
-## Perspektiven
+::: {.column width="50%"}
+**Was wir nicht wissen:**
 
-Inhalt folgt.
+> "48% mehr Aufgaben gelöst MIT KI,
+> 17% schlechter OHNE KI"
+>
+> [@bastaniGenerativeAICan2024]
+:::
+:::
 
-## Fragen?
+. . .
 
-Diskussion und Q & A
+**Die Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?**
+
+## Wie LLMs Text produzieren
+
+::: {.incremental}
+- **Next-word prediction**: Welches Wort kommt am wahrscheinlichsten als nächstes?
+- Training auf Milliarden von Textdokumenten
+- Erkennen von Mustern in Sprache, Argumentation, Stil
+- **Metapher**: Extrem ausgeklügelte Autovervollständigung
+:::
+
+. . .
+
+::: {.callout-note}
+## Wichtig
+LLMs *rufen* kein Wissen ab. Sie *generieren* Text basierend auf statistischen Mustern.
+:::
+
+## Wie "Denken" in KI funktioniert
+
+**Chain-of-Thought Reasoning:**
+
+::: {.columns}
+::: {.column width="50%"}
+*Ohne Reasoning:*
+
+"Was ist 17 × 24?"
+→ "408"
+:::
+
+::: {.column width="50%"}
+*Mit Reasoning:*
+
+"Was ist 17 × 24?"
+→ "Lass mich das aufteilen:
+17 × 20 = 340
+17 × 4 = 68
+340 + 68 = 408"
+:::
+:::
+
+. . .
+
+**Kernpunkt:** Immer noch Mustererkennung, aber über Denkschritte statt nur über Antworten.
+
+## Werkzeug-fähige Agenten
+
+**LLM + Werkzeuge = Agent**
+
+::: {.incremental}
+- Websuche durchführen
+- Code ausführen
+- Dateien lesen und schreiben
+- Berechnungen anstellen
+- APIs aufrufen
+:::
+
+. . .
+
+**Konsequenz:** Agenten können fast jede kognitive Aufgabe ausführen:
+
+- Literaturrecherche
+- Datenanalyse
+- Schreiben und Überarbeiten
+- Programmieren
+
+## Diskussion {background-color="#D4A03E"}
+
+::: {.timer #timer-1 seconds=300}
+:::
+
+::: {.callout-tip}
+## Kurze Diskussion
+- Welche KI-Fähigkeiten haben dich überrascht?
+- Wo hast du Studierende beim Einsatz von KI beobachtet?
+:::
+
+# Teil 2: Wie Expertise entsteht {background-color="#A3195B"}
+
+## Experten und Novizen sind grundlegend verschieden
+
+::: {.columns}
+::: {.column width="50%"}
+**Nicht nur "mehr Wissen"**
+
+Sondern eine andere *kognitive Architektur*
+:::
+
+::: {.column width="50%"}
+**Klassisches Beispiel:**
+
+Schachmeister sehen *Muster und Strategien*
+
+Anfänger sehen *Figuren auf Feldern*
+:::
+:::
+
+. . .
+
+> "Experts don't just know more; they organize knowledge differently."
+
+## Von schwachen zu starken Methoden
+
+**ACT-R Theorie** [@andersonAcquisitionCognitiveSkill1982]
+
+::: {.columns}
+::: {.column width="50%"}
+**Novizen: Schwache Methoden**
+
+- Mittel-Ziel-Analyse
+- Versuch und Irrtum
+- Analogiebildung
+- Rückwärtsarbeiten
+:::
+
+::: {.column width="50%"}
+**Experten: Starke Methoden**
+
+- Automatische Mustererkennung
+- Prozeduralisiertes Wissen
+- Direkte Lösungswege
+:::
+:::
+
+. . .
+
+**Der Übergang erfordert umfangreiche Übung.**
+
+## Prozeduralisierung und Kompilation
+
+::: {.incremental}
+1. **Deklaratives Wissen**: "Man muss beim Autofahren die Kupplung treten, bevor man schaltet"
+2. **Bewusste Schritte**: Aktiv an jeden Schritt denken
+3. **Prozeduralisierung**: Schritte werden zu Einheiten zusammengefasst
+4. **Automatisierung**: Unbewusste, flüssige Ausführung
+:::
+
+. . .
+
+**Diese Transformation kann nicht übersprungen werden.**
+
+## Cognitive Load Theory: Die Grundlagen
+
+**John Sweller** [@swellerCognitiveLoadTheory2024]
+
+::: {.columns}
+::: {.column width="50%"}
+**Arbeitsgedächtnis**
+
+- 4±1 Elemente
+- 15-30 Sekunden
+- Der *Engpass* allen Lernens
+:::
+
+::: {.column width="50%"}
+**Langzeitgedächtnis**
+
+- Unbegrenzte Kapazität
+- Dauerhafte Speicherung
+- Hier *lebt* Expertise
+:::
+:::
+
+. . .
+
+::: {.callout-warning}
+## Kernaussage
+Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.
+:::
+
+## Drei Arten kognitiver Belastung
+
+| Typ | Beschreibung | Ziel |
+|-----|--------------|------|
+| **Intrinsisch** | Inhärente Komplexität des Materials | Kann nicht reduziert werden ohne Vereinfachung |
+| **Extrinsisch** | Schlecht gestaltete Instruktion | **Minimieren** |
+| **Lernförderlich** (Germane) | Produktive Anstrengung für Schemabildung | **Erhalten** |
+
+. . .
+
+**Entscheidende Frage:** Welche Art der Belastung reduziert KI?
+
+## Der Expertise-Umkehr-Effekt
+
+**Meta-Analyse** [@kalyugaExpertiseReversalEffect2009]
+
+::: {.columns}
+::: {.column width="50%"}
+**Geringe Vorkenntnisse:**
+
+Profitieren von hoher Unterstützung
+
+*d = 0.505*
+:::
+
+::: {.column width="50%"}
+**Hohe Vorkenntnisse:**
+
+Profitieren von *niedriger* Unterstützung
+
+*d = −0.428*
+:::
+:::
+
+. . .
+
+::: {.callout-warning}
+## Implikation
+**Dasselbe Werkzeug kann gegenteilige Effekte haben, abhängig vom Expertisegrad.**
+:::
+
+## Diskussion: Think-Pair-Share {background-color="#D4A03E"}
+
+::: {.timer #timer-2 seconds=600}
+:::
+
+::: {.callout-tip}
+## Reflexion
+**Think:** Denke an eine Fähigkeit, die du gemeistert hast. Wie hat sich der Lernprozess angefühlt?
+
+**Pair:** Tausche dich mit deinem Nachbarn aus.
+
+**Share:** Wie hat sich dein Denken verändert, als du Experte wurdest?
+:::
+
+# Teil 3: Kritisches Denken ist domänenspezifisch {background-color="#A3195B"}
+
+## Die traditionelle Annahme
+
+::: {.incremental}
+- Kritisches Denken als *übertragbare Fähigkeit*
+- "21st Century Skills"-Initiativen
+- KI-Kompetenz als *generische Fertigkeit*
+- "Wir müssen Studierende lehren, KI kritisch zu nutzen"
+:::
+
+. . .
+
+**Aber stimmt diese Annahme?**
+
+## Willinghams Herausforderung
+
+> "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
+>
+> [@willinghamCriticalThinkingWhy2008]
+
+. . .
+
+**Denkprozesse sind fundamental mit Fachwissen verflochten.**
+
+## Evidenz für Domänenspezifität
+
+::: {.incremental}
+- Neurologen können Herzerkrankungen nicht gut diagnostizieren
+- Fachredakteure können keine Zeitungsartikel schreiben
+- Selbst Philosophen werden von irrelevanten Merkmalen beeinflusst
+:::
+
+. . .
+
+> "Abstract principles like 'look for hidden assumptions' won't help much in evaluating an argument about a topic you know little about."
+
+## Angewendet auf KI-Bewertung
+
+::: {.columns}
+::: {.column width="50%"}
+**Experte in Biomedizin:**
+
+Erkennt, wenn ChatGPT bei Biochemie falsch liegt
+
+*Hat das Domänenwissen zur Bewertung*
+:::
+
+::: {.column width="50%"}
+**Novize:**
+
+Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
+
+*Fehlendes Fachwissen verhindert Evaluation*
+:::
+:::
+
+. . .
+
+**Was wie "kritisches Denken" aussieht, ist tatsächlich Domänenwissen.**
+
+## Die Metakognitions-Lücke
+
+**Einige Strategien sind etwas verallgemeinerbar:**
+
+- Planung des Vorgehens
+- Überwachung des Verständnisses
+- Bewertung der eigenen Leistung
+
+. . .
+
+**Aber die Ausführung erfordert Domänenwissen:**
+
+| Strategie | Erfordert |
+|-----------|-----------|
+| "Prüfe, ob das plausibel ist" | Wissen, was plausibel wäre |
+| "Verifiziere mit autoritativen Quellen" | Wissen, welche Quellen existieren |
+| "Erkenne Fehler" | Wissen, was korrekt wäre |
+
+## Die zentrale Implikation
+
+::: {.callout-warning}
+## Kernaussage
+
+- Studierende, die "mit hohem kritischem Denken" von KI profitieren, haben wahrscheinlich mehr **Domänenexpertise**
+- Die beste Vorbereitung für kritische KI-Nutzung ist **tiefes Fachlernen**
+- Generische "KI-Kompetenz" kann Fachwissen **nicht ersetzen**
+:::
+
+## Diskussion {background-color="#D4A03E"}
+
+::: {.timer #timer-3 seconds=300}
+:::
+
+::: {.callout-tip}
+## Kurze Diskussion
+- Hast du beobachtet, dass Studierende KI-Outputs in deinem Fach nicht bewerten können?
+- Welches Domänenwissen wäre nötig?
+:::
+
+# Pause {background-color="#666666"}
+
+::: {.timer #timer-4 seconds=900}
+:::
+
+# Teil 4: Das Produktivitäts-Lern-Paradox {background-color="#A3195B"}
+
+## Das zentrale Paradox
+
+> "Learning and task completion are not synonymous."
+>
+> [@joseCognitiveParadoxAI2025]
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+**KI verbessert nachweislich:**
+
+- Aufgabenleistung
+- Geschwindigkeit
+- Output-Qualität
+:::
+
+::: {.column width="50%"}
+**Aber:**
+
+Aufgabenleistung ≠ Lernen
+
+Produktivität ≠ Kompetenzaufbau
+:::
+:::
+
+## Die Bastani-Studie: Mathematik
+
+**Randomisierte kontrollierte Studie** [@bastaniGenerativeAICan2024]
+
+- ~1000 türkische Gymnasiasten
+- GPT-4 Zugang während des Übens
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+**Mit KI:**
+
+48% mehr Aufgaben korrekt gelöst
+
+127% mit "GPT Tutor"
+:::
+
+::: {.column width="50%"}
+**Ohne KI (später):**
+
+17% schlechter als Kontrollgruppe
+
+*Die nie KI hatte*
+:::
+:::
+
+. . .
+
+> "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
+
+## Neurologische Evidenz: "Cognitive Debt"
+
+**MIT Media Lab Studie** [@kosmynaYourBrainChatGPT2025]
+
+EEG während Essayschreiben unter drei Bedingungen:
+
+. . .
+
+::: {.columns}
+::: {.column width="33%"}
+**Nur Gehirn:**
+
+Stärkste neuronale Vernetzung
+:::
+
+::: {.column width="33%"}
+**Mit Suchmaschine:**
+
+Mittlere Vernetzung
+:::
+
+::: {.column width="33%"}
+**Mit LLM:**
+
+Schwächste Vernetzung
+:::
+:::
+
+. . .
+
+::: {.callout-warning}
+## Kritisch
+LLM-Nutzer zeigten die reduzierten Muster *auch nachdem KI entfernt wurde*.
+
+"Cognitive Debt": Kognitive Schulden akkumulieren sich.
+:::
+
+## Desirable Difficulties: Warum Anstrengung nötig ist
+
+**Robert Bjork** [@bjorkMakingThingsHard2011]
+
+> "Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
+
+. . .
+
+**Vier bewährte "erwünschte Schwierigkeiten":**
+
+1. **Variation** der Lernbedingungen
+2. **Interleaving**: Mischen von Aufgabentypen
+3. **Spacing**: Verteiltes statt massiertes Lernen
+4. **Retrieval Practice**: Abrufen statt Wiederlesen
+
+## Der Generierungseffekt
+
+**Meta-Analyse: d = 0.40 über 86 Studien** [@slameckaGenerationEffect1978]
+
+::: {.columns}
+::: {.column width="50%"}
+**Selbst generiert:**
+
+Aktiviert breite neuronale Netzwerke
+
+Bessere Langzeitspeicherung
+:::
+
+::: {.column width="50%"}
+**Passiv erhalten:**
+
+Geringere Verarbeitung
+
+Schwächere Erinnerung
+:::
+:::
+
+. . .
+
+::: {.callout-warning}
+## Implikation
+Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert.
+:::
+
+## Historische Analogien
+
+**GPS und räumliches Gedächtnis** [@dahmaniHabitualUseGPS2020]
+
+- Längere GPS-Nutzung → steilerer Rückgang des räumlichen Gedächtnisses
+- Longitudinale Studie über 3 Jahre
+- Kausalität bestätigt (nicht umgekehrt)
+
+. . .
+
+**Taschenrechner** [@sieglerDevelopingConceptualUnderstanding2017]
+
+- Neutral für jene mit bestehenden Fähigkeiten
+- **Schädlich** für jene ohne Grundkenntnisse
+
+. . .
+
+**Google-Effekt** [@sparrowGoogleEffectsMemory2011]
+
+- Geringere Erinnerung, wenn Information als verfügbar erwartet wird
+- Menschen erinnern *wo*, nicht *was*
+
+## Warum Experten profitieren, Lernende nicht
+
+::: {.columns}
+::: {.column width="50%"}
+**Experten können:**
+
+- Routine-Aufgaben sicher auslagern
+- Höheres Denken aufrechterhalten
+- KI-Outputs bewerten
+- Haben Grundfähigkeiten, die nicht verkümmern
+:::
+
+::: {.column width="50%"}
+**Lernenden fehlt:**
+
+- Wissen zur Bewertung
+- Etablierte Grundfähigkeiten
+- Metakognitive Kontrolle
+- Erfahrung mit dem Domänengebiet
+:::
+:::
+
+. . .
+
+**Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.**
+
+## Diskussion: Think-Pair-Share {background-color="#D4A03E"}
+
+::: {.timer #timer-5 seconds=900}
+:::
+
+::: {.callout-tip}
+## Reflexion
+
+**Think:** Wo könnte KI-Unterstützung in deinem Fach "kognitive Schulden" erzeugen?
+
+**Pair:** Diskutiere mit deinem Nachbarn.
+
+**Share:** Welche Grundfähigkeiten könnten bei KI-Nutzung verkümmern?
+:::
+
+# Teil 5: Implikationen und Synthese {background-color="#A3195B"}
+
+## Die unbequeme Wahrheit
+
+::: {.callout-warning}
+## Kernaussage
+Was KI für Produktivität nützlich macht, macht sie für Lernen schädlich.
+
+Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
+
+**Dies ist keine Einschränkung aktueller KI. Es ist ein Prinzip der Kognitionswissenschaft.**
+:::
+
+## Mind-extending vs. Mind-replacing
+
+**Andy Clark** [@clarkExtendingMindsGenerative2025]
+
+::: {.columns}
+::: {.column width="50%"}
+**Kognition erweitern:**
+
+- Erhält kognitive Engagement
+- Leitet Anstrengung um auf höhere Aufgaben
+- Mensch bleibt in der Schleife
+- Fähigkeiten bleiben intakt
+:::
+
+::: {.column width="50%"}
+**Kognition ersetzen:**
+
+- Eliminiert Engagement
+- Erzeugt Abhängigkeit
+- Passives Akzeptieren
+- Fähigkeiten verkümmern
+:::
+:::
+
+. . .
+
+**Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.**
+
+## Die Sequenzierungsfrage
+
+::: {.incremental}
+- Studierende brauchen wahrscheinlich **Grundwissen BEVOR** KI vorteilhaft wird
+- Der Expertise-Umkehr-Effekt legt **dynamische** Policies nahe
+- Ab welchem Punkt wechselt KI von schädlich zu hilfreich?
+- Die Antwort ist vermutlich **domänen- und studentenspezifisch**
+:::
+
+## Die Equity-Dimension
+
+**Die dritte digitale Kluft** [@trucanoThirdDigitalDivide2024]
+
+. . .
+
+| Erste Kluft | Zweite Kluft | Dritte Kluft |
+|-------------|--------------|--------------|
+| Zugang zu Geräten | Fähigkeit zur sinnvollen Nutzung | Qualität der pädagogischen Integration |
+
+. . .
+
+::: {.callout-warning}
+## Risiko
+"Demokratisierung" von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.
+
+Gutausgestattete Studierende erhalten ausgeklügelte pädagogische Unterstützung.
+
+Unterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung.
+:::
+
+## Was wir noch nicht wissen
+
+::: {.incremental}
+- **Längsschnittstudien über Jahre:** Praktisch nicht vorhanden
+- **Transfer auf neue Kontexte:** Unerforscht
+- **Optimale Scaffolding-Bedingungen:** Unbekannt
+- **Disziplinspezifische Effekte:** Untererforscht
+- **Publikationsbias:** Wahrscheinlich vorhanden
+:::
+
+. . .
+
+**Epistemische Bescheidenheit ist angebracht.**
+
+## Abschliessende Provokationen
+
+> "If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable."
+
+. . .
+
+> "The productivity gains during education would come at the cost of capability thereafter."
+
+. . .
+
+> "Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify."
+
+## Offene Diskussion {background-color="#D4A03E"}
+
+::: {.timer #timer-6 seconds=900}
+:::
+
+::: {.callout-tip}
+## Diskussionsfragen
+
+- Was bedeutet das für deine Lehre?
+- Wo siehst du die Experten-Lernenden-Unterscheidung in der Praxis?
+- Was sind die schwierigsten Fragen, die das aufwirft?
+:::
+
+## Referenzen
+
+::: {#refs}
+:::
