@@ -33,24 +33,123 @@
     ]
   },
   {
-    "objectID": "presentation/index.html",
-    "href": "presentation/index.html",
-    "title": "Präsentation",
-    "section": "",
-    "text": "TippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
-    "crumbs": [
-      "Präsentation"
-    ]
+    "objectID": "slides/ai-higher-ed-short/index.html#die-zentrale-frage",
+    "href": "slides/ai-higher-ed-short/index.html#die-zentrale-frage",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die zentrale Frage",
+    "text": "Die zentrale Frage\n\n\nWas KI kann:\n\nAnwaltsprüfungen bestehen\nCode schreiben und debuggen\nKrankheiten diagnostizieren\nWissenschaftliche Texte verfassen\n\n\nWas wir beobachten:\n\n“48% mehr Aufgaben gelöst MIT KI, 17% schlechter OHNE KI”\n(Bastani u. a. 2024)\n\n\n\nDie Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?"
   },
   {
-    "objectID": "presentation/index.html#ki-in-der-hochschulbildung",
-    "href": "presentation/index.html#ki-in-der-hochschulbildung",
-    "title": "Präsentation",
-    "section": "",
-    "text": "TippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
-    "crumbs": [
-      "Präsentation"
-    ]
+    "objectID": "slides/ai-higher-ed-short/index.html#die-these",
+    "href": "slides/ai-higher-ed-short/index.html#die-these",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die These",
+    "text": "Die These\n\n\n\n\n\n\nKernaussage\n\n\nKI-Werkzeuge sind für Experten gemacht.\nSie machen Experten produktiver.\nLernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI eliminiert."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#agenda",
+    "href": "slides/ai-higher-ed-short/index.html#agenda",
+    "title": "KI in der Hochschulbildung",
+    "section": "Agenda",
+    "text": "Agenda\n\nDas Produktivitäts-Lern-Paradox\nDie kognitionswissenschaftliche Erklärung\nWarum Experten profitieren, Lernende nicht\nDiskussion"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#die-bastani-studie",
+    "href": "slides/ai-higher-ed-short/index.html#die-bastani-studie",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die Bastani-Studie",
+    "text": "Die Bastani-Studie\nRandomisierte kontrollierte Studie (Bastani u. a. 2024)\n~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst\n127% mit “GPT Tutor”\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#neurologische-evidenz",
+    "href": "slides/ai-higher-ed-short/index.html#neurologische-evidenz",
+    "title": "KI in der Hochschulbildung",
+    "section": "Neurologische Evidenz",
+    "text": "Neurologische Evidenz\nMIT Media Lab (Kosmyna u. a. 2025)\nEEG während Essayschreiben:\n\n\nNur Gehirn:\nStärkste neuronale Vernetzung\n\nMit Suchmaschine:\nMittlere Vernetzung\n\nMit LLM:\nSchwächste Vernetzung\n\n\n\n\n\n\n\n\n“Cognitive Debt”\n\n\nLLM-Nutzer zeigten die reduzierten Muster auch nachdem KI entfernt wurde.\nKognitive Schulden akkumulieren sich."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#das-paradox-in-einem-satz",
+    "href": "slides/ai-higher-ed-short/index.html#das-paradox-in-einem-satz",
+    "title": "KI in der Hochschulbildung",
+    "section": "Das Paradox in einem Satz",
+    "text": "Das Paradox in einem Satz\n\n“Learning and task completion are not synonymous.”\n(Jose u. a. 2025)\n\n\nAufgabenleistung ≠ Lernen\nProduktivität ≠ Kompetenzaufbau"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#warum-anstrengung-nötig-ist",
+    "href": "slides/ai-higher-ed-short/index.html#warum-anstrengung-nötig-ist",
+    "title": "KI in der Hochschulbildung",
+    "section": "Warum Anstrengung nötig ist",
+    "text": "Warum Anstrengung nötig ist\nRobert Bjork: Desirable Difficulties (Bjork und Bjork 2011)\n\n“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”\n\n\nBewährte “erwünschte Schwierigkeiten”:\n\nSelbst generieren statt lesen\nVerteilt lernen statt crammen\nAbrufen statt wiederholen\nVariieren statt konstant üben"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#der-generierungseffekt",
+    "href": "slides/ai-higher-ed-short/index.html#der-generierungseffekt",
+    "title": "KI in der Hochschulbildung",
+    "section": "Der Generierungseffekt",
+    "text": "Der Generierungseffekt\nMeta-Analyse: d = 0.40 (Slamecka und Graf 1978)\n\n\nSelbst generiert:\nAktiviert breite neuronale Netzwerke\nBessere Langzeitspeicherung\n\nPassiv erhalten:\nGeringere Verarbeitung\nSchwächere Erinnerung\n\n\n\n\n\n\n\n\nImplikation\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#historische-analogien",
+    "href": "slides/ai-higher-ed-short/index.html#historische-analogien",
+    "title": "KI in der Hochschulbildung",
+    "section": "Historische Analogien",
+    "text": "Historische Analogien\nGPS (Dahmani und Bohbot 2020): Längere Nutzung → steilerer Rückgang des räumlichen Gedächtnisses\n\nTaschenrechner (Siegler und Lortie-Forgues 2017): Neutral für jene mit Fähigkeiten, schädlich für jene ohne\n\n\nGoogle-Effekt (Sparrow, Liu, und Wegner 2011): Geringere Erinnerung, wenn Information als verfügbar erwartet wird\n\n\nMuster: Werkzeuge, die Experten helfen, können Novizen schaden."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#der-expertise-umkehr-effekt",
+    "href": "slides/ai-higher-ed-short/index.html#der-expertise-umkehr-effekt",
+    "title": "KI in der Hochschulbildung",
+    "section": "Der Expertise-Umkehr-Effekt",
+    "text": "Der Expertise-Umkehr-Effekt\nMeta-Analyse (Kalyuga 2009)\n\n\nGeringe Vorkenntnisse:\nProfitieren von hoher Unterstützung\nd = 0.505\n\nHohe Vorkenntnisse:\nProfitieren von niedriger Unterstützung\nd = −0.428\n\n\n\n\n\n\n\n\nKernaussage\n\n\nDasselbe Werkzeug kann gegenteilige Effekte haben, abhängig vom Expertisegrad."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#warum-experten-profitieren",
+    "href": "slides/ai-higher-ed-short/index.html#warum-experten-profitieren",
+    "title": "KI in der Hochschulbildung",
+    "section": "Warum Experten profitieren",
+    "text": "Warum Experten profitieren\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nErfahrung mit dem Domänengebiet\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#kritisches-denken-ist-domänenspezifisch",
+    "href": "slides/ai-higher-ed-short/index.html#kritisches-denken-ist-domänenspezifisch",
+    "title": "KI in der Hochschulbildung",
+    "section": "Kritisches Denken ist domänenspezifisch",
+    "text": "Kritisches Denken ist domänenspezifisch\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\n(Willingham 2008)\n\n\n\n\nExperte in Biomedizin:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\n\nNovize:\nKann diese Bewertung nicht vornehmen, unabhängig von “kritischem Denken”\n\n\n\nDie beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#die-unbequeme-wahrheit",
+    "href": "slides/ai-higher-ed-short/index.html#die-unbequeme-wahrheit",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die unbequeme Wahrheit",
+    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies ist keine Einschränkung aktueller KI. Es ist ein Prinzip der Kognitionswissenschaft."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#mind-extending-vs.-mind-replacing",
+    "href": "slides/ai-higher-ed-short/index.html#mind-extending-vs.-mind-replacing",
+    "title": "KI in der Hochschulbildung",
+    "section": "Mind-extending vs. Mind-replacing",
+    "text": "Mind-extending vs. Mind-replacing\nAndy Clark (Clark 2025)\n\n\nKognition erweitern:\n\nErhält kognitives Engagement\nLeitet Anstrengung um\nMensch bleibt in der Schleife\n\n\nKognition ersetzen:\n\nEliminiert Engagement\nErzeugt Abhängigkeit\nPassives Akzeptieren\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#abschliessende-provokationen",
+    "href": "slides/ai-higher-ed-short/index.html#abschliessende-provokationen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Abschliessende Provokationen",
+    "text": "Abschliessende Provokationen\n\n“If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable.”\n\n\n\n“The productivity gains during education would come at the cost of capability thereafter.”\n\n\n\n\n“Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify.”"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#diskussion",
+    "href": "slides/ai-higher-ed-short/index.html#diskussion",
+    "title": "KI in der Hochschulbildung",
+    "section": "Diskussion",
+    "text": "Diskussion\n                    \n                    \n                \n\n\n\n\n\n\nDiskussionsfragen\n\n\n\nFür dein Fach: Wo könnte KI-Nutzung “kognitive Schulden” erzeugen? Welche Grundfähigkeiten könnten verkümmern?\nFür deine Lehre: Ab welchem Punkt sollten Studierende KI nutzen dürfen? Wie bestimmst du, ob genug Grundwissen vorhanden ist?\nGrundsätzlich: Ist die Unterscheidung “Experten vs. Lernende” in deinem Kontext nützlich? Wo greift sie, wo nicht?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#referenzen",
+    "href": "slides/ai-higher-ed-short/index.html#referenzen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Referenzen",
+    "text": "Referenzen\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2024. „Generative AI Can Harm Learning“. SSRN Scholarly Paper. Rochester, NY. 15. Juli 2024. https://doi.org/10.2139/ssrn.4895486.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nClark, Andy. 2025. „Extending Minds with Generative AI“. Nature Communications 16 (1): 4627. https://doi.org/10.1038/s41467-025-59906-9.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory during Self-Guided Navigation“. Scientific Reports 10: 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nJose, Bejoy, Boby Cyriac, A. P. Vinod, und Tessy Jose. 2025. „The Cognitive Paradox of AI in Education: Between Enhancement and Erosion“. Frontiers in Psychology 16: 1550621. https://doi.org/10.3389/fpsyg.2025.1550621.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nKosmyna, Nataliya, Eugene Hauptmann, Ye Tong Yuan, Jessica Situ, Xian-Hao Liao, Ashly Vivian Beresnitzky, Iris Braunstein, und Pattie Maes. 2025. „Your Brain on ChatGPT: Accumulation of Cognitive Debt When Using an AI Assistant for Essay Writing Task“. 10. Juni 2025. https://doi.org/10.48550/arXiv.2506.08872.\n\n\nSiegler, Robert S., und Hugues Lortie-Forgues. 2017. „Developing Conceptual Understanding and Procedural Skill in Mathematics: An Iterative Process“. Journal of Educational Psychology 109 (8): 1024–34. https://doi.org/10.1037/edu0000173.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
   },
   {
     "objectID": "index.html",
@@ -72,6 +171,26 @@
     "title": "KI in der Lehre: Refresher",
     "section": "Kontakt",
     "text": "Kontakt\nDr. Andrew Ellis ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule."
+  },
+  {
+    "objectID": "presentation/index.html",
+    "href": "presentation/index.html",
+    "title": "Präsentation",
+    "section": "",
+    "text": "Zwei Versionen verfügbar:\n\n\n\nVersion\nDauer\nBeschreibung\n\n\n\n\nVollversion\n~3 Stunden\nWorkshop mit Diskussionen und Pausen\n\n\nKurzversion\n30 + 30 Min\nFokussierter Vortrag mit anschliessender Diskussion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
+    "crumbs": [
+      "Präsentation"
+    ]
+  },
+  {
+    "objectID": "presentation/index.html#ki-in-der-hochschulbildung",
+    "href": "presentation/index.html#ki-in-der-hochschulbildung",
+    "title": "Präsentation",
+    "section": "",
+    "text": "Zwei Versionen verfügbar:\n\n\n\nVersion\nDauer\nBeschreibung\n\n\n\n\nVollversion\n~3 Stunden\nWorkshop mit Diskussionen und Pausen\n\n\nKurzversion\n30 + 30 Min\nFokussierter Vortrag mit anschliessender Diskussion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
+    "crumbs": [
+      "Präsentation"
+    ]
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-zentrale-frage",
