@@ -412,6 +412,8 @@ Produktivität ≠ Kompetenzaufbau
 
 **Randomisierte kontrollierte Studie** [@bastaniGenerativeAICan2024]
 
+*Einzelstudie, Replikation ausstehend*
+
 - ~1000 türkische Gymnasiasten
 - GPT-4 Zugang während des Übens
 
@@ -421,9 +423,9 @@ Produktivität ≠ Kompetenzaufbau
 ::: {.column width="50%"}
 **Mit KI:**
 
-48% mehr Aufgaben korrekt gelöst
+48% mehr Aufgaben korrekt gelöst (direkter Zugang)
 
-127% mit "GPT Tutor"
+**127% mit "GPT Tutor"** (strukturierte Unterstützung)
 :::
 
 ::: {.column width="50%"}
@@ -439,6 +441,13 @@ Produktivität ≠ Kompetenzaufbau
 
 > "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
 
+. . .
+
+::: {.callout-note}
+## Nuance
+Die Schlussfolgerungen gelten hauptsächlich für KI als **Antwortgeber**. KI als **pädagogisch gestalteter Tutor** könnte andere Effekte haben — wie die 127% beim "GPT Tutor" andeuten.
+:::
+
 ## Desirable Difficulties: Warum Anstrengung nötig ist
 
 **Robert Bjork** [@bjorkMakingThingsHard2011]
@@ -453,6 +462,13 @@ Produktivität ≠ Kompetenzaufbau
 2. **Interleaving**: Mischen von Aufgabentypen
 3. **Spacing**: Verteiltes statt massiertes Lernen
 4. **Retrieval Practice**: Abrufen statt Wiederlesen
+
+. . .
+
+::: {.callout-note}
+## Mechanismus
+Sofortiger KI-Zugang kann Abrufversuche kurzschliessen, *bevor* sie Gedächtnisspuren stärken können.
+:::
 
 ## Der Generierungseffekt
 
@@ -483,6 +499,24 @@ Schwächere Erinnerung
 Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert.
 :::
 
+## Die Scaffolding-Hypothese
+
+**Grundfertigkeiten als konstruktive Prozesse**
+
+::: {.incremental}
+- Schreiben, Rechnen, Lesen sind nicht nur *Fertigkeiten*
+- Sie sind *Prozesse*, die kognitive Architektur aufbauen
+- Schreiben als epistemisches Werkzeug: Gedanken entwickeln sich *durch* das Schreiben
+- Wenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht
+:::
+
+. . .
+
+::: {.callout-warning}
+## Wichtige Unterscheidung
+**Fertigkeitsatrophie** (Fähigkeit verkümmert) vs. **Entwicklungsbeeinträchtigung** (Fähigkeit entsteht nie)
+:::
+
 ## Historische Analogien
 
 **GPS und räumliches Gedächtnis** [@dahmaniHabitualUseGPS2020]
@@ -505,6 +539,33 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 - Geringere Erinnerung, wenn Information als verfügbar erwartet wird
 - Menschen erinnern *wo*, nicht *was*
 
+## Grenzen historischer Analogien
+
+::: {.incremental}
+- GPS, Taschenrechner, Google: jeweils *spezifische*, *enge* kognitive Funktionen
+- Generative KI kann fast *jede* kognitive Aufgabe übernehmen
+- Schreiben, Argumentieren, Analysieren, Synthetisieren, Bewerten
+- Die Breite ist beispiellos
+:::
+
+. . .
+
+**Aber:** Die historischen Bedenken hatten oft Berechtigung. GPS *beeinflusst* räumliche Kognition. Taschenrechner *veränderten* Mathematikunterricht.
+
+## "Das haben sie über das Schreiben auch gesagt"
+
+**Sokrates' Warnung im Phaidros:** Schrift wird das Gedächtnis schwächen.
+
+. . .
+
+**Drei Antworten:**
+
+::: {.incremental}
+1. Schrift *hat* Kognition tiefgreifend verändert
+2. Einige Bedenken waren berechtigt (mündliche Gedächtnistraditionen *sind* zurückgegangen)
+3. Schriftkultur entwickelte sich über Jahrhunderte — KI-Integration geschieht in Jahren
+:::
+
 ## Warum Experten profitieren, Lernende nicht
 
 ::: {.columns}
@@ -523,7 +584,7 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 - Wissen zur Bewertung
 - Etablierte Grundfähigkeiten
 - Metakognitive Kontrolle
-- Erfahrung mit dem Domänengebiet
+- Risiko: **"Fliessende Inkompetenz"** — anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis
 :::
 :::
 
@@ -556,7 +617,7 @@ Was KI für Produktivität nützlich macht, macht sie für Lernen schädlich.
 
 Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 
-**Dies ist keine Einschränkung aktueller KI. Es ist ein Prinzip der Kognitionswissenschaft.**
+**Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist.**
 :::
 
 ## Mind-extending vs. Mind-replacing
@@ -596,6 +657,25 @@ Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 - Die Antwort ist vermutlich **domänen- und studentenspezifisch**
 :::
 
+## Die Entwicklungsfrage
+
+**Sensible Phasen in der kognitiven Entwicklung**
+
+::: {.incremental}
+- Präfrontaler Kortex entwickelt sich bis Mitte 20
+- Exekutive Funktionen, Metakognition, Selbstregulation noch in Entwicklung
+- **Paradox:** Jene, die KI-Nutzung am wenigsten regulieren können, sind am verletzlichsten
+:::
+
+. . .
+
+::: {.callout-warning}
+## Die Kohortenfrage
+Die aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.
+
+Wenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
+:::
+
 ## Die Equity-Dimension
 
 **Die dritte digitale Kluft** [@trucanoThirdDigitalDivide2024]
@@ -615,6 +695,21 @@ Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 Gutausgestattete Studierende erhalten ausgeklügelte pädagogische Unterstützung.
 
 Unterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung.
+:::
+
+## Der stärkste Gegeneinwand
+
+> "Wenn KI immer verfügbar ist, müssen Fähigkeiten nicht internalisiert werden."
+
+. . .
+
+**Vier Antworten:**
+
+::: {.incremental}
+1. **Permanenzannahme**: Setzt voraus, dass KI immer verfügbar, funktional und bezahlbar bleibt
+2. **Rekursionsproblem**: Wer erkennt, wenn KI falsch liegt? Wer erweitert menschliches Wissen?
+3. **Autonomie-Argument**: Eigenständige kognitive Fähigkeit hat intrinsischen Wert
+4. **Unbekannte Unbekannte**: Wir wissen nicht, welche Kaskadeneffekte folgen könnten
 :::
 
 ## Was wir noch nicht wissen
@@ -642,6 +737,10 @@ Unterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung.
 . . .
 
 > "Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify."
+
+. . .
+
+> "Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt."
 
 ## Offene Diskussion {background-color="#D4A03E"}
 
