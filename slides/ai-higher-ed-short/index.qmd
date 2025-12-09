@@ -100,41 +100,6 @@ Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert,
 
 > "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
 
-## Neurologische Evidenz
-
-**MIT Media Lab** [@kosmynaYourBrainChatGPT2025]
-
-EEG während Essayschreiben:
-
-::: {.columns}
-::: {.column width="33%"}
-**Nur Gehirn:**
-
-Stärkste neuronale Vernetzung
-:::
-
-::: {.column width="33%"}
-**Mit Suchmaschine:**
-
-Mittlere Vernetzung
-:::
-
-::: {.column width="33%"}
-**Mit LLM:**
-
-Schwächste Vernetzung
-:::
-:::
-
-. . .
-
-::: {.callout-warning}
-## "Cognitive Debt"
-LLM-Nutzer zeigten die reduzierten Muster *auch nachdem KI entfernt wurde*.
-
-Kognitive Schulden akkumulieren sich.
-:::
-
 ## Das Paradox in einem Satz
 
 > "Learning and task completion are not synonymous."
@@ -351,7 +316,7 @@ Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
 ::: {.callout-tip}
 ## Diskussionsfragen
 
-1. **Für dein Fach:** Wo könnte KI-Nutzung "kognitive Schulden" erzeugen? Welche Grundfähigkeiten könnten verkümmern?
+1. **Für dein Fach:** Wo könnte KI-Nutzung die produktive Anstrengung eliminieren, die Lernen ermöglicht? Welche Grundfähigkeiten könnten verkümmern?
 
 2. **Für deine Lehre:** Ab welchem Punkt sollten Studierende KI nutzen dürfen? Wie bestimmst du, ob genug Grundwissen vorhanden ist?
 
