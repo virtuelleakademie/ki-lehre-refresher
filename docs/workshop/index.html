@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ablauf – KI-Weiterbildung UB</title>
+<title>Antworten von Sprachmodellen kritisch prüfen – Fact-Checking für KI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../workshop/einstieg/index.html" rel="next">
+<link href="../workshop/framing/index.html" rel="next">
 <link href="..//assets/robot.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -39,17 +39,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4dd0a3cd2d1f0c1ca65dcbe395e0d0e9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-e205cbcc9f1b6468a0de8c9a7690c9cd.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4dd0a3cd2d1f0c1ca65dcbe395e0d0e9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-552df2bedc27db21b492a0df63bab367.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-32eb03817d993530f78c62b7270edee1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-552df2bedc27db21b492a0df63bab367.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e59b580b438912e3ec13977d7199dce5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e59b580b438912e3ec13977d7199dce5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-e59b580b438912e3ec13977d7199dce5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,17 +62,17 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -89,18 +88,6 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-agent-potential.callout {
-  border-left-color: #A3195B;
-}
-div.callout-agent-potential.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-agent-potential .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-agent-potential.callout-style-default .callout-icon::before, div.callout-agent-potential.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f544';
-  background-image: none;
-}
 div.callout-individual.callout {
   border-left-color: #A3195B;
 }
@@ -111,138 +98,6 @@ div.callout-individual .callout-toggle::before {  background-image: url('data:im
 div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f007';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-active-processing.callout {
-  border-left-color: #A3195B;
-}
-div.callout-active-processing.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-active-processing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-active-processing.callout-style-default .callout-icon::before, div.callout-active-processing.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f304';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
-div.callout-pair.callout {
-  border-left-color: #A3195B;
-}
-div.callout-pair.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f500';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
   background-image: none;
 }
 div.callout-reflect.callout {
@@ -257,14 +112,122 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   content: '\f0eb';
   background-image: none;
 }
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
+  background-image: none;
+}
 </style>
 
 
 <link rel="stylesheet" href="../styles/styles.css">
 <link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
-<meta property="og:title" content="Ablauf – KI-Weiterbildung UB">
-<meta property="og:description" content="">
-<meta property="og:site_name" content="KI-Weiterbildung UB">
+<meta property="og:title" content="Antworten von Sprachmodellen kritisch prüfen – Fact-Checking für KI">
+<meta property="og:description" content="Ein 40-Minuten Workshop zu Lateral Reading">
+<meta property="og:site_name" content="Fact-Checking für KI">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -274,14 +237,12 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">KI-Weiterbildung UB</span>
+    <span class="navbar-title">Fact-Checking für KI</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -292,52 +253,10 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 <span class="menu-text">Workshop</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../01-ki-verstehen/index.html"> <i class="bi bi-motherboard" role="img">
+    <a class="nav-link" href="../materialien.html"> <i class="bi bi-file-text" role="img">
 </i> 
-<span class="menu-text">1: KI verstehen</span></a>
+<span class="menu-text">Materialien</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../02-wie-menschen-lernen/index.html"> <i class="bi bi-person-gear" role="img">
-</i> 
-<span class="menu-text">2: Lernen</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../03-lernumgebungen/index.html"> <i class="bi bi-marker-tip" role="img">
-</i> 
-<span class="menu-text">3: KI im Unterricht</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../04-ki-in-beratung/index.html"> <i class="bi bi-chat-heart" role="img">
-</i> 
-<span class="menu-text">4: KI in der Beratung</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dokumente" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-file-slides" role="img">
-</i> 
- <span class="menu-text">Dokumente</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-dokumente">    
-        <li>
-    <a class="dropdown-item" href="../assets/pdfs/Begleitdokument.pdf">
- <span class="dropdown-text">Begleitdokument: KI Weiterbildung</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../assets/pdfs/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf">
- <span class="dropdown-text">Begleitdokument: KI Policy (PDF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../assets/pdfs/Orientierungshilfe.pdf">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe (PDF)</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -347,13 +266,13 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/index.html">Ablauf</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/index.html">Antworten von Sprachmodellen kritisch prüfen</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -363,13 +282,9 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Suchen"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -377,19 +292,37 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Ablauf</span></a>
+ <span class="menu-text">Antworten von Sprachmodellen kritisch prüfen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../workshop/framing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Einstieg</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workshop/diskussion/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Abschlussdiskussion &amp; Transfer</span></a>
+  <a href="../workshop/experiment-1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teil 1: Das Sprachmodell liegt falsch</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/experiment-2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teil 2: Warum Nachfragen nicht hilft</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/lateral-reading/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teil 3: Lateral Reading</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/entscheidungsregel/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teil 4: Die Entscheidungsregel</span></a>
   </div>
 </li>
     </ul>
@@ -399,11 +332,14 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#workshop-ablauf-ki-für-unterricht-beratung-3-stunden" id="toc-workshop-ablauf-ki-für-unterricht-beratung-3-stunden" class="nav-link active" data-scroll-target="#workshop-ablauf-ki-für-unterricht-beratung-3-stunden">Workshop-Ablauf: KI für Unterricht &amp; Beratung (3 Stunden)</a></li>
+  <li><a href="#überblick" id="toc-überblick" class="nav-link active" data-scroll-target="#überblick">Überblick</a></li>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#kurz-check-in-1-min" id="toc-kurz-check-in-1-min" class="nav-link" data-scroll-target="#kurz-check-in-1-min">Kurz-Check-in (1 Min)</a></li>
+  <li><a href="#ablauf" id="toc-ablauf" class="nav-link" data-scroll-target="#ablauf">Ablauf</a></li>
+  <li><a href="#was-du-brauchst" id="toc-was-du-brauchst" class="nav-link" data-scroll-target="#was-du-brauchst">Was du brauchst</a></li>
   </ul>
 </nav>
     </div>
@@ -412,7 +348,8 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ablauf</h1>
+<h1 class="title">Antworten von Sprachmodellen kritisch prüfen</h1>
+<p class="subtitle lead">Ein 40-Minuten Workshop zu Lateral Reading</p>
 </div>
 
 
@@ -429,105 +366,80 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 </header>
 
 
-<section id="workshop-ablauf-ki-für-unterricht-beratung-3-stunden" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-ablauf-ki-für-unterricht-beratung-3-stunden">Workshop-Ablauf: KI für Unterricht &amp; Beratung (3 Stunden)</h2>
+<section id="überblick" class="level2">
+<h2 class="anchored" data-anchor-id="überblick">Überblick</h2>
+<p>Dieser Workshop vermittelt eine praktische Technik zur Verifikation von Antworten aus Large Language Models (LLMs) wie Copilot, ChatGPT, Claude oder Gemini: <strong>Lateral Reading</strong>.</p>
+<p>Du lernst durch eigene Experimente, wann und wie du Antworten von Sprachmodellen extern verifizierst.</p>
+</section>
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
+<p>Nach diesem Workshop kannst du:</p>
+<ol type="1">
+<li><strong>Erkennen</strong>, wann Antworten von Sprachmodellen externe Verifikation brauchen</li>
+<li><strong>Verstehen</strong>, warum Nachfragen beim Sprachmodell keine echte Prüfung ist</li>
+<li><strong>Lateral Reading anwenden</strong>, um Fakten zu überprüfen</li>
+<li><strong>Vertrauenswürdige Quellen</strong> für deinen Arbeitsbereich identifizieren</li>
+</ol>
+</section>
+<section id="kurz-check-in-1-min" class="level2">
+<h2 class="anchored" data-anchor-id="kurz-check-in-1-min">Kurz-Check-in (1 Min)</h2>
+<ul>
+<li>Wie stark stimmst du zu: “Antworten von Sprachmodellen kann ich ohne weitere Prüfung verwenden”?</li>
+<li>Wie sicher fühlst du dich darin, falsche Angaben von Sprachmodellen zu erkennen? (0–10)</li>
+</ul>
+<p>Notiere deine beiden Antworten kurz (Zettel oder Notiz-App). Du brauchst sie beim Check-out. Keine Abgabe.</p>
+</section>
+<section id="ablauf" class="level2">
+<h2 class="anchored" data-anchor-id="ablauf">Ablauf</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th><i class="bi-clock-fill " style="" role="img" aria-hidden="true"></i> Zeit</th>
-<th><i class="bi-collection-fill " style="" role="img" aria-hidden="true"></i> Thema</th>
-<th><i class="bi-hourglass-split " style="" role="img" aria-hidden="true"></i> Dauer</th>
+<th>Phase</th>
+<th>Dauer</th>
+<th>Inhalt</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>09:00 - 09:10</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Einstieg</strong></td>
-<td></td>
+<td><a href="../workshop/framing/index.html">Einstieg</a></td>
+<td>30 Sek</td>
+<td>Direkt ins Experiment</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="../workshop/einstieg/index.html">Begrüssung</a></td>
-<td>10 min</td>
+<td><a href="../workshop/experiment-1/index.html">Teil 1</a></td>
+<td>8 Min</td>
+<td>Das Sprachmodell liegt falsch</td>
 </tr>
 <tr class="odd">
-<td><strong>09:10 - 09:40</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 1: KI verstehen</strong></td>
-<td></td>
+<td><a href="../workshop/experiment-2/index.html">Teil 2</a></td>
+<td>6 Min</td>
+<td>Warum Nachfragen nicht hilft</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="../01-ki-verstehen/index.html">Grundlagen: KI, Chatbots &amp; Agents</a></td>
-<td>30 min</td>
+<td><a href="../workshop/lateral-reading/index.html">Teil 3</a></td>
+<td>22 Min</td>
+<td>Lateral Reading üben</td>
 </tr>
 <tr class="odd">
-<td><strong>09:40 - 09:55</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 2: Lernen verstehen</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../02-wie-menschen-lernen/index.html">Wie Menschen lernen</a></td>
-<td>15 min</td>
-</tr>
-<tr class="odd">
-<td><strong>09:55 - 10:10</strong></td>
-<td><i class="bi-cup-hot-fill " style="" role="img" aria-hidden="true"></i> <strong>Pause</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Kaffee</td>
-<td>15 min</td>
-</tr>
-<tr class="odd">
-<td><strong>10:10 - 11:00</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 3: KI im Unterricht</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../03-lernumgebungen/index.html">KI-gestützte Lehrplanung</a></td>
-<td>50 min</td>
-</tr>
-<tr class="odd">
-<td><strong>11:00 - 11:30</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 4: KI in der Beratung</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../04-ki-in-beratung/index.html">Beratungsgespräche simulieren</a></td>
-<td>30 min</td>
-</tr>
-<tr class="odd">
-<td><strong>11:30 - 12:00</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Abschlussdiskussion &amp; Transfer</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../workshop/diskussion/index.html">KI in der Praxis: Chancen, Grenzen &amp; Ethik</a></td>
-<td>30 min</td>
+<td><a href="../workshop/entscheidungsregel/index.html">Teil 4</a></td>
+<td>3.5 Min</td>
+<td>Die Entscheidungsregel</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Gesamtdauer:</strong> 40 Minuten</p>
 </section>
-<section id="lernziele" class="level2">
-<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
-<p>Am Ende des Workshops können die Teilnehmer:</p>
-<ol type="1">
-<li><strong>Sprachmodelle verstehen</strong>: Grundlegende Funktionsweise und Grenzen von LLMs und Chatbots erklären</li>
-<li><strong>KI im Unterricht einsetzen</strong>: Sprachmodelle gezielt zur Planung, Gestaltung und Reflexion von Lehrsituationen nutzen</li>
-<li><strong>KI in der Beratung einsetzen</strong>: Beratungsgespräche mit Chatbot-Unterstützung vorbereiten und reflektieren</li>
-<li><strong>Verantwortungsvoll handeln</strong>: Chancen, Grenzen und ethische Implikationen des Sprachmodell-Einsatzes reflektieren und in der Praxis berücksichtigen</li>
-<li><strong>Transfer leisten</strong>: Konkrete Anwendungsideen für den eigenen Unterrichts- oder Beratungskontext entwickeln</li>
-</ol>
+<section id="was-du-brauchst" class="level2">
+<h2 class="anchored" data-anchor-id="was-du-brauchst">Was du brauchst</h2>
+<ul>
+<li>Laptop oder Tablet mit Internetzugang</li>
+<li>Zugang zu einem Sprachmodell (Copilot, ChatGPT, Claude, oder Gemini)</li>
+</ul>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Find all prompt callouts
@@ -611,12 +523,12 @@ document.addEventListener('DOMContentLoaded', function() {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Kopiert");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Kopiert");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -659,7 +571,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/ki-weiterbildung-ub-hafl\/");
+        var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/ki-fact-checking-rsr\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -997,7 +909,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../workshop/einstieg/index.html" class="pagination-link" aria-label="Einstieg">
+      <a href="../workshop/framing/index.html" class="pagination-link" aria-label="Einstieg">
         <span class="nav-page-text">Einstieg</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

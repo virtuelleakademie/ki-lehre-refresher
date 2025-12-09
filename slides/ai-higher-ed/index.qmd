@@ -1,0 +1,31 @@
+---
+title: "KI in der Hochschulbildung"
+subtitle: "Aktueller Stand und Perspektiven"
+author: "Dr. Andrew Ellis"
+institute: "Virtuelle Akademie, Berner Fachhochschule"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    preview-links: auto
+    footer: "KI in der Lehre: Refresher"
+    navigation-mode: vertical
+    controls: true
+    progress: true
+---
+
+## Einführung
+
+Inhalt folgt.
+
+## Aktueller Stand
+
+Inhalt folgt.
+
+## Perspektiven
+
+Inhalt folgt.
+
+## Fragen?
+
+Diskussion und Q & A

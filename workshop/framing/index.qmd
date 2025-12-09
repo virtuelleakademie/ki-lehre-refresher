@@ -1,0 +1,6 @@
+---
+title: "Einstieg"
+subtitle: "Direkt ins Experiment"
+---
+
+Öffne ein Sprachmodell deiner Wahl: ChatGPT, Copilot, Claude, oder Gemini.

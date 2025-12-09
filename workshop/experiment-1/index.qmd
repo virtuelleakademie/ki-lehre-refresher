@@ -1,0 +1,110 @@
+---
+title: "Teil 1: Das Sprachmodell liegt falsch"
+subtitle: "Gemeinsames Experiment"
+---
+
+::: {.panel-tabset}
+
+## Das Experiment
+
+<section>
+:::{.timer #EXP-1 seconds=300 starton=interaction}
+:::
+</section>
+
+::: {.experiment}
+
+1. Öffne dein Sprachmodell (ChatGPT, Copilot, Claude, oder Gemini)
+2. Kopiere den Prompt unten und füge ihn ein
+3. Sende die Anfrage ab
+4. Notiere dir die Zahl, die das Modell nennt
+5. Falls du Zeit hast: öffne einen **neuen Chat** und wiederhole Schritte 2-4 (mindestens zweimal)
+
+:::
+
+::: {.prompt}
+Wie hoch ist der Anteil der Studierenden an Schweizer Universitäten, die ihr Bachelorstudium in der Regelstudienzeit abschliessen?
+:::
+
+## Antworten teilen
+
+::: {.group}
+
+- Teile deine Antwort mit der Gruppe
+- Vergleicht die Zahlen: Sind sie gleich oder unterschiedlich?
+
+:::
+
+## Auswertung
+
+::: {.key-point}
+
+**Die zentrale Erkenntnis:** Weder Variabilität noch Konsistenz sagen dir, ob eine Antwort stimmt. Das kannst du nur durch externe Verifikation herausfinden.
+
+:::
+
+::: {.demonstration}
+
+**Wir prüfen jetzt gemeinsam:**
+
+1. Neuen Browser-Tab öffnen
+2. Suchen: `BFS Studiendauer Bachelor Schweiz`
+3. Zur BFS-Seite (bfs.admin.ch) navigieren
+4. Die Behauptung überprüfen: Kannst du die genannten Zahlen (z.B. "25-30%") verifizieren?
+
+:::
+
+<details>
+<summary>Hintergrund: Warum variieren die Antworten?</summary>
+
+Sprachmodelle sind stochastische Textgeneratoren: Jede Antwort wird neu "gewürfelt". Wenn verschiedene Durchläufe sehr unterschiedliche Zahlen liefern, zeigt das: Das Modell hat wenig Anhaltspunkte zu diesem Thema.
+
+Aber Vorsicht: Wenn das Modell immer dieselbe Zahl nennt, heisst das nicht, dass sie stimmt. Es heisst nur, dass das Modell stark darauf festgelegt ist, diese Antwort zu geben. **Konsistenz ist kein Beweis für Korrektheit.**
+
+</details>
+
+<details>
+<summary>Hintergrund: Warum fühlt sich das so vertrauenswürdig an?</summary>
+
+Chatbots präsentieren Informationen in einem freundlichen, sicheren Ton, der menschliche Experten imitiert. Im Gespräch mit einem Menschen ist Flüssigkeit und Selbstsicherheit oft ein Signal für Kompetenz. Bei Sprachmodellen funktioniert diese Heuristik nicht: Sie klingen gleich überzeugend, ob die Antwort stimmt oder nicht.
+
+Das kann dazu führen, dass wir Prüfschritte überspringen, die wir bei anderen Quellen automatisch machen würden.
+
+</details>
+
+## Beobachtung
+
+::: {.reflect}
+
+- Wie stark variierten deine Antworten bei mehreren Durchläufen?
+- Konntest du die Zahlen des Sprachmodells auf BFS verifizieren?
+- Klang die Antwort vorsichtig oder sehr sicher?
+
+:::
+
+::: {.key-point}
+
+**Vier wichtige Erkenntnisse:**
+
+1. **Variabilität zeigt Unsicherheit, aber Konsistenz beweist nichts.** Wenn das Modell bei jedem Durchlauf andere Zahlen nennt, ist es unsicher. Aber wenn es immer dieselbe Zahl nennt, heisst das nur, dass es stark darauf festgelegt ist: nicht, dass die Zahl stimmt.
+
+2. **Spezifität täuscht Zuverlässigkeit vor.** Genaue Zahlen, Spannen oder Details klingen vertrauenswürdig, sind aber kein Beweis für Richtigkeit.
+
+3. **Unverifizierbar = unbrauchbar.** Wenn du eine Behauptung nicht mit einer verlässlichen Quelle belegen kannst, darfst du sie nicht in formellen Dokumenten verwenden.
+
+4. **Nachfragen hilft nicht.** Das Modell kann seine eigenen Aussagen nicht überprüfen (das kommt in Teil 2).
+
+**Vertrauen ist gut, Verifikation ist besser.**
+
+:::
+
+::: {.warning}
+### Vorsicht vor scheinbar guten Antworten
+
+Auch qualifizierte, vorsichtig formulierte Antworten brauchen externe Verifikation. Du kannst nicht an der Formulierung erkennen, ob eine Antwort richtig ist.
+
+**Das einzige verlässliche Kriterium: Kannst du die Behauptung mit einer vertrauenswürdigen Quelle belegen?**
+
+:::
+
+:::

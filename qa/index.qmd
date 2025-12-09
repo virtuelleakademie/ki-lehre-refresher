@@ -1,0 +1,18 @@
+---
+title: "Q & A"
+sidebar: qa
+---
+
+## Fragen und Antworten
+
+Hier werden häufig gestellte Fragen und Antworten aus der Präsentation gesammelt.
+
+## Weiterführende Ressourcen
+
+### Literatur
+
+- Inhalt folgt
+
+### Links
+
+- [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)

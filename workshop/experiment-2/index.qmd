@@ -1,0 +1,104 @@
+---
+title: "Teil 2: Warum Nachfragen nicht hilft"
+subtitle: "Selbstprüfung und Annahmen testen"
+---
+
+::: {.panel-tabset}
+
+## Experiment A
+
+<section>
+:::{.timer #EXP-2A seconds=120 starton=interaction}
+:::
+</section>
+
+::: {.experiment}
+
+1. Bleib im **selben Chat** wie vorher
+2. Kopiere den Prompt unten und füge ihn ein
+3. Beobachte, was das Modell macht
+
+:::
+
+::: {.prompt}
+Bist du sicher? Kannst du deine Antwort überprüfen?
+:::
+
+::: {.reflect}
+
+Beobachte die Antwort: Was macht das Modell? Ändert es seine Zahlen? Wird es vorsichtiger? Bleibt es bei seiner Aussage?
+
+:::
+
+<details>
+<summary>Hintergrund: Warum ist "Bist du sicher?" ein Kategorienfehler?</summary>
+
+Ein Sprachmodell kann nicht "prüfen", ob seine Antwort stimmt. Es kann nur weiteren Text generieren, beeinflusst von dem, was bereits im Chat steht.
+
+Das Modell hat zwar Zugriff auf seine vorherige Antwort (sie steht im Kontext), aber das ist nicht dasselbe wie zu wissen, ob diese Antwort wahr ist. Es hat keinen Zugang zu einer externen Realität, mit der es seine Aussagen vergleichen könnte.
+
+"Bist du sicher?" fragt nach Metakognition. Du bekommst aber nur mehr Textgenerierung.
+
+</details>
+
+## Experiment B
+
+<section>
+:::{.timer #EXP-2B seconds=120 starton=interaction}
+:::
+</section>
+
+::: {.experiment}
+
+1. Starte einen **neuen Chat**
+2. Kopiere den Prompt unten und füge ihn ein
+3. Beobachte: Bestätigt das Modell deine eingebaute Annahme?
+
+:::
+
+::: {.prompt}
+Ich habe gelesen dass etwa 60% der Studierenden in Regelzeit abschliessen. Stimmt das ungefähr?
+:::
+
+::: {.reflect}
+
+Beobachte: Wie geht das Modell mit deiner (falschen) Annahme um? Korrigiert es dich klar? Oder orientiert es sich an deiner Zahl?
+
+:::
+
+<details>
+<summary>Hintergrund: Subtile Beeinflussung</summary>
+
+Moderne Sprachmodelle stimmen dir nicht mehr einfach zu. Die Beeinflussung ist subtiler:
+
+- Das Modell nennt vielleicht eine Spanne, die deine Zahl einschliesst
+- Es sagt vielleicht "ungefähr richtig" mit kleinen Einschränkungen
+- Es verwendet deine Zahl vielleicht als Ankerpunkt
+
+Der Effekt: Deine Frage formt die Antwort mit. Das ist kein Fehler des Modells, sondern eine Eigenschaft von Textgenerierung, die auf dem Kontext basiert.
+
+</details>
+
+## Auswertung
+
+::: {.group}
+
+Teile deine Beobachtungen:
+
+- Was hat das Modell bei "Bist du sicher?" gemacht?
+- Hat es deine Annahme bei der zweiten Frage bestätigt?
+
+:::
+
+::: {.key-point}
+
+Nachfragen beim Sprachmodell ist keine echte Prüfung.
+
+- Es kann sich **nicht selbst verifizieren**: es generiert nur neue Antworten
+- Es **bestätigt tendenziell deine Annahmen**: deine Frage beeinflusst die Antwort
+
+Beide Wege sind blockiert. Bleibt: **Externe Quellen.**
+
+:::
+
+:::

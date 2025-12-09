@@ -1,0 +1,164 @@
+---
+title: "Vertical vs. Lateral Reading"
+subtitle: "Warum wir die Quelle verlassen müssen"
+---
+
+## Zwei Arten zu lesen
+
+Wenn wir eine Information prüfen wollen, gibt es zwei grundsätzlich verschiedene Ansätze:
+
+| Vertical Reading | Lateral Reading |
+|------------------|-----------------|
+| Innerhalb der Quelle bleiben | Die Quelle verlassen |
+| "About"-Seite lesen | Suchen, was andere über die Quelle sagen |
+| Design und Aufmachung bewerten | Unabhängige Einschätzungen finden |
+| Quellenangaben der Quelle prüfen | Quellenangaben extern verifizieren |
+
+## Vertical Reading: Das Problem
+
+Bei **Vertical Reading** bleiben wir innerhalb der Quelle und versuchen, ihre Glaubwürdigkeit anhand dessen zu beurteilen, was sie selbst über sich sagt.
+
+### Warum das nicht funktioniert
+
+::: {.warning}
+### Quellen kontrollieren ihre Selbstdarstellung
+
+- Eine "About"-Seite wird von der Organisation selbst geschrieben
+- Würdest du etwas Schlechtes über dich selbst schreiben?
+- Jede Quelle hat Gründe, sich vertrauenswürdig darzustellen
+- Selbst unseriöse Quellen können professionell aussehen
+:::
+
+### Beispiele für Vertical Reading
+
+- Die "About"-Seite einer Website lesen
+- Prüfen, ob die Seite professionell gestaltet ist
+- Schauen, ob Quellenangaben genannt werden
+- Die Qualifikationen lesen, die jemand über sich selbst angibt
+
+**Das Problem:** All diese Informationen werden von der Quelle selbst kontrolliert.
+
+## Lateral Reading: Die Lösung
+
+Bei **Lateral Reading** verlassen wir die Quelle und suchen extern nach Informationen über sie.
+
+### Der Prozess
+
+1. **Neuen Tab öffnen**: Die Quelle verlassen.
+2. **Nach der Quelle suchen**: Nicht nach dem Inhalt, sondern nach der Organisation oder Person dahinter.
+3. **Unabhängige Einschätzungen finden**: Was sagen andere über diese Quelle?
+4. **Mehrere Perspektiven prüfen**: Nicht nur eine externe Quelle.
+
+::: {.pro-tip}
+### Wie erkenne ich unabhängige Quellen?
+
+Das ist selbst eine Form von Lateral Reading: Wenn du unsicher bist, ob eine externe Quelle unabhängig ist, recherchiere auch über sie.
+:::
+
+### Wonach du suchst
+
+| Frage | Warum wichtig |
+|-------|---------------|
+| Wer steckt hinter der Information? | Identität und Hintergrund der Quelle |
+| Welche Perspektive oder Motivation hat die Quelle? | Mögliche Interessenkonflikte |
+| Welche Expertise hat die Quelle? | Fachliche Kompetenz zum Thema |
+| Was sagen unabhängige Dritte? | Externe Einschätzung der Glaubwürdigkeit |
+
+## Bei Sprachmodellen: Eine spezielle Situation
+
+Sprachmodelle sind ein Sonderfall. Sie haben keine "About"-Seite und keine eigene Motivation. Aber das Prinzip von Vertical vs. Lateral Reading gilt trotzdem:
+
+### Vertical Reading bei Sprachmodellen
+
+Bei Sprachmodellen gibt es zwei Arten von Vertical Reading:
+
+**1. Den generierten Text analysieren**
+
+Du könntest versuchen, die Antwort anhand interner Merkmale zu bewerten:
+
+- Ist der Text in sich konsistent?
+- Klingt er selbstsicher oder vorsichtig?
+- Werden Quellen genannt?
+- Wirkt die Argumentation schlüssig?
+
+Das ist dasselbe Problem wie bei klassischen Quellen: Diese Merkmale sagen nichts über die Richtigkeit aus. Ein Text kann konsistent, selbstsicher, mit Quellenangaben und schlüssiger Argumentation sein und trotzdem falsch.
+
+**2. Das Modell zur Selbstprüfung auffordern**
+
+Fragen wie "Bist du sicher?" oder "Kannst du das überprüfen?" sind ein **Kategorienfehler**. Sie setzen voraus, dass das Modell seine Aussagen mit der Realität vergleichen kann. Das kann es nicht.
+
+Was passiert, wenn du nachfragst:
+
+- Das Modell generiert neuen Text, beeinflusst von der bisherigen Konversation
+- Es kann vorsichtiger klingen, Zahlen anpassen, oder bei seiner Aussage bleiben
+- Keines dieser Verhaltensweisen sagt dir, ob die ursprüngliche Antwort stimmt
+
+**Fazit:** Vertical Reading bei Sprachmodellen ist entweder unzuverlässig (Textanalyse) oder ein Kategorienfehler (Selbstprüfung). Beides ersetzt keine externe Verifikation.
+
+### Lateral Reading bei Sprachmodellen
+
+Das ist, was wir in Teil 3 des Workshops geübt haben:
+
+- Das Sprachmodell verlassen
+- Extern nach der Information suchen
+- Primärquellen finden
+- Selbst prüfen, ob die Quelle das sagt, was das Sprachmodell behauptet
+
+::: {.warning}
+### Was ist mit Sprachmodellen, die das Internet durchsuchen?
+
+Viele Chatbots können Websuchen durchführen und Quellen zitieren. Das verbessert die Situation, aber:
+
+- Die zitierten Quellen können selbst unzuverlässig sein
+- Links können auf Seiten verweisen, die etwas anderes sagen als behauptet
+- Die Zusammenfassung kann die Quelle falsch wiedergeben
+
+**Auch hier gilt:** Klicke auf die Quellen und prüfe selbst.
+:::
+
+**Fazit:** Bei Sprachmodellen gibt es kein Vertical Reading, das funktioniert. Es gibt nur Lateral Reading: die Aussage extern verifizieren.
+
+## Wann eine Quelle vertrauenswürdig ist
+
+Wenn du bei deiner Recherche auf eine Quelle stösst, prüfe:
+
+### Checkliste für Quellenautorität
+
+- [ ] **Expertise:** Sind die Autoren Fachleute auf dem Gebiet?
+- [ ] **Redaktionsprozesse:** Gibt es Editoren, Faktenprüfer, Peer Review?
+- [ ] **Korrekturkultur:** Gibt die Quelle Fehler zu und korrigiert sie?
+- [ ] **Keine Interessenkonflikte:** Hat die Quelle einen Grund, die Information zu verzerren?
+- [ ] **Unabhängige Bestätigung:** Sagen andere verlässliche Quellen dasselbe?
+
+### Hierarchie der Quellen
+
+| Vertrauenswürdigkeit | Quellentyp | Einschränkungen |
+|---------------------|------------|-----------------|
+| Oft hoch | Primärquellen (Originaldaten, Gesetze, offizielle Statistiken) | Können unvollständig oder selektiv sein |
+| Oft hoch | Peer-reviewed wissenschaftliche Publikationen | Qualität variiert nach Journal und Fachgebiet |
+| Mittel | Qualitätsjournalismus mit Redaktionsprozessen | Aktualitätsdruck kann zu Fehlern führen |
+| Mittel | Wikipedia (als Einstieg) | Qualität variiert nach Thema |
+| Niedrig | Blogs, Foren, Social Media | Einzelne Blogs können wertvoll sein |
+| Sehr niedrig | Anonyme Quellen, KI-generierte Zusammenfassungen | |
+
+## Zusammenfassung
+
+::: {.key-point}
+### Die Kernregel
+
+**Vertraue nie darauf, was eine Quelle über sich selbst sagt.**
+
+Verlasse die Quelle und prüfe extern:
+
+1. Wer steckt dahinter?
+2. Welche Motivation könnte die Quelle haben?
+3. Was sagen unabhängige Dritte?
+4. Steht in der Quelle wirklich das, was behauptet wird?
+:::
+
+## Weiterführend
+
+Diese Konzepte stammen aus der Forschung zu **Civic Online Reasoning** der Stanford History Education Group. Mehr dazu:
+
+- [Stanford History Education Group: Civic Online Reasoning](https://cor.stanford.edu/)
+- [SIFT-Methode von Mike Caulfield](https://hapgood.us/2019/06/19/sift-the-four-moves/)
