@@ -61,13 +61,6 @@
     "text": "Die Bastani-Studie\nRandomisierte kontrollierte Studie (Bastani u. a. 2024)\n~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst\n127% mit “GPT Tutor”\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”"
   },
   {
-    "objectID": "slides/ai-higher-ed-short/index.html#neurologische-evidenz",
-    "href": "slides/ai-higher-ed-short/index.html#neurologische-evidenz",
-    "title": "KI in der Hochschulbildung",
-    "section": "Neurologische Evidenz",
-    "text": "Neurologische Evidenz\nMIT Media Lab (Kosmyna u. a. 2025)\nEEG während Essayschreiben:\n\n\nNur Gehirn:\nStärkste neuronale Vernetzung\n\nMit Suchmaschine:\nMittlere Vernetzung\n\nMit LLM:\nSchwächste Vernetzung\n\n\n\n\n\n\n\n\n“Cognitive Debt”\n\n\nLLM-Nutzer zeigten die reduzierten Muster auch nachdem KI entfernt wurde.\nKognitive Schulden akkumulieren sich."
-  },
-  {
     "objectID": "slides/ai-higher-ed-short/index.html#das-paradox-in-einem-satz",
     "href": "slides/ai-higher-ed-short/index.html#das-paradox-in-einem-satz",
     "title": "KI in der Hochschulbildung",
@@ -338,13 +331,6 @@
     "title": "KI in der Hochschulbildung",
     "section": "Die Bastani-Studie: Mathematik",
     "text": "Die Bastani-Studie: Mathematik\nRandomisierte kontrollierte Studie (Bastani u. a. 2024)\n\n~1000 türkische Gymnasiasten\nGPT-4 Zugang während des Übens\n\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst\n127% mit “GPT Tutor”\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”"
-  },
-  {
-    "objectID": "slides/ai-higher-ed/index.html#neurologische-evidenz-cognitive-debt",
-    "href": "slides/ai-higher-ed/index.html#neurologische-evidenz-cognitive-debt",
-    "title": "KI in der Hochschulbildung",
-    "section": "Neurologische Evidenz: “Cognitive Debt”",
-    "text": "Neurologische Evidenz: “Cognitive Debt”\nMIT Media Lab Studie (Kosmyna u. a. 2025)\nEEG während Essayschreiben unter drei Bedingungen:\n\n\n\nNur Gehirn:\nStärkste neuronale Vernetzung\n\nMit Suchmaschine:\nMittlere Vernetzung\n\nMit LLM:\nSchwächste Vernetzung\n\n\n\n\n\n\n\n\n\nKritisch\n\n\nLLM-Nutzer zeigten die reduzierten Muster auch nachdem KI entfernt wurde.\n“Cognitive Debt”: Kognitive Schulden akkumulieren sich."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#desirable-difficulties-warum-anstrengung-nötig-ist",
