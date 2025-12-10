@@ -290,9 +290,7 @@ Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDel
 
 <br>
 
-> "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
->
-> Bastani et al. (2025)
+Studierende, die sich beim Üben auf GPT-4 verliessen, schnitten ohne KI schlechter ab. [@bastaniGenerativeAIGuardrails2025]
 
 . . .
 
@@ -308,7 +306,9 @@ Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDel
 <br>
 
 ::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
-{{< fa lightbulb >}} **Kernpunkt:** Die **Art der Nutzung** macht den Unterschied. KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor.
+{{< fa lightbulb >}} **Kernpunkt:** Die **Art der Nutzung** macht den Unterschied. 
+
+KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor.
 :::
 
 ## Was Experten sehen
@@ -326,21 +326,21 @@ Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDel
 
 <br>
 
-**Novize:**
+**Novize:** sieht Einzelteile
 
-"64 Felder, 32 Figuren"
+"64 Felder, 32 Figuren, viele Möglichkeiten"
 
 . . .
 
-**Experte:**
+**Experte:** sieht Muster und Bedeutung
 
-"Königsangriff, offene Linie, Schwäche auf f7"
+"Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7"
 
 . . .
 
 <br>
 
-Experten haben eine andere **kognitive Architektur** [@grootThoughtChoiceChess1978; @chasePerceptionChess1973].
+Experten speichern Wissen in **Chunks**: vernetzte Wissensstrukturen, die automatisch abgerufen werden [@grootThoughtChoiceChess1978; @chasePerceptionChess1973].
 
 :::
 :::
@@ -352,10 +352,60 @@ Experten haben eine andere **kognitive Architektur** [@grootThoughtChoiceChess19
 ```{ojs}
 //| echo: false
 
-// Hidden radio input (drives the state)
+// =============================================================================
+// Configuration: All parameters in one place for easy maintenance
+// =============================================================================
+config = ({
+  // Color palette
+  colors: {
+    highSupport: "#A3195B",
+    lowSupport: "#666666",
+    neutral: "#333",
+    background: "#f5f5f5"
+  },
+  // Line equations: y = intercept + slope * x
+  // Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x
+  lines: {
+    high: { intercept: 65, slope: -0.4 },
+    low: { intercept: 25, slope: 0.4 }
+  },
+  // Input options
+  steps: [0, 20, 40, 60, 80, 100],
+  defaultValue: 20,
+  // Plot dimensions
+  plot: {
+    width: 900,
+    height: 480,
+    margins: { left: 70, bottom: 60, top: 30, right: 40 }
+  },
+  // Labels
+  labels: {
+    highSupport: "Hohe Unterstützung",
+    lowSupport: "Niedrige Unterstützung",
+    highExamples: ["📖 Worked Examples", "🧭 Direkte Instruktion"],
+    lowExamples: ["🧩 Problembasiertes Lernen", "🔍 Eigene Lösungswege"]
+  }
+})
+
+// =============================================================================
+// Derived values: Computed from config (no magic numbers)
+// =============================================================================
+
+// Crossover point: solve for x where both lines intersect
+crossoverPoint = {
+  const { high, low } = config.lines;
+  return (high.intercept - low.intercept) / (low.slope - high.slope);
+}
+
+// Helper function to calculate y-value on a line
+calcY = (line, x) => line.intercept + line.slope * x
+
+// =============================================================================
+// State: Single source of truth for user input (hidden, controlled by buttons)
+// =============================================================================
 viewof vorwissen = {
-  const input = Inputs.radio([0, 20, 40, 60, 80, 100], {
-    value: 20,
+  const input = Inputs.radio(config.steps, {
+    value: config.defaultValue,
     label: "",
     format: x => x + "%"
   });
@@ -363,109 +413,161 @@ viewof vorwissen = {
   return input;
 }
 
-// Calculate learning effects at current position
-// Lines cross at x=50, y=45: highSupport = 65 - 0.4x, lowSupport = 25 + 0.4x
-// At x=50: both = 45
-highSupport = 65 - 0.4 * vorwissen
-lowSupport = 25 + 0.4 * vorwissen
-crossoverPoint = 50
-isHighBetter = vorwissen <= crossoverPoint
-optimal = isHighBetter ? "Hohe Unterstützung" : "Niedrige Unterstützung"
-optimalColor = isHighBetter ? "#A3195B" : "#666666"
-// The y-value for the optimal dot
-optimalY = isHighBetter ? highSupport : lowSupport
+// =============================================================================
+// Reactive calculations based on current state
+// =============================================================================
+currentState = {
+  const x = vorwissen ?? config.defaultValue;
+  const highY = calcY(config.lines.high, x);
+  const lowY = calcY(config.lines.low, x);
+  const isHighBetter = x <= crossoverPoint;
 
-// Create the plot
-expertisePlot = Plot.plot({
-  width: 900,
-  height: 480,
-  marginLeft: 70,
-  marginBottom: 60,
-  marginTop: 30,
-  marginRight: 40,
-  style: { fontSize: "16px" },
-  x: {
-    domain: [0, 100],
-    label: "Vorwissen →",
-    labelOffset: 45,
-    ticks: [0, 50, 100],
-    tickFormat: d => d === 0 ? "Niedrig" : d === 50 ? "Mittel" : "Hoch"
-  },
-  y: {
-    domain: [0, 100],
-    label: "↑ Lerneffekt",
-    labelOffset: 50,
-    grid: true
-  },
-  marks: [
-    // Static lines (cross at x=50, y=45)
-    Plot.line([{x: 0, y: 65}, {x: 100, y: 25}], {x: "x", y: "y", stroke: "#A3195B", strokeWidth: 3}),
-    Plot.line([{x: 0, y: 25}, {x: 100, y: 65}], {x: "x", y: "y", stroke: "#666666", strokeWidth: 3}),
-    // Vertical indicator
-    Plot.ruleX([vorwissen], {stroke: "#333", strokeWidth: 1.5, strokeDasharray: "8,5"}),
-    // Suboptimal dot (smaller, faded)
-    Plot.dot([{x: vorwissen, y: isHighBetter ? lowSupport : highSupport}], {
-      x: "x", y: "y",
-      fill: isHighBetter ? "#666666" : "#A3195B",
-      r: 8,
-      opacity: 0.4
-    }),
-    // Optimal dot (larger, prominent)
-    Plot.dot([{x: vorwissen, y: optimalY}], {
-      x: "x", y: "y",
-      fill: optimalColor,
-      r: 14,
-      stroke: "white",
-      strokeWidth: 3
-    }),
-    // Icons/labels with examples (near line starts)
-    Plot.text([{x: 15, y: 72}], {x: "x", y: "y", text: ["📖 Worked Examples"], fill: "#A3195B", fontSize: 13}),
-    Plot.text([{x: 15, y: 66}], {x: "x", y: "y", text: ["🧭 Direkte Instruktion"], fill: "#A3195B", fontSize: 13}),
-    Plot.text([{x: 85, y: 72}], {x: "x", y: "y", text: ["🧩 Problembasiertes Lernen"], fill: "#666666", fontSize: 13}),
-    Plot.text([{x: 85, y: 66}], {x: "x", y: "y", text: ["🔍 Eigene Lösungswege"], fill: "#666666", fontSize: 13}),
-    // Line labels (near line ends)
-    Plot.text([{x: 88, y: 20}], {x: "x", y: "y", text: ["Hohe Unterstützung"], fill: "#A3195B", fontSize: 15, fontWeight: "bold"}),
-    Plot.text([{x: 12, y: 20}], {x: "x", y: "y", text: ["Niedrige Unterstützung"], fill: "#666666", fontSize: 15, fontWeight: "bold"})
-  ]
-})
+  return {
+    x,
+    highY,
+    lowY,
+    isHighBetter,
+    optimalY: isHighBetter ? highY : lowY,
+    suboptimalY: isHighBetter ? lowY : highY,
+    optimalLabel: isHighBetter ? config.labels.highSupport : config.labels.lowSupport,
+    optimalColor: isHighBetter ? config.colors.highSupport : config.colors.lowSupport,
+    suboptimalColor: isHighBetter ? config.colors.lowSupport : config.colors.highSupport
+  };
+}
 
-// Styled segmented control using Inputs.button for each value
+// =============================================================================
+// Plot: Visualization with all marks
+// =============================================================================
+expertisePlot = {
+  const { colors, lines, plot, labels } = config;
+  const { x, highY, lowY, isHighBetter, optimalY, suboptimalY, optimalColor, suboptimalColor } = currentState;
+
+  // Generate line data points
+  const highLineData = [{x: 0, y: calcY(lines.high, 0)}, {x: 100, y: calcY(lines.high, 100)}];
+  const lowLineData = [{x: 0, y: calcY(lines.low, 0)}, {x: 100, y: calcY(lines.low, 100)}];
+
+  // Label positions (relative to line endpoints)
+  const labelOffsetY = 7;
+  const exampleBaseY = calcY(lines.high, 0) + labelOffsetY;
+
+  return Plot.plot({
+    width: plot.width,
+    height: plot.height,
+    marginLeft: plot.margins.left,
+    marginBottom: plot.margins.bottom,
+    marginTop: plot.margins.top,
+    marginRight: plot.margins.right,
+    style: { fontSize: "16px" },
+    x: {
+      domain: [0, 100],
+      label: "Vorwissen →",
+      labelOffset: 45,
+      ticks: [0, 50, 100],
+      tickFormat: d => d === 0 ? "Niedrig" : d === 50 ? "Mittel" : "Hoch"
+    },
+    y: {
+      domain: [0, 100],
+      label: "↑ Lerneffekt",
+      labelOffset: 50,
+      grid: true
+    },
+    marks: [
+      // Support lines
+      Plot.line(highLineData, {x: "x", y: "y", stroke: colors.highSupport, strokeWidth: 3}),
+      Plot.line(lowLineData, {x: "x", y: "y", stroke: colors.lowSupport, strokeWidth: 3}),
+
+      // Vertical position indicator
+      Plot.ruleX([x], {stroke: colors.neutral, strokeWidth: 1.5, strokeDasharray: "8,5"}),
+
+      // Suboptimal dot (smaller, faded)
+      Plot.dot([{x, y: suboptimalY}], {
+        x: "x", y: "y",
+        fill: suboptimalColor,
+        r: 8,
+        opacity: 0.4
+      }),
+
+      // Optimal dot (larger, prominent with white stroke)
+      Plot.dot([{x, y: optimalY}], {
+        x: "x", y: "y",
+        fill: optimalColor,
+        r: 14,
+        stroke: "white",
+        strokeWidth: 3
+      }),
+
+      // High support examples (left side, near line start)
+      Plot.text([{x: 15, y: exampleBaseY}], {
+        x: "x", y: "y", text: [labels.highExamples[0]], fill: colors.highSupport, fontSize: 13
+      }),
+      Plot.text([{x: 15, y: exampleBaseY - 6}], {
+        x: "x", y: "y", text: [labels.highExamples[1]], fill: colors.highSupport, fontSize: 13
+      }),
+
+      // Low support examples (right side)
+      Plot.text([{x: 85, y: exampleBaseY}], {
+        x: "x", y: "y", text: [labels.lowExamples[0]], fill: colors.lowSupport, fontSize: 13
+      }),
+      Plot.text([{x: 85, y: exampleBaseY - 6}], {
+        x: "x", y: "y", text: [labels.lowExamples[1]], fill: colors.lowSupport, fontSize: 13
+      }),
+
+      // Line labels (near line ends)
+      Plot.text([{x: 88, y: calcY(lines.high, 100) - 5}], {
+        x: "x", y: "y", text: [labels.highSupport], fill: colors.highSupport, fontSize: 15, fontWeight: "bold"
+      }),
+      Plot.text([{x: 12, y: calcY(lines.low, 0) - 5}], {
+        x: "x", y: "y", text: [labels.lowSupport], fill: colors.lowSupport, fontSize: 15, fontWeight: "bold"
+      })
+    ]
+  });
+}
+
+// =============================================================================
+// Button Group: Custom styled segmented control
+// =============================================================================
 buttonGroup = {
-  const values = [0, 20, 40, 60, 80, 100];
-  const buttons = values.map(v => {
-    const isSelected = vorwissen === v;
-    const bgColor = isSelected ? (v <= 50 ? '#A3195B' : '#666666') : '#f5f5f5';
-    const textColor = isSelected ? 'white' : '#333';
-    const fontWeight = isSelected ? 'bold' : 'normal';
-    const btn = html`<button style="
-      padding: 12px 18px;
-      border: none;
-      background: ${bgColor};
-      color: ${textColor};
-      font-size: 1em;
-      font-weight: ${fontWeight};
-      cursor: pointer;
-      border-right: 1px solid #ddd;
-    ">${v}%</button>`;
+  const { x, optimalColor } = currentState;
+  const { colors, steps } = config;
+
+  const buttonStyle = (isSelected, selectColor) => `
+    padding: 12px 18px;
+    border: none;
+    background: ${isSelected ? selectColor : colors.background};
+    color: ${isSelected ? 'white' : '#333'};
+    font-size: 1em;
+    font-weight: ${isSelected ? 'bold' : 'normal'};
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    transition: background 0.15s ease;
+  `;
+
+  const container = html`<div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"></div>`;
+
+  steps.forEach(v => {
+    const isSelected = x === v;
+    const selectColor = v <= crossoverPoint ? colors.highSupport : colors.lowSupport;
+    const btn = html`<button style="${buttonStyle(isSelected, selectColor)}">${v}%</button>`;
     btn.onclick = () => {
       viewof vorwissen.value = v;
-      viewof vorwissen.dispatchEvent(new Event('input'));
+      viewof vorwissen.dispatchEvent(new Event('input', {bubbles: true}));
     };
-    return btn;
+    container.appendChild(btn);
   });
-  const container = html`<div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"></div>`;
-  buttons.forEach(b => container.appendChild(b));
+
   return container;
 }
 
-// Layout: plot on left, controls on right
+// =============================================================================
+// Layout: Compose all elements
+// =============================================================================
 html`<div style="display: flex; align-items: center; gap: 40px;">
   <div>${expertisePlot}</div>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;">
     <div style="font-weight: bold; font-size: 1.1em;">Vorwissen des Lernenden</div>
     <div>${buttonGroup}</div>
-    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${optimalColor}22; border-radius: 8px; border-left: 4px solid ${optimalColor};">
-      <span style="color: ${optimalColor}; font-weight: bold;">${optimal}</span><br>
+    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 8px; border-left: 4px solid ${currentState.optimalColor};">
+      <span style="color: ${currentState.optimalColor}; font-weight: bold;">${currentState.optimalLabel}</span><br>
       <span style="font-size: 0.8em; color: #666;">ist effektiver</span>
     </div>
   </div>
