@@ -20,7 +20,7 @@ Das ist das **Produktivitäts-Lern-Paradox**: KI verbessert die Aufgabenleistung
 
 Dieser Leitfaden bietet einen Rahmen, um diese Frage zu beantworten. Die zentrale These:
 
-> **KI-Werkzeuge sind für Experten konzipiert. Sie machen Experten produktiver, während Lernende oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI eliminiert.**
+> **KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht. Ohne durchdachte Integration wird KI das Lernen eher beeinträchtigen als fördern.**
 
 ::: {.pro-tip collapse="true"}
 ## Praktische Empfehlung: Vor dem Weiterlesen
@@ -139,6 +139,8 @@ Wenn KI die "langweiligen" Übungsphasen übernimmt, findet keine Prozeduralisie
 2. **Übungszeit einplanen**: Explizite Übungszeit, in der KI nicht erlaubt ist
 3. **Fortschritt monitoren**: Regelmässig prüfen, ob Studierende Aufgaben auch ohne KI bewältigen
 4. **Sequenzierung beachten**: Erst Grundlagen festigen, dann KI als Produktivitätswerkzeug einführen
+
+**Realitätscheck:** Vollständige Kontrolle über KI-Nutzung ist kaum möglich. Fokus auf Prozessbewertung und Reflexion kann wirksamer sein als strikte Verbote.
 :::
 
 ### Cognitive Load Theory: Das Nadelöhr des Lernens
@@ -407,6 +409,21 @@ Generative KI kann fast **jede** kognitive Aufgabe übernehmen: Schreiben, Argum
 
 **Aber:** Die historischen Bedenken hatten oft Berechtigung. GPS *beeinflusst* tatsächlich räumliche Kognition. Taschenrechner *veränderten* den Mathematikunterricht. Die Bedenken waren nicht blosse Panikmache.
 
+### Der EdTech-Hype-Zyklus
+
+Bildungstechnologien folgen einem wiederkehrenden Muster [@reichFailureDisruptWhy2020]: Überschwängliche Versprechen, gefolgt von bescheidener Adoption, die bestehende Praktiken eher ergänzt als ersetzt.
+
+- **Radio** sollte die besten Vorlesungen in jedes Klassenzimmer bringen
+- **Fernsehen** sollte Lernen revolutionieren
+- **Computer** sollten Unterricht personalisieren
+- **MOOCs** sollten Elite-Bildung demokratisieren
+
+Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Versprechen.
+
+**Das MOOC-Beispiel ist besonders lehrreich:** MOOCs versprachen Demokratisierung, erreichten aber primär Lernende, die bereits Abschlüsse hatten und berufliche Weiterbildung suchten. Der Erfolg erforderte genau die Selbstregulation und das Vorwissen, das privilegierte Lernende bereits besassen. Die "Demokratisierung" verstärkte bestehende Ungleichheiten.
+
+**Was macht dieses Mal anders?** KIs Breite ist beispiellos. Aber dieselben strukturellen Kräfte könnten wirken: die Komplexität des Lehrens, die Einpassung neuer Werkzeuge in bestehende Praktiken, die Kluft zwischen Pilotprojekten und flächendeckender Umsetzung.
+
 ### "Das haben sie über das Schreiben auch gesagt"
 
 Ein häufiger Einwand lautet: Sokrates warnte vor der Schrift, und wir haben überlebt. Jede neue Technologie löst Panik aus.
@@ -453,6 +470,8 @@ Um produktive Anstrengung zu erhalten:
 4. **Spacing und Interleaving nutzen**: Verteiltes, gemischtes Üben
 5. **Generierung fordern**: Eigene Entwürfe vor KI-Unterstützung verlangen
 6. **Reflexion einbauen**: Studierende über ihren Lernprozess nachdenken lassen
+
+**Realitätscheck:** Diese Empfehlungen erfordern Zeit und Planung. Nicht jede Lehrveranstaltung kann alles umsetzen. Beginne mit einem oder zwei Punkten, die zu deinem Kontext passen.
 :::
 
 ## Exkurs: Sokratisches Fragen in KI-Tutoren {#sokrates}
@@ -544,9 +563,9 @@ Bei der Evaluation von KI-Tutoring-Tools:
 
 Was bedeutet das alles? Die zentrale These lässt sich nun präzisieren:
 
-> **Was KI für Produktivität nützlich macht, macht sie für Lernen schädlich: Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.**
+> **Was KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen: Sofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.**
 
-Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Bessere KI wird das Problem nicht lösen, weil das Problem in der Natur des Lernens liegt.
+Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Das Problem liegt in der Natur des Lernens selbst. Die Frage ist daher nicht *ob*, sondern *wie* KI eingesetzt wird.
 
 **Einschränkung:** Die direkte Evidenz für KI ist noch begrenzt. Die theoretische Argumentation ist stark, aber Langzeitstudien fehlen.
 
@@ -591,6 +610,22 @@ Ein besonderes Anliegen betrifft die kognitive Entwicklung:
 
 Die aktuelle Studierendengeneration könnte die erste sein, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft. Wenn wir in 20 Jahren Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
 
+### Die soziale Dimension
+
+Dieser Leitfaden fokussiert auf kognitive Prozesse: Arbeitsgedächtnis, Schemabildung, Abrufübung. Aber Lernen ist nicht nur ein individueller kognitiver Prozess. Es ist fundamental sozial [@reichFailureDisruptWhy2020].
+
+**Beziehungen beeinflussen Lernerfolg.** Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen. Sie zeigen mehr Ausdauer, wenn sie spüren, dass ihre Lehrenden sich für ihren Erfolg interessieren. Disziplinäre Identität entsteht durch Gemeinschaften.
+
+**Was passiert, wenn Studierende KI fragen statt Menschen?**
+
+- Peers werden seltener konsultiert; kollaboratives Lernen leidet
+- Beziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen
+- Gelegenheiten für Mentoring und informelles Lernen nehmen ab
+
+**Die Rolle der Lehrperson:** Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Die Frage ist, wie Lehrende ihre unersetzliche Funktion, nämlich Beziehung, Motivation, Vorbild, Kontext, neu definieren.
+
+Diese Dimension verdient mehr Aufmerksamkeit, als dieser Leitfaden ihr geben kann. Der Fokus auf Kognition ist eine bewusste Einschränkung, keine Aussage über relative Wichtigkeit.
+
 ### Die Equity-Dimension
 
 Die "dritte digitale Kluft" [@trucanoThirdDigitalDivide2024] beschreibt ein neues Ungleichheitsmuster:
@@ -603,6 +638,14 @@ Die Ironie: "Demokratisierung" durch KI könnte Ungleichheit verstärken:
 
 - Gutausgestattete Studierende: ausgeklügelte pädagogische Unterstützung, informierte Betreuung, strukturierte KI-Nutzung
 - Unterversorgte Studierende: KI als unbeaufsichtigte Abkürzung, niemand erklärt die Risiken
+
+**Konkrete Ungleichheiten:**
+
+- **Kosten:** Premium-KI-Werkzeuge kosten Geld. Wer kann sich GPT-4, Claude Pro oder spezialisierte Tools leisten? Wer ist auf kostenlose, limitierte Versionen angewiesen?
+- **Institutionelle Ressourcen:** Welche Hochschulen haben Zeit und Expertise für durchdachte KI-Integration? Welche setzen KI ein, ohne Lehrende zu schulen?
+- **Betreuung:** Wer hat Dozierende, die über KI-Risiken aufklären? Wer hat niemanden, der die Fragen stellt?
+
+Das MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die "allen" zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen, sie produktiv zu nutzen.
 
 ### Der stärkste Gegeneinwand
 
@@ -667,11 +710,13 @@ Für Entscheidungen über KI in der eigenen Lehre:
 - Weder Panik noch unkritische Begeisterung
 - Evidenzbasiert, aber handlungsfähig
 - Epistemische Bescheidenheit bei begründeter Vorsicht
+
+**Realitätscheck:** Individuelle Entscheidungen finden in Systemen statt. Institutionelle Vorgaben, Studierendenerwartungen und Arbeitsmarktanforderungen setzen Grenzen. Perfekte Umsetzung ist selten möglich. Was zählt, ist informiertes Handeln im eigenen Spielraum.
 :::
 
 ## Fazit {#fazit}
 
-Die zentrale Botschaft: KI-Werkzeuge sind für Experten konzipiert. Sie machen Experten produktiver, während Lernende oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI eliminiert.
+Die zentrale Botschaft: KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende ohne durchdachte Integration oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.
 
 Die Argumentation stützt sich auf:
 
