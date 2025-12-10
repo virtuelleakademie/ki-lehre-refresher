@@ -349,50 +349,69 @@ Experten haben eine andere **kognitive Architektur** [@grootThoughtChoiceChess19
 
 <br>
 
-```{r}
-#| fig-width: 11
-#| fig-height: 5.5
-#| echo: false
-#| message: false
+```{ojs}
+//| echo: false
 
-# Clean lines for expertise reversal effect (no noise needed for geom_line)
-expertise_data <- tibble(
-  vorwissen = c(0, 100, 0, 100),
-  unterstuetzung = c("Hohe Unterstützung", "Hohe Unterstützung",
-                     "Niedrige Unterstützung", "Niedrige Unterstützung"),
-  lerneffekt = c(70, 10, 20, 70)
-)
+// Slider input (hidden, will be placed in layout below)
+viewof vorwissen = Inputs.range([0, 100], {
+  value: 25,
+  step: 1,
+  label: ""
+})
 
-ggplot(expertise_data, aes(x = vorwissen, y = lerneffekt, color = unterstuetzung)) +
-  geom_line(linewidth = 1.5) +
-  geom_point(size = 4) +
-  scale_color_manual(
-    values = c(
-      "Hohe Unterstützung" = color_primary,
-      "Niedrige Unterstützung" = color_secondary
-    ),
-    name = NULL
-  ) +
-  scale_x_continuous(
-    breaks = c(0, 50, 100),
-    labels = c("Niedrig", "Mittel", "Hoch")
-  ) +
-  scale_y_continuous(
-    limits = c(0, 100),
-    breaks = seq(0, 100, 25)
-  ) +
-  labs(
-    x = "Vorwissen",
-    y = "Lerneffekt"
-  ) +
-  theme_minimal_top_legend +
-  annotate(
-    "text",
-    x = 50, y = 90,
-    label = "Kreuzung: Dieselbe Hilfe\nkann helfen ODER schaden",
-    size = 5, hjust = 0.5
-  )
+// Calculate learning effects at current position
+highSupport = 70 - 0.6 * vorwissen
+lowSupport = 20 + 0.5 * vorwissen
+optimal = highSupport > lowSupport ? "Hohe Unterstützung" : "Niedrige Unterstützung"
+optimalColor = highSupport > lowSupport ? "#A3195B" : "#666666"
+
+// Create the plot
+expertisePlot = Plot.plot({
+  width: 900,
+  height: 480,
+  marginLeft: 70,
+  marginBottom: 60,
+  marginTop: 30,
+  marginRight: 40,
+  style: { fontSize: "16px" },
+  x: {
+    domain: [0, 100],
+    label: "Vorwissen →",
+    labelOffset: 45,
+    ticks: [0, 50, 100],
+    tickFormat: d => d === 0 ? "Niedrig" : d === 50 ? "Mittel" : "Hoch"
+  },
+  y: {
+    domain: [0, 100],
+    label: "↑ Lerneffekt",
+    labelOffset: 50,
+    grid: true
+  },
+  marks: [
+    Plot.line([{x: 0, y: 70}, {x: 100, y: 10}], {x: "x", y: "y", stroke: "#A3195B", strokeWidth: 3}),
+    Plot.line([{x: 0, y: 20}, {x: 100, y: 70}], {x: "x", y: "y", stroke: "#666666", strokeWidth: 3}),
+    Plot.ruleX([vorwissen], {stroke: "#333", strokeWidth: 1.5, strokeDasharray: "8,5"}),
+    Plot.dot([{x: vorwissen, y: highSupport}], {x: "x", y: "y", fill: "#A3195B", r: 12, stroke: "white", strokeWidth: 2}),
+    Plot.dot([{x: vorwissen, y: lowSupport}], {x: "x", y: "y", fill: "#666666", r: 12, stroke: "white", strokeWidth: 2}),
+    Plot.text([{x: 88, y: 8}], {x: "x", y: "y", text: ["Hohe Unterstützung"], fill: "#A3195B", fontSize: 15, fontWeight: "bold"}),
+    Plot.text([{x: 88, y: 74}], {x: "x", y: "y", text: ["Niedrige Unterstützung"], fill: "#666666", fontSize: 15, fontWeight: "bold"})
+  ]
+})
+
+// Layout: plot on left, slider on right
+html`<div style="display: flex; align-items: center; gap: 40px;">
+  <div>${expertisePlot}</div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 200px;">
+    <div style="font-weight: bold; font-size: 1.1em;">Vorwissen des Lernenden</div>
+    <div>${viewof vorwissen}</div>
+    <div style="font-size: 1.2em; text-align: center;">
+      <span style="color: ${optimalColor}; font-weight: bold;">${optimal}</span><br>ist effektiver
+    </div>
+  </div>
+</div>`
 ```
+
+<br>
 
 Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
 
