@@ -15,6 +15,7 @@ project:
     - presentation/**/*.qmd
     - slides/**/*.qmd
     - qa/**/*.qmd
+    - guide/**/*.qmd
 
 website:
   title: "KI in der Lehre: Refresher"
@@ -35,6 +36,10 @@ website:
       - icon: easel
         href: presentation/index.qmd
         text: Präsentation
+
+      - icon: book
+        href: guide/index.qmd
+        text: Leitfaden
 
       - icon: chat-dots
         text: "Q & A"
@@ -60,6 +65,13 @@ website:
       background: light
       contents:
         - qa/index.qmd
+
+    - id: guide
+      title: "Leitfaden"
+      style: "docked"
+      background: light
+      contents:
+        - guide/index.qmd
 
 page-footer:
     right:
