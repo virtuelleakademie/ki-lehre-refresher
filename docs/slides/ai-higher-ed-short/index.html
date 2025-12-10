@@ -226,6 +226,18 @@
   <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
+  div.callout-demonstration.callout {
+    border-left-color: #333333;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
+    background-image: none;
+  }
   div.callout-key-point.callout {
     border-left-color: #D4A03E;
   }
@@ -236,30 +248,6 @@
   div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f005';
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
-    background-image: none;
-  }
-  div.callout-experiment.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
     background-image: none;
   }
   div.callout-source-check.callout {
@@ -274,40 +262,16 @@
     content: '\f002';
     background-image: none;
   }
-  div.callout-individual.callout {
+  div.callout-experiment.callout {
     border-left-color: #A3195B;
   }
-  div.callout-individual.callout-style-default > .callout-header {
+  div.callout-experiment.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #666666;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
-    background-image: none;
-  }
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
-  }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
+    content: '\f0c3';
     background-image: none;
   }
   div.callout-prompt.callout {
@@ -322,16 +286,40 @@
     content: '\f328';
     background-image: none;
   }
-  div.callout-warning.callout {
+  div.callout-group.callout {
     border-left-color: #A3195B;
   }
-  div.callout-warning.callout-style-default > .callout-header {
+  div.callout-group.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f06a';
+    content: '\f0c0';
+    background-image: none;
+  }
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    background-image: none;
+  }
+  div.callout-pro-tip.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\e2ca';
     background-image: none;
   }
   div.callout-reflect.callout {
@@ -346,16 +334,28 @@
     content: '\f0eb';
     background-image: none;
   }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
+  div.callout-warning.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
+  div.callout-warning.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\e2ca';
+    content: '\f06a';
+    background-image: none;
+  }
+  div.callout-scenario.callout {
+    border-left-color: #666666;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(102, 102, 102, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
     background-image: none;
   }
   </style>
@@ -564,62 +564,123 @@
 <h2>Der Expertise-Umkehr-Effekt</h2>
 <p><br></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="356" data-source-offset="-58"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 355;"><span id="cb1-356"><a></a>viewof vorwissen <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> {</span>
-<span id="cb1-357"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span></span>
-<span id="cb1-358"><a></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
-<span id="cb1-359"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">""</span></span>
-<span id="cb1-360"><a></a>})</span>
-<span id="cb1-361"><a></a></span>
-<span id="cb1-362"><a></a><span class="co">// Calculate learning effects at current position</span></span>
-<span id="cb1-363"><a></a>highSupport <span class="op">=</span> <span class="dv">70</span> <span class="op">-</span> <span class="fl">0.6</span> <span class="op">*</span> vorwissen</span>
-<span id="cb1-364"><a></a>lowSupport <span class="op">=</span> <span class="dv">20</span> <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> vorwissen</span>
-<span id="cb1-365"><a></a>optimal <span class="op">=</span> highSupport <span class="op">&gt;</span> lowSupport <span class="op">?</span> <span class="st">"Hohe Unterstützung"</span> <span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span></span>
-<span id="cb1-366"><a></a>optimalColor <span class="op">=</span> highSupport <span class="op">&gt;</span> lowSupport <span class="op">?</span> <span class="st">"#A3195B"</span> <span class="op">:</span> <span class="st">"#666666"</span></span>
-<span id="cb1-367"><a></a></span>
-<span id="cb1-368"><a></a><span class="co">// Create the plot</span></span>
-<span id="cb1-369"><a></a>expertisePlot <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-370"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
-<span id="cb1-371"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
-<span id="cb1-372"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span></span>
-<span id="cb1-373"><a></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb1-374"><a></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
-<span id="cb1-375"><a></a>  <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
-<span id="cb1-376"><a></a>  <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
-<span id="cb1-377"><a></a>  <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb1-378"><a></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-379"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
-<span id="cb1-380"><a></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
-<span id="cb1-381"><a></a>    <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-382"><a></a>    <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
-<span id="cb1-383"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-384"><a></a>  <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb1-385"><a></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-386"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
-<span id="cb1-387"><a></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb1-388"><a></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-389"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-390"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-391"><a></a>    Plot<span class="op">.</span><span class="fu">line</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">70</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">10</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
-<span id="cb1-392"><a></a>    Plot<span class="op">.</span><span class="fu">line</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">20</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">70</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
-<span id="cb1-393"><a></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([vorwissen]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
-<span id="cb1-394"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>([{<span class="dt">x</span><span class="op">:</span> vorwissen<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> highSupport}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
-<span id="cb1-395"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>([{<span class="dt">x</span><span class="op">:</span> vorwissen<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> lowSupport}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
-<span id="cb1-396"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">8</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"Hohe Unterstützung"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span>})<span class="op">,</span></span>
-<span id="cb1-397"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">74</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"Niedrige Unterstützung"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span>})</span>
-<span id="cb1-398"><a></a>  ]</span>
-<span id="cb1-399"><a></a>})</span>
-<span id="cb1-400"><a></a></span>
-<span id="cb1-401"><a></a><span class="co">// Layout: plot on left, slider on right</span></span>
-<span id="cb1-402"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
-<span id="cb1-403"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb1-404"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 200px;"&gt;</span></span>
-<span id="cb1-405"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
-<span id="cb1-406"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>viewof vorwissen<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb1-407"><a></a><span class="vs">    &lt;div style="font-size: 1.2em; text-align: center;"&gt;</span></span>
-<span id="cb1-408"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>optimalColor<span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>optimal<span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;ist effektiver</span></span>
-<span id="cb1-409"><a></a><span class="vs">    &lt;/div&gt;</span></span>
-<span id="cb1-410"><a></a><span class="vs">  &lt;/div&gt;</span></span>
-<span id="cb1-411"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="356" data-source-offset="-42"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 355;"><span id="cb1-356"><a></a>viewof vorwissen <span class="op">=</span> {</span>
+<span id="cb1-357"><a></a>  <span class="kw">const</span> input <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> {</span>
+<span id="cb1-358"><a></a>    <span class="dt">value</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb1-359"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
+<span id="cb1-360"><a></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x <span class="op">+</span> <span class="st">"%"</span></span>
+<span id="cb1-361"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-362"><a></a>  input<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span><span class="op">;</span></span>
+<span id="cb1-363"><a></a>  <span class="cf">return</span> input<span class="op">;</span></span>
+<span id="cb1-364"><a></a>}</span>
+<span id="cb1-365"><a></a></span>
+<span id="cb1-366"><a></a><span class="co">// Calculate learning effects at current position</span></span>
+<span id="cb1-367"><a></a><span class="co">// Lines cross at x=50, y=45: highSupport = 65 - 0.4x, lowSupport = 25 + 0.4x</span></span>
+<span id="cb1-368"><a></a><span class="co">// At x=50: both = 45</span></span>
+<span id="cb1-369"><a></a>highSupport <span class="op">=</span> <span class="dv">65</span> <span class="op">-</span> <span class="fl">0.4</span> <span class="op">*</span> vorwissen</span>
+<span id="cb1-370"><a></a>lowSupport <span class="op">=</span> <span class="dv">25</span> <span class="op">+</span> <span class="fl">0.4</span> <span class="op">*</span> vorwissen</span>
+<span id="cb1-371"><a></a>crossoverPoint <span class="op">=</span> <span class="dv">50</span></span>
+<span id="cb1-372"><a></a>isHighBetter <span class="op">=</span> vorwissen <span class="op">&lt;=</span> crossoverPoint</span>
+<span id="cb1-373"><a></a>optimal <span class="op">=</span> isHighBetter <span class="op">?</span> <span class="st">"Hohe Unterstützung"</span> <span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span></span>
+<span id="cb1-374"><a></a>optimalColor <span class="op">=</span> isHighBetter <span class="op">?</span> <span class="st">"#A3195B"</span> <span class="op">:</span> <span class="st">"#666666"</span></span>
+<span id="cb1-375"><a></a><span class="co">// The y-value for the optimal dot</span></span>
+<span id="cb1-376"><a></a>optimalY <span class="op">=</span> isHighBetter <span class="op">?</span> highSupport <span class="op">:</span> lowSupport</span>
+<span id="cb1-377"><a></a></span>
+<span id="cb1-378"><a></a><span class="co">// Create the plot</span></span>
+<span id="cb1-379"><a></a>expertisePlot <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-380"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
+<span id="cb1-381"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
+<span id="cb1-382"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span></span>
+<span id="cb1-383"><a></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb1-384"><a></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb1-385"><a></a>  <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
+<span id="cb1-386"><a></a>  <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
+<span id="cb1-387"><a></a>  <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-388"><a></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-389"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
+<span id="cb1-390"><a></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
+<span id="cb1-391"><a></a>    <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-392"><a></a>    <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
+<span id="cb1-393"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-394"><a></a>  <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-395"><a></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-396"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
+<span id="cb1-397"><a></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb1-398"><a></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-399"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-400"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-401"><a></a>    <span class="co">// Static lines (cross at x=50, y=45)</span></span>
+<span id="cb1-402"><a></a>    Plot<span class="op">.</span><span class="fu">line</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">65</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">25</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-403"><a></a>    Plot<span class="op">.</span><span class="fu">line</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">25</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">65</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-404"><a></a>    <span class="co">// Vertical indicator</span></span>
+<span id="cb1-405"><a></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([vorwissen]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
+<span id="cb1-406"><a></a>    <span class="co">// Suboptimal dot (smaller, faded)</span></span>
+<span id="cb1-407"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>([{<span class="dt">x</span><span class="op">:</span> vorwissen<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> isHighBetter <span class="op">?</span> lowSupport <span class="op">:</span> highSupport}]<span class="op">,</span> {</span>
+<span id="cb1-408"><a></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-409"><a></a>      <span class="dt">fill</span><span class="op">:</span> isHighBetter <span class="op">?</span> <span class="st">"#666666"</span> <span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span></span>
+<span id="cb1-410"><a></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span></span>
+<span id="cb1-411"><a></a>      <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.4</span></span>
+<span id="cb1-412"><a></a>    })<span class="op">,</span></span>
+<span id="cb1-413"><a></a>    <span class="co">// Optimal dot (larger, prominent)</span></span>
+<span id="cb1-414"><a></a>    Plot<span class="op">.</span><span class="fu">dot</span>([{<span class="dt">x</span><span class="op">:</span> vorwissen<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> optimalY}]<span class="op">,</span> {</span>
+<span id="cb1-415"><a></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-416"><a></a>      <span class="dt">fill</span><span class="op">:</span> optimalColor<span class="op">,</span></span>
+<span id="cb1-417"><a></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span></span>
+<span id="cb1-418"><a></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb1-419"><a></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
+<span id="cb1-420"><a></a>    })<span class="op">,</span></span>
+<span id="cb1-421"><a></a>    <span class="co">// Icons/labels with examples (near line starts)</span></span>
+<span id="cb1-422"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">72</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"📖 Worked Examples"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span>})<span class="op">,</span></span>
+<span id="cb1-423"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">66</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"🧭 Direkte Instruktion"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span>})<span class="op">,</span></span>
+<span id="cb1-424"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">72</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"🧩 Problembasiertes Lernen"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span>})<span class="op">,</span></span>
+<span id="cb1-425"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">66</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"🔍 Eigene Lösungswege"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span>})<span class="op">,</span></span>
+<span id="cb1-426"><a></a>    <span class="co">// Line labels (near line ends)</span></span>
+<span id="cb1-427"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">20</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"Hohe Unterstützung"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span>})<span class="op">,</span></span>
+<span id="cb1-428"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">20</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"Niedrige Unterstützung"</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span>})</span>
+<span id="cb1-429"><a></a>  ]</span>
+<span id="cb1-430"><a></a>})</span>
+<span id="cb1-431"><a></a></span>
+<span id="cb1-432"><a></a><span class="co">// Styled segmented control using Inputs.button for each value</span></span>
+<span id="cb1-433"><a></a>buttonGroup <span class="op">=</span> {</span>
+<span id="cb1-434"><a></a>  <span class="kw">const</span> values <span class="op">=</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">;</span></span>
+<span id="cb1-435"><a></a>  <span class="kw">const</span> buttons <span class="op">=</span> values<span class="op">.</span><span class="fu">map</span>(v <span class="kw">=&gt;</span> {</span>
+<span id="cb1-436"><a></a>    <span class="kw">const</span> isSelected <span class="op">=</span> vorwissen <span class="op">===</span> v<span class="op">;</span></span>
+<span id="cb1-437"><a></a>    <span class="kw">const</span> bgColor <span class="op">=</span> isSelected <span class="op">?</span> (v <span class="op">&lt;=</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">'#A3195B'</span> <span class="op">:</span> <span class="st">'#666666'</span>) <span class="op">:</span> <span class="st">'#f5f5f5'</span><span class="op">;</span></span>
+<span id="cb1-438"><a></a>    <span class="kw">const</span> textColor <span class="op">=</span> isSelected <span class="op">?</span> <span class="st">'white'</span> <span class="op">:</span> <span class="st">'#333'</span><span class="op">;</span></span>
+<span id="cb1-439"><a></a>    <span class="kw">const</span> fontWeight <span class="op">=</span> isSelected <span class="op">?</span> <span class="st">'bold'</span> <span class="op">:</span> <span class="st">'normal'</span><span class="op">;</span></span>
+<span id="cb1-440"><a></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button style="</span></span>
+<span id="cb1-441"><a></a><span class="vs">      padding: 12px 18px;</span></span>
+<span id="cb1-442"><a></a><span class="vs">      border: none;</span></span>
+<span id="cb1-443"><a></a><span class="vs">      background: </span><span class="sc">${</span>bgColor<span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-444"><a></a><span class="vs">      color: </span><span class="sc">${</span>textColor<span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-445"><a></a><span class="vs">      font-size: 1em;</span></span>
+<span id="cb1-446"><a></a><span class="vs">      font-weight: </span><span class="sc">${</span>fontWeight<span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-447"><a></a><span class="vs">      cursor: pointer;</span></span>
+<span id="cb1-448"><a></a><span class="vs">      border-right: 1px solid #ddd;</span></span>
+<span id="cb1-449"><a></a><span class="vs">    "&gt;</span><span class="sc">${</span>v<span class="sc">}</span><span class="vs">%&lt;/button&gt;`</span><span class="op">;</span></span>
+<span id="cb1-450"><a></a>    btn<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-451"><a></a>      viewof vorwissen<span class="op">.</span><span class="at">value</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb1-452"><a></a>      viewof vorwissen<span class="op">.</span><span class="fu">dispatchEvent</span>(<span class="kw">new</span> <span class="bu">Event</span>(<span class="st">'input'</span>))<span class="op">;</span></span>
+<span id="cb1-453"><a></a>    }<span class="op">;</span></span>
+<span id="cb1-454"><a></a>    <span class="cf">return</span> btn<span class="op">;</span></span>
+<span id="cb1-455"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-456"><a></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb1-457"><a></a>  buttons<span class="op">.</span><span class="fu">forEach</span>(b <span class="kw">=&gt;</span> container<span class="op">.</span><span class="fu">appendChild</span>(b))<span class="op">;</span></span>
+<span id="cb1-458"><a></a>  <span class="cf">return</span> container<span class="op">;</span></span>
+<span id="cb1-459"><a></a>}</span>
+<span id="cb1-460"><a></a></span>
+<span id="cb1-461"><a></a><span class="co">// Layout: plot on left, controls on right</span></span>
+<span id="cb1-462"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
+<span id="cb1-463"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-464"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;"&gt;</span></span>
+<span id="cb1-465"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
+<span id="cb1-466"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>buttonGroup<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-467"><a></a><span class="vs">    &lt;div style="font-size: 1.3em; text-align: center; padding: 15px; background: </span><span class="sc">${</span>optimalColor<span class="sc">}</span><span class="vs">22; border-radius: 8px; border-left: 4px solid </span><span class="sc">${</span>optimalColor<span class="sc">}</span><span class="vs">;"&gt;</span></span>
+<span id="cb1-468"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>optimalColor<span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>optimal<span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;</span></span>
+<span id="cb1-469"><a></a><span class="vs">      &lt;span style="font-size: 0.8em; color: #666;"&gt;ist effektiver&lt;/span&gt;</span></span>
+<span id="cb1-470"><a></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-471"><a></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-472"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -664,13 +725,41 @@
 </div>
 <div class="cell-output cell-output-display">
 <div>
-<div id="ojs-cell-1-7" data-nodetype="expression">
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-10" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-11" data-nodetype="expression">
 
 </div>
 </div>
 </div>
 </div>
-<p><br></p>
+<p><br> <br></p>
 <p>Der Expertise-Umkehr-Effekt <span class="citation" data-cites="kalyugaExpertiseReversalEffect2009">(<a href="#/referenzen" role="doc-biblioref" onclick="">Kalyuga 2009</a>)</span>.</p>
 </section>
 <section id="warum-experten-profitieren-lernende-nicht" class="slide level2">
@@ -1037,7 +1126,7 @@ Willingham, Daniel T. 2008. <span>„Critical <span>Thinking</span>: <span>Why I
       });
     </script>
     <script type="ojs-module-contents">
-    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gU2xpZGVyIGlucHV0IChoaWRkZW4sIHdpbGwgYmUgcGxhY2VkIGluIGxheW91dCBiZWxvdylcbnZpZXdvZiB2b3J3aXNzZW4gPSBJbnB1dHMucmFuZ2UoWzAsIDEwMF0sIHtcbiAgdmFsdWU6IDI1LFxuICBzdGVwOiAxLFxuICBsYWJlbDogXCJcIlxufSlcblxuLy8gQ2FsY3VsYXRlIGxlYXJuaW5nIGVmZmVjdHMgYXQgY3VycmVudCBwb3NpdGlvblxuaGlnaFN1cHBvcnQgPSA3MCAtIDAuNiAqIHZvcndpc3NlblxubG93U3VwcG9ydCA9IDIwICsgMC41ICogdm9yd2lzc2VuXG5vcHRpbWFsID0gaGlnaFN1cHBvcnQgPiBsb3dTdXBwb3J0ID8gXCJIb2hlIFVudGVyc3TDvHR6dW5nXCIgOiBcIk5pZWRyaWdlIFVudGVyc3TDvHR6dW5nXCJcbm9wdGltYWxDb2xvciA9IGhpZ2hTdXBwb3J0ID4gbG93U3VwcG9ydCA/IFwiI0EzMTk1QlwiIDogXCIjNjY2NjY2XCJcblxuLy8gQ3JlYXRlIHRoZSBwbG90XG5leHBlcnRpc2VQbG90ID0gUGxvdC5wbG90KHtcbiAgd2lkdGg6IDkwMCxcbiAgaGVpZ2h0OiA0ODAsXG4gIG1hcmdpbkxlZnQ6IDcwLFxuICBtYXJnaW5Cb3R0b206IDYwLFxuICBtYXJnaW5Ub3A6IDMwLFxuICBtYXJnaW5SaWdodDogNDAsXG4gIHN0eWxlOiB7IGZvbnRTaXplOiBcIjE2cHhcIiB9LFxuICB4OiB7XG4gICAgZG9tYWluOiBbMCwgMTAwXSxcbiAgICBsYWJlbDogXCJWb3J3aXNzZW4g4oaSXCIsXG4gICAgbGFiZWxPZmZzZXQ6IDQ1LFxuICAgIHRpY2tzOiBbMCwgNTAsIDEwMF0sXG4gICAgdGlja0Zvcm1hdDogZCA9PiBkID09PSAwID8gXCJOaWVkcmlnXCIgOiBkID09PSA1MCA/IFwiTWl0dGVsXCIgOiBcIkhvY2hcIlxuICB9LFxuICB5OiB7XG4gICAgZG9tYWluOiBbMCwgMTAwXSxcbiAgICBsYWJlbDogXCLihpEgTGVybmVmZmVrdFwiLFxuICAgIGxhYmVsT2Zmc2V0OiA1MCxcbiAgICBncmlkOiB0cnVlXG4gIH0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5saW5lKFt7eDogMCwgeTogNzB9LCB7eDogMTAwLCB5OiAxMH1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCBzdHJva2U6IFwiI0EzMTk1QlwiLCBzdHJva2VXaWR0aDogM30pLFxuICAgIFBsb3QubGluZShbe3g6IDAsIHk6IDIwfSwge3g6IDEwMCwgeTogNzB9XSwge3g6IFwieFwiLCB5OiBcInlcIiwgc3Ryb2tlOiBcIiM2NjY2NjZcIiwgc3Ryb2tlV2lkdGg6IDN9KSxcbiAgICBQbG90LnJ1bGVYKFt2b3J3aXNzZW5dLCB7c3Ryb2tlOiBcIiMzMzNcIiwgc3Ryb2tlV2lkdGg6IDEuNSwgc3Ryb2tlRGFzaGFycmF5OiBcIjgsNVwifSksXG4gICAgUGxvdC5kb3QoW3t4OiB2b3J3aXNzZW4sIHk6IGhpZ2hTdXBwb3J0fV0sIHt4OiBcInhcIiwgeTogXCJ5XCIsIGZpbGw6IFwiI0EzMTk1QlwiLCByOiAxMiwgc3Ryb2tlOiBcIndoaXRlXCIsIHN0cm9rZVdpZHRoOiAyfSksXG4gICAgUGxvdC5kb3QoW3t4OiB2b3J3aXNzZW4sIHk6IGxvd1N1cHBvcnR9XSwge3g6IFwieFwiLCB5OiBcInlcIiwgZmlsbDogXCIjNjY2NjY2XCIsIHI6IDEyLCBzdHJva2U6IFwid2hpdGVcIiwgc3Ryb2tlV2lkdGg6IDJ9KSxcbiAgICBQbG90LnRleHQoW3t4OiA4OCwgeTogOH1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbXCJIb2hlIFVudGVyc3TDvHR6dW5nXCJdLCBmaWxsOiBcIiNBMzE5NUJcIiwgZm9udFNpemU6IDE1LCBmb250V2VpZ2h0OiBcImJvbGRcIn0pLFxuICAgIFBsb3QudGV4dChbe3g6IDg4LCB5OiA3NH1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbXCJOaWVkcmlnZSBVbnRlcnN0w7x0enVuZ1wiXSwgZmlsbDogXCIjNjY2NjY2XCIsIGZvbnRTaXplOiAxNSwgZm9udFdlaWdodDogXCJib2xkXCJ9KVxuICBdXG59KVxuXG4vLyBMYXlvdXQ6IHBsb3Qgb24gbGVmdCwgc2xpZGVyIG9uIHJpZ2h0XG5odG1sYDxkaXYgc3R5bGU9XCJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogY2VudGVyOyBnYXA6IDQwcHg7XCI+XG4gIDxkaXY+JHtleHBlcnRpc2VQbG90fTwvZGl2PlxuICA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgYWxpZ24taXRlbXM6IGNlbnRlcjsgZ2FwOiAyMHB4OyBtaW4td2lkdGg6IDIwMHB4O1wiPlxuICAgIDxkaXYgc3R5bGU9XCJmb250LXdlaWdodDogYm9sZDsgZm9udC1zaXplOiAxLjFlbTtcIj5Wb3J3aXNzZW4gZGVzIExlcm5lbmRlbjwvZGl2PlxuICAgIDxkaXY+JHt2aWV3b2Ygdm9yd2lzc2VufTwvZGl2PlxuICAgIDxkaXYgc3R5bGU9XCJmb250LXNpemU6IDEuMmVtOyB0ZXh0LWFsaWduOiBjZW50ZXI7XCI+XG4gICAgICA8c3BhbiBzdHlsZT1cImNvbG9yOiAke29wdGltYWxDb2xvcn07IGZvbnQtd2VpZ2h0OiBib2xkO1wiPiR7b3B0aW1hbH08L3NwYW4+PGJyPmlzdCBlZmZla3RpdmVyXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuPC9kaXY+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCd2b3J3aXNzZW4nKSJ9XX0=
+    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gSGlkZGVuIHJhZGlvIGlucHV0IChkcml2ZXMgdGhlIHN0YXRlKVxudmlld29mIHZvcndpc3NlbiA9IHtcbiAgY29uc3QgaW5wdXQgPSBJbnB1dHMucmFkaW8oWzAsIDIwLCA0MCwgNjAsIDgwLCAxMDBdLCB7XG4gICAgdmFsdWU6IDIwLFxuICAgIGxhYmVsOiBcIlwiLFxuICAgIGZvcm1hdDogeCA9PiB4ICsgXCIlXCJcbiAgfSk7XG4gIGlucHV0LnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG4vLyBDYWxjdWxhdGUgbGVhcm5pbmcgZWZmZWN0cyBhdCBjdXJyZW50IHBvc2l0aW9uXG4vLyBMaW5lcyBjcm9zcyBhdCB4PTUwLCB5PTQ1OiBoaWdoU3VwcG9ydCA9IDY1IC0gMC40eCwgbG93U3VwcG9ydCA9IDI1ICsgMC40eFxuLy8gQXQgeD01MDogYm90aCA9IDQ1XG5oaWdoU3VwcG9ydCA9IDY1IC0gMC40ICogdm9yd2lzc2VuXG5sb3dTdXBwb3J0ID0gMjUgKyAwLjQgKiB2b3J3aXNzZW5cbmNyb3Nzb3ZlclBvaW50ID0gNTBcbmlzSGlnaEJldHRlciA9IHZvcndpc3NlbiA8PSBjcm9zc292ZXJQb2ludFxub3B0aW1hbCA9IGlzSGlnaEJldHRlciA/IFwiSG9oZSBVbnRlcnN0w7x0enVuZ1wiIDogXCJOaWVkcmlnZSBVbnRlcnN0w7x0enVuZ1wiXG5vcHRpbWFsQ29sb3IgPSBpc0hpZ2hCZXR0ZXIgPyBcIiNBMzE5NUJcIiA6IFwiIzY2NjY2NlwiXG4vLyBUaGUgeS12YWx1ZSBmb3IgdGhlIG9wdGltYWwgZG90XG5vcHRpbWFsWSA9IGlzSGlnaEJldHRlciA/IGhpZ2hTdXBwb3J0IDogbG93U3VwcG9ydFxuXG4vLyBDcmVhdGUgdGhlIHBsb3RcbmV4cGVydGlzZVBsb3QgPSBQbG90LnBsb3Qoe1xuICB3aWR0aDogOTAwLFxuICBoZWlnaHQ6IDQ4MCxcbiAgbWFyZ2luTGVmdDogNzAsXG4gIG1hcmdpbkJvdHRvbTogNjAsXG4gIG1hcmdpblRvcDogMzAsXG4gIG1hcmdpblJpZ2h0OiA0MCxcbiAgc3R5bGU6IHsgZm9udFNpemU6IFwiMTZweFwiIH0sXG4gIHg6IHtcbiAgICBkb21haW46IFswLCAxMDBdLFxuICAgIGxhYmVsOiBcIlZvcndpc3NlbiDihpJcIixcbiAgICBsYWJlbE9mZnNldDogNDUsXG4gICAgdGlja3M6IFswLCA1MCwgMTAwXSxcbiAgICB0aWNrRm9ybWF0OiBkID0+IGQgPT09IDAgPyBcIk5pZWRyaWdcIiA6IGQgPT09IDUwID8gXCJNaXR0ZWxcIiA6IFwiSG9jaFwiXG4gIH0sXG4gIHk6IHtcbiAgICBkb21haW46IFswLCAxMDBdLFxuICAgIGxhYmVsOiBcIuKGkSBMZXJuZWZmZWt0XCIsXG4gICAgbGFiZWxPZmZzZXQ6IDUwLFxuICAgIGdyaWQ6IHRydWVcbiAgfSxcbiAgbWFya3M6IFtcbiAgICAvLyBTdGF0aWMgbGluZXMgKGNyb3NzIGF0IHg9NTAsIHk9NDUpXG4gICAgUGxvdC5saW5lKFt7eDogMCwgeTogNjV9LCB7eDogMTAwLCB5OiAyNX1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCBzdHJva2U6IFwiI0EzMTk1QlwiLCBzdHJva2VXaWR0aDogM30pLFxuICAgIFBsb3QubGluZShbe3g6IDAsIHk6IDI1fSwge3g6IDEwMCwgeTogNjV9XSwge3g6IFwieFwiLCB5OiBcInlcIiwgc3Ryb2tlOiBcIiM2NjY2NjZcIiwgc3Ryb2tlV2lkdGg6IDN9KSxcbiAgICAvLyBWZXJ0aWNhbCBpbmRpY2F0b3JcbiAgICBQbG90LnJ1bGVYKFt2b3J3aXNzZW5dLCB7c3Ryb2tlOiBcIiMzMzNcIiwgc3Ryb2tlV2lkdGg6IDEuNSwgc3Ryb2tlRGFzaGFycmF5OiBcIjgsNVwifSksXG4gICAgLy8gU3Vib3B0aW1hbCBkb3QgKHNtYWxsZXIsIGZhZGVkKVxuICAgIFBsb3QuZG90KFt7eDogdm9yd2lzc2VuLCB5OiBpc0hpZ2hCZXR0ZXIgPyBsb3dTdXBwb3J0IDogaGlnaFN1cHBvcnR9XSwge1xuICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLFxuICAgICAgZmlsbDogaXNIaWdoQmV0dGVyID8gXCIjNjY2NjY2XCIgOiBcIiNBMzE5NUJcIixcbiAgICAgIHI6IDgsXG4gICAgICBvcGFjaXR5OiAwLjRcbiAgICB9KSxcbiAgICAvLyBPcHRpbWFsIGRvdCAobGFyZ2VyLCBwcm9taW5lbnQpXG4gICAgUGxvdC5kb3QoW3t4OiB2b3J3aXNzZW4sIHk6IG9wdGltYWxZfV0sIHtcbiAgICAgIHg6IFwieFwiLCB5OiBcInlcIixcbiAgICAgIGZpbGw6IG9wdGltYWxDb2xvcixcbiAgICAgIHI6IDE0LFxuICAgICAgc3Ryb2tlOiBcIndoaXRlXCIsXG4gICAgICBzdHJva2VXaWR0aDogM1xuICAgIH0pLFxuICAgIC8vIEljb25zL2xhYmVscyB3aXRoIGV4YW1wbGVzIChuZWFyIGxpbmUgc3RhcnRzKVxuICAgIFBsb3QudGV4dChbe3g6IDE1LCB5OiA3Mn1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbXCLwn5OWIFdvcmtlZCBFeGFtcGxlc1wiXSwgZmlsbDogXCIjQTMxOTVCXCIsIGZvbnRTaXplOiAxM30pLFxuICAgIFBsb3QudGV4dChbe3g6IDE1LCB5OiA2Nn1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbXCLwn6etIERpcmVrdGUgSW5zdHJ1a3Rpb25cIl0sIGZpbGw6IFwiI0EzMTk1QlwiLCBmb250U2l6ZTogMTN9KSxcbiAgICBQbG90LnRleHQoW3t4OiA4NSwgeTogNzJ9XSwge3g6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW1wi8J+nqSBQcm9ibGVtYmFzaWVydGVzIExlcm5lblwiXSwgZmlsbDogXCIjNjY2NjY2XCIsIGZvbnRTaXplOiAxM30pLFxuICAgIFBsb3QudGV4dChbe3g6IDg1LCB5OiA2Nn1dLCB7eDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbXCLwn5SNIEVpZ2VuZSBMw7ZzdW5nc3dlZ2VcIl0sIGZpbGw6IFwiIzY2NjY2NlwiLCBmb250U2l6ZTogMTN9KSxcbiAgICAvLyBMaW5lIGxhYmVscyAobmVhciBsaW5lIGVuZHMpXG4gICAgUGxvdC50ZXh0KFt7eDogODgsIHk6IDIwfV0sIHt4OiBcInhcIiwgeTogXCJ5XCIsIHRleHQ6IFtcIkhvaGUgVW50ZXJzdMO8dHp1bmdcIl0sIGZpbGw6IFwiI0EzMTk1QlwiLCBmb250U2l6ZTogMTUsIGZvbnRXZWlnaHQ6IFwiYm9sZFwifSksXG4gICAgUGxvdC50ZXh0KFt7eDogMTIsIHk6IDIwfV0sIHt4OiBcInhcIiwgeTogXCJ5XCIsIHRleHQ6IFtcIk5pZWRyaWdlIFVudGVyc3TDvHR6dW5nXCJdLCBmaWxsOiBcIiM2NjY2NjZcIiwgZm9udFNpemU6IDE1LCBmb250V2VpZ2h0OiBcImJvbGRcIn0pXG4gIF1cbn0pXG5cbi8vIFN0eWxlZCBzZWdtZW50ZWQgY29udHJvbCB1c2luZyBJbnB1dHMuYnV0dG9uIGZvciBlYWNoIHZhbHVlXG5idXR0b25Hcm91cCA9IHtcbiAgY29uc3QgdmFsdWVzID0gWzAsIDIwLCA0MCwgNjAsIDgwLCAxMDBdO1xuICBjb25zdCBidXR0b25zID0gdmFsdWVzLm1hcCh2ID0+IHtcbiAgICBjb25zdCBpc1NlbGVjdGVkID0gdm9yd2lzc2VuID09PSB2O1xuICAgIGNvbnN0IGJnQ29sb3IgPSBpc1NlbGVjdGVkID8gKHYgPD0gNTAgPyAnI0EzMTk1QicgOiAnIzY2NjY2NicpIDogJyNmNWY1ZjUnO1xuICAgIGNvbnN0IHRleHRDb2xvciA9IGlzU2VsZWN0ZWQgPyAnd2hpdGUnIDogJyMzMzMnO1xuICAgIGNvbnN0IGZvbnRXZWlnaHQgPSBpc1NlbGVjdGVkID8gJ2JvbGQnIDogJ25vcm1hbCc7XG4gICAgY29uc3QgYnRuID0gaHRtbGA8YnV0dG9uIHN0eWxlPVwiXG4gICAgICBwYWRkaW5nOiAxMnB4IDE4cHg7XG4gICAgICBib3JkZXI6IG5vbmU7XG4gICAgICBiYWNrZ3JvdW5kOiAke2JnQ29sb3J9O1xuICAgICAgY29sb3I6ICR7dGV4dENvbG9yfTtcbiAgICAgIGZvbnQtc2l6ZTogMWVtO1xuICAgICAgZm9udC13ZWlnaHQ6ICR7Zm9udFdlaWdodH07XG4gICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZGRkO1xuICAgIFwiPiR7dn0lPC9idXR0b24+YDtcbiAgICBidG4ub25jbGljayA9ICgpID0+IHtcbiAgICAgIHZpZXdvZiB2b3J3aXNzZW4udmFsdWUgPSB2O1xuICAgICAgdmlld29mIHZvcndpc3Nlbi5kaXNwYXRjaEV2ZW50KG5ldyBFdmVudCgnaW5wdXQnKSk7XG4gICAgfTtcbiAgICByZXR1cm4gYnRuO1xuICB9KTtcbiAgY29uc3QgY29udGFpbmVyID0gaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgYm9yZGVyLXJhZGl1czogOHB4OyBvdmVyZmxvdzogaGlkZGVuOyBib3JkZXI6IDJweCBzb2xpZCAjZGRkO1wiPjwvZGl2PmA7XG4gIGJ1dHRvbnMuZm9yRWFjaChiID0+IGNvbnRhaW5lci5hcHBlbmRDaGlsZChiKSk7XG4gIHJldHVybiBjb250YWluZXI7XG59XG5cbi8vIExheW91dDogcGxvdCBvbiBsZWZ0LCBjb250cm9scyBvbiByaWdodFxuaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IGNlbnRlcjsgZ2FwOiA0MHB4O1wiPlxuICA8ZGl2PiR7ZXhwZXJ0aXNlUGxvdH08L2Rpdj5cbiAgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47IGFsaWduLWl0ZW1zOiBjZW50ZXI7IGdhcDogMjBweDsgbWluLXdpZHRoOiAyODBweDtcIj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC13ZWlnaHQ6IGJvbGQ7IGZvbnQtc2l6ZTogMS4xZW07XCI+Vm9yd2lzc2VuIGRlcyBMZXJuZW5kZW48L2Rpdj5cbiAgICA8ZGl2PiR7YnV0dG9uR3JvdXB9PC9kaXY+XG4gICAgPGRpdiBzdHlsZT1cImZvbnQtc2l6ZTogMS4zZW07IHRleHQtYWxpZ246IGNlbnRlcjsgcGFkZGluZzogMTVweDsgYmFja2dyb3VuZDogJHtvcHRpbWFsQ29sb3J9MjI7IGJvcmRlci1yYWRpdXM6IDhweDsgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAke29wdGltYWxDb2xvcn07XCI+XG4gICAgICA8c3BhbiBzdHlsZT1cImNvbG9yOiAke29wdGltYWxDb2xvcn07IGZvbnQtd2VpZ2h0OiBib2xkO1wiPiR7b3B0aW1hbH08L3NwYW4+PGJyPlxuICAgICAgPHNwYW4gc3R5bGU9XCJmb250LXNpemU6IDAuOGVtOyBjb2xvcjogIzY2NjtcIj5pc3QgZWZmZWt0aXZlcjwvc3Bhbj5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG48L2Rpdj5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3Zvcndpc3NlbicpIn1dfQ==
     </script>
     <script type="module">
     if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
