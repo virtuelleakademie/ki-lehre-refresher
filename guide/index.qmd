@@ -86,7 +86,7 @@ Um zu verstehen, warum KI für Experten und Lernende unterschiedlich wirkt, müs
 
 Die kognitionspsychologische Forschung zeigt: Experten haben nicht einfach "mehr Wissen". Sie haben eine qualitativ andere **kognitive Architektur**.
 
-Das klassische Beispiel stammt aus der Schachforschung (de Groot, 1965; Chase & Simon, 1973). Schachmeistern und Anfängern wurden Stellungen für wenige Sekunden gezeigt. Bei echten Spielstellungen erinnerten Meister etwa 25 Figuren korrekt, Anfänger nur etwa 4. Bei zufällig platzierten Figuren waren beide Gruppen gleich schlecht.
+Das klassische Beispiel stammt aus der Schachforschung [@grootThoughtChoiceChess1978; @chasePerceptionChess1973]. Schachmeistern und Anfängern wurden Stellungen für wenige Sekunden gezeigt. Bei echten Spielstellungen erinnerten Meister etwa 25 Figuren korrekt, Anfänger nur etwa 4. Bei zufällig platzierten Figuren waren beide Gruppen gleich schlecht.
 
 Die Interpretation: Meister sehen nicht einzelne Figuren, sondern **Chunks**, bedeutungsvolle Muster wie "Königsangriff" oder "offene Linie". Diese Chunks sind im Langzeitgedächtnis gespeichert und werden automatisch erkannt.
 
@@ -461,7 +461,7 @@ Ein konkretes Beispiel für den Hype-Evidenz-Gap: Viele EdTech-Unternehmen bewer
 
 Die Argumentation klingt überzeugend:
 
-- Blooms "Two Sigma Problem" (1984): 1:1-Tutoring erzielt 2 Standardabweichungen Verbesserung
+- Blooms "Two Sigma Problem" [@bloom2SigmaProblem1984]: 1:1-Tutoring erzielt 2 Standardabweichungen Verbesserung
 - Das würde einen durchschnittlichen Studierenden in die Top 2% bringen
 - KI kann unbegrenzt viele Lernende betreuen
 - Also: Demokratisierung personalisierter Bildung
@@ -480,7 +480,7 @@ Die kognitionswissenschaftliche Grundlage ist solide:
 
 ### Was die Evidenz tatsächlich zeigt
 
-VanLehn (2011) führte eine Meta-Analyse zur Effektivität verschiedener Tutoring-Formen durch:
+VanLehn [-@vanlehnRelativeEffectivenessHuman2011] führte eine Meta-Analyse zur Effektivität verschiedener Tutoring-Formen durch:
 
 - **Menschliche Tutoren:** d = 0.79 (nicht 2.0 wie Bloom behauptete)
 - **Intelligente Tutorsysteme:** d = 0.76 (vergleichbar)
