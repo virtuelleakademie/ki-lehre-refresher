@@ -383,19 +383,19 @@ Kritik am Artikel: Hmelo-Silver et al. (2007) argumentieren, dass gutes Problem-
 
 Was sind Worked Examples? Statt Probleme selbst lösen zu lassen, zeigen Sie ausgearbeitete Lösungswege.
 
-Für Novizen reduziert das die extrinsische Belastung und lässt Kapazität für Schemabildung. Das ist einer der robustesten Befunde der Instruktionsforschung.
+Links sehen wir den Effekt für Novizen: Es reduziert die extrinsische Belastung und lässt Kapazität für Schemabildung. Das ist einer der robustesten Befunde der Instruktionsforschung.
 
-Aber Achtung: Worked Examples sind nicht dasselbe wie KI-generierte Lösungen. Hier liegt ein entscheidender Punkt.
-
-[KLICK]
-
-Worked Examples sind didaktisch gestaltet. Sie heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren.
-
-KI-generierte Antworten, in der typischen Nutzung durch Studierende, beantworten die gestellte Frage. Sie erfolgen jedoch ohne Einbettung in eine geplante Lernprogression.
+Rechts sehen wir aber einen wichtigen Punkt: Worked Examples sind nicht dasselbe wie KI-generierte Lösungen.
 
 [KLICK]
 
-LLMs können mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.
+Hier ist der entscheidende Unterschied: Worked Examples sind didaktisch gestaltet. Sie heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren.
+
+KI-generierte Antworten, in der typischen Nutzung durch Studierende, beantworten die gestellte Frage, aber ohne Einbettung in eine geplante Lernprogression.
+
+[KLICK]
+
+Und hier eine wichtige Nuance: LLMs können mit entsprechendem Prompting durchaus didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.
 
 Der Unterschied liegt in der Einbettung: Worked Examples sind Teil eines durchdachten Instruktionsdesigns. KI-Antworten in der studentischen Alltagsnutzung fehlt dieser Kontext.
 
@@ -856,19 +856,19 @@ Jetzt eine Hypothese, die ich mit Vorsicht präsentieren möchte: die Scaffoldin
 
 [KLICK für jeden Punkt]
 
-Was wir wissen: Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.
+Was wir wissen, also was durch Evidenz gestützt ist: Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.
 
 Was wir theoretisch ableiten: Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory.
 
 [KLICK]
 
-Was wir vermuten: Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Eine Fähigkeit, die nie entsteht, weil der konstruktive Prozess übersprungen wird, könnte schwerer nachzuholen sein.
+Was wir vermuten, also was Hypothese ist: Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Eine Fähigkeit, die nie entsteht, weil der konstruktive Prozess übersprungen wird, könnte schwerer nachzuholen sein.
 
 Die Hypothese: Grundfertigkeiten wie Schreiben sind nicht nur Fertigkeiten, sondern Prozesse, die kognitive Architektur aufbauen. Schreiben könnte ein "epistemisches Werkzeug" sein.
 
 [KLICK]
 
-Vorsicht: Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.
+Und hier kommt der wichtige Hinweis: Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.
 
 ::: {.callout-note}
 ## Hintergrund zur Scaffolding-Hypothese
@@ -1038,9 +1038,9 @@ Die Analogie mahnt zur Vorsicht bei beiden Extremen: weder naive Techno-Optimism
 
 Hier kommen alle unsere Stränge zusammen.
 
-Links: Experten können von KI profitieren. Sie können Routine-Aufgaben sicher auslagern, weil sie wissen, was Routine ist. Sie können höheres Denken aufrechterhalten. Sie können KI-Outputs bewerten. Und sie haben Grundfähigkeiten, die nicht mehr verkümmern können.
+Links: Experten können von KI profitieren. Sie können Routine-Aufgaben sicher auslagern, weil sie wissen, was "Routine" ist. Sie können höheres Denken aufrechterhalten, weil kognitive Kapazität frei wird. Sie können KI-Outputs bewerten, weil sie Domänenexpertise haben. Und ihre Grundfähigkeiten können nicht mehr verkümmern, weil sie schon da sind.
 
-Rechts: Lernenden fehlt all das. Ihnen fehlt das Wissen zur Bewertung. Ihnen fehlen etablierte Grundfähigkeiten. Ihnen fehlt metakognitive Kontrolle.
+Rechts: Lernenden fehlt all das. Ihnen fehlt das Wissen zur Bewertung: sie können nicht einschätzen, ob KI richtig liegt. Ihnen fehlen etablierte Grundfähigkeiten: was nicht da ist, entsteht auch nicht. Und ihnen fehlt metakognitive Kontrolle: sie wissen nicht, wann KI-Nutzung schadet.
 
 Das Risiko ist "fliessende Inkompetenz": anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis.
 
@@ -1323,13 +1323,13 @@ Jetzt kommen wir zur Synthese. Was bedeutet all das zusammen? Und was folgt dara
 
 Hier ist die unbequeme Wahrheit, die sich aus unserer Diskussion ergibt:
 
-Was KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen: Sofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.
+Was KI für Produktivität nützlich macht, DROHT sie für Lernen schädlich zu machen. Sofortige Antworten KÖNNEN die Anstrengung eliminieren, die Kompetenz aufbaut.
 
-Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Das Problem liegt in der Natur des Lernens selbst. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.
+Beachten Sie die vorsichtige Formulierung: "droht" und "können". Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.
 
 [KLICK]
 
-Einschränkung: Es gibt noch wenige Studien, die direkt messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.
+Einschränkung: Es gibt noch wenige Studien, die direkt messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.
 
 ::: {.callout-note}
 ## Hintergrund
@@ -1338,7 +1338,7 @@ Diese These ist die zentrale Aussage der Präsentation. Sie ist:
 - **Empirisch gestützt**: Bastani-Studie und verwandte Forschung
 - **Aber noch nicht definitiv bewiesen**: Längsschnittstudien fehlen
 
-**Einschränkung:** Es gibt noch wenige Studien, die *direkt* messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.
+**Wichtig:** Die Formulierung wurde bewusst von absoluten Aussagen ("macht schädlich") zu vorsichtigeren Aussagen ("droht schädlich zu machen", "können eliminieren") geändert. Dies reflektiert die epistemische Unsicherheit angemessen.
 
 Die epistemische Haltung sollte sein: Starke theoretische Gründe für Vorsicht, aber Offenheit für neue Evidenz.
 :::
@@ -1351,13 +1351,17 @@ Die epistemische Haltung sollte sein: Starke theoretische Gründe für Vorsicht,
 
 Der Philosoph Andy Clark bietet eine hilfreiche Unterscheidung.
 
-Links: Kognition erweitern. Das Werkzeug erhält kognitives Engagement. Es leitet Anstrengung um auf höhere Aufgaben. Der Mensch bleibt in der Schleife. Fähigkeiten bleiben intakt.
+Links: Kognition erweitern. Der Mensch bleibt kognitiv engagiert. Das Werkzeug verstärkt, ersetzt nicht. Ein konkretes Beispiel: Ein Taschenrechner für einen Mathematiker. Fähigkeiten bleiben erhalten und werden ausgebaut.
 
-Rechts: Kognition ersetzen. Das Werkzeug eliminiert Engagement. Es erzeugt Abhängigkeit. Der Mensch akzeptiert passiv. Fähigkeiten verkümmern.
+Rechts: Kognition ersetzen. Der Mensch wird passiv. Das Werkzeug übernimmt das Denken. Ein konkretes Beispiel: KI schreibt den Essay, der Studierende submittet ihn. Abhängigkeit entsteht, Fähigkeiten verkümmern.
 
 [KLICK]
 
-Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung. Ein Experte, der Boilerplate-Code generieren lässt, erweitert seine Kognition. Ein Studierender, der die Hausaufgabe generieren lässt, ersetzt sie.
+Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.
+
+[KLICK]
+
+Und hier ein wichtiger Punkt aus Sicht der Cognitive Load Theory: Wissen im Langzeitgedächtnis unterscheidet sich fundamental von extern zugänglichem Wissen. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse.
 
 ::: {.callout-note}
 ## Hintergrund zu Andy Clark
@@ -1390,13 +1394,13 @@ Studierende brauchen wahrscheinlich Grundwissen, BEVOR KI vorteilhaft wird.
 
 Der Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln.
 
-Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt.
+Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist UNBEKANNT.
 
 Die Antwort ist vermutlich domänen- und personenspezifisch.
 
 [KLICK]
 
-Pauschale Empfehlungen zu geben ist schwierig. Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen. Es ist abhängig vom Fach, vom Vorwissen und den Lernzielen.
+Und hier ein wichtiger Punkt: Es gibt keine Pauschallösungen. Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen: abhängig vom Fach, vom Vorwissen und den Lernzielen.
 
 ::: {.callout-note}
 ## Hintergrund zur Sequenzierung
@@ -1422,21 +1426,21 @@ Dies spricht für experimentelle Ansätze und lokale Anpassung.
 
 **Sprechtext:**
 
-Es gibt auch eine entwicklungspsychologische Dimension.
+Es gibt auch eine Frage der kognitiven Entwicklung.
 
 [KLICK für jeden Punkt]
 
-Der präfrontale Kortex entwickelt sich bis etwa Mitte 20, wobei verschiedene Funktionen unterschiedlich schnell reifen und individuelle Variation erheblich ist.
+Der präfrontale Kortex entwickelt sich bis etwa Mitte 20, wobei die individuelle Variation erheblich ist.
 
 Exekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung.
 
 [KLICK]
 
-Hier ist das Paradox: Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten für ihre negativen Effekte.
+Hier ist das Paradox: Jene, die KI-Nutzung am wenigsten regulieren können, sind MÖGLICHERWEISE am verletzlichsten für ihre negativen Effekte. Beachten Sie die vorsichtige Formulierung.
 
 [KLICK]
 
-Die Kohortenfrage: Die aktuelle Studierendengeneration könnte die erste sein, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.
+Die Kohortenfrage: Die aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.
 
 Wenn wir in 20 Jahren Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
 
@@ -1465,11 +1469,11 @@ Es gibt auch eine soziale Dimension, die Justin Reich betont.
 
 Lernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess.
 
-Studierende lernen besser, wenn sie sich verbunden fühlen. Peers werden seltener konsultiert, wenn KI antwortet. Beziehungen zu Lehrenden werden oberflächlicher, wenn KI die erste Anlaufstelle ist. Gelegenheiten für Mentoring nehmen ab.
+Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen. Peers werden seltener konsultiert, wenn KI antwortet: kollaboratives Lernen leidet. Beziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen statt an Dozierende. Gelegenheiten für Mentoring und informelles Lernen nehmen ab.
 
 [KLICK]
 
-Die Rolle der Lehrperson geht über Informationsvermittlung hinaus: Beziehung, Motivation, Vorbild. Diese sind nicht ersetzbar.
+Und hier ist ein wichtiger Punkt zur Rolle der Lehrperson: Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Beziehung, Motivation, Vorbild, Kontext: diese unersetzliche Funktion muss neu definiert werden.
 
 ::: {.callout-note}
 ## Hintergrund zur sozialen Dimension
@@ -1500,11 +1504,13 @@ Die Idee der "digitalen Kluft" hat sich entwickelt. Die erste Kluft war der Zuga
 
 [KLICK]
 
+Und hier sind konkrete Ungleichheiten: Kosten: Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus leisten? Institutionelle Ressourcen: Welche Hochschulen haben Zeit und Expertise für durchdachte Integration? Betreuung: Wer hat Dozierende, die über KI-Risiken aufklären?
+
+[KLICK]
+
 Das Risiko: Die "Demokratisierung" von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.
 
-Gutausgestattete Studierende in ressourcenreichen Institutionen erhalten ausgeklügelte pädagogische Unterstützung mit KI.
-
-Unterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung.
+Das MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die "allen" zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen.
 
 ::: {.callout-note}
 ## Hintergrund zur dritten digitalen Kluft
@@ -1589,6 +1595,41 @@ Die Forschungslage ist dünn:
 Dies bedeutet nicht, dass wir nichts wissen. Die theoretischen Grundlagen (CLT, Desirable Difficulties) sind solide. Aber die spezifische Anwendung auf KI ist noch hypothetisch.
 
 Die richtige Haltung: Informierte Vorsicht, nicht Panik oder Ignoranz.
+:::
+
+---
+
+## Fazit: Die zentrale Botschaft
+
+**Sprechtext:**
+
+Bevor wir zu den abschliessenden Provokationen kommen, möchte ich die zentrale Botschaft zusammenfassen.
+
+KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende ohne durchdachte Integration oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.
+
+[KLICK]
+
+Die Argumentation stützt sich auf fünf zentrale Konzepte:
+
+Cognitive Load Theory: Produktive Anstrengung durch das Nadelöhr des Arbeitsgedächtnisses.
+
+Expertise-Umkehr-Effekt: Dieselbe Unterstützung kann Novizen helfen und Experten schaden. Oder umgekehrt, wie in unserem Fall.
+
+Domänenspezifität: Kritische KI-Bewertung erfordert Fachwissen.
+
+Desirable Difficulties: Schwierigkeiten optimieren oft Langzeitbehalten.
+
+Generierungseffekt: Selbst erzeugte Information wird besser behalten.
+
+[KLICK]
+
+Die praktischen Implikationen in Kurzform: Grundlagen vor Werkzeugen. Prozess bewerten, nicht nur Produkt. Nach Vorwissen differenzieren. "Ohne-KI"-Phasen einplanen. Kritische KI-Nutzung im Fachkontext üben.
+
+::: {.callout-note}
+## Hintergrund zum Fazit
+Diese Folie fasst die gesamte Argumentation zusammen und bietet eine kompakte Referenz für die Teilnehmenden. Die fünf Konzepte bilden das theoretische Fundament, die praktischen Implikationen sind direkt anwendbar.
+
+Wichtig: Das Fazit wiederholt die vorsichtige Formulierung ("droht", "oft nicht profitieren"), um nicht absoluter zu klingen als die Evidenz rechtfertigt.
 :::
 
 ---
