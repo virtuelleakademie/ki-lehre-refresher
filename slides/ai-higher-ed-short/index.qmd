@@ -1,14 +1,19 @@
 ---
 title: "KI in der Hochschulbildung"
 subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
-author: "Dr. Andrew Ellis"
-institute: "Virtuelle Akademie, Berner Fachhochschule"
+author:
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936"
+# institute: "Virtuelle Akademie, Berner Fachhochschule"
 format:
   revealjs:
     theme: default
     slide-number: true
     preview-links: auto
-    footer: "KI in der Lehre: Refresher (Kurzversion)"
+    footer: "KI in der Lehre: Refresher"
     navigation-mode: linear
     controls: true
     progress: true
@@ -19,186 +24,122 @@ format:
     height: 900
     margin: 0.1
 bibliography: ../../bibliography.bib
-filters:
-  - timer
 ---
 
-## Die zentrale Frage
+```{r}
+#| include: false
+library(tidyverse)
+library(ggplot2)
+
+# Set seed for reproducible simulated data
+set.seed(2025)
+
+# Minimalist theme for all figures
+theme_minimal_custom <- theme_minimal(base_size = 18) +
+theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "grey90"),
+    axis.line = element_line(color = "black", linewidth = 0.5),
+    axis.ticks = element_line(color = "black"),
+    plot.title = element_text(face = "bold", size = 20),
+    plot.subtitle = element_text(color = "grey40"),
+    legend.position = "bottom"
+  )
+```
+
+## Ein überraschendes Ergebnis
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Was KI kann:**
 
-- Anwaltsprüfungen bestehen
-- Code schreiben und debuggen
-- Krankheiten diagnostizieren
-- Wissenschaftliche Texte verfassen
+**Mit KI-Zugang:**
+
+[48% mehr Aufgaben]{.fragment style="font-size: 2em; font-weight: bold;"}
+
+[korrekt gelöst]{.fragment}
+
 :::
 
 ::: {.column width="50%"}
-**Was wir beobachten:**
 
-> "48% mehr Aufgaben gelöst MIT KI,
-> 17% schlechter OHNE KI"
->
-> [@bastaniGenerativeAICan2024]
-:::
-:::
-
-. . .
-
-**Die Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?**
-
-## Die These
-
-::: {.callout-warning}
-## Kernaussage
-
-**KI-Werkzeuge sind für Experten gemacht.**
-
-Sie machen Experten produktiver.
-
-Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI eliminiert.
-:::
-
-## Agenda
-
-1. Das Produktivitäts-Lern-Paradox
-2. Die kognitionswissenschaftliche Erklärung
-3. Warum Experten profitieren, Lernende nicht
-4. Diskussion
-
-# Das Paradox {background-color="#A3195B"}
-
-## Die Bastani-Studie
-
-**Randomisierte kontrollierte Studie** [@bastaniGenerativeAICan2024] *(Einzelstudie)*
-
-~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
-
-. . .
-
-::: {.columns}
-::: {.column width="50%"}
-**Mit KI:**
-
-48% mehr Aufgaben korrekt gelöst (direkter Zugang)
-
-**127% mit "GPT Tutor"** (strukturierte Unterstützung)
-:::
-
-::: {.column width="50%"}
 **Ohne KI (später):**
 
-17% schlechter als Kontrollgruppe
+[17% schlechter]{.fragment style="font-size: 2em; font-weight: bold;"}
 
-*Die nie KI hatte*
+[als die Kontrollgruppe]{.fragment}
+
 :::
 :::
 
 . . .
 
-> "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
+::: {.callout-note}
+## Quelle
+Bastani et al. (2025): ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen^[@bastaniGenerativeAIGuardrails2025]
+:::
 
-*Hinweis: Die Schlussfolgerungen gelten v.a. für KI als Antwortgeber, nicht als pädagogisch gestalteter Tutor.*
+## Das Paradox
 
-## Das Paradox in einem Satz
+```{r}
+#| label: fig-paradox
+#| fig-width: 12
+#| fig-height: 6
+#| echo: false
 
-> "Learning and task completion are not synonymous."
->
-> [@joseCognitiveParadoxAI2025]
+# Simulated data showing the paradox
+paradox_data <- tibble(
+  phase = factor(
+    rep(c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)"), each = 2),
+    levels = c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)")
+  ),
+  gruppe = rep(c("Mit KI", "Ohne KI"), 2),
+  leistung = c(85, 60, 50, 60)
+)
+
+ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe)) +
+  geom_line(linewidth = 1.5) +
+  geom_point(size = 5) +
+  scale_color_manual(
+    values = c("Mit KI" = "black", "Ohne KI" = "grey50"),
+    name = NULL
+  ) +
+  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 25)) +
+  labs(
+    x = NULL,
+    y = "Aufgabenleistung (%)"
+  ) +
+  theme_minimal_custom +
+  theme(
+    legend.position = "top",
+    legend.text = element_text(size = 16)
+  )
+```
 
 . . .
 
 **Aufgabenleistung ≠ Lernen**
 
-**Produktivität ≠ Kompetenzaufbau**
-
-# Die Erklärung {background-color="#A3195B"}
-
-## Warum Anstrengung nötig ist
-
-**Robert Bjork: Desirable Difficulties** [@bjorkMakingThingsHard2011]
-
-> "Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
-
-. . .
-
-**Bewährte "erwünschte Schwierigkeiten":**
-
-- Selbst generieren statt lesen
-- Verteilt lernen statt crammen
-- Abrufen statt wiederholen
-- Variieren statt konstant üben
-
-## Der Generierungseffekt
-
-**Meta-Analyse: d = 0.40** [@slameckaGenerationEffect1978]
+## Das Nadelöhr des Lernens
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Selbst generiert:**
 
-Aktiviert breite neuronale Netzwerke
+**Arbeitsgedächtnis**
 
-Bessere Langzeitspeicherung
+- {{< fa brain >}} 4 ± 1 Elemente
+- {{< fa clock >}} ~30 Sekunden
+- Der **Engpass** allen Lernens
+
 :::
 
 ::: {.column width="50%"}
-**Passiv erhalten:**
 
-Geringere Verarbeitung
+**Langzeitgedächtnis**
 
-Schwächere Erinnerung
-:::
-:::
+- {{< fa database >}} Unbegrenzte Kapazität
+- {{< fa infinity >}} Dauerhafte Speicherung
+- Hier **lebt** Expertise
 
-. . .
-
-::: {.callout-warning}
-## Implikation
-Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert.
-:::
-
-## Historische Analogien
-
-**GPS** [@dahmaniHabitualUseGPS2020]: Längere Nutzung → steilerer Rückgang des räumlichen Gedächtnisses
-
-. . .
-
-**Taschenrechner** [@sieglerDevelopingConceptualUnderstanding2017]: Neutral für jene mit Fähigkeiten, schädlich für jene ohne
-
-. . .
-
-**Google-Effekt** [@sparrowGoogleEffectsMemory2011]: Geringere Erinnerung, wenn Information als verfügbar erwartet wird
-
-. . .
-
-**Muster:** Werkzeuge, die Experten helfen, können Novizen schaden.
-
-*Aber: Diese Analogien sind begrenzt — KI ist breiter als GPS oder Taschenrechner.*
-
-# Experten vs. Lernende {background-color="#A3195B"}
-
-## Der Expertise-Umkehr-Effekt
-
-**Meta-Analyse** [@kalyugaExpertiseReversalEffect2009]
-
-::: {.columns}
-::: {.column width="50%"}
-**Geringe Vorkenntnisse:**
-
-Profitieren von hoher Unterstützung
-
-*d = 0.505*
-:::
-
-::: {.column width="50%"}
-**Hohe Vorkenntnisse:**
-
-Profitieren von *niedriger* Unterstützung
-
-*d = −0.428*
 :::
 :::
 
@@ -206,28 +147,222 @@ Profitieren von *niedriger* Unterstützung
 
 ::: {.callout-warning}
 ## Kernaussage
-**Dasselbe Werkzeug kann gegenteilige Effekte haben, abhängig vom Expertisegrad.**
+Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.^[@swellerCognitiveLoadTheory2024]
 :::
 
-## Warum Experten profitieren
+## Erwünschte Schwierigkeiten
+
+> "Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
+>
+> Robert Bjork^[@bjorkMakingThingsHard2011]
+
+. . .
+
+::: {.columns}
+::: {.column width="25%"}
+{{< fa pen size=2x >}}
+
+**Selbst generieren**
+:::
+
+::: {.column width="25%"}
+{{< fa calendar size=2x >}}
+
+**Verteilt lernen**
+:::
+
+::: {.column width="25%"}
+{{< fa brain size=2x >}}
+
+**Aktiv abrufen**
+:::
+
+::: {.column width="25%"}
+{{< fa shuffle size=2x >}}
+
+**Variieren**
+:::
+:::
+
+. . .
+
+**Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.**
+
+## Der Generierungseffekt
+
+```{r}
+#| label: fig-generation
+#| fig-width: 10
+#| fig-height: 5.5
+#| echo: false
+
+# Simulated data based on generation effect literature
+generation_data <- tibble(
+  methode = factor(
+    c("Selbst\ngeneriert", "Gelesen", "Von KI\nerhalten"),
+    levels = c("Selbst\ngeneriert", "Gelesen", "Von KI\nerhalten")
+  ),
+  retention = c(70, 50, 35),
+  se = c(5, 5, 8)
+)
+
+ggplot(generation_data, aes(x = methode, y = retention)) +
+  geom_col(fill = "grey30", width = 0.6) +
+  geom_errorbar(
+    aes(ymin = retention - se, ymax = retention + se),
+    width = 0.2,
+    linewidth = 0.8
+  ) +
+  scale_y_continuous(
+    limits = c(0, 100),
+    breaks = seq(0, 100, 25),
+    labels = function(x) paste0(x, "%")
+  ) +
+  labs(
+    x = NULL,
+    y = "Behaltensleistung"
+  ) +
+  theme_minimal_custom
+
+```
+
+Selbst generierte Information wird besser behalten.^[@slameckaGenerationEffectDelineation1978]
+
+. . .
+
+**Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.**
+
+## Historische Analogien
+
+| Technologie | Effekt |
+|-------------|--------|
+| {{< fa location-dot >}} GPS | Räumliches Gedächtnis ↓^[@dahmaniHabitualUseGPS2020] |
+| {{< fa calculator >}} Taschenrechner | Konzeptuelles Verständnis ↓ |
+| {{< fa search >}} Google | "Wo" ersetzt "Was"^[@sparrowGoogleEffectsMemory2011] |
+| {{< fa robot >}} KI | Alles oben + mehr? |
+
+. . .
+
+**Das Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.**
+
+## Die Nuance
+
+> "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
+>
+> Bastani et al. (2025)
+
+. . .
+
+**Aber:**
+
+- Direkter GPT-4 Zugang: **48%** mehr Aufgaben
+- GPT Tutor (strukturiert): **127%** mehr Aufgaben
+
+. . .
+
+::: {.callout-note}
+## Kernpunkt
+Die **Art der Nutzung** macht den Unterschied. KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor.
+:::
+
+## Was Experten sehen
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Experten können:**
 
-- Routine-Aufgaben sicher auslagern
-- Höheres Denken aufrechterhalten
-- KI-Outputs bewerten
-- Haben Grundfähigkeiten, die nicht verkümmern
+![](../../assets/images/chess.png){width="90%"}
+
 :::
 
 ::: {.column width="50%"}
-**Lernenden fehlt:**
 
-- Wissen zur Bewertung
-- Etablierte Grundfähigkeiten
-- Metakognitive Kontrolle
-- Risiko: **"Fliessende Inkompetenz"**
+**Novize:**
+
+"64 Felder, 32 Figuren"
+
+. . .
+
+**Experte:**
+
+"Königsangriff, offene Linie, Schwäche auf f7"
+
+. . .
+
+Experten haben eine andere **kognitive Architektur**.^[@grootThoughtChoiceChess1978; @chasePerceptionChess1973]
+
+:::
+:::
+
+## Der Expertise-Umkehr-Effekt
+
+```{r}
+#| label: fig-expertise-reversal
+#| fig-width: 11
+#| fig-height: 5.5
+#| echo: false
+
+# Simulated data for expertise reversal effect
+expertise_data <- tibble(
+  vorwissen = rep(seq(0, 100, length.out = 50), 2),
+  unterstuetzung = rep(c("Hohe Unterstützung", "Niedrige Unterstützung"), each = 50)
+) |>
+  mutate(
+    lerneffekt = case_when(
+      unterstuetzung == "Hohe Unterstützung" ~ 70 - 0.6 * vorwissen + rnorm(n(), 0, 3),
+      unterstuetzung == "Niedrige Unterstützung" ~ 20 + 0.5 * vorwissen + rnorm(n(), 0, 3)
+    )
+  )
+
+ggplot(expertise_data, aes(x = vorwissen, y = lerneffekt, color = unterstuetzung)) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1.5) +
+  scale_color_manual(
+    values = c("Hohe Unterstützung" = "black", "Niedrige Unterstützung" = "grey50"),
+    name = NULL
+  ) +
+  scale_x_continuous(
+    breaks = c(0, 50, 100),
+    labels = c("Niedrig", "Mittel", "Hoch")
+  ) +
+  labs(
+    x = "Vorwissen",
+    y = "Lerneffekt"
+  ) +
+  theme_minimal_custom +
+  theme(
+    legend.position = "top",
+    legend.text = element_text(size = 16)
+  ) +
+  annotate(
+    "text",
+    x = 50, y = 85,
+    label = "Kreuzung: Dieselbe Hilfe\nkann helfen ODER schaden",
+    size = 5, hjust = 0.5
+  )
+```
+
+Der Expertise-Umkehr-Effekt^[@kalyugaExpertiseReversalEffect2009]
+
+## Warum Experten profitieren, Lernende nicht
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Experten:**
+
+- {{< fa check >}} Können Routine auslagern
+- {{< fa check >}} Können KI-Output bewerten
+- {{< fa check >}} Behalten höheres Denken
+
+:::
+
+::: {.column width="50%"}
+
+**Lernende:**
+
+- {{< fa xmark >}} Können nicht bewerten
+- {{< fa xmark >}} Überspringen Grundlagen
+- {{< fa xmark >}} Risiko: "Fliessende Inkompetenz"
+
 :::
 :::
 
@@ -239,106 +374,93 @@ Profitieren von *niedriger* Unterstützung
 
 > "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
 >
-> [@willinghamCriticalThinkingWhy2008]
-
-*Willinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen.*
+> Daniel Willingham^[@willinghamCriticalThinkingWhy2008]
 
 . . .
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Experte in Biomedizin:**
+
+**Biomedizin-Experte:**
 
 Erkennt, wenn ChatGPT bei Biochemie falsch liegt
+
 :::
 
 ::: {.column width="50%"}
+
 **Novize:**
 
-Kann diese Bewertung nicht vornehmen, *auch mit guten metakognitiven Strategien*
+Kann diese Bewertung nicht vornehmen
+
 :::
 :::
 
 . . .
 
-**Metakognitive Strategien helfen — aber ihre Anwendung erfordert Fachwissen.**
+**Du kannst nicht kritisch bewerten, was du nicht verstehst.**
 
-# Synthese {background-color="#A3195B"}
-
-## Die unbequeme Wahrheit
-
-::: {.callout-warning}
-## Kernaussage
-Was KI für Produktivität nützlich macht, macht sie für Lernen schädlich.
-
-Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
-
-**Dies folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist.**
-:::
-
-## Mind-extending vs. Mind-replacing
-
-**Andy Clark** [@clarkExtendingMindsGenerative2025]
+## Kognition erweitern vs. ersetzen
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Kognition erweitern:**
 
-- Erhält kognitives Engagement
-- Leitet Anstrengung um
-- Mensch bleibt in der Schleife
+**{{< fa expand >}} Kognition erweitern:**
+
+- Mensch bleibt kognitiv engagiert
+- Werkzeug verstärkt, ersetzt nicht
+- Fähigkeiten bleiben erhalten
+
 :::
 
 ::: {.column width="50%"}
-**Kognition ersetzen:**
 
-- Eliminiert Engagement
-- Erzeugt Abhängigkeit
-- Passives Akzeptieren
+**{{< fa compress >}} Kognition ersetzen:**
+
+- Mensch wird passiv
+- Werkzeug übernimmt das Denken
+- Abhängigkeit entsteht
+
 :::
 :::
 
 . . .
 
-**Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.**
+**Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.**^[@clarkExtendingMindsGenerative2025]
 
-## Offene Fragen
+## Die Sequenzierungsfrage
 
 ::: {.incremental}
-- **Scaffolding-Hypothese:** Werden Grundfertigkeiten nur verlernt, oder entstehen höhere Fähigkeiten gar nicht erst?
-- **Entwicklungsfrage:** Sind Lernende in sensiblen Entwicklungsphasen besonders gefährdet?
-- **Der stärkste Gegeneinwand:** "Wenn KI immer verfügbar ist, brauchen wir diese Fähigkeiten nicht mehr." — Aber wer erkennt dann Fehler? Wer erweitert Wissen?
+- Studierende brauchen wahrscheinlich **Grundwissen**, bevor KI vorteilhaft wird
+- Der Expertise-Umkehr-Effekt empfiehlt **dynamische** KI-Nutzungsregeln
+- Die Schwelle ist **unbekannt** und vermutlich domänenspezifisch
+- Es gibt **keine Pauschallösung**
 :::
 
-## Abschliessende Provokationen
+. . .
 
-> "If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable."
+**Grundlagen BEVOR Werkzeuge**
+
+## Die Kernaussage
 
 . . .
 
-> "The productivity gains during education would come at the cost of capability thereafter."
-
-. . .
-
-> "Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify."
-
-. . .
-
-> "Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt."
-
-## Diskussion {background-color="#D4A03E"}
-
-::: {.timer #timer-discussion seconds=1800}
+::: {style="font-size: 1.5em; text-align: center; margin-top: 2em;"}
+**KI-Werkzeuge sind für Experten gemacht.**
 :::
 
-::: {.callout-tip}
-## Diskussionsfragen
+. . .
 
-1. **Für dein Fach:** Wo könnte KI-Nutzung die produktive Anstrengung eliminieren, die Lernen ermöglicht? Welche Grundfähigkeiten könnten verkümmern?
+::: {style="text-align: center; margin-top: 1em; color: grey;"}
+Sie machen Experten produktiver.
 
-2. **Für deine Lehre:** Ab welchem Punkt sollten Studierende KI nutzen dürfen? Wie bestimmst du, ob genug Grundwissen vorhanden ist?
+Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.
+:::
 
-3. **Grundsätzlich:** Ist die Unterscheidung "Experten vs. Lernende" in deinem Kontext nützlich? Wo greift sie, wo nicht?
+. . .
+
+::: {style="text-align: center; margin-top: 2em;"}
+**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**
 :::
 
 ## Referenzen

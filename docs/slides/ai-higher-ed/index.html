@@ -12,7 +12,7 @@
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
-  <meta name="author" content="Andrew Ellis">
+  <meta name="author" content="Dr.&nbsp;Andrew Ellis">
   <title>KI in der Lehre: Refresher – KI in der Hochschulbildung</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -156,30 +156,6 @@
     }
   </style>
   <style>
-  div.callout-scenario.callout {
-    border-left-color: #666666;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
-    background-image: none;
-  }
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
-    background-image: none;
-  }
   div.callout-experiment.callout {
     border-left-color: #A3195B;
   }
@@ -190,18 +166,6 @@
   div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f0c3';
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
     background-image: none;
   }
   div.callout-warning.callout {
@@ -216,52 +180,40 @@
     content: '\f06a';
     background-image: none;
   }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
-  div.callout-prompt.callout {
-    border-left-color: #333333;
-  }
-  div.callout-prompt.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f328';
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
-    background-image: none;
-  }
-  div.callout-source-check.callout {
+  div.callout-reflect.callout {
     border-left-color: #D4A03E;
   }
-  div.callout-source-check.callout-style-default > .callout-header {
+  div.callout-reflect.callout-style-default > .callout-header {
     background-color: rgba(212, 160, 62, 0.13);
   }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f002';
+    content: '\f0eb';
+    background-image: none;
+  }
+  div.callout-demonstration.callout {
+    border-left-color: #333333;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
+    background-image: none;
+  }
+  div.callout-scenario.callout {
+    border-left-color: #666666;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(102, 102, 102, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
     background-image: none;
   }
   div.callout-pro-tip.callout {
@@ -276,16 +228,64 @@
     content: '\e2ca';
     background-image: none;
   }
-  div.callout-demonstration.callout {
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
+  div.callout-source-check.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
+  div.callout-group.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c0';
+    background-image: none;
+  }
+  div.callout-prompt.callout {
     border-left-color: #333333;
   }
-  div.callout-demonstration.callout-style-default > .callout-header {
+  div.callout-prompt.callout-style-default > .callout-header {
     background-color: rgba(51, 51, 51, 0.13);
   }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
+    content: '\f328';
     background-image: none;
   }
   </style>
@@ -304,7 +304,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Andrew Ellis 
+Dr.&nbsp;Andrew Ellis 
 </div>
         <p class="quarto-title-affiliation">
             Virtuelle Akademie, Berner Fachhochschule
@@ -331,12 +331,11 @@ Andrew Ellis
 <li>Komplexe Analysen durchführen</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Aber was bedeutet das für Lernen?</strong></p>
-<ul>
-<li>Mit KI → 48% mehr Aufgaben gelöst</li>
-<li>Ohne KI → 17% schlechter an der Prüfung</li>
-</ul>
+<p><strong>Was wir nicht wissen:</strong></p>
+<blockquote>
+<p>“48% mehr Aufgaben gelöst MIT KI, 17% schlechter OHNE KI”</p>
 <p><span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Bastani u.&nbsp;a. 2025</a>)</span></p>
+</blockquote>
 </div></div>
 <div class="fragment">
 <p><strong>Die Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?</strong></p>
@@ -451,7 +450,7 @@ Andrew Ellis
 </section>
 <section id="von-schwachen-zu-starken-methoden" class="slide level2">
 <h2>Von schwachen zu starken Methoden</h2>
-<p><strong>Newell &amp; Simon</strong> <span class="citation" data-cites="newellHumanProblemSolving1972">(<a href="#/referenzen" role="doc-biblioref" onclick="">Newell und Simon 1972</a>)</span> | <strong>ACT-R</strong> <span class="citation" data-cites="andersonAcquisitionCognitiveSkill1982">(<a href="#/referenzen" role="doc-biblioref" onclick="">Anderson 1982</a>)</span></p>
+<p><strong>ACT-R Theorie</strong> <span class="citation" data-cites="andersonAcquisitionCognitiveSkill1982">(<a href="#/referenzen" role="doc-biblioref" onclick="">Anderson 1982</a>)</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Novizen: Schwache Methoden</strong></p>
@@ -625,23 +624,8 @@ Andrew Ellis
 <p><strong>Der entscheidende Unterschied</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Worked Examples</strong> sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt.</p>
-<p><strong>KI-generierte Antworten</strong> beantworten die gestellte Frage, aber ohne Einbettung in eine geplante Lernprogression.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Nuance</strong></p>
-</div>
-<div class="callout-content">
-<p>LLMs <em>können</em> mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.</p>
+<p>Worked Examples sind <em>didaktisch gestaltet</em>, bauen systematisch Komplexität auf.</p>
+<p>KI-Antworten sind reaktiv und unsystematisch.</p>
 </div>
 </div>
 </div>
@@ -955,14 +939,27 @@ Andrew Ellis
 </section>
 <section id="die-scaffolding-hypothese" class="slide level2">
 <h2>Die Scaffolding-Hypothese</h2>
-<p><strong>Was wissen wir, was vermuten wir?</strong></p>
+<p><strong>Grundfertigkeiten als konstruktive Prozesse</strong></p>
 <ul>
-<li class="fragment"><strong>Was wir wissen (Evidenz):</strong> Atrophie von Fähigkeiten ist dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.</li>
-<li class="fragment"><strong>Was wir theoretisch ableiten:</strong> Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der CLT.</li>
-<li class="fragment"><strong>Was wir vermuten (Hypothese):</strong> Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung.</li>
+<li class="fragment">Schreiben, Rechnen, Lesen sind nicht nur <em>Fertigkeiten</em></li>
+<li class="fragment">Sie sind <em>Prozesse</em>, die kognitive Architektur aufbauen</li>
+<li class="fragment">Schreiben als epistemisches Werkzeug: Gedanken entwickeln sich <em>durch</em> das Schreiben</li>
+<li class="fragment">Wenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht</li>
 </ul>
 <div class="fragment">
-<p><strong>Die Hypothese:</strong> Grundfertigkeiten wie Schreiben sind nicht nur <em>Fertigkeiten</em>, sondern <em>Prozesse</em>, die kognitive Architektur aufbauen. Schreiben könnte ein “epistemisches Werkzeug” sein.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Wichtig</strong></p>
+</div>
+<div class="callout-content">
+<p>Dies ist eine <em>Hypothese</em>, keine gesicherte Erkenntnis. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="fragment">
 <div class="callout callout-warning callout-titled callout-style-default">
@@ -971,10 +968,10 @@ Andrew Ellis
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Vorsicht</strong></p>
+<p><strong>Wichtige Unterscheidung</strong></p>
 </div>
 <div class="callout-content">
-<p>Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.</p>
+<p><strong>Fertigkeitsatrophie</strong> (Fähigkeit verkümmert) vs.&nbsp;<strong>Entwicklungsbeeinträchtigung</strong> (Fähigkeit entsteht nie)</p>
 </div>
 </div>
 </div>
@@ -1049,24 +1046,22 @@ Andrew Ellis
 <div class="column" style="width:50%;">
 <p><strong>Experten können:</strong></p>
 <ul>
-<li>Routine-Aufgaben sicher auslagern (sie wissen, was “Routine” ist)</li>
-<li>Höheres Denken aufrechterhalten (kognitive Kapazität wird frei)</li>
-<li>KI-Outputs bewerten (sie haben Domänenexpertise)</li>
-<li>Ihre Grundfähigkeiten verkümmern nicht (sie sind schon da)</li>
+<li>Routine-Aufgaben sicher auslagern</li>
+<li>Höheres Denken aufrechterhalten</li>
+<li>KI-Outputs bewerten</li>
+<li>Haben Grundfähigkeiten, die nicht verkümmern</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Lernenden fehlt:</strong></p>
 <ul>
-<li>Wissen zur Bewertung (sie können nicht einschätzen, ob KI richtig liegt)</li>
-<li>Etablierte Grundfähigkeiten (was nicht da ist, entsteht auch nicht)</li>
-<li>Metakognitive Kontrolle (sie wissen nicht, wann KI-Nutzung schadet)</li>
+<li>Wissen zur Bewertung</li>
+<li>Etablierte Grundfähigkeiten</li>
+<li>Metakognitive Kontrolle</li>
+<li>Risiko: <strong>“Fliessende Inkompetenz”</strong> — anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis</li>
 </ul>
 </div></div>
 <div class="fragment">
-<p>Das Ergebnis kann <strong>“fliessende Inkompetenz”</strong> sein: Anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis.</p>
-</div>
-<div class="fragment">
-<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen. Das ist der Expertise-Umkehr-Effekt, angewandt auf KI.</strong></p>
+<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</strong></p>
 </div>
 </section>
 <section id="diskussion-think-pair-share-1" class="slide level2" data-background-color="#F5E6C8">
@@ -1247,24 +1242,9 @@ Andrew Ellis
 <p><strong>Kernaussage</strong></p>
 </div>
 <div class="callout-content">
-<p>Was KI für Produktivität nützlich macht, <strong>droht</strong> sie für Lernen schädlich zu machen.</p>
-<p>Sofortige Antworten <strong>können</strong> die Anstrengung eliminieren, die Kompetenz aufbaut.</p>
-<p><strong>Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.</strong></p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Einschränkung</strong></p>
-</div>
-<div class="callout-content">
-<p>Es gibt noch wenige Studien, die <em>direkt</em> messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.</p>
-</div>
+<p>Was KI für Produktivität nützlich macht, macht sie für Lernen schädlich.</p>
+<p>Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.</p>
+<p><strong>Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist.</strong></p>
 </div>
 </div>
 </div>
@@ -1276,70 +1256,40 @@ Andrew Ellis
 <div class="column" style="width:50%;">
 <p><strong>Kognition erweitern:</strong></p>
 <ul>
-<li>Der Mensch bleibt kognitiv engagiert</li>
-<li>Werkzeug verstärkt, ersetzt nicht</li>
-<li>Beispiel: Taschenrechner für Mathematiker</li>
-<li>Fähigkeiten bleiben erhalten und werden ausgebaut</li>
+<li>Erhält kognitive Engagement</li>
+<li>Leitet Anstrengung um auf höhere Aufgaben</li>
+<li>Mensch bleibt in der Schleife</li>
+<li>Fähigkeiten bleiben intakt</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Kognition ersetzen:</strong></p>
 <ul>
-<li>Der Mensch wird passiv</li>
-<li>Werkzeug übernimmt das Denken</li>
-<li>Beispiel: KI schreibt Essay, Studierender submittet</li>
-<li>Abhängigkeit entsteht, Fähigkeiten verkümmern</li>
+<li>Eliminiert Engagement</li>
+<li>Erzeugt Abhängigkeit</li>
+<li>Passives Akzeptieren</li>
+<li>Fähigkeiten verkümmern</li>
 </ul>
 </div></div>
 <div class="fragment">
 <p><strong>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.</strong></p>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Aus Sicht der Cognitive Load Theory</strong></p>
-</div>
-<div class="callout-content">
-<p>Wissen im Langzeitgedächtnis unterscheidet sich fundamental von extern zugänglichem Wissen. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse.</p>
-</div>
-</div>
-</div>
 </div>
 </section>
 <section id="die-sequenzierungsfrage" class="slide level2">
 <h2>Die Sequenzierungsfrage</h2>
 <ul>
 <li class="fragment">Studierende brauchen wahrscheinlich <strong>Grundwissen BEVOR</strong> KI vorteilhaft wird</li>
-<li class="fragment">Der Expertise-Umkehr-Effekt empfiehlt <strong>dynamische</strong> KI-Nutzungsregeln</li>
-<li class="fragment">Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist <strong>unbekannt</strong></li>
-<li class="fragment">Die Antwort ist vermutlich <strong>domänen- und personenspezifisch</strong></li>
+<li class="fragment">Der Expertise-Umkehr-Effekt legt <strong>dynamische</strong> Policies nahe</li>
+<li class="fragment">Ab welchem Punkt wechselt KI von schädlich zu hilfreich?</li>
+<li class="fragment">Die Antwort ist vermutlich <strong>domänen- und studentenspezifisch</strong></li>
 </ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Keine Pauschallösungen</strong></p>
-</div>
-<div class="callout-content">
-<p>Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen: abhängig vom Fach, vom Vorwissen und den Lernzielen.</p>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section id="die-entwicklungsfrage" class="slide level2">
 <h2>Die Entwicklungsfrage</h2>
-<p><strong>Kognitive Entwicklung und KI</strong></p>
+<p><strong>Sensible Phasen in der kognitiven Entwicklung</strong></p>
 <ul>
-<li class="fragment">Der präfrontale Kortex entwickelt sich bis etwa Mitte 20 (individuelle Variation erheblich)</li>
-<li class="fragment">Exekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung</li>
-<li class="fragment"><strong>Paradox:</strong> Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten</li>
+<li class="fragment">Präfrontaler Kortex entwickelt sich bis Mitte 20</li>
+<li class="fragment">Exekutive Funktionen, Metakognition, Selbstregulation noch in Entwicklung</li>
+<li class="fragment"><strong>Paradox:</strong> Jene, die KI-Nutzung am wenigsten regulieren können, sind am verletzlichsten</li>
 </ul>
 <div class="fragment">
 <div class="callout callout-warning callout-titled callout-style-default">
@@ -1362,13 +1312,13 @@ Andrew Ellis
 <h2>Die soziale Dimension</h2>
 <p><strong>Lernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess</strong> <span class="citation" data-cites="reichFailureDisruptWhy2020">(<a href="#/referenzen" role="doc-biblioref" onclick="">Reich 2020</a>)</span></p>
 <ul>
-<li class="fragment">Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen</li>
-<li class="fragment">Peers werden seltener konsultiert, wenn KI antwortet: kollaboratives Lernen leidet</li>
-<li class="fragment">Beziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen</li>
-<li class="fragment">Gelegenheiten für Mentoring und informelles Lernen nehmen ab</li>
+<li class="fragment">Studierende lernen besser, wenn sie sich verbunden fühlen</li>
+<li class="fragment">Peers werden seltener konsultiert, wenn KI antwortet</li>
+<li class="fragment">Beziehungen zu Lehrenden werden oberflächlicher</li>
+<li class="fragment">Gelegenheiten für Mentoring nehmen ab</li>
 </ul>
 <div class="fragment">
-<p><strong>Die Rolle der Lehrperson:</strong> Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Beziehung, Motivation, Vorbild, Kontext: diese unersetzliche Funktion muss neu definiert werden.</p>
+<p><strong>Die Rolle der Lehrperson:</strong> Beziehung, Motivation, Vorbild sind nicht ersetzbar.</p>
 </div>
 </section>
 <section id="die-equity-dimension" class="slide level2">
@@ -1398,14 +1348,6 @@ Andrew Ellis
 </table>
 </div>
 <div class="fragment">
-<p><strong>Konkrete Ungleichheiten:</strong></p>
-<ul>
-<li><strong>Kosten:</strong> Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus leisten?</li>
-<li><strong>Institutionelle Ressourcen:</strong> Welche Hochschulen haben Zeit und Expertise für durchdachte Integration?</li>
-<li><strong>Betreuung:</strong> Wer hat Dozierende, die über KI-Risiken aufklären?</li>
-</ul>
-</div>
-<div class="fragment">
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1416,7 +1358,8 @@ Andrew Ellis
 </div>
 <div class="callout-content">
 <p>“Demokratisierung” von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.</p>
-<p>Das MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die “allen” zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen.</p>
+<p>Gutausgestattete Studierende erhalten ausgeklügelte pädagogische Unterstützung.</p>
+<p>Unterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung.</p>
 </div>
 </div>
 </div>
@@ -1448,25 +1391,6 @@ Andrew Ellis
 </ul>
 <div class="fragment">
 <p><strong>Epistemische Bescheidenheit ist angebracht.</strong></p>
-</div>
-</section>
-<section id="fazit-die-zentrale-botschaft" class="slide level2">
-<h2>Fazit: Die zentrale Botschaft</h2>
-<blockquote>
-<p>KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende ohne durchdachte Integration oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.</p>
-</blockquote>
-<div class="fragment">
-<p><strong>Die Argumentation stützt sich auf:</strong></p>
-<ul>
-<li>Cognitive Load Theory: Produktive Anstrengung durch das Nadelöhr des Arbeitsgedächtnisses</li>
-<li>Expertise-Umkehr-Effekt: Dieselbe Unterstützung kann Novizen helfen und Experten schaden</li>
-<li>Domänenspezifität: Kritische KI-Bewertung erfordert Fachwissen</li>
-<li>Desirable Difficulties: Schwierigkeiten optimieren oft Langzeitbehalten</li>
-<li>Generierungseffekt: Selbst erzeugte Information wird besser behalten</li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>Die praktischen Implikationen:</strong> Grundlagen vor Werkzeugen | Prozess bewerten | Nach Vorwissen differenzieren | “Ohne-KI”-Phasen | Kritische KI-Nutzung im Fachkontext üben</p>
 </div>
 </section>
 <section id="abschliessende-provokationen" class="slide level2">
@@ -1564,9 +1488,6 @@ Lortie-Forgues, Hugues, und Robert S. Siegler. 2017. <span>„Conceptual Knowled
 </div>
 <div id="ref-michaeltrucanoAINextDigital2023" class="csl-entry" role="listitem">
 Michael Trucano. 2023. <span>„<span>AI</span> and the Next Digital Divide in Education“</span>. Brookings. 7. Oktober 2023. <a href="https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/">https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/</a>.
-</div>
-<div id="ref-newellHumanProblemSolving1972" class="csl-entry" role="listitem">
-Newell, Allen, und Herbert A. Simon. 1972. <em>Human <span>Problem Solving</span></em>. Brattleboro, Vermont: Echo Point Books &amp; Media.
 </div>
 <div id="ref-reichFailureDisruptWhy2020" class="csl-entry" role="listitem">
 Reich, Justin. 2020. <em>Failure to <span>Disrupt</span>: <span>Why Technology Alone Can</span>’t <span>Transform Education</span></em>. Cambridge London: Harvard University Press.
