@@ -198,7 +198,7 @@
     "href": "slides/ai-higher-ed/index.html#worked-examples-ein-robuster-befund",
     "title": "KI in der Hochschulbildung",
     "section": "Worked Examples: Ein robuster Befund",
-    "text": "Worked Examples: Ein robuster Befund\nStatt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen (Cooper und Sweller 1987)\n\n\nFür Novizen:\n\nReduziert extrinsische Belastung\nLässt Kapazität für Schemabildung\nEiner der robustesten Befunde der Instruktionsforschung\n\n\nAber Achtung:\nWorked Examples ≠ KI-generierte Lösungen\n\n\n\n\n\n\n\n\nDer entscheidende Unterschied\n\n\nWorked Examples sind didaktisch gestaltet, bauen systematisch Komplexität auf.\nKI-Antworten sind reaktiv und unsystematisch."
+    "text": "Worked Examples: Ein robuster Befund\nStatt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen (Cooper und Sweller 1987)\n\n\nFür Novizen:\n\nReduziert extrinsische Belastung\nLässt Kapazität für Schemabildung\nEiner der robustesten Befunde der Instruktionsforschung\n\n\nAber Achtung:\nWorked Examples ≠ KI-generierte Lösungen\n\n\n\n\n\n\n\n\nDer entscheidende Unterschied\n\n\nWorked Examples sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt.\nKI-generierte Antworten beantworten die gestellte Frage, aber ohne Einbettung in eine geplante Lernprogression.\n\n\n\n\n\n\n\n\n\n\n\nNuance\n\n\nLLMs können mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#von-worked-examples-zu-selbständigem-lösen",
@@ -296,7 +296,7 @@
     "href": "slides/ai-higher-ed/index.html#die-scaffolding-hypothese",
     "title": "KI in der Hochschulbildung",
     "section": "Die Scaffolding-Hypothese",
-    "text": "Die Scaffolding-Hypothese\nGrundfertigkeiten als konstruktive Prozesse\n\nSchreiben, Rechnen, Lesen sind nicht nur Fertigkeiten\nSie sind Prozesse, die kognitive Architektur aufbauen\nSchreiben als epistemisches Werkzeug: Gedanken entwickeln sich durch das Schreiben\nWenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht\n\n\n\n\n\n\n\n\nWichtig\n\n\nDies ist eine Hypothese, keine gesicherte Erkenntnis. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen.\n\n\n\n\n\n\n\n\n\n\n\nWichtige Unterscheidung\n\n\nFertigkeitsatrophie (Fähigkeit verkümmert) vs. Entwicklungsbeeinträchtigung (Fähigkeit entsteht nie)"
+    "text": "Die Scaffolding-Hypothese\nWas wissen wir, was vermuten wir?\n\nWas wir wissen (Evidenz): Atrophie von Fähigkeiten ist dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.\nWas wir theoretisch ableiten: Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der CLT.\nWas wir vermuten (Hypothese): Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung.\n\n\nDie Hypothese: Grundfertigkeiten wie Schreiben sind nicht nur Fertigkeiten, sondern Prozesse, die kognitive Architektur aufbauen. Schreiben könnte ein “epistemisches Werkzeug” sein.\n\n\n\n\n\n\n\n\nVorsicht\n\n\nDiese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#historische-analogien",
@@ -331,7 +331,7 @@
     "href": "slides/ai-higher-ed/index.html#warum-experten-profitieren-lernende-nicht",
     "title": "KI in der Hochschulbildung",
     "section": "Warum Experten profitieren, Lernende nicht",
-    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nRisiko: “Fliessende Inkompetenz” — anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
+    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern (sie wissen, was “Routine” ist)\nHöheres Denken aufrechterhalten (kognitive Kapazität wird frei)\nKI-Outputs bewerten (sie haben Domänenexpertise)\nIhre Grundfähigkeiten verkümmern nicht (sie sind schon da)\n\n\nLernenden fehlt:\n\nWissen zur Bewertung (sie können nicht einschätzen, ob KI richtig liegt)\nEtablierte Grundfähigkeiten (was nicht da ist, entsteht auch nicht)\nMetakognitive Kontrolle (sie wissen nicht, wann KI-Nutzung schadet)\n\n\n\nDas Ergebnis kann “fliessende Inkompetenz” sein: Anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis.\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen. Das ist der Expertise-Umkehr-Effekt, angewandt auf KI."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#diskussion-think-pair-share-1",
@@ -394,42 +394,42 @@
     "href": "slides/ai-higher-ed/index.html#die-unbequeme-wahrheit",
     "title": "KI in der Hochschulbildung",
     "section": "Die unbequeme Wahrheit",
-    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist."
+    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen.\nSofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.\nDies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.\n\n\n\n\n\n\n\n\n\n\nEinschränkung\n\n\nEs gibt noch wenige Studien, die direkt messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#mind-extending-vs.-mind-replacing",
     "href": "slides/ai-higher-ed/index.html#mind-extending-vs.-mind-replacing",
     "title": "KI in der Hochschulbildung",
     "section": "Mind-extending vs. Mind-replacing",
-    "text": "Mind-extending vs. Mind-replacing\nAndy Clark (Clark 2025)\n\n\nKognition erweitern:\n\nErhält kognitive Engagement\nLeitet Anstrengung um auf höhere Aufgaben\nMensch bleibt in der Schleife\nFähigkeiten bleiben intakt\n\n\nKognition ersetzen:\n\nEliminiert Engagement\nErzeugt Abhängigkeit\nPassives Akzeptieren\nFähigkeiten verkümmern\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung."
+    "text": "Mind-extending vs. Mind-replacing\nAndy Clark (Clark 2025)\n\n\nKognition erweitern:\n\nDer Mensch bleibt kognitiv engagiert\nWerkzeug verstärkt, ersetzt nicht\nBeispiel: Taschenrechner für Mathematiker\nFähigkeiten bleiben erhalten und werden ausgebaut\n\n\nKognition ersetzen:\n\nDer Mensch wird passiv\nWerkzeug übernimmt das Denken\nBeispiel: KI schreibt Essay, Studierender submittet\nAbhängigkeit entsteht, Fähigkeiten verkümmern\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung.\n\n\n\n\n\n\n\n\nAus Sicht der Cognitive Load Theory\n\n\nWissen im Langzeitgedächtnis unterscheidet sich fundamental von extern zugänglichem Wissen. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-sequenzierungsfrage",
     "href": "slides/ai-higher-ed/index.html#die-sequenzierungsfrage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Sequenzierungsfrage",
-    "text": "Die Sequenzierungsfrage\n\nStudierende brauchen wahrscheinlich Grundwissen BEVOR KI vorteilhaft wird\nDer Expertise-Umkehr-Effekt legt dynamische Policies nahe\nAb welchem Punkt wechselt KI von schädlich zu hilfreich?\nDie Antwort ist vermutlich domänen- und studentenspezifisch"
+    "text": "Die Sequenzierungsfrage\n\nStudierende brauchen wahrscheinlich Grundwissen BEVOR KI vorteilhaft wird\nDer Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln\nDie Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt\nDie Antwort ist vermutlich domänen- und personenspezifisch\n\n\n\n\n\n\n\n\nKeine Pauschallösungen\n\n\nDie Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen: abhängig vom Fach, vom Vorwissen und den Lernzielen."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-entwicklungsfrage",
     "href": "slides/ai-higher-ed/index.html#die-entwicklungsfrage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Entwicklungsfrage",
-    "text": "Die Entwicklungsfrage\nSensible Phasen in der kognitiven Entwicklung\n\nPräfrontaler Kortex entwickelt sich bis Mitte 20\nExekutive Funktionen, Metakognition, Selbstregulation noch in Entwicklung\nParadox: Jene, die KI-Nutzung am wenigsten regulieren können, sind am verletzlichsten\n\n\n\n\n\n\n\n\nDie Kohortenfrage\n\n\nDie aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.\nWenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein."
+    "text": "Die Entwicklungsfrage\nKognitive Entwicklung und KI\n\nDer präfrontale Kortex entwickelt sich bis etwa Mitte 20 (individuelle Variation erheblich)\nExekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung\nParadox: Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten\n\n\n\n\n\n\n\n\nDie Kohortenfrage\n\n\nDie aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.\nWenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-soziale-dimension",
     "href": "slides/ai-higher-ed/index.html#die-soziale-dimension",
     "title": "KI in der Hochschulbildung",
     "section": "Die soziale Dimension",
-    "text": "Die soziale Dimension\nLernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess (Reich 2020)\n\nStudierende lernen besser, wenn sie sich verbunden fühlen\nPeers werden seltener konsultiert, wenn KI antwortet\nBeziehungen zu Lehrenden werden oberflächlicher\nGelegenheiten für Mentoring nehmen ab\n\n\nDie Rolle der Lehrperson: Beziehung, Motivation, Vorbild sind nicht ersetzbar."
+    "text": "Die soziale Dimension\nLernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess (Reich 2020)\n\nStudierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen\nPeers werden seltener konsultiert, wenn KI antwortet: kollaboratives Lernen leidet\nBeziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen\nGelegenheiten für Mentoring und informelles Lernen nehmen ab\n\n\nDie Rolle der Lehrperson: Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Beziehung, Motivation, Vorbild, Kontext: diese unersetzliche Funktion muss neu definiert werden."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-equity-dimension",
     "href": "slides/ai-higher-ed/index.html#die-equity-dimension",
     "title": "KI in der Hochschulbildung",
     "section": "Die Equity-Dimension",
-    "text": "Die Equity-Dimension\nDie dritte digitale Kluft (Michael Trucano 2023)\n\n\n\n\n\n\n\n\n\nErste Kluft\nZweite Kluft\nDritte Kluft\n\n\n\n\nZugang zu Geräten\nFähigkeit zur sinnvollen Nutzung\nQualität der pädagogischen Integration\n\n\n\n\n\n\n\n\n\n\n\nRisiko\n\n\n“Demokratisierung” von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.\nGutausgestattete Studierende erhalten ausgeklügelte pädagogische Unterstützung.\nUnterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung."
+    "text": "Die Equity-Dimension\nDie dritte digitale Kluft (Michael Trucano 2023)\n\n\n\n\n\n\n\n\n\nErste Kluft\nZweite Kluft\nDritte Kluft\n\n\n\n\nZugang zu Geräten\nFähigkeit zur sinnvollen Nutzung\nQualität der pädagogischen Integration\n\n\n\n\n\nKonkrete Ungleichheiten:\n\nKosten: Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus leisten?\nInstitutionelle Ressourcen: Welche Hochschulen haben Zeit und Expertise für durchdachte Integration?\nBetreuung: Wer hat Dozierende, die über KI-Risiken aufklären?\n\n\n\n\n\n\n\n\n\nRisiko\n\n\n“Demokratisierung” von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.\nDas MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die “allen” zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#der-stärkste-gegeneinwand",
@@ -669,5 +669,12 @@
       "Präsentation",
       "KI in der Hochschulbildung: Ein Leitfaden"
     ]
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#fazit-die-zentrale-botschaft",
+    "href": "slides/ai-higher-ed/index.html#fazit-die-zentrale-botschaft",
+    "title": "KI in der Hochschulbildung",
+    "section": "Fazit: Die zentrale Botschaft",
+    "text": "Fazit: Die zentrale Botschaft\n\nKI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende ohne durchdachte Integration oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.\n\n\nDie Argumentation stützt sich auf:\n\nCognitive Load Theory: Produktive Anstrengung durch das Nadelöhr des Arbeitsgedächtnisses\nExpertise-Umkehr-Effekt: Dieselbe Unterstützung kann Novizen helfen und Experten schaden\nDomänenspezifität: Kritische KI-Bewertung erfordert Fachwissen\nDesirable Difficulties: Schwierigkeiten optimieren oft Langzeitbehalten\nGenerierungseffekt: Selbst erzeugte Information wird besser behalten\n\n\n\nDie praktischen Implikationen: Grundlagen vor Werkzeugen | Prozess bewerten | Nach Vorwissen differenzieren | “Ohne-KI”-Phasen | Kritische KI-Nutzung im Fachkontext üben"
   }
 ]
