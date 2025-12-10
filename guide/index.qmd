@@ -14,7 +14,7 @@ sidebar: guide
 
 ChatGPT besteht Anwaltsprüfungen. Claude schreibt funktionierenden Code. Gemini diagnostiziert Krankheiten. Als Hochschullehrende fragst du dich vermutlich: Wie integriere ich diese Werkzeuge sinnvoll in meine Lehre?
 
-Die Antwort ist komplizierter, als viele annehmen. Eine aktuelle Studie [@bastaniGenerativeAICan2024] zeigt ein beunruhigendes Muster: Rund 1000 Gymnasiasten mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben korrekt. Als der KI-Zugang später entfernt wurde, schnitten dieselben Schüler jedoch 17% *schlechter* ab als jene, die nie KI hatten.
+Die Antwort ist komplizierter, als viele annehmen. Eine Studie in *Management Science* [@bastaniGenerativeAIGuardrails2025] zeigt ein beunruhigendes Muster: Rund 1000 Gymnasiasten mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben korrekt. Als der KI-Zugang später entfernt wurde, schnitten dieselben Schüler jedoch 17% *schlechter* ab als jene, die nie KI hatten.
 
 Das ist das **Produktivitäts-Lern-Paradox**: KI verbessert die Aufgabenleistung, kann aber das Lernen selbst beeinträchtigen. Die Frage ist nicht mehr *ob* KI hilft, sondern *wann* sie hilft und *wann* sie schadet.
 
@@ -204,6 +204,39 @@ Der Expertise-Umkehr-Effekt legt dynamische KI-Policies nahe:
 4. **Studierende einbeziehen**: Über den Effekt informieren, Selbstregulation fördern
 :::
 
+### Was Instruktion leisten sollte: Explizite Instruktion
+
+Bisher haben wir diskutiert, was KI für Lernen problematisch machen *kann*. Aber was *sollte* gute Instruktion tun? Die Forschung zu expliziter Instruktion [@kirschnerWhyMinimalGuidance2006] liefert klare Antworten.
+
+**Das Problem mit minimaler Anleitung:** Konstruktivistische, entdeckende und problembasierte Ansätze klingen intuitiv attraktiv: Lernende sollen selbst entdecken, explorieren, Probleme lösen. Aber die empirische Evidenz zeigt konsistent: Für Novizen ist minimale Anleitung weniger effektiv als explizite Instruktion. Der Grund liegt in der kognitiven Architektur: Novizen haben keine Schemata im Langzeitgedächtnis, die sie zur Problemlösung nutzen könnten. Sie sind auf ihr begrenztes Arbeitsgedächtnis angewiesen, das schnell überlastet wird.
+
+**Worked Examples:** Eine der am besten belegten Instruktionsmethoden für Novizen sind *Worked Examples* (ausgearbeitete Beispiele). Statt Lernende Probleme selbst lösen zu lassen, zeigt man ihnen vollständig ausgearbeitete Lösungswege. Das klingt kontraintuitiv: Sollten Lernende nicht selbst denken? Die Forschung zeigt: Für Novizen reduzieren Worked Examples die extrinsische kognitive Belastung und lassen Kapazität für Schemabildung. Der *Worked Example Effect* [@cooperEffectsSchemaAcquisition1987] ist einer der robustesten Befunde der Instruktionsforschung.
+
+**Der Unterschied zu KI:** Hier liegt ein entscheidender Punkt: Worked Examples sind *nicht* dasselbe wie KI-generierte Lösungen.
+
+- **Worked Examples** sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren
+- **KI-generierte Antworten** sind Outputs auf Anfrage, nicht didaktisch sequenziert, nicht auf den individuellen Lernstand abgestimmt
+
+Der Unterschied ist *Intentionalität*: Worked Examples sind Teil eines durchdachten Instruktionsdesigns. KI-Antworten sind reaktiv und unsystematisch.
+
+**Completion Problems:** Ein Mittelweg sind *Completion Problems*: Teilweise ausgearbeitete Lösungen, die Lernende vervollständigen müssen. Sie bieten Struktur, fordern aber aktive kognitive Verarbeitung. Mit wachsender Expertise können die vorgefertigten Teile reduziert werden (*Fading*), bis Lernende Probleme vollständig selbst lösen.
+
+**Die Verbindung zum Expertise-Umkehr-Effekt:** Explizite Instruktion und Worked Examples helfen Novizen, können aber Experten behindern (Expertise-Umkehr-Effekt). Daher ist *Fading* zentral: Unterstützung wird systematisch reduziert, wenn Expertise wächst. Das ist genau die dynamische Anpassung, die der Expertise-Umkehr-Effekt nahelegt.
+
+::: {.pro-tip collapse="true"}
+## Praktische Empfehlung: Explizite Instruktion einsetzen
+
+Evidenzbasierte Instruktion für Novizen:
+
+1. **Worked Examples nutzen**: Ausgearbeitete Beispiele zeigen, bevor Lernende selbst lösen
+2. **Completion Problems einsetzen**: Teilweise gelöste Aufgaben, die vervollständigt werden müssen
+3. **Fading planen**: Mit viel Unterstützung beginnen, systematisch reduzieren
+4. **Didaktische Sequenzierung**: Nicht jede Lösung zeigen, sondern gezielt ausgewählte Beispiele
+5. **KI nicht mit Worked Examples verwechseln**: KI-Antworten ersetzen keine didaktisch gestaltete Instruktion
+
+**Der Kernpunkt:** Novizen brauchen Unterstützung, aber die *richtige* Art von Unterstützung. Explizite Instruktion reduziert extrinsische Belastung, während produktive kognitive Arbeit erhalten bleibt. KI-Nutzung kann beides tun: extrinsische Belastung reduzieren (gut) oder die produktive Arbeit selbst übernehmen (problematisch).
+:::
+
 ## Kritisches Denken erfordert Fachwissen {#kritisches-denken}
 
 "Wir müssen Studierenden beibringen, KI kritisch zu nutzen." Das klingt vernünftig. Es greift aber zu kurz.
@@ -308,7 +341,7 @@ KI verbessert Aufgabenleistung (eindeutig belegt). Aber das sagt nichts über Le
 
 ### Die Bastani-Studie im Detail
 
-Schauen wir uns die eingangs erwähnte Studie [@bastaniGenerativeAICan2024] genauer an:
+Schauen wir uns die eingangs erwähnte Studie [@bastaniGenerativeAIGuardrails2025] genauer an:
 
 **Design:**
 
@@ -335,7 +368,7 @@ Die Autoren fassen zusammen:
 
 **Wichtige Nuance:** Die negativen Effekte betrafen primär den direkten Zugang. Der "GPT Tutor" zeigte bessere Ergebnisse, aber selbst mit Tutor war die spätere Leistung ohne KI reduziert. Die Art der KI-Nutzung macht einen Unterschied.
 
-**Einschränkungen:** Dies ist eine Einzelstudie, Replikation steht aus. Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch. Die Effekte sind kurzfristig gemessen. Die Studie zeigt ein Muster, beweist aber nicht Universalität.
+**Einschränkungen:** Die Studie hat methodische Limitationen: Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch, die Effekte sind kurzfristig gemessen, und Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist keine Überraschung. Sie folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten. Die Studie bestätigt empirisch, was die Theorie vorhersagt.
 
 ### Desirable Difficulties: Warum Anstrengung nötig ist
 
@@ -375,15 +408,15 @@ Das typische Experiment:
 
 ### Die Scaffolding-Hypothese
 
-Eine tiefere Frage drängt sich auf: Was passiert mit der Entwicklung kognitiver Fähigkeiten? Hier müssen wir unterscheiden:
+Eine tiefere Frage drängt sich auf: Was passiert mit der Entwicklung kognitiver Fähigkeiten? Hier müssen wir sorgfältig zwischen dem unterscheiden, was wir wissen, was wir theoretisch ableiten, und was wir vermuten.
 
-**Fertigkeitsatrophie:** Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück.
+**Was wir wissen (Evidenz):** Fertigkeitsatrophie ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück. Der Generierungseffekt und die Prinzipien erwünschter Schwierigkeiten sind empirisch belegt.
 
-**Entwicklungsbeeinträchtigung:** Eine Fähigkeit entsteht nie, weil der konstruktive Prozess übersprungen wird. Das ist möglicherweise irreversibel: Das Entwicklungsfenster wurde verpasst.
+**Was wir theoretisch ableiten:** Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory und ist durch Studien wie Bastani gestützt.
 
-Die Hypothese: Grundfertigkeiten wie Schreiben, Rechnen und analytisches Lesen sind nicht nur *Fertigkeiten*. Sie sind *Prozesse*, die kognitive Architektur aufbauen. Schreiben ist ein "epistemisches Werkzeug": Gedanken entwickeln sich *durch* das Schreiben, nicht vor dem Schreiben.
+**Was wir vermuten (Hypothese):** Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Eine Fähigkeit, die nie entsteht, weil der konstruktive Prozess übersprungen wird, könnte schwerer nachzuholen sein als eine verkümmerte Fähigkeit. Die Hypothese: Grundfertigkeiten wie Schreiben, Rechnen und analytisches Lesen sind nicht nur *Fertigkeiten*, sondern *Prozesse*, die kognitive Architektur aufbauen. Schreiben könnte ein "epistemisches Werkzeug" sein: Gedanken entwickeln sich *durch* das Schreiben, nicht vor dem Schreiben.
 
-Wenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht.
+**Vorsicht:** Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.
 
 ### Historische Analogien
 
@@ -569,9 +602,9 @@ Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kogni
 
 **Einschränkung:** Die direkte Evidenz für KI ist noch begrenzt. Die theoretische Argumentation ist stark, aber Langzeitstudien fehlen.
 
-### Mind-extending vs. Mind-replacing
+### Kognition erweitern vs. ersetzen
 
-Andy Clark [@clarkExtendingMindsGenerative2025], bekannt für die "Extended Mind Thesis", unterscheidet zwei Nutzungsweisen:
+Eine praktische Unterscheidung hilft bei der Bewertung von KI-Nutzung:
 
 **Kognition erweitern:**
 
@@ -588,6 +621,8 @@ Andy Clark [@clarkExtendingMindsGenerative2025], bekannt für die "Extended Mind
 - Abhängigkeit entsteht, Fähigkeiten verkümmern
 
 **Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.** Die Frage ist nicht "KI ja oder nein?", sondern "Wie wird KI genutzt?"
+
+Aus Sicht der Cognitive Load Theory ist dabei entscheidend: Wissen, das im Langzeitgedächtnis gespeichert ist, unterscheidet sich fundamental von Wissen, auf das man extern zugreifen kann. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse und belastet das Arbeitsgedächtnis.
 
 ### Die Sequenzierungsfrage
 
