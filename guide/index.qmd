@@ -330,7 +330,7 @@ Die zentrale Frage lautet: Warum kann KI die Aufgabenleistung verbessern und gle
 
 ### Die zentrale Unterscheidung
 
-> "Learning and task completion are not synonymous." [@joseCognitiveParadoxAI2025]
+> "Learning and task completion are not synonymous." [@joseOutsourcingCognitionPsychological2025]
 
 Diese Unterscheidung ist entscheidend:
 
@@ -389,7 +389,7 @@ Alle vier haben gemeinsam: Sie fühlen sich *schwerer* an, sind aber *effektiver
 
 ### Der Generierungseffekt
 
-Der Generierungseffekt ist ein robuster Befund: Selbst generierte Information wird besser behalten als passiv erhaltene. Slamecka und Graf [-@slameckaGenerationEffect1978] demonstrierten dies erstmals experimentell, spätere Meta-Analysen bestätigten moderate Effektstärken.
+Der Generierungseffekt ist ein robuster Befund: Selbst generierte Information wird besser behalten als passiv erhaltene. Slamecka und Graf [-@slameckaGenerationEffectDelineation1978] demonstrierten dies erstmals experimentell, spätere Meta-Analysen bestätigten moderate Effektstärken.
 
 Das typische Experiment:
 
@@ -424,7 +424,7 @@ Frühere Technologien zeigen ähnliche Muster:
 
 **GPS und räumliches Gedächtnis** [@dahmaniHabitualUseGPS2020]: Eine longitudinale Studie über drei Jahre zeigte: Stärkere GPS-Nutzung korreliert mit steilerem Rückgang des räumlichen Gedächtnisses. Die zeitliche Abfolge ist konsistent mit der Interpretation, dass GPS-Nutzung zum Rückgang beiträgt, wobei ungemessene konfundierende Variablen nicht ausgeschlossen werden können.
 
-**Taschenrechner** [@sieglerDevelopingConceptualUnderstanding2017]: Die Forschung zeigt kontextabhängige Effekte. Für Schüler mit bestehenden Grundkenntnissen ist der Effekt neutral oder leicht positiv. Für Schüler ohne Grundkenntnisse ist der Effekt negativ. Dieselbe Parallele wie bei KI: Das Werkzeug wirkt unterschiedlich je nach Vorwissen.
+**Taschenrechner** [@lortie-forguesConceptualKnowledgeDecimal2017]: Die Forschung zeigt kontextabhängige Effekte. Für Schüler mit bestehenden Grundkenntnissen ist der Effekt neutral oder leicht positiv. Für Schüler ohne Grundkenntnisse ist der Effekt negativ. Dieselbe Parallele wie bei KI: Das Werkzeug wirkt unterschiedlich je nach Vorwissen.
 
 **Google-Effekt** [@sparrowGoogleEffectsMemory2011]: Menschen erinnern Information schlechter, wenn sie erwarten, dass sie verfügbar bleibt. Sie erinnern stattdessen, *wo* die Information zu finden ist. Das Gedächtnis adaptiert sich an die Verfügbarkeit externer Speicher.
 
@@ -526,7 +526,7 @@ Die Argumentation ist verlockend:
 
 Die kognitionswissenschaftliche Grundlage ist solide:
 
-**Generierungseffekt:** Selbst erzeugte Antworten werden besser behalten als passiv erhaltene [@slameckaGenerationEffect1978].
+**Generierungseffekt:** Selbst erzeugte Antworten werden besser behalten als passiv erhaltene [@slameckaGenerationEffectDelineation1978].
 
 **Selbsterklärungseffekt:** Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf [@chiElicitingSelfExplanationsImproves1994].
 
@@ -663,7 +663,7 @@ Diese Dimension verdient mehr Aufmerksamkeit, als dieser Leitfaden ihr geben kan
 
 ### Die Equity-Dimension
 
-Die "dritte digitale Kluft" [@trucanoThirdDigitalDivide2024] beschreibt ein neues Ungleichheitsmuster:
+Die "dritte digitale Kluft" [@michaeltrucanoAINextDigital2023] beschreibt ein neues Ungleichheitsmuster:
 
 | Erste Kluft | Zweite Kluft | Dritte Kluft |
 |-------------|--------------|--------------|
