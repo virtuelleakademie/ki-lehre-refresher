@@ -139,7 +139,7 @@ Sondern eine andere *kognitive Architektur*
 :::
 
 ::: {.column width="50%"}
-**Klassisches Beispiel:**
+**Klassisches Beispiel:** [@grootThoughtChoiceChess1978; @chasePerceptionChess1973]
 
 Schachmeister sehen *Muster und Strategien*
 
@@ -280,7 +280,7 @@ Profitieren von *niedriger* Unterstützung
 
 ## Worked Examples: Ein robuster Befund
 
-**Statt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen**
+**Statt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen** [@cooperEffectsSchemaAcquisition1987]
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -548,7 +548,7 @@ Sofortiger KI-Zugang kann Abrufversuche kurzschliessen, *bevor* sie Gedächtniss
 
 ## Der Generierungseffekt
 
-**Meta-Analyse: d = 0.40 über 86 Studien** [@slameckaGenerationEffectDelineation1978]
+**Selbst generierte Information wird besser behalten** [@slameckaGenerationEffectDelineation1978]
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -715,7 +715,7 @@ Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Vers
 
 ::: {.incremental}
 - EdTech verspricht: KI-Tutoren mit "sokratischer Methode"
-- Blooms "Two Sigma Problem": 1:1-Tutoring erzielt 2 SD Verbesserung
+- Blooms "Two Sigma Problem" [@bloom2SigmaProblem1984]: 1:1-Tutoring erzielt 2 SD Verbesserung
 - **Versprechen:** Demokratisierung personalisierter Bildung durch KI
 :::
 
@@ -753,7 +753,7 @@ Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf [@chiElicit
 ::: {.incremental}
 - Menschliche Tutoren: **d = 0.79** (nicht 2.0 wie Bloom behauptete)
 - Intelligente Tutorsysteme: **d = 0.76** (vergleichbar)
-- **Aber:** Effekt kam von Feedback und Hints, nicht vom sokratischen Dialog
+- **Aber:** Schritt-für-Schritt-Feedback war wesentlich; die Rolle des sokratischen Dialogs ist schwer zu isolieren
 :::
 
 . . .

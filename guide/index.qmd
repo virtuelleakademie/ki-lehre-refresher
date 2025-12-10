@@ -14,7 +14,7 @@ sidebar: guide
 
 ChatGPT besteht Anwaltsprüfungen. Claude schreibt funktionierenden Code. Gemini diagnostiziert Krankheiten. Als Hochschullehrende fragst du dich vermutlich: Wie integriere ich diese Werkzeuge sinnvoll in meine Lehre?
 
-Die Antwort ist komplizierter, als viele annehmen. Eine Studie in *Management Science* [@bastaniGenerativeAIGuardrails2025] zeigt ein beunruhigendes Muster: Rund 1000 Gymnasiasten mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben korrekt. Als der KI-Zugang später entfernt wurde, schnitten dieselben Schüler jedoch 17% *schlechter* ab als jene, die nie KI hatten.
+Die Antwort ist komplizierter, als viele annehmen. Eine Studie in *PNAS* [@bastaniGenerativeAIGuardrails2025] zeigt ein beunruhigendes Muster: Rund 1000 Gymnasiasten mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben korrekt. Als der KI-Zugang später entfernt wurde, schnitten dieselben Schüler jedoch 17% *schlechter* ab als jene, die nie KI hatten.
 
 Das ist das **Produktivitäts-Lern-Paradox**: KI verbessert die Aufgabenleistung, kann aber das Lernen selbst beeinträchtigen. Die Frage ist nicht mehr *ob* KI hilft, sondern *wann* sie hilft und *wann* sie schadet.
 
@@ -604,7 +604,7 @@ Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kogni
 
 ### Kognition erweitern vs. ersetzen
 
-Eine praktische Unterscheidung hilft bei der Bewertung von KI-Nutzung:
+Andy Clark [@clarkExtendingMindsGenerative2025] bietet eine praktische Unterscheidung bei der Bewertung von KI-Nutzung:
 
 **Kognition erweitern:**
 
