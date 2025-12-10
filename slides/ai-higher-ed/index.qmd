@@ -39,12 +39,13 @@ filters:
 :::
 
 ::: {.column width="50%"}
-**Was wir nicht wissen:**
+**Aber was bedeutet das für Lernen?**
 
-> "48% mehr Aufgaben gelöst MIT KI,
-> 17% schlechter OHNE KI"
->
-> [@bastaniGenerativeAIGuardrails2025]
+- Mit KI → 48% mehr Aufgaben gelöst
+- Ohne KI → 17% schlechter an der Prüfung
+
+[@bastaniGenerativeAIGuardrails2025]
+
 :::
 :::
 
