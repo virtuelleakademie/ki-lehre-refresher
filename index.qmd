@@ -23,9 +23,10 @@ Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochsc
 
 ### Inhalt
 
-- [Präsentation](presentation/index.qmd): Aktueller Stand von KI in der Hochschulbildung
+- [Präsentation](presentation/index.qmd): Slides zum Workshop (Voll- und Kurzversion)
+- [Leitfaden](guide/index.qmd): Vertiefende Informationen zu KI in der Hochschulbildung
 - [Q & A](qa/index.qmd): Fragen, Antworten und weiterführende Ressourcen
 
 ## Kontakt
 
-[Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule.
+[Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule. Er erforscht, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann.
