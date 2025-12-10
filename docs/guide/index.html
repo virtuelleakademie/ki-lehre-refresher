@@ -108,52 +108,16 @@ div.csl-indent {
   });
 </script>
 <style>
-div.callout-individual.callout {
+div.callout-group.callout {
   border-left-color: #A3195B;
 }
-div.callout-individual.callout-style-default > .callout-header {
+div.callout-group.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
+  content: '\f0c0';
   background-image: none;
 }
 div.callout-warning.callout {
@@ -168,28 +132,40 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
   content: '\f06a';
   background-image: none;
 }
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
+div.callout-individual.callout {
+  border-left-color: #A3195B;
 }
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f002';
+  content: '\f007';
   background-image: none;
 }
-div.callout-reflect.callout {
+div.callout-key-point.callout {
   border-left-color: #D4A03E;
 }
-div.callout-reflect.callout-style-default > .callout-header {
+div.callout-key-point.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -204,18 +180,6 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
   content: '\f51b';
   background-image: none;
 }
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
 div.callout-scenario.callout {
   border-left-color: #666666;
 }
@@ -228,6 +192,18 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   content: '\f075';
   background-image: none;
 }
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
 div.callout-prompt.callout {
   border-left-color: #333333;
 }
@@ -238,6 +214,30 @@ div.callout-prompt .callout-toggle::before {  background-image: url('data:image/
 div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f328';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
   background-image: none;
 }
 </style>
@@ -473,10 +473,10 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="einleitung">Einleitung: Das zentrale Paradox</h2>
 <p>ChatGPT besteht Anwaltsprüfungen. Claude kann professionelle Programmierer erstezen. Gemini diagnostiziert Krankheiten. Als Hochschullehrende fragst du dich vermutlich: Wie integriere ich diese Werkzeuge sinnvoll in meine Lehre?</p>
 <p>Die Antwort ist komplizierter, als viele annehmen. Eine Studie in <em>PNAS</em> <span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">(<a href="#ref-bastaniGenerativeAIGuardrails2025" role="doc-biblioref">Bastani u.&nbsp;a. 2025</a>)</span> zeigt ein beunruhigendes Muster: Rund 1000 Gymnasiasten mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben korrekt. Als der KI-Zugang später entfernt wurde, schnitten dieselben Schüler jedoch 17% <em>schlechter</em> ab als jene, die nie KI hatten.</p>
-<p>Das ist das <strong>Produktivitäts-Lern-Paradox</strong>: KI verbessert die Aufgabenleistung, kann aber das Lernen selbst beeinträchtigen. Die Frage ist nicht mehr <em>ob</em> KI hilft, sondern <em>wann</em> sie hilft und <em>wann</em> sie schadet.</p>
+<p>Das ist das <em>Produktivitäts-Lern-Paradox</em>: KI verbessert die Aufgabenleistung, kann aber das Lernen selbst beeinträchtigen. Die Frage ist nicht mehr <em>ob</em> KI hilft, sondern <em>wann</em> sie hilft und <em>wann</em> sie schadet.</p>
 <p>Dieser Leitfaden bietet einen Rahmen, um diese Frage zu beantworten. Die zentrale These:</p>
 <blockquote class="blockquote">
-<p><strong>KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht. Ohne durchdachte Integration wird KI das Lernen eher beeinträchtigen als fördern.</strong></p>
+<p>KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht. Ohne durchdachte Integration wird KI das Lernen eher beeinträchtigen als fördern.</p>
 </blockquote>
 <div class="callout callout-style-default callout-pro-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -504,11 +504,11 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="was-ki-kann">Was KI heute kann</h2>
 <section id="grundlegende-funktionsweise" class="level3">
 <h3 class="anchored" data-anchor-id="grundlegende-funktionsweise">Grundlegende Funktionsweise</h3>
-<p>Bevor wir über Auswirkungen sprechen, lohnt sich ein Blick darauf, was diese Systeme eigentlich tun. Large Language Models (LLMs) wie GPT-5 oder Claude sind im Kern <strong>Next-Word-Prediction-Systeme<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></strong>. Sie wurden auf Milliarden von Textdokumenten trainiert und haben dabei Muster in Sprache, Argumentation und Stil gelernt, aber auch sehr viel Wissen. Die beste Metapher: extrem ausgeklügelte Autovervollständigung.</p>
+<p>Bevor wir über Auswirkungen sprechen, lohnt sich ein Blick darauf, was diese Systeme eigentlich tun. Large Language Models (LLMs) wie GPT-5 oder Claude sind im Kern <em>Next-Word-Prediction-Systeme</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Sie wurden auf Milliarden von Textdokumenten trainiert und haben dabei Muster in Sprache, Argumentation und Stil gelernt, aber auch sehr viel Wissen. Die beste Metapher: extrem ausgeklügelte Autovervollständigung.</p>
 <p>Entscheidend ist die Unterscheidung zwischen <em>Retrieval</em> und <em>Generation</em>:</p>
 <ul>
-<li><strong>Retrieval</strong> (wie eine Suchmaschine): Information wird gefunden und zurückgegeben</li>
-<li><strong>Generation</strong> (wie ein LLM): Text wird neu erzeugt basierend auf statistischen Mustern</li>
+<li><em>Retrieval</em> (wie eine Suchmaschine): Information wird gefunden und zurückgegeben</li>
+<li><em>Generation</em> (wie ein LLM): Text wird neu erzeugt basierend auf statistischen Mustern</li>
 </ul>
 <p>LLMs <em>rufen</em> kein Wissen ab. Sie <em>generieren</em> Text, der plausibel klingt. Dies erklärt, warum sie “halluzinieren”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> können: Sie optimieren für sprachliche Plausibilität, nicht für faktische Korrektheit.</p>
 </section>
@@ -518,11 +518,11 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p>“Lass mich das aufteilen: 17 × 20 = 340, 17 × 4 = 68, 340 + 68 = 408”</p>
 </blockquote>
-<p>Dieses <strong>Chain-of-Thought Reasoning</strong> verbessert die Leistung bei komplexen Aufgaben erheblich. Es ist jedoch immer noch Mustererkennung, nur über Denkschritte statt direkt über Antworten. Die KI hat gelernt, wie Menschen Probleme in Teilprobleme zerlegen.</p>
+<p>Dieses <em>Chain-of-Thought Reasoning</em> verbessert die Leistung bei komplexen Aufgaben erheblich. Es ist jedoch immer noch Mustererkennung, nur über Denkschritte statt direkt über Antworten. Die KI hat gelernt, wie Menschen Probleme in Teilprobleme zerlegen.</p>
 </section>
 <section id="werkzeugfähige-agenten" class="level3">
 <h3 class="anchored" data-anchor-id="werkzeugfähige-agenten">Werkzeugfähige Agenten</h3>
-<p>Die neueste Entwicklung sind <strong>Agenten</strong>: LLMs, die mit externen Werkzeugen verbunden sind. Sie können:</p>
+<p>Die neueste Entwicklung sind <em>Agenten</em>: LLMs, die mit externen Werkzeugen verbunden sind. Sie können:</p>
 <ul>
 <li>Websuchen durchführen</li>
 <li>Code schreiben und ausführen</li>
@@ -545,10 +545,10 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Die Fähigkeiten von KI-Systemen entwickeln sich rasant. Empfehlungen:</p>
 <ol type="1">
-<li><strong>Regelmässig aktualisieren</strong>: Überprüfe regelmässig, was aktuelle Modelle können</li>
-<li><strong>Selbst testen</strong>: Probiere neue Modelle mit Aufgaben aus deinem Fachgebiet</li>
-<li><strong>Skeptisch bleiben</strong>: Marketing-Behauptungen übertreffen oft die tatsächliche Leistung</li>
-<li><strong>Grenzen kennen</strong>: Identifiziere Aufgaben, bei denen KI zuverlässig versagt</li>
+<li>Regelmässig aktualisieren: Überprüfe regelmässig, was aktuelle Modelle können</li>
+<li>Selbst testen: Probiere neue Modelle mit Aufgaben aus deinem Fachgebiet</li>
+<li>Skeptisch bleiben: Marketing-Behauptungen übertreffen oft die tatsächliche Leistung</li>
+<li>Grenzen kennen: Identifiziere Aufgaben, bei denen KI zuverlässig versagt</li>
 </ol>
 </div>
 </div>
@@ -560,9 +560,9 @@ window.Quarto = {
 <p>Warum wirkt KI auf Experten und Lernende so unterschiedlich? Die Antwort ist darin zu finden, was Expertise eigentlich ist.</p>
 <section id="experten-und-novizen-sind-grundlegend-verschieden" class="level3">
 <h3 class="anchored" data-anchor-id="experten-und-novizen-sind-grundlegend-verschieden">Experten und Novizen sind grundlegend verschieden</h3>
-<p>Ein weit verbreitetes Missverständnis: Experten haben einfach “mehr Wissen”. Die Forschung zeigt etwas anderes. Experten haben eine qualitativ andere <strong>kognitive Architektur</strong>.</p>
+<p>Ein weit verbreitetes Missverständnis: Experten haben einfach “mehr Wissen”. Die Forschung zeigt etwas anderes. Experten haben eine qualitativ andere <em>kognitive Architektur</em>.</p>
 <p>Das klassische Beispiel stammt aus der Schachforschung <span class="citation" data-cites="grootThoughtChoiceChess1978 chasePerceptionChess1973">(<a href="#ref-grootThoughtChoiceChess1978" role="doc-biblioref">Groot und Groot 1978</a>; <a href="#ref-chasePerceptionChess1973" role="doc-biblioref">Chase und Simon 1973</a>)</span>. Schachmeistern und Anfängern wurden Stellungen für wenige Sekunden gezeigt. Bei echten Spielstellungen erinnerten Meister deutlich mehr Figuren korrekt als Anfänger. Bei zufällig platzierten Figuren waren beide Gruppen gleich schlecht.</p>
-<p>Die Interpretation: Meister sehen nicht einzelne Figuren, sondern <strong>Chunks</strong>, bedeutungsvolle Muster wie “Königsangriff” oder “offene Linie”. Diese Chunks sind im Langzeitgedächtnis gespeichert und werden automatisch erkannt.</p>
+<p>Die Interpretation: Meister sehen nicht einzelne Figuren, sondern <em>Chunks</em>, bedeutungsvolle Muster wie “Königsangriff” oder “offene Linie”. Diese Chunks sind im Langzeitgedächtnis gespeichert und werden automatisch erkannt.</p>
 <p>Das Prinzip gilt domänenübergreifend:</p>
 <ul>
 <li>Ärzte sehen Symptomkomplexe, nicht Einzelsymptome</li>
@@ -573,7 +573,7 @@ window.Quarto = {
 <section id="von-schwachen-zu-starken-methoden" class="level3">
 <h3 class="anchored" data-anchor-id="von-schwachen-zu-starken-methoden">Von schwachen zu starken Methoden</h3>
 <p>Wie lösen Menschen Probleme? Newell und Simon <span class="citation" data-cites="newellHumanProblemSolving1972">(<a href="#ref-newellHumanProblemSolving1972" role="doc-biblioref">Newell und Simon 1972</a>)</span> unterschieden in ihrer einflussreichen Arbeit zwischen “schwachen” und “starken” Methoden der Problemlösung. Anderson’s Theorie des Fertigkeitserwerbs <span class="citation" data-cites="andersonAcquisitionCognitiveSkill1982">(<a href="#ref-andersonAcquisitionCognitiveSkill1982" role="doc-biblioref">Anderson 1982</a>)</span> beschreibt dann den Mechanismus, wie der Übergang zwischen diesen Methoden mit wachsender Expertise stattfindet.</p>
-<p><strong>Novizen nutzen schwache Methoden:</strong></p>
+<p>Novizen nutzen schwache Methoden:</p>
 <ul>
 <li>Mittel-Ziel-Analyse: “Wo bin ich? Wo will ich hin? Was bringt mich näher?”</li>
 <li>Versuch und Irrtum</li>
@@ -581,7 +581,7 @@ window.Quarto = {
 <li>Rückwärtsarbeiten vom Ziel</li>
 </ul>
 <p>Diese Methoden heissen “schwach”, weil sie domänenunabhängig und allgemein anwendbar, aber langsam, fehleranfällig und kognitiv anstrengend sind.</p>
-<p><strong>Experten nutzen starke Methoden:</strong></p>
+<p>Experten nutzen starke Methoden:</p>
 <ul>
 <li>Automatische Mustererkennung: “Das ist ein Fall von X”</li>
 <li>Direkte Lösungswege: “Bei X macht man Y”</li>
@@ -593,13 +593,13 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="prozeduralisierung-vom-wissen-zum-können">Prozeduralisierung: Vom Wissen zum Können</h3>
 <p>Der Weg zur Expertise folgt typischen Phasen:</p>
 <ol type="1">
-<li><strong>Deklaratives Wissen</strong>: Wissen als Fakten (“Man muss beim Autofahren die Kupplung treten, bevor man schaltet”)</li>
-<li><strong>Bewusste Anwendung</strong>: Aktiv an jeden Schritt denken, langsam, fehleranfällig</li>
-<li><strong>Prozeduralisierung</strong>: Schritte werden zu Einheiten zusammengefasst (“Anfahren” statt drei separate Handlungen)</li>
-<li><strong>Automatisierung</strong>: Unbewusste, flüssige Ausführung</li>
+<li>Deklaratives Wissen: Wissen als Fakten (“Man muss beim Autofahren die Kupplung treten, bevor man schaltet”)</li>
+<li>Bewusste Anwendung: Aktiv an jeden Schritt denken, langsam, fehleranfällig</li>
+<li>Prozeduralisierung: Schritte werden zu Einheiten zusammengefasst (“Anfahren” statt drei separate Handlungen)</li>
+<li>Automatisierung: Unbewusste, flüssige Ausführung</li>
 </ol>
 <p>Automatisierte Prozesse belasten das Arbeitsgedächtnis nicht mehr. Sie sind schneller, zuverlässiger und setzen kognitive Ressourcen für höhere Aufgaben frei.</p>
-<p><strong>Entscheidend: Diese Transformation kann nicht übersprungen werden.</strong> Man kann nicht direkt von deklarativem Wissen zu Automatisierung springen. Der Weg führt durch bewusste, anstrengende Übung.</p>
+<p>Entscheidend ist: Diese Transformation kann nicht übersprungen werden. Man kann nicht direkt von deklarativem Wissen zu Automatisierung springen. Der Weg führt durch bewusste, anstrengende Übung.</p>
 <div class="callout callout-style-default callout-pro-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -614,12 +614,12 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Wenn KI die “langweiligen” Übungsphasen übernimmt, findet keine Prozeduralisierung statt. Empfehlungen:</p>
 <ol type="1">
-<li><strong>Grundlagenphase KI-frei gestalten</strong>: Erste Begegnungen mit neuem Material ohne KI-Unterstützung</li>
-<li><strong>Übungszeit einplanen</strong>: Explizite Übungszeit, in der KI nicht erlaubt ist</li>
-<li><strong>Fortschritt monitoren</strong>: Regelmässig prüfen, ob Studierende Aufgaben auch ohne KI bewältigen</li>
-<li><strong>Sequenzierung beachten</strong>: Erst Grundlagen festigen, dann KI als Produktivitätswerkzeug einführen</li>
+<li>Grundlagenphase KI-frei gestalten: Erste Begegnungen mit neuem Material ohne KI-Unterstützung</li>
+<li>Übungszeit einplanen: Explizite Übungszeit, in der KI nicht erlaubt ist</li>
+<li>Fortschritt monitoren: Regelmässig prüfen, ob Studierende Aufgaben auch ohne KI bewältigen</li>
+<li>Sequenzierung beachten: Erst Grundlagen festigen, dann KI als Produktivitätswerkzeug einführen</li>
 </ol>
-<p><strong>Realitätscheck:</strong> Vollständige Kontrolle über KI-Nutzung ist kaum möglich. Fokus auf Prozessbewertung und Reflexion kann wirksamer sein als strikte Verbote.</p>
+<p>Realitätscheck: Vollständige Kontrolle über KI-Nutzung ist kaum möglich. Fokus auf Prozessbewertung und Reflexion kann wirksamer sein als strikte Verbote.</p>
 </div>
 </div>
 </div>
@@ -627,19 +627,19 @@ window.Quarto = {
 <section id="cognitive-load-theory-das-nadelöhr-des-lernens" class="level3">
 <h3 class="anchored" data-anchor-id="cognitive-load-theory-das-nadelöhr-des-lernens">Cognitive Load Theory: Das Nadelöhr des Lernens</h3>
 <p>Warum ist Übung so wichtig? Die Cognitive Load Theory <span class="citation" data-cites="swellerCognitiveLoadTheory2024">(<a href="#ref-swellerCognitiveLoadTheory2024" role="doc-biblioref">Sweller 2024</a>)</span> liefert die Antwort. Sie basiert auf zwei Gedächtnissystemen:</p>
-<p><strong>Arbeitsgedächtnis:</strong></p>
+<p>Arbeitsgedächtnis:</p>
 <ul>
 <li>Kapazität: etwa <span class="math inline">\(4 \pm 1\)</span> Elemente gleichzeitig (wobei dies von der Definition eines “Elements” und der Aufgabenart abhängt)</li>
 <li>Dauer: wenige Sekunden ohne aktive Aufrechterhaltung</li>
 <li>Der <em>Flaschenhals</em> allen Lernens</li>
 </ul>
-<p><strong>Langzeitgedächtnis:</strong></p>
+<p>Langzeitgedächtnis:</p>
 <ul>
 <li>Praktisch unbegrenzte Kapazität</li>
 <li>Dauerhafte Speicherung</li>
 <li>Hier <em>lebt</em> Expertise</li>
 </ul>
-<p>Die zentrale Erkenntnis: <strong>Alles Lernen muss durch den Flaschenhals des Arbeitsgedächtnisses.</strong> Wenn das Arbeitsgedächtnis überlastet ist, findet kein Lernen statt.</p>
+<p>Die zentrale Erkenntnis: Alles Lernen muss durch den Flaschenhals des Arbeitsgedächtnisses. Wenn das Arbeitsgedächtnis überlastet ist, findet kein Lernen statt.</p>
 </section>
 <section id="drei-arten-kognitiver-belastung" class="level3">
 <h3 class="anchored" data-anchor-id="drei-arten-kognitiver-belastung">Drei Arten kognitiver Belastung</h3>
@@ -676,7 +676,7 @@ window.Quarto = {
 </tbody>
 </table>
 <p>(Anmerkung: Die Unterscheidung zwischen lernförderlicher und intrinsischer Belastung ist in der Literatur umstritten. Einige Forscher argumentieren, dass “germane load” keine eigenständige Kategorie darstellt, sondern die produktive Nutzung verfügbarer Kapazität beschreibt.)</p>
-<p>Die entscheidende Frage für KI: <strong>Welche Art der Belastung reduziert sie?</strong></p>
+<p>Die entscheidende Frage für KI: Welche Art der Belastung reduziert sie?</p>
 <ul>
 <li>KI kann extrinsische Belastung reduzieren (z.B. bessere Erklärungen) → gut</li>
 <li>KI kann lernförderliche Belastung eliminieren (z.B. Antworten statt selbst denken) → problematisch</li>
@@ -687,12 +687,12 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="der-expertise-umkehr-effekt">Der Expertise-Umkehr-Effekt</h3>
 <p>Ein Forschungsüberblick <span class="citation" data-cites="kalyugaExpertiseReversalEffect2009">(<a href="#ref-kalyugaExpertiseReversalEffect2009" role="doc-biblioref">Kalyuga 2009</a>)</span> zeigt einen bemerkenswerten Befund:</p>
 <ul>
-<li><strong>Geringe Vorkenntnisse</strong>: Hohe Unterstützung hilft (mittlere bis grosse Effekte)</li>
-<li><strong>Hohe Vorkenntnisse</strong>: Hohe Unterstützung schadet (die Effekte kehren sich um)</li>
+<li>Geringe Vorkenntnisse: Hohe Unterstützung hilft (mittlere bis grosse Effekte)</li>
+<li>Hohe Vorkenntnisse: Hohe Unterstützung schadet (die Effekte kehren sich um)</li>
 </ul>
-<p>Das ist der <strong>Expertise-Umkehr-Effekt</strong>: Dieselbe Instruktionsmethode kann gegenteilige Effekte haben, abhängig vom Vorwissen der Lernenden.</p>
+<p>Das ist der <em>Expertise-Umkehr-Effekt</em>: Dieselbe Instruktionsmethode kann gegenteilige Effekte haben, abhängig vom Vorwissen der Lernenden.</p>
 <p>Für Novizen reduziert Unterstützung die extrinsische Belastung und lässt Raum für Lernen. Für Experten ist die Unterstützung redundant und erzeugt zusätzliche Verarbeitungslast (“Ich weiss das schon, aber muss es trotzdem durcharbeiten”).</p>
-<p><strong>Die Implikation für KI</strong>: Dasselbe KI-Werkzeug kann für Experten produktiv und für Novizen schädlich sein, oder umgekehrt, je nach Nutzungsweise. Es gibt keine “One-size-fits-all”-Lösung.</p>
+<p>Die Implikation für KI: Dasselbe KI-Werkzeug kann für Experten produktiv und für Novizen schädlich sein, oder umgekehrt, je nach Nutzungsweise. Es gibt keine “One-size-fits-all”-Lösung.</p>
 <div class="callout callout-style-default callout-pro-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -707,10 +707,10 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Der Expertise-Umkehr-Effekt legt nahe, die KI-Nutzung an den Lernstand anzupassen:</p>
 <ol type="1">
-<li><strong>Vorwissen erheben</strong>: Zu Beginn eines Kurses das Vorwissen einschätzen</li>
-<li><strong>Differenzieren</strong>: Unterschiedliche KI-Regeln für Anfänger und Fortgeschrittene</li>
-<li><strong>Fading einsetzen</strong>: Mit hoher Unterstützung beginnen, dann schrittweise reduzieren</li>
-<li><strong>Studierende einbeziehen</strong>: Über den Effekt informieren, Selbstregulation fördern</li>
+<li>Vorwissen erheben: Zu Beginn eines Kurses das Vorwissen einschätzen</li>
+<li>Differenzieren: Unterschiedliche KI-Regeln für Anfänger und Fortgeschrittene</li>
+<li>Fading einsetzen: Mit hoher Unterstützung beginnen, dann schrittweise reduzieren</li>
+<li>Studierende einbeziehen: Über den Effekt informieren, Selbstregulation fördern</li>
 </ol>
 </div>
 </div>
@@ -719,16 +719,16 @@ window.Quarto = {
 <section id="was-instruktion-leisten-sollte-explizite-instruktion" class="level3">
 <h3 class="anchored" data-anchor-id="was-instruktion-leisten-sollte-explizite-instruktion">Was Instruktion leisten sollte: Explizite Instruktion</h3>
 <p>Bisher haben wir diskutiert, was KI für Lernen problematisch machen <em>kann</em>. Aber was <em>sollte</em> gute Instruktion tun? Die Forschung zu expliziter Instruktion <span class="citation" data-cites="kirschnerWhyMinimalGuidance2006">(<a href="#ref-kirschnerWhyMinimalGuidance2006" role="doc-biblioref">Kirschner, und and Clark 2006</a>)</span> liefert klare Antworten.</p>
-<p><strong>Das Problem mit minimaler Anleitung:</strong> Konstruktivistische, entdeckende und problembasierte Ansätze klingen intuitiv attraktiv: Lernende sollen selbst entdecken, explorieren, Probleme lösen. Aber die empirische Evidenz zeigt konsistent: Für Novizen ist minimale Anleitung weniger effektiv als explizite Instruktion. Der Grund liegt in der kognitiven Architektur: Novizen haben keine Schemata im Langzeitgedächtnis, die sie zur Problemlösung nutzen könnten. Sie sind auf ihr begrenztes Arbeitsgedächtnis angewiesen, das schnell überlastet wird.</p>
-<p><strong>Worked Examples:</strong> Eine der am besten belegten Instruktionsmethoden für Novizen sind <em>Worked Examples</em> (ausgearbeitete Beispiele). Statt Lernende Probleme selbst lösen zu lassen, zeigt man ihnen vollständig ausgearbeitete Lösungswege. Das klingt kontraintuitiv: Sollten Lernende nicht selbst denken? Die Forschung zeigt: Für Novizen reduzieren Worked Examples die extrinsische kognitive Belastung und lassen Kapazität für Schemabildung. Der <em>Worked Example Effect</em> <span class="citation" data-cites="cooperEffectsSchemaAcquisition1987">(<a href="#ref-cooperEffectsSchemaAcquisition1987" role="doc-biblioref">Cooper und Sweller 1987</a>)</span> ist einer der robustesten Befunde der Instruktionsforschung.</p>
-<p><strong>Der Unterschied zu KI:</strong> Hier liegt ein entscheidender Punkt: Worked Examples sind <em>nicht</em> dasselbe wie KI-generierte Lösungen.</p>
+<p>Das Problem mit minimaler Anleitung: Konstruktivistische, entdeckende und problembasierte Ansätze klingen intuitiv attraktiv: Lernende sollen selbst entdecken, explorieren, Probleme lösen. Aber die empirische Evidenz zeigt konsistent: Für Novizen ist minimale Anleitung weniger effektiv als explizite Instruktion. Der Grund liegt in der kognitiven Architektur: Novizen haben keine Schemata im Langzeitgedächtnis, die sie zur Problemlösung nutzen könnten. Sie sind auf ihr begrenztes Arbeitsgedächtnis angewiesen, das schnell überlastet wird.</p>
+<p>Worked Examples: Eine der am besten belegten Instruktionsmethoden für Novizen sind <em>Worked Examples</em> (ausgearbeitete Beispiele). Statt Lernende Probleme selbst lösen zu lassen, zeigt man ihnen vollständig ausgearbeitete Lösungswege. Das klingt kontraintuitiv: Sollten Lernende nicht selbst denken? Die Forschung zeigt: Für Novizen reduzieren Worked Examples die extrinsische kognitive Belastung und lassen Kapazität für Schemabildung. Der <em>Worked Example Effect</em> <span class="citation" data-cites="cooperEffectsSchemaAcquisition1987">(<a href="#ref-cooperEffectsSchemaAcquisition1987" role="doc-biblioref">Cooper und Sweller 1987</a>)</span> ist einer der robustesten Befunde der Instruktionsforschung.</p>
+<p>Der Unterschied zu KI: Hier liegt ein entscheidender Punkt: Worked Examples sind <em>nicht</em> dasselbe wie KI-generierte Lösungen.</p>
 <ul>
-<li><strong>Worked Examples</strong> sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren</li>
-<li><strong>KI-generierte Antworten</strong>, in der typischen Nutzung durch Studierende, beantworten die gestellte Frage. Sie erfolgen jedoch ohne Einbettung in eine geplante Lernprogression. LLMs <em>können</em> mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.</li>
+<li>Worked Examples sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren</li>
+<li>KI-generierte Antworten, in der typischen Nutzung durch Studierende, beantworten die gestellte Frage. Sie erfolgen jedoch ohne Einbettung in eine geplante Lernprogression. LLMs <em>können</em> mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.</li>
 </ul>
 <p>Der Unterschied liegt in der <em>Einbettung</em>: Worked Examples sind Teil eines durchdachten Instruktionsdesigns, das von Lehrenden mit Blick auf die Lernziele und den Wissensstand der Lernenden gestaltet wurde. KI-Antworten in der studentischen Alltagsnutzung fehlt dieser Kontext.</p>
-<p><strong>Completion Problems:</strong> Ein Mittelweg sind <em>Completion Problems</em>: Teilweise ausgearbeitete Lösungen, die Lernende vervollständigen müssen. Sie bieten Struktur, fordern aber aktive kognitive Verarbeitung. Mit wachsender Expertise können die vorgefertigten Teile reduziert werden (<em>Fading</em>), bis Lernende Probleme vollständig selbst lösen.</p>
-<p><strong>Die Verbindung zum Expertise-Umkehr-Effekt:</strong> Explizite Instruktion und Worked Examples helfen Novizen, können aber Experten behindern (Expertise-Umkehr-Effekt). Daher ist <em>Fading</em> zentral: Unterstützung wird systematisch reduziert, wenn Expertise wächst. Das ist genau die dynamische Anpassung, die der Expertise-Umkehr-Effekt nahelegt.</p>
+<p>Completion Problems: Ein Mittelweg sind <em>Completion Problems</em>: Teilweise ausgearbeitete Lösungen, die Lernende vervollständigen müssen. Sie bieten Struktur, fordern aber aktive kognitive Verarbeitung. Mit wachsender Expertise können die vorgefertigten Teile reduziert werden (<em>Fading</em>), bis Lernende Probleme vollständig selbst lösen.</p>
+<p>Die Verbindung zum Expertise-Umkehr-Effekt: Explizite Instruktion und Worked Examples helfen Novizen, können aber Experten behindern (Expertise-Umkehr-Effekt). Daher ist <em>Fading</em> zentral: Unterstützung wird systematisch reduziert, wenn Expertise wächst. Das ist genau die dynamische Anpassung, die der Expertise-Umkehr-Effekt nahelegt.</p>
 <div class="callout callout-style-default callout-pro-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -743,13 +743,13 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Evidenzbasierte Instruktion für Novizen:</p>
 <ol type="1">
-<li><strong>Worked Examples nutzen</strong>: Ausgearbeitete Beispiele zeigen, bevor Lernende selbst lösen</li>
-<li><strong>Completion Problems einsetzen</strong>: Teilweise gelöste Aufgaben, die vervollständigt werden müssen</li>
-<li><strong>Fading planen</strong>: Mit viel Unterstützung beginnen, systematisch reduzieren</li>
-<li><strong>Didaktische Sequenzierung</strong>: Nicht jede Lösung zeigen, sondern gezielt ausgewählte Beispiele</li>
-<li><strong>KI nicht mit Worked Examples verwechseln</strong>: KI-Antworten ersetzen keine didaktisch gestaltete Instruktion</li>
+<li>Worked Examples nutzen: Ausgearbeitete Beispiele zeigen, bevor Lernende selbst lösen</li>
+<li>Completion Problems einsetzen: Teilweise gelöste Aufgaben, die vervollständigt werden müssen</li>
+<li>Fading planen: Mit viel Unterstützung beginnen, systematisch reduzieren</li>
+<li>Didaktische Sequenzierung: Nicht jede Lösung zeigen, sondern gezielt ausgewählte Beispiele</li>
+<li>KI nicht mit Worked Examples verwechseln: KI-Antworten ersetzen keine didaktisch gestaltete Instruktion</li>
 </ol>
-<p><strong>Der Kernpunkt:</strong> Novizen brauchen Unterstützung, aber die <em>richtige</em> Art von Unterstützung. Explizite Instruktion reduziert extrinsische Belastung, während produktive kognitive Arbeit erhalten bleibt. KI-Nutzung kann beides tun: extrinsische Belastung reduzieren (gut) oder die produktive Arbeit selbst übernehmen (problematisch).</p>
+<p>Der Kernpunkt: Novizen brauchen Unterstützung, aber die <em>richtige</em> Art von Unterstützung. Explizite Instruktion reduziert extrinsische Belastung, während produktive kognitive Arbeit erhalten bleibt. KI-Nutzung kann beides tun: extrinsische Belastung reduzieren (gut) oder die produktive Arbeit selbst übernehmen (problematisch).</p>
 </div>
 </div>
 </div>
@@ -788,14 +788,14 @@ window.Quarto = {
 <section id="angewendet-auf-ki-bewertung" class="level3">
 <h3 class="anchored" data-anchor-id="angewendet-auf-ki-bewertung">Angewendet auf KI-Bewertung</h3>
 <p>Was bedeutet das für die kritische Bewertung von KI-Outputs?</p>
-<p><strong>Eine Expertin in Biomedizin</strong> kann erkennen, wenn ChatGPT bei Biochemie falsch liegt. Sie hat die mentalen Modelle des Fachgebiets, kann “Das klingt falsch” erkennen, weiss welche Quellen zur Verifizierung dienen, und kann Plausibilität einschätzen.</p>
-<p><strong>Eine Novizin</strong> kann diese Bewertung nicht vornehmen, unabhängig von ihren “kritischen Denkfähigkeiten”. Ihr fehlen die Referenzrahmen. Sie kann nicht unterscheiden zwischen plausibel und korrekt. Sie weiss nicht, welche Quellen autoritativ sind.</p>
+<p>Eine Expertin in Biomedizin kann erkennen, wenn ChatGPT bei Biochemie falsch liegt. Sie hat die mentalen Modelle des Fachgebiets, kann “Das klingt falsch” erkennen, weiss welche Quellen zur Verifizierung dienen, und kann Plausibilität einschätzen.</p>
+<p>Eine Novizin kann diese Bewertung nicht vornehmen, unabhängig von ihren “kritischen Denkfähigkeiten”. Ihr fehlen die Referenzrahmen. Sie kann nicht unterscheiden zwischen plausibel und korrekt. Sie weiss nicht, welche Quellen autoritativ sind.</p>
 <p>Was wie “kritisches Denken” aussieht, ist oft domänen-spezifisches Wissen.</p>
 </section>
 <section id="was-transferiert-und-was-nicht" class="level3">
 <h3 class="anchored" data-anchor-id="was-transferiert-und-was-nicht">Was transferiert, und was nicht</h3>
 <p>Eine nuanciertere Betrachtung unterscheidet:</p>
-<p><strong>Transferiert teilweise:</strong></p>
+<p>Transferiert teilweise:</p>
 <ul>
 <li>Planung des Vorgehens</li>
 <li>Überwachung des eigenen Verständnisses</li>
@@ -803,22 +803,22 @@ window.Quarto = {
 <li>Bereitschaft, Annahmen zu hinterfragen</li>
 </ul>
 <p>Diese metakognitiven Strategien zeigen in der Forschung gewisse Generalisierung. Man kann sie domänenübergreifend lehren, und sie haben <em>etwas</em> Transferwirkung.</p>
-<p><strong>Transferiert kaum:</strong></p>
+<p>Transferiert kaum:</p>
 <ul>
 <li>Wissen, <em>was</em> in einem Fachgebiet plausibel ist</li>
 <li>Wissen, <em>welche</em> Quellen autoritativ sind</li>
 <li>Erkennen von <em>fachspezifischen</em> Fehlern</li>
 </ul>
 <p>Diese inhaltliche Bewertungsfähigkeit erfordert Domänenwissen und transferiert kaum.</p>
-<p><strong>Der Kernpunkt:</strong> Die <em>Strategien</em> kann man lehren, aber ihre <em>Anwendung</em> erfordert Fachwissen. Die Strategie “Hinterfrage Annahmen” kann man lehren. Aber um zu wissen, <em>welche</em> Annahmen in einem biochemischen Text fragwürdig sind, braucht man Biochemie-Wissen.</p>
+<p>Der Kernpunkt: Die <em>Strategien</em> kann man lehren, aber ihre <em>Anwendung</em> erfordert Fachwissen. Die Strategie “Hinterfrage Annahmen” kann man lehren. Aber um zu wissen, <em>welche</em> Annahmen in einem biochemischen Text fragwürdig sind, braucht man Biochemie-Wissen.</p>
 </section>
 <section id="die-zentrale-implikation" class="level3">
 <h3 class="anchored" data-anchor-id="die-zentrale-implikation">Die zentrale Implikation</h3>
 <p>Daraus folgen drei wichtige Erkenntnisse:</p>
 <ol type="1">
-<li><p><strong>Studierende, die “mit hohem kritischem Denken” von KI profitieren, haben wahrscheinlich mehr Domänenexpertise.</strong> Studien, die zeigen, dass “kritische Denker” von KI profitieren, messen möglicherweise Vorwissen, nicht eine generische Fähigkeit.</p></li>
-<li><p><strong>Die beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen.</strong> Kontraintuitiv: Nicht “KI-Training”, sondern Fachausbildung. Expertise ermöglicht kritische Nutzung; ohne Expertise ist Kritik kaum möglich.</p></li>
-<li><p><strong>Generische “KI-Kompetenz” kann Fachwissen ergänzen, aber nicht ersetzen.</strong> Workshops zu “Prompt Engineering” lösen das fundamentale Problem nicht. Die Fähigkeit, einen guten Prompt zu schreiben, ersetzt nicht die Fähigkeit, die Antwort zu bewerten.</p></li>
+<li><p>Studierende, die “mit hohem kritischem Denken” von KI profitieren, haben wahrscheinlich mehr Domänenexpertise. Studien, die zeigen, dass “kritische Denker” von KI profitieren, messen möglicherweise Vorwissen, nicht eine generische Fähigkeit.</p></li>
+<li><p>Die beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen. Kontraintuitiv: Nicht “KI-Training”, sondern Fachausbildung. Expertise ermöglicht kritische Nutzung; ohne Expertise ist Kritik kaum möglich.</p></li>
+<li><p>Generische “KI-Kompetenz” kann Fachwissen ergänzen, aber nicht ersetzen. Workshops zu “Prompt Engineering” lösen das fundamentale Problem nicht. Die Fähigkeit, einen guten Prompt zu schreiben, ersetzt nicht die Fähigkeit, die Antwort zu bewerten.</p></li>
 </ol>
 <div class="callout callout-style-default callout-pro-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
@@ -834,11 +834,11 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Anstatt nur “KI-Kompetenz” zu lehren:</p>
 <ol type="1">
-<li><strong>Fachliche Grundlagen stärken</strong>: Mehr Zeit für Grundlagenwissen, nicht weniger</li>
-<li><strong>Domänenspezifische KI-Kritik üben</strong>: Im Fachkontext KI-Outputs gemeinsam analysieren</li>
-<li><strong>Fehler sammeln</strong>: Eine Sammlung typischer KI-Fehler im eigenen Fachgebiet anlegen</li>
-<li><strong>Metakognition fördern</strong>: Studierende lehren, ihr eigenes Verständnis zu überwachen</li>
-<li><strong>Realistische Erwartungen setzen</strong>: KI-Kritik erfordert Fachwissen, das Zeit braucht</li>
+<li>Fachliche Grundlagen stärken: Mehr Zeit für Grundlagenwissen, nicht weniger</li>
+<li>Domänenspezifische KI-Kritik üben: Im Fachkontext KI-Outputs gemeinsam analysieren</li>
+<li>Fehler sammeln: Eine Sammlung typischer KI-Fehler im eigenen Fachgebiet anlegen</li>
+<li>Metakognition fördern: Studierende lehren, ihr eigenes Verständnis zu überwachen</li>
+<li>Realistische Erwartungen setzen: KI-Kritik erfordert Fachwissen, das Zeit braucht</li>
 </ol>
 </div>
 </div>
@@ -855,39 +855,39 @@ window.Quarto = {
 </blockquote>
 <p>Diese Unterscheidung ist entscheidend:</p>
 <ul>
-<li><strong>Aufgabenleistung (Performance)</strong>: Wie gut man eine Aufgabe <em>jetzt</em> löst</li>
-<li><strong>Lernen (Learning)</strong>: Die Fähigkeit, ähnliche Aufgaben <em>später unabhängig</em> zu lösen</li>
+<li><em>Aufgabenleistung (Performance)</em>: Wie gut man eine Aufgabe <em>jetzt</em> löst</li>
+<li><em>Lernen (Learning)</em>: Die Fähigkeit, ähnliche Aufgaben <em>später unabhängig</em> zu lösen</li>
 </ul>
 <p>KI verbessert Aufgabenleistung (eindeutig belegt). Aber das sagt nichts über Lernen. Lernen erfordert möglicherweise genau die Anstrengung, die KI eliminiert.</p>
 </section>
 <section id="die-bastani-studie-im-detail" class="level3">
 <h3 class="anchored" data-anchor-id="die-bastani-studie-im-detail">Die Bastani-Studie im Detail</h3>
 <p>Schauen wir uns die eingangs erwähnte Studie <span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">(<a href="#ref-bastaniGenerativeAIGuardrails2025" role="doc-biblioref">Bastani u.&nbsp;a. 2025</a>)</span> genauer an:</p>
-<p><strong>Design:</strong></p>
+<p>Design:</p>
 <ul>
 <li>Rund 1000 türkische Gymnasiasten</li>
 <li>Randomisierte Zuweisung zu drei Gruppen</li>
 <li>Mathe-Übungen über mehrere Wochen</li>
 <li>Test am Ende ohne KI-Zugang</li>
 </ul>
-<p><strong>Die Bedingungen:</strong></p>
+<p>Die Bedingungen:</p>
 <ol type="1">
-<li><strong>Kontrollgruppe</strong>: Kein KI-Zugang</li>
-<li><strong>Direkter GPT-4-Zugang</strong>: Freie Nutzung</li>
-<li><strong>GPT Tutor</strong>: Strukturierte Nutzung mit pädagogischen Leitplanken</li>
+<li>Kontrollgruppe: Kein KI-Zugang</li>
+<li>Direkter GPT-4-Zugang: Freie Nutzung</li>
+<li>GPT Tutor: Strukturierte Nutzung mit pädagogischen Leitplanken</li>
 </ol>
-<p><strong>Die Ergebnisse:</strong></p>
+<p>Die Ergebnisse:</p>
 <ul>
-<li>Mit direktem GPT-4: <strong>48% mehr Aufgaben gelöst</strong></li>
-<li>Mit GPT Tutor: <strong>127% mehr Aufgaben gelöst</strong></li>
-<li>Ohne KI (später): <strong>17% schlechter</strong> als Kontrollgruppe</li>
+<li>Mit direktem GPT-4: 48% mehr Aufgaben gelöst</li>
+<li>Mit GPT Tutor: 127% mehr Aufgaben gelöst</li>
+<li>Ohne KI (später): 17% schlechter als Kontrollgruppe</li>
 </ul>
 <p>Die Autoren fassen zusammen:</p>
 <blockquote class="blockquote">
 <p>“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”</p>
 </blockquote>
-<p><strong>Wichtige Nuance:</strong> Die negativen Effekte betrafen primär den direkten Zugang. Der “GPT Tutor” zeigte bessere Ergebnisse, aber selbst mit Tutor war die spätere Leistung ohne KI reduziert. Die Art der KI-Nutzung macht einen Unterschied.</p>
-<p><strong>Einschränkungen:</strong> Die Studie hat methodische Limitationen: Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch, die Effekte sind kurzfristig gemessen, und Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist keine Überraschung. Sie folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten. Die Studie liefert empirische Evidenz für die Vorhersagen der Theorie.</p>
+<p>Wichtige Nuance: Die negativen Effekte betrafen primär den direkten Zugang. Der “GPT Tutor” zeigte bessere Ergebnisse, aber selbst mit Tutor war die spätere Leistung ohne KI reduziert. Die Art der KI-Nutzung macht einen Unterschied.</p>
+<p>Einschränkungen: Die Studie hat methodische Limitationen: Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch, die Effekte sind kurzfristig gemessen, und Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist keine Überraschung. Sie folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten. Die Studie liefert empirische Evidenz für die Vorhersagen der Theorie.</p>
 </section>
 <section id="desirable-difficulties-warum-anstrengung-nötig-ist" class="level3">
 <h3 class="anchored" data-anchor-id="desirable-difficulties-warum-anstrengung-nötig-ist">Desirable Difficulties: Warum Anstrengung nötig ist</h3>
@@ -897,13 +897,13 @@ window.Quarto = {
 </blockquote>
 <p>Vier bewährte Interventionen illustrieren das Prinzip:</p>
 <ol type="1">
-<li><strong>Variation</strong>: Lernen unter wechselnden Bedingungen</li>
-<li><strong>Interleaving</strong>: Aufgabentypen mischen statt blocken</li>
-<li><strong>Spacing</strong>: Verteilt lernen statt massiert</li>
-<li><strong>Retrieval Practice</strong>: Aktiv abrufen statt passiv wiederlesen <span class="citation" data-cites="roedigerTestenhancedLearningTaking2006">(<a href="#ref-roedigerTestenhancedLearningTaking2006" role="doc-biblioref">Roediger und Karpicke 2006</a>)</span></li>
+<li>Variation: Lernen unter wechselnden Bedingungen</li>
+<li>Interleaving: Aufgabentypen mischen statt blocken</li>
+<li>Spacing: Verteilt lernen statt massiert</li>
+<li>Retrieval Practice: Aktiv abrufen statt passiv wiederlesen <span class="citation" data-cites="roedigerTestenhancedLearningTaking2006">(<a href="#ref-roedigerTestenhancedLearningTaking2006" role="doc-biblioref">Roediger und Karpicke 2006</a>)</span></li>
 </ol>
 <p>Alle vier haben gemeinsam: Sie fühlen sich <em>schwerer</em> an, sind aber <em>effektiver</em> für langfristiges Lernen.</p>
-<p><strong>Der Mechanismus:</strong> Sofortiger KI-Zugang kann Abrufversuche kurzschliessen. Statt selbst nachzudenken (“Was weiss ich darüber?”), fragt man die KI. Die Gedächtnisspur wird nicht gestärkt.</p>
+<p>Der Mechanismus: Sofortiger KI-Zugang kann Abrufversuche kurzschliessen. Statt selbst nachzudenken (“Was weiss ich darüber?”), fragt man die KI. Die Gedächtnisspur wird nicht gestärkt.</p>
 </section>
 <section id="der-generierungseffekt" class="level3">
 <h3 class="anchored" data-anchor-id="der-generierungseffekt">Der Generierungseffekt</h3>
@@ -915,28 +915,28 @@ window.Quarto = {
 <li>Test: Beide Gruppen werden abgefragt</li>
 <li>Ergebnis: Gruppe B erinnert besser</li>
 </ul>
-<p><strong>Warum funktioniert es?</strong></p>
+<p>Warum funktioniert es?</p>
 <ul>
 <li>Aktivere Verarbeitung während des Generierens</li>
 <li>Mehr Verbindungen im Gedächtnis</li>
 <li>Tiefere Enkodierung</li>
 </ul>
-<p><strong>Die Implikation:</strong> Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert. Studierende, die selbst einen Essay-Entwurf schreiben, profitieren vom Generierungseffekt. Studierende, die einen KI-generierten Entwurf bearbeiten, nicht, auch wenn das Endprodukt ähnlich aussieht.</p>
+<p>Die Implikation: Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert. Studierende, die selbst einen Essay-Entwurf schreiben, profitieren vom Generierungseffekt. Studierende, die einen KI-generierten Entwurf bearbeiten, nicht, auch wenn das Endprodukt ähnlich aussieht.</p>
 </section>
 <section id="die-scaffolding-hypothese" class="level3">
 <h3 class="anchored" data-anchor-id="die-scaffolding-hypothese">Die Scaffolding-Hypothese</h3>
 <p>Eine tiefere Frage drängt sich auf: Was passiert mit der Entwicklung kognitiver Fähigkeiten? Hier müssen wir sorgfältig zwischen dem unterscheiden, was wir wissen, was wir theoretisch ableiten, und was wir vermuten.</p>
-<p><strong>Was wir wissen (Evidenz):</strong> Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück. Der Generierungseffekt und die Prinzipien erwünschter Schwierigkeiten sind empirisch belegt.</p>
-<p><strong>Was wir theoretisch ableiten:</strong> Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory und ist durch Studien wie Bastani gestützt.</p>
-<p><strong>Was wir vermuten (Hypothese):</strong> Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Eine Fähigkeit, die nie entsteht, weil der konstruktive Prozess übersprungen wird, könnte schwerer nachzuholen sein als eine verkümmerte Fähigkeit. Die Hypothese: Grundfertigkeiten wie Schreiben, Rechnen und analytisches Lesen sind nicht nur <em>Fertigkeiten</em>, sondern <em>Prozesse</em>, die kognitive Architektur aufbauen. Schreiben könnte ein “epistemisches Werkzeug” sein: Gedanken entwickeln sich <em>durch</em> das Schreiben, nicht vor dem Schreiben.</p>
-<p><strong>Vorsicht:</strong> Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.</p>
+<p>Was wir wissen (Evidenz): Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück. Der Generierungseffekt und die Prinzipien erwünschter Schwierigkeiten sind empirisch belegt.</p>
+<p>Was wir theoretisch ableiten: Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory und ist durch Studien wie Bastani gestützt.</p>
+<p>Was wir vermuten (Hypothese): Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Eine Fähigkeit, die nie entsteht, weil der konstruktive Prozess übersprungen wird, könnte schwerer nachzuholen sein als eine verkümmerte Fähigkeit. Die Hypothese: Grundfertigkeiten wie Schreiben, Rechnen und analytisches Lesen sind nicht nur <em>Fertigkeiten</em>, sondern <em>Prozesse</em>, die kognitive Architektur aufbauen. Schreiben könnte ein “epistemisches Werkzeug” sein: Gedanken entwickeln sich <em>durch</em> das Schreiben, nicht vor dem Schreiben.</p>
+<p>Vorsicht: Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.</p>
 </section>
 <section id="historische-analogien" class="level3">
 <h3 class="anchored" data-anchor-id="historische-analogien">Historische Analogien</h3>
 <p>Frühere Technologien zeigen ähnliche Muster:</p>
-<p><strong>GPS und räumliches Gedächtnis</strong> <span class="citation" data-cites="dahmaniHabitualUseGPS2020">(<a href="#ref-dahmaniHabitualUseGPS2020" role="doc-biblioref">Dahmani und Bohbot 2020</a>)</span>: Eine longitudinale Studie über drei Jahre zeigte: Stärkere GPS-Nutzung korreliert mit steilerem Rückgang des räumlichen Gedächtnisses. Die zeitliche Abfolge ist konsistent mit der Interpretation, dass GPS-Nutzung zum Rückgang beiträgt, wobei ungemessene konfundierende Variablen nicht ausgeschlossen werden können.</p>
-<p><strong>Konzeptuelles Verständnis</strong> <span class="citation" data-cites="lortie-forguesConceptualKnowledgeDecimal2017">(<a href="#ref-lortie-forguesConceptualKnowledgeDecimal2017" role="doc-biblioref">Lortie-Forgues und Siegler 2017</a>)</span>: Forschung zeigt, dass selbst Erwachsene mit Zugang zu Rechenhilfen oft überraschende Lücken im konzeptuellen Verständnis mathematischer Operationen aufweisen. Werkzeugnutzung ersetzt kein Grundverständnis. Dieselbe Parallele wie bei KI: Das Werkzeug kann prozedurale Aufgaben übernehmen, aber konzeptuelles Verständnis muss eigenständig aufgebaut werden.</p>
-<p><strong>Google-Effekt</strong> <span class="citation" data-cites="sparrowGoogleEffectsMemory2011">(<a href="#ref-sparrowGoogleEffectsMemory2011" role="doc-biblioref">Sparrow, Liu, und Wegner 2011</a>)</span>: Menschen erinnern Information schlechter, wenn sie erwarten, dass sie verfügbar bleibt. Sie erinnern stattdessen, <em>wo</em> die Information zu finden ist. Das Gedächtnis adaptiert sich an die Verfügbarkeit externer Speicher.</p>
+<p>GPS und räumliches Gedächtnis <span class="citation" data-cites="dahmaniHabitualUseGPS2020">(<a href="#ref-dahmaniHabitualUseGPS2020" role="doc-biblioref">Dahmani und Bohbot 2020</a>)</span>: Eine longitudinale Studie über drei Jahre zeigte: Stärkere GPS-Nutzung korreliert mit steilerem Rückgang des räumlichen Gedächtnisses. Die zeitliche Abfolge ist konsistent mit der Interpretation, dass GPS-Nutzung zum Rückgang beiträgt, wobei ungemessene konfundierende Variablen nicht ausgeschlossen werden können.</p>
+<p>Konzeptuelles Verständnis <span class="citation" data-cites="lortie-forguesConceptualKnowledgeDecimal2017">(<a href="#ref-lortie-forguesConceptualKnowledgeDecimal2017" role="doc-biblioref">Lortie-Forgues und Siegler 2017</a>)</span>: Forschung zeigt, dass selbst Erwachsene mit Zugang zu Rechenhilfen oft überraschende Lücken im konzeptuellen Verständnis mathematischer Operationen aufweisen. Werkzeugnutzung ersetzt kein Grundverständnis. Dieselbe Parallele wie bei KI: Das Werkzeug kann prozedurale Aufgaben übernehmen, aber konzeptuelles Verständnis muss eigenständig aufgebaut werden.</p>
+<p>Google-Effekt <span class="citation" data-cites="sparrowGoogleEffectsMemory2011">(<a href="#ref-sparrowGoogleEffectsMemory2011" role="doc-biblioref">Sparrow, Liu, und Wegner 2011</a>)</span>: Menschen erinnern Information schlechter, wenn sie erwarten, dass sie verfügbar bleibt. Sie erinnern stattdessen, <em>wo</em> die Information zu finden ist. Das Gedächtnis adaptiert sich an die Verfügbarkeit externer Speicher.</p>
 </section>
 <section id="grenzen-der-analogien" class="level3">
 <h3 class="anchored" data-anchor-id="grenzen-der-analogien">Grenzen der Analogien</h3>
@@ -946,22 +946,22 @@ window.Quarto = {
 <li>Taschenrechner betreffen arithmetische Berechnungen</li>
 <li>Google betrifft Informationsabruf</li>
 </ul>
-<p>Jede dieser Technologien betrifft eine <strong>spezifische, enge</strong> kognitive Funktion.</p>
-<p>Generative KI kann fast <strong>jede</strong> kognitive Aufgabe übernehmen: Schreiben, Argumentieren, Analysieren, Synthetisieren, Bewerten. Die Breite ist beispiellos. Wir können nicht einfach extrapolieren.</p>
-<p><strong>Aber:</strong> Die historischen Bedenken hatten oft Berechtigung. GPS <em>beeinflusst</em> tatsächlich räumliche Kognition. Taschenrechner <em>veränderten</em> den Mathematikunterricht. Die Bedenken waren nicht blosse Panikmache.</p>
+<p>Jede dieser Technologien betrifft eine spezifische, enge kognitive Funktion.</p>
+<p>Generative KI kann fast jede kognitive Aufgabe übernehmen: Schreiben, Argumentieren, Analysieren, Synthetisieren, Bewerten. Die Breite ist beispiellos. Wir können nicht einfach extrapolieren.</p>
+<p>Aber: Die historischen Bedenken hatten oft Berechtigung. GPS <em>beeinflusst</em> tatsächlich räumliche Kognition. Taschenrechner <em>veränderten</em> den Mathematikunterricht. Die Bedenken waren nicht blosse Panikmache.</p>
 </section>
 <section id="der-edtech-hype-zyklus" class="level3">
 <h3 class="anchored" data-anchor-id="der-edtech-hype-zyklus">Der EdTech-Hype-Zyklus</h3>
 <p>Bildungstechnologien folgen einem wiederkehrenden Muster <span class="citation" data-cites="reichFailureDisruptWhy2020">(<a href="#ref-reichFailureDisruptWhy2020" role="doc-biblioref">Reich 2020</a>)</span>: Überschwängliche Versprechen, gefolgt von bescheidener Adoption, die bestehende Praktiken eher ergänzt als ersetzt.</p>
 <ul>
-<li><strong>Radio</strong> sollte die besten Vorlesungen in jedes Klassenzimmer bringen</li>
-<li><strong>Fernsehen</strong> sollte Lernen revolutionieren</li>
-<li><strong>Computer</strong> sollten Unterricht personalisieren</li>
-<li><strong>MOOCs</strong> sollten Elite-Bildung demokratisieren</li>
+<li>Radio sollte die besten Vorlesungen in jedes Klassenzimmer bringen</li>
+<li>Fernsehen sollte Lernen revolutionieren</li>
+<li>Computer sollten Unterricht personalisieren</li>
+<li>MOOCs sollten Elite-Bildung demokratisieren</li>
 </ul>
 <p>Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Versprechen.</p>
-<p><strong>Das MOOC-Beispiel ist besonders lehrreich:</strong> MOOCs versprachen Demokratisierung, erreichten aber primär Lernende, die bereits Abschlüsse hatten und berufliche Weiterbildung suchten. Der Erfolg erforderte genau die Selbstregulation und das Vorwissen, das privilegierte Lernende bereits besassen. Die “Demokratisierung” verstärkte bestehende Ungleichheiten.</p>
-<p><strong>Was macht dieses Mal anders?</strong> KIs Breite ist beispiellos. Aber dieselben strukturellen Kräfte könnten wirken: die Komplexität des Lehrens, die Einpassung neuer Werkzeuge in bestehende Praktiken, die Kluft zwischen Pilotprojekten und flächendeckender Umsetzung.</p>
+<p>Das MOOC-Beispiel ist besonders lehrreich: MOOCs versprachen Demokratisierung, erreichten aber primär Lernende, die bereits Abschlüsse hatten und berufliche Weiterbildung suchten. Der Erfolg erforderte genau die Selbstregulation und das Vorwissen, das privilegierte Lernende bereits besassen. Die “Demokratisierung” verstärkte bestehende Ungleichheiten.</p>
+<p>Was macht dieses Mal anders? KIs Breite ist beispiellos. Aber dieselben strukturellen Kräfte könnten wirken: die Komplexität des Lehrens, die Einpassung neuer Werkzeuge in bestehende Praktiken, die Kluft zwischen Pilotprojekten und flächendeckender Umsetzung.</p>
 </section>
 <section id="das-haben-sie-über-das-schreiben-auch-gesagt" class="level3">
 <h3 class="anchored" data-anchor-id="das-haben-sie-über-das-schreiben-auch-gesagt">“Das haben sie über das Schreiben auch gesagt”</h3>
@@ -969,29 +969,29 @@ window.Quarto = {
 <p>Im Phaidros warnte Sokrates: Schrift wird das Gedächtnis schwächen und nur “Scheinwissen” erzeugen.</p>
 <p>Drei Antworten:</p>
 <ol type="1">
-<li><p><strong>Schrift <em>hat</em> Kognition tiefgreifend verändert.</strong> Wir denken anders als orale Kulturen. Abstraktion, Kategorisierung, lineare Argumentation wurden durch Schrift gefördert. Das war nicht nur positiv oder negativ, es war transformativ.</p></li>
-<li><p><strong>Einige Bedenken waren berechtigt.</strong> Mündliche Gedächtnistraditionen <em>sind</em> zurückgegangen. Homers Epen wurden über Generationen mündlich überliefert. Diese Fähigkeit ist weitgehend verloren.</p></li>
-<li><p><strong>Schriftkultur entwickelte sich über Jahrhunderte.</strong> Es gab Zeit für kulturelle Anpassung. Bildungssysteme entwickelten sich mit. KI-Integration geschieht in Jahren, nicht Jahrhunderten.</p></li>
+<li><p>Schrift <em>hat</em> Kognition tiefgreifend verändert. Wir denken anders als orale Kulturen. Abstraktion, Kategorisierung, lineare Argumentation wurden durch Schrift gefördert. Das war nicht nur positiv oder negativ, es war transformativ.</p></li>
+<li><p>Einige Bedenken waren berechtigt. Mündliche Gedächtnistraditionen <em>sind</em> zurückgegangen. Homers Epen wurden über Generationen mündlich überliefert. Diese Fähigkeit ist weitgehend verloren.</p></li>
+<li><p>Schriftkultur entwickelte sich über Jahrhunderte. Es gab Zeit für kulturelle Anpassung. Bildungssysteme entwickelten sich mit. KI-Integration geschieht in Jahren, nicht Jahrhunderten.</p></li>
 </ol>
 </section>
 <section id="warum-experten-profitieren-lernende-nicht" class="level3">
 <h3 class="anchored" data-anchor-id="warum-experten-profitieren-lernende-nicht">Warum Experten profitieren, Lernende nicht</h3>
 <p>Jetzt können wir versuchen, das Muster zu erklären:</p>
-<p><strong>Experten können:</strong></p>
+<p>Experten können:</p>
 <ul>
 <li>Routine-Aufgaben sicher auslagern (sie wissen, was “Routine” ist)</li>
 <li>Höheres Denken aufrechterhalten (kognitive Kapazität wird frei)</li>
 <li>KI-Outputs bewerten (sie haben Domänenexpertise)</li>
 <li>Ihre Grundfähigkeiten verkümmern nicht (sie sind schon da)</li>
 </ul>
-<p><strong>Lernenden fehlt:</strong></p>
+<p>Lernenden fehlt:</p>
 <ul>
 <li>Wissen zur Bewertung (sie können nicht einschätzen, ob KI richtig liegt)</li>
 <li>Etablierte Grundfähigkeiten (was nicht da ist, kann nicht verkümmern, entsteht aber auch nicht)</li>
 <li>Metakognitive Kontrolle (sie wissen nicht, wann KI-Nutzung schadet)</li>
 </ul>
-<p>Das Ergebnis kann <strong>“fliessende Inkompetenz”</strong> sein: Anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis. Das KI-generierte Produkt sieht kompetent aus, das Wissen fehlt.</p>
-<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</strong></p>
+<p>Das Ergebnis kann “fliessende Inkompetenz” sein: Anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis. Das KI-generierte Produkt sieht kompetent aus, das Wissen fehlt.</p>
+<p>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</p>
 <div class="callout callout-style-default callout-pro-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1006,14 +1006,14 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Um produktive Anstrengung zu erhalten:</p>
 <ol type="1">
-<li><strong>“Ohne-KI”-Phasen einplanen</strong>: Explizite Zeiten, in denen KI nicht erlaubt ist</li>
-<li><strong>Prozess bewerten, nicht nur Produkt</strong>: Zwischenschritte einfordern und bewerten</li>
-<li><strong>Retrieval Practice integrieren</strong>: Regelmässige Abrufübungen ohne Hilfsmittel</li>
-<li><strong>Spacing und Interleaving nutzen</strong>: Verteiltes, gemischtes Üben</li>
-<li><strong>Generierung fordern</strong>: Eigene Entwürfe vor KI-Unterstützung verlangen</li>
-<li><strong>Reflexion einbauen</strong>: Studierende über ihren Lernprozess nachdenken lassen</li>
+<li>“Ohne-KI”-Phasen einplanen: Explizite Zeiten, in denen KI nicht erlaubt ist</li>
+<li>Prozess bewerten, nicht nur Produkt: Zwischenschritte einfordern und bewerten</li>
+<li>Retrieval Practice integrieren: Regelmässige Abrufübungen ohne Hilfsmittel</li>
+<li>Spacing und Interleaving nutzen: Verteiltes, gemischtes Üben</li>
+<li>Generierung fordern: Eigene Entwürfe vor KI-Unterstützung verlangen</li>
+<li>Reflexion einbauen: Studierende über ihren Lernprozess nachdenken lassen</li>
 </ol>
-<p><strong>Realitätscheck:</strong> Diese Empfehlungen erfordern Zeit und Planung. Nicht jede Lehrveranstaltung kann alles umsetzen. Beginne mit einem oder zwei Punkten, die zu deinem Kontext passen.</p>
+<p>Realitätscheck: Diese Empfehlungen erfordern Zeit und Planung. Nicht jede Lehrveranstaltung kann alles umsetzen. Beginne mit einem oder zwei Punkten, die zu deinem Kontext passen.</p>
 </div>
 </div>
 </div>
@@ -1048,24 +1048,24 @@ window.Quarto = {
 <li>KI kann unbegrenzt viele Lernende betreuen</li>
 <li>Also: Demokratisierung personalisierter Bildung</li>
 </ul>
-<p><strong>Aber:</strong> Die Begeisterung übersteigt die Evidenz erheblich.</p>
+<p>Aber: Die Begeisterung übersteigt die Evidenz erheblich.</p>
 </section>
 <section id="warum-fragen-theoretisch-helfen-könnten" class="level3">
 <h3 class="anchored" data-anchor-id="warum-fragen-theoretisch-helfen-könnten">Warum Fragen theoretisch helfen könnten</h3>
 <p>Die kognitionswissenschaftliche Grundlage ist solide:</p>
-<p><strong>Generierungseffekt:</strong> Selbst erzeugte Antworten werden besser behalten als passiv erhaltene <span class="citation" data-cites="slameckaGenerationEffectDelineation1978">(<a href="#ref-slameckaGenerationEffectDelineation1978" role="doc-biblioref">Slamecka und Graf 1978</a>)</span>.</p>
-<p><strong>Selbsterklärungseffekt:</strong> Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf <span class="citation" data-cites="chiElicitingSelfExplanationsImproves1994">(<a href="#ref-chiElicitingSelfExplanationsImproves1994" role="doc-biblioref">Chi u.&nbsp;a. 1994</a>)</span>.</p>
-<p><strong>Aber:</strong> Die Qualität der Selbsterklärungen und damit der Lerneffekt hängt vom Vorwissen ab. Das verknüpft mit dem Expertise-Umkehr-Effekt: Was für Fortgeschrittene funktioniert, kann Novizen überfordern.</p>
+<p>Generierungseffekt: Selbst erzeugte Antworten werden besser behalten als passiv erhaltene <span class="citation" data-cites="slameckaGenerationEffectDelineation1978">(<a href="#ref-slameckaGenerationEffectDelineation1978" role="doc-biblioref">Slamecka und Graf 1978</a>)</span>.</p>
+<p>Selbsterklärungseffekt: Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf <span class="citation" data-cites="chiElicitingSelfExplanationsImproves1994">(<a href="#ref-chiElicitingSelfExplanationsImproves1994" role="doc-biblioref">Chi u.&nbsp;a. 1994</a>)</span>.</p>
+<p>Aber: Die Qualität der Selbsterklärungen und damit der Lerneffekt hängt vom Vorwissen ab. Das verknüpft mit dem Expertise-Umkehr-Effekt: Was für Fortgeschrittene funktioniert, kann Novizen überfordern.</p>
 </section>
 <section id="was-die-evidenz-tatsächlich-zeigt" class="level3">
 <h3 class="anchored" data-anchor-id="was-die-evidenz-tatsächlich-zeigt">Was die Evidenz tatsächlich zeigt</h3>
 <p>VanLehn <span class="citation" data-cites="vanlehnRelativeEffectivenessHuman2011">(<a href="#ref-vanlehnRelativeEffectivenessHuman2011" role="doc-biblioref">2011</a>)</span> führte eine Meta-Analyse zur Effektivität verschiedener Tutoring-Formen durch:</p>
 <ul>
-<li><strong>Menschliche Tutoren:</strong> d = 0.79 (nicht 2.0 wie Bloom behauptete)</li>
-<li><strong>Intelligente Tutorsysteme:</strong> d = 0.76 (vergleichbar)</li>
+<li>Menschliche Tutoren: d = 0.79 (nicht 2.0 wie Bloom behauptete)</li>
+<li>Intelligente Tutorsysteme: d = 0.76 (vergleichbar)</li>
 </ul>
 <p>VanLehns Analyse legt nahe, dass Schritt-für-Schritt-Feedback ein wesentlicher Faktor war, wobei die genaue Rolle des sokratischen Dialogs schwer zu isolieren ist.</p>
-<p><strong>Zu LLM-basierten sokratischen Tutoren:</strong> Es gibt keine gut kontrollierten randomisierten Studien. Die existierende Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit “kein Tutoring” statt mit Alternativen (siehe auch <span class="citation" data-cites="weidlichChatGPTEducationEffect2025">Weidlich u.&nbsp;a. (<a href="#ref-weidlichChatGPTEducationEffect2025" role="doc-biblioref">2025</a>)</span>).</p>
+<p>Zu LLM-basierten sokratischen Tutoren: Es gibt keine gut kontrollierten randomisierten Studien. Die existierende Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit “kein Tutoring” statt mit Alternativen (siehe auch <span class="citation" data-cites="weidlichChatGPTEducationEffect2025">Weidlich u.&nbsp;a. (<a href="#ref-weidlichChatGPTEducationEffect2025" role="doc-biblioref">2025</a>)</span>).</p>
 </section>
 <section id="das-diagnose-problem" class="level3">
 <h3 class="anchored" data-anchor-id="das-diagnose-problem">Das Diagnose-Problem</h3>
@@ -1075,7 +1075,7 @@ window.Quarto = {
 <li>Unterscheidung verschiedener Fehlertypen</li>
 <li>Anpassung der Fragen an den individuellen Lernenden</li>
 </ul>
-<p><strong>Beispiel:</strong> Wenn ein Schüler antwortet <span class="math inline">\(\frac{1}{2} + \frac{1}{3} = \frac{2}{5}\)</span>, kann das bedeuten:</p>
+<p>Beispiel: Wenn ein Schüler antwortet <span class="math inline">\(\frac{1}{2} + \frac{1}{3} = \frac{2}{5}\)</span>, kann das bedeuten:</p>
 <ul>
 <li>Prozeduraler Fehler (Zähler und Nenner addiert)</li>
 <li>Konzeptueller Fehler (versteht nicht, was Brüche repräsentieren)</li>
@@ -1085,13 +1085,13 @@ window.Quarto = {
 </section>
 <section id="weitere-herausforderungen" class="level3">
 <h3 class="anchored" data-anchor-id="weitere-herausforderungen">Weitere Herausforderungen</h3>
-<p><strong>Fragesequenzierung:</strong> Sokratischer Dialog ist kontingent. Jede Frage hängt von der vorherigen Antwort ab. Einfache LLM-Implementierungen generieren Token für Token ohne expliziten pädagogischen Plan, obwohl Multi-Agent-Systeme oder strukturierte Prompting-Ansätze dies teilweise adressieren können.</p>
-<p><strong>Feedback-Timing:</strong> Wann korrigieren, wann weiter fragen lassen? Zu früh verhindert eigenes Denken, zu spät frustriert und verfestigt Fehler. Die Balance hängt vom individuellen Lernenden ab.</p>
-<p><strong>LLM-Sycophancy:</strong> LLMs sind darauf trainiert, hilfreich und angenehm zu sein. Sie tendieren dazu, Nutzern zuzustimmen. Das ist das Gegenteil von produktivem sokratischem Unbehagen. Sokrates machte seine Gesprächspartner unbequem. Das war der Punkt.</p>
+<p>Fragesequenzierung: Sokratischer Dialog ist kontingent. Jede Frage hängt von der vorherigen Antwort ab. Einfache LLM-Implementierungen generieren Token für Token ohne expliziten pädagogischen Plan, obwohl Multi-Agent-Systeme oder strukturierte Prompting-Ansätze dies teilweise adressieren können.</p>
+<p>Feedback-Timing: Wann korrigieren, wann weiter fragen lassen? Zu früh verhindert eigenes Denken, zu spät frustriert und verfestigt Fehler. Die Balance hängt vom individuellen Lernenden ab.</p>
+<p>LLM-Sycophancy: LLMs sind darauf trainiert, hilfreich und angenehm zu sein. Sie tendieren dazu, Nutzern zuzustimmen. Das ist das Gegenteil von produktivem sokratischem Unbehagen. Sokrates machte seine Gesprächspartner unbequem. Das war der Punkt.</p>
 </section>
 <section id="fazit-zum-sokratischen-ki-tutoring" class="level3">
 <h3 class="anchored" data-anchor-id="fazit-zum-sokratischen-ki-tutoring">Fazit zum sokratischen KI-Tutoring</h3>
-<p><strong>Die ehrliche Antwort ist: Wir wissen es noch nicht.</strong></p>
+<p>Die ehrliche Antwort ist: Wir wissen es noch nicht.</p>
 <p><em>Was plausibel ist:</em> Selbsterklärung und Generierung fördern Lernen. Fragen können diese Prozesse anregen.</p>
 <p><em>Was nicht belegt ist:</em> Dass aktuelle KI-Systeme die nötige Diagnose leisten können. Dass LLM-basierte sokratische Tutoren besser sind als Alternativen. Dass positive Effekte langfristig halten.</p>
 <p>Sokrates würde es schätzen: Die beste Art, Werkzeuge zu bewerten, die seine Methode beanspruchen, ist, kritische Fragen zu stellen und unbegründete Antworten nicht zu akzeptieren.</p>
@@ -1109,12 +1109,12 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Bei der Evaluation von KI-Tutoring-Tools:</p>
 <ol type="1">
-<li><strong>Evidenz verlangen</strong>: Peer-Review-Studien mit Learning Outcomes, nicht nur Zufriedenheit</li>
-<li><strong>Diagnose-Fähigkeit prüfen</strong>: Kann das System zwischen Fehlertypen unterscheiden?</li>
-<li><strong>Opportunitätskosten bedenken</strong>: Ist KI-Tutoring besser als Lehrbuch, Übungsaufgaben, Peer-Diskussion?</li>
-<li><strong>Mit strukturierten Domänen beginnen</strong>: Mathematik vor Literaturanalyse</li>
-<li><strong>Auf unbeabsichtigte Folgen achten</strong>: Strategisches Ausnutzen des Systems statt echtem Lernen, Abhängigkeit von der KI-Unterstützung</li>
-<li><strong>Pilotieren und messen</strong>: Kleine Versuche mit klaren Erfolgskriterien</li>
+<li>Evidenz verlangen: Peer-Review-Studien mit Learning Outcomes, nicht nur Zufriedenheit</li>
+<li>Diagnose-Fähigkeit prüfen: Kann das System zwischen Fehlertypen unterscheiden?</li>
+<li>Opportunitätskosten bedenken: Ist KI-Tutoring besser als Lehrbuch, Übungsaufgaben, Peer-Diskussion?</li>
+<li>Mit strukturierten Domänen beginnen: Mathematik vor Literaturanalyse</li>
+<li>Auf unbeabsichtigte Folgen achten: Strategisches Ausnutzen des Systems statt echtem Lernen, Abhängigkeit von der KI-Unterstützung</li>
+<li>Pilotieren und messen: Kleine Versuche mit klaren Erfolgskriterien</li>
 </ol>
 </div>
 </div>
@@ -1127,39 +1127,39 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="die-unbequeme-wahrheit">Die unbequeme Wahrheit</h3>
 <p>Was bedeutet das alles? Die zentrale These lässt sich nun präzisieren:</p>
 <blockquote class="blockquote">
-<p><strong>Was KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen: Sofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.</strong></p>
+<p>Was KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen: Sofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.</p>
 </blockquote>
 <p>Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Das Problem liegt in der Natur des Lernens selbst. Die Frage ist daher nicht <em>ob</em>, sondern <em>wie</em> KI eingesetzt wird.</p>
-<p><strong>Einschränkung:</strong> Es gibt noch wenige Studien, die <em>direkt</em> messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.</p>
+<p>Einschränkung: Es gibt noch wenige Studien, die <em>direkt</em> messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.</p>
 </section>
 <section id="kognition-erweitern-vs.-ersetzen" class="level3">
 <h3 class="anchored" data-anchor-id="kognition-erweitern-vs.-ersetzen">Kognition erweitern vs.&nbsp;ersetzen</h3>
 <p>Andy Clark <span class="citation" data-cites="clarkExtendingMindsGenerative2025">(<a href="#ref-clarkExtendingMindsGenerative2025" role="doc-biblioref">Clark 2025</a>)</span> bietet eine praktische Unterscheidung bei der Bewertung von KI-Nutzung:</p>
-<p><strong>Kognition erweitern:</strong></p>
+<p>Kognition erweitern:</p>
 <ul>
 <li>Der Mensch bleibt kognitiv engagiert</li>
 <li>Werkzeug verstärkt, ersetzt nicht</li>
 <li>Beispiel: Taschenrechner für einen Mathematiker</li>
 <li>Fähigkeiten bleiben erhalten und werden ausgebaut</li>
 </ul>
-<p><strong>Kognition ersetzen:</strong></p>
+<p>Kognition ersetzen:</p>
 <ul>
 <li>Der Mensch wird passiv</li>
 <li>Werkzeug übernimmt das Denken</li>
 <li>Beispiel: KI schreibt den Essay, Studierender submittet</li>
 <li>Abhängigkeit entsteht, Fähigkeiten verkümmern</li>
 </ul>
-<p><strong>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.</strong> Die Frage ist nicht “KI ja oder nein?”, sondern “Wie wird KI genutzt?”</p>
+<p>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung. Die Frage ist nicht “KI ja oder nein?”, sondern “Wie wird KI genutzt?”</p>
 <p>Aus Sicht der Cognitive Load Theory ist dabei entscheidend: Wissen, das im Langzeitgedächtnis gespeichert ist, unterscheidet sich fundamental von Wissen, auf das man extern zugreifen kann. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse und belastet das Arbeitsgedächtnis.</p>
 </section>
 <section id="die-sequenzierungsfrage" class="level3">
 <h3 class="anchored" data-anchor-id="die-sequenzierungsfrage">Die Sequenzierungsfrage</h3>
 <p>Was bedeutet das praktisch? Die Forschung legt nahe:</p>
 <ul>
-<li>Studierende brauchen wahrscheinlich <strong>Grundwissen, bevor</strong> KI vorteilhaft wird</li>
-<li>Der Expertise-Umkehr-Effekt empfiehlt <strong>dynamische</strong> KI-Nutzungsregeln</li>
-<li>Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist <strong>unbekannt</strong></li>
-<li>Die Antwort ist vermutlich <strong>domänen- und personenspezifisch</strong></li>
+<li>Studierende brauchen wahrscheinlich Grundwissen, bevor KI vorteilhaft wird</li>
+<li>Der Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln</li>
+<li>Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt</li>
+<li>Die Antwort ist vermutlich domänen- und personenspezifisch</li>
 </ul>
 <p>Pauschale Empfehlungen zu geben ist schwierig. Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen und ist abhängig vom Fach, vom Vorwissen und den Lernzielen.</p>
 </section>
@@ -1176,14 +1176,14 @@ window.Quarto = {
 <section id="die-soziale-dimension" class="level3">
 <h3 class="anchored" data-anchor-id="die-soziale-dimension">Die soziale Dimension</h3>
 <p>Dieser Leitfaden fokussiert auf kognitive Prozesse: Arbeitsgedächtnis, Schemabildung, Abrufübung. Aber Lernen ist nicht nur ein individueller kognitiver Prozess. Es ist fundamental sozial <span class="citation" data-cites="reichFailureDisruptWhy2020">(<a href="#ref-reichFailureDisruptWhy2020" role="doc-biblioref">Reich 2020</a>)</span><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
-<p><strong>Beziehungen beeinflussen Lernerfolg.</strong> Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen. Sie zeigen mehr Ausdauer, wenn sie spüren, dass ihre Lehrenden sich für ihren Erfolg interessieren. Disziplinäre Identität entsteht durch Gemeinschaften.</p>
-<p><strong>Was passiert, wenn Studierende KI fragen statt Menschen?</strong></p>
+<p>Beziehungen beeinflussen Lernerfolg. Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen. Sie zeigen mehr Ausdauer, wenn sie spüren, dass ihre Lehrenden sich für ihren Erfolg interessieren. Disziplinäre Identität entsteht durch Gemeinschaften.</p>
+<p>Was passiert, wenn Studierende KI fragen statt Menschen?</p>
 <ul>
 <li>Peers werden seltener konsultiert; kollaboratives Lernen leidet</li>
 <li>Beziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen</li>
 <li>Gelegenheiten für Mentoring und informelles Lernen nehmen ab</li>
 </ul>
-<p><strong>Die Rolle der Lehrperson:</strong> Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Die Frage ist, wie Lehrende ihre unersetzliche Funktion, nämlich Beziehung, Motivation, Vorbild, Kontext, neu definieren.</p>
+<p>Die Rolle der Lehrperson: Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Die Frage ist, wie Lehrende ihre unersetzliche Funktion, nämlich Beziehung, Motivation, Vorbild, Kontext, neu definieren.</p>
 </section>
 <section id="die-equity-dimension" class="level3">
 <h3 class="anchored" data-anchor-id="die-equity-dimension">Die Equity-Dimension</h3>
@@ -1214,11 +1214,11 @@ window.Quarto = {
 <li>Gutausgestattete Studierende: ausgeklügelte pädagogische Unterstützung, informierte Betreuung, strukturierte KI-Nutzung</li>
 <li>Unterversorgte Studierende: KI als unbeaufsichtigte Abkürzung, niemand erklärt die Risiken</li>
 </ul>
-<p><strong>Konkrete Ungleichheiten:</strong></p>
+<p>Konkrete Ungleichheiten:</p>
 <ul>
-<li><strong>Kosten:</strong> Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus, Claude Pro oder spezialisierte Tools leisten? Wer ist auf kostenlose, limitierte Versionen angewiesen?</li>
-<li><strong>Institutionelle Ressourcen:</strong> Welche Hochschulen haben Zeit und Expertise für durchdachte KI-Integration? Welche setzen KI ein, ohne Lehrende zu schulen?</li>
-<li><strong>Betreuung:</strong> Wer hat Dozierende, die über KI-Risiken aufklären? Wer hat niemanden, der die Fragen stellt?</li>
+<li>Kosten: Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus, Claude Pro oder spezialisierte Tools leisten? Wer ist auf kostenlose, limitierte Versionen angewiesen?</li>
+<li>Institutionelle Ressourcen: Welche Hochschulen haben Zeit und Expertise für durchdachte KI-Integration? Welche setzen KI ein, ohne Lehrende zu schulen?</li>
+<li>Betreuung: Wer hat Dozierende, die über KI-Risiken aufklären? Wer hat niemanden, der die Fragen stellt?</li>
 </ul>
 <p>Das MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die “allen” zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen, sie produktiv zu nutzen.</p>
 </section>
@@ -1227,21 +1227,21 @@ window.Quarto = {
 <p>Der stärkste Einwand lautet: “Wenn KI immer verfügbar ist, müssen Fähigkeiten nicht internalisiert werden.”</p>
 <p>Vier Antworten:</p>
 <ol type="1">
-<li><p><strong>Permanenzannahme:</strong> Setzt voraus, dass KI immer verfügbar, funktional und bezahlbar bleibt. Stromausfall, Serverprobleme, Kosten, politische Entscheidungen können das ändern.</p></li>
-<li><p><strong>Rekursionsproblem:</strong> Wer erkennt, wenn KI falsch liegt? Wer trainiert die nächste KI-Generation? Wer erweitert menschliches Wissen? Irgendwer muss Domänenexpertise haben.</p></li>
-<li><p><strong>Autonomie-Argument:</strong> Eigenständiges Denken hat intrinsischen Wert für Selbstbestimmung, Würde, das Gefühl des Verstehens. Nicht alles lässt sich in Produktivität messen.</p></li>
-<li><p><strong>Unbekannte Unbekannte:</strong> Komplexe Systeme haben Kaskadeneffekte. Wir wissen nicht, was wir verlieren könnten.</p></li>
+<li><p>Permanenzannahme: Setzt voraus, dass KI immer verfügbar, funktional und bezahlbar bleibt. Stromausfall, Serverprobleme, Kosten, politische Entscheidungen können das ändern.</p></li>
+<li><p>Rekursionsproblem: Wer erkennt, wenn KI falsch liegt? Wer trainiert die nächste KI-Generation? Wer erweitert menschliches Wissen? Irgendwer muss Domänenexpertise haben.</p></li>
+<li><p>Autonomie-Argument: Eigenständiges Denken hat intrinsischen Wert für Selbstbestimmung, Würde, das Gefühl des Verstehens. Nicht alles lässt sich in Produktivität messen.</p></li>
+<li><p>Unbekannte Unbekannte: Komplexe Systeme haben Kaskadeneffekte. Wir wissen nicht, was wir verlieren könnten.</p></li>
 </ol>
 </section>
 <section id="was-wir-noch-nicht-wissen" class="level3">
 <h3 class="anchored" data-anchor-id="was-wir-noch-nicht-wissen">Was wir noch nicht wissen</h3>
 <p>Epistemische Bescheidenheit ist angebracht. Wir wissen vieles nicht:</p>
 <ul>
-<li><strong>Längsschnittstudien über Jahre:</strong> Praktisch nicht vorhanden</li>
-<li><strong>Transfer auf neue Kontexte:</strong> Unerforscht</li>
-<li><strong>Optimale Scaffolding-Bedingungen:</strong> Unbekannt</li>
-<li><strong>Disziplinspezifische Effekte:</strong> Untererforscht</li>
-<li><strong>Publikationsbias:</strong> Wahrscheinlich vorhanden</li>
+<li>Längsschnittstudien über Jahre: Praktisch nicht vorhanden</li>
+<li>Transfer auf neue Kontexte: Unerforscht</li>
+<li>Optimale Scaffolding-Bedingungen: Unbekannt</li>
+<li>Disziplinspezifische Effekte: Untererforscht</li>
+<li>Publikationsbias: Wahrscheinlich vorhanden</li>
 </ul>
 </section>
 <section id="abschliessende-überlegungen" class="level3">
@@ -1265,7 +1265,7 @@ window.Quarto = {
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Für Entscheidungen über KI in der eigenen Lehre:</p>
-<p><strong>Fragen zur Selbstreflexion:</strong></p>
+<p>Fragen zur Selbstreflexion:</p>
 <ol type="1">
 <li>Welche kognitiven Prozesse will ich fördern?</li>
 <li>Welche davon könnte KI übernehmen?</li>
@@ -1283,11 +1283,11 @@ window.Quarto = {
 <p>Die zentrale Botschaft: KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende ohne durchdachte Integration oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.</p>
 <p>Die Argumentation stützt sich auf:</p>
 <ul>
-<li><strong>Cognitive Load Theory</strong>: Lernen erfordert produktive Anstrengung durch das Nadelöhr des Arbeitsgedächtnisses</li>
-<li><strong>Expertise-Umkehr-Effekt</strong>: Dieselbe Unterstützung kann Novizen helfen und Experten schaden</li>
-<li><strong>Domänenspezifität</strong>: Kritische KI-Bewertung erfordert Fachwissen, nicht nur generische Strategien</li>
-<li><strong>Desirable Difficulties</strong>: Schwierigkeiten, die das Lernen verlangsamen, optimieren oft Langzeitbehalten</li>
-<li><strong>Generierungseffekt</strong>: Selbst erzeugte Information wird besser behalten</li>
+<li>Cognitive Load Theory: Lernen erfordert produktive Anstrengung durch das Nadelöhr des Arbeitsgedächtnisses</li>
+<li>Expertise-Umkehr-Effekt: Dieselbe Unterstützung kann Novizen helfen und Experten schaden</li>
+<li>Domänenspezifität: Kritische KI-Bewertung erfordert Fachwissen, nicht nur generische Strategien</li>
+<li>Desirable Difficulties: Schwierigkeiten, die das Lernen verlangsamen, optimieren oft Langzeitbehalten</li>
+<li>Generierungseffekt: Selbst erzeugte Information wird besser behalten</li>
 </ul>
 <p>Die praktischen Implikationen sind:</p>
 <ul>
