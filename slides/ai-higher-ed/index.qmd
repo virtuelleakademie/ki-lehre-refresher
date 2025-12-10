@@ -659,7 +659,7 @@ Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf [@chiElicit
 
 ## Was die Evidenz tatsächlich zeigt
 
-**VanLehn (2011):** Meta-Analyse zu Tutoring
+**@vanlehnRelativeEffectivenessHuman2011:** Meta-Analyse zu Tutoring
 
 ::: {.incremental}
 - Menschliche Tutoren: **d = 0.79** (nicht 2.0 wie Bloom behauptete)
