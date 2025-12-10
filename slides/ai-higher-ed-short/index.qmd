@@ -426,30 +426,37 @@ ggplot(timeline_data) +
 [[@dahmaniHabitualUseGPS2020; @sparrowGoogleEffectsMemory2011]]{style="color: #999; font-size: 0.8em;"}
 :::
 
-## Die Nuance
+## Die entscheidende Frage
 
-<br>
+<br><br>
 
-Studierende, die sich beim Üben auf GPT-4 verliessen, schnitten ohne KI schlechter ab. [@bastaniGenerativeAIGuardrails2025]
-
-. . .
-
-<br>
-
-**Aber:**
-
-- Direkter GPT-4 Zugang: **48%** mehr Aufgaben
-- GPT Tutor (strukturiert): **127%** mehr Aufgaben
-
-. . .
-
-<br>
-
-::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
-{{< fa lightbulb >}} **Kernpunkt:** Die **Art der Nutzung** macht den Unterschied. 
-
-KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor.
+::: {style="font-size: 1.3em; text-align: center;"}
+Dasselbe Werkzeug, unterschiedliche Ergebnisse.
 :::
+
+. . .
+
+<br>
+
+::: {style="text-align: center;"}
+Taschenrechner helfen Mathematikern, können aber Lernenden schaden.
+
+GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.
+:::
+
+. . .
+
+<br><br>
+
+::: {style="font-size: 1.4em; text-align: center; font-weight: bold;"}
+Die Frage ist nicht *ob* KI, sondern *wer* davon profitiert.
+:::
+
+. . .
+
+<br>
+
+[Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.]{style="color: #666; font-style: italic; display: block; text-align: center;"}
 
 ## Was Experten sehen
 
@@ -732,9 +739,9 @@ Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
 
 <br>
 
-- {{< fa check >}} Können Routine auslagern
-- {{< fa check >}} Können KI-Output bewerten
-- {{< fa check >}} Behalten höheres Denken
+- {{< fa cogs >}} Können Routine auslagern
+- {{< fa magnifying-glass >}} Können KI-Output bewerten
+- {{< fa lightbulb >}} Mehr Kapazität für Komplexes
 
 :::
 
@@ -744,9 +751,9 @@ Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
 
 <br>
 
-- {{< fa xmark >}} Können nicht bewerten
-- {{< fa xmark >}} Überspringen Grundlagen
-- {{< fa xmark >}} Risiko: "Fliessende Inkompetenz"
+- {{< fa eye-slash >}} Können nicht bewerten
+- {{< fa forward-fast >}} Überspringen Grundlagen
+- {{< fa mask >}} Risiko: "Fliessende Inkompetenz"
 
 :::
 :::
@@ -856,22 +863,26 @@ Kann diese Bewertung nicht vornehmen
 
 . . .
 
-::: {style="font-size: 1.5em; text-align: center; margin-top: 2em;"}
-**KI-Werkzeuge sind für Experten gemacht.**
+::: {style="font-size: 2em; text-align: center; margin-top: 1.5em; font-weight: 700; color: #24526B;"}
+KI-Werkzeuge sind für Experten gemacht.
 :::
 
 . . .
 
-::: {style="text-align: center; margin-top: 1em; color: grey;"}
-Sie machen Experten produktiver.
+::: {style="display: flex; justify-content: center; gap: 3em; margin-top: 2em; margin-bottom: 2em;"}
+::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #D4A03E;"}
+[Sie machen Experten produktiver.]{style="font-size: 1.1em; color: #24526B;"}
+:::
 
-Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.
+::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #A3195B;"}
+[Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.]{style="font-size: 1.1em; color: #A3195B;"}
+:::
 :::
 
 . . .
 
-::: {style="text-align: center; margin-top: 2em;"}
-**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**
+::: {style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;"}
+[**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**]{style="font-size: 1.4em; color: #A3195B;"}
 :::
 
 ## Was bedeutet das für die Lehre?
