@@ -93,7 +93,9 @@ theme_minimal_top_legend <- theme_minimal_custom +
 <br><br>
 
 ::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
-**Quelle:** @bastaniGenerativeAIGuardrails2025: ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
+**Quelle:** @bastaniGenerativeAIGuardrails2025: 
+
+~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
 :::
 
 ## Das Paradox
@@ -136,98 +138,86 @@ ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe
 
 **Aufgabenleistung ≠ Lernen**
 
-## Das Nadelöhr des Lernens
-
-<br>
+## Das Nadelöhr des Lernens {.nostretch}
 
 ```{r}
 #| fig-width: 14
-#| fig-height: 4
+#| fig-height: 5.5
 #| echo: false
+#| out-width: "95%"
+#| fig-align: "center"
 
-# Bottleneck visualization
-bottleneck_data <- tibble(
-  component = factor(
-    c("Neue\nInformation", "Arbeits-\ngedächtnis", "Langzeit-\ngedächtnis"),
-    levels = c("Neue\nInformation", "Arbeits-\ngedächtnis", "Langzeit-\ngedächtnis")
-  ),
-  x = c(1, 2, 3),
-  width = c(0.8, 0.3, 0.8),
-  fill = c(color_tertiary, color_primary, color_secondary)
-)
+# Bottleneck visualization with hourglass shape for working memory
 
-ggplot(bottleneck_data) +
-  # Draw rectangles representing capacity
+ggplot() +
+  # Left box: Neue Information (wide)
   geom_rect(
+    aes(xmin = 0.5, xmax = 2, ymin = 0.2, ymax = 0.8),
+    fill = color_tertiary, color = "white", linewidth = 2
+  ) +
+  # Right box: Langzeitgedächtnis (wide)
+  geom_rect(
+    aes(xmin = 4, xmax = 5.5, ymin = 0.2, ymax = 0.8),
+    fill = color_secondary, color = "white", linewidth = 2
+  ) +
+  # Middle: Bottleneck/hourglass shape using polygon
+  geom_polygon(
     aes(
-      xmin = x - width/2, xmax = x + width/2,
-      ymin = 0.3, ymax = 0.7,
-      fill = fill
+      x = c(2.4, 2.85, 3.15, 3.6, 3.6, 3.15, 2.85, 2.4),
+      y = c(0.8, 0.55, 0.55, 0.8, 0.2, 0.45, 0.45, 0.2)
     ),
-    color = "white", linewidth = 2
+    fill = color_primary, color = "white", linewidth = 2
   ) +
   # Arrows connecting components
-
-geom_segment(
-    aes(x = 1.45, xend = 1.82, y = 0.5, yend = 0.5),
-    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-    linewidth = 1.2, color = "grey40"
+  geom_segment(
+    aes(x = 2.05, xend = 2.35, y = 0.5, yend = 0.5),
+    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
+    linewidth = 2, color = "grey40"
   ) +
   geom_segment(
-    aes(x = 2.18, xend = 2.55, y = 0.5, yend = 0.5),
-    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-    linewidth = 1.2, color = "grey40"
+    aes(x = 3.65, xend = 3.95, y = 0.5, yend = 0.5),
+    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
+    linewidth = 2, color = "grey40"
   ) +
-  # Labels above boxes
-geom_text(
-    aes(x = x, y = 0.82, label = component),
-    size = 5, fontface = "bold", lineheight = 0.9
-  ) +
-  # Capacity labels inside boxes
-geom_text(
-    aes(x = 1, y = 0.5, label = "∞"),
-    size = 8, color = "white", fontface = "bold"
+  # Labels above shapes
+  geom_text(
+    aes(x = 1.25, y = 0.93, label = "Neue\nInformation"),
+    size = 6, fontface = "bold", lineheight = 0.9
   ) +
   geom_text(
-    aes(x = 2, y = 0.5, label = "4±1"),
-    size = 6, color = "white", fontface = "bold"
+    aes(x = 3, y = 0.93, label = "Arbeitsgedächtnis"),
+    size = 6, fontface = "bold"
   ) +
   geom_text(
-    aes(x = 3, y = 0.5, label = "∞"),
-    size = 8, color = "white", fontface = "bold"
+    aes(x = 4.75, y = 0.93, label = "Langzeit-\ngedächtnis"),
+    size = 6, fontface = "bold", lineheight = 0.9
+  ) +
+  # Capacity labels inside shapes
+  geom_text(
+    aes(x = 1.25, y = 0.5, label = "∞"),
+    size = 14, color = "white", fontface = "bold"
+  ) +
+  geom_text(
+    aes(x = 3, y = 0.5, label = "4±1"),
+    size = 7, color = "white", fontface = "bold"
+  ) +
+  geom_text(
+    aes(x = 4.75, y = 0.5, label = "∞"),
+    size = 14, color = "white", fontface = "bold"
   ) +
   # Bottleneck annotation
-geom_text(
-    aes(x = 2, y = 0.15, label = "DAS NADELÖHR"),
-    size = 5, color = color_primary, fontface = "bold"
+  geom_text(
+    aes(x = 3, y = 0.07, label = "DAS NADELÖHR"),
+    size = 6, color = color_primary, fontface = "bold"
   ) +
-  scale_fill_identity() +
-  coord_cartesian(xlim = c(0.3, 3.7), ylim = c(0, 1)) +
+  coord_cartesian(xlim = c(0.2, 5.8), ylim = c(0, 1)) +
   theme_void() +
-  theme(plot.margin = margin(10, 10, 10, 10))
+  theme(plot.margin = margin(5, 5, 5, 5))
 ```
 
 . . .
 
-::: {.columns}
-::: {.column width="50%"}
-
-**Arbeitsgedächtnis:** 4 ± 1 Elemente, ~30 Sekunden
-
-:::
-
-::: {.column width="50%"}
-
-**Langzeitgedächtnis:** Unbegrenzt, dauerhaft
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="background-color: #F5E6C8; padding: 1em; border-radius: 8px;"}
+::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; margin-top: 0.5em;"}
 {{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024].
 :::
 
@@ -315,13 +305,13 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 {{< fa robot >}} **KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.**
 :::
 
-## Der Generierungseffekt
-
-<br>
+## Der Generierungseffekt {.nostretch}
 
 ```{r}
 #| fig-width: 10
-#| fig-height: 5.5
+#| fig-height: 5
+#| out-width: "50%"
+#| fig-align: "center"
 #| echo: false
 
 # Simulated data based on generation effect literature
@@ -378,60 +368,59 @@ Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDel
 
 ## Historische Analogien
 
-<br>
+::: {.columns}
+::: {.column width="25%" .fragment}
 
-```{r}
-#| fig-width: 14
-#| fig-height: 5
-#| echo: false
+{{< fa calculator size=3x >}}
 
-# Timeline visualization
-timeline_data <- tibble(
-  era = c("1970er", "1990er", "2000er", "2020er"),
-  x = c(1, 2, 3, 4),
-  tech = c("Taschenrechner", "GPS", "Google", "KI"),
-  effect = c("Konzeptuelles\nVerständnis ↓", "Räumliches\nGedächtnis ↓", "\"Wo\" ersetzt\n\"Was\"", "Alles oben\n+ mehr?"),
-  icon = c("calculator", "location-dot", "search", "robot"),
-  color = c(color_tertiary, color_secondary, color_secondary, color_primary)
-)
+**Taschenrechner**
 
-ggplot(timeline_data) +
-  # Timeline base line
-  geom_segment(
-    aes(x = 0.5, xend = 4.7, y = 0.5, yend = 0.5),
-    linewidth = 2, color = "grey80"
-  ) +
-  # Timeline nodes
-  geom_point(
-    aes(x = x, y = 0.5, color = color),
-    size = 12
-  ) +
-  # Progressive arrow at end
-  geom_segment(
-    aes(x = 4.4, xend = 4.7, y = 0.5, yend = 0.5),
-    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
-    linewidth = 2, color = color_primary
-  ) +
-  # Era labels above
-  geom_text(
-    aes(x = x, y = 0.72, label = era),
-    size = 4.5, color = "grey50"
-  ) +
-  # Technology labels
-  geom_text(
-    aes(x = x, y = 0.5, label = c("🧮", "📍", "🔍", "🤖")),
-    size = 6
-  ) +
-  # Effect labels below
-  geom_text(
-    aes(x = x, y = 0.25, label = effect, color = color),
-    size = 4, fontface = "bold", lineheight = 0.9
-  ) +
-  scale_color_identity() +
-  coord_cartesian(xlim = c(0.3, 5), ylim = c(0, 0.9)) +
-  theme_void() +
-  theme(plot.margin = margin(20, 20, 20, 20))
-```
+[1970er]{style="color: #999;"}
+
+Konzeptuelles Verständnis ↓
+
+:::
+
+::: {.column width="25%" .fragment}
+
+{{< fa location-dot size=3x >}}
+
+**GPS**
+
+[1990er]{style="color: #999;"}
+
+Räumliches Gedächtnis ↓
+
+:::
+
+::: {.column width="25%" .fragment}
+
+{{< fa search size=3x >}}
+
+**Google**
+
+[2000er]{style="color: #999;"}
+
+"Wo" ersetzt "Was"
+
+:::
+
+::: {.column width="25%" .fragment}
+
+[{{< fa robot size=3x >}}]{style="color: #A3195B;"}
+
+[**KI**]{style="color: #A3195B;"}
+
+[2020er]{style="color: #999;"}
+
+[Alles vorherige + mehr?]{style="color: #A3195B;"}
+
+:::
+:::
+
+::: {style="text-align: center; margin-top: 1em;"}
+[{{< fa circle size=xs >}}]{style="color: #666;"} ——— [{{< fa circle size=xs >}}]{style="color: #666;"} ——— [{{< fa circle size=xs >}}]{style="color: #666;"} ——— [{{< fa circle size=xs >}}]{style="color: #A3195B;"} {{< fa arrow-right >}}
+:::
 
 . . .
 
