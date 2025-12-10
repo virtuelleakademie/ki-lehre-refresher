@@ -1,7 +1,7 @@
 ---
 title: "KI in der Hochschulbildung"
 subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
-author: "Dr. Andrew Ellis"
+author: "Andrew Ellis"
 institute: "Virtuelle Akademie, Berner Fachhochschule"
 format:
   revealjs:
@@ -153,7 +153,7 @@ Anfänger sehen *Figuren auf Feldern*
 
 ## Von schwachen zu starken Methoden
 
-**ACT-R Theorie** [@andersonAcquisitionCognitiveSkill1982]
+**Newell & Simon** [@newellHumanProblemSolving1972] | **ACT-R** [@andersonAcquisitionCognitiveSkill1982]
 
 ::: {.columns}
 ::: {.column width="50%"}
