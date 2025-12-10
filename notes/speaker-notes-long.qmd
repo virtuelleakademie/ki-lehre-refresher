@@ -40,7 +40,11 @@ Die Frage ist also nicht, OB KI hilft. Die Frage ist: WANN hilft sie, und WANN s
 
 ::: {.callout-note}
 ## Hintergrund zur Bastani-Studie
-Die Studie von Bastani et al. (2025) "Generative AI Can Harm Learning" ist eine randomisierte kontrollierte Studie mit etwa 1000 türkischen Gymnasiasten. Sie ist eine der ersten rigorosen Studien, die sowohl die unmittelbaren Leistungsgewinne als auch die längerfristigen Lerneffekte von KI-Nutzung untersucht. Die Zahlen sind dramatisch: Die Produktivitätssteigerung während der Nutzung wird durch Lernverluste danach mehr als aufgehoben.
+Die Studie von Bastani et al. (2025) "Generative AI Can Harm Learning" ist eine randomisierte kontrollierte Studie mit etwa 1000 türkischen Gymnasiasten. Sie ist eine der ersten rigorosen Studien, die sowohl die unmittelbaren Leistungsgewinne als auch die längerfristigen Lerneffekte von KI-Nutzung untersucht.
+
+**Wichtige Nuance:** Die negativen Effekte betrafen primär den direkten GPT-4-Zugang. Der "GPT Tutor" mit pädagogischen Leitplanken zeigte bessere Ergebnisse. Die Art der KI-Nutzung macht einen Unterschied.
+
+**Einschränkungen:** Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch, die Effekte sind kurzfristig gemessen, und Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten.
 :::
 
 ---
@@ -197,28 +201,30 @@ Die Schlussfolgerung: Expertise basiert auf "Chunks", also bedeutungsvollen Einh
 
 **Sprechtext:**
 
-Die ACT-R Theorie von John Anderson beschreibt, wie der Übergang vom Novizen zum Experten funktioniert.
+Die Unterscheidung zwischen schwachen und starken Methoden stammt von Newell und Simon aus ihrem Werk "Human Problem Solving" von 1972. Anderson's Theorie des Fertigkeitserwerbs beschreibt dann den Mechanismus, wie dieser Übergang vom Novizen zum Experten funktioniert.
 
 Links sehen wir die "schwachen Methoden" der Novizen: Mittel-Ziel-Analyse, also "was ist mein Ziel, wo bin ich, was könnte ich tun?". Versuch und Irrtum. Analogiebildung. Rückwärtsarbeiten vom Ziel.
 
-Diese Methoden funktionieren, aber sie sind langsam und belasten das Arbeitsgedächtnis stark.
+Diese Methoden heissen "schwach", weil sie domänenunabhängig sind. Sie funktionieren überall, aber sie sind langsam und belasten das Arbeitsgedächtnis stark.
 
-Rechts sehen wir die "starken Methoden" der Experten: Automatische Mustererkennung, prozeduralisiertes Wissen, direkte Lösungswege. Experten sehen ein Problem und wissen sofort, was zu tun ist.
+Rechts sehen wir die "starken Methoden" der Experten: Automatische Mustererkennung, prozeduralisiertes Wissen, direkte Lösungswege. Experten sehen ein Problem und wissen sofort, was zu tun ist. Diese Methoden sind "stark", weil sie effizient sind, aber sie sind domänenspezifisch.
 
 [KLICK]
 
 Entscheidend: Der Übergang von schwach zu stark erfordert umfangreiche Übung. Es gibt keine Abkürzung.
 
 ::: {.callout-note}
-## Hintergrund zu ACT-R
-ACT-R (Adaptive Control of Thought-Rational) ist eine der einflussreichsten kognitiven Architekturen. Sie unterscheidet zwischen:
+## Hintergrund zu Newell & Simon und Anderson
+Die Unterscheidung zwischen schwachen und starken Methoden stammt aus Newell und Simons bahnbrechendem Werk "Human Problem Solving" (1972). Schwache Methoden wie Mittel-Ziel-Analyse (means-ends analysis), Hill Climbing und Generate-and-Test sind domänenunabhängig, aber ineffizient. Starke Methoden sind wissensintensiv und domänenspezifisch.
 
-- **Deklarativem Wissen**: Fakten, die bewusst abgerufen werden ("Die Hauptstadt von Frankreich ist Paris")
-- **Prozeduralem Wissen**: Automatisierte Wenn-Dann-Regeln ("Wenn ich das Muster X sehe, dann tue Y")
+Anderson's Theorie des Fertigkeitserwerbs beschreibt den Übergang von schwachen zu starken Methoden. Der Kern:
 
-Der Übergang von deklarativ zu prozedural ist die "Kompilation" von Wissen. Sie erfordert wiederholte Anwendung in variierenden Kontexten.
+- **Deklaratives Wissen**: Fakten, die bewusst abgerufen werden ("Die Hauptstadt von Frankreich ist Paris")
+- **Prozedurales Wissen**: Automatisierte Wenn-Dann-Regeln ("Wenn ich das Muster X sehe, dann tue Y")
 
-Wichtig: KI kann die Ergebnisse prozeduralen Wissens liefern, aber nicht den Kompilationsprozess im Lernenden auslösen.
+Der Übergang von deklarativ zu prozedural erfordert wiederholte Anwendung in variierenden Kontexten. Dies ist der Mechanismus, durch den schwache Methoden zu starken Methoden werden.
+
+Wichtig: KI kann die Ergebnisse prozeduralen Wissens liefern, aber nicht den Prozess im Lernenden auslösen.
 :::
 
 ---
@@ -379,13 +385,19 @@ Was sind Worked Examples? Statt Probleme selbst lösen zu lassen, zeigen Sie aus
 
 Für Novizen reduziert das die extrinsische Belastung und lässt Kapazität für Schemabildung. Das ist einer der robustesten Befunde der Instruktionsforschung.
 
-Aber Achtung: Worked Examples sind nicht dasselbe wie KI-generierte Lösungen.
+Aber Achtung: Worked Examples sind nicht dasselbe wie KI-generierte Lösungen. Hier liegt ein entscheidender Punkt.
 
 [KLICK]
 
-Der entscheidende Unterschied: Worked Examples sind didaktisch gestaltet. Sie bauen systematisch Komplexität auf. Sie sind sequenziert. Sie heben die wichtigen Schritte hervor.
+Worked Examples sind didaktisch gestaltet. Sie heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren.
 
-KI-Antworten sind reaktiv und unsystematisch. Sie antworten auf die spezifische Frage, ohne pädagogischen Plan.
+KI-generierte Antworten, in der typischen Nutzung durch Studierende, beantworten die gestellte Frage. Sie erfolgen jedoch ohne Einbettung in eine geplante Lernprogression.
+
+[KLICK]
+
+LLMs können mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.
+
+Der Unterschied liegt in der Einbettung: Worked Examples sind Teil eines durchdachten Instruktionsdesigns. KI-Antworten in der studentischen Alltagsnutzung fehlt dieser Kontext.
 
 ::: {.callout-note}
 ## Hintergrund zu Worked Examples
@@ -395,10 +407,11 @@ Der Mechanismus: Beim Problemlösen ist das Arbeitsgedächtnis mit Mittel-Ziel-A
 
 Wichtig: Der Effekt gilt für Novizen. Mit zunehmender Expertise werden Worked Examples weniger effektiv (Expertise-Umkehr-Effekt) und können sogar kontraproduktiv werden.
 
-KI-generierte Lösungen unterscheiden sich von Worked Examples:
-1. Sie sind nicht für die Lernprogression sequenziert
-2. Sie erklären oft das "Was" ohne das "Warum"
-3. Sie sind reaktiv auf Fragen, nicht proaktiv didaktisch gestaltet
+**Der Unterschied zu KI:**
+- **Worked Examples** sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt
+- **KI-generierte Antworten** beantworten die gestellte Frage, erfolgen aber ohne Einbettung in eine geplante Lernprogression
+
+LLMs *können* mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.
 :::
 
 ---
@@ -716,15 +729,19 @@ KI verbessert Performance, aber ob sie Learning verbessert, ist empirisch offen.
 
 **Sprechtext:**
 
-Schauen wir uns die Bastani-Studie genauer an. Es ist eine randomisierte kontrollierte Studie mit etwa 1000 türkischen Gymnasiasten, die GPT-4 Zugang während des Übens erhielten.
-
-Wichtig: Dies ist eine Einzelstudie, Replikation steht noch aus.
+Schauen wir uns die Bastani-Studie genauer an. Es ist eine randomisierte kontrollierte Studie mit etwa 1000 türkischen Gymnasiasten.
 
 [KLICK]
 
-Die Ergebnisse: Mit KI lösten die Studierenden 48% mehr Aufgaben korrekt. Mit einer strukturierten "GPT Tutor"-Intervention sogar 127% mehr.
+Das Design: Randomisierte Zuweisung zu drei Gruppen. Mathe-Übungen über mehrere Wochen. Test am Ende ohne KI-Zugang.
 
-Aber: Ohne KI, bei einem späteren Test, schnitten sie 17% schlechter ab als die Kontrollgruppe, die nie KI hatte.
+Die Bedingungen: Erstens Kontrollgruppe ohne KI-Zugang. Zweitens direkter GPT-4-Zugang mit freier Nutzung. Drittens ein "GPT Tutor" mit strukturierter Nutzung und pädagogischen Leitplanken.
+
+[KLICK]
+
+Die Ergebnisse: Mit direktem GPT-4 lösten die Studierenden 48% mehr Aufgaben. Mit GPT Tutor sogar 127% mehr.
+
+Aber ohne KI, bei einem späteren Test: 17% schlechter als die Kontrollgruppe.
 
 [KLICK]
 
@@ -732,15 +749,22 @@ Das Zitat der Autoren: "Students attempt to use GPT-4 as a 'crutch' during pract
 
 [KLICK]
 
-Eine wichtige Nuance: Diese Ergebnisse gelten hauptsächlich für KI als Antwortgeber. Der "GPT Tutor", der pädagogisch strukturiert war, zeigte bessere Langzeiteffekte. Die Gestaltung der KI-Nutzung macht einen Unterschied.
+Wichtige Nuance: Die negativen Effekte betrafen primär den direkten Zugang. Der "GPT Tutor" zeigte bessere Ergebnisse, aber selbst mit Tutor war die spätere Leistung ohne KI reduziert. Die Art der KI-Nutzung macht einen Unterschied.
+
+Einschränkungen: Der Kontext ist spezifisch, die Effekte sind kurzfristig gemessen, Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist keine Überraschung. Sie folgt aus der Theorie.
 
 ::: {.callout-note}
 ## Hintergrund zur Bastani-Studie
 Details der Studie:
 - **Stichprobe**: ~1000 türkische Gymnasiasten
-- **Design**: RCT mit mehreren Bedingungen
+- **Design**: RCT mit drei Bedingungen
 - **Intervention**: Zugang zu GPT-4 während Mathe-Übungen
 - **Outcome**: Leistung in Tests ohne KI-Zugang
+
+Die drei Bedingungen:
+1. **Kontrollgruppe**: Kein KI-Zugang
+2. **Direkter GPT-4-Zugang**: Freie Nutzung
+3. **GPT Tutor**: Strukturierte Nutzung mit pädagogischen Leitplanken
 
 Wichtige methodische Punkte:
 - Die Kontrollgruppe hatte keinen KI-Zugang (nicht Placebo)
@@ -751,6 +775,9 @@ Limitationen:
 - Einzelne Studie, noch nicht repliziert
 - Spezifische Population (türkische Gymnasiasten)
 - Spezifische Domäne (Mathematik)
+- Kurzfristig gemessen
+
+Aber: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten.
 :::
 
 ---
@@ -825,35 +852,38 @@ Direkte Implikation für KI: Wenn Studierende KI nach Antworten fragen, statt se
 
 **Sprechtext:**
 
-Jetzt eine Hypothese, die ich mit Vorsicht präsentieren möchte: die Scaffolding-Hypothese.
+Jetzt eine Hypothese, die ich mit Vorsicht präsentieren möchte: die Scaffolding-Hypothese. Ich unterscheide hier klar zwischen dem, was wir wissen, was wir theoretisch ableiten, und was wir vermuten.
 
 [KLICK für jeden Punkt]
 
-Grundfertigkeiten wie Schreiben, Rechnen und Lesen sind nicht nur Fertigkeiten. Sie sind Prozesse, die kognitive Architektur aufbauen.
+Was wir wissen: Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.
 
-Schreiben zum Beispiel ist ein epistemisches Werkzeug: Gedanken entwickeln sich DURCH das Schreiben, nicht vor dem Schreiben.
-
-Wenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht.
+Was wir theoretisch ableiten: Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory.
 
 [KLICK]
 
-Wichtig: Dies ist eine Hypothese, keine gesicherte Erkenntnis. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen.
+Was wir vermuten: Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Eine Fähigkeit, die nie entsteht, weil der konstruktive Prozess übersprungen wird, könnte schwerer nachzuholen sein.
+
+Die Hypothese: Grundfertigkeiten wie Schreiben sind nicht nur Fertigkeiten, sondern Prozesse, die kognitive Architektur aufbauen. Schreiben könnte ein "epistemisches Werkzeug" sein.
 
 [KLICK]
 
-Eine wichtige Unterscheidung: Fertigkeitsatrophie bedeutet, dass eine vorhandene Fähigkeit verkümmert. Entwicklungsbeeinträchtigung bedeutet, dass eine Fähigkeit nie entsteht. Das sind verschiedene Phänomene.
+Vorsicht: Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.
 
 ::: {.callout-note}
 ## Hintergrund zur Scaffolding-Hypothese
-Diese Hypothese ist spekulativer als die vorherigen Punkte. Sie basiert auf:
+Diese Hypothese ist spekulativer als die vorherigen Punkte.
 
-1. **Writing-to-learn Forschung**: Schreiben ist nicht nur Kommunikation, sondern Denkwerkzeug (Emig, 1977; Langer & Applebee, 1987)
-2. **Entwicklungspsychologie**: Kognitive Fähigkeiten bauen aufeinander auf (Piaget, Vygotsky)
-3. **Neuroplastizität**: Das Gehirn formt sich durch Erfahrung
+**Was wir wissen (Evidenz):** Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück.
 
-Die Unsicherheit: Wir wissen nicht, ob es "sensible Perioden" für den Erwerb von Fähigkeiten wie wissenschaftlichem Schreiben gibt. Die Analogie zu Spracherwerb ist suggestiv, aber nicht bewiesen.
+**Was wir theoretisch ableiten:** Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory und ist durch Studien wie Bastani gestützt.
 
-Daher die vorsichtige Formulierung als "Hypothese".
+**Was wir vermuten (Hypothese):** Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung. Die Hypothese basiert auf:
+
+1. **Writing-to-learn Forschung**: Schreiben ist nicht nur Kommunikation, sondern Denkwerkzeug
+2. **Entwicklungspsychologie**: Kognitive Fähigkeiten bauen aufeinander auf
+
+Die Unsicherheit: Wir wissen nicht, ob übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.
 :::
 
 ---
@@ -864,15 +894,15 @@ Daher die vorsichtige Formulierung als "Hypothese".
 
 Schauen wir uns einige historische Analogien an.
 
-GPS und räumliches Gedächtnis: Eine longitudinale Studie von Dahmani und Bhola über drei Jahre zeigt, dass stärkere GPS-Nutzung mit steilerem Rückgang des räumlichen Gedächtnisses korreliert. Die zeitliche Abfolge ist konsistent mit kausaler Interpretation, aber ungemessene Konfundierende sind nicht ausgeschlossen.
+GPS und räumliches Gedächtnis: Eine longitudinale Studie von Dahmani und Bohla über drei Jahre zeigt, dass stärkere GPS-Nutzung mit steilerem Rückgang des räumlichen Gedächtnisses korreliert. Die zeitliche Abfolge ist konsistent mit der Interpretation, dass GPS-Nutzung zum Rückgang beiträgt, wobei ungemessene konfundierende Variablen nicht ausgeschlossen werden können.
 
 [KLICK]
 
-Konzeptuelles Verständnis: Auch Erwachsene mit Rechenhilfen zeigen Lücken im konzeptuellen Verständnis von Dezimalzahlen. Werkzeugnutzung ersetzt kein Grundverständnis.
+Konzeptuelles Verständnis: Forschung zeigt, dass selbst Erwachsene mit Zugang zu Rechenhilfen oft überraschende Lücken im konzeptuellen Verständnis mathematischer Operationen aufweisen. Werkzeugnutzung ersetzt kein Grundverständnis. Dieselbe Parallele wie bei KI: Das Werkzeug kann prozedurale Aufgaben übernehmen, aber konzeptuelles Verständnis muss eigenständig aufgebaut werden.
 
 [KLICK]
 
-Der Google-Effekt von Sparrow und Kollegen: Wir erinnern weniger, wenn wir erwarten, dass Information verfügbar ist. Menschen erinnern WO Information ist, nicht WAS sie ist.
+Der Google-Effekt von Sparrow und Kollegen: Menschen erinnern Information schlechter, wenn sie erwarten, dass sie verfügbar bleibt. Sie erinnern stattdessen, WO die Information zu finden ist. Das Gedächtnis adaptiert sich an die Verfügbarkeit externer Speicher.
 
 ::: {.callout-note}
 ## Hintergrund zu den historischen Analogien
@@ -1293,11 +1323,13 @@ Jetzt kommen wir zur Synthese. Was bedeutet all das zusammen? Und was folgt dara
 
 Hier ist die unbequeme Wahrheit, die sich aus unserer Diskussion ergibt:
 
-Was KI für Produktivität nützlich macht, macht sie für Lernen potenziell schädlich.
+Was KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen: Sofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.
 
-Sofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.
+Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Das Problem liegt in der Natur des Lernens selbst. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.
 
-Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Wobei die direkte Evidenz für KI noch begrenzt ist, das muss ich hinzufügen.
+[KLICK]
+
+Einschränkung: Es gibt noch wenige Studien, die direkt messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.
 
 ::: {.callout-note}
 ## Hintergrund
@@ -1305,6 +1337,8 @@ Diese These ist die zentrale Aussage der Präsentation. Sie ist:
 - **Theoretisch fundiert**: CLT, Desirable Difficulties, Generierungseffekt
 - **Empirisch gestützt**: Bastani-Studie und verwandte Forschung
 - **Aber noch nicht definitiv bewiesen**: Längsschnittstudien fehlen
+
+**Einschränkung:** Es gibt noch wenige Studien, die *direkt* messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.
 
 Die epistemische Haltung sollte sein: Starke theoretische Gründe für Vorsicht, aber Offenheit für neue Evidenz.
 :::
@@ -1338,6 +1372,8 @@ Beispiele:
 - Taschenrechner für einfache Arithmetik bei Kindern: potentially replacing (sie lernen nicht rechnen)
 
 Übertragen auf KI: Die Frage ist nicht "KI nutzen oder nicht", sondern "wie nutzen".
+
+**Aus Sicht der Cognitive Load Theory:** Wissen, das im Langzeitgedächtnis gespeichert ist, unterscheidet sich fundamental von Wissen, auf das man extern zugreifen kann. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse und belastet das Arbeitsgedächtnis.
 :::
 
 ---
@@ -1350,13 +1386,17 @@ Eine der wichtigsten praktischen Fragen ist die Sequenzierung.
 
 [KLICK für jeden Punkt]
 
-Studierende brauchen wahrscheinlich Grundwissen BEVOR KI vorteilhaft wird.
+Studierende brauchen wahrscheinlich Grundwissen, BEVOR KI vorteilhaft wird.
 
-Der Expertise-Umkehr-Effekt legt dynamische Policies nahe, nicht pauschale Verbote oder Freigaben.
+Der Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln.
 
-Ab welchem Punkt wechselt KI von schädlich zu hilfreich?
+Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt.
 
-Die Antwort ist vermutlich domänen- und studentenspezifisch. Es gibt wahrscheinlich keine einfache Regel.
+Die Antwort ist vermutlich domänen- und personenspezifisch.
+
+[KLICK]
+
+Pauschale Empfehlungen zu geben ist schwierig. Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen. Es ist abhängig vom Fach, vom Vorwissen und den Lernzielen.
 
 ::: {.callout-note}
 ## Hintergrund zur Sequenzierung
@@ -1386,23 +1426,23 @@ Es gibt auch eine entwicklungspsychologische Dimension.
 
 [KLICK für jeden Punkt]
 
-Der präfrontale Kortex, zuständig für exekutive Funktionen, Metakognition und Selbstregulation, entwickelt sich bis Mitte 20.
+Der präfrontale Kortex entwickelt sich bis etwa Mitte 20, wobei verschiedene Funktionen unterschiedlich schnell reifen und individuelle Variation erheblich ist.
 
-Das bedeutet: Studierende sind noch in der Entwicklung dieser Fähigkeiten.
-
-[KLICK]
-
-Hier ist das Paradox: Jene, die KI-Nutzung am wenigsten regulieren können, sind am verletzlichsten für ihre negativen Effekte.
+Exekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung.
 
 [KLICK]
 
-Die Kohortenfrage: Die aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.
+Hier ist das Paradox: Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten für ihre negativen Effekte.
 
-Wenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
+[KLICK]
+
+Die Kohortenfrage: Die aktuelle Studierendengeneration könnte die erste sein, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.
+
+Wenn wir in 20 Jahren Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
 
 ::: {.callout-note}
 ## Hintergrund zur Entwicklungsperspektive
-Die Hirnentwicklung bis Mitte 20 ist gut dokumentiert:
+Die Hirnentwicklung bis Mitte 20 ist gut dokumentiert, wobei verschiedene Funktionen unterschiedlich schnell reifen und individuelle Variation erheblich ist:
 - **Präfrontaler Kortex**: Letzte Region, die ausreift
 - **Funktionen**: Planung, Impulskontrolle, Metakognition
 

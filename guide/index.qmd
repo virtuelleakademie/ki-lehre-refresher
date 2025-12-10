@@ -1,18 +1,24 @@
 ---
 title: "KI in der Hochschulbildung: Ein Leitfaden"
 subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
-author: "Dr. Andrew Ellis"
+author:
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+
 date: 2025-12-10
 toc: true
 toc-depth: 3
-number-sections: true
+number-sections: false
 bibliography: ../bibliography.bib
 sidebar: guide
 ---
 
 ## Einleitung: Das zentrale Paradox {#einleitung}
 
-ChatGPT besteht Anwaltsprüfungen. Claude schreibt funktionierenden Code. Gemini diagnostiziert Krankheiten. Als Hochschullehrende fragst du dich vermutlich: Wie integriere ich diese Werkzeuge sinnvoll in meine Lehre?
+ChatGPT besteht Anwaltsprüfungen. Claude kann professionelle Programmierer erstezen. Gemini diagnostiziert Krankheiten. Als Hochschullehrende fragst du dich vermutlich: Wie integriere ich diese Werkzeuge sinnvoll in meine Lehre?
 
 Die Antwort ist komplizierter, als viele annehmen. Eine Studie in *PNAS* [@bastaniGenerativeAIGuardrails2025] zeigt ein beunruhigendes Muster: Rund 1000 Gymnasiasten mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben korrekt. Als der KI-Zugang später entfernt wurde, schnitten dieselben Schüler jedoch 17% *schlechter* ab als jene, die nie KI hatten.
 
@@ -37,14 +43,18 @@ Diese Reflexion hilft, die folgenden Konzepte auf den eigenen Kontext anzuwenden
 
 ### Grundlegende Funktionsweise
 
-Bevor wir über Auswirkungen sprechen, lohnt sich ein Blick darauf, was diese Systeme eigentlich tun. Large Language Models (LLMs) wie GPT-4 oder Claude sind im Kern **Next-Word-Prediction-Systeme**. Sie wurden auf Milliarden von Textdokumenten trainiert und haben dabei Muster in Sprache, Argumentation und Stil gelernt. Die beste Metapher: extrem ausgeklügelte Autovervollständigung.
+Bevor wir über Auswirkungen sprechen, lohnt sich ein Blick darauf, was diese Systeme eigentlich tun. Large Language Models (LLMs) wie GPT-5 oder Claude sind im Kern **Next-Word-Prediction-Systeme[^1]**. Sie wurden auf Milliarden von Textdokumenten trainiert und haben dabei Muster in Sprache, Argumentation und Stil gelernt, aber auch sehr viel Wissen. Die beste Metapher: extrem ausgeklügelte Autovervollständigung.
+
+[^1]: Eigentlich "Next-Token-Prediction", da sie eigentlich Wortteile oder Satzzeichen vorhersagen.
 
 Entscheidend ist die Unterscheidung zwischen *Retrieval* und *Generation*:
 
 - **Retrieval** (wie eine Suchmaschine): Information wird gefunden und zurückgegeben
 - **Generation** (wie ein LLM): Text wird neu erzeugt basierend auf statistischen Mustern
 
-LLMs *rufen* kein Wissen ab. Sie *generieren* Text, der plausibel klingt. Dies erklärt, warum sie "halluzinieren" können: Sie optimieren für sprachliche Plausibilität, nicht für faktische Korrektheit.
+LLMs *rufen* kein Wissen ab. Sie *generieren* Text, der plausibel klingt. Dies erklärt, warum sie "halluzinieren"[^2] können: Sie optimieren für sprachliche Plausibilität, nicht für faktische Korrektheit.
+
+[^2]: "Halluzinieren" ist eigentlich kein guter Begriff; ein treffenderer Ausdruck wäre "Konfabulation".
 
 ### Chain-of-Thought Reasoning
 
@@ -52,7 +62,7 @@ Moderne LLMs können "denken", indem sie ihre Überlegungen schrittweise externa
 
 > "Lass mich das aufteilen: 17 × 20 = 340, 17 × 4 = 68, 340 + 68 = 408"
 
-Dieses **Chain-of-Thought Reasoning** verbessert die Leistung bei komplexen Aufgaben erheblich. Es ist jedoch immer noch Mustererkennung, nur über Denkschritte statt direkt über Antworten. Die KI hat gelernt, wie Menschen Probleme zerlegen.
+Dieses **Chain-of-Thought Reasoning** verbessert die Leistung bei komplexen Aufgaben erheblich. Es ist jedoch immer noch Mustererkennung, nur über Denkschritte statt direkt über Antworten. Die KI hat gelernt, wie Menschen Probleme in Teilprobleme zerlegen.
 
 ### Werkzeugfähige Agenten
 
@@ -62,16 +72,16 @@ Die neueste Entwicklung sind **Agenten**: LLMs, die mit externen Werkzeugen verb
 - Code schreiben und ausführen
 - Dateien lesen und bearbeiten
 - Berechnungen anstellen
-- APIs aufrufen
+- Programmierschnittstellen (APIs) aufrufen
 
-Die Konsequenz: Agenten können fast jede kognitive Aufgabe ausführen, von Literaturrecherche über Datenanalyse bis zum Schreiben und Überarbeiten von Texten. Die Fähigkeitsgrenze verschiebt sich ständig.
+Die Konsequenz: Agenten können eine grosse Menge an kognitiven Aufgaben ausführen, von Literaturrecherche über Datenanalyse bis zum Schreiben und Überarbeiten von Texten. Die Fähigkeitsgrenze verschiebt sich ständig.
 
 ::: {.pro-tip collapse="true"}
 ## Praktische Empfehlung: KI-Fähigkeiten aktuell halten
 
 Die Fähigkeiten von KI-Systemen entwickeln sich rasant. Empfehlungen:
 
-1. **Quartalsweise aktualisieren**: Überprüfe alle drei Monate, was aktuelle Modelle können
+1. **Regelmässig aktualisieren**: Überprüfe regelmässig, was aktuelle Modelle können
 2. **Selbst testen**: Probiere neue Modelle mit Aufgaben aus deinem Fachgebiet
 3. **Skeptisch bleiben**: Marketing-Behauptungen übertreffen oft die tatsächliche Leistung
 4. **Grenzen kennen**: Identifiziere Aufgaben, bei denen KI zuverlässig versagt
@@ -79,7 +89,7 @@ Die Fähigkeiten von KI-Systemen entwickeln sich rasant. Empfehlungen:
 
 ## Wie Expertise entsteht {#expertise}
 
-Warum wirkt KI auf Experten und Lernende so unterschiedlich? Die Antwort liegt in dem, was Expertise eigentlich ist.
+Warum wirkt KI auf Experten und Lernende so unterschiedlich? Die Antwort ist darin zu finden, was Expertise eigentlich ist.
 
 ### Experten und Novizen sind grundlegend verschieden
 
@@ -97,7 +107,7 @@ Das Prinzip gilt domänenübergreifend:
 
 ### Von schwachen zu starken Methoden
 
-Wie lösen Menschen Probleme? Andersons Theorie des Fertigkeitserwerbs [@andersonAcquisitionCognitiveSkill1982] beschreibt einen fundamentalen Wandel mit wachsender Expertise.
+Wie lösen Menschen Probleme? Newell und Simon [@newellHumanProblemSolving1972] unterschieden in ihrer einflussreichen Arbeit zwischen "schwachen" und "starken" Methoden der Problemlösung. Anderson's Theorie des Fertigkeitserwerbs [@andersonAcquisitionCognitiveSkill1982] beschreibt dann den Mechanismus, wie der Übergang zwischen diesen Methoden mit wachsender Expertise stattfindet.
 
 **Novizen nutzen schwache Methoden:**
 
@@ -106,7 +116,7 @@ Wie lösen Menschen Probleme? Andersons Theorie des Fertigkeitserwerbs [@anderso
 - Analogiebildung: "Das ist wie etwas, das ich schon kenne"
 - Rückwärtsarbeiten vom Ziel
 
-Diese Methoden heissen "schwach", weil sie langsam, fehleranfällig und kognitiv anstrengend sind. Sie funktionieren aber in jeder Domäne.
+Diese Methoden heissen "schwach", weil sie domänenunabhängig und allgemein anwendbar, aber langsam, fehleranfällig und kognitiv anstrengend sind.
 
 **Experten nutzen starke Methoden:**
 
@@ -148,9 +158,9 @@ Warum ist Übung so wichtig? Die Cognitive Load Theory [@swellerCognitiveLoadThe
 
 **Arbeitsgedächtnis:**
 
-- Kapazität: etwa 4±1 Elemente gleichzeitig (wobei dies von der Definition eines "Elements" und der Aufgabenart abhängt)
+- Kapazität: etwa $4 \pm 1$ Elemente gleichzeitig (wobei dies von der Definition eines "Elements" und der Aufgabenart abhängt)
 - Dauer: wenige Sekunden ohne aktive Aufrechterhaltung
-- Der *Engpass* allen Lernens
+- Der *Flaschenhals* allen Lernens
 
 **Langzeitgedächtnis:**
 
@@ -158,7 +168,7 @@ Warum ist Übung so wichtig? Die Cognitive Load Theory [@swellerCognitiveLoadThe
 - Dauerhafte Speicherung
 - Hier *lebt* Expertise
 
-Die zentrale Erkenntnis: **Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.** Wenn das Arbeitsgedächtnis überlastet ist, findet kein Lernen statt.
+Die zentrale Erkenntnis: **Alles Lernen muss durch den Flaschenhals des Arbeitsgedächtnisses.** Wenn das Arbeitsgedächtnis überlastet ist, findet kein Lernen statt.
 
 ### Drei Arten kognitiver Belastung
 
@@ -195,7 +205,7 @@ Für Novizen reduziert Unterstützung die extrinsische Belastung und lässt Raum
 ::: {.pro-tip collapse="true"}
 ## Praktische Empfehlung: Unterstützung anpassen
 
-Der Expertise-Umkehr-Effekt legt dynamische KI-Policies nahe:
+Der Expertise-Umkehr-Effekt legt nahe, die KI-Nutzung an den Lernstand anzupassen:
 
 1. **Vorwissen erheben**: Zu Beginn eines Kurses das Vorwissen einschätzen
 2. **Differenzieren**: Unterschiedliche KI-Regeln für Anfänger und Fortgeschrittene
@@ -214,9 +224,9 @@ Bisher haben wir diskutiert, was KI für Lernen problematisch machen *kann*. Abe
 **Der Unterschied zu KI:** Hier liegt ein entscheidender Punkt: Worked Examples sind *nicht* dasselbe wie KI-generierte Lösungen.
 
 - **Worked Examples** sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt, um bestimmte Prinzipien zu illustrieren
-- **KI-generierte Antworten** sind Outputs auf Anfrage, nicht didaktisch sequenziert, nicht auf den individuellen Lernstand abgestimmt
+- **KI-generierte Antworten**, in der typischen Nutzung durch Studierende, beantworten die gestellte Frage. Sie erfolgen jedoch ohne Einbettung in eine geplante Lernprogression. LLMs *können* mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.
 
-Der Unterschied ist *Intentionalität*: Worked Examples sind Teil eines durchdachten Instruktionsdesigns. KI-Antworten sind reaktiv und unsystematisch.
+Der Unterschied liegt in der *Einbettung*: Worked Examples sind Teil eines durchdachten Instruktionsdesigns, das von Lehrenden mit Blick auf die Lernziele und den Wissensstand der Lernenden gestaltet wurde. KI-Antworten in der studentischen Alltagsnutzung fehlt dieser  Kontext.
 
 **Completion Problems:** Ein Mittelweg sind *Completion Problems*: Teilweise ausgearbeitete Lösungen, die Lernende vervollständigen müssen. Sie bieten Struktur, fordern aber aktive kognitive Verarbeitung. Mit wachsender Expertise können die vorgefertigten Teile reduziert werden (*Fading*), bis Lernende Probleme vollständig selbst lösen.
 
@@ -238,13 +248,13 @@ Evidenzbasierte Instruktion für Novizen:
 
 ## Kritisches Denken erfordert Fachwissen {#kritisches-denken}
 
-"Wir müssen Studierenden beibringen, KI kritisch zu nutzen." Das klingt vernünftig. Es greift aber zu kurz.
+Studierende sollen lernen, KI kritisch zu nutzen. Das klingt vernünftig, greift aber zu kurz.
 
 ### Die traditionelle Annahme
 
-Die "21st Century Skills"-Bewegung hat kritisches Denken als übertragbare Kernkompetenz propagiert. Die Annahme: Es gibt eine allgemeine Fähigkeit "kritisches Denken", die in einem Kontext erworben und in anderen angewendet werden kann.
+Oft wird angenommen, kritisches Denken sei eine allgemeine, übertragbare Fähigkeit: einmal erworben, überall anwendbar.
 
-Auf KI übertragen: Man könnte Studierenden "KI-Kompetenz" beibringen, also die Fähigkeit, KI-Outputs kritisch zu bewerten, unabhängig vom Fachgebiet.
+Auf KI übertragen hiesse das: Man könnte Studierenden "KI-Kompetenz" beibringen, also die Fähigkeit, KI-Outputs kritisch zu bewerten, unabhängig vom Fachgebiet.
 
 Aber stimmt diese Annahme?
 
@@ -254,7 +264,7 @@ Daniel Willingham [@willinghamCriticalThinkingWhy2008] fasst die Forschung provo
 
 > "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
 
-Das ist zugespitzt formuliert, aber der Kern stimmt: **Transfer ist schwieriger als oft angenommen.**
+Das ist zugespitzt formuliert, aber der Kern stimmt: Transfer ist schwieriger als oft angenommen.
 
 ### Evidenz für Domänenspezifität
 
@@ -272,11 +282,11 @@ Willingham formuliert es so:
 
 Was bedeutet das für die kritische Bewertung von KI-Outputs?
 
-**Ein Experte in Biomedizin** kann erkennen, wenn ChatGPT bei Biochemie falsch liegt. Er hat die mentalen Modelle des Fachgebiets, kann "Das klingt falsch" erkennen, weiss welche Quellen zur Verifizierung dienen, und kann Plausibilität einschätzen.
+**Eine Expertin in Biomedizin** kann erkennen, wenn ChatGPT bei Biochemie falsch liegt. Sie hat die mentalen Modelle des Fachgebiets, kann "Das klingt falsch" erkennen, weiss welche Quellen zur Verifizierung dienen, und kann Plausibilität einschätzen.
 
-**Ein Novize** kann diese Bewertung nicht vornehmen, unabhängig von seinen "kritischen Denkfähigkeiten". Ihm fehlen die Referenzrahmen. Er kann nicht unterscheiden zwischen plausibel und korrekt. Er weiss nicht, welche Quellen autoritativ sind.
+**Eine Novizin** kann diese Bewertung nicht vornehmen, unabhängig von ihren "kritischen Denkfähigkeiten". Ihr fehlen die Referenzrahmen. Sie kann nicht unterscheiden zwischen plausibel und korrekt. Sie weiss nicht, welche Quellen autoritativ sind.
 
-**Was wie "kritisches Denken" aussieht, ist oft Domänenwissen in Aktion.**
+Was wie "kritisches Denken" aussieht, ist oft domänen-spezifisches Wissen.
 
 ### Was transferiert, und was nicht
 
@@ -307,12 +317,12 @@ Daraus folgen drei wichtige Erkenntnisse:
 
 1. **Studierende, die "mit hohem kritischem Denken" von KI profitieren, haben wahrscheinlich mehr Domänenexpertise.** Studien, die zeigen, dass "kritische Denker" von KI profitieren, messen möglicherweise Vorwissen, nicht eine generische Fähigkeit.
 
-2. **Die beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen.** Kontraintuitiv: Nicht "KI-Training", sondern Fachausbildung. Expertise ermöglicht kritische Nutzung; ohne Expertise keine Kritik.
+2. **Die beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen.** Kontraintuitiv: Nicht "KI-Training", sondern Fachausbildung. Expertise ermöglicht kritische Nutzung; ohne Expertise ist Kritik kaum möglich.
 
 3. **Generische "KI-Kompetenz" kann Fachwissen ergänzen, aber nicht ersetzen.** Workshops zu "Prompt Engineering" lösen das fundamentale Problem nicht. Die Fähigkeit, einen guten Prompt zu schreiben, ersetzt nicht die Fähigkeit, die Antwort zu bewerten.
 
 ::: {.pro-tip collapse="true"}
-## Praktische Empfehlung: Fachlernen priorisieren
+## Praktische Empfehlung: Fach-spezifisches Lernen priorisieren
 
 Anstatt nur "KI-Kompetenz" zu lehren:
 
@@ -367,7 +377,7 @@ Die Autoren fassen zusammen:
 
 **Wichtige Nuance:** Die negativen Effekte betrafen primär den direkten Zugang. Der "GPT Tutor" zeigte bessere Ergebnisse, aber selbst mit Tutor war die spätere Leistung ohne KI reduziert. Die Art der KI-Nutzung macht einen Unterschied.
 
-**Einschränkungen:** Die Studie hat methodische Limitationen: Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch, die Effekte sind kurzfristig gemessen, und Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist keine Überraschung. Sie folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten. Die Studie bestätigt empirisch, was die Theorie vorhersagt.
+**Einschränkungen:** Die Studie hat methodische Limitationen: Der Kontext (türkische Gymnasiasten, Mathematik) ist spezifisch, die Effekte sind kurzfristig gemessen, und Replikationen stehen aus. Allerdings: Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist keine Überraschung. Sie folgt direkt aus der Cognitive Load Theory und den Prinzipien erwünschter Schwierigkeiten. Die Studie liefert empirische Evidenz für die Vorhersagen der Theorie.
 
 ### Desirable Difficulties: Warum Anstrengung nötig ist
 
@@ -392,8 +402,8 @@ Der Generierungseffekt ist ein robuster Befund: Selbst generierte Information wi
 
 Das typische Experiment:
 
-- Gruppe A: Liest Wortpaare (Heiss — Kalt)
-- Gruppe B: Ergänzt Wortpaare (Heiss — K___)
+- Gruppe A: Liest Wortpaare (Heiss---Kalt)
+- Gruppe B: Ergänzt Wortpaare (Heiss---K___)
 - Test: Beide Gruppen werden abgefragt
 - Ergebnis: Gruppe B erinnert besser
 
@@ -401,7 +411,7 @@ Das typische Experiment:
 
 - Aktivere Verarbeitung während des Generierens
 - Mehr Verbindungen im Gedächtnis
-- Tiefere Encodierung
+- Tiefere Enkodierung
 
 **Die Implikation:** Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert. Studierende, die selbst einen Essay-Entwurf schreiben, profitieren vom Generierungseffekt. Studierende, die einen KI-generierten Entwurf bearbeiten, nicht, auch wenn das Endprodukt ähnlich aussieht.
 
@@ -409,7 +419,7 @@ Das typische Experiment:
 
 Eine tiefere Frage drängt sich auf: Was passiert mit der Entwicklung kognitiver Fähigkeiten? Hier müssen wir sorgfältig zwischen dem unterscheiden, was wir wissen, was wir theoretisch ableiten, und was wir vermuten.
 
-**Was wir wissen (Evidenz):** Fertigkeitsatrophie ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück. Der Generierungseffekt und die Prinzipien erwünschter Schwierigkeiten sind empirisch belegt.
+**Was wir wissen (Evidenz):** Atrophie von Fähigkeiten ist gut dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel: Wenn man wieder übt, kommt die Fähigkeit zurück. Der Generierungseffekt und die Prinzipien erwünschter Schwierigkeiten sind empirisch belegt.
 
 **Was wir theoretisch ableiten:** Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der Cognitive Load Theory und ist durch Studien wie Bastani gestützt.
 
@@ -472,7 +482,7 @@ Drei Antworten:
 
 ### Warum Experten profitieren, Lernende nicht
 
-Jetzt können wir das Muster erklären:
+Jetzt können wir versuchen, das Muster zu erklären:
 
 **Experten können:**
 
@@ -510,6 +520,14 @@ Um produktive Anstrengung zu erhalten:
 
 Ein konkretes Beispiel für den Hype-Evidenz-Gap: Viele EdTech-Unternehmen bewerben ihre KI-Tutoren mit "sokratischer Methode".
 
+::: {.pro-tip collapse="true"}
+## Was "sokratisch" eigentlich bedeutet
+
+Die ursprüngliche sokratische Methode, wie sie in Platons Dialogen beschrieben wird, war kein sanftes Hinführen zu richtigen Antworten. Sokrates stellte bohrende Fragen, die vermeintliches Wissen als unbegründet entlarvten. Das Ziel war *Aporie*: die Erkenntnis, dass man weniger weiss, als man dachte. Diese Erfahrung war oft unangenehm.
+
+Was EdTech-Unternehmen "sokratisch" nennen, ist etwas anderes: ein System, das durch Fragen zur richtigen Antwort führt, statt sie direkt zu geben. Das ist eher *geleitetes Entdecken* als sokratischer Dialog. Die Bezeichnung klingt gut, aber der Vergleich hinkt.
+:::
+
 ### Das Versprechen
 
 Die Argumentation ist verlockend:
@@ -540,7 +558,7 @@ VanLehn [-@vanlehnRelativeEffectivenessHuman2011] führte eine Meta-Analyse zur 
 
 VanLehns Analyse legt nahe, dass Schritt-für-Schritt-Feedback ein wesentlicher Faktor war, wobei die genaue Rolle des sokratischen Dialogs schwer zu isolieren ist.
 
-**Zu LLM-basierten sokratischen Tutoren:** Es gibt keine gut kontrollierten randomisierten Studien. Die existierende Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit "kein Tutoring" statt mit Alternativen.
+**Zu LLM-basierten sokratischen Tutoren:** Es gibt keine gut kontrollierten randomisierten Studien. Die existierende Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit "kein Tutoring" statt mit Alternativen (siehe auch @weidlichChatGPTEducationEffect2025).
 
 ### Das Diagnose-Problem
 
@@ -550,7 +568,7 @@ Effektives sokratisches Fragen erfordert:
 - Unterscheidung verschiedener Fehlertypen
 - Anpassung der Fragen an den individuellen Lernenden
 
-**Beispiel:** Wenn ein Schüler antwortet "1/2 + 1/3 = 2/5", kann das bedeuten:
+**Beispiel:** Wenn ein Schüler antwortet $\frac{1}{2} + \frac{1}{3} = \frac{2}{5}$, kann das bedeuten:
 
 - Prozeduraler Fehler (Zähler und Nenner addiert)
 - Konzeptueller Fehler (versteht nicht, was Brüche repräsentieren)
@@ -560,7 +578,7 @@ Die angemessene sokratische Frage unterscheidet sich je nach Ursache. Menschlich
 
 ### Weitere Herausforderungen
 
-**Fragesequenzierung:** Sokratischer Dialog ist kontingent. Jede Frage hängt von der vorherigen Antwort ab. LLMs generieren Token für Token, sie haben keinen pädagogischen Gesamtplan.
+**Fragesequenzierung:** Sokratischer Dialog ist kontingent. Jede Frage hängt von der vorherigen Antwort ab. Einfache LLM-Implementierungen generieren Token für Token ohne expliziten pädagogischen Plan, obwohl Multi-Agent-Systeme oder strukturierte Prompting-Ansätze dies teilweise adressieren können.
 
 **Feedback-Timing:** Wann korrigieren, wann weiter fragen lassen? Zu früh verhindert eigenes Denken, zu spät frustriert und verfestigt Fehler. Die Balance hängt vom individuellen Lernenden ab.
 
@@ -581,11 +599,11 @@ Sokrates würde es schätzen: Die beste Art, Werkzeuge zu bewerten, die seine Me
 
 Bei der Evaluation von KI-Tutoring-Tools:
 
-1. **Evidenz verlangen**: Peer-Review-Studien mit Lernoutcomes, nicht nur Zufriedenheit
+1. **Evidenz verlangen**: Peer-Review-Studien mit Learning Outcomes, nicht nur Zufriedenheit
 2. **Diagnose-Fähigkeit prüfen**: Kann das System zwischen Fehlertypen unterscheiden?
 3. **Opportunitätskosten bedenken**: Ist KI-Tutoring besser als Lehrbuch, Übungsaufgaben, Peer-Diskussion?
 4. **Mit strukturierten Domänen beginnen**: Mathematik vor Literaturanalyse
-5. **Auf unbeabsichtigte Folgen achten**: Gaming, Abhängigkeit von externen Prompts
+5. **Auf unbeabsichtigte Folgen achten**: Strategisches Ausnutzen des Systems statt echtem Lernen, Abhängigkeit von der KI-Unterstützung
 6. **Pilotieren und messen**: Kleine Versuche mit klaren Erfolgskriterien
 :::
 
@@ -599,7 +617,7 @@ Was bedeutet das alles? Die zentrale These lässt sich nun präzisieren:
 
 Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Das Problem liegt in der Natur des Lernens selbst. Die Frage ist daher nicht *ob*, sondern *wie* KI eingesetzt wird.
 
-**Einschränkung:** Die direkte Evidenz für KI ist noch begrenzt. Die theoretische Argumentation ist stark, aber Langzeitstudien fehlen.
+**Einschränkung:** Es gibt noch wenige Studien, die *direkt* messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten kognitionswissenschaftlichen Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.
 
 ### Kognition erweitern vs. ersetzen
 
@@ -628,11 +646,11 @@ Aus Sicht der Cognitive Load Theory ist dabei entscheidend: Wissen, das im Langz
 Was bedeutet das praktisch? Die Forschung legt nahe:
 
 - Studierende brauchen wahrscheinlich **Grundwissen, bevor** KI vorteilhaft wird
-- Der Expertise-Umkehr-Effekt empfiehlt **dynamische** Policies
+- Der Expertise-Umkehr-Effekt empfiehlt **dynamische** KI-Nutzungsregeln
 - Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist **unbekannt**
-- Die Antwort ist vermutlich **domänen- und studentenspezifisch**
+- Die Antwort ist vermutlich **domänen- und personenspezifisch**
 
-Es gibt keine universelle Regel. Lehrende müssen für ihre Kontexte entscheiden.
+Pauschale Empfehlungen zu geben ist schwierig. Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen und ist abhängig vom Fach, vom Vorwissen und den Lernzielen.
 
 ### Die Entwicklungsfrage
 
@@ -640,13 +658,13 @@ Ein besonderes Anliegen betrifft die kognitive Entwicklung:
 
 - Der präfrontale Kortex entwickelt sich bis etwa Mitte 20, wobei verschiedene Funktionen unterschiedlich schnell reifen und individuelle Variation erheblich ist
 - Exekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung
-- **Paradox:** Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten
+- Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten
 
 Die aktuelle Studierendengeneration könnte die erste sein, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft. Wenn wir in 20 Jahren Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
 
 ### Die soziale Dimension
 
-Dieser Leitfaden fokussiert auf kognitive Prozesse: Arbeitsgedächtnis, Schemabildung, Abrufübung. Aber Lernen ist nicht nur ein individueller kognitiver Prozess. Es ist fundamental sozial [@reichFailureDisruptWhy2020].
+Dieser Leitfaden fokussiert auf kognitive Prozesse: Arbeitsgedächtnis, Schemabildung, Abrufübung. Aber Lernen ist nicht nur ein individueller kognitiver Prozess. Es ist fundamental sozial [@reichFailureDisruptWhy2020][^3].
 
 **Beziehungen beeinflussen Lernerfolg.** Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen. Sie zeigen mehr Ausdauer, wenn sie spüren, dass ihre Lehrenden sich für ihren Erfolg interessieren. Disziplinäre Identität entsteht durch Gemeinschaften.
 
@@ -658,7 +676,7 @@ Dieser Leitfaden fokussiert auf kognitive Prozesse: Arbeitsgedächtnis, Schemabi
 
 **Die Rolle der Lehrperson:** Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Die Frage ist, wie Lehrende ihre unersetzliche Funktion, nämlich Beziehung, Motivation, Vorbild, Kontext, neu definieren.
 
-Diese Dimension verdient mehr Aufmerksamkeit, als dieser Leitfaden ihr geben kann. Der Fokus auf Kognition ist eine bewusste Einschränkung, keine Aussage über relative Wichtigkeit.
+[^3]: Diese Dimension verdient mehr Aufmerksamkeit, als dieser Leitfaden ihr geben kann. Der Fokus auf Kognition ist eine bewusste Einschränkung.
 
 ### Die Equity-Dimension
 
@@ -675,7 +693,7 @@ Die Ironie: "Demokratisierung" durch KI könnte Ungleichheit verstärken:
 
 **Konkrete Ungleichheiten:**
 
-- **Kosten:** Premium-KI-Werkzeuge kosten Geld. Wer kann sich GPT-4, Claude Pro oder spezialisierte Tools leisten? Wer ist auf kostenlose, limitierte Versionen angewiesen?
+- **Kosten:** Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus, Claude Pro oder spezialisierte Tools leisten? Wer ist auf kostenlose, limitierte Versionen angewiesen?
 - **Institutionelle Ressourcen:** Welche Hochschulen haben Zeit und Expertise für durchdachte KI-Integration? Welche setzen KI ein, ohne Lehrende zu schulen?
 - **Betreuung:** Wer hat Dozierende, die über KI-Risiken aufklären? Wer hat niemanden, der die Fragen stellt?
 
@@ -715,8 +733,6 @@ Drei Beobachtungen fassen die Lage zusammen:
 
 3. Ob dieser Kompromiss akzeptabel ist, hängt von Annahmen über die Zukunft ab, die Lehrende nicht verifizieren können.
 
-Eine letzte Asymmetrie verdient Beachtung: Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Vorsichtigen bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt.
-
 ::: {.pro-tip collapse="true"}
 ## Praktische Empfehlung: Entscheidungsrahmen
 
@@ -730,22 +746,6 @@ Für Entscheidungen über KI in der eigenen Lehre:
 4. Haben meine Studierenden das nötige Vorwissen für kritische KI-Nutzung?
 5. Wie kann ich Grundlagen schützen und dennoch KI sinnvoll einsetzen?
 
-**Prinzipien:**
-
-- Grundlagen vor Werkzeugen
-- Prozess bewerten, nicht nur Produkt
-- Differenzieren nach Vorwissen
-- Pilotieren und messen
-- Transparent kommunizieren
-- Flexibel anpassen
-
-**Haltung:**
-
-- Weder Panik noch unkritische Begeisterung
-- Evidenzbasiert, aber handlungsfähig
-- Epistemische Bescheidenheit bei begründeter Vorsicht
-
-**Realitätscheck:** Individuelle Entscheidungen finden in Systemen statt. Institutionelle Vorgaben, Studierendenerwartungen und Arbeitsmarktanforderungen setzen Grenzen. Perfekte Umsetzung ist selten möglich. Was zählt, ist informiertes Handeln im eigenen Spielraum.
 :::
 
 ## Fazit {#fazit}
@@ -769,8 +769,6 @@ Die praktischen Implikationen sind:
 - Kritische KI-Nutzung *im Fachkontext* üben
 
 Die offenen Fragen sind zahlreich. Langzeitstudien fehlen, optimale Strategien sind unbekannt, und die Effekte variieren nach Kontext und Person.
-
-Was bleibt, ist eine Haltung: **Informierte Vorsicht bei Handlungsfähigkeit.** Weder Panik noch unkritische Begeisterung. Evidenz ernst nehmen, auch wenn sie unvollständig ist. Die Verantwortung für Bildungsentscheidungen nicht an Technologietrends delegieren.
 
 Die Frage ist nicht, ob KI in die Bildung kommt. Sie ist schon da. Die Frage ist, wie wir sie so gestalten, dass sie dem Lernen dient, nicht es ersetzt.
 
