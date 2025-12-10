@@ -235,11 +235,13 @@ Profitieren von *niedriger* Unterstützung
 
 **Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.**
 
-## Kritisches Denken ist domänenspezifisch
+## Kritisches Denken braucht Fachwissen
 
 > "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
 >
 > [@willinghamCriticalThinkingWhy2008]
+
+*Willinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen.*
 
 . . .
 
@@ -253,13 +255,13 @@ Erkennt, wenn ChatGPT bei Biochemie falsch liegt
 ::: {.column width="50%"}
 **Novize:**
 
-Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
+Kann diese Bewertung nicht vornehmen, *auch mit guten metakognitiven Strategien*
 :::
 :::
 
 . . .
 
-**Die beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen.**
+**Metakognitive Strategien helfen — aber ihre Anwendung erfordert Fachwissen.**
 
 # Synthese {background-color="#A3195B"}
 

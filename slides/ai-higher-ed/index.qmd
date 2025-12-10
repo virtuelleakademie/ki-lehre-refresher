@@ -275,7 +275,7 @@ Profitieren von *niedriger* Unterstützung
 **Share:** Wie hat sich dein Denken verändert, als du Experte wurdest?
 :::
 
-# Teil 3: Kritisches Denken ist domänenspezifisch {background-color="#A3195B"}
+# Teil 3: Kritisches Denken braucht Fachwissen {background-color="#A3195B"}
 
 ## Die traditionelle Annahme
 
@@ -298,7 +298,9 @@ Profitieren von *niedriger* Unterstützung
 
 . . .
 
-**Denkprozesse sind fundamental mit Fachwissen verflochten.**
+**Denkprozesse sind eng mit Fachwissen verflochten.**
+
+*Willinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen.*
 
 ## Evidenz für Domänenspezifität
 
@@ -334,25 +336,36 @@ Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
 
 . . .
 
-**Was wie "kritisches Denken" aussieht, ist tatsächlich Domänenwissen.**
+**Was wie "kritisches Denken" aussieht, ist oft Domänenwissen in Aktion.**
 
-## Die Metakognitions-Lücke
+## Was transferiert — und was nicht
 
-**Einige Strategien sind etwas verallgemeinerbar:**
+::: {.columns}
+::: {.column width="50%"}
+**Transferiert (teilweise):**
 
 - Planung des Vorgehens
 - Überwachung des Verständnisses
-- Bewertung der eigenen Leistung
+- Selbstregulation
+- Bereitschaft, Annahmen zu hinterfragen
+
+*Metakognitive Strategien zeigen gewisse Generalisierung*
+:::
+
+::: {.column width="50%"}
+**Transferiert kaum:**
+
+- Wissen, *was* plausibel ist
+- Wissen, *welche* Quellen autoritativ sind
+- Erkennen von *fachspezifischen* Fehlern
+
+*Inhaltliche Bewertung erfordert Domänenwissen*
+:::
+:::
 
 . . .
 
-**Aber die Ausführung erfordert Domänenwissen:**
-
-| Strategie | Erfordert |
-|-----------|-----------|
-| "Prüfe, ob das plausibel ist" | Wissen, was plausibel wäre |
-| "Verifiziere mit autoritativen Quellen" | Wissen, welche Quellen existieren |
-| "Erkenne Fehler" | Wissen, was korrekt wäre |
+**Kernpunkt:** Die *Strategien* kann man lehren — ihre *Anwendung* erfordert Fachwissen.
 
 ## Die zentrale Implikation
 
@@ -361,7 +374,7 @@ Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
 
 - Studierende, die "mit hohem kritischem Denken" von KI profitieren, haben wahrscheinlich mehr **Domänenexpertise**
 - Die beste Vorbereitung für kritische KI-Nutzung ist **tiefes Fachlernen**
-- Generische "KI-Kompetenz" kann Fachwissen **nicht ersetzen**
+- Generische "KI-Kompetenz" kann Fachwissen **ergänzen, aber nicht ersetzen**
 :::
 
 ## Diskussion {background-color="#D4A03E"}
@@ -606,6 +619,140 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 
 **Share:** Welche Grundfähigkeiten könnten bei KI-Nutzung verkümmern?
 :::
+
+# Exkurs: "Sokratisches Fragen" in KI-Tutoren {background-color="#A3195B"}
+
+## Der Hype um den digitalen Sokrates
+
+::: {.incremental}
+- EdTech verspricht: KI-Tutoren mit "sokratischer Methode"
+- Blooms "Two Sigma Problem": 1:1-Tutoring erzielt 2 SD Verbesserung
+- **Versprechen:** Demokratisierung personalisierter Bildung durch KI
+:::
+
+. . .
+
+::: {.callout-warning}
+## Aber
+Die Begeisterung übersteigt die Evidenz erheblich.
+:::
+
+## Warum Fragen theoretisch helfen könnten
+
+::: {.columns}
+::: {.column width="50%"}
+**Generierungseffekt**
+
+Selbst erzeugte Antworten werden besser behalten als passiv erhaltene [@slameckaGenerationEffect1978]
+:::
+
+::: {.column width="50%"}
+**Selbsterklärungseffekt**
+
+Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf [@chiElicitingSelfExplanationsImproves1994]
+:::
+:::
+
+. . .
+
+**Aber:** Diese Effekte erfordern, dass Lernende genug Vorwissen haben, um sinnvolle Antworten zu generieren.
+
+## Was die Evidenz tatsächlich zeigt
+
+**VanLehn (2011):** Meta-Analyse zu Tutoring
+
+::: {.incremental}
+- Menschliche Tutoren: **d = 0.79** (nicht 2.0 wie Bloom behauptete)
+- Intelligente Tutorsysteme: **d = 0.76** (vergleichbar)
+- **Aber:** Effekt kam von Feedback und Hints, nicht vom sokratischen Dialog
+:::
+
+. . .
+
+::: {.callout-note}
+## Zu LLM-basierten sokratischen Tutoren
+Keine gut kontrollierten RCTs vorhanden. Die Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit "kein Tutoring".
+:::
+
+## Das Diagnose-Problem
+
+**Effektives sokratisches Fragen erfordert:**
+
+::: {.incremental}
+- Genaue Einschätzung des aktuellen Wissensstands
+- Unterscheidung verschiedener Fehlertypen
+- Anpassung der Fragen an den Lernenden
+:::
+
+. . .
+
+**Beispiel:** "1/2 + 1/3 = 2/5" kann bedeuten:
+
+- Prozeduraler Fehler (Zähler und Nenner addiert)
+- Konzeptueller Fehler (versteht Brüche nicht)
+- Flüchtigkeitsfehler
+
+. . .
+
+**KI-Systeme können diese Unterscheidung nicht zuverlässig treffen.**
+
+## Weitere Implementierungsherausforderungen
+
+::: {.columns}
+::: {.column width="50%"}
+**Fragesequenzierung**
+
+- Sokratischer Dialog ist kontingent
+- Jede Frage baut auf vorherigen Antworten auf
+- LLMs generieren Token, keine pädagogischen Pläne
+:::
+
+::: {.column width="50%"}
+**Feedback-Timing**
+
+- Wann korrigieren, wann weiter fragen?
+- Abhängig von Lernenden und Fehlertyp
+- KI kann das nicht zuverlässig beurteilen
+:::
+:::
+
+. . .
+
+**Tendenz von LLMs:** Zu nachgiebig, akzeptieren falsche Antworten, vermeiden produktives Unbehagen
+
+## Praktische Empfehlungen
+
+::: {.incremental}
+1. **Evidenz verlangen:** Peer-Review-Studien mit Lernoutcomes, nicht nur Zufriedenheit
+2. **Diagnose-Fähigkeit prüfen:** Kann das System verschiedene Fehlertypen unterscheiden?
+3. **Opportunitätskosten bedenken:** Ist KI-Tutoring besser als Alternativen?
+4. **Mit strukturierten Domänen beginnen:** Mathematik vor Literaturanalyse
+5. **Auf unbeabsichtigte Folgen achten:** Gaming, Abhängigkeit von externen Prompts
+:::
+
+## Fazit zum sokratischen KI-Tutoring
+
+> "Die ehrliche Antwort ist: Wir wissen es noch nicht."
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+**Was plausibel ist:**
+
+Selbsterklärung und Generierung fördern Lernen
+:::
+
+::: {.column width="50%"}
+**Was nicht belegt ist:**
+
+Dass aktuelle KI-Systeme dies effektiv implementieren können
+:::
+:::
+
+. . .
+
+**Sokrates würde es schätzen:** Die beste Art, Werkzeuge zu bewerten, die seine Methode beanspruchen, ist, kritische Fragen zu stellen und unbegründete Antworten nicht zu akzeptieren.
 
 # Teil 5: Implikationen und Synthese {background-color="#A3195B"}
 

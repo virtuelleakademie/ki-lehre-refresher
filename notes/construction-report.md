@@ -429,15 +429,63 @@ Each premise is supported by evidence from the reports.
 
 | Metric | Value |
 |--------|-------|
-| Total lines | ~700 |
-| Number of slides | ~34 |
+| Total lines | ~850 |
+| Number of slides | ~41 |
 | Discussion segments | 6 |
 | Total discussion time | ~65 min |
-| Bibliography citations | 14 |
+| Bibliography citations | 15 |
 
 ---
 
-## 9. Summary
+## 9. Post-Construction Addition: Socratic Questioning Excursus
+
+### 9.1 Rationale for Addition
+
+A new section "Exkurs: Sokratisches Fragen in KI-Tutoren" was added between Teil 4 and Teil 5. This addition was motivated by:
+
+1. **Addressing a specific EdTech claim**: Many AI tutoring products market themselves as using "Socratic methods"
+2. **Illustrating the general thesis**: Hype exceeding evidence, applied to a concrete example
+3. **Providing practical evaluation criteria**: Actionable guidance for educators evaluating AI tutoring tools
+
+### 9.2 Source Material
+
+The section was developed through consultation with a cognitive science expert agent, synthesizing:
+
+- VanLehn (2011) meta-analysis on tutoring effectiveness
+- Chi et al. (1989, 1994) on self-explanation effects
+- Slamecka & Graf (1978) on generation effect (already in presentation)
+- Analysis of LLM implementation challenges (diagnosis, sequencing, sycophancy)
+
+A detailed exposé was also created: `notes/socratic-questioning-expose.qmd`
+
+### 9.3 Slides Added
+
+| Slide | Content |
+|-------|---------|
+| Der Hype um den digitalen Sokrates | Bloom's two sigma problem, EdTech promises |
+| Warum Fragen theoretisch helfen könnten | Generation effect, self-explanation effect |
+| Was die Evidenz tatsächlich zeigt | VanLehn meta-analysis: d = 0.79, not 2.0 |
+| Das Diagnose-Problem | Fraction example, error type distinction |
+| Weitere Implementierungsherausforderungen | Sequencing, feedback timing, LLM sycophancy |
+| Praktische Empfehlungen | Five evaluation criteria |
+| Fazit zum sokratischen KI-Tutoring | "We don't know yet" |
+
+### 9.4 Citations Used
+
+- `@slameckaGenerationEffect1978` (existing)
+- `@chiElicitingSelfExplanationsImproves1994` (existing)
+- VanLehn (2011) referenced as plain text (not in Zotero-managed bibliography)
+
+### 9.5 Design Decisions
+
+- **Placement**: After Teil 4 (paradox established) and before Teil 5 (synthesis)
+- **Length**: ~15 minutes (7 slides)
+- **Tone**: Critical but fair; acknowledges theoretical plausibility while questioning implementation
+- **Practical focus**: Ends with actionable evaluation criteria
+
+---
+
+## 10. Summary
 
 The presentation was constructed through:
 
@@ -447,8 +495,9 @@ The presentation was constructed through:
 4. **Pedagogical structuring**: Prerequisite concepts before conclusions
 5. **Discussion integration**: Strategic pauses for reflection
 6. **Localization**: German translation with Swiss conventions
+7. **Case study addition**: Socratic questioning excursus illustrating hype-evidence gap
 
-The result is a ~3.25-hour workshop that provides university instructors with a theoretically grounded, evidence-based framework for understanding why AI tools designed for experts may not benefit learners.
+The result is a ~3.5-hour workshop that provides university instructors with a theoretically grounded, evidence-based framework for understanding why AI tools designed for experts may not benefit learners.
 
 ---
 
@@ -461,5 +510,6 @@ The result is a ~3.25-hour workshop that provides university instructors with a 
 | Teil 3: Kritisches Denken | 30 min | 1:45 |
 | Pause | 15 min | 2:00 |
 | Teil 4: Produktivitäts-Lern-Paradox | 45 min | 2:45 |
-| Teil 5: Implikationen | 30 min | 3:15 |
-| **Total** | **~3:15** | |
+| Exkurs: Sokratisches Fragen | 15 min | 3:00 |
+| Teil 5: Implikationen | 30 min | 3:30 |
+| **Total** | **~3:30** | |
