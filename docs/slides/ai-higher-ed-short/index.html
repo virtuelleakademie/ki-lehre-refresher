@@ -156,6 +156,18 @@
     }
   </style>
   <style>
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    background-image: none;
+  }
   div.callout-scenario.callout {
     border-left-color: #666666;
   }
@@ -180,18 +192,6 @@
     content: '\f328';
     background-image: none;
   }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
-    background-image: none;
-  }
   div.callout-pro-tip.callout {
     border-left-color: #D4A03E;
   }
@@ -204,16 +204,16 @@
     content: '\e2ca';
     background-image: none;
   }
-  div.callout-group.callout {
+  div.callout-warning.callout {
     border-left-color: #A3195B;
   }
-  div.callout-group.callout-style-default > .callout-header {
+  div.callout-warning.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
+    content: '\f06a';
     background-image: none;
   }
   div.callout-reflect.callout {
@@ -240,6 +240,30 @@
     content: '\f0c3';
     background-image: none;
   }
+  div.callout-group.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c0';
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
   div.callout-demonstration.callout {
     border-left-color: #333333;
   }
@@ -252,18 +276,6 @@
     content: '\f51b';
     background-image: none;
   }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
   div.callout-source-check.callout {
     border-left-color: #D4A03E;
   }
@@ -274,18 +286,6 @@
   div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f002';
-    background-image: none;
-  }
-  div.callout-warning.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-warning.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f06a';
     background-image: none;
   }
   </style>
@@ -394,7 +394,7 @@ Dr.&nbsp;Andrew Ellis
 <h2>Das Paradox in einem Satz</h2>
 <blockquote>
 <p>“Learning and task completion are not synonymous.”</p>
-<p><span class="citation" data-cites="joseCognitiveParadoxAI2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Jose u.&nbsp;a. 2025</a>)</span></p>
+<p><span class="citation" data-cites="joseCognitiveParadoxAI2025">(<a href="#/referenzen" role="doc-biblioref" onclick=""><strong>joseCognitiveParadoxAI2025?</strong></a>)</span></p>
 </blockquote>
 <div class="fragment">
 <p><strong>Aufgabenleistung ≠ Lernen</strong></p>
@@ -424,7 +424,7 @@ Dr.&nbsp;Andrew Ellis
 </section>
 <section id="der-generierungseffekt" class="slide level2">
 <h2>Der Generierungseffekt</h2>
-<p><strong>Meta-Analyse: d = 0.40</strong> <span class="citation" data-cites="slameckaGenerationEffect1978">(<a href="#/referenzen" role="doc-biblioref" onclick="">Slamecka und Graf 1978</a>)</span></p>
+<p><strong>Meta-Analyse: d = 0.40</strong> <span class="citation" data-cites="slameckaGenerationEffect1978">(<a href="#/referenzen" role="doc-biblioref" onclick=""><strong>slameckaGenerationEffect1978?</strong></a>)</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Selbst generiert:</strong></p>
@@ -455,7 +455,7 @@ Dr.&nbsp;Andrew Ellis
 <h2>Historische Analogien</h2>
 <p><strong>GPS</strong> <span class="citation" data-cites="dahmaniHabitualUseGPS2020">(<a href="#/referenzen" role="doc-biblioref" onclick="">Dahmani und Bohbot 2020</a>)</span>: Längere Nutzung → steilerer Rückgang des räumlichen Gedächtnisses</p>
 <div class="fragment">
-<p><strong>Taschenrechner</strong> <span class="citation" data-cites="sieglerDevelopingConceptualUnderstanding2017">(<a href="#/referenzen" role="doc-biblioref" onclick="">Siegler und Lortie-Forgues 2017</a>)</span>: Neutral für jene mit Fähigkeiten, schädlich für jene ohne</p>
+<p><strong>Taschenrechner</strong> <span class="citation" data-cites="sieglerDevelopingConceptualUnderstanding2017">(<a href="#/referenzen" role="doc-biblioref" onclick=""><strong>sieglerDevelopingConceptualUnderstanding2017?</strong></a>)</span>: Neutral für jene mit Fähigkeiten, schädlich für jene ohne</p>
 </div>
 <div class="fragment">
 <p><strong>Google-Effekt</strong> <span class="citation" data-cites="sparrowGoogleEffectsMemory2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Sparrow, Liu, und Wegner 2011</a>)</span>: Geringere Erinnerung, wenn Information als verfügbar erwartet wird</p>
@@ -659,22 +659,13 @@ Bjork, Elizabeth Ligon, und Robert A. Bjork. 2011. <span>„Making Things Hard o
 Clark, Andy. 2025. <span>„Extending <span>Minds</span> with <span>Generative AI</span>“</span>. <em>Nature Communications</em> 16 (1): 4627. <a href="https://doi.org/10.1038/s41467-025-59906-9">https://doi.org/10.1038/s41467-025-59906-9</a>.
 </div>
 <div id="ref-dahmaniHabitualUseGPS2020" class="csl-entry" role="listitem">
-Dahmani, Louisa, und Véronique D. Bohbot. 2020. <span>„Habitual Use of <span>GPS</span> Negatively Impacts Spatial Memory during Self-Guided Navigation“</span>. <em>Scientific Reports</em> 10: 6310. <a href="https://doi.org/10.1038/s41598-020-62877-0">https://doi.org/10.1038/s41598-020-62877-0</a>.
-</div>
-<div id="ref-joseCognitiveParadoxAI2025" class="csl-entry" role="listitem">
-Jose, Bejoy, Boby Cyriac, A. P. Vinod, und Tessy Jose. 2025. <span>„The Cognitive Paradox of <span>AI</span> in Education: Between Enhancement and Erosion“</span>. <em>Frontiers in Psychology</em> 16: 1550621. <a href="https://doi.org/10.3389/fpsyg.2025.1550621">https://doi.org/10.3389/fpsyg.2025.1550621</a>.
+Dahmani, Louisa, und Véronique D. Bohbot. 2020. <span>„Habitual Use of <span>GPS</span> Negatively Impacts Spatial Memory During Self-Guided Navigation“</span>. <em>Scientific Reports</em> 10 (1): 6310. <a href="https://doi.org/10.1038/s41598-020-62877-0">https://doi.org/10.1038/s41598-020-62877-0</a>.
 </div>
 <div id="ref-kalyugaExpertiseReversalEffect2009" class="csl-entry" role="listitem">
 Kalyuga, Slava. 2009. <span>„The <span>Expertise Reversal Effect</span>“</span>. In <em>Managing <span>Cognitive Load</span> in <span>Adaptive Multimedia Learning</span></em>, 58–80. IGI Global Scientific Publishing. <a href="https://doi.org/10.4018/978-1-60566-048-6.ch003">https://doi.org/10.4018/978-1-60566-048-6.ch003</a>.
 </div>
-<div id="ref-sieglerDevelopingConceptualUnderstanding2017" class="csl-entry" role="listitem">
-Siegler, Robert S., und Hugues Lortie-Forgues. 2017. <span>„Developing Conceptual Understanding and Procedural Skill in Mathematics: <span>An</span> Iterative Process“</span>. <em>Journal of Educational Psychology</em> 109 (8): 1024–34. <a href="https://doi.org/10.1037/edu0000173">https://doi.org/10.1037/edu0000173</a>.
-</div>
-<div id="ref-slameckaGenerationEffect1978" class="csl-entry" role="listitem">
-Slamecka, Norman J., und Peter Graf. 1978. <span>„The Generation Effect: <span>Delineation</span> of a Phenomenon“</span>. <em>Journal of Experimental Psychology: Human Learning and Memory</em> 4 (6): 592–604. <a href="https://doi.org/10.1037/0278-7393.4.6.592">https://doi.org/10.1037/0278-7393.4.6.592</a>.
-</div>
 <div id="ref-sparrowGoogleEffectsMemory2011" class="csl-entry" role="listitem">
-Sparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. <span>„Google Effects on Memory: <span>Cognitive</span> Consequences of Having Information at Our Fingertips“</span>. <em>Science</em> 333 (6043): 776–78. <a href="https://doi.org/10.1126/science.1207745">https://doi.org/10.1126/science.1207745</a>.
+Sparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. <span>„Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“</span>. <em>Science (New York, N.Y.)</em> 333 (6043): 776–78. <a href="https://doi.org/10.1126/science.1207745">https://doi.org/10.1126/science.1207745</a>.
 </div>
 <div id="ref-willinghamCriticalThinkingWhy2008" class="csl-entry" role="listitem">
 Willingham, Daniel T. 2008. <span>„Critical <span>Thinking</span>: <span>Why Is It So Hard</span> to <span>Teach</span>?“</span> <em>Arts Education Policy Review</em> 109 (4): 21–32. <a href="https://doi.org/10.3200/AEPR.109.4.21-32">https://doi.org/10.3200/AEPR.109.4.21-32</a>.
