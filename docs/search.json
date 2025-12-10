@@ -554,21 +554,21 @@
     "href": "slides/ai-higher-ed-short/index.html#der-generierungseffekt",
     "title": "KI in der Hochschulbildung",
     "section": "Der Generierungseffekt",
-    "text": "Der Generierungseffekt\n\n\n\n\n\n\n\n\nAbbildung 2\n\n\n\n\n\nSelbst generierte Information wird besser behalten.1\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.\n\nSlamecka und Graf (1978)"
+    "text": "Der Generierungseffekt\n\n\nSelbst generierte Information wird besser behalten (Slamecka und Graf 1978).\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#historische-analogien",
     "href": "slides/ai-higher-ed-short/index.html#historische-analogien",
     "title": "KI in der Hochschulbildung",
     "section": "Historische Analogien",
-    "text": "Historische Analogien\n\n\n\n\n\n\n\nTechnologie\nEffekt\n\n\n\n\n GPS\nRäumliches Gedächtnis ↓1\n\n\n Taschenrechner\nKonzeptuelles Verständnis ↓\n\n\n Google\n“Wo” ersetzt “Was”2\n\n\n KI\nAlles oben + mehr?\n\n\n\n\nDas Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.\n\nDahmani und Bohbot (2020)Sparrow, Liu, und Wegner (2011)"
+    "text": "Historische Analogien\n\n\n\n\n\n\n\n\nTechnologie\nEffekt\n\n\n\n\n GPS\nRäumliches Gedächtnis ↓ (Dahmani und Bohbot 2020)\n\n\n Taschenrechner\nKonzeptuelles Verständnis ↓\n\n\n Google\n“Wo” ersetzt “Was” (Sparrow, Liu, und Wegner 2011)\n\n\n KI\nAlles oben + mehr?\n\n\n\n\n\nDas Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#der-expertise-umkehr-effekt",
     "href": "slides/ai-higher-ed-short/index.html#der-expertise-umkehr-effekt",
     "title": "KI in der Hochschulbildung",
     "section": "Der Expertise-Umkehr-Effekt",
-    "text": "Der Expertise-Umkehr-Effekt\n\n\n\n\n\n\n\n\nAbbildung 3\n\n\n\n\n\nDer Expertise-Umkehr-Effekt1\nKalyuga (2009)"
+    "text": "Der Expertise-Umkehr-Effekt\n\n\nDer Expertise-Umkehr-Effekt (Kalyuga 2009)."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#warum-experten-profitieren",
@@ -582,7 +582,7 @@
     "href": "slides/ai-higher-ed-short/index.html#kritisches-denken-braucht-fachwissen",
     "title": "KI in der Hochschulbildung",
     "section": "Kritisches Denken braucht Fachwissen",
-    "text": "Kritisches Denken braucht Fachwissen\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\nDaniel Willingham1\n\n\n\n\nBiomedizin-Experte:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\n\nNovize:\nKann diese Bewertung nicht vornehmen\n\n\n\nDu kannst nicht kritisch bewerten, was du nicht verstehst.\n\nWillingham (2008)"
+    "text": "Kritisches Denken braucht Fachwissen\n\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\nDaniel Willingham (Willingham 2008)\n\n\n\n\n\nBiomedizin-Experte:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\n\nNovize:\nKann diese Bewertung nicht vornehmen\n\n\n\n\nDu kannst nicht kritisch bewerten, was du nicht verstehst."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#die-unbequeme-wahrheit",
@@ -682,63 +682,63 @@
     "href": "slides/ai-higher-ed-short/index.html#ein-überraschendes-ergebnis",
     "title": "KI in der Hochschulbildung",
     "section": "Ein überraschendes Ergebnis",
-    "text": "Ein überraschendes Ergebnis\n\n\nMit KI-Zugang:\n48% mehr Aufgaben\nkorrekt gelöst\n\nOhne KI (später):\n17% schlechter\nals die Kontrollgruppe\n\n\n\n\n\n\n\n\nQuelle\n\n\nBastani et al. (2025): ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen1\n\n\n\n\nBastani u. a. (2025)"
+    "text": "Ein überraschendes Ergebnis\n\n\n\nMit KI-Zugang:\n\n48% mehr Aufgaben\nkorrekt gelöst\n\nOhne KI (später):\n\n17% schlechter\nals die Kontrollgruppe\n\n\n\n\nQuelle: Bastani u. a. (2025): ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#das-paradox",
     "href": "slides/ai-higher-ed-short/index.html#das-paradox",
     "title": "KI in der Hochschulbildung",
     "section": "Das Paradox",
-    "text": "Das Paradox\n\n\nAbbildung 1\n\nAufgabenleistung ≠ Lernen"
+    "text": "Das Paradox\n\n\n\n\nAufgabenleistung ≠ Lernen"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#das-nadelöhr-des-lernens",
     "href": "slides/ai-higher-ed-short/index.html#das-nadelöhr-des-lernens",
     "title": "KI in der Hochschulbildung",
     "section": "Das Nadelöhr des Lernens",
-    "text": "Das Nadelöhr des Lernens\n\n\nArbeitsgedächtnis\n\n 4 ± 1 Elemente\n ~30 Sekunden\nDer Engpass allen Lernens\n\n\nLangzeitgedächtnis\n\n Unbegrenzte Kapazität\n Dauerhafte Speicherung\nHier lebt Expertise\n\n\n\n\n\n\n\n\n\nKernaussage\n\n\nAlles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.1\n\n\n\n\nSweller (2024)"
+    "text": "Das Nadelöhr des Lernens\n\n\n\nArbeitsgedächtnis\n\n 4 ± 1 Elemente\n ~30 Sekunden\nDer Engpass allen Lernens\n\n\nLangzeitgedächtnis\n\n Unbegrenzte Kapazität\n Dauerhafte Speicherung\nHier lebt Expertise\n\n\n\n\n\n Kernaussage: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses (Sweller 2024)."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#erwünschte-schwierigkeiten",
     "href": "slides/ai-higher-ed-short/index.html#erwünschte-schwierigkeiten",
     "title": "KI in der Hochschulbildung",
     "section": "Erwünschte Schwierigkeiten",
-    "text": "Erwünschte Schwierigkeiten\n\n“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”\nRobert Bjork1\n\n\n\n\n\nSelbst generieren\n\n\nVerteilt lernen\n\n\nAktiv abrufen\n\n\nVariieren\n\n\n\nSchwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.\n\nBjork und Bjork (2011)"
+    "text": "Erwünschte Schwierigkeiten\n\n\n“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”\nRobert Bjork (Bjork und Bjork 2011)\n\n\n\n\n\n\nSelbst generieren\n\n\nVerteilt lernen\n\n\nAktiv abrufen\n\n\nVariieren\n\n\n\n\nSchwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#die-nuance",
     "href": "slides/ai-higher-ed-short/index.html#die-nuance",
     "title": "KI in der Hochschulbildung",
     "section": "Die Nuance",
-    "text": "Die Nuance\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”\nBastani et al. (2025)\n\n\nAber:\n\nDirekter GPT-4 Zugang: 48% mehr Aufgaben\nGPT Tutor (strukturiert): 127% mehr Aufgaben\n\n\n\n\n\n\n\n\n\nKernpunkt\n\n\nDie Art der Nutzung macht den Unterschied. KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor."
+    "text": "Die Nuance\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”\nBastani et al. (2025)\n\n\n\nAber:\n\nDirekter GPT-4 Zugang: 48% mehr Aufgaben\nGPT Tutor (strukturiert): 127% mehr Aufgaben\n\n\n\n\n\n Kernpunkt: Die Art der Nutzung macht den Unterschied. KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#was-experten-sehen",
     "href": "slides/ai-higher-ed-short/index.html#was-experten-sehen",
     "title": "KI in der Hochschulbildung",
     "section": "Was Experten sehen",
-    "text": "Was Experten sehen\n\n\n\n\nNovize:\n“64 Felder, 32 Figuren”\n. . .\nExperte:\n“Königsangriff, offene Linie, Schwäche auf f7”\n. . .\nExperten haben eine andere kognitive Architektur.1\n\nGroot und Groot (1978); Chase und Simon (1973)"
+    "text": "Was Experten sehen\n\n\n\n\n\n\nNovize:\n“64 Felder, 32 Figuren”\n. . .\nExperte:\n“Königsangriff, offene Linie, Schwäche auf f7”\n. . .\n\nExperten haben eine andere kognitive Architektur (Groot und Groot 1978; Chase und Simon 1973)."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#warum-experten-profitieren-lernende-nicht",
     "href": "slides/ai-higher-ed-short/index.html#warum-experten-profitieren-lernende-nicht",
     "title": "KI in der Hochschulbildung",
     "section": "Warum Experten profitieren, Lernende nicht",
-    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten:\n\n Können Routine auslagern\n Können KI-Output bewerten\n Behalten höheres Denken\n\n\nLernende:\n\n Können nicht bewerten\n Überspringen Grundlagen\n Risiko: “Fliessende Inkompetenz”\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
+    "text": "Warum Experten profitieren, Lernende nicht\n\n\n\nExperten:\n\n\n Können Routine auslagern\n Können KI-Output bewerten\n Behalten höheres Denken\n\n\nLernende:\n\n\n Können nicht bewerten\n Überspringen Grundlagen\n Risiko: “Fliessende Inkompetenz”\n\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#kognition-erweitern-vs.-ersetzen",
     "href": "slides/ai-higher-ed-short/index.html#kognition-erweitern-vs.-ersetzen",
     "title": "KI in der Hochschulbildung",
     "section": "Kognition erweitern vs. ersetzen",
-    "text": "Kognition erweitern vs. ersetzen\n\n\n Kognition erweitern:\n\nMensch bleibt kognitiv engagiert\nWerkzeug verstärkt, ersetzt nicht\nFähigkeiten bleiben erhalten\n\n\n Kognition ersetzen:\n\nMensch wird passiv\nWerkzeug übernimmt das Denken\nAbhängigkeit entsteht\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung.1\n\nClark (2025)"
+    "text": "Kognition erweitern vs. ersetzen\n\n\n\n Kognition erweitern:\n\n\nMensch bleibt kognitiv engagiert\nWerkzeug verstärkt, ersetzt nicht\nFähigkeiten bleiben erhalten\n\n\n Kognition ersetzen:\n\n\nMensch wird passiv\nWerkzeug übernimmt das Denken\nAbhängigkeit entsteht\n\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung (Clark 2025)."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#die-sequenzierungsfrage",
     "href": "slides/ai-higher-ed-short/index.html#die-sequenzierungsfrage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Sequenzierungsfrage",
-    "text": "Die Sequenzierungsfrage\n\nStudierende brauchen wahrscheinlich Grundwissen, bevor KI vorteilhaft wird\nDer Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln\nDie Schwelle ist unbekannt und vermutlich domänenspezifisch\nEs gibt keine Pauschallösung\n\n\nGrundlagen BEVOR Werkzeuge"
+    "text": "Die Sequenzierungsfrage\n\n\nStudierende brauchen wahrscheinlich Grundwissen, bevor KI vorteilhaft wird\nDer Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln\nDie Schwelle ist unbekannt und vermutlich domänenspezifisch\nEs gibt keine Pauschallösung\n\n\n\nGrundlagen BEVOR Werkzeuge"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#die-kernaussage",

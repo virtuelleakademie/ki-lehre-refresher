@@ -29,14 +29,18 @@ bibliography: ../../bibliography.bib
 ```{r}
 #| include: false
 library(tidyverse)
-library(ggplot2)
 
 # Set seed for reproducible simulated data
 set.seed(2025)
 
-# Minimalist theme for all figures
+# Color palette - define once, use everywhere
+color_primary <- "#A3195B"
+color_secondary <- "#666666"
+color_tertiary <- "#999999"
+
+# Base minimalist theme for all figures
 theme_minimal_custom <- theme_minimal(base_size = 18) +
-theme(
+  theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_line(color = "grey90"),
     axis.line = element_line(color = "black", linewidth = 0.5),
@@ -45,14 +49,25 @@ theme(
     plot.subtitle = element_text(color = "grey40"),
     legend.position = "bottom"
   )
+
+# Variant with top legend for line plots
+theme_minimal_top_legend <- theme_minimal_custom +
+  theme(
+    legend.position = "top",
+    legend.text = element_text(size = 16)
+  )
 ```
 
 ## Ein überraschendes Ergebnis
+
+<br>
 
 ::: {.columns}
 ::: {.column width="50%"}
 
 **Mit KI-Zugang:**
+
+<br>
 
 [48% mehr Aufgaben]{.fragment style="font-size: 2em; font-weight: bold;"}
 
@@ -64,6 +79,8 @@ theme(
 
 **Ohne KI (später):**
 
+<br>
+
 [17% schlechter]{.fragment style="font-size: 2em; font-weight: bold;"}
 
 [als die Kontrollgruppe]{.fragment}
@@ -73,15 +90,17 @@ theme(
 
 . . .
 
-::: {.callout-note}
-## Quelle
-Bastani et al. (2025): ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen^[@bastaniGenerativeAIGuardrails2025]
+<br><br>
+
+::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
+**Quelle:** @bastaniGenerativeAIGuardrails2025: ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
 :::
 
 ## Das Paradox
 
+<br>
+
 ```{r}
-#| label: fig-paradox
 #| fig-width: 12
 #| fig-height: 6
 #| echo: false
@@ -100,7 +119,7 @@ ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe
   geom_line(linewidth = 1.5) +
   geom_point(size = 5) +
   scale_color_manual(
-    values = c("Mit KI" = "black", "Ohne KI" = "grey50"),
+    values = c("Mit KI" = color_primary, "Ohne KI" = color_secondary),
     name = NULL
   ) +
   scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 25)) +
@@ -108,18 +127,18 @@ ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe
     x = NULL,
     y = "Aufgabenleistung (%)"
   ) +
-  theme_minimal_custom +
-  theme(
-    legend.position = "top",
-    legend.text = element_text(size = 16)
-  )
+  theme_minimal_top_legend
 ```
 
 . . .
 
+<br>
+
 **Aufgabenleistung ≠ Lernen**
 
 ## Das Nadelöhr des Lernens
+
+<br>
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -145,18 +164,23 @@ ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe
 
 . . .
 
-::: {.callout-warning}
-## Kernaussage
-Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.^[@swellerCognitiveLoadTheory2024]
+<br>
+
+::: {style="background-color: #F5E6C8; padding: 1em; border-radius: 8px;"}
+{{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024].
 :::
 
 ## Erwünschte Schwierigkeiten
 
+<br>
+
 > "Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
 >
-> Robert Bjork^[@bjorkMakingThingsHard2011]
+> Robert Bjork [@bjorkMakingThingsHard2011]
 
 . . .
+
+<br>
 
 ::: {.columns}
 ::: {.column width="25%"}
@@ -186,12 +210,15 @@ Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.^[@swellerCognit
 
 . . .
 
+<br>
+
 **Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.**
 
 ## Der Generierungseffekt
 
+<br>
+
 ```{r}
-#| label: fig-generation
 #| fig-width: 10
 #| fig-height: 5.5
 #| echo: false
@@ -206,8 +233,16 @@ generation_data <- tibble(
   se = c(5, 5, 8)
 )
 
-ggplot(generation_data, aes(x = methode, y = retention)) +
-  geom_col(fill = "grey30", width = 0.6) +
+ggplot(generation_data, aes(x = methode, y = retention, fill = methode)) +
+  geom_col(width = 0.6) +
+  scale_fill_manual(
+    values = c(
+      "Selbst\ngeneriert" = color_primary,
+      "Gelesen" = color_secondary,
+      "Von KI\nerhalten" = color_tertiary
+    ),
+    guide = "none"
+  ) +
   geom_errorbar(
     aes(ymin = retention - se, ymax = retention + se),
     width = 0.2,
@@ -226,32 +261,42 @@ ggplot(generation_data, aes(x = methode, y = retention)) +
 
 ```
 
-Selbst generierte Information wird besser behalten.^[@slameckaGenerationEffectDelineation1978]
+Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDelineation1978].
 
 . . .
+
+<br>
 
 **Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.**
 
 ## Historische Analogien
 
+<br>
+
 | Technologie | Effekt |
 |-------------|--------|
-| {{< fa location-dot >}} GPS | Räumliches Gedächtnis ↓^[@dahmaniHabitualUseGPS2020] |
+| {{< fa location-dot >}} GPS | Räumliches Gedächtnis ↓ [@dahmaniHabitualUseGPS2020] |
 | {{< fa calculator >}} Taschenrechner | Konzeptuelles Verständnis ↓ |
-| {{< fa search >}} Google | "Wo" ersetzt "Was"^[@sparrowGoogleEffectsMemory2011] |
+| {{< fa search >}} Google | "Wo" ersetzt "Was" [@sparrowGoogleEffectsMemory2011] |
 | {{< fa robot >}} KI | Alles oben + mehr? |
 
 . . .
 
+<br>
+
 **Das Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.**
 
 ## Die Nuance
+
+<br>
 
 > "Students attempt to use GPT-4 as a 'crutch' during practice sessions, and when successful, perform worse on their own."
 >
 > Bastani et al. (2025)
 
 . . .
+
+<br>
 
 **Aber:**
 
@@ -260,12 +305,15 @@ Selbst generierte Information wird besser behalten.^[@slameckaGenerationEffectDe
 
 . . .
 
-::: {.callout-note}
-## Kernpunkt
-Die **Art der Nutzung** macht den Unterschied. KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor.
+<br>
+
+::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
+{{< fa lightbulb >}} **Kernpunkt:** Die **Art der Nutzung** macht den Unterschied. KI als Antwortgeber ≠ KI als pädagogisch gestalteter Tutor.
 :::
 
 ## Was Experten sehen
+
+<br>
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -275,6 +323,8 @@ Die **Art der Nutzung** macht den Unterschied. KI als Antwortgeber ≠ KI als p�
 :::
 
 ::: {.column width="50%"}
+
+<br>
 
 **Novize:**
 
@@ -288,66 +338,74 @@ Die **Art der Nutzung** macht den Unterschied. KI als Antwortgeber ≠ KI als p�
 
 . . .
 
-Experten haben eine andere **kognitive Architektur**.^[@grootThoughtChoiceChess1978; @chasePerceptionChess1973]
+<br>
+
+Experten haben eine andere **kognitive Architektur** [@grootThoughtChoiceChess1978; @chasePerceptionChess1973].
 
 :::
 :::
 
 ## Der Expertise-Umkehr-Effekt
 
+<br>
+
 ```{r}
-#| label: fig-expertise-reversal
 #| fig-width: 11
 #| fig-height: 5.5
 #| echo: false
+#| message: false
 
-# Simulated data for expertise reversal effect
+# Clean lines for expertise reversal effect (no noise needed for geom_line)
 expertise_data <- tibble(
-  vorwissen = rep(seq(0, 100, length.out = 50), 2),
-  unterstuetzung = rep(c("Hohe Unterstützung", "Niedrige Unterstützung"), each = 50)
-) |>
-  mutate(
-    lerneffekt = case_when(
-      unterstuetzung == "Hohe Unterstützung" ~ 70 - 0.6 * vorwissen + rnorm(n(), 0, 3),
-      unterstuetzung == "Niedrige Unterstützung" ~ 20 + 0.5 * vorwissen + rnorm(n(), 0, 3)
-    )
-  )
+  vorwissen = c(0, 100, 0, 100),
+  unterstuetzung = c("Hohe Unterstützung", "Hohe Unterstützung",
+                     "Niedrige Unterstützung", "Niedrige Unterstützung"),
+  lerneffekt = c(70, 10, 20, 70)
+)
 
 ggplot(expertise_data, aes(x = vorwissen, y = lerneffekt, color = unterstuetzung)) +
-  geom_smooth(method = "lm", se = FALSE, linewidth = 1.5) +
+  geom_line(linewidth = 1.5) +
+  geom_point(size = 4) +
   scale_color_manual(
-    values = c("Hohe Unterstützung" = "black", "Niedrige Unterstützung" = "grey50"),
+    values = c(
+      "Hohe Unterstützung" = color_primary,
+      "Niedrige Unterstützung" = color_secondary
+    ),
     name = NULL
   ) +
   scale_x_continuous(
     breaks = c(0, 50, 100),
     labels = c("Niedrig", "Mittel", "Hoch")
   ) +
+  scale_y_continuous(
+    limits = c(0, 100),
+    breaks = seq(0, 100, 25)
+  ) +
   labs(
     x = "Vorwissen",
     y = "Lerneffekt"
   ) +
-  theme_minimal_custom +
-  theme(
-    legend.position = "top",
-    legend.text = element_text(size = 16)
-  ) +
+  theme_minimal_top_legend +
   annotate(
     "text",
-    x = 50, y = 85,
+    x = 50, y = 90,
     label = "Kreuzung: Dieselbe Hilfe\nkann helfen ODER schaden",
     size = 5, hjust = 0.5
   )
 ```
 
-Der Expertise-Umkehr-Effekt^[@kalyugaExpertiseReversalEffect2009]
+Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
 
 ## Warum Experten profitieren, Lernende nicht
+
+<br>
 
 ::: {.columns}
 ::: {.column width="50%"}
 
 **Experten:**
+
+<br>
 
 - {{< fa check >}} Können Routine auslagern
 - {{< fa check >}} Können KI-Output bewerten
@@ -359,6 +417,8 @@ Der Expertise-Umkehr-Effekt^[@kalyugaExpertiseReversalEffect2009]
 
 **Lernende:**
 
+<br>
+
 - {{< fa xmark >}} Können nicht bewerten
 - {{< fa xmark >}} Überspringen Grundlagen
 - {{< fa xmark >}} Risiko: "Fliessende Inkompetenz"
@@ -368,15 +428,21 @@ Der Expertise-Umkehr-Effekt^[@kalyugaExpertiseReversalEffect2009]
 
 . . .
 
+<br>
+
 **Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.**
 
 ## Kritisches Denken braucht Fachwissen
 
+<br>
+
 > "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
 >
-> Daniel Willingham^[@willinghamCriticalThinkingWhy2008]
+> Daniel Willingham [@willinghamCriticalThinkingWhy2008]
 
 . . .
+
+<br>
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -398,14 +464,20 @@ Kann diese Bewertung nicht vornehmen
 
 . . .
 
+<br>
+
 **Du kannst nicht kritisch bewerten, was du nicht verstehst.**
 
 ## Kognition erweitern vs. ersetzen
+
+<br>
 
 ::: {.columns}
 ::: {.column width="50%"}
 
 **{{< fa expand >}} Kognition erweitern:**
+
+<br>
 
 - Mensch bleibt kognitiv engagiert
 - Werkzeug verstärkt, ersetzt nicht
@@ -417,6 +489,8 @@ Kann diese Bewertung nicht vornehmen
 
 **{{< fa compress >}} Kognition ersetzen:**
 
+<br>
+
 - Mensch wird passiv
 - Werkzeug übernimmt das Denken
 - Abhängigkeit entsteht
@@ -426,9 +500,13 @@ Kann diese Bewertung nicht vornehmen
 
 . . .
 
-**Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.**^[@clarkExtendingMindsGenerative2025]
+<br>
+
+**Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung** [@clarkExtendingMindsGenerative2025].
 
 ## Die Sequenzierungsfrage
+
+<br>
 
 ::: {.incremental}
 - Studierende brauchen wahrscheinlich **Grundwissen**, bevor KI vorteilhaft wird
@@ -438,6 +516,8 @@ Kann diese Bewertung nicht vornehmen
 :::
 
 . . .
+
+<br>
 
 **Grundlagen BEVOR Werkzeuge**
 
