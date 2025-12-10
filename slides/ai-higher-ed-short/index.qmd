@@ -352,18 +352,28 @@ Experten haben eine andere **kognitive Architektur** [@grootThoughtChoiceChess19
 ```{ojs}
 //| echo: false
 
-// Slider input (hidden, will be placed in layout below)
-viewof vorwissen = Inputs.range([0, 100], {
-  value: 25,
-  step: 1,
-  label: ""
-})
+// Hidden radio input (drives the state)
+viewof vorwissen = {
+  const input = Inputs.radio([0, 20, 40, 60, 80, 100], {
+    value: 20,
+    label: "",
+    format: x => x + "%"
+  });
+  input.style.display = "none";
+  return input;
+}
 
 // Calculate learning effects at current position
-highSupport = 70 - 0.6 * vorwissen
-lowSupport = 20 + 0.5 * vorwissen
-optimal = highSupport > lowSupport ? "Hohe Unterstützung" : "Niedrige Unterstützung"
-optimalColor = highSupport > lowSupport ? "#A3195B" : "#666666"
+// Lines cross at x=50, y=45: highSupport = 65 - 0.4x, lowSupport = 25 + 0.4x
+// At x=50: both = 45
+highSupport = 65 - 0.4 * vorwissen
+lowSupport = 25 + 0.4 * vorwissen
+crossoverPoint = 50
+isHighBetter = vorwissen <= crossoverPoint
+optimal = isHighBetter ? "Hohe Unterstützung" : "Niedrige Unterstützung"
+optimalColor = isHighBetter ? "#A3195B" : "#666666"
+// The y-value for the optimal dot
+optimalY = isHighBetter ? highSupport : lowSupport
 
 // Create the plot
 expertisePlot = Plot.plot({
@@ -388,29 +398,81 @@ expertisePlot = Plot.plot({
     grid: true
   },
   marks: [
-    Plot.line([{x: 0, y: 70}, {x: 100, y: 10}], {x: "x", y: "y", stroke: "#A3195B", strokeWidth: 3}),
-    Plot.line([{x: 0, y: 20}, {x: 100, y: 70}], {x: "x", y: "y", stroke: "#666666", strokeWidth: 3}),
+    // Static lines (cross at x=50, y=45)
+    Plot.line([{x: 0, y: 65}, {x: 100, y: 25}], {x: "x", y: "y", stroke: "#A3195B", strokeWidth: 3}),
+    Plot.line([{x: 0, y: 25}, {x: 100, y: 65}], {x: "x", y: "y", stroke: "#666666", strokeWidth: 3}),
+    // Vertical indicator
     Plot.ruleX([vorwissen], {stroke: "#333", strokeWidth: 1.5, strokeDasharray: "8,5"}),
-    Plot.dot([{x: vorwissen, y: highSupport}], {x: "x", y: "y", fill: "#A3195B", r: 12, stroke: "white", strokeWidth: 2}),
-    Plot.dot([{x: vorwissen, y: lowSupport}], {x: "x", y: "y", fill: "#666666", r: 12, stroke: "white", strokeWidth: 2}),
-    Plot.text([{x: 88, y: 8}], {x: "x", y: "y", text: ["Hohe Unterstützung"], fill: "#A3195B", fontSize: 15, fontWeight: "bold"}),
-    Plot.text([{x: 88, y: 74}], {x: "x", y: "y", text: ["Niedrige Unterstützung"], fill: "#666666", fontSize: 15, fontWeight: "bold"})
+    // Suboptimal dot (smaller, faded)
+    Plot.dot([{x: vorwissen, y: isHighBetter ? lowSupport : highSupport}], {
+      x: "x", y: "y",
+      fill: isHighBetter ? "#666666" : "#A3195B",
+      r: 8,
+      opacity: 0.4
+    }),
+    // Optimal dot (larger, prominent)
+    Plot.dot([{x: vorwissen, y: optimalY}], {
+      x: "x", y: "y",
+      fill: optimalColor,
+      r: 14,
+      stroke: "white",
+      strokeWidth: 3
+    }),
+    // Icons/labels with examples (near line starts)
+    Plot.text([{x: 15, y: 72}], {x: "x", y: "y", text: ["📖 Worked Examples"], fill: "#A3195B", fontSize: 13}),
+    Plot.text([{x: 15, y: 66}], {x: "x", y: "y", text: ["🧭 Direkte Instruktion"], fill: "#A3195B", fontSize: 13}),
+    Plot.text([{x: 85, y: 72}], {x: "x", y: "y", text: ["🧩 Problembasiertes Lernen"], fill: "#666666", fontSize: 13}),
+    Plot.text([{x: 85, y: 66}], {x: "x", y: "y", text: ["🔍 Eigene Lösungswege"], fill: "#666666", fontSize: 13}),
+    // Line labels (near line ends)
+    Plot.text([{x: 88, y: 20}], {x: "x", y: "y", text: ["Hohe Unterstützung"], fill: "#A3195B", fontSize: 15, fontWeight: "bold"}),
+    Plot.text([{x: 12, y: 20}], {x: "x", y: "y", text: ["Niedrige Unterstützung"], fill: "#666666", fontSize: 15, fontWeight: "bold"})
   ]
 })
 
-// Layout: plot on left, slider on right
+// Styled segmented control using Inputs.button for each value
+buttonGroup = {
+  const values = [0, 20, 40, 60, 80, 100];
+  const buttons = values.map(v => {
+    const isSelected = vorwissen === v;
+    const bgColor = isSelected ? (v <= 50 ? '#A3195B' : '#666666') : '#f5f5f5';
+    const textColor = isSelected ? 'white' : '#333';
+    const fontWeight = isSelected ? 'bold' : 'normal';
+    const btn = html`<button style="
+      padding: 12px 18px;
+      border: none;
+      background: ${bgColor};
+      color: ${textColor};
+      font-size: 1em;
+      font-weight: ${fontWeight};
+      cursor: pointer;
+      border-right: 1px solid #ddd;
+    ">${v}%</button>`;
+    btn.onclick = () => {
+      viewof vorwissen.value = v;
+      viewof vorwissen.dispatchEvent(new Event('input'));
+    };
+    return btn;
+  });
+  const container = html`<div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"></div>`;
+  buttons.forEach(b => container.appendChild(b));
+  return container;
+}
+
+// Layout: plot on left, controls on right
 html`<div style="display: flex; align-items: center; gap: 40px;">
   <div>${expertisePlot}</div>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 200px;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;">
     <div style="font-weight: bold; font-size: 1.1em;">Vorwissen des Lernenden</div>
-    <div>${viewof vorwissen}</div>
-    <div style="font-size: 1.2em; text-align: center;">
-      <span style="color: ${optimalColor}; font-weight: bold;">${optimal}</span><br>ist effektiver
+    <div>${buttonGroup}</div>
+    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${optimalColor}22; border-radius: 8px; border-left: 4px solid ${optimalColor};">
+      <span style="color: ${optimalColor}; font-weight: bold;">${optimal}</span><br>
+      <span style="font-size: 0.8em; color: #666;">ist effektiver</span>
     </div>
   </div>
 </div>`
 ```
 
+<br>
 <br>
 
 Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
