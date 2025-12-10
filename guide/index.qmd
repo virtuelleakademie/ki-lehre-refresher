@@ -30,7 +30,6 @@ Bevor du diesen Leitfaden liest, reflektiere kurz:
 - Wo hast du Studierende beim KI-Einsatz beobachtet?
 - Welche Auswirkungen auf das Lernen hast du vermutet?
 - Welche Fragen stellst du dir bezüglich KI in deiner Lehre?
-
 Diese Reflexion hilft, die folgenden Konzepte auf den eigenen Kontext anzuwenden.
 :::
 
@@ -708,13 +707,13 @@ Epistemische Bescheidenheit ist angebracht. Wir wissen vieles nicht:
 
 ### Abschliessende Überlegungen
 
-Drei Zitate fassen die Lage zusammen:
+Drei Beobachtungen fassen die Lage zusammen:
 
-> "If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable."
+1. Wenn KI-Unterstützung während der Ausbildung die eigenständige Fähigkeit beeinträchtigt, könnten Studierende weniger vorbereitet sein auf Kontexte, in denen KI nicht verfügbar ist.
 
-> "The productivity gains during education would come at the cost of capability thereafter."
+2. Die Produktivitätsgewinne während der Ausbildung könnten auf Kosten der späteren Kompetenz gehen.
 
-> "Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify."
+3. Ob dieser Kompromiss akzeptabel ist, hängt von Annahmen über die Zukunft ab, die Lehrende nicht verifizieren können.
 
 Eine letzte Asymmetrie verdient Beachtung: Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Vorsichtigen bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt.
 
