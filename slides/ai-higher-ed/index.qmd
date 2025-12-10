@@ -23,7 +23,7 @@ filters:
   - timer
 ---
 
-# Teil 1: Was KI heute kann {background-color="#A3195B"}
+# Teil 1: Was KI heute kann {background-color="#F0D4D4"}
 
 ## Die zentrale Frage
 
@@ -116,7 +116,7 @@ LLMs *rufen* kein Wissen ab. Sie *generieren* Text basierend auf statistischen M
 - Schreiben und Überarbeiten
 - Programmieren
 
-## Diskussion {background-color="#D4A03E"}
+## Diskussion {background-color="#F5E6C8"}
 
 ::: {.timer #timer-1 seconds=300}
 :::
@@ -127,7 +127,7 @@ LLMs *rufen* kein Wissen ab. Sie *generieren* Text basierend auf statistischen M
 - Wo hast du Studierende beim Einsatz von KI beobachtet?
 :::
 
-# Teil 2: Wie Expertise entsteht {background-color="#A3195B"}
+# Teil 2: Wie Expertise entsteht {background-color="#F0D4D4"}
 
 ## Experten und Novizen sind grundlegend verschieden
 
@@ -324,7 +324,7 @@ KI-Antworten sind reaktiv und unsystematisch.
 
 Was Novizen hilft, kann Experten behindern. Daher: dynamische Anpassung.
 
-## Diskussion: Think-Pair-Share {background-color="#D4A03E"}
+## Diskussion: Think-Pair-Share {background-color="#F5E6C8"}
 
 ::: {.timer #timer-2 seconds=600}
 :::
@@ -338,7 +338,7 @@ Was Novizen hilft, kann Experten behindern. Daher: dynamische Anpassung.
 **Share:** Wie hat sich dein Denken verändert, als du Experte wurdest?
 :::
 
-# Teil 3: Kritisches Denken braucht Fachwissen {background-color="#A3195B"}
+# Teil 3: Kritisches Denken braucht Fachwissen {background-color="#F0D4D4"}
 
 ## Die traditionelle Annahme
 
@@ -440,7 +440,7 @@ Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
 - Generische "KI-Kompetenz" kann Fachwissen **ergänzen, aber nicht ersetzen**
 :::
 
-## Diskussion {background-color="#D4A03E"}
+## Diskussion {background-color="#F5E6C8"}
 
 ::: {.timer #timer-3 seconds=300}
 :::
@@ -451,12 +451,12 @@ Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
 - Welches Domänenwissen wäre nötig?
 :::
 
-# Pause {background-color="#666666"}
+# Pause {background-color="#E5E4E2"}
 
 ::: {.timer #timer-4 seconds=900}
 :::
 
-# Teil 4: Das Produktivitäts-Lern-Paradox {background-color="#A3195B"}
+# Teil 4: Das Produktivitäts-Lern-Paradox {background-color="#F0D4D4"}
 
 ## Das zentrale Paradox
 
@@ -694,7 +694,7 @@ Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Vers
 
 **Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.**
 
-## Diskussion: Think-Pair-Share {background-color="#D4A03E"}
+## Diskussion: Think-Pair-Share {background-color="#F5E6C8"}
 
 ::: {.timer #timer-5 seconds=900}
 :::
@@ -709,7 +709,7 @@ Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Vers
 **Share:** Welche Grundfähigkeiten könnten bei KI-Nutzung verkümmern?
 :::
 
-# Exkurs: "Sokratisches Fragen" in KI-Tutoren {background-color="#A3195B"}
+# Exkurs: "Sokratisches Fragen" in KI-Tutoren {background-color="#F0D4D4"}
 
 ## Der Hype um den digitalen Sokrates
 
@@ -843,7 +843,7 @@ Dass aktuelle KI-Systeme dies effektiv implementieren können
 
 **Sokrates würde es schätzen:** Die beste Art, Werkzeuge zu bewerten, die seine Methode beanspruchen, ist, kritische Fragen zu stellen und unbegründete Antworten nicht zu akzeptieren.
 
-# Teil 5: Implikationen und Synthese {background-color="#A3195B"}
+# Teil 5: Implikationen und Synthese {background-color="#F0D4D4"}
 
 ## Die unbequeme Wahrheit
 
@@ -993,7 +993,7 @@ Unterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung.
 
 > "Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt."
 
-## Offene Diskussion {background-color="#D4A03E"}
+## Offene Diskussion {background-color="#F5E6C8"}
 
 ::: {.timer #timer-6 seconds=900}
 :::
