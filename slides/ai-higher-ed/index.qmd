@@ -44,7 +44,7 @@ filters:
 > "48% mehr Aufgaben gelöst MIT KI,
 > 17% schlechter OHNE KI"
 >
-> [@bastaniGenerativeAICan2024]
+> [@bastaniGenerativeAIGuardrails2025]
 :::
 :::
 
@@ -228,6 +228,8 @@ Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.
 | **Extrinsisch** | Schlecht gestaltete Instruktion | **Minimieren** |
 | **Lernförderlich** (Germane) | Produktive Anstrengung für Schemabildung | **Erhalten** |
 
+*(Anmerkung: Die Unterscheidung von lernförderlicher und intrinsischer Belastung ist in der Literatur umstritten)*
+
 . . .
 
 **Entscheidende Frage:** Welche Art der Belastung reduziert KI?
@@ -260,6 +262,67 @@ Profitieren von *niedriger* Unterstützung
 ## Implikation
 **Dasselbe Werkzeug kann gegenteilige Effekte haben, abhängig vom Expertisegrad.**
 :::
+
+## Explizite Instruktion: Was Lernen fördert
+
+**Das Problem mit minimaler Anleitung** [@kirschnerWhyMinimalGuidance2006]
+
+::: {.incremental}
+- Konstruktivistische, entdeckende Ansätze klingen attraktiv
+- Aber: Für Novizen ist minimale Anleitung weniger effektiv
+- Novizen haben keine Schemata im Langzeitgedächtnis
+- Ihr Arbeitsgedächtnis wird schnell überlastet
+:::
+
+. . .
+
+**Evidenzbasierte Alternative:** Explizite Instruktion mit *Worked Examples*
+
+## Worked Examples: Ein robuster Befund
+
+**Statt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen**
+
+::: {.columns}
+::: {.column width="50%"}
+**Für Novizen:**
+
+- Reduziert extrinsische Belastung
+- Lässt Kapazität für Schemabildung
+- Einer der robustesten Befunde der Instruktionsforschung
+:::
+
+::: {.column width="50%"}
+**Aber Achtung:**
+
+Worked Examples ≠ KI-generierte Lösungen
+:::
+:::
+
+. . .
+
+::: {.callout-warning}
+## Der entscheidende Unterschied
+Worked Examples sind *didaktisch gestaltet*, bauen systematisch Komplexität auf.
+
+KI-Antworten sind reaktiv und unsystematisch.
+:::
+
+## Von Worked Examples zu selbständigem Lösen
+
+**Fading: Unterstützung systematisch reduzieren**
+
+::: {.incremental}
+1. **Vollständige Worked Examples** zeigen
+2. **Completion Problems**: Teilweise gelöste Aufgaben vervollständigen
+3. **Zunehmend weniger** Vorgaben
+4. **Selbständiges Lösen** ohne Unterstützung
+:::
+
+. . .
+
+**Verbindung zum Expertise-Umkehr-Effekt:**
+
+Was Novizen hilft, kann Experten behindern. Daher: dynamische Anpassung.
 
 ## Diskussion: Think-Pair-Share {background-color="#D4A03E"}
 
@@ -399,7 +462,7 @@ Kann diese Bewertung nicht vornehmen, *unabhängig von "kritischem Denken"*
 
 > "Learning and task completion are not synonymous."
 >
-> [@joseCognitiveParadoxAI2025]
+> [@joseOutsourcingCognitionPsychological2025]
 
 . . .
 
@@ -423,7 +486,7 @@ Produktivität ≠ Kompetenzaufbau
 
 ## Die Bastani-Studie: Mathematik
 
-**Randomisierte kontrollierte Studie** [@bastaniGenerativeAICan2024]
+**Randomisierte kontrollierte Studie** [@bastaniGenerativeAIGuardrails2025]
 
 *Einzelstudie, Replikation ausstehend*
 
@@ -485,7 +548,7 @@ Sofortiger KI-Zugang kann Abrufversuche kurzschliessen, *bevor* sie Gedächtniss
 
 ## Der Generierungseffekt
 
-**Meta-Analyse: d = 0.40 über 86 Studien** [@slameckaGenerationEffect1978]
+**Meta-Analyse: d = 0.40 über 86 Studien** [@slameckaGenerationEffectDelineation1978]
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -525,6 +588,13 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 
 . . .
 
+::: {.callout-note}
+## Wichtig
+Dies ist eine *Hypothese*, keine gesicherte Erkenntnis. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen.
+:::
+
+. . .
+
 ::: {.callout-warning}
 ## Wichtige Unterscheidung
 **Fertigkeitsatrophie** (Fähigkeit verkümmert) vs. **Entwicklungsbeeinträchtigung** (Fähigkeit entsteht nie)
@@ -534,13 +604,13 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 
 **GPS und räumliches Gedächtnis** [@dahmaniHabitualUseGPS2020]
 
-- Längere GPS-Nutzung → steilerer Rückgang des räumlichen Gedächtnisses
+- Stärkere GPS-Nutzung korreliert mit steilerem Rückgang des räumlichen Gedächtnisses
 - Longitudinale Studie über 3 Jahre
-- Kausalität bestätigt (nicht umgekehrt)
+- Zeitliche Abfolge konsistent mit kausaler Interpretation (ungemessene Konfundierende nicht ausgeschlossen)
 
 . . .
 
-**Taschenrechner** [@sieglerDevelopingConceptualUnderstanding2017]
+**Taschenrechner** [@lortie-forguesConceptualKnowledgeDecimal2017]
 
 - Neutral für jene mit bestehenden Fähigkeiten
 - **Schädlich** für jene ohne Grundkenntnisse
@@ -564,6 +634,25 @@ Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generier
 . . .
 
 **Aber:** Die historischen Bedenken hatten oft Berechtigung. GPS *beeinflusst* räumliche Kognition. Taschenrechner *veränderten* Mathematikunterricht.
+
+## Der EdTech-Hype-Zyklus
+
+**Bildungstechnologien folgen einem wiederkehrenden Muster** [@reichFailureDisruptWhy2020]
+
+::: {.incremental}
+- **Radio** sollte die besten Vorlesungen in jedes Klassenzimmer bringen
+- **Fernsehen** sollte Lernen revolutionieren
+- **Computer** sollten Unterricht personalisieren
+- **MOOCs** sollten Elite-Bildung demokratisieren
+:::
+
+. . .
+
+Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Versprechen.
+
+. . .
+
+**Was macht KI anders?** Die Breite ist beispiellos. Aber dieselben strukturellen Kräfte könnten wirken.
 
 ## "Das haben sie über das Schreiben auch gesagt"
 
@@ -643,7 +732,7 @@ Die Begeisterung übersteigt die Evidenz erheblich.
 ::: {.column width="50%"}
 **Generierungseffekt**
 
-Selbst erzeugte Antworten werden besser behalten als passiv erhaltene [@slameckaGenerationEffect1978]
+Selbst erzeugte Antworten werden besser behalten als passiv erhaltene [@slameckaGenerationEffectDelineation1978]
 :::
 
 ::: {.column width="50%"}
@@ -823,9 +912,24 @@ Die aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesa
 Wenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
 :::
 
+## Die soziale Dimension
+
+**Lernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess** [@reichFailureDisruptWhy2020]
+
+::: {.incremental}
+- Studierende lernen besser, wenn sie sich verbunden fühlen
+- Peers werden seltener konsultiert, wenn KI antwortet
+- Beziehungen zu Lehrenden werden oberflächlicher
+- Gelegenheiten für Mentoring nehmen ab
+:::
+
+. . .
+
+**Die Rolle der Lehrperson:** Beziehung, Motivation, Vorbild sind nicht ersetzbar.
+
 ## Die Equity-Dimension
 
-**Die dritte digitale Kluft** [@trucanoThirdDigitalDivide2024]
+**Die dritte digitale Kluft** [@michaeltrucanoAINextDigital2023]
 
 . . .
 
