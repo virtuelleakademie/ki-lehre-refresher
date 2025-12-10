@@ -236,7 +236,7 @@ Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.
 
 ## Der Expertise-Umkehr-Effekt
 
-**Meta-Analyse** [@kalyugaExpertiseReversalEffect2009]
+**Forschungsüberblick** [@kalyugaExpertiseReversalEffect2009]
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -244,7 +244,7 @@ Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.
 
 Profitieren von hoher Unterstützung
 
-*d = 0.505*
+*Mittlere bis grosse Effekte*
 :::
 
 ::: {.column width="50%"}
@@ -252,7 +252,7 @@ Profitieren von hoher Unterstützung
 
 Profitieren von *niedriger* Unterstützung
 
-*d = −0.428*
+*Effekte kehren sich um*
 :::
 :::
 
@@ -537,7 +537,7 @@ Die Schlussfolgerungen gelten hauptsächlich für KI als **Antwortgeber**. KI al
 1. **Variation** der Lernbedingungen
 2. **Interleaving**: Mischen von Aufgabentypen
 3. **Spacing**: Verteiltes statt massiertes Lernen
-4. **Retrieval Practice**: Abrufen statt Wiederlesen
+4. **Retrieval Practice**: Abrufen statt Wiederlesen [@roedigerTestenhancedLearningTaking2006]
 
 . . .
 
@@ -610,10 +610,10 @@ Dies ist eine *Hypothese*, keine gesicherte Erkenntnis. Wir haben keine Längssc
 
 . . .
 
-**Taschenrechner** [@lortie-forguesConceptualKnowledgeDecimal2017]
+**Konzeptuelles Verständnis** [@lortie-forguesConceptualKnowledgeDecimal2017]
 
-- Neutral für jene mit bestehenden Fähigkeiten
-- **Schädlich** für jene ohne Grundkenntnisse
+- Auch Erwachsene mit Rechenhilfen zeigen Lücken im konzeptuellen Verständnis
+- **Werkzeugnutzung ersetzt kein Grundverständnis**
 
 . . .
 
