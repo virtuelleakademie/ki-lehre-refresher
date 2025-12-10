@@ -1,6 +1,6 @@
 # Speaker Notes: KI in der Hochschulbildung
 
-**Vollversion (~3.25 Stunden)**
+**Vollversion (~3.5 Stunden)**
 
 ::: {.callout-note}
 ## Meta: Über dieses Dokument
@@ -304,11 +304,11 @@ Diese Methoden sind "schwach", weil sie langsam, fehleranfällig und kognitiv an
 
 ---
 
-## Teil 3: Kritisches Denken ist domänenspezifisch (~30 Min)
+## Teil 3: Kritisches Denken braucht Fachwissen (~30 Min)
 
 ::: {.callout-note}
 ## Meta: Funktion von Teil 3
-Dieser Teil adressiert einen verbreiteten Mythos: dass "kritisches Denken" oder "KI-Kompetenz" als generische Fähigkeit gelehrt werden kann. Die Widerlegung dieses Mythos ist wichtig, weil sie zeigt, warum Fachwissen nicht durch generische "Medienkompetenz" ersetzt werden kann.
+Dieser Teil adressiert eine verbreitete Überschätzung: dass "kritisches Denken" oder "KI-Kompetenz" als rein generische Fähigkeit gelehrt werden kann. Die Argumentation ist nuanciert: Einige metakognitive Strategien transferieren teilweise, aber ihre *Anwendung* erfordert Domänenwissen. Das zeigt, warum Fachwissen nicht durch generische "Medienkompetenz" ersetzt werden kann — obwohl beides zusammen wichtig ist.
 :::
 
 ### Slide: Die traditionelle Annahme
@@ -340,10 +340,17 @@ Dieser Teil adressiert einen verbreiteten Mythos: dass "kritisches Denken" oder 
 
 **Willinghams Argument:**
 1. Kritisches Denken erfordert Hintergrundwissen
-2. Transfer von einer Domäne zur anderen ist extrem schwierig
-3. Was wie "kritisches Denken" aussieht, ist meist Domänenwissen in Aktion
+2. Transfer von einer Domäne zur anderen ist schwieriger als oft angenommen
+3. Was wie "kritisches Denken" aussieht, ist oft Domänenwissen in Aktion
 
-**Rhetorischer Hinweis:** Das Zitat ist provokant. Lass es wirken. Dann erkläre, was Willingham meint — nicht dass kritisches Denken unmöglich ist, sondern dass es domänenspezifisch ist.
+**Wichtige Nuancierung:** Willinghams Formulierung ("is not a skill") ist rhetorisch zugespitzt. Die Folie anerkennt das jetzt explizit: "Willinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen."
+
+**Was Willingham NICHT sagt:**
+- Er sagt nicht, dass metakognitive Strategien nutzlos sind
+- Er sagt nicht, dass man kritisches Denken nicht fördern kann
+- Er sagt, dass es ohne Domänenwissen nicht funktioniert
+
+**Rhetorischer Hinweis:** Das Zitat ist provokant. Lass es wirken, aber relativiere es dann. Das Publikum soll verstehen: Der Kern stimmt, auch wenn die Formulierung überspitzt ist.
 :::
 
 ### Slide: Evidenz für Domänenspezifität
@@ -389,33 +396,43 @@ Dieser Teil adressiert einen verbreiteten Mythos: dass "kritisches Denken" oder 
 - Weiss nicht, welche Quellen autoritativ sind
 - "Kritisches Denken" als Strategie hilft nicht
 
-**Kernbotschaft:** "Was wie 'kritisches Denken' aussieht, ist tatsächlich Domänenwissen."
+**Kernbotschaft:** "Was wie 'kritisches Denken' aussieht, ist oft Domänenwissen in Aktion." (Beachte: "oft", nicht "immer" — die Formulierung ist jetzt nuancierter.)
 
-**Praktische Implikation:** Die Forderung "Studierende müssen lernen, KI kritisch zu nutzen" klingt sinnvoll, ist aber leer, wenn kein Fachwissen vorhanden ist.
+**Praktische Implikation:** Die Forderung "Studierende müssen lernen, KI kritisch zu nutzen" klingt sinnvoll, greift aber zu kurz, wenn kein Fachwissen vorhanden ist.
 :::
 
-### Slide: Die Metakognitions-Lücke
+### Slide: Was transferiert — und was nicht
 
 ::: {.callout-tip}
 ## Sprechernotizen
-**Konzession:** Einige Strategien sind etwas verallgemeinerbar:
-- Planung ("Bevor ich anfange, überlege ich...")
-- Monitoring ("Verstehe ich das noch?")
-- Evaluation ("War das erfolgreich?")
+**Wichtige Änderung:** Diese Folie ersetzt die frühere "Metakognitions-Lücke" und ist nun ausgewogener. Sie anerkennt explizit, was *transferiert* — nicht nur, was nicht transferiert.
 
-**Das Problem:** Die *Ausführung* dieser Strategien erfordert Domänenwissen.
+**Die linke Spalte — Was transferiert (teilweise):**
+- Planung des Vorgehens
+- Überwachung des Verständnisses (Monitoring)
+- Selbstregulation
+- Bereitschaft, Annahmen zu hinterfragen
 
-**Die Tabelle durchgehen:**
+Diese metakognitiven Strategien zeigen in der Forschung gewisse Generalisierung (Schraw, 1998; Veenman et al., 2006). Man kann sie domänenübergreifend lehren und sie haben *etwas* Transferwirkung.
 
-| Strategie | Erfordert |
-|-----------|-----------|
-| "Prüfe, ob das plausibel ist" | Wissen, was plausibel wäre |
-| "Verifiziere mit autoritativen Quellen" | Wissen, welche Quellen existieren |
-| "Erkenne Fehler" | Wissen, was korrekt wäre |
+**Die rechte Spalte — Was kaum transferiert:**
+- Wissen, *was* plausibel ist in einem Fachgebiet
+- Wissen, *welche* Quellen autoritativ sind
+- Erkennen von *fachspezifischen* Fehlern
 
-**Beispiel:** "Prüfe, ob das plausibel ist" — ein Novize in Quantenphysik kann nicht einschätzen, ob eine Aussage über Quantenverschränkung plausibel ist. Die Strategie ist nutzlos ohne Hintergrundwissen.
+Diese inhaltliche Bewertungsfähigkeit erfordert Domänenwissen und transferiert kaum.
 
-**Rhetorischer Hinweis:** Hier wird das Argument geschärft. Selbst wenn metakognitive Strategien helfen können, erfordert ihre Anwendung Fachwissen.
+**Der Kernpunkt:** "Die *Strategien* kann man lehren — ihre *Anwendung* erfordert Fachwissen."
+
+Das ist die nuancierte Position:
+- Ja, metakognitive Strategien helfen
+- Ja, man sollte sie lehren
+- Aber: Sie sind nicht ausreichend ohne Fachwissen
+- Die Strategien sagen dir *wie* du vorgehen sollst, aber nicht *was* richtig ist
+
+**Beispiel:** Die Strategie "Hinterfrage Annahmen" kann man lehren. Aber um zu wissen, *welche* Annahmen in einem biochemischen Text fragwürdig sind, braucht man Biochemie-Wissen.
+
+**Rhetorischer Hinweis:** Diese Folie ist wichtig für die Glaubwürdigkeit. Sie zeigt, dass die Argumentation nuanciert ist und die Gegenposition ernst nimmt.
 :::
 
 ### Slide: Die zentrale Implikation
@@ -740,7 +757,191 @@ Dies ist der empirische Kern der Präsentation. Hier wird die Evidenz präsentie
 - **Geisteswissenschaften:** Quellenkritik, eigene Thesen entwickeln
 - **Sprachen:** Formulieren, Grammatik verinnerlichen
 
-**Überleitung:** "Ihr habt konkrete Bereiche identifiziert, wo KI-Nutzung problematisch sein könnte. Im letzten Teil schauen wir uns an, was das für die Hochschullehre bedeutet — und was wir noch nicht wissen."
+**Überleitung:** "Ihr habt konkrete Bereiche identifiziert, wo KI-Nutzung problematisch sein könnte. Bevor wir zur Synthese kommen, schauen wir uns einen konkreten Fall an: den Hype um 'sokratische' KI-Tutoren."
+:::
+
+---
+
+## Exkurs: Sokratisches Fragen in KI-Tutoren (~15 Min)
+
+::: {.callout-note}
+## Meta: Funktion dieses Exkurses
+Dieser Abschnitt adressiert einen spezifischen Hype in der EdTech-Branche: die Behauptung, dass KI-Tutoren durch "sokratisches Fragen" effektiv unterrichten können. Der Exkurs illustriert die allgemeine These (Hype übersteigt Evidenz) an einem konkreten Beispiel und liefert praktische Kriterien zur Bewertung solcher Claims.
+:::
+
+### Slide: Der Hype um den digitalen Sokrates
+
+::: {.callout-tip}
+## Sprechernotizen
+**Kontext:** Viele EdTech-Unternehmen bewerben ihre KI-Tutoren mit dem Versprechen "sokratischer Methode". Das klingt pädagogisch anspruchsvoll und vertrauenswürdig.
+
+**Blooms "Two Sigma Problem" (1984):**
+- Berühmte Studie: 1:1-Tutoring erzielt 2 Standardabweichungen Verbesserung
+- Das würde einen durchschnittlichen Studierenden in die Top 2% bringen
+- **Aber:** Diese Zahl wird heute als übertrieben angesehen (methodische Artefakte)
+
+**Das Versprechen der EdTech:**
+- Demokratisierung: Jeder bekommt einen persönlichen Tutor
+- Skalierung: KI kann unbegrenzt viele Lernende betreuen
+- Personalisierung: Anpassung an individuelles Tempo
+
+**Rhetorischer Hinweis:** Die Callout-Box ("Die Begeisterung übersteigt die Evidenz erheblich") ist die Kernaussage. Lass sie wirken, bevor du erklärst, warum.
+:::
+
+### Slide: Warum Fragen theoretisch helfen könnten
+
+::: {.callout-tip}
+## Sprechernotizen
+**Die zwei Effekte:**
+
+1. **Generierungseffekt** (Slamecka & Graf, 1978):
+   - Selbst erzeugte Information wird besser behalten
+   - Meta-Analyse: d = 0.40 über 86 Studien
+   - Das ist derselbe Effekt, den wir in Teil 4 besprochen haben
+
+2. **Selbsterklärungseffekt** (Chi et al., 1994):
+   - Erklären fördert tiefere Verarbeitung
+   - Deckt Wissenslücken auf
+   - Integriert neues mit bestehendem Wissen
+
+**Die entscheidende Einschränkung:** "Diese Effekte erfordern, dass Lernende genug Vorwissen haben, um sinnvolle Antworten zu generieren."
+
+Das verknüpft direkt mit dem Expertise-Umkehr-Effekt: Was für Fortgeschrittene funktioniert, kann Novizen überfordern.
+
+**Rhetorischer Hinweis:** Hier zeigen, dass die theoretische Grundlage solide ist — das Problem liegt in der Implementierung.
+:::
+
+### Slide: Was die Evidenz tatsächlich zeigt
+
+::: {.callout-tip}
+## Sprechernotizen
+**VanLehn (2011) Meta-Analyse:**
+- Untersuchte die Effektivität verschiedener Tutoring-Formen
+- **Menschliche Tutoren:** d = 0.79 (nicht 2.0 wie Bloom behauptete!)
+- **Intelligente Tutorsysteme:** d = 0.76 (überraschend nah an Menschen)
+
+**Wichtige Nuance:** Der Effekt kam primär von:
+- Schritt-für-Schritt Feedback
+- Gezielte Hinweise (Hints)
+- **Nicht** vom sokratischen Dialog an sich
+
+**Zu LLM-basierten Tutoren:**
+- Keine gut kontrollierten RCTs vorhanden
+- Existierende Studien messen meist Zufriedenheit, nicht Lernen
+- Vergleiche oft mit "kein Tutoring" statt mit Alternativen
+
+**Mögliche Frage:** "Aber es gibt doch Studien, die positive Effekte zeigen?"
+**Antwort:** Ja, aber: (1) meist kurzfristig, (2) oft Zufriedenheit statt Lernoutcomes, (3) Vergleich mit Nichts statt mit Alternativen. Das ist methodisch schwach.
+:::
+
+### Slide: Das Diagnose-Problem
+
+::: {.callout-tip}
+## Sprechernotizen
+**Das Kernproblem:** Effektives sokratisches Fragen erfordert, dass der Tutor versteht, *warum* ein Lernender einen Fehler macht.
+
+**Das Bruchrechnen-Beispiel:**
+"1/2 + 1/3 = 2/5" — Drei mögliche Ursachen:
+
+1. **Prozeduraler Fehler:** Zähler und Nenner separat addiert
+   → Lösung: Prozedur korrigieren
+
+2. **Konzeptueller Fehler:** Versteht nicht, was Brüche repräsentieren
+   → Lösung: Zurück zu Grundkonzepten
+
+3. **Flüchtigkeitsfehler:** Weiss es eigentlich, hat sich vertan
+   → Lösung: Kurzer Hinweis reicht
+
+**Die sokratische Frage muss unterschiedlich sein, je nach Ursache!**
+
+Menschliche Tutoren nutzen:
+- Mimik und Körpersprache
+- Tonfall und Zögern
+- Rückfragen und Hypothesentesten
+- Jahrelange Erfahrung mit typischen Fehlern
+
+**KI-Systeme:** Haben nur den Text. Können die Unterscheidung nicht zuverlässig treffen.
+:::
+
+### Slide: Weitere Implementierungsherausforderungen
+
+::: {.callout-tip}
+## Sprechernotizen
+**Fragesequenzierung:**
+- Sokratischer Dialog ist kontingent — jede Frage hängt von der vorherigen Antwort ab
+- Es gibt keine feste Sequenz, die man programmieren kann
+- LLMs generieren Token für Token, haben keinen pädagogischen Plan
+- Sie können nicht vorausdenken: "Wenn der Lernende X antwortet, frage ich Y, wenn Z, dann W"
+
+**Feedback-Timing:**
+- Wann sollte man korrigieren vs. weiter fragen lassen?
+- Zu früh: Der Lernende denkt nicht selbst nach
+- Zu spät: Frustration, Fehlkonzepte verfestigen sich
+- Die richtige Balance hängt vom individuellen Lernenden ab
+
+**LLM-Sycophancy:**
+- LLMs sind darauf trainiert, hilfreich und angenehm zu sein
+- Sie tendieren dazu, Nutzern zuzustimmen
+- Das ist das Gegenteil von produktivem sokratischem Unbehagen
+- Sokrates machte seine Gesprächspartner oft *unbequem* — das war der Punkt
+
+**Rhetorischer Hinweis:** Diese technischen Details zeigen, warum das Problem nicht trivial lösbar ist.
+:::
+
+### Slide: Praktische Empfehlungen
+
+::: {.callout-tip}
+## Sprechernotizen
+**Fünf Kriterien für die Evaluation von KI-Tutoring-Tools:**
+
+1. **Evidenz verlangen:**
+   - Peer-Review-Studien, nicht Marketing-Behauptungen
+   - Lernoutcomes, nicht nur Zufriedenheit
+   - Vergleich mit aktiven Kontrollbedingungen
+
+2. **Diagnose-Fähigkeit prüfen:**
+   - Kann das System zwischen Fehlertypen unterscheiden?
+   - Passt es seine Fragen an?
+   - Oder stellt es generische "sokratische" Fragen?
+
+3. **Opportunitätskosten bedenken:**
+   - Zeit mit KI-Tutor = Zeit nicht mit anderen Methoden
+   - Ist KI besser als: Lehrbuch, Übungsaufgaben, Peer-Diskussion?
+
+4. **Mit strukturierten Domänen beginnen:**
+   - Mathematik: klare richtig/falsch-Unterscheidung
+   - Vor: Literaturanalyse, ethische Argumentation
+
+5. **Auf unbeabsichtigte Folgen achten:**
+   - Gaming: Lernende manipulieren das System
+   - Abhängigkeit: Können sie ohne KI-Prompts denken?
+
+**Rhetorischer Hinweis:** Diese Liste ist praktisch anwendbar — Teilnehmende können sie mitnehmen.
+:::
+
+### Slide: Fazit zum sokratischen KI-Tutoring
+
+::: {.callout-tip}
+## Sprechernotizen
+**Das Zitat:** "Die ehrliche Antwort ist: Wir wissen es noch nicht."
+
+**Die zwei Spalten fassen zusammen:**
+
+*Was plausibel ist:*
+- Selbsterklärung fördert Lernen (gut belegt)
+- Generierung ist effektiver als passive Rezeption (gut belegt)
+- Fragen können diese Prozesse anregen (plausibel)
+
+*Was nicht belegt ist:*
+- Dass aktuelle LLMs die nötige Diagnose leisten können
+- Dass LLM-basierte sokratische Tutoren besser sind als Alternativen
+- Dass die positiven Effekte langfristig halten
+
+**Der Schlusssatz:** "Sokrates würde es schätzen: Die beste Art, Werkzeuge zu bewerten, die seine Methode beanspruchen, ist, kritische Fragen zu stellen und unbegründete Antworten nicht zu akzeptieren."
+
+**Rhetorischer Hinweis:** Das ist ein meta-Punkt: Wir wenden die sokratische Methode auf die Behauptung an, dass KI sokratisch tutoren kann.
+
+**Überleitung:** "Dieses Beispiel illustriert ein breiteres Muster: Begeisterung übersteigt Evidenz. Im letzten Teil ziehen wir die Konsequenzen."
 :::
 
 ---

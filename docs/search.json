@@ -58,7 +58,7 @@
     "href": "slides/ai-higher-ed-short/index.html#die-bastani-studie",
     "title": "KI in der Hochschulbildung",
     "section": "Die Bastani-Studie",
-    "text": "Die Bastani-Studie\nRandomisierte kontrollierte Studie (Bastani u. a. 2024)\n~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst\n127% mit “GPT Tutor”\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”"
+    "text": "Die Bastani-Studie\nRandomisierte kontrollierte Studie (Bastani u. a. 2024) (Einzelstudie)\n~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst (direkter Zugang)\n127% mit “GPT Tutor” (strukturierte Unterstützung)\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”\n\nHinweis: Die Schlussfolgerungen gelten v.a. für KI als Antwortgeber, nicht als pädagogisch gestalteter Tutor."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#das-paradox-in-einem-satz",
@@ -86,7 +86,7 @@
     "href": "slides/ai-higher-ed-short/index.html#historische-analogien",
     "title": "KI in der Hochschulbildung",
     "section": "Historische Analogien",
-    "text": "Historische Analogien\nGPS (Dahmani und Bohbot 2020): Längere Nutzung → steilerer Rückgang des räumlichen Gedächtnisses\n\nTaschenrechner (Siegler und Lortie-Forgues 2017): Neutral für jene mit Fähigkeiten, schädlich für jene ohne\n\n\nGoogle-Effekt (Sparrow, Liu, und Wegner 2011): Geringere Erinnerung, wenn Information als verfügbar erwartet wird\n\n\nMuster: Werkzeuge, die Experten helfen, können Novizen schaden."
+    "text": "Historische Analogien\nGPS (Dahmani und Bohbot 2020): Längere Nutzung → steilerer Rückgang des räumlichen Gedächtnisses\n\nTaschenrechner (Siegler und Lortie-Forgues 2017): Neutral für jene mit Fähigkeiten, schädlich für jene ohne\n\n\nGoogle-Effekt (Sparrow, Liu, und Wegner 2011): Geringere Erinnerung, wenn Information als verfügbar erwartet wird\n\n\nMuster: Werkzeuge, die Experten helfen, können Novizen schaden.\nAber: Diese Analogien sind begrenzt — KI ist breiter als GPS oder Taschenrechner."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#der-expertise-umkehr-effekt",
@@ -100,7 +100,7 @@
     "href": "slides/ai-higher-ed-short/index.html#warum-experten-profitieren",
     "title": "KI in der Hochschulbildung",
     "section": "Warum Experten profitieren",
-    "text": "Warum Experten profitieren\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nErfahrung mit dem Domänengebiet\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
+    "text": "Warum Experten profitieren\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nRisiko: “Fliessende Inkompetenz”\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#kritisches-denken-ist-domänenspezifisch",
@@ -114,7 +114,7 @@
     "href": "slides/ai-higher-ed-short/index.html#die-unbequeme-wahrheit",
     "title": "KI in der Hochschulbildung",
     "section": "Die unbequeme Wahrheit",
-    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies ist keine Einschränkung aktueller KI. Es ist ein Prinzip der Kognitionswissenschaft."
+    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#mind-extending-vs.-mind-replacing",
@@ -128,7 +128,7 @@
     "href": "slides/ai-higher-ed-short/index.html#abschliessende-provokationen",
     "title": "KI in der Hochschulbildung",
     "section": "Abschliessende Provokationen",
-    "text": "Abschliessende Provokationen\n\n“If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable.”\n\n\n\n“The productivity gains during education would come at the cost of capability thereafter.”\n\n\n\n\n“Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify.”"
+    "text": "Abschliessende Provokationen\n\n“If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable.”\n\n\n\n“The productivity gains during education would come at the cost of capability thereafter.”\n\n\n\n\n“Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify.”\n\n\n\n\n“Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt.”"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#diskussion",
@@ -281,7 +281,7 @@
     "href": "slides/ai-higher-ed/index.html#willinghams-herausforderung",
     "title": "KI in der Hochschulbildung",
     "section": "Willinghams Herausforderung",
-    "text": "Willinghams Herausforderung\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\n(Willingham 2008)\n\n\nDenkprozesse sind fundamental mit Fachwissen verflochten."
+    "text": "Willinghams Herausforderung\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\n(Willingham 2008)\n\n\nDenkprozesse sind eng mit Fachwissen verflochten.\nWillinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#evidenz-für-domänenspezifität",
@@ -295,7 +295,7 @@
     "href": "slides/ai-higher-ed/index.html#angewendet-auf-ki-bewertung",
     "title": "KI in der Hochschulbildung",
     "section": "Angewendet auf KI-Bewertung",
-    "text": "Angewendet auf KI-Bewertung\n\n\nExperte in Biomedizin:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\nHat das Domänenwissen zur Bewertung\n\nNovize:\nKann diese Bewertung nicht vornehmen, unabhängig von “kritischem Denken”\nFehlendes Fachwissen verhindert Evaluation\n\n\nWas wie “kritisches Denken” aussieht, ist tatsächlich Domänenwissen."
+    "text": "Angewendet auf KI-Bewertung\n\n\nExperte in Biomedizin:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\nHat das Domänenwissen zur Bewertung\n\nNovize:\nKann diese Bewertung nicht vornehmen, unabhängig von “kritischem Denken”\nFehlendes Fachwissen verhindert Evaluation\n\n\nWas wie “kritisches Denken” aussieht, ist oft Domänenwissen in Aktion."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-metakognitions-lücke",
@@ -309,7 +309,7 @@
     "href": "slides/ai-higher-ed/index.html#die-zentrale-implikation",
     "title": "KI in der Hochschulbildung",
     "section": "Die zentrale Implikation",
-    "text": "Die zentrale Implikation\n\n\n\n\n\n\nKernaussage\n\n\n\nStudierende, die “mit hohem kritischem Denken” von KI profitieren, haben wahrscheinlich mehr Domänenexpertise\nDie beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen\nGenerische “KI-Kompetenz” kann Fachwissen nicht ersetzen"
+    "text": "Die zentrale Implikation\n\n\n\n\n\n\nKernaussage\n\n\n\nStudierende, die “mit hohem kritischem Denken” von KI profitieren, haben wahrscheinlich mehr Domänenexpertise\nDie beste Vorbereitung für kritische KI-Nutzung ist tiefes Fachlernen\nGenerische “KI-Kompetenz” kann Fachwissen ergänzen, aber nicht ersetzen"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#diskussion-1",
@@ -330,14 +330,14 @@
     "href": "slides/ai-higher-ed/index.html#die-bastani-studie-mathematik",
     "title": "KI in der Hochschulbildung",
     "section": "Die Bastani-Studie: Mathematik",
-    "text": "Die Bastani-Studie: Mathematik\nRandomisierte kontrollierte Studie (Bastani u. a. 2024)\n\n~1000 türkische Gymnasiasten\nGPT-4 Zugang während des Übens\n\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst\n127% mit “GPT Tutor”\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”"
+    "text": "Die Bastani-Studie: Mathematik\nRandomisierte kontrollierte Studie (Bastani u. a. 2024)\nEinzelstudie, Replikation ausstehend\n\n~1000 türkische Gymnasiasten\nGPT-4 Zugang während des Übens\n\n\n\n\nMit KI:\n48% mehr Aufgaben korrekt gelöst (direkter Zugang)\n127% mit “GPT Tutor” (strukturierte Unterstützung)\n\nOhne KI (später):\n17% schlechter als Kontrollgruppe\nDie nie KI hatte\n\n\n\n\n“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”\n\n\n\n\n\n\n\n\n\nNuance\n\n\nDie Schlussfolgerungen gelten hauptsächlich für KI als Antwortgeber. KI als pädagogisch gestalteter Tutor könnte andere Effekte haben — wie die 127% beim “GPT Tutor” andeuten."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#desirable-difficulties-warum-anstrengung-nötig-ist",
     "href": "slides/ai-higher-ed/index.html#desirable-difficulties-warum-anstrengung-nötig-ist",
     "title": "KI in der Hochschulbildung",
     "section": "Desirable Difficulties: Warum Anstrengung nötig ist",
-    "text": "Desirable Difficulties: Warum Anstrengung nötig ist\nRobert Bjork (Bjork und Bjork 2011)\n\n“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”\n\n\nVier bewährte “erwünschte Schwierigkeiten”:\n\nVariation der Lernbedingungen\nInterleaving: Mischen von Aufgabentypen\nSpacing: Verteiltes statt massiertes Lernen\nRetrieval Practice: Abrufen statt Wiederlesen"
+    "text": "Desirable Difficulties: Warum Anstrengung nötig ist\nRobert Bjork (Bjork und Bjork 2011)\n\n“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”\n\n\nVier bewährte “erwünschte Schwierigkeiten”:\n\nVariation der Lernbedingungen\nInterleaving: Mischen von Aufgabentypen\nSpacing: Verteiltes statt massiertes Lernen\nRetrieval Practice: Abrufen statt Wiederlesen\n\n\n\n\n\n\n\n\n\nMechanismus\n\n\nSofortiger KI-Zugang kann Abrufversuche kurzschliessen, bevor sie Gedächtnisspuren stärken können."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#der-generierungseffekt",
@@ -358,7 +358,7 @@
     "href": "slides/ai-higher-ed/index.html#warum-experten-profitieren-lernende-nicht",
     "title": "KI in der Hochschulbildung",
     "section": "Warum Experten profitieren, Lernende nicht",
-    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nErfahrung mit dem Domänengebiet\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
+    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nRisiko: “Fliessende Inkompetenz” — anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#diskussion-think-pair-share-1",
@@ -372,7 +372,7 @@
     "href": "slides/ai-higher-ed/index.html#die-unbequeme-wahrheit",
     "title": "KI in der Hochschulbildung",
     "section": "Die unbequeme Wahrheit",
-    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies ist keine Einschränkung aktueller KI. Es ist ein Prinzip der Kognitionswissenschaft."
+    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#mind-extending-vs.-mind-replacing",
@@ -407,7 +407,7 @@
     "href": "slides/ai-higher-ed/index.html#abschliessende-provokationen",
     "title": "KI in der Hochschulbildung",
     "section": "Abschliessende Provokationen",
-    "text": "Abschliessende Provokationen\n\n“If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable.”\n\n\n\n“The productivity gains during education would come at the cost of capability thereafter.”\n\n\n\n\n“Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify.”"
+    "text": "Abschliessende Provokationen\n\n“If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable.”\n\n\n\n“The productivity gains during education would come at the cost of capability thereafter.”\n\n\n\n\n“Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify.”\n\n\n\n\n“Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt.”"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#offene-diskussion",
@@ -421,6 +421,111 @@
     "href": "slides/ai-higher-ed/index.html#referenzen",
     "title": "KI in der Hochschulbildung",
     "section": "Referenzen",
-    "text": "Referenzen\n\n\nAnderson, John R. 1982. „Acquisition of Cognitive Skill“. Psychological Review 89 (4): 369–406. https://doi.org/10.1037/0033-295X.89.4.369.\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2024. „Generative AI Can Harm Learning“. SSRN Scholarly Paper. Rochester, NY. 15. Juli 2024. https://doi.org/10.2139/ssrn.4895486.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nClark, Andy. 2025. „Extending Minds with Generative AI“. Nature Communications 16 (1): 4627. https://doi.org/10.1038/s41467-025-59906-9.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory during Self-Guided Navigation“. Scientific Reports 10: 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nJose, Bejoy, Boby Cyriac, A. P. Vinod, und Tessy Jose. 2025. „The Cognitive Paradox of AI in Education: Between Enhancement and Erosion“. Frontiers in Psychology 16: 1550621. https://doi.org/10.3389/fpsyg.2025.1550621.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nSiegler, Robert S., und Hugues Lortie-Forgues. 2017. „Developing Conceptual Understanding and Procedural Skill in Mathematics: An Iterative Process“. Journal of Educational Psychology 109 (8): 1024–34. https://doi.org/10.1037/edu0000173.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nTrucano, Michael. 2024. „The Third Digital Divide: Access, Skills, and Now ... AI Support?“ Brookings Institution. 2024. https://www.brookings.edu/articles/the-third-digital-divide/.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
+    "text": "Referenzen\n\n\nAnderson, John R. 1982. „Acquisition of Cognitive Skill“. Psychological Review 89 (4): 369–406. https://doi.org/10.1037/0033-295X.89.4.369.\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2024. „Generative AI Can Harm Learning“. SSRN Scholarly Paper. Rochester, NY. 15. Juli 2024. https://doi.org/10.2139/ssrn.4895486.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nChi, Michelene T. H., Nicholas De Leeuw, Mei-Hung Chiu, und Christian Lavancher. 1994. „Eliciting Self-Explanations Improves Understanding“. Cognitive Science 18 (3): 439–77. https://doi.org/10.1207/s15516709cog1803_3.\n\n\nClark, Andy. 2025. „Extending Minds with Generative AI“. Nature Communications 16 (1): 4627. https://doi.org/10.1038/s41467-025-59906-9.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory during Self-Guided Navigation“. Scientific Reports 10: 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nJose, Bejoy, Boby Cyriac, A. P. Vinod, und Tessy Jose. 2025. „The Cognitive Paradox of AI in Education: Between Enhancement and Erosion“. Frontiers in Psychology 16: 1550621. https://doi.org/10.3389/fpsyg.2025.1550621.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nSiegler, Robert S., und Hugues Lortie-Forgues. 2017. „Developing Conceptual Understanding and Procedural Skill in Mathematics: An Iterative Process“. Journal of Educational Psychology 109 (8): 1024–34. https://doi.org/10.1037/edu0000173.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nTrucano, Michael. 2024. „The Third Digital Divide: Access, Skills, and Now ... AI Support?“ Brookings Institution. 2024. https://www.brookings.edu/articles/the-third-digital-divide/.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#die-scaffolding-hypothese",
+    "href": "slides/ai-higher-ed/index.html#die-scaffolding-hypothese",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die Scaffolding-Hypothese",
+    "text": "Die Scaffolding-Hypothese\nGrundfertigkeiten als konstruktive Prozesse\n\nSchreiben, Rechnen, Lesen sind nicht nur Fertigkeiten\nSie sind Prozesse, die kognitive Architektur aufbauen\nSchreiben als epistemisches Werkzeug: Gedanken entwickeln sich durch das Schreiben\nWenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht\n\n\n\n\n\n\n\n\nWichtige Unterscheidung\n\n\nFertigkeitsatrophie (Fähigkeit verkümmert) vs. Entwicklungsbeeinträchtigung (Fähigkeit entsteht nie)"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#grenzen-historischer-analogien",
+    "href": "slides/ai-higher-ed/index.html#grenzen-historischer-analogien",
+    "title": "KI in der Hochschulbildung",
+    "section": "Grenzen historischer Analogien",
+    "text": "Grenzen historischer Analogien\n\nGPS, Taschenrechner, Google: jeweils spezifische, enge kognitive Funktionen\nGenerative KI kann fast jede kognitive Aufgabe übernehmen\nSchreiben, Argumentieren, Analysieren, Synthetisieren, Bewerten\nDie Breite ist beispiellos\n\n\nAber: Die historischen Bedenken hatten oft Berechtigung. GPS beeinflusst räumliche Kognition. Taschenrechner veränderten Mathematikunterricht."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#das-haben-sie-über-das-schreiben-auch-gesagt",
+    "href": "slides/ai-higher-ed/index.html#das-haben-sie-über-das-schreiben-auch-gesagt",
+    "title": "KI in der Hochschulbildung",
+    "section": "“Das haben sie über das Schreiben auch gesagt”",
+    "text": "“Das haben sie über das Schreiben auch gesagt”\nSokrates’ Warnung im Phaidros: Schrift wird das Gedächtnis schwächen.\n\nDrei Antworten:\n\nSchrift hat Kognition tiefgreifend verändert\nEinige Bedenken waren berechtigt (mündliche Gedächtnistraditionen sind zurückgegangen)\nSchriftkultur entwickelte sich über Jahrhunderte — KI-Integration geschieht in Jahren"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#die-entwicklungsfrage",
+    "href": "slides/ai-higher-ed/index.html#die-entwicklungsfrage",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die Entwicklungsfrage",
+    "text": "Die Entwicklungsfrage\nSensible Phasen in der kognitiven Entwicklung\n\nPräfrontaler Kortex entwickelt sich bis Mitte 20\nExekutive Funktionen, Metakognition, Selbstregulation noch in Entwicklung\nParadox: Jene, die KI-Nutzung am wenigsten regulieren können, sind am verletzlichsten\n\n\n\n\n\n\n\n\nDie Kohortenfrage\n\n\nDie aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.\nWenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#der-stärkste-gegeneinwand",
+    "href": "slides/ai-higher-ed/index.html#der-stärkste-gegeneinwand",
+    "title": "KI in der Hochschulbildung",
+    "section": "Der stärkste Gegeneinwand",
+    "text": "Der stärkste Gegeneinwand\n\n“Wenn KI immer verfügbar ist, müssen Fähigkeiten nicht internalisiert werden.”\n\n\nVier Antworten:\n\nPermanenzannahme: Setzt voraus, dass KI immer verfügbar, funktional und bezahlbar bleibt\nRekursionsproblem: Wer erkennt, wenn KI falsch liegt? Wer erweitert menschliches Wissen?\nAutonomie-Argument: Eigenständige kognitive Fähigkeit hat intrinsischen Wert\nUnbekannte Unbekannte: Wir wissen nicht, welche Kaskadeneffekte folgen könnten"
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#offene-fragen",
+    "href": "slides/ai-higher-ed-short/index.html#offene-fragen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Offene Fragen",
+    "text": "Offene Fragen\n\nScaffolding-Hypothese: Werden Grundfertigkeiten nur verlernt, oder entstehen höhere Fähigkeiten gar nicht erst?\nEntwicklungsfrage: Sind Lernende in sensiblen Entwicklungsphasen besonders gefährdet?\nDer stärkste Gegeneinwand: “Wenn KI immer verfügbar ist, brauchen wir diese Fähigkeiten nicht mehr.” — Aber wer erkennt dann Fehler? Wer erweitert Wissen?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#was-transferiert-und-was-nicht",
+    "href": "slides/ai-higher-ed/index.html#was-transferiert-und-was-nicht",
+    "title": "KI in der Hochschulbildung",
+    "section": "Was transferiert — und was nicht",
+    "text": "Was transferiert — und was nicht\n\n\nTransferiert (teilweise):\n\nPlanung des Vorgehens\nÜberwachung des Verständnisses\nSelbstregulation\nBereitschaft, Annahmen zu hinterfragen\n\nMetakognitive Strategien zeigen gewisse Generalisierung\n\nTransferiert kaum:\n\nWissen, was plausibel ist\nWissen, welche Quellen autoritativ sind\nErkennen von fachspezifischen Fehlern\n\nInhaltliche Bewertung erfordert Domänenwissen\n\n\nKernpunkt: Die Strategien kann man lehren — ihre Anwendung erfordert Fachwissen."
+  },
+  {
+    "objectID": "slides/ai-higher-ed-short/index.html#kritisches-denken-braucht-fachwissen",
+    "href": "slides/ai-higher-ed-short/index.html#kritisches-denken-braucht-fachwissen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Kritisches Denken braucht Fachwissen",
+    "text": "Kritisches Denken braucht Fachwissen\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\n(Willingham 2008)\n\nWillinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen.\n\n\n\nExperte in Biomedizin:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\n\nNovize:\nKann diese Bewertung nicht vornehmen, auch mit guten metakognitiven Strategien\n\n\n\nMetakognitive Strategien helfen — aber ihre Anwendung erfordert Fachwissen."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#der-hype-um-den-digitalen-sokrates",
+    "href": "slides/ai-higher-ed/index.html#der-hype-um-den-digitalen-sokrates",
+    "title": "KI in der Hochschulbildung",
+    "section": "Der Hype um den digitalen Sokrates",
+    "text": "Der Hype um den digitalen Sokrates\n\nEdTech verspricht: KI-Tutoren mit “sokratischer Methode”\nBlooms “Two Sigma Problem”: 1:1-Tutoring erzielt 2 SD Verbesserung\nVersprechen: Demokratisierung personalisierter Bildung durch KI\n\n\n\n\n\n\n\n\nAber\n\n\nDie Begeisterung übersteigt die Evidenz erheblich."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#warum-fragen-theoretisch-helfen-könnten",
+    "href": "slides/ai-higher-ed/index.html#warum-fragen-theoretisch-helfen-könnten",
+    "title": "KI in der Hochschulbildung",
+    "section": "Warum Fragen theoretisch helfen könnten",
+    "text": "Warum Fragen theoretisch helfen könnten\n\n\nGenerierungseffekt\nSelbst erzeugte Antworten werden besser behalten als passiv erhaltene (Slamecka und Graf 1978)\n\nSelbsterklärungseffekt\nErklären fördert tiefere Verarbeitung und deckt Wissenslücken auf (Chi u. a. 1994)\n\n\nAber: Diese Effekte erfordern, dass Lernende genug Vorwissen haben, um sinnvolle Antworten zu generieren."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#was-die-evidenz-tatsächlich-zeigt",
+    "href": "slides/ai-higher-ed/index.html#was-die-evidenz-tatsächlich-zeigt",
+    "title": "KI in der Hochschulbildung",
+    "section": "Was die Evidenz tatsächlich zeigt",
+    "text": "Was die Evidenz tatsächlich zeigt\nVanLehn (2011): Meta-Analyse zu Tutoring\n\nMenschliche Tutoren: d = 0.79 (nicht 2.0 wie Bloom behauptete)\nIntelligente Tutorsysteme: d = 0.76 (vergleichbar)\nAber: Effekt kam von Feedback und Hints, nicht vom sokratischen Dialog\n\n\n\n\n\n\n\n\nZu LLM-basierten sokratischen Tutoren\n\n\nKeine gut kontrollierten RCTs vorhanden. Die Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit “kein Tutoring”."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#das-diagnose-problem",
+    "href": "slides/ai-higher-ed/index.html#das-diagnose-problem",
+    "title": "KI in der Hochschulbildung",
+    "section": "Das Diagnose-Problem",
+    "text": "Das Diagnose-Problem\nEffektives sokratisches Fragen erfordert:\n\nGenaue Einschätzung des aktuellen Wissensstands\nUnterscheidung verschiedener Fehlertypen\nAnpassung der Fragen an den Lernenden\n\n\nBeispiel: “1/2 + 1/3 = 2/5” kann bedeuten:\n\nProzeduraler Fehler (Zähler und Nenner addiert)\nKonzeptueller Fehler (versteht Brüche nicht)\nFlüchtigkeitsfehler\n\n\n\nKI-Systeme können diese Unterscheidung nicht zuverlässig treffen."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#weitere-implementierungsherausforderungen",
+    "href": "slides/ai-higher-ed/index.html#weitere-implementierungsherausforderungen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Weitere Implementierungsherausforderungen",
+    "text": "Weitere Implementierungsherausforderungen\n\n\nFragesequenzierung\n\nSokratischer Dialog ist kontingent\nJede Frage baut auf vorherigen Antworten auf\nLLMs generieren Token, keine pädagogischen Pläne\n\n\nFeedback-Timing\n\nWann korrigieren, wann weiter fragen?\nAbhängig von Lernenden und Fehlertyp\nKI kann das nicht zuverlässig beurteilen\n\n\n\nTendenz von LLMs: Zu nachgiebig, akzeptieren falsche Antworten, vermeiden produktives Unbehagen"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#praktische-empfehlungen",
+    "href": "slides/ai-higher-ed/index.html#praktische-empfehlungen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Praktische Empfehlungen",
+    "text": "Praktische Empfehlungen\n\nEvidenz verlangen: Peer-Review-Studien mit Lernoutcomes, nicht nur Zufriedenheit\nDiagnose-Fähigkeit prüfen: Kann das System verschiedene Fehlertypen unterscheiden?\nOpportunitätskosten bedenken: Ist KI-Tutoring besser als Alternativen?\nMit strukturierten Domänen beginnen: Mathematik vor Literaturanalyse\nAuf unbeabsichtigte Folgen achten: Gaming, Abhängigkeit von externen Prompts"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#fazit-zum-sokratischen-ki-tutoring",
+    "href": "slides/ai-higher-ed/index.html#fazit-zum-sokratischen-ki-tutoring",
+    "title": "KI in der Hochschulbildung",
+    "section": "Fazit zum sokratischen KI-Tutoring",
+    "text": "Fazit zum sokratischen KI-Tutoring\n\n“Die ehrliche Antwort ist: Wir wissen es noch nicht.”\n\n\n\n\nWas plausibel ist:\nSelbsterklärung und Generierung fördern Lernen\n\nWas nicht belegt ist:\nDass aktuelle KI-Systeme dies effektiv implementieren können\n\n\n\nSokrates würde es schätzen: Die beste Art, Werkzeuge zu bewerten, die seine Methode beanspruchen, ist, kritische Fragen zu stellen und unbegründete Antworten nicht zu akzeptieren."
   }
 ]
