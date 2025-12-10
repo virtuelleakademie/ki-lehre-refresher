@@ -1,8 +1,12 @@
 ---
 title: "KI in der Hochschulbildung"
 subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
-author: "Andrew Ellis"
-institute: "Virtuelle Akademie, Berner Fachhochschule"
+author:
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936"
 format:
   revealjs:
     theme: default

@@ -898,10 +898,6 @@ KI-Werkzeuge sind für Experten gemacht.
 
 **Anstrengung ist das Signal**
 
-. . .
-
-Wenn Lernen zu leicht fühlt, findet es wahrscheinlich nicht statt.
-
 :::
 
 ::: {.column width="33%"}
@@ -911,10 +907,6 @@ Wenn Lernen zu leicht fühlt, findet es wahrscheinlich nicht statt.
 <br>
 
 **KI als Tutor, nicht als Antwortgeber**
-
-. . .
-
-KI soll Denkprozesse anregen, nicht ersetzen.
 
 :::
 
@@ -926,19 +918,41 @@ KI soll Denkprozesse anregen, nicht ersetzen.
 
 **Expertise bestimmt den Nutzen**
 
+:::
+:::
+
 . . .
 
-Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.
+::: {.columns}
+::: {.column width="33%"}
+
+[Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.]{style="color: #666;"}
+
+:::
+
+::: {.column width="33%"}
+
+[KI soll Denkprozesse anregen, nicht ersetzen.]{style="color: #666;"}
+
+:::
+
+::: {.column width="33%"}
+
+[Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.]{style="color: #666;"}
 
 :::
 :::
 
 . . .
 
-<br><br>
+<br>
 
-::: {style="background-color: #F5E6C8; padding: 1em; border-radius: 8px; text-align: center;"}
-{{< fa lightbulb >}} **Grundlagen BEVOR Werkzeuge** — und dann: schrittweise Verantwortung übergeben.
+::: {style="background-color: #F5E6C8; padding: 1em; border-radius: 8px; text-align: left;"}
+{{< fa lightbulb >}} Fachwissen ist unerlässlich. 
+
+{{< fa lightbulb >}} KI-Nutzung sollte an den Kenntnisstand der Lernenden angepasst werden.
+
+{{< fa lightbulb >}} Kritische KI-Nutzung im Fachkontext üben
 :::
 
 ## Referenzen
