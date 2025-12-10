@@ -948,11 +948,9 @@ KI-Werkzeuge sind für Experten gemacht.
 <br>
 
 ::: {style="background-color: #F5E6C8; padding: 1em; border-radius: 8px; text-align: left;"}
-{{< fa lightbulb >}} Fachwissen ist unerlässlich. 
+{{< fa lightbulb >}} Fachwissen ist unerlässlich, und Kritische KI-Nutzung im Fachkontext üben
 
 {{< fa lightbulb >}} KI-Nutzung sollte an den Kenntnisstand der Lernenden angepasst werden.
-
-{{< fa lightbulb >}} Kritische KI-Nutzung im Fachkontext üben
 :::
 
 ## Referenzen
