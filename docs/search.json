@@ -114,7 +114,7 @@
     "href": "slides/ai-higher-ed/index.html#die-zentrale-frage",
     "title": "KI in der Hochschulbildung",
     "section": "Die zentrale Frage",
-    "text": "Die zentrale Frage\n\n\nWas KI kann:\n\nAnwaltsprüfungen bestehen\nCode schreiben und debuggen\nKrankheiten diagnostizieren\nWissenschaftliche Texte verfassen\nKomplexe Analysen durchführen\n\n\nWas wir nicht wissen:\n\n“48% mehr Aufgaben gelöst MIT KI, 17% schlechter OHNE KI”\n(Bastani u. a. 2025)\n\n\n\nDie Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?"
+    "text": "Die zentrale Frage\n\n\nWas KI kann:\n\nAnwaltsprüfungen bestehen\nCode schreiben und debuggen\nKrankheiten diagnostizieren\nWissenschaftliche Texte verfassen\nKomplexe Analysen durchführen\n\n\nAber was bedeutet das für Lernen?\n\nMit KI → 48% mehr Aufgaben gelöst\nOhne KI → 17% schlechter an der Prüfung\n\n(Bastani u. a. 2025)\n\n\nDie Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#wie-llms-text-produzieren",
@@ -156,7 +156,7 @@
     "href": "slides/ai-higher-ed/index.html#von-schwachen-zu-starken-methoden",
     "title": "KI in der Hochschulbildung",
     "section": "Von schwachen zu starken Methoden",
-    "text": "Von schwachen zu starken Methoden\nACT-R Theorie (Anderson 1982)\n\n\nNovizen: Schwache Methoden\n\nMittel-Ziel-Analyse\nVersuch und Irrtum\nAnalogiebildung\nRückwärtsarbeiten\n\n\nExperten: Starke Methoden\n\nAutomatische Mustererkennung\nProzeduralisiertes Wissen\nDirekte Lösungswege\n\n\n\nDer Übergang erfordert umfangreiche Übung."
+    "text": "Von schwachen zu starken Methoden\nNewell & Simon (Newell und Simon 1972) | ACT-R (Anderson 1982)\n\n\nNovizen: Schwache Methoden\n\nMittel-Ziel-Analyse\nVersuch und Irrtum\nAnalogiebildung\nRückwärtsarbeiten\n\n\nExperten: Starke Methoden\n\nAutomatische Mustererkennung\nProzeduralisiertes Wissen\nDirekte Lösungswege\n\n\n\nDer Übergang erfordert umfangreiche Übung."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#prozeduralisierung-und-kompilation",
@@ -198,7 +198,7 @@
     "href": "slides/ai-higher-ed/index.html#worked-examples-ein-robuster-befund",
     "title": "KI in der Hochschulbildung",
     "section": "Worked Examples: Ein robuster Befund",
-    "text": "Worked Examples: Ein robuster Befund\nStatt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen (Cooper und Sweller 1987)\n\n\nFür Novizen:\n\nReduziert extrinsische Belastung\nLässt Kapazität für Schemabildung\nEiner der robustesten Befunde der Instruktionsforschung\n\n\nAber Achtung:\nWorked Examples ≠ KI-generierte Lösungen\n\n\n\n\n\n\n\n\nDer entscheidende Unterschied\n\n\nWorked Examples sind didaktisch gestaltet, bauen systematisch Komplexität auf.\nKI-Antworten sind reaktiv und unsystematisch."
+    "text": "Worked Examples: Ein robuster Befund\nStatt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen (Cooper und Sweller 1987)\n\n\nFür Novizen:\n\nReduziert extrinsische Belastung\nLässt Kapazität für Schemabildung\nEiner der robustesten Befunde der Instruktionsforschung\n\n\nAber Achtung:\nWorked Examples ≠ KI-generierte Lösungen\n\n\n\n\n\n\n\n\nDer entscheidende Unterschied\n\n\nWorked Examples sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt.\nKI-generierte Antworten beantworten die gestellte Frage, aber ohne Einbettung in eine geplante Lernprogression.\n\n\n\n\n\n\n\n\n\n\n\nNuance\n\n\nLLMs können mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#von-worked-examples-zu-selbständigem-lösen",
@@ -296,7 +296,7 @@
     "href": "slides/ai-higher-ed/index.html#die-scaffolding-hypothese",
     "title": "KI in der Hochschulbildung",
     "section": "Die Scaffolding-Hypothese",
-    "text": "Die Scaffolding-Hypothese\nGrundfertigkeiten als konstruktive Prozesse\n\nSchreiben, Rechnen, Lesen sind nicht nur Fertigkeiten\nSie sind Prozesse, die kognitive Architektur aufbauen\nSchreiben als epistemisches Werkzeug: Gedanken entwickeln sich durch das Schreiben\nWenn diese Prozesse übersprungen werden, entstehen höhere Fähigkeiten möglicherweise nicht\n\n\n\n\n\n\n\n\nWichtig\n\n\nDies ist eine Hypothese, keine gesicherte Erkenntnis. Wir haben keine Längsschnittstudien, die zeigen, dass übersprungene kognitive Entwicklungsphasen irreversible Defizite verursachen.\n\n\n\n\n\n\n\n\n\n\n\nWichtige Unterscheidung\n\n\nFertigkeitsatrophie (Fähigkeit verkümmert) vs. Entwicklungsbeeinträchtigung (Fähigkeit entsteht nie)"
+    "text": "Die Scaffolding-Hypothese\nWas wissen wir, was vermuten wir?\n\nWas wir wissen (Evidenz): Atrophie von Fähigkeiten ist dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.\nWas wir theoretisch ableiten: Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der CLT.\nWas wir vermuten (Hypothese): Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung.\n\n\nDie Hypothese: Grundfertigkeiten wie Schreiben sind nicht nur Fertigkeiten, sondern Prozesse, die kognitive Architektur aufbauen. Schreiben könnte ein “epistemisches Werkzeug” sein.\n\n\n\n\n\n\n\n\nVorsicht\n\n\nDiese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#historische-analogien",
@@ -331,7 +331,7 @@
     "href": "slides/ai-higher-ed/index.html#warum-experten-profitieren-lernende-nicht",
     "title": "KI in der Hochschulbildung",
     "section": "Warum Experten profitieren, Lernende nicht",
-    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern\nHöheres Denken aufrechterhalten\nKI-Outputs bewerten\nHaben Grundfähigkeiten, die nicht verkümmern\n\n\nLernenden fehlt:\n\nWissen zur Bewertung\nEtablierte Grundfähigkeiten\nMetakognitive Kontrolle\nRisiko: “Fliessende Inkompetenz” — anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen."
+    "text": "Warum Experten profitieren, Lernende nicht\n\n\nExperten können:\n\nRoutine-Aufgaben sicher auslagern (sie wissen, was “Routine” ist)\nHöheres Denken aufrechterhalten (kognitive Kapazität wird frei)\nKI-Outputs bewerten (sie haben Domänenexpertise)\nIhre Grundfähigkeiten verkümmern nicht (sie sind schon da)\n\n\nLernenden fehlt:\n\nWissen zur Bewertung (sie können nicht einschätzen, ob KI richtig liegt)\nEtablierte Grundfähigkeiten (was nicht da ist, entsteht auch nicht)\nMetakognitive Kontrolle (sie wissen nicht, wann KI-Nutzung schadet)\n\n\n\nDas Ergebnis kann “fliessende Inkompetenz” sein: Anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis.\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen. Das ist der Expertise-Umkehr-Effekt, angewandt auf KI."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#diskussion-think-pair-share-1",
@@ -394,42 +394,42 @@
     "href": "slides/ai-higher-ed/index.html#die-unbequeme-wahrheit",
     "title": "KI in der Hochschulbildung",
     "section": "Die unbequeme Wahrheit",
-    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, macht sie für Lernen schädlich.\nSofortige Antworten eliminieren die Anstrengung, die Kompetenz aufbaut.\nDies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft — wobei die direkte Evidenz für KI noch begrenzt ist."
+    "text": "Die unbequeme Wahrheit\n\n\n\n\n\n\nKernaussage\n\n\nWas KI für Produktivität nützlich macht, droht sie für Lernen schädlich zu machen.\nSofortige Antworten können die Anstrengung eliminieren, die Kompetenz aufbaut.\nDies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.\n\n\n\n\n\n\n\n\n\n\nEinschränkung\n\n\nEs gibt noch wenige Studien, die direkt messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#mind-extending-vs.-mind-replacing",
     "href": "slides/ai-higher-ed/index.html#mind-extending-vs.-mind-replacing",
     "title": "KI in der Hochschulbildung",
     "section": "Mind-extending vs. Mind-replacing",
-    "text": "Mind-extending vs. Mind-replacing\nAndy Clark (Clark 2025)\n\n\nKognition erweitern:\n\nErhält kognitive Engagement\nLeitet Anstrengung um auf höhere Aufgaben\nMensch bleibt in der Schleife\nFähigkeiten bleiben intakt\n\n\nKognition ersetzen:\n\nEliminiert Engagement\nErzeugt Abhängigkeit\nPassives Akzeptieren\nFähigkeiten verkümmern\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung."
+    "text": "Mind-extending vs. Mind-replacing\nAndy Clark (Clark 2025)\n\n\nKognition erweitern:\n\nDer Mensch bleibt kognitiv engagiert\nWerkzeug verstärkt, ersetzt nicht\nBeispiel: Taschenrechner für Mathematiker\nFähigkeiten bleiben erhalten und werden ausgebaut\n\n\nKognition ersetzen:\n\nDer Mensch wird passiv\nWerkzeug übernimmt das Denken\nBeispiel: KI schreibt Essay, Studierender submittet\nAbhängigkeit entsteht, Fähigkeiten verkümmern\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung.\n\n\n\n\n\n\n\n\nAus Sicht der Cognitive Load Theory\n\n\nWissen im Langzeitgedächtnis unterscheidet sich fundamental von extern zugänglichem Wissen. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-sequenzierungsfrage",
     "href": "slides/ai-higher-ed/index.html#die-sequenzierungsfrage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Sequenzierungsfrage",
-    "text": "Die Sequenzierungsfrage\n\nStudierende brauchen wahrscheinlich Grundwissen BEVOR KI vorteilhaft wird\nDer Expertise-Umkehr-Effekt legt dynamische Policies nahe\nAb welchem Punkt wechselt KI von schädlich zu hilfreich?\nDie Antwort ist vermutlich domänen- und studentenspezifisch"
+    "text": "Die Sequenzierungsfrage\n\nStudierende brauchen wahrscheinlich Grundwissen BEVOR KI vorteilhaft wird\nDer Expertise-Umkehr-Effekt empfiehlt dynamische KI-Nutzungsregeln\nDie Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt\nDie Antwort ist vermutlich domänen- und personenspezifisch\n\n\n\n\n\n\n\n\nKeine Pauschallösungen\n\n\nDie Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen: abhängig vom Fach, vom Vorwissen und den Lernzielen."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-entwicklungsfrage",
     "href": "slides/ai-higher-ed/index.html#die-entwicklungsfrage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Entwicklungsfrage",
-    "text": "Die Entwicklungsfrage\nSensible Phasen in der kognitiven Entwicklung\n\nPräfrontaler Kortex entwickelt sich bis Mitte 20\nExekutive Funktionen, Metakognition, Selbstregulation noch in Entwicklung\nParadox: Jene, die KI-Nutzung am wenigsten regulieren können, sind am verletzlichsten\n\n\n\n\n\n\n\n\nDie Kohortenfrage\n\n\nDie aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.\nWenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein."
+    "text": "Die Entwicklungsfrage\nKognitive Entwicklung und KI\n\nDer präfrontale Kortex entwickelt sich bis etwa Mitte 20 (individuelle Variation erheblich)\nExekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung\nParadox: Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten\n\n\n\n\n\n\n\n\nDie Kohortenfrage\n\n\nDie aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.\nWenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-soziale-dimension",
     "href": "slides/ai-higher-ed/index.html#die-soziale-dimension",
     "title": "KI in der Hochschulbildung",
     "section": "Die soziale Dimension",
-    "text": "Die soziale Dimension\nLernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess (Reich 2020)\n\nStudierende lernen besser, wenn sie sich verbunden fühlen\nPeers werden seltener konsultiert, wenn KI antwortet\nBeziehungen zu Lehrenden werden oberflächlicher\nGelegenheiten für Mentoring nehmen ab\n\n\nDie Rolle der Lehrperson: Beziehung, Motivation, Vorbild sind nicht ersetzbar."
+    "text": "Die soziale Dimension\nLernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess (Reich 2020)\n\nStudierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen\nPeers werden seltener konsultiert, wenn KI antwortet: kollaboratives Lernen leidet\nBeziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen\nGelegenheiten für Mentoring und informelles Lernen nehmen ab\n\n\nDie Rolle der Lehrperson: Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Beziehung, Motivation, Vorbild, Kontext: diese unersetzliche Funktion muss neu definiert werden."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-equity-dimension",
     "href": "slides/ai-higher-ed/index.html#die-equity-dimension",
     "title": "KI in der Hochschulbildung",
     "section": "Die Equity-Dimension",
-    "text": "Die Equity-Dimension\nDie dritte digitale Kluft (Michael Trucano 2023)\n\n\n\n\n\n\n\n\n\nErste Kluft\nZweite Kluft\nDritte Kluft\n\n\n\n\nZugang zu Geräten\nFähigkeit zur sinnvollen Nutzung\nQualität der pädagogischen Integration\n\n\n\n\n\n\n\n\n\n\n\nRisiko\n\n\n“Demokratisierung” von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.\nGutausgestattete Studierende erhalten ausgeklügelte pädagogische Unterstützung.\nUnterversorgte Studierende erhalten KI als unbeaufsichtigte Abkürzung."
+    "text": "Die Equity-Dimension\nDie dritte digitale Kluft (Michael Trucano 2023)\n\n\n\n\n\n\n\n\n\nErste Kluft\nZweite Kluft\nDritte Kluft\n\n\n\n\nZugang zu Geräten\nFähigkeit zur sinnvollen Nutzung\nQualität der pädagogischen Integration\n\n\n\n\n\nKonkrete Ungleichheiten:\n\nKosten: Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus leisten?\nInstitutionelle Ressourcen: Welche Hochschulen haben Zeit und Expertise für durchdachte Integration?\nBetreuung: Wer hat Dozierende, die über KI-Risiken aufklären?\n\n\n\n\n\n\n\n\n\nRisiko\n\n\n“Demokratisierung” von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.\nDas MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die “allen” zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#der-stärkste-gegeneinwand",
@@ -464,14 +464,14 @@
     "href": "slides/ai-higher-ed/index.html#referenzen",
     "title": "KI in der Hochschulbildung",
     "section": "Referenzen",
-    "text": "Referenzen\n\n\nAnderson, John R. 1982. „Acquisition of Cognitive Skill“. Psychological Review 89 (4): 369–406. https://doi.org/10.1037/0033-295X.89.4.369.\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. „Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics“. Proceedings of the National Academy of Sciences of the United States of America 122 (26): e2422633122. https://doi.org/10.1073/pnas.2422633122.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nBLOOM, BENJAMIN S. 1984. „The 2 Sigma Problem: The Search for Methods of Group Instruction as Effective as One-to-One Tutoring“. Educational Researcher 13 (6): 4–16. https://doi.org/10.3102/0013189X013006004.\n\n\nChase, William G., und Herbert A. Simon. 1973. „Perception in Chess“. Cognitive Psychology 4 (1): 55–81. https://doi.org/10.1016/0010-0285(73)90004-2.\n\n\nChi, Michelene T. H., Nicholas De Leeuw, Mei-Hung Chiu, und Christian Lavancher. 1994. „Eliciting Self-Explanations Improves Understanding“. Cognitive Science 18 (3): 439–77. https://doi.org/10.1207/s15516709cog1803_3.\n\n\nClark, Andy. 2025. „Extending Minds with Generative AI“. Nature Communications 16 (1): 4627. https://doi.org/10.1038/s41467-025-59906-9.\n\n\nCooper, Graham, und John Sweller. 1987. „Effects of Schema Acquisition and Rule Automation on Mathematical Problem-Solving Transfer“. Journal of Educational Psychology 79 (4): 347–62. https://doi.org/10.1037/0022-0663.79.4.347.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory During Self-Guided Navigation“. Scientific Reports 10 (1): 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nGroot, Adriaan D. De, und Adrianus Dingeman de Groot. 1978. Thought and Choice in Chess. Walter de Gruyter. https://books.google.com?id=EI4gr42NwDQC.\n\n\nJose, Binny, Deepak Joseph, Visakh Mohan, Elizabeth Alexander, Subi K. Varghese, und Abhijith Roy. 2025. „Outsourcing Cognition: The Psychological Costs of AI-Era Convenience“. Frontiers in Psychology 16 (Dezember). https://doi.org/10.3389/fpsyg.2025.1645237.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nKirschner, Paul A., Sweller, und Richard E. and Clark. 2006. „Why Minimal Guidance During Instruction Does Not Work: An Analysis of the Failure of Constructivist, Discovery, Problem-Based, Experiential, and Inquiry-Based Teaching“. Educational Psychologist 41 (2): 75–86. https://doi.org/10.1207/s15326985ep4102_1.\n\n\nLortie-Forgues, Hugues, und Robert S. Siegler. 2017. „Conceptual Knowledge of Decimal Arithmetic.“ Journal of Educational Psychology 109 (3): 374–86. https://doi.org/10.1037/edu0000148.\n\n\nMichael Trucano. 2023. „AI and the Next Digital Divide in Education“. Brookings. 7. Oktober 2023. https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/.\n\n\nReich, Justin. 2020. Failure to Disrupt: Why Technology Alone Can’t Transform Education. Cambridge London: Harvard University Press.\n\n\nRoediger, Henry L., und Jeffrey D. Karpicke. 2006. „Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention“. Psychological Science 17 (3): 249–55. https://doi.org/10.1111/j.1467-9280.2006.01693.x.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science (New York, N.Y.) 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nVanLEHN, KURT. 2011. „The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems“. Educational Psychologist 46 (4): 197–221. https://doi.org/10.1080/00461520.2011.611369.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
+    "text": "Referenzen\n\n\nAnderson, John R. 1982. „Acquisition of Cognitive Skill“. Psychological Review 89 (4): 369–406. https://doi.org/10.1037/0033-295X.89.4.369.\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. „Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics“. Proceedings of the National Academy of Sciences of the United States of America 122 (26): e2422633122. https://doi.org/10.1073/pnas.2422633122.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nBLOOM, BENJAMIN S. 1984. „The 2 Sigma Problem: The Search for Methods of Group Instruction as Effective as One-to-One Tutoring“. Educational Researcher 13 (6): 4–16. https://doi.org/10.3102/0013189X013006004.\n\n\nChase, William G., und Herbert A. Simon. 1973. „Perception in Chess“. Cognitive Psychology 4 (1): 55–81. https://doi.org/10.1016/0010-0285(73)90004-2.\n\n\nChi, Michelene T. H., Nicholas De Leeuw, Mei-Hung Chiu, und Christian Lavancher. 1994. „Eliciting Self-Explanations Improves Understanding“. Cognitive Science 18 (3): 439–77. https://doi.org/10.1207/s15516709cog1803_3.\n\n\nClark, Andy. 2025. „Extending Minds with Generative AI“. Nature Communications 16 (1): 4627. https://doi.org/10.1038/s41467-025-59906-9.\n\n\nCooper, Graham, und John Sweller. 1987. „Effects of Schema Acquisition and Rule Automation on Mathematical Problem-Solving Transfer“. Journal of Educational Psychology 79 (4): 347–62. https://doi.org/10.1037/0022-0663.79.4.347.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory During Self-Guided Navigation“. Scientific Reports 10 (1): 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nGroot, Adriaan D. De, und Adrianus Dingeman de Groot. 1978. Thought and Choice in Chess. Walter de Gruyter. https://books.google.com?id=EI4gr42NwDQC.\n\n\nJose, Binny, Deepak Joseph, Visakh Mohan, Elizabeth Alexander, Subi K. Varghese, und Abhijith Roy. 2025. „Outsourcing Cognition: The Psychological Costs of AI-Era Convenience“. Frontiers in Psychology 16 (Dezember). https://doi.org/10.3389/fpsyg.2025.1645237.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nKirschner, Paul A., Sweller, und Richard E. and Clark. 2006. „Why Minimal Guidance During Instruction Does Not Work: An Analysis of the Failure of Constructivist, Discovery, Problem-Based, Experiential, and Inquiry-Based Teaching“. Educational Psychologist 41 (2): 75–86. https://doi.org/10.1207/s15326985ep4102_1.\n\n\nLortie-Forgues, Hugues, und Robert S. Siegler. 2017. „Conceptual Knowledge of Decimal Arithmetic.“ Journal of Educational Psychology 109 (3): 374–86. https://doi.org/10.1037/edu0000148.\n\n\nMichael Trucano. 2023. „AI and the Next Digital Divide in Education“. Brookings. 7. Oktober 2023. https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/.\n\n\nNewell, Allen, und Herbert A. Simon. 1972. Human Problem Solving. Brattleboro, Vermont: Echo Point Books & Media.\n\n\nReich, Justin. 2020. Failure to Disrupt: Why Technology Alone Can’t Transform Education. Cambridge London: Harvard University Press.\n\n\nRoediger, Henry L., und Jeffrey D. Karpicke. 2006. „Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention“. Psychological Science 17 (3): 249–55. https://doi.org/10.1111/j.1467-9280.2006.01693.x.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science (New York, N.Y.) 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nVanLEHN, KURT. 2011. „The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems“. Educational Psychologist 46 (4): 197–221. https://doi.org/10.1080/00461520.2011.611369.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
   },
   {
     "objectID": "presentation/index.html",
     "href": "presentation/index.html",
     "title": "Präsentation",
     "section": "",
-    "text": "Zwei Versionen verfügbar:\n\n\n\nVersion\nDauer\nBeschreibung\n\n\n\n\nVollversion\n~3 Stunden\nWorkshop mit Diskussionen und Pausen\n\n\nKurzversion\n30 + 30 Min\nFokussierter Vortrag mit anschliessender Diskussion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
+    "text": "Zwei Versionen verfügbar:\n\n\n\nVersion\nDauer\nBeschreibung\n\n\n\n\nKurzversion\n30 + 30 Min\nFokussierter Vortrag mit anschliessender Diskussion\n\n\nVollversion\n~3 Stunden\nWorkshop mit Diskussionen und Pausen\n\n\n\n\n\n\n\n\n\n\n\n\n\nTippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
     "crumbs": [
       "Präsentation"
     ]
@@ -481,7 +481,7 @@
     "href": "presentation/index.html#ki-in-der-hochschulbildung",
     "title": "Präsentation",
     "section": "",
-    "text": "Zwei Versionen verfügbar:\n\n\n\nVersion\nDauer\nBeschreibung\n\n\n\n\nVollversion\n~3 Stunden\nWorkshop mit Diskussionen und Pausen\n\n\nKurzversion\n30 + 30 Min\nFokussierter Vortrag mit anschliessender Diskussion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
+    "text": "Zwei Versionen verfügbar:\n\n\n\nVersion\nDauer\nBeschreibung\n\n\n\n\nKurzversion\n30 + 30 Min\nFokussierter Vortrag mit anschliessender Diskussion\n\n\nVollversion\n~3 Stunden\nWorkshop mit Diskussionen und Pausen\n\n\n\n\n\n\n\n\n\n\n\n\n\nTippNavigation\n\n\n\nNutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke F für Vollbild.",
     "crumbs": [
       "Präsentation"
     ]
@@ -554,14 +554,14 @@
     "href": "slides/ai-higher-ed-short/index.html#der-generierungseffekt",
     "title": "KI in der Hochschulbildung",
     "section": "Der Generierungseffekt",
-    "text": "Der Generierungseffekt\n\n\nSelbst generierte Information wird besser behalten (Slamecka und Graf 1978).\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.\n\n\n\nDer Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…"
+    "text": "Der Generierungseffekt\n\n\n\n\n\n\n\n\n\nSelbst generierte Information wird besser behalten (Slamecka und Graf 1978).\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.\n\n\n\nDer Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#historische-analogien",
     "href": "slides/ai-higher-ed-short/index.html#historische-analogien",
     "title": "KI in der Hochschulbildung",
     "section": "Historische Analogien",
-    "text": "Historische Analogien\n\n\n\n\n\nDas Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.\n(Dahmani und Bohbot 2020; Sparrow, Liu, und Wegner 2011)"
+    "text": "Historische Analogien\n\n\n\n\n\n\n\n\n\n\n\n\nDas Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.\n(Dahmani und Bohbot 2020; Sparrow, Liu, und Wegner 2011)"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#der-expertise-umkehr-effekt",
@@ -682,7 +682,7 @@
     "href": "slides/ai-higher-ed-short/index.html#ein-überraschendes-ergebnis",
     "title": "KI in der Hochschulbildung",
     "section": "Ein überraschendes Ergebnis",
-    "text": "Ein überraschendes Ergebnis\n\n\n\nMit KI-Zugang:\n\n48% mehr Aufgaben\nkorrekt gelöst\n\nOhne KI (später):\n\n17% schlechter\nals die Kontrollgruppe\n\n\n\n\nQuelle: Bastani u. a. (2025): ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen"
+    "text": "Ein überraschendes Ergebnis\n\n\n\nMit KI-Zugang:\n\n48% mehr Aufgaben\nkorrekt gelöst\n\nOhne KI (später):\n\n17% schlechter\nals die Kontrollgruppe\n\n\n\n\nQuelle: Bastani u. a. (2025):\n~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen"
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#das-paradox",
@@ -696,7 +696,7 @@
     "href": "slides/ai-higher-ed-short/index.html#das-nadelöhr-des-lernens",
     "title": "KI in der Hochschulbildung",
     "section": "Das Nadelöhr des Lernens",
-    "text": "Das Nadelöhr des Lernens\n\n\n\n\n\nArbeitsgedächtnis: 4 ± 1 Elemente, ~30 Sekunden\n\nLangzeitgedächtnis: Unbegrenzt, dauerhaft\n\n\n\n\n\n Kernaussage: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses (Sweller 2024)."
+    "text": "Das Nadelöhr des Lernens\n\n\n\n\n\n\n\n\n\n\n\n Kernaussage: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses (Sweller 2024)."
   },
   {
     "objectID": "slides/ai-higher-ed-short/index.html#erwünschte-schwierigkeiten",
