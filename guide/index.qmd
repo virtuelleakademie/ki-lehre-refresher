@@ -182,10 +182,10 @@ Das Ergebnis hängt vom Nutzungskontext ab.
 
 ### Der Expertise-Umkehr-Effekt
 
-Eine Meta-Analyse [@kalyugaExpertiseReversalEffect2009] zeigt einen bemerkenswerten Befund:
+Ein Forschungsüberblick [@kalyugaExpertiseReversalEffect2009] zeigt einen bemerkenswerten Befund:
 
-- **Geringe Vorkenntnisse**: Hohe Unterstützung hilft (d = 0.505)
-- **Hohe Vorkenntnisse**: Hohe Unterstützung schadet (d = −0.428)
+- **Geringe Vorkenntnisse**: Hohe Unterstützung hilft (mittlere bis grosse Effekte)
+- **Hohe Vorkenntnisse**: Hohe Unterstützung schadet (die Effekte kehren sich um)
 
 Das ist der **Expertise-Umkehr-Effekt**: Dieselbe Instruktionsmethode kann gegenteilige Effekte haben, abhängig vom Vorwissen der Lernenden.
 
@@ -381,7 +381,7 @@ Vier bewährte Interventionen illustrieren das Prinzip:
 1. **Variation**: Lernen unter wechselnden Bedingungen
 2. **Interleaving**: Aufgabentypen mischen statt blocken
 3. **Spacing**: Verteilt lernen statt massiert
-4. **Retrieval Practice**: Aktiv abrufen statt passiv wiederlesen
+4. **Retrieval Practice**: Aktiv abrufen statt passiv wiederlesen [@roedigerTestenhancedLearningTaking2006]
 
 Alle vier haben gemeinsam: Sie fühlen sich *schwerer* an, sind aber *effektiver* für langfristiges Lernen.
 
@@ -424,7 +424,7 @@ Frühere Technologien zeigen ähnliche Muster:
 
 **GPS und räumliches Gedächtnis** [@dahmaniHabitualUseGPS2020]: Eine longitudinale Studie über drei Jahre zeigte: Stärkere GPS-Nutzung korreliert mit steilerem Rückgang des räumlichen Gedächtnisses. Die zeitliche Abfolge ist konsistent mit der Interpretation, dass GPS-Nutzung zum Rückgang beiträgt, wobei ungemessene konfundierende Variablen nicht ausgeschlossen werden können.
 
-**Taschenrechner** [@lortie-forguesConceptualKnowledgeDecimal2017]: Die Forschung zeigt kontextabhängige Effekte. Für Schüler mit bestehenden Grundkenntnissen ist der Effekt neutral oder leicht positiv. Für Schüler ohne Grundkenntnisse ist der Effekt negativ. Dieselbe Parallele wie bei KI: Das Werkzeug wirkt unterschiedlich je nach Vorwissen.
+**Konzeptuelles Verständnis** [@lortie-forguesConceptualKnowledgeDecimal2017]: Forschung zeigt, dass selbst Erwachsene mit Zugang zu Rechenhilfen oft überraschende Lücken im konzeptuellen Verständnis mathematischer Operationen aufweisen. Werkzeugnutzung ersetzt kein Grundverständnis. Dieselbe Parallele wie bei KI: Das Werkzeug kann prozedurale Aufgaben übernehmen, aber konzeptuelles Verständnis muss eigenständig aufgebaut werden.
 
 **Google-Effekt** [@sparrowGoogleEffectsMemory2011]: Menschen erinnern Information schlechter, wenn sie erwarten, dass sie verfügbar bleibt. Sie erinnern stattdessen, *wo* die Information zu finden ist. Das Gedächtnis adaptiert sich an die Verfügbarkeit externer Speicher.
 
