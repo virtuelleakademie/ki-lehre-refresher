@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-552df2bedc27db21b492a0df63bab367.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -101,6 +101,18 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   content: '\f075';
   background-image: none;
 }
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
+  background-image: none;
+}
 div.callout-prompt.callout {
   border-left-color: #333333;
 }
@@ -113,30 +125,6 @@ div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prom
   content: '\f328';
   background-image: none;
 }
-div.callout-reflect.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
-  background-image: none;
-}
 div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
@@ -147,30 +135,6 @@ div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image
 div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\e2ca';
-  background-image: none;
-}
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
   background-image: none;
 }
 div.callout-group.callout {
@@ -197,6 +161,42 @@ div.callout-experiment.callout-style-default .callout-icon::before, div.callout-
   content: '\f0c3';
   background-image: none;
 }
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
+  background-image: none;
+}
 div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
@@ -209,16 +209,16 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
   content: '\f002';
   background-image: none;
 }
-div.callout-individual.callout {
-  border-left-color: #A3195B;
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
+  content: '\f0eb';
   background-image: none;
 }
 </style>
@@ -291,7 +291,7 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../qa/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q &amp; A</span></a>
+ <span class="menu-text">Anwendungsfragen</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -370,7 +370,7 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
    
   <ul>
   <li><a href="#warum-anstrengung-notwendig-ist" id="toc-warum-anstrengung-notwendig-ist" class="nav-link active" data-scroll-target="#warum-anstrengung-notwendig-ist">Warum Anstrengung notwendig ist</a></li>
-  <li><a href="#häufige-fragen" id="toc-häufige-fragen" class="nav-link" data-scroll-target="#häufige-fragen">Häufige Fragen</a>
+  <li><a href="#anwendungsfragen" id="toc-anwendungsfragen" class="nav-link" data-scroll-target="#anwendungsfragen">Anwendungsfragen</a>
   <ul class="collapse">
   <li><a href="#gesundheit-pflegediagnosen-und-selbst-generierung" id="toc-gesundheit-pflegediagnosen-und-selbst-generierung" class="nav-link" data-scroll-target="#gesundheit-pflegediagnosen-und-selbst-generierung">Gesundheit: Pflegediagnosen und Selbst-Generierung</a></li>
   <li><a href="#technik-und-informatik-abkürzung-vs.-effizienz" id="toc-technik-und-informatik-abkürzung-vs.-effizienz" class="nav-link" data-scroll-target="#technik-und-informatik-abkürzung-vs.-effizienz">Technik und Informatik: Abkürzung vs.&nbsp;Effizienz</a></li>
@@ -402,6 +402,7 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </header>
 
 
+<p><a href="../../qa/index.html" class="qa-nav-link">← Zurück zur Übersicht</a></p>
 <section id="warum-anstrengung-notwendig-ist" class="level2">
 <h2 class="anchored" data-anchor-id="warum-anstrengung-notwendig-ist">Warum Anstrengung notwendig ist</h2>
 <p>Robert Bjork prägte das Konzept der “Desirable Difficulties”:</p>
@@ -417,9 +418,9 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </ol>
 <p>KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.</p>
 </section>
-<section id="häufige-fragen" class="level2">
-<h2 class="anchored" data-anchor-id="häufige-fragen">Häufige Fragen</h2>
-<section id="gesundheit-pflegediagnosen-und-selbst-generierung" class="level3">
+<section id="anwendungsfragen" class="level2">
+<h2 class="anchored" data-anchor-id="anwendungsfragen">Anwendungsfragen</h2>
+<section id="gesundheit-pflegediagnosen-und-selbst-generierung" class="level3 discipline-section discipline-gesundheit">
 <h3 class="anchored" data-anchor-id="gesundheit-pflegediagnosen-und-selbst-generierung">Gesundheit: Pflegediagnosen und Selbst-Generierung</h3>
 <p>Im klinischen Reasoning bei Bachelorstudierenden Pflege arbeiten Studierende Fallbeispiele selbst durch und begründen ihre Pflegediagnosen. Das ist mühsam für sie, aber genau diese Mühe scheint ja wichtig zu sein.</p>
 <p><strong>Frage:</strong> Studierende berichten, dass sie ChatGPT nutzen, um sich Pflegediagnosen vorschlagen zu lassen und dann nur noch auswählen. Einerseits ist das verständlich: Die KI gibt oft korrekte Vorschläge. Andererseits besteht die Befürchtung, dass ihnen genau dieser Prozess der Selbst-Generierung fehlt. Wie können Fallbeispiele so umgestaltet werden, dass diese “erwünschte Schwierigkeit” erhalten bleibt, auch wenn Studierende KI nutzen? Oder sollte KI-Nutzung bei solchen Übungen einfach verboten werden?</p>
@@ -439,9 +440,8 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="technik-und-informatik-abkürzung-vs.-effizienz" class="level3">
+<section id="technik-und-informatik-abkürzung-vs.-effizienz" class="level3 discipline-section discipline-technik">
 <h3 class="anchored" data-anchor-id="technik-und-informatik-abkürzung-vs.-effizienz">Technik und Informatik: Abkürzung vs.&nbsp;Effizienz</h3>
 <p>Das Konzept der “erwünschten Schwierigkeiten” wirft Fragen auf. In Programmierkursen zeigt sich, dass Studierende mit GitHub Copilot und KI-Assistenten viel schneller vorankommen und mehr Projekte umsetzen können.</p>
 <p><strong>Frage:</strong> Variation wird als eine dieser Strategien genannt, aber genau das ermöglicht doch die KI? Studierende können jetzt viel mehr verschiedene Frameworks und Ansätze ausprobieren. Wo ist die Grenze zwischen unerwünschter Abkürzung und sinnvoller Effizienzsteigerung? Einerseits sollen Studierende Programmiersprachen beherrschen. Andererseits sollen sie nicht Zeit mit dem Auswendiglernen von Syntax verschwenden. Wie unterscheidet man, welche Schwierigkeiten “erwünscht” sind und welche einfach nur Zeitverschwendung?</p>
@@ -461,9 +461,8 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="soziale-arbeit-reflexionsberichte-und-aktiver-abruf" class="level3">
+<section id="soziale-arbeit-reflexionsberichte-und-aktiver-abruf" class="level3 discipline-section discipline-soziales">
 <h3 class="anchored" data-anchor-id="soziale-arbeit-reflexionsberichte-und-aktiver-abruf">Soziale Arbeit: Reflexionsberichte und aktiver Abruf</h3>
 <p>In der Sozialen Arbeit geht es viel um Gesprächsführung und die Entwicklung einer professionellen Haltung. Studierende schreiben oft Reflexionsberichte nach Praxiseinsätzen, das ist diese “aktive Retrieval”-Strategie, oder?</p>
 <p><strong>Frage:</strong> Es zeigt sich, dass manche Arbeiten sprachlich perfekt sind, aber irgendwie leer wirken. Studierende geben zu, dass sie ihre Stichworte in ChatGPT eingeben und dann den Text überarbeiten. Sie meinen, das helfe ihnen, ihre Gedanken zu strukturieren. Einerseits haben sie sich ja mit dem Inhalt auseinandergesetzt. Andererseits stellt sich die Frage, ob dieser Prozess des mühsamen Formulierens nicht genau das ist, was die Reflexion vertieft. Wie können Reflexionsaufgaben so gestaltet werden, dass diese erwünschte Schwierigkeit erhalten bleibt?</p>
@@ -483,13 +482,11 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="hafl-spaced-learning-und-ki-tools-in-der-praxis" class="level3">
+<section id="hafl-spaced-learning-und-ki-tools-in-der-praxis" class="level3 discipline-section discipline-hafl">
 <h3 class="anchored" data-anchor-id="hafl-spaced-learning-und-ki-tools-in-der-praxis">HAFL: Spaced Learning und KI-Tools in der Praxis</h3>
-<p><em>Thomas Burkhalter, Dozent Pflanzenwissenschaften</em></p>
-<p>Ich unterrichte Bodenkunde und Pflanzenernährung. Ein wichtiger Teil des Lernens ist, dass Studierende lernen, Nährstoffmängel an Pflanzen zu erkennen und zu diagnostizieren. Das braucht Übung: Sie müssen viele Beispiele sehen und selbst interpretieren.</p>
-<p><strong>Frage:</strong> Jetzt gibt es bereits Apps, die per Bilderkennung Pflanzenkrankheiten und Nährstoffmängel identifizieren. In der Praxis werden meine Studierenden später als Agronomieberatende solche Tools nutzen. Gleichzeitig denke ich, dass sie zuerst das Grundwissen aufbauen müssen, um die KI-Vorschläge überhaupt kritisch beurteilen zu können. Du hast von “spaced learning” gesprochen: Wie kann ich diese Übungen so gestalten, dass Studierende lernen, KI-Tools sinnvoll einzusetzen, ohne dass ihnen der mühsame Prozess des Lernens verloren geht? Soll ich die KI-Tools in gewissen Phasen erlauben und in anderen verbieten?</p>
+<p>In Bodenkunde und Pflanzenernährung ist ein wichtiger Teil des Lernens, dass Studierende lernen, Nährstoffmängel an Pflanzen zu erkennen und zu diagnostizieren. Das braucht Übung: Sie müssen viele Beispiele sehen und selbst interpretieren.</p>
+<p><strong>Frage:</strong> Es gibt bereits Apps, die per Bilderkennung Pflanzenkrankheiten und Nährstoffmängel identifizieren. In der Praxis werden Studierende später als Agronomieberatende solche Tools nutzen. Gleichzeitig müssen sie zuerst das Grundwissen aufbauen, um die KI-Vorschläge überhaupt kritisch beurteilen zu können. Wie können diese Übungen so gestaltet werden, dass Studierende lernen, KI-Tools sinnvoll einzusetzen, ohne dass ihnen der mühsame Prozess des Lernens verloren geht? Sollten die KI-Tools in gewissen Phasen erlaubt und in anderen verboten werden?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -506,7 +503,7 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </div>
 </div>
 </div>
-<hr>
+</section>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -527,7 +524,6 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
