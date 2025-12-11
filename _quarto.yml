@@ -47,7 +47,7 @@ website:
 
     tools:
       - icon: mortarboard-fill
-        text: BFH Weiterbildungen
+        text: "BFH Weiterbildung: KI in der Lehre"
         href: https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/
         target: _blank
       - icon: lightbulb-fill
