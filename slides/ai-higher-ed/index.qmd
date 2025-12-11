@@ -58,6 +58,53 @@ theme_minimal_top_legend <- theme_minimal_custom +
   )
 ```
 
+##
+
+::: {style="text-align: center; padding-top: 3em;"}
+
+```{r}
+#| fig-width: 10
+#| fig-height: 5
+#| echo: false
+#| fig-align: center
+
+# Eisberg-Metapher: Performance über Wasser, Learning unter Wasser
+eisberg <- data.frame(
+  x = c(0, 1.5, 3, 3, 2.6, 0.4, 0),
+  y = c(0, 1, 0, -2.5, -3, -3, -2.5)
+)
+
+ggplot() +
+  geom_polygon(data = eisberg, aes(x, y), fill = color_primary, alpha = 0.4) +
+  geom_hline(yintercept = 0, color = "#24526B", linewidth = 1.5) +
+  annotate("text", x = 1.5, y = 0.5, label = "Performance", size = 7, fontface = "bold", color = "#333") +
+  annotate("text", x = 1.5, y = -1.5, label = "Learning", size = 7, fontface = "bold", color = "#333") +
+  theme_void() +
+  coord_fixed(ratio = 1.2) +
+  xlim(-1, 4) +
+  ylim(-3.5, 1.5)
+```
+
+<br><br>
+
+[Werkzeuge für [Experten]{style="color: #666;"},<br>Herausforderungen für [Lernende]{style="color: #A3195B; font-weight: 600;"}]{style="font-size: 1.6em;"}
+
+:::
+
+::: {.notes}
+Willkommen. Bevor wir beginnen, möchte ich kurz erklären, warum ich diesen Vortrag so aufgebaut habe.
+
+Wenn wir über KI in der Bildung sprechen, hören wir meist zwei Narrative: Entweder "KI revolutioniert das Lernen" oder "KI zerstört die Bildung". Beide sind zu einfach.
+
+Was wir brauchen, ist ein Rahmen, um zu verstehen, wann KI hilft und wann sie schadet. Und diesen Rahmen liefert uns die Kognitionspsychologie.
+
+Der Eisberg hier zeigt das zentrale Problem: Was wir sehen, ist Performance. Was wir nicht sehen, ist Learning. Und die beiden sind nicht dasselbe.
+
+Ich beginne mit einer konkreten Studie, die dieses Paradox illustriert. Dann fragen wir: Warum passiert das? Die Antwort liegt in der Architektur des menschlichen Gedächtnisses.
+
+Am Ende werden Sie einen Rahmen haben, um KI-Nutzung differenziert zu beurteilen. Nicht "KI ja oder nein", sondern "für wen, wann, und wie".
+:::
+
 ## Ein überraschendes Ergebnis
 
 <br>
