@@ -584,10 +584,10 @@ Dasselbe Werkzeug, unterschiedliche Ergebnisse.
 
 <br>
 
-::: {style="text-align: center;"}
-Taschenrechner helfen Mathematikern, können aber Lernenden schaden.
+::: {style="text-align: left;"}
+{{< fa calculator >}} Taschenrechner helfen Mathematikern, können aber Lernenden schaden.
 
-GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.
+{{< fa map-location-dot >}} GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.
 :::
 
 . . .
