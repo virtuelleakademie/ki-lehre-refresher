@@ -1,6 +1,6 @@
 ---
-title: "KI in der Hochschulbildung: Ein Leitfaden"
-subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
+title: "KI in der Hochschulbildung"
+subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende: Eine Synthese der Forschungslage"
 author:
   - name: Andrew Ellis
     url: https://github.com/awellis
