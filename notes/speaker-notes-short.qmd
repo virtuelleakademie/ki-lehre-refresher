@@ -12,11 +12,64 @@ bibliography: ../bibliography.bib
 
 👆 = Klick auf Folie | ⭐ = Kernaussage | 🎓 = Kurs-Hinweis
 
+# Einleitung (vor den Folien)
+
+**Sprechtext:**
+
+Willkommen. Bevor wir beginnen, möchte ich kurz erklären, warum ich diesen Vortrag so aufgebaut habe, wie er ist.
+
+Wenn wir über KI in der Bildung sprechen, hören wir meist zwei Narrative: Entweder "KI revolutioniert das Lernen" oder "KI zerstört die Bildung". Beide sind zu einfach.
+
+Was wir brauchen, ist ein **Rahmen**, um zu verstehen, wann KI hilft und wann sie schadet. Und diesen Rahmen liefert uns die Kognitionspsychologie. Nicht weil sie alle Antworten hat, sondern weil sie uns die richtigen Fragen stellt.
+
+Die Kognitionspsychologie untersucht seit Jahrzehnten, wie Menschen lernen, wie Expertise entsteht, und was passiert, wenn Werkzeuge kognitive Arbeit übernehmen. Diese Erkenntnisse sind direkt anwendbar auf die KI-Frage.
+
+Ich beginne mit einer konkreten Studie, weil sie das Paradox illustriert, das uns heute beschäftigt: Studierende können mit KI mehr leisten, aber weniger lernen. Dieses Auseinanderfallen von Leistung und Lernen ist der Kern des Problems.
+
+Dann gehen wir einen Schritt zurück und fragen: Warum passiert das? Die Antwort liegt in der Architektur des menschlichen Gedächtnisses und in dem, was Experten von Lernenden unterscheidet.
+
+Am Ende werden Sie einen Rahmen haben, um KI-Nutzung in Ihrer Lehre differenziert zu beurteilen. Nicht "KI ja oder nein", sondern "für wen, wann, und wie".
+
+::: {.callout-note}
+## Warum dieser Aufbau?
+
+**Die Struktur des Vortrags:**
+
+1. **Empirischer Einstieg** (Bastani-Studie): Konkret und überraschend, weckt Interesse
+2. **Theoretischer Rahmen** (Kognitionspsychologie): Erklärt das "Warum"
+3. **Differenzierung** (Experten vs. Novizen): Macht handlungsfähig
+4. **Praktische Implikationen**: Gibt Orientierung
+
+**Warum Kognitionspsychologie?**
+
+Die Debatte um KI in der Bildung wird oft geführt ohne Bezug auf das, was wir über Lernen wissen. Dabei haben wir Jahrzehnte an Forschung zu:
+
+- Wie Wissen im Gedächtnis gespeichert wird
+- Warum Anstrengung für Lernen notwendig ist
+- Wie Expertise sich von Novizentum unterscheidet
+- Was passiert, wenn Werkzeuge kognitive Arbeit übernehmen
+
+Diese Erkenntnisse sind nicht neu, aber sie werden in der KI-Diskussion oft ignoriert. Der Vortrag macht sie anwendbar.
+
+**Warum mit einer Studie beginnen?**
+
+Die Bastani-Studie ist nicht perfekt (keine Studie ist das), aber sie ist:
+
+- Methodisch rigoros (RCT mit grosser Stichprobe)
+- Überraschend (widerspricht der Intuition)
+- Konkret (nicht theoretisch, sondern empirisch)
+- Aktuell (2025, GPT-4)
+
+Sie dient als Aufhänger, nicht als Beweis. Der eigentliche Beweis kommt aus der Theorie.
+:::
+
+---
+
 # Ein überraschendes Ergebnis
 
 **Sprechtext:**
 
-Ich möchte mit einem überraschenden Befund beginnen, der die Komplexität unseres Themas illustriert.
+Schauen wir uns also diese Studie an, die das Paradox illustriert.
 
 In einer gross angelegten Studie mit etwa 1000 Gymnasiasten in der Türkei erhielten Schüler Zugang zu GPT-4 während ihrer Mathematik-Übungen.
 
