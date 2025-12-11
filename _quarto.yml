@@ -51,27 +51,23 @@ website:
         href: https://virtuelleakademie.ch/knowledge-base/
 
   sidebar:
-    - id: presentation
-      title: "Präsentation"
-      style: "docked"
-      search: true
-      background: light
-      contents:
-        - presentation/index.qmd
-
     - id: qa
       title: "Q & A"
       style: "docked"
       background: light
       contents:
         - qa/index.qmd
-
-    - id: guide
-      title: "Leitfaden"
-      style: "docked"
-      background: light
-      contents:
-        - guide/index.qmd
+        - section: "Themen"
+          contents:
+            - qa/paradox/index.qmd
+            - qa/kognitive-grundlagen/index.qmd
+            - qa/erwuenschte-schwierigkeiten/index.qmd
+            - qa/generierungseffekt/index.qmd
+            - qa/historische-analogien/index.qmd
+            - qa/experten-vs-lernende/index.qmd
+            - qa/expertise-umkehr-effekt/index.qmd
+            - qa/kritisches-denken/index.qmd
+            - qa/praktische-implikationen/index.qmd
 
 page-footer:
     right:

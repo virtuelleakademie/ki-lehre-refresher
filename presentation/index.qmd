@@ -1,6 +1,5 @@
 ---
 title: "Präsentation"
-sidebar: presentation
 ---
 
 ## KI in der Hochschulbildung

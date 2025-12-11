@@ -1,0 +1,90 @@
+---
+title: "Kognitive Grundlagen"
+sidebar: qa
+---
+
+## Das Nadelöhr des Lernens
+
+Das Arbeitsgedächtnis hat eine stark begrenzte Kapazität von etwa 4 plus/minus 1 Elementen. Alles Lernen muss durch dieses Nadelöhr. Es gibt keinen Weg drumherum, keine Abkürzung, und keine KI kann diesen biologischen Engpass umgehen.
+
+Die Cognitive Load Theory unterscheidet drei Arten der Belastung:
+
+- **Intrinsische Belastung:** Inhärente Komplexität des Materials
+- **Extrinsische Belastung:** Schlecht gestaltete Instruktion (minimieren)
+- **Lernförderliche Belastung:** Produktive Anstrengung für Schemabildung (erhalten)
+
+## Häufige Fragen
+
+### Gesundheit: Notfallsituationen und Informationsverarbeitung
+
+*Dr. Sarah Müller, Pflegewissenschaft*
+
+Ich unterrichte im Bachelor Pflege, und meine Studierenden müssen in Notfallsituationen sehr schnell viele Informationen gleichzeitig verarbeiten: Vitalwerte, Symptome, Medikamentenwirkungen, und so weiter.
+
+**Frage:** Wenn das Working Memory wirklich auf 4±1 Elemente beschränkt ist, wie kann ich sie dann überhaupt auf solche komplexen Situationen vorbereiten? Bisher dachte ich, KI-gestützte Simulationen könnten helfen, aber wenn die kognitive Belastung nicht umgangen werden kann: Sollte ich dann vielleicht mehr auf klassische Chunking-Strategien setzen, wo wir zusammengehörige Informationen bündeln?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Chunking ist tatsächlich der Schlüssel: Experten speichern Wissen in vernetzten Strukturen, die automatisch abgerufen werden. Diese "Chunks" müssen aber durch Übung aufgebaut werden. KI kann diesen Prozess nicht abkürzen, aber gut gestaltete Simulationen können helfen, Muster zu erkennen. Mehr dazu im Leitfaden unter [Wie Expertise entsteht](../../guide/index.qmd#expertise) und [Was Experten sehen](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Technik und Informatik: Code verstehen vs. kopieren
+
+*Andreas Weber, Informatik*
+
+Meine Studierenden im dritten Semester Informatik programmieren zunehmend mit GitHub Copilot und ChatGPT. Wenn ich die Ausführungen richtig verstehe, dann umgeht das die kognitive Verarbeitung nicht wirklich: Sie müssen den generierten Code ja trotzdem verstehen und durchdenken.
+
+**Frage:** Aber ich beobachte, dass viele einfach Code kopieren, ohne ihn richtig zu durchdringen. Wie kann ich Aufgabenstellungen so gestalten, dass der germane Load, also die lernrelevante Belastung, im Vordergrund steht? Sollte ich bewusst kleinere Code-Beispiele verwenden, damit sie innerhalb dieser 4±1 Elemente arbeiten können?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das Problem ist, dass KI die lernförderliche Belastung eliminieren kann. Aufgabenstellungen sollten den Denkprozess fordern: Code erklären lassen, Varianten vergleichen, Fehler finden. Kleinere, fokussierte Beispiele können helfen, die kognitive Belastung zu managen. Mehr dazu im Leitfaden unter [Cognitive Load Theory](../../guide/index.qmd#expertise) und [Drei Arten kognitiver Belastung](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Wirtschaft: KI zur Komplexitätsreduktion
+
+*Claudia Jenni, Business Administration*
+
+In meinem Kurs "Strategisches Management" arbeiten wir viel mit komplexen Fallstudien: Marktanalysen, Finanzberichte, Wettbewerbsszenarien. Die Studierenden nutzen mittlerweile KI, um diese Fälle vorab zusammenzufassen.
+
+**Frage:** Einerseits verstehe ich das Problem mit dem Working Memory: Wenn sie zu viele Variablen gleichzeitig jonglieren müssen, lernen sie nichts. Andererseits frage ich mich: Wenn KI ihnen hilft, die extrinsic load zu reduzieren, also überflüssige Komplexität wegzufiltern, ist das dann nicht sogar förderlich? Oder riskiere ich damit, dass sie die Fähigkeit verlieren, selbst relevante von irrelevanten Informationen zu unterscheiden?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das ist eine wichtige Unterscheidung: KI kann extrinsische Belastung reduzieren (gut) oder lernförderliche Belastung eliminieren (problematisch). Die Fähigkeit, Relevantes von Irrelevantem zu unterscheiden, ist selbst eine Expertise, die aufgebaut werden muss. Mehr dazu im Leitfaden unter [Welche Art der Belastung reduziert KI?](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Künste: Kognitive Überlastung durch KI-Output
+
+*Lukas Stauffer, Visuelle Kommunikation*
+
+Bei uns in der Visuellen Kommunikation arbeiten Studierende oft sehr intuitiv und visuell. Ich merke, dass viele mit Midjourney oder DALL-E experimentieren und in kurzer Zeit sehr viele Designvarianten generieren.
+
+**Frage:** Wenn das Working Memory aber tatsächlich so limitiert ist: Überfordert es sie dann nicht kognitiv, wenn sie 50 KI-generierte Entwürfe durchgehen müssen, um den richtigen auszuwählen? Sollte ich sie eher anleiten, weniger, aber bewusstere Iterationen zu machen? Kann die Flut an KI-Output den kreativen Lernprozess tatsächlich behindern, weil die kognitive Kapazität überlastet wird?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Ja, zu viele Optionen können das Arbeitsgedächtnis überlasten und den Lernprozess behindern. Bewusste Einschränkungen und fokussierte Iterationen können helfen. Der kreative Prozess des Skizzierens, Iterierens und Verwerfens hat einen eigenen Lernwert. Mehr dazu im Leitfaden unter [Das Nadelöhr des Lernens](../../guide/index.qmd#expertise).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Cognitive Load Theory: Das Nadelöhr des Lernens](../../guide/index.qmd#expertise)
+- [Drei Arten kognitiver Belastung](../../guide/index.qmd#expertise)
+- [Wie Expertise entsteht](../../guide/index.qmd#expertise)
+:::

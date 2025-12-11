@@ -1,0 +1,86 @@
+---
+title: "Der Generierungseffekt"
+sidebar: qa
+---
+
+## Selbst generiert wird besser behalten
+
+Der Generierungseffekt ist ein robuster Befund der Gedächtnisforschung: Selbst generierte Information wird besser behalten als passiv erhaltene.
+
+Die Implikation für KI: Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt. Das Endprodukt mag ähnlich aussehen, aber der Lernprozess ist fundamental anders.
+
+## Häufige Fragen
+
+### Gesundheit: Pflegepläne und professionelles Verständnis
+
+*Dozentin, Fachbereich Pflege*
+
+Bei uns erstellen die Studierenden Pflegepläne für Fallbeispiele. Ich merke, dass einige mittlerweile ChatGPT nutzen, um diese Pflegepläne zu generieren. Das Endprodukt sieht oft sehr professionell aus, aber wenn ich dann im Praktikum mit den Studierenden spreche, fehlt ihnen das Verständnis.
+
+**Frage:** Wie kann ich die Aufgabenstellung so anpassen, dass die Studierenden den Generierungseffekt wirklich nutzen, aber trotzdem von KI profitieren können? Soll ich KI komplett verbieten oder gibt es einen Mittelweg?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Ein Mittelweg könnte sein: Erst eigenen Entwurf erstellen (Generierungseffekt nutzen), dann mit KI-Version vergleichen und Unterschiede analysieren. Der Prozess der eigenen Erstellung ist der Lernmoment, nicht das Endprodukt. Mehr dazu im Leitfaden unter [Der Generierungseffekt](../../guide/index.qmd#paradox).
+:::
+
+---
+
+### Wirtschaft: Analysefähigkeit vs. Tool-Kompetenz
+
+*Dozent, Business Administration*
+
+In meinem Kurs "Strategisches Management" müssen die Studierenden Unternehmensanalysen durchführen. Wenn sie jetzt einfach eine SWOT-Analyse von ChatGPT generieren lassen, verstehe ich das Problem mit dem Generierungseffekt.
+
+**Frage:** Aber gleichzeitig werden sie später im Beruf genau solche Tools nutzen. Wie bereite ich sie realistisch auf die Praxis vor, ohne dass sie das analytische Denken verlernen? Ist es nicht widersprüchlich, wenn wir im Studium KI verbieten, aber in der Wirtschaft ist sie Standard?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Es geht nicht um Verbot, sondern um Sequenzierung. Experten können KI produktiv nutzen, weil sie den Output bewerten können. Studierende müssen erst die analytischen Grundlagen aufbauen. Später kann KI als Werkzeug dienen, dessen Output kritisch geprüft wird. Mehr dazu im Leitfaden unter [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox) und [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+### Künste: Kreativer Prozess vs. KI-Varianten
+
+*Dozent, Visuelle Kommunikation / Design*
+
+Bei uns geht es sehr viel um den kreativen Prozess: Skizzieren, Iterieren, Verwerfen, Neuanfangen. Das ist der Kern des Lernens. Wenn Studierende jetzt mit Midjourney oder DALL-E arbeiten und in Sekunden 20 Designvarianten bekommen, fehlt dieser ganze Prozess.
+
+**Frage:** Andererseits experimentieren sie vielleicht dadurch mit Ideen, auf die sie sonst nicht gekommen wären. Wie bewerte ich das? Wie stelle ich sicher, dass der Generierungseffekt nicht verloren geht, wenn das eigene Gestalten quasi ausgelagert wird?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Der kreative Prozess des Skizzierens und Iterierens hat eigenen Lernwert. KI-generierte Varianten können als Inspiration dienen, sollten aber nicht das eigene Gestalten ersetzen. Möglicher Ansatz: Erst eigene Skizzen, dann KI als Ideengeber, dann bewusste Auswahl und Weiterentwicklung mit eigener Hand. Mehr dazu im Leitfaden unter [Die Scaffolding-Hypothese](../../guide/index.qmd#paradox).
+:::
+
+---
+
+### HAFL: Vernetztes Denken in der Landwirtschaft
+
+*Dozent, Agronomie*
+
+Meine Studierenden sollen Bewirtschaftungspläne für landwirtschaftliche Betriebe entwickeln. Dabei müssen sie Fruchtfolgen planen, Nährstoffbilanzen berechnen, Arbeitsspitzen berücksichtigen: Das ist komplexes, vernetztes Denken.
+
+**Frage:** Wenn sie das jetzt von einer KI machen lassen, haben sie vielleicht ein korrektes Resultat, aber verstehen nicht die Zusammenhänge. Später als Berater müssen sie aber genau diese Entscheidungen begründen und anpassen können. Wie kann ich sicherstellen, dass sie den Denkprozess durchlaufen, auch wenn KI-Tools in der Praxis immer verfügbarer werden?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das Verstehen der Zusammenhänge ist die Kernkompetenz. Aufgaben sollten Begründungen und Anpassungen an veränderte Bedingungen fordern. KI kann das Resultat liefern, aber nicht die Anpassungsfähigkeit an unvorhergesehene Situationen. Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Der Generierungseffekt](../../guide/index.qmd#paradox)
+- [Die Scaffolding-Hypothese](../../guide/index.qmd#paradox)
+- [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen)
+:::

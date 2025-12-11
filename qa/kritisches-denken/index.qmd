@@ -1,0 +1,90 @@
+---
+title: "Kritisches Denken und Fachwissen"
+sidebar: qa
+---
+
+## Warum kritische Bewertung Domänenwissen erfordert
+
+Daniel Willingham fasst die Forschung zusammen:
+
+> "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
+
+Ein Biomedizin-Experte erkennt, wenn ChatGPT bei Biochemie falsch liegt. Ein Novize kann diese Bewertung nicht vornehmen, unabhängig von "kritischen Denkfähigkeiten".
+
+**Du kannst nicht kritisch bewerten, was du nicht verstehst.**
+
+## Häufige Fragen
+
+### Gesundheit: Subtile Fehler erkennen ohne Grundwissen
+
+*Dozentin, Pflege und Physiotherapie*
+
+Ich unterrichte Anatomie und Physiologie im ersten Semester Pflege. Die Studierenden nutzen ChatGPT für Zusammenfassungen, aber sie haben noch kein fundiertes Grundwissen.
+
+**Frage:** Wie soll ich reagieren, wenn eine Studentin mir eine KI-generierte Erklärung zu einem Krankheitsbild zeigt, die subtile Fehler enthält, die sie selbst nicht erkennen kann? Verbiete ich die Nutzung komplett in dieser Phase, oder wie baue ich gezielt die Fähigkeit auf, KI-Outputs kritisch zu prüfen, wenn das Fachwissen noch fehlt?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das Dilemma ist real: Um KI kritisch zu prüfen, braucht man das Wissen, das man aufbauen will. In frühen Phasen ist Zurückhaltung bei KI-Nutzung sinnvoll. Die Fähigkeit zur Prüfung entwickelt sich mit dem Fachwissen. Gemeinsame Analyse von KI-Fehlern kann lehrreich sein, wenn die Grundlagen vorhanden sind. Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken) und [Was transferiert, und was nicht](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+### Technik und Informatik: Code verstehen vs. Code produzieren
+
+*Dozent, Software Engineering*
+
+Bei uns ist die Situation paradox: Meine Informatik-Studierenden nutzen GitHub Copilot und ChatGPT für Code, aber viele verstehen die Grundlagen nicht wirklich. Letzte Woche hat ein Student Code eingereicht, der funktioniert, aber er konnte mir nicht erklären, warum.
+
+**Frage:** Willingham sagt, kritisches Denken ist kontextabhängig. Heisst das, ich muss zuerst darauf bestehen, dass sie ohne KI die Grundlagen lernen? Oder soll ich ihnen beibringen, KI-generierten Code zu lesen und zu bewerten, auch wenn sie ihn noch nicht selbst schreiben könnten?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Funktionierender Code, den man nicht versteht, ist ein Symptom für fehlendes Grundlagenwissen. Die Fähigkeit, Code zu bewerten, setzt Verständnis voraus. Die Sequenz "erst selbst schreiben, dann mit KI arbeiten" ist wahrscheinlich effektiver. Code Review als Lernmethode kann helfen, erfordert aber bereits Grundwissen. Mehr dazu im Leitfaden unter [Evidenz für Domänenspezifität](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+### Soziale Arbeit: KI und professionelle Urteilsfähigkeit
+
+*Dozentin, Sozialpädagogik und Beratung*
+
+In der Sozialen Arbeit geht es viel um Fallanalyse und professionelle Urteilsfähigkeit. Studierende verwenden zunehmend ChatGPT, um Fallsituationen zu analysieren oder Interventionsvorschläge zu entwickeln.
+
+**Frage:** Das Problem: Sie können noch nicht einschätzen, ob die KI wichtige Kontextfaktoren übersieht oder zu vereinfachte Lösungen vorschlägt. Wenn kritisches Denken wirklich so stark vom Fachwissen abhängt, wie strukturiere ich meine Kurse? Erst Theorie und Praxis ohne KI, dann später mit KI? Oder integriere ich KI von Anfang an als Diskussionspartner, dessen Schwächen wir gemeinsam analysieren?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Fähigkeit, Kontextfaktoren zu erkennen, ist das, was Experten von Novizen unterscheidet. Gemeinsame Analyse von KI-Output kann lehrreich sein, wenn Dozierende die Schwächen aufzeigen. Die Gefahr ist, dass Studierende allein nicht erkennen können, was fehlt. Sequenzierung (erst Grundlagen) ist wahrscheinlich sicherer. Mehr dazu im Leitfaden unter [Angewendet auf KI-Bewertung](../../guide/index.qmd#kritisches-denken) und [Die zentrale Implikation](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+### Wirtschaft: Oberflächliche Analysen erkennen
+
+*Dozent, Business Analytics und Management*
+
+Meine Studierenden im Bachelor Business Administration nutzen KI-Tools für Marktanalysen und Businesspläne. Neulich hat eine Gruppe eine Wettbewerbsanalyse präsentiert, die auf ChatGPT basierte. Die Struktur war gut, aber die strategischen Schlussfolgerungen waren oberflächlich und teilweise falsch.
+
+**Frage:** Sie konnten nicht beurteilen, was fehlt, weil ihnen das betriebswirtschaftliche Fundament fehlt. Wie gehe ich damit um in Modulen, wo ich eigentlich genau diese Analysefähigkeit aufbauen will? Muss ich KI-Nutzung in den ersten Semestern einschränken, oder gibt es einen Weg, damit zu arbeiten, ohne dass das Grundlagenlernen leidet?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das Problem illustriert genau den Punkt: Ohne Fachwissen kann man die Qualität nicht beurteilen. Einschränkung in frühen Phasen ist wahrscheinlich nötig, um die Analysefähigkeit aufzubauen. Später kann KI als Werkzeug dienen, dessen Output kritisch geprüft wird. Die Fähigkeit zur Prüfung entwickelt sich aber erst mit dem Wissen. Mehr dazu im Leitfaden unter [Fach-spezifisches Lernen priorisieren](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken)
+- [Willinghams Herausforderung](../../guide/index.qmd#kritisches-denken)
+- [Was transferiert, und was nicht](../../guide/index.qmd#kritisches-denken)
+:::
