@@ -20,3 +20,15 @@ Nutze die Pfeiltasten oder die Leertaste um durch die Präsentation zu navigiere
 ### Vertiefung
 
 Für eine umfassende Behandlung aller Konzepte, Beispiele und theoretischen Hintergründe siehe den [Leitfaden](../guide/index.qmd).
+
+#### Weiterbildungsangebot
+
+Dieser Refresher bietet einen kompakten Überblick über den aktuellen Forschungsstand und die lernwissenschaftlichen Grundlagen. Die BFH bietet drei aufbauende Kurse an, die diese Themen vertiefen:
+
+[KI in der Lehre: Beginner](https://virtuelleakademie.github.io/ki-lehre-beginner/): Grundlagen zu Sprachmodellen und Chatbots.
+
+[KI in der Lehre: Intermediate](https://virtuelleakademie.github.io/ki-lehre-intermediate/): Lernpsychologie und KI-gestütztes Lerndesign.
+
+[KI in der Lehre: Advanced](https://virtuelleakademie.github.io/ki-lehre-advanced/): Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.
+
+<!-- Weitere Informationen: [KI in der Lehre Kurse](https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/) -->
