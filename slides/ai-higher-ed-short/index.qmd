@@ -93,9 +93,25 @@ theme_minimal_top_legend <- theme_minimal_custom +
 <br><br>
 
 ::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
-**Quelle:** @bastaniGenerativeAIGuardrails2025: 
+**Quelle:** @bastaniGenerativeAIGuardrails2025:
 
 ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
+:::
+
+::: {.notes}
+Ich möchte mit einem überraschenden Befund beginnen, der die Komplexität unseres Themas illustriert.
+
+In einer gross angelegten Studie mit etwa 1000 Gymnasiasten in der Türkei erhielten Schüler Zugang zu GPT-4 während ihrer Mathematik-Übungen.
+
+[KLICK] Die Ergebnisse während der Übungsphase waren beeindruckend: 48 Prozent mehr Aufgaben korrekt gelöst.
+
+[KLICK] Klingt nach einem Erfolg, oder? Aber dann kam der Test ohne KI-Zugang.
+
+[KLICK] 17 Prozent schlechter als die Kontrollgruppe.
+
+[KLICK] Das ist die zentrale Spannung: Mehr Aufgaben gelöst bedeutet nicht automatisch mehr gelernt.
+
+Der 17%-Nachteil entspricht etwa 0.2-0.3 Standardabweichungen. Relevant, aber kein Totalausfall. Wichtig: Die Studie testete auch einen "GPT Tutor" mit pädagogischen Leitplanken, der deutlich bessere Ergebnisse zeigte. Das Problem ist nicht KI an sich, sondern wie sie eingesetzt wird.
 :::
 
 ## Das Paradox
@@ -144,6 +160,18 @@ ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe
 <br>
 
 **Aufgabenleistung ≠ Lernen**
+
+::: {.notes}
+Hier sehen wir das Paradox visualisiert.
+
+Die magentafarbene Linie zeigt die Gruppe mit KI-Zugang, die graue die Kontrollgruppe ohne KI.
+
+In der Übungsphase links performt die KI-Gruppe deutlich besser. Das macht Sinn: Sie hatten ja Hilfe. Der Unterschied ist klar, die Fehlerbalken überlappen nicht.
+
+Aber schauen Sie, was beim Test passiert. Die KI-Gruppe schneidet tendenziell schlechter ab, aber beachten Sie die Fehlerbalken: Sie überlappen sich. Der Unterschied ist statistisch nicht so dramatisch, wie die Linien allein suggerieren würden.
+
+[KLICK] Die Kernaussage: Aufgabenleistung ist nicht dasselbe wie Lernen. Wir verwechseln oft Performanz mit Kompetenz. Wenn Studierende mit KI-Hilfe eine Aufgabe lösen, sehen wir die Performanz des Systems, nicht unbedingt das Lernen des Studierenden.
+:::
 
 ## Das Nadelöhr des Lernens {.nostretch}
 
@@ -228,6 +256,16 @@ ggplot() +
 {{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024].
 :::
 
+::: {.notes}
+Um zu verstehen, warum das passiert, müssen wir einen kurzen Ausflug in die Kognitionspsychologie machen.
+
+Hier sehen Sie ein vereinfachtes Modell des menschlichen Gedächtnisses. Links die neue Information, rechts das Langzeitgedächtnis, und in der Mitte: das Nadelöhr.
+
+Das Arbeitsgedächtnis hat eine stark begrenzte Kapazität: etwa 4 plus/minus 1 Elemente gleichzeitig. Neue Information links ist unbegrenzt. Das Langzeitgedächtnis rechts ist praktisch unbegrenzt. Aber alles, was von links nach rechts wandern soll, muss durch dieses enge Nadelöhr.
+
+[KLICK] Das ist die Kernaussage der Cognitive Load Theory: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses. Es gibt keinen Weg drumherum. Keine Abkürzung. Keine KI kann diesen biologischen Engpass umgehen.
+:::
+
 ## Erwünschte Schwierigkeiten
 
 <br><br>
@@ -248,6 +286,18 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 
 ::: {style="text-align: center; font-size: 1.2em;"}
 **Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.**
+:::
+
+::: {.notes}
+Das bringt uns zu einem kontraintuitiven Konzept: den erwünschten Schwierigkeiten, oder auf Englisch "Desirable Difficulties".
+
+Hier ein Zitat von Robert Bjork: "Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
+
+Übersetzt: Bedingungen, die das scheinbare Lernen verlangsamen, optimieren oft das langfristige Behalten und den Transfer.
+
+[KLICK] Oder noch kürzer: Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.
+
+Das ist ein fundamentales Prinzip, das wir immer wieder vergessen. Wenn Lernen sich leicht anfühlt, lernen wir wahrscheinlich weniger, als wenn es sich anstrengend anfühlt.
 :::
 
 ## Die vier Strategien
@@ -312,6 +362,22 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 {{< fa robot >}} **KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.**
 :::
 
+::: {.notes}
+Bjork hat vier konkrete Strategien identifiziert, die als erwünschte Schwierigkeiten fungieren:
+
+[KLICK] Erstens, selbst generieren. Eigene Antworten formulieren, statt vorgegebene zu lesen.
+
+[KLICK] Zweitens, verteilt lernen. Zeitliche Abstände einbauen.
+
+[KLICK] Drittens, aktiv abrufen. Wissen aus dem Gedächtnis holen, statt es nachzuschlagen.
+
+[KLICK] Viertens, variieren. Themen und Aufgabentypen mischen.
+
+[KLICK] Und hier kommt der kritische Punkt: KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.
+
+Warum selbst generieren, wenn KI es besser kann? Warum sich anstrengen, wenn die Antwort einen Klick entfernt ist? Warum aus dem Gedächtnis abrufen, wenn ich nachfragen kann?
+:::
+
 ## Der Generierungseffekt {.nostretch}
 
 ```{r}
@@ -373,6 +439,18 @@ Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDel
 
 [Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster...]{style="color: #666; font-style: italic;"}
 
+::: {.notes}
+Schauen wir uns den Generierungseffekt genauer an, weil er besonders relevant für KI ist.
+
+Die Grafik zeigt die Behaltensleistung in Prozent. Selbst generierte Information wird am besten behalten, etwa 70 Prozent. Gelesene Information liegt bei etwa 50 Prozent. Und von KI erhaltene Information? Noch niedriger, hier illustrativ bei etwa 35 Prozent dargestellt.
+
+Die Forschung zum Generierungseffekt stammt aus den 1970er Jahren. Slamecka und Graf zeigten, dass selbst produziertes Material besser behalten wird als passiv aufgenommenes.
+
+[KLICK] Die Implikation ist klar: Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.
+
+[KLICK] Aber dieser Effekt ist nicht neu. Das bringt uns zu den historischen Analogien.
+:::
+
 ## Historische Analogien {.nostretch}
 
 ```{r}
@@ -433,6 +511,20 @@ ggplot(timeline_data) +
 [[@dahmaniHabitualUseGPS2020; @sparrowGoogleEffectsMemory2011]]{style="color: #999; font-size: 0.8em;"}
 :::
 
+::: {.notes}
+Hier sehen Sie eine Zeitlinie technologischer Entwicklungen und ihrer Auswirkungen auf unsere kognitiven Fähigkeiten.
+
+Die 1970er: Der Taschenrechner. Studien zeigen, dass früher und intensiver Taschenrechner-Einsatz das konzeptuelle mathematische Verständnis beeinträchtigen kann.
+
+Die 1990er: GPS-Navigation. Habitueller GPS-Gebrauch ist mit schwächerem räumlichem Gedächtnis assoziiert.
+
+Die 2000er: Google. Der "Google-Effekt": Wir erinnern besser, WO Information zu finden ist, als WAS die Information ist.
+
+Die 2020er: KI. Und jetzt? KI kombiniert und verstärkt all diese Effekte.
+
+[KLICK] Das Muster wiederholt sich. Aber der Unterschied: KI ist breiter als GPS oder Taschenrechner. Sie betrifft nicht eine kognitive Domäne, sondern potenziell alle.
+:::
+
 ## Die entscheidende Frage
 
 <br><br>
@@ -464,6 +556,20 @@ Die Frage ist nicht *ob* KI, sondern *wer* davon profitiert.
 <br>
 
 [Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.]{style="color: #666; font-style: italic; display: block; text-align: center;"}
+
+::: {.notes}
+Das bringt uns zur entscheidenden Frage.
+
+Dasselbe Werkzeug, unterschiedliche Ergebnisse.
+
+[KLICK] Taschenrechner helfen Mathematikern enorm. Aber für Lernende, die gerade erst das Rechnen verstehen sollen, können sie schädlich sein.
+
+GPS unterstützt Taxifahrer bei der Navigation. Aber es schwächt nachweislich das räumliche Gedächtnis von Menschen, die es noch nicht aufgebaut haben.
+
+[KLICK] Die Frage ist also nicht, OB KI nützt oder schadet. Die Frage ist: WER profitiert und wer nicht?
+
+[KLICK] Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.
+:::
 
 ## Was Experten sehen
 
@@ -497,6 +603,18 @@ Die Frage ist nicht *ob* KI, sondern *wer* davon profitiert.
 Experten speichern Wissen in **Chunks**: vernetzte Wissensstrukturen, die automatisch abgerufen werden [@grootThoughtChoiceChess1978; @chasePerceptionChess1973].
 
 :::
+:::
+
+::: {.notes}
+Schauen wir uns an, was Experten von Novizen unterscheidet. Das klassische Beispiel kommt aus der Schachforschung.
+
+Was sieht ein Novize? 64 Felder, 32 Figuren, viele Möglichkeiten. Er sieht die Einzelteile.
+
+[KLICK] Was sieht ein Experte? "Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7." Er sieht Muster und Bedeutung.
+
+[KLICK] Das ist der fundamentale Unterschied. Experten speichern Wissen in sogenannten "Chunks": vernetzte Wissensstrukturen, die automatisch abgerufen werden.
+
+Ein Schachmeister hat etwa 50.000 solcher Chunks im Langzeitgedächtnis. Die Forschung dazu geht auf de Groot zurück und wurde von Chase und Simon quantifiziert.
 :::
 
 ## Der Expertise-Umkehr-Effekt
@@ -735,6 +853,22 @@ html`<div style="display: flex; align-items: center; gap: 40px;">
 
 Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
 
+::: {.notes}
+Das bringt uns zu einem der wichtigsten Befunde der Instruktionsforschung: dem Expertise-Umkehr-Effekt.
+
+Sie können die Prozent-Buttons anklicken, um zu sehen, wie sich die optimale Lehrmethode verändert.
+
+Auf der x-Achse sehen Sie das Vorwissen des Lernenden. Auf der y-Achse den Lerneffekt.
+
+Die magentafarbene Linie zeigt hohe Unterstützung: ausgearbeitete Beispiele, direkte Instruktion. Die graue Linie zeigt niedrige Unterstützung: problembasiertes Lernen, eigene Lösungswege.
+
+Bei niedrigem Vorwissen ist hohe Unterstützung klar besser. Novizen brauchen Struktur.
+
+Aber bei hohem Vorwissen kehrt sich der Effekt um. Für Experten ist niedrige Unterstützung besser. Die detaillierten Anleitungen werden redundant und stören sogar.
+
+Das ist der Expertise-Umkehr-Effekt: Was für Novizen optimal ist, ist für Experten suboptimal. Und umgekehrt.
+:::
+
 ## Warum Experten profitieren, Lernende nicht
 
 <br>
@@ -770,6 +904,16 @@ Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
 <br>
 
 **Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.**
+
+::: {.notes}
+Jetzt können wir zusammenfassen, warum Experten und Lernende so unterschiedlich von KI-Werkzeugen betroffen sind.
+
+[KLICK] Experten können Routine auslagern. Sie können KI-Output bewerten. Und sie haben mehr Kapazität für Komplexes.
+
+[KLICK] Lernende hingegen können KI-Output nicht bewerten. Sie überspringen möglicherweise Grundlagen. Und das Risiko ist "fliessende Inkompetenz": Sie können mit Hilfe alles, ohne Hilfe nichts.
+
+[KLICK] Das Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.
+:::
 
 ## Kritisches Denken braucht Fachwissen
 
@@ -813,6 +957,18 @@ Kann diese Bewertung nicht vornehmen
 
 [Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.]{style="color: #666; font-style: italic;"}
 
+::: {.notes}
+An diesem Punkt höre ich oft einen Einwand: "Dann bringen wir den Studierenden eben bei, KI-Output kritisch zu prüfen."
+
+Aber hier kommt ein wichtiger Punkt von Daniel Willingham: Kritisches Denken ist keine kontextfreie Fähigkeit. Man kann nicht einfach "kritisch denken lernen" und es dann überall anwenden.
+
+[KLICK] Ein Biomedizin-Experte erkennt, wenn ChatGPT bei Biochemie falsch liegt. Ein Novize kann diese Bewertung nicht vornehmen.
+
+[KLICK] Die Kernaussage: Du kannst nicht kritisch bewerten, was du nicht verstehst.
+
+[KLICK] Und genau deshalb ist Fachwissen so entscheidend.
+:::
+
 ## Kognition erweitern vs. ersetzen
 
 <br>
@@ -849,6 +1005,18 @@ Kann diese Bewertung nicht vornehmen
 
 **Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung** [@clarkExtendingMindsGenerative2025].
 
+::: {.notes}
+Andy Clark, ein Philosoph, hat eine nützliche Unterscheidung eingeführt.
+
+[KLICK] Kognition erweitern: Der Mensch bleibt kognitiv engagiert. Das Werkzeug verstärkt, ersetzt nicht. Die Fähigkeiten bleiben erhalten.
+
+[KLICK] Kognition ersetzen: Der Mensch wird passiv. Das Werkzeug übernimmt das Denken. Es entsteht Abhängigkeit.
+
+[KLICK] Und hier ist der wichtige Punkt: Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.
+
+ChatGPT kann ein Brainstorming-Partner sein, der die eigene Kreativität verstärkt. Oder es kann ein Ghostwriter sein, der das Denken ersetzt. Die Frage ist nicht das Werkzeug. Die Frage ist die Nutzung.
+:::
+
 ## Die Sequenzierungsfrage
 
 <br>
@@ -871,6 +1039,20 @@ Kann diese Bewertung nicht vornehmen
 
 ::: {style="text-align: center; font-size: 1.2em;"}
 **Wer profitiert von KI-Werkzeugen? Wer nicht?**
+:::
+
+::: {.notes}
+Das bringt uns zur praktischen Frage: Wenn Experten profitieren und Lernende Gefahr laufen, wann ist der Übergang?
+
+Links der Novize, rechts der Experte. Irgendwo dazwischen liegt eine Schwelle.
+
+[KLICK] Das Problem ist: Diese Schwelle ist unbekannt.
+
+[KLICK] Sie variiert nach Domäne und Person.
+
+[KLICK] Der Expertise-Umkehr-Effekt erfordert dynamische Empfehlungen.
+
+[KLICK] Die praktische Frage: Wer profitiert von KI-Werkzeugen? Und wer nicht? Diese Frage können wir nicht pauschal beantworten.
 :::
 
 ## Die Kernaussage
@@ -897,6 +1079,20 @@ KI-Werkzeuge sind für Experten gemacht.
 
 ::: {style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;"}
 [**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**]{style="font-size: 1.4em; color: #A3195B;"}
+:::
+
+::: {.notes}
+[Pause, dann KLICK] KI-Werkzeuge sind für Experten gemacht.
+
+[KLICK] Das ist keine Wertung, sondern eine Feststellung. Diese Werkzeuge wurden von Experten entwickelt und funktionieren am besten für Menschen, die bereits wissen, was sie tun.
+
+Sie machen Experten produktiver.
+
+[KLICK] Aber: Lernende profitieren oft nicht. Lernen erfordert genau die kognitive Anstrengung, die KI zu eliminieren droht.
+
+Das ist nicht KI-Feindlichkeit. Lernen braucht Anstrengung. KI kann diese Anstrengung reduzieren, wenn sie passiv genutzt wird. Aber: Es ist nicht unvermeidlich. Erinnern Sie sich an den GPT-Tutor? Die Art der Nutzung entscheidet.
+
+[KLICK] Die Konsequenz: Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht. Nicht "keine KI", aber "Fundament zuerst".
 :::
 
 ## Was bedeutet das für die Lehre?
@@ -962,6 +1158,22 @@ KI-Werkzeuge sind für Experten gemacht.
 <br>
 
 **Grundlagen BEVOR Werkzeuge**
+
+::: {.notes}
+Zum Abschluss: Was bedeutet das konkret für unsere Lehre?
+
+[KLICK] Erstens: Anstrengung ist das Signal. Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.
+
+[KLICK] Zweitens: KI als Tutor, nicht als Antwortgeber. KI soll Denkprozesse anregen, nicht ersetzen.
+
+[KLICK] Drittens: Expertise bestimmt den Nutzen. Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.
+
+[KLICK] Und die Zusammenfassung: Grundlagen BEVOR Werkzeuge.
+
+Erst das Fundament, dann die Erweiterung. Erst verstehen, dann automatisieren. Erst selbst können, dann delegieren.
+
+Vielen Dank.
+:::
 
 ## Referenzen
 

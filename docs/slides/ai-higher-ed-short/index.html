@@ -226,6 +226,18 @@
   <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
+  div.callout-pro-tip.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\e2ca';
+    background-image: none;
+  }
   div.callout-warning.callout {
     border-left-color: #A3195B;
   }
@@ -250,6 +262,18 @@
     content: '\f075';
     background-image: none;
   }
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    background-image: none;
+  }
   div.callout-reflect.callout {
     border-left-color: #D4A03E;
   }
@@ -260,6 +284,30 @@
   div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f0eb';
+    background-image: none;
+  }
+  div.callout-source-check.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
+  div.callout-demonstration.callout {
+    border-left-color: #333333;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
     background-image: none;
   }
   div.callout-group.callout {
@@ -286,42 +334,6 @@
     content: '\f328';
     background-image: none;
   }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
-  }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
-    background-image: none;
-  }
-  div.callout-experiment.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
-    background-image: none;
-  }
   div.callout-key-point.callout {
     border-left-color: #D4A03E;
   }
@@ -334,28 +346,16 @@
     content: '\f005';
     background-image: none;
   }
-  div.callout-source-check.callout {
-    border-left-color: #D4A03E;
+  div.callout-experiment.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
+  div.callout-experiment.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f002';
-    background-image: none;
-  }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\e2ca';
+    content: '\f0c3';
     background-image: none;
   }
   </style>
@@ -407,6 +407,25 @@
 <p><strong>Quelle:</strong> <span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">Bastani u.&nbsp;a. (<a href="#/referenzen" role="doc-biblioref" onclick="">2025</a>)</span>:</p>
 <p>~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen</p>
 </div>
+<aside class="notes">
+<p>Ich möchte mit einem überraschenden Befund beginnen, der die Komplexität unseres Themas illustriert.</p>
+<p>In einer gross angelegten Studie mit etwa 1000 Gymnasiasten in der Türkei erhielten Schüler Zugang zu GPT-4 während ihrer Mathematik-Übungen.</p>
+<p>[KLICK] Die Ergebnisse während der Übungsphase waren beeindruckend: 48 Prozent mehr Aufgaben korrekt gelöst.</p>
+<p>[KLICK] Klingt nach einem Erfolg, oder? Aber dann kam der Test ohne KI-Zugang.</p>
+<p>[KLICK] 17 Prozent schlechter als die Kontrollgruppe.</p>
+<p>[KLICK] Das ist die zentrale Spannung: Mehr Aufgaben gelöst bedeutet nicht automatisch mehr gelernt.</p>
+<p>Der 17%-Nachteil entspricht etwa 0.2-0.3 Standardabweichungen. Relevant, aber kein Totalausfall. Wichtig: Die Studie testete auch einen “GPT Tutor” mit pädagogischen Leitplanken, der deutlich bessere Ergebnisse zeigte. Das Problem ist nicht KI an sich, sondern wie sie eingesetzt wird.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="das-paradox" class="slide level2">
@@ -416,6 +435,23 @@
 <img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="1152" class="r-stretch"><div class="fragment">
 <p><br></p>
 <p><strong>Aufgabenleistung ≠ Lernen</strong></p>
+<aside class="notes">
+<p>Hier sehen wir das Paradox visualisiert.</p>
+<p>Die magentafarbene Linie zeigt die Gruppe mit KI-Zugang, die graue die Kontrollgruppe ohne KI.</p>
+<p>In der Übungsphase links performt die KI-Gruppe deutlich besser. Das macht Sinn: Sie hatten ja Hilfe. Der Unterschied ist klar, die Fehlerbalken überlappen nicht.</p>
+<p>Aber schauen Sie, was beim Test passiert. Die KI-Gruppe schneidet tendenziell schlechter ab, aber beachten Sie die Fehlerbalken: Sie überlappen sich. Der Unterschied ist statistisch nicht so dramatisch, wie die Linien allein suggerieren würden.</p>
+<p>[KLICK] Die Kernaussage: Aufgabenleistung ist nicht dasselbe wie Lernen. Wir verwechseln oft Performanz mit Kompetenz. Wenn Studierende mit KI-Hilfe eine Aufgabe lösen, sehen wir die Performanz des Systems, nicht unbedingt das Lernen des Studierenden.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="das-nadelöhr-des-lernens" class="slide level2 nostretch">
@@ -433,6 +469,22 @@
 <div style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; margin-top: 0.5em;">
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> <strong>Kernaussage:</strong> Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses <span class="citation" data-cites="swellerCognitiveLoadTheory2024">(<a href="#/referenzen" role="doc-biblioref" onclick="">Sweller 2024</a>)</span>.</p>
 </div>
+<aside class="notes">
+<p>Um zu verstehen, warum das passiert, müssen wir einen kurzen Ausflug in die Kognitionspsychologie machen.</p>
+<p>Hier sehen Sie ein vereinfachtes Modell des menschlichen Gedächtnisses. Links die neue Information, rechts das Langzeitgedächtnis, und in der Mitte: das Nadelöhr.</p>
+<p>Das Arbeitsgedächtnis hat eine stark begrenzte Kapazität: etwa 4 plus/minus 1 Elemente gleichzeitig. Neue Information links ist unbegrenzt. Das Langzeitgedächtnis rechts ist praktisch unbegrenzt. Aber alles, was von links nach rechts wandern soll, muss durch dieses enge Nadelöhr.</p>
+<p>[KLICK] Das ist die Kernaussage der Cognitive Load Theory: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses. Es gibt keinen Weg drumherum. Keine Abkürzung. Keine KI kann diesen biologischen Engpass umgehen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="erwünschte-schwierigkeiten" class="slide level2">
@@ -450,6 +502,23 @@
 <div style="text-align: center; font-size: 1.2em;">
 <p><strong>Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.</strong></p>
 </div>
+<aside class="notes">
+<p>Das bringt uns zu einem kontraintuitiven Konzept: den erwünschten Schwierigkeiten, oder auf Englisch “Desirable Difficulties”.</p>
+<p>Hier ein Zitat von Robert Bjork: “Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”</p>
+<p>Übersetzt: Bedingungen, die das scheinbare Lernen verlangsamen, optimieren oft das langfristige Behalten und den Transfer.</p>
+<p>[KLICK] Oder noch kürzer: Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.</p>
+<p>Das ist ein fundamentales Prinzip, das wir immer wieder vergessen. Wenn Lernen sich leicht anfühlt, lernen wir wahrscheinlich weniger, als wenn es sich anstrengend anfühlt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="die-vier-strategien" class="slide level2">
@@ -482,6 +551,25 @@
 <div style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; text-align: center;">
 <p><i class="fa-solid fa-robot" aria-label="robot"></i> <strong>KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.</strong></p>
 </div>
+<aside class="notes">
+<p>Bjork hat vier konkrete Strategien identifiziert, die als erwünschte Schwierigkeiten fungieren:</p>
+<p>[KLICK] Erstens, selbst generieren. Eigene Antworten formulieren, statt vorgegebene zu lesen.</p>
+<p>[KLICK] Zweitens, verteilt lernen. Zeitliche Abstände einbauen.</p>
+<p>[KLICK] Drittens, aktiv abrufen. Wissen aus dem Gedächtnis holen, statt es nachzuschlagen.</p>
+<p>[KLICK] Viertens, variieren. Themen und Aufgabentypen mischen.</p>
+<p>[KLICK] Und hier kommt der kritische Punkt: KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.</p>
+<p>Warum selbst generieren, wenn KI es besser kann? Warum sich anstrengen, wenn die Antwort einen Klick entfernt ist? Warum aus dem Gedächtnis abrufen, wenn ich nachfragen kann?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="der-generierungseffekt" class="slide level2 nostretch">
@@ -503,6 +591,23 @@
 <div class="fragment">
 <p><br></p>
 <p><span style="color: #666; font-style: italic;">Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…</span></p>
+<aside class="notes">
+<p>Schauen wir uns den Generierungseffekt genauer an, weil er besonders relevant für KI ist.</p>
+<p>Die Grafik zeigt die Behaltensleistung in Prozent. Selbst generierte Information wird am besten behalten, etwa 70 Prozent. Gelesene Information liegt bei etwa 50 Prozent. Und von KI erhaltene Information? Noch niedriger, hier illustrativ bei etwa 35 Prozent dargestellt.</p>
+<p>Die Forschung zum Generierungseffekt stammt aus den 1970er Jahren. Slamecka und Graf zeigten, dass selbst produziertes Material besser behalten wird als passiv aufgenommenes.</p>
+<p>[KLICK] Die Implikation ist klar: Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.</p>
+<p>[KLICK] Aber dieser Effekt ist nicht neu. Das bringt uns zu den historischen Analogien.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="historische-analogien" class="slide level2 nostretch">
@@ -522,6 +627,24 @@
 <p><strong>Das Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.</strong></p>
 <p><span style="color: #999; font-size: 0.8em;"><span class="citation" data-cites="dahmaniHabitualUseGPS2020 sparrowGoogleEffectsMemory2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Dahmani und Bohbot 2020</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Sparrow, Liu, und Wegner 2011</a>)</span></span></p>
 </div>
+<aside class="notes">
+<p>Hier sehen Sie eine Zeitlinie technologischer Entwicklungen und ihrer Auswirkungen auf unsere kognitiven Fähigkeiten.</p>
+<p>Die 1970er: Der Taschenrechner. Studien zeigen, dass früher und intensiver Taschenrechner-Einsatz das konzeptuelle mathematische Verständnis beeinträchtigen kann.</p>
+<p>Die 1990er: GPS-Navigation. Habitueller GPS-Gebrauch ist mit schwächerem räumlichem Gedächtnis assoziiert.</p>
+<p>Die 2000er: Google. Der “Google-Effekt”: Wir erinnern besser, WO Information zu finden ist, als WAS die Information ist.</p>
+<p>Die 2020er: KI. Und jetzt? KI kombiniert und verstärkt all diese Effekte.</p>
+<p>[KLICK] Das Muster wiederholt sich. Aber der Unterschied: KI ist breiter als GPS oder Taschenrechner. Sie betrifft nicht eine kognitive Domäne, sondern potenziell alle.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="die-entscheidende-frage" class="slide level2">
@@ -546,6 +669,24 @@
 <div class="fragment">
 <p><br></p>
 <p><span style="color: #666; font-style: italic; display: block; text-align: center;">Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.</span></p>
+<aside class="notes">
+<p>Das bringt uns zur entscheidenden Frage.</p>
+<p>Dasselbe Werkzeug, unterschiedliche Ergebnisse.</p>
+<p>[KLICK] Taschenrechner helfen Mathematikern enorm. Aber für Lernende, die gerade erst das Rechnen verstehen sollen, können sie schädlich sein.</p>
+<p>GPS unterstützt Taxifahrer bei der Navigation. Aber es schwächt nachweislich das räumliche Gedächtnis von Menschen, die es noch nicht aufgebaut haben.</p>
+<p>[KLICK] Die Frage ist also nicht, OB KI nützt oder schadet. Die Frage ist: WER profitiert und wer nicht?</p>
+<p>[KLICK] Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="was-experten-sehen" class="slide level2">
@@ -565,6 +706,23 @@
 <p><br></p>
 <p>Experten speichern Wissen in <strong>Chunks</strong>: vernetzte Wissensstrukturen, die automatisch abgerufen werden <span class="citation" data-cites="grootThoughtChoiceChess1978 chasePerceptionChess1973">(<a href="#/referenzen" role="doc-biblioref" onclick="">Groot und Groot 1978</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Chase und Simon 1973</a>)</span>.</p>
 </div></div>
+<aside class="notes">
+<p>Schauen wir uns an, was Experten von Novizen unterscheidet. Das klassische Beispiel kommt aus der Schachforschung.</p>
+<p>Was sieht ein Novize? 64 Felder, 32 Figuren, viele Möglichkeiten. Er sieht die Einzelteile.</p>
+<p>[KLICK] Was sieht ein Experte? “Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7.” Er sieht Muster und Bedeutung.</p>
+<p>[KLICK] Das ist der fundamentale Unterschied. Experten speichern Wissen in sogenannten “Chunks”: vernetzte Wissensstrukturen, die automatisch abgerufen werden.</p>
+<p>Ein Schachmeister hat etwa 50.000 solcher Chunks im Langzeitgedächtnis. Die Forschung dazu geht auf de Groot zurück und wurde von Chase und Simon quantifiziert.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="der-expertise-umkehr-effekt" class="slide level2">
 <h2>Der Expertise-Umkehr-Effekt</h2>
@@ -572,223 +730,223 @@
 <p><i class="fa-solid fa-hand-pointer" aria-label="hand-pointer"></i> <strong>Interaktiv:</strong> Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.</p>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="514" data-source-offset="-230"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 513;"><span id="cb1-514"><a></a>config <span class="op">=</span> ({</span>
-<span id="cb1-515"><a></a>  <span class="co">// Color palette</span></span>
-<span id="cb1-516"><a></a>  <span class="dt">colors</span><span class="op">:</span> {</span>
-<span id="cb1-517"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span></span>
-<span id="cb1-518"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span></span>
-<span id="cb1-519"><a></a>    <span class="dt">neutral</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span></span>
-<span id="cb1-520"><a></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#f5f5f5"</span></span>
-<span id="cb1-521"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-522"><a></a>  <span class="co">// Line equations: y = intercept + slope * x</span></span>
-<span id="cb1-523"><a></a>  <span class="co">// Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x</span></span>
-<span id="cb1-524"><a></a>  <span class="dt">lines</span><span class="op">:</span> {</span>
-<span id="cb1-525"><a></a>    <span class="dt">high</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">65</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.4</span> }<span class="op">,</span></span>
-<span id="cb1-526"><a></a>    <span class="dt">low</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="fl">0.4</span> }</span>
-<span id="cb1-527"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-528"><a></a>  <span class="co">// Input options</span></span>
-<span id="cb1-529"><a></a>  <span class="dt">steps</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-530"><a></a>  <span class="dt">defaultValue</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
-<span id="cb1-531"><a></a>  <span class="co">// Plot dimensions</span></span>
-<span id="cb1-532"><a></a>  <span class="dt">plot</span><span class="op">:</span> {</span>
-<span id="cb1-533"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
-<span id="cb1-534"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
-<span id="cb1-535"><a></a>    <span class="dt">margins</span><span class="op">:</span> { <span class="dt">left</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">bottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">top</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">right</span><span class="op">:</span> <span class="dv">40</span> }</span>
-<span id="cb1-536"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-537"><a></a>  <span class="co">// Labels</span></span>
-<span id="cb1-538"><a></a>  <span class="dt">labels</span><span class="op">:</span> {</span>
-<span id="cb1-539"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"Hohe Unterstützung"</span><span class="op">,</span></span>
-<span id="cb1-540"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span><span class="op">,</span></span>
-<span id="cb1-541"><a></a>    <span class="dt">highExamples</span><span class="op">:</span> [<span class="st">"📖 Worked Examples"</span><span class="op">,</span> <span class="st">"🧭 Direkte Instruktion"</span>]<span class="op">,</span></span>
-<span id="cb1-542"><a></a>    <span class="dt">lowExamples</span><span class="op">:</span> [<span class="st">"🧩 Problembasiertes Lernen"</span><span class="op">,</span> <span class="st">"🔍 Eigene Lösungswege"</span>]</span>
-<span id="cb1-543"><a></a>  }</span>
-<span id="cb1-544"><a></a>})</span>
-<span id="cb1-545"><a></a></span>
-<span id="cb1-546"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-547"><a></a><span class="co">// Derived values: Computed from config (no magic numbers)</span></span>
-<span id="cb1-548"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-549"><a></a></span>
-<span id="cb1-550"><a></a><span class="co">// Crossover point: solve for x where both lines intersect</span></span>
-<span id="cb1-551"><a></a>crossoverPoint <span class="op">=</span> {</span>
-<span id="cb1-552"><a></a>  <span class="kw">const</span> { high<span class="op">,</span> low } <span class="op">=</span> config<span class="op">.</span><span class="at">lines</span><span class="op">;</span></span>
-<span id="cb1-553"><a></a>  <span class="cf">return</span> (high<span class="op">.</span><span class="at">intercept</span> <span class="op">-</span> low<span class="op">.</span><span class="at">intercept</span>) <span class="op">/</span> (low<span class="op">.</span><span class="at">slope</span> <span class="op">-</span> high<span class="op">.</span><span class="at">slope</span>)<span class="op">;</span></span>
-<span id="cb1-554"><a></a>}</span>
-<span id="cb1-555"><a></a></span>
-<span id="cb1-556"><a></a><span class="co">// Helper function to calculate y-value on a line</span></span>
-<span id="cb1-557"><a></a>calcY <span class="op">=</span> (line<span class="op">,</span> x) <span class="kw">=&gt;</span> line<span class="op">.</span><span class="at">intercept</span> <span class="op">+</span> line<span class="op">.</span><span class="at">slope</span> <span class="op">*</span> x</span>
-<span id="cb1-558"><a></a></span>
-<span id="cb1-559"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-560"><a></a><span class="co">// State: Single source of truth for user input (hidden, controlled by buttons)</span></span>
-<span id="cb1-561"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-562"><a></a>viewof vorwissen <span class="op">=</span> {</span>
-<span id="cb1-563"><a></a>  <span class="kw">const</span> input <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(config<span class="op">.</span><span class="at">steps</span><span class="op">,</span> {</span>
-<span id="cb1-564"><a></a>    <span class="dt">value</span><span class="op">:</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">,</span></span>
-<span id="cb1-565"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
-<span id="cb1-566"><a></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x <span class="op">+</span> <span class="st">"%"</span></span>
-<span id="cb1-567"><a></a>  })<span class="op">;</span></span>
-<span id="cb1-568"><a></a>  input<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span><span class="op">;</span></span>
-<span id="cb1-569"><a></a>  <span class="cf">return</span> input<span class="op">;</span></span>
-<span id="cb1-570"><a></a>}</span>
-<span id="cb1-571"><a></a></span>
-<span id="cb1-572"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-573"><a></a><span class="co">// Reactive calculations based on current state</span></span>
-<span id="cb1-574"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-575"><a></a>currentState <span class="op">=</span> {</span>
-<span id="cb1-576"><a></a>  <span class="kw">const</span> x <span class="op">=</span> vorwissen <span class="op">??</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">;</span></span>
-<span id="cb1-577"><a></a>  <span class="kw">const</span> highY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">high</span><span class="op">,</span> x)<span class="op">;</span></span>
-<span id="cb1-578"><a></a>  <span class="kw">const</span> lowY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">low</span><span class="op">,</span> x)<span class="op">;</span></span>
-<span id="cb1-579"><a></a>  <span class="kw">const</span> isHighBetter <span class="op">=</span> x <span class="op">&lt;=</span> crossoverPoint<span class="op">;</span></span>
-<span id="cb1-580"><a></a></span>
-<span id="cb1-581"><a></a>  <span class="cf">return</span> {</span>
-<span id="cb1-582"><a></a>    x<span class="op">,</span></span>
-<span id="cb1-583"><a></a>    highY<span class="op">,</span></span>
-<span id="cb1-584"><a></a>    lowY<span class="op">,</span></span>
-<span id="cb1-585"><a></a>    isHighBetter<span class="op">,</span></span>
-<span id="cb1-586"><a></a>    <span class="dt">optimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> highY <span class="op">:</span> lowY<span class="op">,</span></span>
-<span id="cb1-587"><a></a>    <span class="dt">suboptimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> lowY <span class="op">:</span> highY<span class="op">,</span></span>
-<span id="cb1-588"><a></a>    <span class="dt">optimalLabel</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
-<span id="cb1-589"><a></a>    <span class="dt">optimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
-<span id="cb1-590"><a></a>    <span class="dt">suboptimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span></span>
-<span id="cb1-591"><a></a>  }<span class="op">;</span></span>
-<span id="cb1-592"><a></a>}</span>
-<span id="cb1-593"><a></a></span>
-<span id="cb1-594"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-595"><a></a><span class="co">// Plot: Visualization with all marks</span></span>
-<span id="cb1-596"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-597"><a></a>expertisePlot <span class="op">=</span> {</span>
-<span id="cb1-598"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> lines<span class="op">,</span> plot<span class="op">,</span> labels } <span class="op">=</span> config<span class="op">;</span></span>
-<span id="cb1-599"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> highY<span class="op">,</span> lowY<span class="op">,</span> isHighBetter<span class="op">,</span> optimalY<span class="op">,</span> suboptimalY<span class="op">,</span> optimalColor<span class="op">,</span> suboptimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
-<span id="cb1-600"><a></a></span>
-<span id="cb1-601"><a></a>  <span class="co">// Generate line data points</span></span>
-<span id="cb1-602"><a></a>  <span class="kw">const</span> highLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
-<span id="cb1-603"><a></a>  <span class="kw">const</span> lowLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
-<span id="cb1-604"><a></a></span>
-<span id="cb1-605"><a></a>  <span class="co">// Label positions (relative to line endpoints)</span></span>
-<span id="cb1-606"><a></a>  <span class="kw">const</span> labelOffsetY <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span>
-<span id="cb1-607"><a></a>  <span class="kw">const</span> exampleBaseY <span class="op">=</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> labelOffsetY<span class="op">;</span></span>
-<span id="cb1-608"><a></a></span>
-<span id="cb1-609"><a></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-610"><a></a>    <span class="dt">width</span><span class="op">:</span> plot<span class="op">.</span><span class="at">width</span><span class="op">,</span></span>
-<span id="cb1-611"><a></a>    <span class="dt">height</span><span class="op">:</span> plot<span class="op">.</span><span class="at">height</span><span class="op">,</span></span>
-<span id="cb1-612"><a></a>    <span class="dt">marginLeft</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">left</span><span class="op">,</span></span>
-<span id="cb1-613"><a></a>    <span class="dt">marginBottom</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">bottom</span><span class="op">,</span></span>
-<span id="cb1-614"><a></a>    <span class="dt">marginTop</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">top</span><span class="op">,</span></span>
-<span id="cb1-615"><a></a>    <span class="dt">marginRight</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">right</span><span class="op">,</span></span>
-<span id="cb1-616"><a></a>    <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
-<span id="cb1-617"><a></a>    <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb1-618"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-619"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
-<span id="cb1-620"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
-<span id="cb1-621"><a></a>      <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-622"><a></a>      <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
-<span id="cb1-623"><a></a>    }<span class="op">,</span></span>
-<span id="cb1-624"><a></a>    <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb1-625"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-626"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
-<span id="cb1-627"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb1-628"><a></a>      <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-629"><a></a>    }<span class="op">,</span></span>
-<span id="cb1-630"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-631"><a></a>      <span class="co">// Support lines</span></span>
-<span id="cb1-632"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(highLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
-<span id="cb1-633"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(lowLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
-<span id="cb1-634"><a></a></span>
-<span id="cb1-635"><a></a>      <span class="co">// Vertical position indicator</span></span>
-<span id="cb1-636"><a></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([x]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">neutral</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
-<span id="cb1-637"><a></a></span>
-<span id="cb1-638"><a></a>      <span class="co">// Suboptimal dot (smaller, faded)</span></span>
-<span id="cb1-639"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> suboptimalY}]<span class="op">,</span> {</span>
-<span id="cb1-640"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
-<span id="cb1-641"><a></a>        <span class="dt">fill</span><span class="op">:</span> suboptimalColor<span class="op">,</span></span>
-<span id="cb1-642"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span></span>
-<span id="cb1-643"><a></a>        <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.4</span></span>
-<span id="cb1-644"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-645"><a></a></span>
-<span id="cb1-646"><a></a>      <span class="co">// Optimal dot (larger, prominent with white stroke)</span></span>
-<span id="cb1-647"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> optimalY}]<span class="op">,</span> {</span>
-<span id="cb1-648"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
-<span id="cb1-649"><a></a>        <span class="dt">fill</span><span class="op">:</span> optimalColor<span class="op">,</span></span>
-<span id="cb1-650"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span></span>
-<span id="cb1-651"><a></a>        <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb1-652"><a></a>        <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
-<span id="cb1-653"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-654"><a></a></span>
-<span id="cb1-655"><a></a>      <span class="co">// High support examples (left side, near line start)</span></span>
-<span id="cb1-656"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
-<span id="cb1-657"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-658"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-659"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
-<span id="cb1-660"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-661"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-662"><a></a></span>
-<span id="cb1-663"><a></a>      <span class="co">// Low support examples (right side)</span></span>
-<span id="cb1-664"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
-<span id="cb1-665"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-666"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-667"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
-<span id="cb1-668"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-669"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-670"><a></a></span>
-<span id="cb1-671"><a></a>      <span class="co">// Line labels (near line ends)</span></span>
-<span id="cb1-672"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
-<span id="cb1-673"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
-<span id="cb1-674"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-675"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
-<span id="cb1-676"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
-<span id="cb1-677"><a></a>      })</span>
-<span id="cb1-678"><a></a>    ]</span>
-<span id="cb1-679"><a></a>  })<span class="op">;</span></span>
-<span id="cb1-680"><a></a>}</span>
-<span id="cb1-681"><a></a></span>
-<span id="cb1-682"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-683"><a></a><span class="co">// Button Group: Custom styled segmented control</span></span>
-<span id="cb1-684"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-685"><a></a>buttonGroup <span class="op">=</span> {</span>
-<span id="cb1-686"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> optimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
-<span id="cb1-687"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> steps } <span class="op">=</span> config<span class="op">;</span></span>
-<span id="cb1-688"><a></a></span>
-<span id="cb1-689"><a></a>  <span class="kw">const</span> buttonStyle <span class="op">=</span> (isSelected<span class="op">,</span> selectColor) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
-<span id="cb1-690"><a></a><span class="vs">    padding: 12px 18px;</span></span>
-<span id="cb1-691"><a></a><span class="vs">    border: none;</span></span>
-<span id="cb1-692"><a></a><span class="vs">    background: </span><span class="sc">${</span>isSelected <span class="op">?</span> selectColor <span class="op">:</span> colors<span class="op">.</span><span class="at">background</span><span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-693"><a></a><span class="vs">    color: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'white'</span> <span class="op">:</span> <span class="st">'#333'</span><span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-694"><a></a><span class="vs">    font-size: 1em;</span></span>
-<span id="cb1-695"><a></a><span class="vs">    font-weight: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'bold'</span> <span class="op">:</span> <span class="st">'normal'</span><span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-696"><a></a><span class="vs">    cursor: pointer;</span></span>
-<span id="cb1-697"><a></a><span class="vs">    border-right: 1px solid #ddd;</span></span>
-<span id="cb1-698"><a></a><span class="vs">    transition: background 0.15s ease;</span></span>
-<span id="cb1-699"><a></a><span class="vs">  `</span><span class="op">;</span></span>
-<span id="cb1-700"><a></a></span>
-<span id="cb1-701"><a></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
-<span id="cb1-702"><a></a></span>
-<span id="cb1-703"><a></a>  steps<span class="op">.</span><span class="fu">forEach</span>(v <span class="kw">=&gt;</span> {</span>
-<span id="cb1-704"><a></a>    <span class="kw">const</span> isSelected <span class="op">=</span> x <span class="op">===</span> v<span class="op">;</span></span>
-<span id="cb1-705"><a></a>    <span class="kw">const</span> selectColor <span class="op">=</span> v <span class="op">&lt;=</span> crossoverPoint <span class="op">?</span> colors<span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">;</span></span>
-<span id="cb1-706"><a></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button style="</span><span class="sc">${</span><span class="fu">buttonStyle</span>(isSelected<span class="op">,</span> selectColor)<span class="sc">}</span><span class="vs">"&gt;</span><span class="sc">${</span>v<span class="sc">}</span><span class="vs">%&lt;/button&gt;`</span><span class="op">;</span></span>
-<span id="cb1-707"><a></a>    btn<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-708"><a></a>      viewof vorwissen<span class="op">.</span><span class="at">value</span> <span class="op">=</span> v<span class="op">;</span></span>
-<span id="cb1-709"><a></a>      viewof vorwissen<span class="op">.</span><span class="fu">dispatchEvent</span>(<span class="kw">new</span> <span class="bu">Event</span>(<span class="st">'input'</span><span class="op">,</span> {<span class="dt">bubbles</span><span class="op">:</span> <span class="kw">true</span>}))<span class="op">;</span></span>
-<span id="cb1-710"><a></a>    }<span class="op">;</span></span>
-<span id="cb1-711"><a></a>    container<span class="op">.</span><span class="fu">appendChild</span>(btn)<span class="op">;</span></span>
-<span id="cb1-712"><a></a>  })<span class="op">;</span></span>
-<span id="cb1-713"><a></a></span>
-<span id="cb1-714"><a></a>  <span class="cf">return</span> container<span class="op">;</span></span>
-<span id="cb1-715"><a></a>}</span>
-<span id="cb1-716"><a></a></span>
-<span id="cb1-717"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-718"><a></a><span class="co">// Layout: Compose all elements</span></span>
-<span id="cb1-719"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-720"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
-<span id="cb1-721"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb1-722"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;"&gt;</span></span>
-<span id="cb1-723"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
-<span id="cb1-724"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>buttonGroup<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb1-725"><a></a><span class="vs">    &lt;div style="font-size: 1.3em; text-align: center; padding: 15px; background: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">22; border-radius: 8px; border-left: 4px solid </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">;"&gt;</span></span>
-<span id="cb1-726"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalLabel</span><span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;</span></span>
-<span id="cb1-727"><a></a><span class="vs">      &lt;span style="font-size: 0.8em; color: #666;"&gt;ist effektiver&lt;/span&gt;</span></span>
-<span id="cb1-728"><a></a><span class="vs">    &lt;/div&gt;</span></span>
-<span id="cb1-729"><a></a><span class="vs">  &lt;/div&gt;</span></span>
-<span id="cb1-730"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="632" data-source-offset="-230"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 631;"><span id="cb1-632"><a></a>config <span class="op">=</span> ({</span>
+<span id="cb1-633"><a></a>  <span class="co">// Color palette</span></span>
+<span id="cb1-634"><a></a>  <span class="dt">colors</span><span class="op">:</span> {</span>
+<span id="cb1-635"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span></span>
+<span id="cb1-636"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span></span>
+<span id="cb1-637"><a></a>    <span class="dt">neutral</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span></span>
+<span id="cb1-638"><a></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#f5f5f5"</span></span>
+<span id="cb1-639"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-640"><a></a>  <span class="co">// Line equations: y = intercept + slope * x</span></span>
+<span id="cb1-641"><a></a>  <span class="co">// Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x</span></span>
+<span id="cb1-642"><a></a>  <span class="dt">lines</span><span class="op">:</span> {</span>
+<span id="cb1-643"><a></a>    <span class="dt">high</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">65</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.4</span> }<span class="op">,</span></span>
+<span id="cb1-644"><a></a>    <span class="dt">low</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="fl">0.4</span> }</span>
+<span id="cb1-645"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-646"><a></a>  <span class="co">// Input options</span></span>
+<span id="cb1-647"><a></a>  <span class="dt">steps</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-648"><a></a>  <span class="dt">defaultValue</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb1-649"><a></a>  <span class="co">// Plot dimensions</span></span>
+<span id="cb1-650"><a></a>  <span class="dt">plot</span><span class="op">:</span> {</span>
+<span id="cb1-651"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
+<span id="cb1-652"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
+<span id="cb1-653"><a></a>    <span class="dt">margins</span><span class="op">:</span> { <span class="dt">left</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">bottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">top</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">right</span><span class="op">:</span> <span class="dv">40</span> }</span>
+<span id="cb1-654"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-655"><a></a>  <span class="co">// Labels</span></span>
+<span id="cb1-656"><a></a>  <span class="dt">labels</span><span class="op">:</span> {</span>
+<span id="cb1-657"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"Hohe Unterstützung"</span><span class="op">,</span></span>
+<span id="cb1-658"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span><span class="op">,</span></span>
+<span id="cb1-659"><a></a>    <span class="dt">highExamples</span><span class="op">:</span> [<span class="st">"📖 Worked Examples"</span><span class="op">,</span> <span class="st">"🧭 Direkte Instruktion"</span>]<span class="op">,</span></span>
+<span id="cb1-660"><a></a>    <span class="dt">lowExamples</span><span class="op">:</span> [<span class="st">"🧩 Problembasiertes Lernen"</span><span class="op">,</span> <span class="st">"🔍 Eigene Lösungswege"</span>]</span>
+<span id="cb1-661"><a></a>  }</span>
+<span id="cb1-662"><a></a>})</span>
+<span id="cb1-663"><a></a></span>
+<span id="cb1-664"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-665"><a></a><span class="co">// Derived values: Computed from config (no magic numbers)</span></span>
+<span id="cb1-666"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-667"><a></a></span>
+<span id="cb1-668"><a></a><span class="co">// Crossover point: solve for x where both lines intersect</span></span>
+<span id="cb1-669"><a></a>crossoverPoint <span class="op">=</span> {</span>
+<span id="cb1-670"><a></a>  <span class="kw">const</span> { high<span class="op">,</span> low } <span class="op">=</span> config<span class="op">.</span><span class="at">lines</span><span class="op">;</span></span>
+<span id="cb1-671"><a></a>  <span class="cf">return</span> (high<span class="op">.</span><span class="at">intercept</span> <span class="op">-</span> low<span class="op">.</span><span class="at">intercept</span>) <span class="op">/</span> (low<span class="op">.</span><span class="at">slope</span> <span class="op">-</span> high<span class="op">.</span><span class="at">slope</span>)<span class="op">;</span></span>
+<span id="cb1-672"><a></a>}</span>
+<span id="cb1-673"><a></a></span>
+<span id="cb1-674"><a></a><span class="co">// Helper function to calculate y-value on a line</span></span>
+<span id="cb1-675"><a></a>calcY <span class="op">=</span> (line<span class="op">,</span> x) <span class="kw">=&gt;</span> line<span class="op">.</span><span class="at">intercept</span> <span class="op">+</span> line<span class="op">.</span><span class="at">slope</span> <span class="op">*</span> x</span>
+<span id="cb1-676"><a></a></span>
+<span id="cb1-677"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-678"><a></a><span class="co">// State: Single source of truth for user input (hidden, controlled by buttons)</span></span>
+<span id="cb1-679"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-680"><a></a>viewof vorwissen <span class="op">=</span> {</span>
+<span id="cb1-681"><a></a>  <span class="kw">const</span> input <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(config<span class="op">.</span><span class="at">steps</span><span class="op">,</span> {</span>
+<span id="cb1-682"><a></a>    <span class="dt">value</span><span class="op">:</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">,</span></span>
+<span id="cb1-683"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
+<span id="cb1-684"><a></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x <span class="op">+</span> <span class="st">"%"</span></span>
+<span id="cb1-685"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-686"><a></a>  input<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span><span class="op">;</span></span>
+<span id="cb1-687"><a></a>  <span class="cf">return</span> input<span class="op">;</span></span>
+<span id="cb1-688"><a></a>}</span>
+<span id="cb1-689"><a></a></span>
+<span id="cb1-690"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-691"><a></a><span class="co">// Reactive calculations based on current state</span></span>
+<span id="cb1-692"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-693"><a></a>currentState <span class="op">=</span> {</span>
+<span id="cb1-694"><a></a>  <span class="kw">const</span> x <span class="op">=</span> vorwissen <span class="op">??</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">;</span></span>
+<span id="cb1-695"><a></a>  <span class="kw">const</span> highY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">high</span><span class="op">,</span> x)<span class="op">;</span></span>
+<span id="cb1-696"><a></a>  <span class="kw">const</span> lowY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">low</span><span class="op">,</span> x)<span class="op">;</span></span>
+<span id="cb1-697"><a></a>  <span class="kw">const</span> isHighBetter <span class="op">=</span> x <span class="op">&lt;=</span> crossoverPoint<span class="op">;</span></span>
+<span id="cb1-698"><a></a></span>
+<span id="cb1-699"><a></a>  <span class="cf">return</span> {</span>
+<span id="cb1-700"><a></a>    x<span class="op">,</span></span>
+<span id="cb1-701"><a></a>    highY<span class="op">,</span></span>
+<span id="cb1-702"><a></a>    lowY<span class="op">,</span></span>
+<span id="cb1-703"><a></a>    isHighBetter<span class="op">,</span></span>
+<span id="cb1-704"><a></a>    <span class="dt">optimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> highY <span class="op">:</span> lowY<span class="op">,</span></span>
+<span id="cb1-705"><a></a>    <span class="dt">suboptimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> lowY <span class="op">:</span> highY<span class="op">,</span></span>
+<span id="cb1-706"><a></a>    <span class="dt">optimalLabel</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
+<span id="cb1-707"><a></a>    <span class="dt">optimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
+<span id="cb1-708"><a></a>    <span class="dt">suboptimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span></span>
+<span id="cb1-709"><a></a>  }<span class="op">;</span></span>
+<span id="cb1-710"><a></a>}</span>
+<span id="cb1-711"><a></a></span>
+<span id="cb1-712"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-713"><a></a><span class="co">// Plot: Visualization with all marks</span></span>
+<span id="cb1-714"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-715"><a></a>expertisePlot <span class="op">=</span> {</span>
+<span id="cb1-716"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> lines<span class="op">,</span> plot<span class="op">,</span> labels } <span class="op">=</span> config<span class="op">;</span></span>
+<span id="cb1-717"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> highY<span class="op">,</span> lowY<span class="op">,</span> isHighBetter<span class="op">,</span> optimalY<span class="op">,</span> suboptimalY<span class="op">,</span> optimalColor<span class="op">,</span> suboptimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
+<span id="cb1-718"><a></a></span>
+<span id="cb1-719"><a></a>  <span class="co">// Generate line data points</span></span>
+<span id="cb1-720"><a></a>  <span class="kw">const</span> highLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
+<span id="cb1-721"><a></a>  <span class="kw">const</span> lowLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
+<span id="cb1-722"><a></a></span>
+<span id="cb1-723"><a></a>  <span class="co">// Label positions (relative to line endpoints)</span></span>
+<span id="cb1-724"><a></a>  <span class="kw">const</span> labelOffsetY <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span>
+<span id="cb1-725"><a></a>  <span class="kw">const</span> exampleBaseY <span class="op">=</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> labelOffsetY<span class="op">;</span></span>
+<span id="cb1-726"><a></a></span>
+<span id="cb1-727"><a></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-728"><a></a>    <span class="dt">width</span><span class="op">:</span> plot<span class="op">.</span><span class="at">width</span><span class="op">,</span></span>
+<span id="cb1-729"><a></a>    <span class="dt">height</span><span class="op">:</span> plot<span class="op">.</span><span class="at">height</span><span class="op">,</span></span>
+<span id="cb1-730"><a></a>    <span class="dt">marginLeft</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">left</span><span class="op">,</span></span>
+<span id="cb1-731"><a></a>    <span class="dt">marginBottom</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">bottom</span><span class="op">,</span></span>
+<span id="cb1-732"><a></a>    <span class="dt">marginTop</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">top</span><span class="op">,</span></span>
+<span id="cb1-733"><a></a>    <span class="dt">marginRight</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">right</span><span class="op">,</span></span>
+<span id="cb1-734"><a></a>    <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
+<span id="cb1-735"><a></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-736"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-737"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
+<span id="cb1-738"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
+<span id="cb1-739"><a></a>      <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-740"><a></a>      <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
+<span id="cb1-741"><a></a>    }<span class="op">,</span></span>
+<span id="cb1-742"><a></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-743"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-744"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
+<span id="cb1-745"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb1-746"><a></a>      <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-747"><a></a>    }<span class="op">,</span></span>
+<span id="cb1-748"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-749"><a></a>      <span class="co">// Support lines</span></span>
+<span id="cb1-750"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(highLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-751"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(lowLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-752"><a></a></span>
+<span id="cb1-753"><a></a>      <span class="co">// Vertical position indicator</span></span>
+<span id="cb1-754"><a></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([x]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">neutral</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
+<span id="cb1-755"><a></a></span>
+<span id="cb1-756"><a></a>      <span class="co">// Suboptimal dot (smaller, faded)</span></span>
+<span id="cb1-757"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> suboptimalY}]<span class="op">,</span> {</span>
+<span id="cb1-758"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-759"><a></a>        <span class="dt">fill</span><span class="op">:</span> suboptimalColor<span class="op">,</span></span>
+<span id="cb1-760"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span></span>
+<span id="cb1-761"><a></a>        <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.4</span></span>
+<span id="cb1-762"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-763"><a></a></span>
+<span id="cb1-764"><a></a>      <span class="co">// Optimal dot (larger, prominent with white stroke)</span></span>
+<span id="cb1-765"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> optimalY}]<span class="op">,</span> {</span>
+<span id="cb1-766"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-767"><a></a>        <span class="dt">fill</span><span class="op">:</span> optimalColor<span class="op">,</span></span>
+<span id="cb1-768"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span></span>
+<span id="cb1-769"><a></a>        <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb1-770"><a></a>        <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
+<span id="cb1-771"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-772"><a></a></span>
+<span id="cb1-773"><a></a>      <span class="co">// High support examples (left side, near line start)</span></span>
+<span id="cb1-774"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
+<span id="cb1-775"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-776"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-777"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
+<span id="cb1-778"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-779"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-780"><a></a></span>
+<span id="cb1-781"><a></a>      <span class="co">// Low support examples (right side)</span></span>
+<span id="cb1-782"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
+<span id="cb1-783"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-784"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-785"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
+<span id="cb1-786"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-787"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-788"><a></a></span>
+<span id="cb1-789"><a></a>      <span class="co">// Line labels (near line ends)</span></span>
+<span id="cb1-790"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
+<span id="cb1-791"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
+<span id="cb1-792"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-793"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
+<span id="cb1-794"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
+<span id="cb1-795"><a></a>      })</span>
+<span id="cb1-796"><a></a>    ]</span>
+<span id="cb1-797"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-798"><a></a>}</span>
+<span id="cb1-799"><a></a></span>
+<span id="cb1-800"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-801"><a></a><span class="co">// Button Group: Custom styled segmented control</span></span>
+<span id="cb1-802"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-803"><a></a>buttonGroup <span class="op">=</span> {</span>
+<span id="cb1-804"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> optimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
+<span id="cb1-805"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> steps } <span class="op">=</span> config<span class="op">;</span></span>
+<span id="cb1-806"><a></a></span>
+<span id="cb1-807"><a></a>  <span class="kw">const</span> buttonStyle <span class="op">=</span> (isSelected<span class="op">,</span> selectColor) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb1-808"><a></a><span class="vs">    padding: 12px 18px;</span></span>
+<span id="cb1-809"><a></a><span class="vs">    border: none;</span></span>
+<span id="cb1-810"><a></a><span class="vs">    background: </span><span class="sc">${</span>isSelected <span class="op">?</span> selectColor <span class="op">:</span> colors<span class="op">.</span><span class="at">background</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-811"><a></a><span class="vs">    color: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'white'</span> <span class="op">:</span> <span class="st">'#333'</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-812"><a></a><span class="vs">    font-size: 1em;</span></span>
+<span id="cb1-813"><a></a><span class="vs">    font-weight: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'bold'</span> <span class="op">:</span> <span class="st">'normal'</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-814"><a></a><span class="vs">    cursor: pointer;</span></span>
+<span id="cb1-815"><a></a><span class="vs">    border-right: 1px solid #ddd;</span></span>
+<span id="cb1-816"><a></a><span class="vs">    transition: background 0.15s ease;</span></span>
+<span id="cb1-817"><a></a><span class="vs">  `</span><span class="op">;</span></span>
+<span id="cb1-818"><a></a></span>
+<span id="cb1-819"><a></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb1-820"><a></a></span>
+<span id="cb1-821"><a></a>  steps<span class="op">.</span><span class="fu">forEach</span>(v <span class="kw">=&gt;</span> {</span>
+<span id="cb1-822"><a></a>    <span class="kw">const</span> isSelected <span class="op">=</span> x <span class="op">===</span> v<span class="op">;</span></span>
+<span id="cb1-823"><a></a>    <span class="kw">const</span> selectColor <span class="op">=</span> v <span class="op">&lt;=</span> crossoverPoint <span class="op">?</span> colors<span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">;</span></span>
+<span id="cb1-824"><a></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button style="</span><span class="sc">${</span><span class="fu">buttonStyle</span>(isSelected<span class="op">,</span> selectColor)<span class="sc">}</span><span class="vs">"&gt;</span><span class="sc">${</span>v<span class="sc">}</span><span class="vs">%&lt;/button&gt;`</span><span class="op">;</span></span>
+<span id="cb1-825"><a></a>    btn<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-826"><a></a>      viewof vorwissen<span class="op">.</span><span class="at">value</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb1-827"><a></a>      viewof vorwissen<span class="op">.</span><span class="fu">dispatchEvent</span>(<span class="kw">new</span> <span class="bu">Event</span>(<span class="st">'input'</span><span class="op">,</span> {<span class="dt">bubbles</span><span class="op">:</span> <span class="kw">true</span>}))<span class="op">;</span></span>
+<span id="cb1-828"><a></a>    }<span class="op">;</span></span>
+<span id="cb1-829"><a></a>    container<span class="op">.</span><span class="fu">appendChild</span>(btn)<span class="op">;</span></span>
+<span id="cb1-830"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-831"><a></a></span>
+<span id="cb1-832"><a></a>  <span class="cf">return</span> container<span class="op">;</span></span>
+<span id="cb1-833"><a></a>}</span>
+<span id="cb1-834"><a></a></span>
+<span id="cb1-835"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-836"><a></a><span class="co">// Layout: Compose all elements</span></span>
+<span id="cb1-837"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-838"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
+<span id="cb1-839"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-840"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;"&gt;</span></span>
+<span id="cb1-841"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
+<span id="cb1-842"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>buttonGroup<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-843"><a></a><span class="vs">    &lt;div style="font-size: 1.3em; text-align: center; padding: 15px; background: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">22; border-radius: 8px; border-left: 4px solid </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">;"&gt;</span></span>
+<span id="cb1-844"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalLabel</span><span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;</span></span>
+<span id="cb1-845"><a></a><span class="vs">      &lt;span style="font-size: 0.8em; color: #666;"&gt;ist effektiver&lt;/span&gt;</span></span>
+<span id="cb1-846"><a></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-847"><a></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-848"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -848,6 +1006,25 @@
 </div>
 <p><br> <br></p>
 <p>Der Expertise-Umkehr-Effekt <span class="citation" data-cites="kalyugaExpertiseReversalEffect2009">(<a href="#/referenzen" role="doc-biblioref" onclick="">Kalyuga 2009</a>)</span>.</p>
+<aside class="notes">
+<p>Das bringt uns zu einem der wichtigsten Befunde der Instruktionsforschung: dem Expertise-Umkehr-Effekt.</p>
+<p>Sie können die Prozent-Buttons anklicken, um zu sehen, wie sich die optimale Lehrmethode verändert.</p>
+<p>Auf der x-Achse sehen Sie das Vorwissen des Lernenden. Auf der y-Achse den Lerneffekt.</p>
+<p>Die magentafarbene Linie zeigt hohe Unterstützung: ausgearbeitete Beispiele, direkte Instruktion. Die graue Linie zeigt niedrige Unterstützung: problembasiertes Lernen, eigene Lösungswege.</p>
+<p>Bei niedrigem Vorwissen ist hohe Unterstützung klar besser. Novizen brauchen Struktur.</p>
+<p>Aber bei hohem Vorwissen kehrt sich der Effekt um. Für Experten ist niedrige Unterstützung besser. Die detaillierten Anleitungen werden redundant und stören sogar.</p>
+<p>Das ist der Expertise-Umkehr-Effekt: Was für Novizen optimal ist, ist für Experten suboptimal. Und umgekehrt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="warum-experten-profitieren-lernende-nicht" class="slide level2">
 <h2>Warum Experten profitieren, Lernende nicht</h2>
@@ -873,6 +1050,22 @@
 <div class="fragment">
 <p><br></p>
 <p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</strong></p>
+<aside class="notes">
+<p>Jetzt können wir zusammenfassen, warum Experten und Lernende so unterschiedlich von KI-Werkzeugen betroffen sind.</p>
+<p>[KLICK] Experten können Routine auslagern. Sie können KI-Output bewerten. Und sie haben mehr Kapazität für Komplexes.</p>
+<p>[KLICK] Lernende hingegen können KI-Output nicht bewerten. Sie überspringen möglicherweise Grundlagen. Und das Risiko ist “fliessende Inkompetenz”: Sie können mit Hilfe alles, ohne Hilfe nichts.</p>
+<p>[KLICK] Das Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="kritisches-denken-braucht-fachwissen" class="slide level2">
@@ -900,6 +1093,23 @@
 <div class="fragment">
 <p><br></p>
 <p><span style="color: #666; font-style: italic;">Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.</span></p>
+<aside class="notes">
+<p>An diesem Punkt höre ich oft einen Einwand: “Dann bringen wir den Studierenden eben bei, KI-Output kritisch zu prüfen.”</p>
+<p>Aber hier kommt ein wichtiger Punkt von Daniel Willingham: Kritisches Denken ist keine kontextfreie Fähigkeit. Man kann nicht einfach “kritisch denken lernen” und es dann überall anwenden.</p>
+<p>[KLICK] Ein Biomedizin-Experte erkennt, wenn ChatGPT bei Biochemie falsch liegt. Ein Novize kann diese Bewertung nicht vornehmen.</p>
+<p>[KLICK] Die Kernaussage: Du kannst nicht kritisch bewerten, was du nicht verstehst.</p>
+<p>[KLICK] Und genau deshalb ist Fachwissen so entscheidend.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="kognition-erweitern-vs.-ersetzen" class="slide level2">
@@ -926,6 +1136,23 @@
 <div class="fragment">
 <p><br></p>
 <p><strong>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung</strong> <span class="citation" data-cites="clarkExtendingMindsGenerative2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Clark 2025</a>)</span>.</p>
+<aside class="notes">
+<p>Andy Clark, ein Philosoph, hat eine nützliche Unterscheidung eingeführt.</p>
+<p>[KLICK] Kognition erweitern: Der Mensch bleibt kognitiv engagiert. Das Werkzeug verstärkt, ersetzt nicht. Die Fähigkeiten bleiben erhalten.</p>
+<p>[KLICK] Kognition ersetzen: Der Mensch wird passiv. Das Werkzeug übernimmt das Denken. Es entsteht Abhängigkeit.</p>
+<p>[KLICK] Und hier ist der wichtige Punkt: Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.</p>
+<p>ChatGPT kann ein Brainstorming-Partner sein, der die eigene Kreativität verstärkt. Oder es kann ein Ghostwriter sein, der das Denken ersetzt. Die Frage ist nicht das Werkzeug. Die Frage ist die Nutzung.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="die-sequenzierungsfrage" class="slide level2">
@@ -944,6 +1171,24 @@
 <div style="text-align: center; font-size: 1.2em;">
 <p><strong>Wer profitiert von KI-Werkzeugen? Wer nicht?</strong></p>
 </div>
+<aside class="notes">
+<p>Das bringt uns zur praktischen Frage: Wenn Experten profitieren und Lernende Gefahr laufen, wann ist der Übergang?</p>
+<p>Links der Novize, rechts der Experte. Irgendwo dazwischen liegt eine Schwelle.</p>
+<p>[KLICK] Das Problem ist: Diese Schwelle ist unbekannt.</p>
+<p>[KLICK] Sie variiert nach Domäne und Person.</p>
+<p>[KLICK] Der Expertise-Umkehr-Effekt erfordert dynamische Empfehlungen.</p>
+<p>[KLICK] Die praktische Frage: Wer profitiert von KI-Werkzeugen? Und wer nicht? Diese Frage können wir nicht pauschal beantworten.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="die-kernaussage" class="slide level2">
@@ -967,6 +1212,24 @@
 <div style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;">
 <p><span style="font-size: 1.4em; color: #A3195B;"><strong>Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.</strong></span></p>
 </div>
+<aside class="notes">
+<p>[Pause, dann KLICK] KI-Werkzeuge sind für Experten gemacht.</p>
+<p>[KLICK] Das ist keine Wertung, sondern eine Feststellung. Diese Werkzeuge wurden von Experten entwickelt und funktionieren am besten für Menschen, die bereits wissen, was sie tun.</p>
+<p>Sie machen Experten produktiver.</p>
+<p>[KLICK] Aber: Lernende profitieren oft nicht. Lernen erfordert genau die kognitive Anstrengung, die KI zu eliminieren droht.</p>
+<p>Das ist nicht KI-Feindlichkeit. Lernen braucht Anstrengung. KI kann diese Anstrengung reduzieren, wenn sie passiv genutzt wird. Aber: Es ist nicht unvermeidlich. Erinnern Sie sich an den GPT-Tutor? Die Art der Nutzung entscheidet.</p>
+<p>[KLICK] Die Konsequenz: Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht. Nicht “keine KI”, aber “Fundament zuerst”.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="was-bedeutet-das-für-die-lehre" class="slide level2">
@@ -999,6 +1262,25 @@
 <div class="fragment">
 <p><br></p>
 <p><strong>Grundlagen BEVOR Werkzeuge</strong></p>
+<aside class="notes">
+<p>Zum Abschluss: Was bedeutet das konkret für unsere Lehre?</p>
+<p>[KLICK] Erstens: Anstrengung ist das Signal. Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.</p>
+<p>[KLICK] Zweitens: KI als Tutor, nicht als Antwortgeber. KI soll Denkprozesse anregen, nicht ersetzen.</p>
+<p>[KLICK] Drittens: Expertise bestimmt den Nutzen. Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.</p>
+<p>[KLICK] Und die Zusammenfassung: Grundlagen BEVOR Werkzeuge.</p>
+<p>Erst das Fundament, dann die Erweiterung. Erst verstehen, dann automatisieren. Erst selbst können, dann delegieren.</p>
+<p>Vielen Dank.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="referenzen" class="slide level2 smaller scrollable">
