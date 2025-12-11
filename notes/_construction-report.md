@@ -12,8 +12,6 @@ The presentation was constructed by synthesizing six research documents from `as
 
 ### 1.1 Core Theoretical Document
 
-**File:** `claude-critical_thinking_analysis.md`
-
 This document provided the theoretical foundation for the expert-learner distinction. Key arguments extracted:
 
 - Critical thinking is **domain-specific**, not a transferable skill (citing Willingham)

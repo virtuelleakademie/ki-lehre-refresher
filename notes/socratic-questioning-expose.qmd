@@ -1,6 +1,6 @@
 ---
 title: "Socratic Questioning in AI Educational Chatbots: Hype vs. Evidence"
-author: "Cognitive Science Expert Analysis"
+author: "Andrew Ellis"
 date: 2025-12-10
 format: html
 ---
