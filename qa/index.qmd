@@ -5,6 +5,12 @@ sidebar: qa
 
 Diese Seite sammelt typische Fragen und Anwendungsszenarien zur Präsentation "KI in der Hochschulbildung: Werkzeuge für Experten, Herausforderungen für Lernende".
 
+::: {.callout-note}
+## Hinweis zu den Szenarien
+
+Die hier beschriebenen Szenarien sind fiktiv. Sie basieren auf typischen Herausforderungen im Hochschulkontext, stellen aber keine realen Personen oder konkreten Ereignisse dar.
+:::
+
 Die Fragen wurden als repräsentative Beispiele entwickelt und illustrieren, wie die vorgestellten Konzepte in verschiedenen Fachbereichen relevant werden. Sie laden zur eigenen Reflexion ein.
 
 ::: {.callout-tip}
