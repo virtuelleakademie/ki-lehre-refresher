@@ -2,34 +2,9 @@
 title: "Präsentation"
 ---
 
-## KI in der Hochschulbildung
+<!-- ## KI in der Hochschulbildung -->
 
-Zwei Versionen verfügbar:
-
-| Version | Dauer | Beschreibung |
-|---------|-------|--------------|
-| [Kurzversion](../slides/ai-higher-ed-short/index.html) | 30 + 30 Min | Fokussierter Vortrag mit anschliessender Diskussion |
-| [Vollversion](../slides/ai-higher-ed/index.html) | ~3 Stunden | Workshop mit Diskussionen und Pausen |
-
-
-
-### Kurzversion (30 + 30 Min)
-
-<iframe
-  src="../slides/ai-higher-ed-short/index.html"
-  width="100%"
-  height="500px"
-  style="border: 1px solid #ccc; border-radius: 4px;">
-</iframe>
-
-
-::: {.callout-tip}
-## Navigation
-Nutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu navigieren. Drücke `F` für Vollbild.
-:::
-
-
-### Vollversion (~3 Stunden)
+Fokussierter Vortrag (30 Min) mit anschliessender Diskussion (30 Min).
 
 <iframe
   src="../slides/ai-higher-ed/index.html"
@@ -38,3 +13,10 @@ Nutze die Pfeiltasten oder klicke auf die Slides, um durch die Präsentation zu 
   style="border: 1px solid #ccc; border-radius: 4px;">
 </iframe>
 
+
+Nutze die Pfeiltasten oder die Leertaste um durch die Präsentation zu navigieren. Drücke `F` für Vollbild.
+
+
+### Vertiefung
+
+Für eine umfassende Behandlung aller Konzepte, Beispiele und theoretischen Hintergründe siehe den [Leitfaden](../guide/index.qmd).
