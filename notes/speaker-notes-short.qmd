@@ -7,6 +7,7 @@ format:
     toc: true
     toc-depth: 3
     number-sections: true
+bibliography: ../bibliography.bib
 ---
 
 # Ein überraschendes Ergebnis
@@ -516,9 +517,9 @@ Was passiert, wenn die KI nicht verfügbar ist? Bei technischem Ausfall? In Situ
 
 **Sprechtext:**
 
-Man könnte einwenden: "Dann bringen wir den Studierenden eben bei, KI-Output kritisch zu prüfen."
+An diesem Punkt höre ich oft einen Einwand: "Gut, Lernende können KI-Output nicht bewerten. Aber das ist doch lösbar! Wir bringen ihnen einfach bei, KI-Output kritisch zu prüfen. Kritisches Denken als Kompetenz."
 
-Aber hier kommt ein wichtiger Punkt von Daniel Willingham:
+Das klingt vernünftig. Aber hier kommt ein wichtiger Punkt von Daniel Willingham, der diesen Ansatz grundlegend in Frage stellt:
 
 [Zitat vorlesen] "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
 
