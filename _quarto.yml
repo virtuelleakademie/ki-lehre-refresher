@@ -16,6 +16,7 @@ project:
     - slides/**/*.qmd
     - qa/**/*.qmd
     - guide/**/*.qmd
+    # - notes/**/*.qmd
 
 website:
   title: "KI in der Lehre: Refresher"
