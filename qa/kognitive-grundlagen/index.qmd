@@ -17,11 +17,9 @@ Die Cognitive Load Theory unterscheidet drei Arten der Belastung:
 
 ### Gesundheit: Notfallsituationen und Informationsverarbeitung
 
-*Dr. Sarah Müller, Pflegewissenschaft*
+Im Bachelor Pflege müssen Studierende in Notfallsituationen sehr schnell viele Informationen gleichzeitig verarbeiten: Vitalwerte, Symptome, Medikamentenwirkungen, und so weiter.
 
-Ich unterrichte im Bachelor Pflege, und meine Studierenden müssen in Notfallsituationen sehr schnell viele Informationen gleichzeitig verarbeiten: Vitalwerte, Symptome, Medikamentenwirkungen, und so weiter.
-
-**Frage:** Wenn das Working Memory wirklich auf 4±1 Elemente beschränkt ist, wie kann ich sie dann überhaupt auf solche komplexen Situationen vorbereiten? Bisher dachte ich, KI-gestützte Simulationen könnten helfen, aber wenn die kognitive Belastung nicht umgangen werden kann: Sollte ich dann vielleicht mehr auf klassische Chunking-Strategien setzen, wo wir zusammengehörige Informationen bündeln?
+**Frage:** Wenn das Working Memory wirklich auf 4±1 Elemente beschränkt ist, wie kann man Studierende dann überhaupt auf solche komplexen Situationen vorbereiten? KI-gestützte Simulationen könnten helfen, aber wenn die kognitive Belastung nicht umgangen werden kann: Sollte dann vielleicht mehr auf klassische Chunking-Strategien gesetzt werden, wo zusammengehörige Informationen gebündelt werden?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -33,11 +31,9 @@ Chunking ist tatsächlich der Schlüssel: Experten speichern Wissen in vernetzte
 
 ### Technik und Informatik: Code verstehen vs. kopieren
 
-*Andreas Weber, Informatik*
+Studierende im dritten Semester Informatik programmieren zunehmend mit GitHub Copilot und ChatGPT. Theoretisch umgeht das die kognitive Verarbeitung nicht wirklich: Sie müssen den generierten Code ja trotzdem verstehen und durchdenken.
 
-Meine Studierenden im dritten Semester Informatik programmieren zunehmend mit GitHub Copilot und ChatGPT. Wenn ich die Ausführungen richtig verstehe, dann umgeht das die kognitive Verarbeitung nicht wirklich: Sie müssen den generierten Code ja trotzdem verstehen und durchdenken.
-
-**Frage:** Aber ich beobachte, dass viele einfach Code kopieren, ohne ihn richtig zu durchdringen. Wie kann ich Aufgabenstellungen so gestalten, dass der germane Load, also die lernrelevante Belastung, im Vordergrund steht? Sollte ich bewusst kleinere Code-Beispiele verwenden, damit sie innerhalb dieser 4±1 Elemente arbeiten können?
+**Frage:** Aber es zeigt sich, dass viele einfach Code kopieren, ohne ihn richtig zu durchdringen. Wie kann man Aufgabenstellungen so gestalten, dass der germane Load, also die lernrelevante Belastung, im Vordergrund steht? Sollten bewusst kleinere Code-Beispiele verwendet werden, damit Studierende innerhalb dieser 4±1 Elemente arbeiten können?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -49,11 +45,9 @@ Das Problem ist, dass KI die lernförderliche Belastung eliminieren kann. Aufgab
 
 ### Wirtschaft: KI zur Komplexitätsreduktion
 
-*Claudia Jenni, Business Administration*
+Im Kurs "Strategisches Management" wird viel mit komplexen Fallstudien gearbeitet: Marktanalysen, Finanzberichte, Wettbewerbsszenarien. Die Studierenden nutzen mittlerweile KI, um diese Fälle vorab zusammenzufassen.
 
-In meinem Kurs "Strategisches Management" arbeiten wir viel mit komplexen Fallstudien: Marktanalysen, Finanzberichte, Wettbewerbsszenarien. Die Studierenden nutzen mittlerweile KI, um diese Fälle vorab zusammenzufassen.
-
-**Frage:** Einerseits verstehe ich das Problem mit dem Working Memory: Wenn sie zu viele Variablen gleichzeitig jonglieren müssen, lernen sie nichts. Andererseits frage ich mich: Wenn KI ihnen hilft, die extrinsic load zu reduzieren, also überflüssige Komplexität wegzufiltern, ist das dann nicht sogar förderlich? Oder riskiere ich damit, dass sie die Fähigkeit verlieren, selbst relevante von irrelevanten Informationen zu unterscheiden?
+**Frage:** Einerseits ist das Problem mit dem Working Memory klar: Wenn Studierende zu viele Variablen gleichzeitig jonglieren müssen, lernen sie nichts. Andererseits: Wenn KI ihnen hilft, die extrinsic load zu reduzieren, also überflüssige Komplexität wegzufiltern, ist das dann nicht sogar förderlich? Oder riskiert man damit, dass sie die Fähigkeit verlieren, selbst relevante von irrelevanten Informationen zu unterscheiden?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -65,11 +59,9 @@ Das ist eine wichtige Unterscheidung: KI kann extrinsische Belastung reduzieren 
 
 ### Künste: Kognitive Überlastung durch KI-Output
 
-*Lukas Stauffer, Visuelle Kommunikation*
+In der Visuellen Kommunikation arbeiten Studierende oft sehr intuitiv und visuell. Viele experimentieren mit Midjourney oder DALL-E und generieren in kurzer Zeit sehr viele Designvarianten.
 
-Bei uns in der Visuellen Kommunikation arbeiten Studierende oft sehr intuitiv und visuell. Ich merke, dass viele mit Midjourney oder DALL-E experimentieren und in kurzer Zeit sehr viele Designvarianten generieren.
-
-**Frage:** Wenn das Working Memory aber tatsächlich so limitiert ist: Überfordert es sie dann nicht kognitiv, wenn sie 50 KI-generierte Entwürfe durchgehen müssen, um den richtigen auszuwählen? Sollte ich sie eher anleiten, weniger, aber bewusstere Iterationen zu machen? Kann die Flut an KI-Output den kreativen Lernprozess tatsächlich behindern, weil die kognitive Kapazität überlastet wird?
+**Frage:** Wenn das Working Memory aber tatsächlich so limitiert ist: Überfordert es Studierende dann nicht kognitiv, wenn sie 50 KI-generierte Entwürfe durchgehen müssen, um den richtigen auszuwählen? Sollte man sie eher anleiten, weniger, aber bewusstere Iterationen zu machen? Kann die Flut an KI-Output den kreativen Lernprozess tatsächlich behindern, weil die kognitive Kapazität überlastet wird?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort

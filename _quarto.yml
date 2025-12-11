@@ -46,9 +46,14 @@ website:
         href: qa/index.qmd
 
     tools:
+      - icon: mortarboard-fill
+        text: BFH Weiterbildungen
+        href: https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/
+        target: _blank
       - icon: lightbulb-fill
         text: Knowledge Base
         href: https://virtuelleakademie.ch/knowledge-base/
+        target: _blank
 
   sidebar:
     - id: qa

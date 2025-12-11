@@ -13,11 +13,9 @@ Die Implikation für KI: Wenn KI generiert, was Studierende selbst produzieren s
 
 ### Gesundheit: Pflegepläne und professionelles Verständnis
 
-*Dozentin, Fachbereich Pflege*
+Im Fachbereich Pflege erstellen Studierende Pflegepläne für Fallbeispiele. Einige nutzen mittlerweile ChatGPT, um diese Pflegepläne zu generieren. Das Endprodukt sieht oft sehr professionell aus, aber im Praktikum zeigt sich, dass ihnen das Verständnis fehlt.
 
-Bei uns erstellen die Studierenden Pflegepläne für Fallbeispiele. Ich merke, dass einige mittlerweile ChatGPT nutzen, um diese Pflegepläne zu generieren. Das Endprodukt sieht oft sehr professionell aus, aber wenn ich dann im Praktikum mit den Studierenden spreche, fehlt ihnen das Verständnis.
-
-**Frage:** Wie kann ich die Aufgabenstellung so anpassen, dass die Studierenden den Generierungseffekt wirklich nutzen, aber trotzdem von KI profitieren können? Soll ich KI komplett verbieten oder gibt es einen Mittelweg?
+**Frage:** Wie kann die Aufgabenstellung so angepasst werden, dass Studierende den Generierungseffekt wirklich nutzen, aber trotzdem von KI profitieren können? Soll KI komplett verboten werden oder gibt es einen Mittelweg?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -29,11 +27,9 @@ Ein Mittelweg könnte sein: Erst eigenen Entwurf erstellen (Generierungseffekt n
 
 ### Wirtschaft: Analysefähigkeit vs. Tool-Kompetenz
 
-*Dozent, Business Administration*
+Im Kurs "Strategisches Management" müssen Studierende Unternehmensanalysen durchführen. Wenn sie einfach eine SWOT-Analyse von ChatGPT generieren lassen, ist das Problem mit dem Generierungseffekt klar.
 
-In meinem Kurs "Strategisches Management" müssen die Studierenden Unternehmensanalysen durchführen. Wenn sie jetzt einfach eine SWOT-Analyse von ChatGPT generieren lassen, verstehe ich das Problem mit dem Generierungseffekt.
-
-**Frage:** Aber gleichzeitig werden sie später im Beruf genau solche Tools nutzen. Wie bereite ich sie realistisch auf die Praxis vor, ohne dass sie das analytische Denken verlernen? Ist es nicht widersprüchlich, wenn wir im Studium KI verbieten, aber in der Wirtschaft ist sie Standard?
+**Frage:** Aber gleichzeitig werden sie später im Beruf genau solche Tools nutzen. Wie bereitet man sie realistisch auf die Praxis vor, ohne dass sie das analytische Denken verlernen? Ist es nicht widersprüchlich, wenn im Studium KI verboten wird, aber in der Wirtschaft ist sie Standard?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -45,11 +41,9 @@ Es geht nicht um Verbot, sondern um Sequenzierung. Experten können KI produktiv
 
 ### Künste: Kreativer Prozess vs. KI-Varianten
 
-*Dozent, Visuelle Kommunikation / Design*
+In Visueller Kommunikation und Design geht es sehr viel um den kreativen Prozess: Skizzieren, Iterieren, Verwerfen, Neuanfangen. Das ist der Kern des Lernens. Wenn Studierende jetzt mit Midjourney oder DALL-E arbeiten und in Sekunden 20 Designvarianten bekommen, fehlt dieser ganze Prozess.
 
-Bei uns geht es sehr viel um den kreativen Prozess: Skizzieren, Iterieren, Verwerfen, Neuanfangen. Das ist der Kern des Lernens. Wenn Studierende jetzt mit Midjourney oder DALL-E arbeiten und in Sekunden 20 Designvarianten bekommen, fehlt dieser ganze Prozess.
-
-**Frage:** Andererseits experimentieren sie vielleicht dadurch mit Ideen, auf die sie sonst nicht gekommen wären. Wie bewerte ich das? Wie stelle ich sicher, dass der Generierungseffekt nicht verloren geht, wenn das eigene Gestalten quasi ausgelagert wird?
+**Frage:** Andererseits experimentieren sie vielleicht dadurch mit Ideen, auf die sie sonst nicht gekommen wären. Wie bewertet man das? Wie stellt man sicher, dass der Generierungseffekt nicht verloren geht, wenn das eigene Gestalten quasi ausgelagert wird?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -61,11 +55,9 @@ Der kreative Prozess des Skizzierens und Iterierens hat eigenen Lernwert. KI-gen
 
 ### HAFL: Vernetztes Denken in der Landwirtschaft
 
-*Dozent, Agronomie*
+In der Agronomie sollen Studierende Bewirtschaftungspläne für landwirtschaftliche Betriebe entwickeln. Dabei müssen sie Fruchtfolgen planen, Nährstoffbilanzen berechnen, Arbeitsspitzen berücksichtigen: Das ist komplexes, vernetztes Denken.
 
-Meine Studierenden sollen Bewirtschaftungspläne für landwirtschaftliche Betriebe entwickeln. Dabei müssen sie Fruchtfolgen planen, Nährstoffbilanzen berechnen, Arbeitsspitzen berücksichtigen: Das ist komplexes, vernetztes Denken.
-
-**Frage:** Wenn sie das jetzt von einer KI machen lassen, haben sie vielleicht ein korrektes Resultat, aber verstehen nicht die Zusammenhänge. Später als Berater müssen sie aber genau diese Entscheidungen begründen und anpassen können. Wie kann ich sicherstellen, dass sie den Denkprozess durchlaufen, auch wenn KI-Tools in der Praxis immer verfügbarer werden?
+**Frage:** Wenn Studierende das von einer KI machen lassen, haben sie vielleicht ein korrektes Resultat, aber verstehen nicht die Zusammenhänge. Später als Berater müssen sie aber genau diese Entscheidungen begründen und anpassen können. Wie kann sichergestellt werden, dass sie den Denkprozess durchlaufen, auch wenn KI-Tools in der Praxis immer verfügbarer werden?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort

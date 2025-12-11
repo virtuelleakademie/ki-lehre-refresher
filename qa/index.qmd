@@ -9,34 +9,20 @@ Die Fragen sind nach Themen geordnet. Für vertiefte Informationen verweisen wir
 
 ## Themenübersicht
 
-### [Das Produktivitäts-Lern-Paradox](paradox/index.qmd)
-Warum können Studierende mit KI mehr Aufgaben lösen, aber trotzdem weniger lernen?
-
-### [Kognitive Grundlagen](kognitive-grundlagen/index.qmd)
-Das Arbeitsgedächtnis als Nadelöhr des Lernens und die Cognitive Load Theory.
-
-### [Erwünschte Schwierigkeiten](erwuenschte-schwierigkeiten/index.qmd)
-Warum Anstrengung beim Lernen notwendig ist und wie KI diese untergraben kann.
-
-### [Der Generierungseffekt](generierungseffekt/index.qmd)
-Warum selbst generierte Information besser behalten wird.
-
-### [Historische Analogien](historische-analogien/index.qmd)
-Was wir von Taschenrechner, GPS und Google über KI lernen können.
-
-### [Experten vs. Lernende](experten-vs-lernende/index.qmd)
-Warum dasselbe Werkzeug unterschiedliche Auswirkungen hat.
-
-### [Der Expertise-Umkehr-Effekt](expertise-umkehr-effekt/index.qmd)
-Wie das Vorwissen bestimmt, welche Lehrmethode optimal ist.
-
-### [Kritisches Denken und Fachwissen](kritisches-denken/index.qmd)
-Warum kritische KI-Bewertung Domänenwissen erfordert.
-
-### [Praktische Implikationen](praktische-implikationen/index.qmd)
-Was bedeutet das konkret für die Lehre?
+| Thema | Beschreibung |
+|-------|--------------|
+| [Das Produktivitäts-Lern-Paradox](paradox/index.qmd) | Warum können Studierende mit KI mehr Aufgaben lösen, aber trotzdem weniger lernen? |
+| [Kognitive Grundlagen](kognitive-grundlagen/index.qmd) | Das Arbeitsgedächtnis als Nadelöhr des Lernens und die Cognitive Load Theory. |
+| [Erwünschte Schwierigkeiten](erwuenschte-schwierigkeiten/index.qmd) | Warum Anstrengung beim Lernen notwendig ist und wie KI diese untergraben kann. |
+| [Der Generierungseffekt](generierungseffekt/index.qmd) | Warum selbst generierte Information besser behalten wird. |
+| [Historische Analogien](historische-analogien/index.qmd) | Was wir von Taschenrechner, GPS und Google über KI lernen können. |
+| [Experten vs. Lernende](experten-vs-lernende/index.qmd) | Warum dasselbe Werkzeug unterschiedliche Auswirkungen hat. |
+| [Der Expertise-Umkehr-Effekt](expertise-umkehr-effekt/index.qmd) | Wie das Vorwissen bestimmt, welche Lehrmethode optimal ist. |
+| [Kritisches Denken und Fachwissen](kritisches-denken/index.qmd) | Warum kritische KI-Bewertung Domänenwissen erfordert. |
+| [Praktische Implikationen](praktische-implikationen/index.qmd) | Was bedeutet das konkret für die Lehre? |
 
 ## Weiterführende Ressourcen
 
 - [Leitfaden: KI in der Hochschulbildung](../guide/index.qmd)
+- [BFH Weiterbildungen: KI in der Lehre](https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/)
 - [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)

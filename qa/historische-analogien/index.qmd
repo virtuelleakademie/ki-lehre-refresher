@@ -18,11 +18,9 @@ Der Unterschied: KI ist breiter als GPS oder Taschenrechner. Sie betrifft nicht 
 
 ### Technik und Informatik: Technologischer Fortschritt und Grundlagenwissen
 
-*Dr. Martin Gerber, Informatik*
+Die historische Entwicklung von Taschenrechner über GPS zu KI wirft Fragen auf. Ist der Vergleich nicht etwas schief? In der Informatik-Ausbildung wurde bewusst entschieden, dass Studierende keinen Assembler mehr von Hand schreiben müssen, weil Compiler das besser machen. Es wurde akzeptiert, dass gewisse Low-Level-Skills obsolet werden.
 
-Du zeigst diese historische Entwicklung von Taschenrechner über GPS zu KI. Aber ist der Vergleich nicht etwas schief? Bei uns in der Informatik-Ausbildung haben wir ja bewusst entschieden, dass Studierende keinen Assembler mehr von Hand schreiben müssen, weil Compiler das besser machen. Wir haben akzeptiert, dass gewisse Low-Level-Skills obsolet werden.
-
-**Frage:** Warum sollte es bei KI anders sein? Wenn die Studierenden mit KI-Tools schneller zu besseren Lösungen kommen, ist das dann nicht einfach der normale technologische Fortschritt? Wo ziehst du konkret die Grenze zwischen "wichtiges Grundlagenwissen, das sie trotzdem lernen müssen" und "kann man getrost der KI überlassen"?
+**Frage:** Warum sollte es bei KI anders sein? Wenn Studierende mit KI-Tools schneller zu besseren Lösungen kommen, ist das dann nicht einfach der normale technologische Fortschritt? Wo liegt konkret die Grenze zwischen "wichtiges Grundlagenwissen, das sie trotzdem lernen müssen" und "kann man getrost der KI überlassen"?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -34,11 +32,9 @@ Die Grenze liegt dort, wo Wissen zur Bewertung von KI-Output nötig ist. Assembl
 
 ### Wirtschaft: Blindes Vertrauen in Modelle
 
-*Prof. Dr. Sandra Meier, Betriebsökonomie*
+Die Analogie mit dem Taschenrechner ist interessant, aber im Bereich Wirtschaft zeigt sich ein Problem: Studierende müssen später in Unternehmen strategische Entscheidungen treffen, Geschäftsberichte analysieren, Budgets verteidigen.
 
-Diese Analogie mit dem Taschenrechner finde ich interessant, aber bei uns im Bereich Wirtschaft sehe ich ein Problem: Meine Studierenden müssen später in Unternehmen strategische Entscheidungen treffen, Geschäftsberichte analysieren, Budgets verteidigen.
-
-**Frage:** Wenn sie jetzt schon im Studium alle Analysen und Argumentationen von ChatGPT machen lassen, wie sollen sie dann später im Beruf beurteilen können, ob die KI-generierten Vorschläge überhaupt Sinn machen? Bei der Finanzkrise 2008 haben viele blind auf Excel-Modelle vertraut, ohne die Annahmen zu hinterfragen. Siehst du nicht die Gefahr, dass wir eine Generation ausbilden, die zwar KI-Tools bedienen kann, aber nicht mehr die Kompetenz hat, deren Output kritisch zu bewerten?
+**Frage:** Wenn sie jetzt schon im Studium alle Analysen und Argumentationen von ChatGPT machen lassen, wie sollen sie dann später im Beruf beurteilen können, ob die KI-generierten Vorschläge überhaupt Sinn machen? Bei der Finanzkrise 2008 haben viele blind auf Excel-Modelle vertraut, ohne die Annahmen zu hinterfragen. Besteht nicht die Gefahr, dass eine Generation ausgebildet wird, die zwar KI-Tools bedienen kann, aber nicht mehr die Kompetenz hat, deren Output kritisch zu bewerten?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -50,11 +46,9 @@ Diese Sorge ist berechtigt und historisch fundiert. Das Muster wiederholt sich: 
 
 ### HAFL: Praktische vs. digitale Kompetenzen
 
-*Thomas Wyss, Agronomie*
+Die historischen Beispiele kommen alle aus dem digitalen oder städtischen Bereich. Aber Studierende in der Agronomie, die später Landwirtschaftsbetriebe führen oder in der Beratung arbeiten, müssen raus aufs Feld, Böden beurteilen, Krankheiten an Pflanzen erkennen, Wetterentwicklungen einschätzen.
 
-Deine historischen Beispiele kommen alle aus dem digitalen oder städtischen Bereich. Aber ich arbeite mit Studierenden, die später Landwirtschaftsbetriebe führen oder in der Beratung arbeiten. Die müssen raus aufs Feld, Böden beurteilen, Krankheiten an Pflanzen erkennen, Wetterentwicklungen einschätzen.
-
-**Frage:** Klar gibt es mittlerweile Precision-Agriculture-Tools und Apps zur Schädlingserkennung, aber am Ende muss man vor Ort sein und die Situation richtig einschätzen können. Wie übertragbar sind deine Erkenntnisse auf praktische, handwerkliche Ausbildungen wie bei uns? Oder ist das Ganze vor allem ein Problem für Büroberufe?
+**Frage:** Es gibt mittlerweile Precision-Agriculture-Tools und Apps zur Schädlingserkennung, aber am Ende muss man vor Ort sein und die Situation richtig einschätzen können. Wie übertragbar sind diese Erkenntnisse auf praktische, handwerkliche Ausbildungen? Oder ist das Ganze vor allem ein Problem für Büroberufe?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -66,11 +60,9 @@ Die Erkenntnisse sind übertragbar, aber der Kontext ist anders. Praktische Fert
 
 ### Architektur: Handzeichnen und räumliches Verständnis
 
-*Dipl. Arch. ETH Anna Lüthi, Architektur*
+Der Vergleich mit GPS ist spannend, weil in der Architektur etwas Ähnliches passiert ist: Früher mussten Studierende von Hand zeichnen und räumlich denken lernen. Dann kam CAD, und es gab grosse Diskussionen, ob das Handzeichnen noch nötig ist. Heute werden generative Design-Tools und KI für Entwurfsvarianten genutzt.
 
-Ich finde den Vergleich mit GPS spannend, weil bei uns in der Architektur ja etwas Ähnliches passiert ist: Früher mussten Studierende von Hand zeichnen und räumlich denken lernen. Dann kam CAD, und es gab grosse Diskussionen, ob das Handzeichnen noch nötig ist. Heute nutzen wir generative Design-Tools und KI für Entwurfsvarianten.
-
-**Frage:** Aber ich beobachte, dass Studierende, die nie gelernt haben, von Hand zu skizzieren und Proportionen zu erfassen, auch mit den digitalen Tools Mühe haben, weil ihnen das räumliche Verständnis fehlt. Siehst du eine Möglichkeit, dass wir diese Grundkompetenzen parallel zur KI-Nutzung vermitteln können? Oder müssen wir uns entscheiden zwischen "erst die Grundlagen ohne KI" und "direkt mit KI arbeiten"?
+**Frage:** Es zeigt sich, dass Studierende, die nie gelernt haben, von Hand zu skizzieren und Proportionen zu erfassen, auch mit den digitalen Tools Mühe haben, weil ihnen das räumliche Verständnis fehlt. Gibt es eine Möglichkeit, diese Grundkompetenzen parallel zur KI-Nutzung zu vermitteln? Oder muss man sich entscheiden zwischen "erst die Grundlagen ohne KI" und "direkt mit KI arbeiten"?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort

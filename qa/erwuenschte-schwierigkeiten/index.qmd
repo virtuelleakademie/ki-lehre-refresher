@@ -22,11 +22,9 @@ KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übern
 
 ### Gesundheit: Pflegediagnosen und Selbst-Generierung
 
-*Sarah Müller, Dozentin Pflegewissenschaft*
+Im klinischen Reasoning bei Bachelorstudierenden Pflege arbeiten Studierende Fallbeispiele selbst durch und begründen ihre Pflegediagnosen. Das ist mühsam für sie, aber genau diese Mühe scheint ja wichtig zu sein.
 
-Ich unterrichte klinisches Reasoning bei Bachelorstudierenden Pflege. Bisher lasse ich die Studierenden Fallbeispiele selbst durcharbeiten und ihre Pflegediagnosen begründen. Das ist mühsam für sie, aber genau diese Mühe scheint ja wichtig zu sein.
-
-**Frage:** Jetzt haben mir mehrere Studierende erzählt, dass sie ChatGPT nutzen, um sich Pflegediagnosen vorschlagen zu lassen und dann nur noch auswählen. Einerseits verstehe ich das: Die KI gibt oft korrekte Vorschläge. Andererseits befürchte ich, dass ihnen genau dieser Prozess der Selbst-Generierung fehlt. Wie kann ich meine Fallbeispiele so umgestalten, dass diese "erwünschte Schwierigkeit" erhalten bleibt, auch wenn Studierende KI nutzen? Oder soll ich KI-Nutzung bei solchen Übungen einfach verbieten?
+**Frage:** Studierende berichten, dass sie ChatGPT nutzen, um sich Pflegediagnosen vorschlagen zu lassen und dann nur noch auswählen. Einerseits ist das verständlich: Die KI gibt oft korrekte Vorschläge. Andererseits besteht die Befürchtung, dass ihnen genau dieser Prozess der Selbst-Generierung fehlt. Wie können Fallbeispiele so umgestaltet werden, dass diese "erwünschte Schwierigkeit" erhalten bleibt, auch wenn Studierende KI nutzen? Oder sollte KI-Nutzung bei solchen Übungen einfach verboten werden?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -38,11 +36,9 @@ Der Generierungseffekt zeigt: Selbst formulierte Antworten werden besser behalte
 
 ### Technik und Informatik: Abkürzung vs. Effizienz
 
-*Marco Steiner, Dozent Software Engineering*
+Das Konzept der "erwünschten Schwierigkeiten" wirft Fragen auf. In Programmierkursen zeigt sich, dass Studierende mit GitHub Copilot und KI-Assistenten viel schneller vorankommen und mehr Projekte umsetzen können.
 
-Ich bin ehrlich gesagt etwas skeptisch bei diesem Konzept der "erwünschten Schwierigkeiten". In meinen Programmierkursen sehe ich, dass Studierende mit GitHub Copilot und KI-Assistenten viel schneller vorankommen und mehr Projekte umsetzen können.
-
-**Frage:** Du sagst, dass Variation eine dieser Strategien ist, aber genau das ermöglicht doch die KI? Meine Studierenden können jetzt viel mehr verschiedene Frameworks und Ansätze ausprobieren. Wo ist die Grenze zwischen unerwünschter Abkürzung und sinnvoller Effizienzsteigerung? Ich will ja nicht, dass meine Studierenden am Ende keine Programmiersprachen mehr beherrschen. Aber ich will auch nicht, dass sie Zeit mit dem Auswendiglernen von Syntax verschwenden. Wie unterscheide ich, welche Schwierigkeiten "erwünscht" sind und welche einfach nur Zeitverschwendung?
+**Frage:** Variation wird als eine dieser Strategien genannt, aber genau das ermöglicht doch die KI? Studierende können jetzt viel mehr verschiedene Frameworks und Ansätze ausprobieren. Wo ist die Grenze zwischen unerwünschter Abkürzung und sinnvoller Effizienzsteigerung? Einerseits sollen Studierende Programmiersprachen beherrschen. Andererseits sollen sie nicht Zeit mit dem Auswendiglernen von Syntax verschwenden. Wie unterscheidet man, welche Schwierigkeiten "erwünscht" sind und welche einfach nur Zeitverschwendung?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -54,11 +50,9 @@ Erwünschte Schwierigkeiten sind solche, die zur Schemabildung beitragen. Syntax
 
 ### Soziale Arbeit: Reflexionsberichte und aktiver Abruf
 
-*Linda Weber, Dozentin Soziale Arbeit mit Familien*
+In der Sozialen Arbeit geht es viel um Gesprächsführung und die Entwicklung einer professionellen Haltung. Studierende schreiben oft Reflexionsberichte nach Praxiseinsätzen, das ist diese "aktive Retrieval"-Strategie, oder?
 
-Bei uns in der Sozialen Arbeit geht es viel um Gesprächsführung und die Entwicklung einer professionellen Haltung. Ich lasse die Studierenden oft Reflexionsberichte schreiben nach Praxiseinsätzen, das ist diese "aktive Retrieval"-Strategie, oder?
-
-**Frage:** Jetzt habe ich neulich eine Arbeit gelesen, die sprachlich perfekt war, aber irgendwie leer. Auf Nachfrage hat die Studentin zugegeben, dass sie ihre Stichworte in ChatGPT eingegeben hat und dann den Text überarbeitet hat. Sie meinte, das helfe ihr, ihre Gedanken zu strukturieren. Ich bin unsicher: Einerseits hat sie sich ja mit dem Inhalt auseinandergesetzt. Andererseits frage ich mich, ob dieser Prozess des mühsamen Formulierens nicht genau das ist, was die Reflexion vertieft. Siehst du einen Weg, wie ich Reflexionsaufgaben so gestalten kann, dass diese erwünschte Schwierigkeit erhalten bleibt?
+**Frage:** Es zeigt sich, dass manche Arbeiten sprachlich perfekt sind, aber irgendwie leer wirken. Studierende geben zu, dass sie ihre Stichworte in ChatGPT eingeben und dann den Text überarbeiten. Sie meinen, das helfe ihnen, ihre Gedanken zu strukturieren. Einerseits haben sie sich ja mit dem Inhalt auseinandergesetzt. Andererseits stellt sich die Frage, ob dieser Prozess des mühsamen Formulierens nicht genau das ist, was die Reflexion vertieft. Wie können Reflexionsaufgaben so gestaltet werden, dass diese erwünschte Schwierigkeit erhalten bleibt?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -70,11 +64,9 @@ Das mühsame Formulieren ist tatsächlich Teil des Lernprozesses. Schreiben kann
 
 ### HAFL: Spaced Learning und KI-Tools in der Praxis
 
-*Thomas Burkhalter, Dozent Pflanzenwissenschaften*
+In Bodenkunde und Pflanzenernährung ist ein wichtiger Teil des Lernens, dass Studierende lernen, Nährstoffmängel an Pflanzen zu erkennen und zu diagnostizieren. Das braucht Übung: Sie müssen viele Beispiele sehen und selbst interpretieren.
 
-Ich unterrichte Bodenkunde und Pflanzenernährung. Ein wichtiger Teil des Lernens ist, dass Studierende lernen, Nährstoffmängel an Pflanzen zu erkennen und zu diagnostizieren. Das braucht Übung: Sie müssen viele Beispiele sehen und selbst interpretieren.
-
-**Frage:** Jetzt gibt es bereits Apps, die per Bilderkennung Pflanzenkrankheiten und Nährstoffmängel identifizieren. In der Praxis werden meine Studierenden später als Agronomieberatende solche Tools nutzen. Gleichzeitig denke ich, dass sie zuerst das Grundwissen aufbauen müssen, um die KI-Vorschläge überhaupt kritisch beurteilen zu können. Du hast von "spaced learning" gesprochen: Wie kann ich diese Übungen so gestalten, dass Studierende lernen, KI-Tools sinnvoll einzusetzen, ohne dass ihnen der mühsame Prozess des Lernens verloren geht? Soll ich die KI-Tools in gewissen Phasen erlauben und in anderen verbieten?
+**Frage:** Es gibt bereits Apps, die per Bilderkennung Pflanzenkrankheiten und Nährstoffmängel identifizieren. In der Praxis werden Studierende später als Agronomieberatende solche Tools nutzen. Gleichzeitig müssen sie zuerst das Grundwissen aufbauen, um die KI-Vorschläge überhaupt kritisch beurteilen zu können. Wie können diese Übungen so gestaltet werden, dass Studierende lernen, KI-Tools sinnvoll einzusetzen, ohne dass ihnen der mühsame Prozess des Lernens verloren geht? Sollten die KI-Tools in gewissen Phasen erlaubt und in anderen verboten werden?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
