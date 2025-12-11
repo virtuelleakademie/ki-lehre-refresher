@@ -199,6 +199,8 @@ Und hier kommt der kritische Punkt: KI kann jede dieser Strategien untergraben, 
 
 Warum selbst generieren, wenn KI es besser kann? Warum sich anstrengen, wenn die Antwort einen Klick entfernt ist? Warum aus dem Gedächtnis abrufen, wenn ich nachfragen kann?
 
+Wie man KI-Anwendungen so gestaltet, dass sie diese Strategien unterstützen statt untergraben, behandeln wir übrigens im Intermediate-Kurs.
+
 ::: {.callout-note}
 ## Hintergrund: Die vier Strategien im Detail
 
@@ -485,6 +487,8 @@ Und das Risiko ist "fliessende Inkompetenz": Sie können mit Hilfe alles, ohne H
 
 Das Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.
 
+Falls Sie sich fragen, warum das so ist: Im Beginner-Kurs erklären wir die Funktionsweise von Sprachmodellen und ihre Limitationen, was diesen Unterschied verständlicher macht.
+
 ::: {.callout-note}
 ## Hintergrund: "Fliessende Inkompetenz"
 
@@ -699,6 +703,8 @@ Das ist nicht KI-Feindlichkeit. Das ist eine kognitionspsychologische Tatsache. 
 
 Aber: Es ist nicht unvermeidlich. Erinnern Sie sich an den GPT-Tutor aus der Bastani-Studie? Dort wurde KI so eingesetzt, dass sie Fragen stellte und Hinweise gab, statt Antworten zu liefern. Das erhielt die kognitive Anstrengung. Die Art der Nutzung entscheidet.
 
+Im Advanced-Kurs entwickeln Sie übrigens selbst ein solches pädagogisch gestaltetes KI-Tool.
+
 [KLICK]
 
 Die Konsequenz, und das ist vielleicht die wichtigste Aussage heute: Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.
@@ -790,6 +796,12 @@ Vielen Dank.
 - Mollick, E. (2024). "Co-Intelligence"
 - Nationales Forum Hochschullehre: KI-Leitlinien
 - Stanford HAI: Reports zu KI in der Bildung
+
+**BFH Weiterbildung:**
+
+- Beginner: Grundlagen zu Sprachmodellen und Chatbots
+- Intermediate: Lernpsychologie und KI-gestütztes Lerndesign
+- Advanced: Workshop zur Entwicklung eines eigenen KI-Lerntools
 :::
 
 ---
