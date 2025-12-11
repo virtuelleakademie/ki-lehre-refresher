@@ -107,18 +107,25 @@ theme_minimal_top_legend <- theme_minimal_custom +
 #| fig-height: 6
 #| echo: false
 
-# Simulated data showing the paradox
+# Simulated data showing the paradox with uncertainty
+# In test phase, groups are similar (overlapping confidence intervals)
 paradox_data <- tibble(
   phase = factor(
     rep(c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)"), each = 2),
     levels = c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)")
   ),
   gruppe = rep(c("Mit KI", "Ohne KI"), 2),
-  leistung = c(85, 60, 50, 60)
+  leistung = c(85, 60, 55, 60),
+  se = c(3, 3, 6, 5)
 )
 
 ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe)) +
   geom_line(linewidth = 1.5) +
+  geom_errorbar(
+    aes(ymin = leistung - se, ymax = leistung + se),
+    width = 0.1,
+    linewidth = 0.8
+  ) +
   geom_point(size = 5) +
   scale_color_manual(
     values = c("Mit KI" = color_primary, "Ohne KI" = color_secondary),
