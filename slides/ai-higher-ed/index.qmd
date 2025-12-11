@@ -116,9 +116,11 @@ Am Ende werden Sie einen Rahmen haben, um KI-Nutzung differenziert zu beurteilen
 
 <br>
 
-[48% mehr Aufgaben]{.fragment style="font-size: 2em; font-weight: bold; color: #2E7D32;"}
+[+48% / +127%]{.fragment style="font-size: 2em; font-weight: bold; color: #2E7D32;"}
 
-[korrekt gelöst]{.fragment}
+[Aufgaben korrekt gelöst]{.fragment}
+
+[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #666;"}
 
 :::
 
@@ -128,9 +130,11 @@ Am Ende werden Sie einen Rahmen haben, um KI-Nutzung differenziert zu beurteilen
 
 <br>
 
-[17% schlechter]{.fragment style="font-size: 2em; font-weight: bold; color: #A3195B;"}
+[−17% / ±0%]{.fragment style="font-size: 2em; font-weight: bold; color: #A3195B;"}
 
-[als die Kontrollgruppe]{.fragment}
+[vs. Kontrollgruppe]{.fragment}
+
+[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #666;"}
 
 :::
 :::
@@ -148,17 +152,17 @@ Am Ende werden Sie einen Rahmen haben, um KI-Nutzung differenziert zu beurteilen
 ::: {.notes}
 Ich möchte mit einem überraschenden Befund beginnen, der die Komplexität unseres Themas illustriert.
 
-In einer gross angelegten Studie mit etwa 1000 Gymnasiasten in der Türkei erhielten Schüler Zugang zu GPT-4 während ihrer Mathematik-Übungen.
+In einer gross angelegten Studie mit etwa 1000 Gymnasiasten in der Türkei erhielten Schüler Zugang zu GPT-4 während ihrer Mathematik-Übungen. Zwei Gruppen: GPT Base (uneingeschränkter Zugang) und GPT Tutor (mit pädagogischen Leitplanken).
 
-[KLICK] Die Ergebnisse während der Übungsphase waren beeindruckend: 48 Prozent mehr Aufgaben korrekt gelöst.
+[KLICK] GPT Base: 48% mehr Aufgaben gelöst während der Übung.
 
-[KLICK] Klingt nach einem Erfolg, oder? Aber dann kam der Test ohne KI-Zugang.
+[KLICK] GPT Tutor sogar 127% mehr, also mehr als doppelt so viele.
 
-[KLICK] 17 Prozent schlechter als die Kontrollgruppe.
+[KLICK] Aber dann kam die Prüfung ohne KI. GPT Base: 17% schlechter als die Kontrollgruppe.
 
-[KLICK] Das ist die zentrale Spannung: Mehr Aufgaben gelöst bedeutet nicht automatisch mehr gelernt.
+[KLICK] GPT Tutor: Kein signifikanter Unterschied zur Kontrollgruppe.
 
-Der 17%-Nachteil entspricht etwa 0.2-0.3 Standardabweichungen. Relevant, aber kein Totalausfall. Wichtig: Die Studie testete auch einen "GPT Tutor" mit pädagogischen Leitplanken, der deutlich bessere Ergebnisse zeigte. Das Problem ist nicht KI an sich, sondern wie sie eingesetzt wird.
+Das ist die zentrale Spannung: Uneingeschränkter KI-Zugang führt zu besserer Performance, aber schlechterem Lernen. Die pädagogischen Leitplanken neutralisieren den Schaden, bringen aber auch keinen Lernvorteil.
 :::
 
 ## Das Paradox
