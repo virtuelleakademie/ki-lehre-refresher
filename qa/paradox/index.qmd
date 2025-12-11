@@ -1,0 +1,89 @@
+---
+title: "Das Produktivitäts-Lern-Paradox"
+sidebar: qa
+---
+
+## Das zentrale Ergebnis
+
+In der Präsentation wurde eine Studie vorgestellt, bei der rund 1000 Gymnasiasten GPT-4-Zugang während Mathematik-Übungen erhielten. Das Ergebnis:
+
+- **Mit KI-Zugang:** 48% mehr Aufgaben korrekt gelöst
+- **Ohne KI (später):** 17% schlechter als die Kontrollgruppe
+
+Dies illustriert das Produktivitäts-Lern-Paradox: Mehr Aufgaben gelöst bedeutet nicht automatisch mehr gelernt.
+
+## Häufige Fragen
+
+### Gesundheit: Klinisches Reasoning und Pflegediagnostik
+
+*Dr. Sarah Meier, Dozentin für Pflegewissenschaften*
+
+Ich unterrichte klinisches Reasoning und Pflegediagnostik im 2. Studienjahr. Meine Studierenden müssen lernen, Patientensituationen zu analysieren und eigenständig Pflegediagnosen zu stellen. Jetzt stelle ich fest, dass einige ChatGPT nutzen, um Fallbeispiele zu lösen.
+
+**Frage:** Wenn meine Studierenden mit KI-Unterstützung mehr Fallbeispiele korrekt lösen, aber dann in der Praxis ohne KI schlechter abschneiden: Wie erkenne ich das rechtzeitig? Beim OSCE haben sie ja kein Handy dabei, aber bis dahin haben sie schon Monate mit KI geübt. Kann ich überhaupt noch davon ausgehen, dass die Selbstlernphasen mit Fallbeispielen einen Lerneffekt haben, wenn alle heimlich ChatGPT verwenden?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das Problem liegt in der Unterscheidung zwischen Aufgabenleistung und Lernen. Regelmässige formative Assessments ohne KI-Zugang können helfen, den tatsächlichen Lernstand zu erfassen. Mehr dazu im Leitfaden unter [Das Produktivitäts-Lern-Paradox](../../guide/index.qmd#paradox) und [Lernsituationen gestalten](../../guide/index.qmd#paradox).
+:::
+
+---
+
+### Technik und Informatik: Code-Assistenten und Grundlagen
+
+*Prof. Marco Lehmann, Dozent für Software Engineering*
+
+Ich betreue Module zur objektorientierten Programmierung und Softwarearchitektur. Die Studierenden sollen eigenständig kleinere Projekte entwickeln und dabei Design Patterns anwenden lernen.
+
+**Frage:** Bei uns ist die Situation paradox: Einerseits will ich, dass die Studierenden GitHub Copilot und ähnliche Tools kennenlernen, weil das zum Berufsalltag gehört. Andererseits zeigt diese Studie ja, dass sie dann die Grundlagen nicht mehr lernen. Wie finde ich die richtige Balance? Soll ich in den ersten Semestern ein komplettes AI-Verbot durchsetzen und erst ab dem 5. Semester Code-Assistenten erlauben?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Sequenzierung ist entscheidend: Grundlagen vor Werkzeugen. Der Expertise-Umkehr-Effekt zeigt, dass dieselbe Unterstützung für Novizen schädlich und für Fortgeschrittene hilfreich sein kann. Mehr dazu im Leitfaden unter [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen) und [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Wirtschaft: Konzeptverständnis vs. Formelanwendung
+
+*Dr. Andreas Keller, Dozent für Betriebswirtschaftslehre*
+
+Ich unterrichte Finanzmanagement und Corporate Finance im Bachelor. Die Studierenden müssen Investitionsrechnungen durchführen, Cash-Flow-Analysen erstellen und Unternehmensbewertungen vornehmen können.
+
+**Frage:** Das Problem sehe ich direkt bei unseren Excel-basierten Assignments. Wenn Studierende ChatGPT fragen "Erstelle mir eine Formel für den Net Present Value mit diesen Parametern", bekommen sie sofort die Lösung. Sie reichen dann perfekte Spreadsheets ein, aber in der schriftlichen Prüfung können sie nicht mal erklären, warum man den Diskontierungssatz überhaupt braucht. Wie gestalte ich Übungsaufgaben, bei denen sie wirklich das Konzept verstehen müssen?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Der Generierungseffekt zeigt: Selbst erarbeitetes Wissen wird besser behalten. Aufgaben sollten den Prozess bewerten, nicht nur das Produkt. Zwischenschritte einfordern und begründen lassen. Mehr dazu im Leitfaden unter [Der Generierungseffekt](../../guide/index.qmd#paradox) und [Prozess bewerten, nicht nur Produkt](../../guide/index.qmd#paradox).
+:::
+
+---
+
+### Soziale Arbeit: Reflexionsfähigkeit und Beziehungsarbeit
+
+*Claudia Zimmermann, Dozentin für Sozialpädagogik*
+
+Ich unterrichte Gesprächsführung und Case Management. Die Studierenden lernen, mit Klientinnen und Klienten professionelle Beratungsgespräche zu führen und individuelle Unterstützungspläne zu entwickeln.
+
+**Frage:** Wir arbeiten viel mit Rollenspielen und schriftlichen Fallanalysen. Kürzlich habe ich gemerkt, dass Studierende ihre Gesprächsvorbereitungen und Analysen von ChatGPT schreiben lassen. Die Texte klangen plausibel, aber in der praktischen Umsetzung fehlte komplett das Verständnis für Gesprächsdynamiken. Das Paradox sehe ich besonders kritisch: In unserem Berufsfeld geht es um Beziehungsarbeit und situatives Handeln. Wie bereite ich sie dann auf echte Krisensituationen vor, wo keine KI hilft?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Lernen erfordert die kognitive Anstrengung, die KI zu eliminieren droht. Praktische Übungen ohne KI-Unterstützung sind hier besonders wichtig. Die Reflexionsfähigkeit entsteht durch den mühsamen Prozess des Formulierens. Mehr dazu im Leitfaden unter [Desirable Difficulties](../../guide/index.qmd#paradox) und [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Das Produktivitäts-Lern-Paradox](../../guide/index.qmd#paradox)
+- [Die Bastani-Studie im Detail](../../guide/index.qmd#paradox)
+- [Lernsituationen gestalten](../../guide/index.qmd#paradox)
+:::

@@ -1,0 +1,93 @@
+---
+title: "Praktische Implikationen für die Lehre"
+sidebar: qa
+---
+
+## Was bedeutet das konkret?
+
+Drei zentrale Prinzipien:
+
+1. **Anstrengung ist das Signal:** Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.
+
+2. **KI als Tutor, nicht als Antwortgeber:** KI soll Denkprozesse anregen, nicht ersetzen.
+
+3. **Expertise bestimmt den Nutzen:** Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.
+
+**Die Kernaussage:** Grundlagen BEVOR Werkzeuge. Erst das Fundament, dann die Erweiterung.
+
+## Häufige Fragen
+
+### Gesundheit: Grundlagen sicherstellen in der Praxis
+
+*Dr. med. Sandra Meier, Physiotherapie*
+
+Du sagst, dass Grundlagen vor Werkzeugen kommen müssen. Bei uns in der Physiotherapie lernen die Studierenden im ersten Jahr die Anatomie und die manuelle Befundaufnahme. Ich sehe aber immer mehr, dass sie ChatGPT nutzen, um Diagnosen zu "checken" oder Behandlungspläne zu erstellen, ohne die muskuloskelettalen Zusammenhänge wirklich zu verstehen.
+
+**Frage:** Wie kann ich konkret sicherstellen, dass sie diese Grundlagen wirklich beherrschen, bevor sie KI-Tools nutzen? Soll ich die Nutzung in den ersten Semestern komplett verbieten, oder gibt es einen Weg, wie ich KI so einsetzen kann, dass sie das Verständnis fördert statt ersetzt? Bei praktischen Prüfungen am Patienten merke ich nämlich, dass einige zwar theoretisch viel wissen, aber die Hände nicht richtig einsetzen können.
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die praktischen Fertigkeiten ("Hände einsetzen") erfordern Prozeduralisierung, die nur durch Übung entsteht. KI kann hier nicht helfen. Formative Assessments ohne KI können den Lernstand erfassen. In frühen Phasen ist Zurückhaltung sinnvoll, später kann KI als Werkzeug dienen, dessen Vorschläge kritisch geprüft werden. Mehr dazu im Leitfaden unter [Prozeduralisierung: Vom Wissen zum Können](../../guide/index.qmd#expertise) und [Übungsphasen schützen](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Technik und Informatik: Differenzierung nach Niveau
+
+*Prof. Michael Weber, Software Engineering*
+
+Interessant, was du über "Expertise bestimmt den Nutzen" sagst. Bei uns im Software Engineering haben wir genau dieses Paradox: Die Studierenden nutzen GitHub Copilot und ChatGPT schon ab dem ersten Semester für ihre Programmieraufgaben. Die fortgeschrittenen Studierenden nutzen es effektiv als Pair-Programming-Partner, aber die Anfänger kopieren Code, den sie nicht verstehen.
+
+**Frage:** Wie unterscheide ich in der Aufgabenstellung zwischen Anfängern und Fortgeschrittenen? Soll ich für Erstsemester andere Regeln haben als für Masterstudierende? Und wie formuliere ich Programmieraufgaben so, dass auch mit KI-Unterstützung noch echtes Lernen stattfindet? Reicht es, wenn ich verlange, dass sie den generierten Code erklären können, oder braucht es fundamentale Coding-Aufgaben komplett ohne KI?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Differenzierung nach Niveau ist sinnvoll. Für Anfänger: Grundlagen ohne KI aufbauen. Für Fortgeschrittene: KI als Werkzeug erlauben, aber Verständnis prüfen. Code erklären lassen ist ein guter Ansatz, aber nicht ausreichend. Auch: Code modifizieren, Fehler finden, auf neue Probleme anwenden. Mehr dazu im Leitfaden unter [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise) und [Entscheidungsrahmen](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+### HAFL: Notwendige Grundlagen vs. delegierbare Berechnungen
+
+*Daniel Brunner, Agrarwissenschaften*
+
+Du sprichst von "Effort is the signal" und dass zu einfaches Lernen kein echtes Lernen ist. Bei uns an der HAFL arbeiten die Studierenden viel mit Berechnungen zu Nährstoffkreisläufen, Bodenqualität und Ertragsprognosen. Früher haben sie das mühsam von Hand oder mit Excel durchgerechnet, heute können sie das alles von KI-Tools machen lassen.
+
+**Frage:** Müssen sie diese Berechnungen wirklich noch selbst durchführen können, oder reicht es, wenn sie die Resultate interpretieren und validieren können? In der Praxis auf dem Betrieb werden sie ja auch digitale Tools nutzen. Wo genau ziehe ich die Grenze zwischen "nötigem Aufwand für Verständnis" und "ineffizienter Zeitverschwendung"? Welche Grundlagen sind wirklich unverzichtbar, und wo darf die KI die mühsame Arbeit übernehmen?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Grenze liegt dort, wo Verstehen nötig ist, um Fehler zu erkennen und Anpassungen vorzunehmen. Routine-Berechnungen können delegiert werden, wenn die Konzepte verstanden sind. Die Frage ist: Können sie erkennen, wenn das Tool einen unrealistischen Wert ausgibt? Können sie bei veränderten Bedingungen anpassen? Das erfordert konzeptuelles Verständnis. Mehr dazu im Leitfaden unter [Der stärkste Gegeneinwand](../../guide/index.qmd#implikationen) und [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+### Soziale Arbeit: KI als Tutor, nicht als Antwortgeber
+
+*Karin Lüthi, Soziale Arbeit*
+
+Dein Punkt "KI als Tutor, nicht als Antwortgeber" spricht mich an. In der Sozialen Arbeit geht es viel um Fallanalysen und die Entwicklung von Interventionsstrategien. Die Studierenden müssen lernen, komplexe soziale Situationen zu verstehen und ethisch reflektierte Entscheidungen zu treffen.
+
+**Frage:** Wenn ich jetzt KI als "Tutor" einsetzen möchte, der das Denken stimuliert: Wie mache ich das konkret? Soll ich ihnen Prompts vorgeben, mit denen sie Fälle diskutieren sollen? Oder soll ich sie auffordern, ihre eigenen Lösungsansätze zuerst zu entwickeln und dann mit der KI zu reflektieren? Meine Sorge ist, dass die KI zu schnell fertige "Lösungen" anbietet, obwohl es in der Sozialen Arbeit selten eindeutige Antworten gibt. Wie verhindere ich, dass die Studierenden die KI-Antworten als "richtig" übernehmen, statt kritisch zu hinterfragen?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Sequenz "erst eigene Lösung, dann Reflexion mit KI" ist vielversprechend. Wichtig ist, dass KI nicht als Autorität wahrgenommen wird. Strukturierte Prompts können helfen, KI als Diskussionspartner zu nutzen, nicht als Antwortgeber. Die Gefahr der vorschnellen "Lösung" ist real. Gemeinsame Analyse von KI-Grenzen kann helfen. Mehr dazu im Leitfaden unter [Sokratisches Fragen in KI-Tutoren](../../guide/index.qmd#sokrates) und [KI-Tutoren evaluieren](../../guide/index.qmd#sokrates).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Implikationen und offene Fragen](../../guide/index.qmd#implikationen)
+- [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen)
+- [Entscheidungsrahmen](../../guide/index.qmd#implikationen)
+- [Fazit](../../guide/index.qmd#fazit)
+:::

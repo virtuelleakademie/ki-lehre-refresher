@@ -1,0 +1,98 @@
+---
+title: "Experten vs. Lernende"
+sidebar: qa
+---
+
+## Warum dasselbe Werkzeug unterschiedlich wirkt
+
+**Experten** haben eine qualitativ andere kognitive Architektur. Sie sehen Muster und Bedeutung statt Einzelteile. Sie speichern Wissen in "Chunks": vernetzte Wissensstrukturen, die automatisch abgerufen werden.
+
+**Experten können:**
+
+- Routine auslagern
+- KI-Output bewerten
+- Mehr Kapazität für Komplexes nutzen
+
+**Lernende hingegen:**
+
+- Können nicht bewerten
+- Überspringen möglicherweise Grundlagen
+- Risiko: "Fliessende Inkompetenz"
+
+Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.
+
+## Häufige Fragen
+
+### Gesundheit: Prüfungen und praktische Kompetenz
+
+*Dr. med. Sarah Meier, Pflegewissenschaft*
+
+Ich unterrichte klinisches Reasoning im 2. Semester Pflege. Wenn ich die Ausführungen richtig verstehe, könnten meine Studierenden mit ChatGPT sehr flüssig klingende Pflegediagnosen erstellen, ohne die zugrundeliegenden Symptommuster wirklich zu erkennen.
+
+**Frage:** Wie kann ich in Prüfungssituationen überhaupt noch feststellen, ob jemand eine Situation selbstständig einschätzen kann? Und noch wichtiger: Wenn Studierende im Praktikum sind und dort möglicherweise KI-Tools nutzen, um Dokumentationen zu schreiben, wie stelle ich sicher, dass sie die kritischen Warnsignale bei Patienten trotzdem wahrnehmen und nicht nur schön formulierte, aber inhaltlich falsche Einschätzungen abgeben?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das Risiko der "fliessenden Inkompetenz" ist hier besonders kritisch. Praktische Prüfungen (OSCE), mündliche Fallbesprechungen und Prozessbeobachtung im Praktikum können helfen, die tatsächliche Kompetenz zu erfassen. Mehr dazu im Leitfaden unter [Fliessende Inkompetenz](../../guide/index.qmd#paradox) und [Prozess bewerten, nicht nur Produkt](../../guide/index.qmd#paradox).
+:::
+
+---
+
+### Technik und Informatik: Grundstudium ohne Code-Assistenten?
+
+*Prof. Thomas Gerber, Informatik*
+
+Bei uns in der Informatik sehe ich das Paradox täglich: Studierende können mit GitHub Copilot funktionierenden Code produzieren, aber wenn ich nachfrage, warum sie genau diese Datenstruktur gewählt haben, kommt oft nichts.
+
+**Frage:** Sollten wir im Grundstudium bewusst auf Code-Assistenten verzichten, damit die Studierenden erst mal die fundamentalen Patterns selbst entwickeln? Oder ist das realitätsfern, weil sie in der Berufswelt ja sowieso mit diesen Tools arbeiten werden? Und wie baue ich Übungen, bei denen sie lernen, KI-generierten Code kritisch zu evaluieren, wenn sie dafür ja genau das Expertenwissen brauchen, das sie erst aufbauen sollten?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Das ist das Kerndilemma: Um KI kritisch zu nutzen, braucht man Expertise. Um Expertise aufzubauen, braucht man Übung ohne Abkürzungen. Die Sequenzierung "Grundlagen zuerst" ist wahrscheinlich der richtige Ansatz. Später kann KI als Werkzeug dienen. Mehr dazu im Leitfaden unter [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox) und [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+### Soziale Arbeit: Systemisches Verstehen vs. Textbausteine
+
+*Claudia Brunner, Soziale Arbeit*
+
+Das mit den "Chunks" und Erfahrungsmustern hat mich sehr zum Nachdenken gebracht. In der Sozialen Arbeit arbeiten wir viel mit Falldokumentationen und Analysen komplexer Lebenssituationen.
+
+**Frage:** Wenn Studierende jetzt KI nutzen, um Sozialberichte zu schreiben oder Interventionsstrategien zu entwickeln: Wie unterscheide ich, ob sie wirklich die systemischen Zusammenhänge verstehen oder nur AI-generierte Fachliteratur-Versatzstücke aneinanderreihen? Besonders kritisch finde ich das bei ethischen Dilemmata: KI kann ja durchaus schlüssig klingende Argumentationen liefern, aber erfasst sie die moralische Komplexität realer Fälle? Wie trainiere ich diese professionelle Urteilsfähigkeit, wenn die Studierenden sich an KI-Output gewöhnen?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die professionelle Urteilsfähigkeit ist das, was Experten von Novizen unterscheidet. KI kann plausibel klingende Texte produzieren, aber nicht die kontextspezifische Einschätzung leisten. Fallbesprechungen, Supervisionen und Reflexion über die eigene Entscheidungsfindung sind hier wichtiger als schriftliche Produkte. Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+### Wirtschaft: Business-Logik vs. formale Korrektheit
+
+*Dr. oec. HSG Martin Keller, Betriebswirtschaft*
+
+Ich lehre strategisches Management und Business Analytics. Die Unterscheidung zwischen Experten und Lernenden trifft genau ein Problem, das ich beobachte: Studierende können mit KI-Tools beeindruckende Marktanalysen erstellen, aber wenn ich frage "Ist diese Strategie für dieses spezifische Unternehmen sinnvoll?", fehlt ihnen das Gespür.
+
+**Frage:** Wie gestalte ich Fallstudien und Prüfungen so, dass Studierende zeigen müssen, dass sie die Business-Logik verstehen und nicht nur KI-Output aufhübschen? Und praktisch: Wenn ich in Gruppenarbeiten sehe, dass die Analyse zwar formal korrekt ist, aber komplett an der Realität des Unternehmens vorbeigeht, wie thematisiere ich das, ohne dass es wie ein generelles KI-Verbot klingt?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Prüfungsformate, die Begründungen und kontextspezifische Anpassungen fordern, können helfen. Mündliche Verteidigung von Analysen, unerwartete Folgefragen, Anwendung auf neue Szenarien. Das Thematisieren des Problems ist wichtig: Es geht nicht um KI-Verbot, sondern um Lernziele. Mehr dazu im Leitfaden unter [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox) und [Entscheidungsrahmen](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Wie Expertise entsteht](../../guide/index.qmd#expertise)
+- [Experten und Novizen sind grundlegend verschieden](../../guide/index.qmd#expertise)
+- [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox)
+:::

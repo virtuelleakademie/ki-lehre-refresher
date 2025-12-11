@@ -1,0 +1,91 @@
+---
+title: "Historische Analogien"
+sidebar: qa
+---
+
+## Was wir aus der Vergangenheit lernen können
+
+Das Muster wiederholt sich bei verschiedenen Technologien:
+
+- **1970er, Taschenrechner:** Konzeptuelles Verständnis kann leiden
+- **1990er, GPS:** Räumliches Gedächtnis wird schwächer
+- **2000er, Google:** "Wo" ersetzt "Was" im Gedächtnis
+- **2020er, KI:** Alles vorherige plus mehr?
+
+Der Unterschied: KI ist breiter als GPS oder Taschenrechner. Sie betrifft nicht eine kognitive Domäne, sondern potenziell alle.
+
+## Häufige Fragen
+
+### Technik und Informatik: Technologischer Fortschritt und Grundlagenwissen
+
+*Dr. Martin Gerber, Informatik*
+
+Du zeigst diese historische Entwicklung von Taschenrechner über GPS zu KI. Aber ist der Vergleich nicht etwas schief? Bei uns in der Informatik-Ausbildung haben wir ja bewusst entschieden, dass Studierende keinen Assembler mehr von Hand schreiben müssen, weil Compiler das besser machen. Wir haben akzeptiert, dass gewisse Low-Level-Skills obsolet werden.
+
+**Frage:** Warum sollte es bei KI anders sein? Wenn die Studierenden mit KI-Tools schneller zu besseren Lösungen kommen, ist das dann nicht einfach der normale technologische Fortschritt? Wo ziehst du konkret die Grenze zwischen "wichtiges Grundlagenwissen, das sie trotzdem lernen müssen" und "kann man getrost der KI überlassen"?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Grenze liegt dort, wo Wissen zur Bewertung von KI-Output nötig ist. Assembler kann man delegieren, weil Compiler deterministisch sind. KI-Output muss aber kritisch geprüft werden, und dafür braucht es Fachwissen. Die Frage ist: Was muss man verstehen, um Fehler zu erkennen? Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken).
+:::
+
+---
+
+### Wirtschaft: Blindes Vertrauen in Modelle
+
+*Prof. Dr. Sandra Meier, Betriebsökonomie*
+
+Diese Analogie mit dem Taschenrechner finde ich interessant, aber bei uns im Bereich Wirtschaft sehe ich ein Problem: Meine Studierenden müssen später in Unternehmen strategische Entscheidungen treffen, Geschäftsberichte analysieren, Budgets verteidigen.
+
+**Frage:** Wenn sie jetzt schon im Studium alle Analysen und Argumentationen von ChatGPT machen lassen, wie sollen sie dann später im Beruf beurteilen können, ob die KI-generierten Vorschläge überhaupt Sinn machen? Bei der Finanzkrise 2008 haben viele blind auf Excel-Modelle vertraut, ohne die Annahmen zu hinterfragen. Siehst du nicht die Gefahr, dass wir eine Generation ausbilden, die zwar KI-Tools bedienen kann, aber nicht mehr die Kompetenz hat, deren Output kritisch zu bewerten?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Diese Sorge ist berechtigt und historisch fundiert. Das Muster wiederholt sich: Werkzeuge, die Experten produktiver machen, können bei unkritischer Nutzung zu Fehlentscheidungen führen. Die Fähigkeit zur kritischen Bewertung erfordert Fachwissen, das aufgebaut werden muss. Mehr dazu im Leitfaden unter [Der EdTech-Hype-Zyklus](../../guide/index.qmd#paradox) und [Der stärkste Gegeneinwand](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+### HAFL: Praktische vs. digitale Kompetenzen
+
+*Thomas Wyss, Agronomie*
+
+Deine historischen Beispiele kommen alle aus dem digitalen oder städtischen Bereich. Aber ich arbeite mit Studierenden, die später Landwirtschaftsbetriebe führen oder in der Beratung arbeiten. Die müssen raus aufs Feld, Böden beurteilen, Krankheiten an Pflanzen erkennen, Wetterentwicklungen einschätzen.
+
+**Frage:** Klar gibt es mittlerweile Precision-Agriculture-Tools und Apps zur Schädlingserkennung, aber am Ende muss man vor Ort sein und die Situation richtig einschätzen können. Wie übertragbar sind deine Erkenntnisse auf praktische, handwerkliche Ausbildungen wie bei uns? Oder ist das Ganze vor allem ein Problem für Büroberufe?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Erkenntnisse sind übertragbar, aber der Kontext ist anders. Praktische Fertigkeiten wie Bodenbeurteilung erfordern implizites Wissen, das nur durch Erfahrung aufgebaut wird. KI-Tools können hier unterstützen, aber nicht das geschulte Auge ersetzen. Die Gefahr ist, dass Studierende sich auf Apps verlassen, ohne das Grundverständnis aufzubauen. Mehr dazu im Leitfaden unter [Prozeduralisierung: Vom Wissen zum Können](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Architektur: Handzeichnen und räumliches Verständnis
+
+*Dipl. Arch. ETH Anna Lüthi, Architektur*
+
+Ich finde den Vergleich mit GPS spannend, weil bei uns in der Architektur ja etwas Ähnliches passiert ist: Früher mussten Studierende von Hand zeichnen und räumlich denken lernen. Dann kam CAD, und es gab grosse Diskussionen, ob das Handzeichnen noch nötig ist. Heute nutzen wir generative Design-Tools und KI für Entwurfsvarianten.
+
+**Frage:** Aber ich beobachte, dass Studierende, die nie gelernt haben, von Hand zu skizzieren und Proportionen zu erfassen, auch mit den digitalen Tools Mühe haben, weil ihnen das räumliche Verständnis fehlt. Siehst du eine Möglichkeit, dass wir diese Grundkompetenzen parallel zur KI-Nutzung vermitteln können? Oder müssen wir uns entscheiden zwischen "erst die Grundlagen ohne KI" und "direkt mit KI arbeiten"?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Die Beobachtung bestätigt das Muster: Grundlegende Fertigkeiten (hier räumliches Denken) sind Voraussetzung für effektive Werkzeugnutzung. Die Sequenz "erst Grundlagen, dann Werkzeuge" ist wahrscheinlich effektiver als paralleles Arbeiten. Das Handzeichnen baut Verständnis auf, das bei der Bewertung von KI-Output hilft. Mehr dazu im Leitfaden unter [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen) und [Grundlagen BEVOR Werkzeuge](../../guide/index.qmd#fazit).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Historische Analogien](../../guide/index.qmd#paradox)
+- [Der EdTech-Hype-Zyklus](../../guide/index.qmd#paradox)
+- ["Das haben sie über das Schreiben auch gesagt"](../../guide/index.qmd#paradox)
+:::

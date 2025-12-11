@@ -13,7 +13,6 @@ toc: true
 toc-depth: 3
 number-sections: false
 bibliography: ../bibliography.bib
-sidebar: guide
 ---
 
 ## Einleitung: Das zentrale Paradox {#einleitung}

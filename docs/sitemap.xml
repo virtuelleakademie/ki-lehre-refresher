@@ -2,26 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/guide/index.html</loc>
-    <lastmod>2025-12-10T19:54:06.817Z</lastmod>
+    <lastmod>2025-12-11T01:42:30.156Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/slides/ai-higher-ed/index.html</loc>
-    <lastmod>2025-12-10T23:25:28.908Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/paradox/index.html</loc>
+    <lastmod>2025-12-11T01:49:24.549Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/presentation/index.html</loc>
-    <lastmod>2025-12-10T20:19:52.843Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/kognitive-grundlagen/index.html</loc>
+    <lastmod>2025-12-11T01:49:25.570Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/index.html</loc>
-    <lastmod>2025-12-10T20:18:14.840Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/historische-analogien/index.html</loc>
+    <lastmod>2025-12-11T01:49:28.638Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/expertise-umkehr-effekt/index.html</loc>
+    <lastmod>2025-12-11T01:49:31.195Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/erwuenschte-schwierigkeiten/index.html</loc>
+    <lastmod>2025-12-11T01:49:26.591Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/slides/ai-higher-ed-short/index.html</loc>
     <lastmod>2025-12-11T01:31:31.935Z</lastmod>
   </url>
   <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/index.html</loc>
+    <lastmod>2025-12-10T20:18:14.840Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/presentation/index.html</loc>
+    <lastmod>2025-12-11T01:42:24.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/slides/ai-higher-ed/index.html</loc>
+    <lastmod>2025-12-10T23:25:28.908Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/experten-vs-lernende/index.html</loc>
+    <lastmod>2025-12-11T01:49:29.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/generierungseffekt/index.html</loc>
+    <lastmod>2025-12-11T01:49:27.612Z</lastmod>
+  </url>
+  <url>
     <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/index.html</loc>
-    <lastmod>2025-12-09T08:54:50.911Z</lastmod>
+    <lastmod>2025-12-11T01:40:54.325Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/kritisches-denken/index.html</loc>
+    <lastmod>2025-12-11T01:49:32.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-refresher/qa/praktische-implikationen/index.html</loc>
+    <lastmod>2025-12-11T01:50:18.369Z</lastmod>
   </url>
 </urlset>

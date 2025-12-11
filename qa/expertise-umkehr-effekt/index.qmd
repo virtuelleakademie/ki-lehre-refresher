@@ -1,0 +1,89 @@
+---
+title: "Der Expertise-Umkehr-Effekt"
+sidebar: qa
+---
+
+## Vorwissen bestimmt die optimale Methode
+
+Der Expertise-Umkehr-Effekt zeigt: Dieselbe Instruktionsmethode kann gegenteilige Effekte haben, abhängig vom Vorwissen der Lernenden.
+
+- **Bei niedrigem Vorwissen:** Hohe Unterstützung hilft (Worked Examples, direkte Instruktion)
+- **Bei hohem Vorwissen:** Hohe Unterstützung kann schaden (problembasiertes Lernen wird effektiver)
+
+Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt und variiert nach Domäne und Person.
+
+## Häufige Fragen
+
+### Gesundheit: Heterogene Vorkenntnisse im Kurs
+
+*Dozentin für Pflegewissenschaft, Klinische Assessment-Methoden*
+
+Ich verstehe das Konzept grundsätzlich, aber wie soll ich das konkret umsetzen? In meinem Kurs zur Patientenbeurteilung habe ich Studierende mit sehr unterschiedlichen Vorkenntnissen: Einige kommen direkt von der Matur, andere haben bereits eine FaGe-Ausbildung oder Jahre Praxiserfahrung als Pflegeassistenz.
+
+**Frage:** Wenn ich jetzt sage, "nutzt ChatGPT zur Vorbereitung auf die OSCE-Prüfung", könnte das den Anfängern helfen, aber den Erfahrenen schaden? Wie finde ich denn heraus, wo bei meinen Studierenden diese Schwelle liegt? Soll ich verschiedene Aufgabenstellungen für verschiedene Levels machen, oder soll ich den KI-Einsatz einfach ganz verbieten, bis alle ein Grundniveau erreicht haben?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Differenzierung ist der Schlüssel. Verschiedene Aufgaben für verschiedene Niveaus können sinnvoll sein. Eine Möglichkeit: Selbsteinschätzung kombiniert mit diagnostischen Aufgaben, um das Vorwissen zu erfassen. Dann gestufte KI-Nutzung. Mehr dazu im Leitfaden unter [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise) und [Unterstützung anpassen](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Technik und Informatik: KI-Nutzung nach Expertise differenzieren
+
+*Dozent für Software Engineering, Web-Entwicklung*
+
+Bei uns in der Informatik ist das doch noch komplizierter, oder? Meine Studierenden im Web-Development-Kurs kennen teilweise GitHub Copilot besser als ich. Die Frage ist nicht mehr, ob sie KI nutzen, sondern wie.
+
+**Frage:** Aber wenn ich jetzt höre, dass hohe Unterstützung bei Experten schaden kann: Heisst das, ich sollte meinen fortgeschrittenen Studierenden abraten, Copilot zu nutzen? Das scheint realitätsfern, denn in der Industrie arbeitet heute jeder damit. Oder geht es darum, dass sie Copilot anders nutzen sollten als Anfänger? Wie kann ich das in meinen Übungsaufgaben berücksichtigen, wenn die "Schwelle" bei jedem anders liegt und sich während des Semesters verschiebt?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Der Expertise-Umkehr-Effekt bezieht sich auf Instruktion, nicht auf Werkzeugnutzung per se. Fortgeschrittene können KI produktiv nutzen, weil sie den Output bewerten können. Die Frage ist: Nutzen sie KI als Abkürzung (problematisch) oder als Effizienzwerkzeug bei bereits verstandenen Konzepten (ok)? Mehr dazu im Leitfaden unter [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
+:::
+
+---
+
+### Wirtschaft: Fallstudien und direkte Instruktion
+
+*Dozentin für Marketing und Kommunikation, Grundlagen Marketing*
+
+Das wirft für mich eine grundsätzliche didaktische Frage auf: In meinem Einführungskurs Marketing arbeite ich viel mit Fallstudien. Bisher habe ich immer gedacht, dass selbstständiges Problemlösen die beste Methode ist, "Learning by doing".
+
+**Frage:** Aber wenn ich dich richtig verstehe, könnte das für meine Erstsemester-Studierenden, die noch keine Marketingkonzepte kennen, zu wenig Struktur sein? Müsste ich dann am Anfang mehr direkte Instruktion geben, bevor ich sie an die Fälle lasse? Und wenn sie dann KI-Tools wie ChatGPT nutzen, um ihre Fallanalysen zu schreiben: Ist das dann quasi eine Form von Unterstützung, die Anfänger brauchen, oder verhindert es genau den Lerneffekt?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+Für Novizen ist direkte Instruktion mit Worked Examples tatsächlich oft effektiver als problembasiertes Lernen. KI-Nutzung ist aber nicht dasselbe wie gute Instruktion: KI gibt Antworten, aber nicht didaktisch strukturierte Erklärungen. Die Sequenz wäre: Erst Grundlagen vermitteln (direkte Instruktion), dann angeleitete Übung, dann selbstständige Anwendung, dann KI als Werkzeug. Mehr dazu im Leitfaden unter [Explizite Instruktion](../../guide/index.qmd#expertise) und [Worked Examples](../../guide/index.qmd#expertise).
+:::
+
+---
+
+### Künste: Grundlagen vor generativen Tools
+
+*Dozent für Komposition und Musiktheorie*
+
+In der künstlerischen Ausbildung haben wir ja eine ganz spezielle Situation: Kreativität entsteht oft gerade durch Einschränkungen und durch das Ringen mit dem Material.
+
+**Frage:** Wenn ich jetzt Studierende habe, die ihre Gehörbildungsübungen oder Harmonielehre-Aufgaben mit KI-Tools lösen, einige können schon ganz gut harmonisieren, andere kämpfen noch mit Grundlagen, wo liegt da die Grenze? Bei den Fortgeschrittenen könnte ich mir vorstellen, dass KI als "Sparringpartner" funktioniert, um verschiedene Varianten durchzuspielen. Aber schadet es den Anfängern nicht fundamental, wenn sie die KI Lösungen generieren lassen, bevor sie überhaupt ein intuitives Gefühl für Stimmführung entwickelt haben? Wie unterscheide ich zwischen "hilfreicher Unterstützung" und "verhindert den grundlegenden Lernprozess"?
+
+::: {.callout-tip collapse="true"}
+## Hinweise zur Antwort
+
+In künstlerischen Fächern ist das "Ringen mit dem Material" besonders wichtig. Die intuitive Kompetenz entwickelt sich durch Übung, nicht durch Betrachtung von KI-Output. Für Anfänger ist KI-Nutzung hier wahrscheinlich kontraproduktiv. Für Fortgeschrittene kann KI als Experimentierfeld dienen. Die Schwelle liegt dort, wo die Grundlagen internalisiert sind. Mehr dazu im Leitfaden unter [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise) und [Prozeduralisierung](../../guide/index.qmd#expertise).
+:::
+
+---
+
+::: {.callout-note}
+## Vertiefte Informationen
+
+Mehr zu diesem Thema im Leitfaden:
+
+- [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise)
+- [Unterstützung anpassen](../../guide/index.qmd#expertise)
+- [Explizite Instruktion](../../guide/index.qmd#expertise)
+:::
