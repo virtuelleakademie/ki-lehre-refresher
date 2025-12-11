@@ -3,6 +3,8 @@ title: "Kritisches Denken und Fachwissen"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Warum kritische Bewertung Domänenwissen erfordert
 
 Daniel Willingham fasst die Forschung zusammen:
@@ -13,8 +15,9 @@ Ein Biomedizin-Experte erkennt, wenn ChatGPT bei Biochemie falsch liegt. Ein Nov
 
 **Du kannst nicht kritisch bewerten, was du nicht verstehst.**
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Subtile Fehler erkennen ohne Grundwissen
 
 Im Unterricht von Anatomie und Physiologie im ersten Semester Pflege nutzen Studierende ChatGPT für Zusammenfassungen, obwohl sie noch kein fundiertes Grundwissen haben.
@@ -26,9 +29,9 @@ Im Unterricht von Anatomie und Physiologie im ersten Semester Pflege nutzen Stud
 
 Das Dilemma ist real: Um KI kritisch zu prüfen, braucht man das Wissen, das man aufbauen will. In frühen Phasen ist Zurückhaltung bei KI-Nutzung sinnvoll. Die Fähigkeit zur Prüfung entwickelt sich mit dem Fachwissen. Gemeinsame Analyse von KI-Fehlern kann lehrreich sein, wenn die Grundlagen vorhanden sind. Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken) und [Was transferiert, und was nicht](../../guide/index.qmd#kritisches-denken).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Code verstehen vs. Code produzieren
 
 Die Situation in der Informatik ist paradox: Studierende nutzen GitHub Copilot und ChatGPT für Code, aber viele verstehen die Grundlagen nicht wirklich. Es kommt vor, dass Code eingereicht wird, der funktioniert, aber nicht erklärt werden kann.
@@ -40,9 +43,9 @@ Die Situation in der Informatik ist paradox: Studierende nutzen GitHub Copilot u
 
 Funktionierender Code, den man nicht versteht, ist ein Symptom für fehlendes Grundlagenwissen. Die Fähigkeit, Code zu bewerten, setzt Verständnis voraus. Die Sequenz "erst selbst schreiben, dann mit KI arbeiten" ist wahrscheinlich effektiver. Code Review als Lernmethode kann helfen, erfordert aber bereits Grundwissen. Mehr dazu im Leitfaden unter [Evidenz für Domänenspezifität](../../guide/index.qmd#kritisches-denken).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-soziales}
 ### Soziale Arbeit: KI und professionelle Urteilsfähigkeit
 
 In der Sozialen Arbeit geht es viel um Fallanalyse und professionelle Urteilsfähigkeit. Studierende verwenden zunehmend ChatGPT, um Fallsituationen zu analysieren oder Interventionsvorschläge zu entwickeln.
@@ -54,9 +57,9 @@ In der Sozialen Arbeit geht es viel um Fallanalyse und professionelle Urteilsfä
 
 Die Fähigkeit, Kontextfaktoren zu erkennen, ist das, was Experten von Novizen unterscheidet. Gemeinsame Analyse von KI-Output kann lehrreich sein, wenn Dozierende die Schwächen aufzeigen. Die Gefahr ist, dass Studierende allein nicht erkennen können, was fehlt. Sequenzierung (erst Grundlagen) ist wahrscheinlich sicherer. Mehr dazu im Leitfaden unter [Angewendet auf KI-Bewertung](../../guide/index.qmd#kritisches-denken) und [Die zentrale Implikation](../../guide/index.qmd#kritisches-denken).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: Oberflächliche Analysen erkennen
 
 Studierende im Bachelor Business Administration nutzen KI-Tools für Marktanalysen und Businesspläne. Es kommt vor, dass Wettbewerbsanalysen präsentiert werden, die auf ChatGPT basieren. Die Struktur ist gut, aber die strategischen Schlussfolgerungen sind oberflächlich und teilweise falsch.
@@ -68,8 +71,7 @@ Studierende im Bachelor Business Administration nutzen KI-Tools für Marktanalys
 
 Das Problem illustriert genau den Punkt: Ohne Fachwissen kann man die Qualität nicht beurteilen. Einschränkung in frühen Phasen ist wahrscheinlich nötig, um die Analysefähigkeit aufzubauen. Später kann KI als Werkzeug dienen, dessen Output kritisch geprüft wird. Die Fähigkeit zur Prüfung entwickelt sich aber erst mit dem Wissen. Mehr dazu im Leitfaden unter [Fach-spezifisches Lernen priorisieren](../../guide/index.qmd#kritisches-denken).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

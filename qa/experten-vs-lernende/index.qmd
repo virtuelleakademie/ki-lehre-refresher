@@ -3,6 +3,8 @@ title: "Experten vs. Lernende"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Warum dasselbe Werkzeug unterschiedlich wirkt
 
 **Experten** haben eine qualitativ andere kognitive Architektur. Sie sehen Muster und Bedeutung statt Einzelteile. Sie speichern Wissen in "Chunks": vernetzte Wissensstrukturen, die automatisch abgerufen werden.
@@ -21,8 +23,9 @@ sidebar: qa
 
 Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Prüfungen und praktische Kompetenz
 
 Im klinischen Reasoning im 2. Semester Pflege zeigt sich folgendes Risiko: Studierende könnten mit ChatGPT sehr flüssig klingende Pflegediagnosen erstellen, ohne die zugrundeliegenden Symptommuster wirklich zu erkennen.
@@ -34,9 +37,9 @@ Im klinischen Reasoning im 2. Semester Pflege zeigt sich folgendes Risiko: Studi
 
 Das Risiko der "fliessenden Inkompetenz" ist hier besonders kritisch. Praktische Prüfungen (OSCE), mündliche Fallbesprechungen und Prozessbeobachtung im Praktikum können helfen, die tatsächliche Kompetenz zu erfassen. Mehr dazu im Leitfaden unter [Fliessende Inkompetenz](../../guide/index.qmd#paradox) und [Prozess bewerten, nicht nur Produkt](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Grundstudium ohne Code-Assistenten?
 
 In der Informatik zeigt sich das Paradox täglich: Studierende können mit GitHub Copilot funktionierenden Code produzieren, aber wenn nachgefragt wird, warum sie genau diese Datenstruktur gewählt haben, kommt oft nichts.
@@ -48,9 +51,9 @@ In der Informatik zeigt sich das Paradox täglich: Studierende können mit GitHu
 
 Das ist das Kerndilemma: Um KI kritisch zu nutzen, braucht man Expertise. Um Expertise aufzubauen, braucht man Übung ohne Abkürzungen. Die Sequenzierung "Grundlagen zuerst" ist wahrscheinlich der richtige Ansatz. Später kann KI als Werkzeug dienen. Mehr dazu im Leitfaden unter [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox) und [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-soziales}
 ### Soziale Arbeit: Systemisches Verstehen vs. Textbausteine
 
 Das Konzept der "Chunks" und Erfahrungsmuster ist relevant für die Soziale Arbeit, wo viel mit Falldokumentationen und Analysen komplexer Lebenssituationen gearbeitet wird.
@@ -62,9 +65,9 @@ Das Konzept der "Chunks" und Erfahrungsmuster ist relevant für die Soziale Arbe
 
 Die professionelle Urteilsfähigkeit ist das, was Experten von Novizen unterscheidet. KI kann plausibel klingende Texte produzieren, aber nicht die kontextspezifische Einschätzung leisten. Fallbesprechungen, Supervisionen und Reflexion über die eigene Entscheidungsfindung sind hier wichtiger als schriftliche Produkte. Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: Business-Logik vs. formale Korrektheit
 
 Im strategischen Management und Business Analytics zeigt sich ein Problem: Studierende können mit KI-Tools beeindruckende Marktanalysen erstellen, aber auf die Frage "Ist diese Strategie für dieses spezifische Unternehmen sinnvoll?" fehlt ihnen das Gespür.
@@ -76,8 +79,7 @@ Im strategischen Management und Business Analytics zeigt sich ein Problem: Studi
 
 Prüfungsformate, die Begründungen und kontextspezifische Anpassungen fordern, können helfen. Mündliche Verteidigung von Analysen, unerwartete Folgefragen, Anwendung auf neue Szenarien. Das Thematisieren des Problems ist wichtig: Es geht nicht um KI-Verbot, sondern um Lernziele. Mehr dazu im Leitfaden unter [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox) und [Entscheidungsrahmen](../../guide/index.qmd#implikationen).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

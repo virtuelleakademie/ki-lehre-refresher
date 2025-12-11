@@ -3,6 +3,8 @@ title: "Erwünschte Schwierigkeiten"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Warum Anstrengung notwendig ist
 
 Robert Bjork prägte das Konzept der "Desirable Difficulties":
@@ -18,8 +20,9 @@ Vier bewährte Strategien:
 
 KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Pflegediagnosen und Selbst-Generierung
 
 Im klinischen Reasoning bei Bachelorstudierenden Pflege arbeiten Studierende Fallbeispiele selbst durch und begründen ihre Pflegediagnosen. Das ist mühsam für sie, aber genau diese Mühe scheint ja wichtig zu sein.
@@ -31,9 +34,9 @@ Im klinischen Reasoning bei Bachelorstudierenden Pflege arbeiten Studierende Fal
 
 Der Generierungseffekt zeigt: Selbst formulierte Antworten werden besser behalten. Mögliche Strategien: Erst eigene Diagnose erstellen, dann mit KI vergleichen und Unterschiede begründen. Oder: Prozess dokumentieren lassen, nicht nur das Ergebnis. Mehr dazu im Leitfaden unter [Der Generierungseffekt](../../guide/index.qmd#paradox) und [Desirable Difficulties](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Abkürzung vs. Effizienz
 
 Das Konzept der "erwünschten Schwierigkeiten" wirft Fragen auf. In Programmierkursen zeigt sich, dass Studierende mit GitHub Copilot und KI-Assistenten viel schneller vorankommen und mehr Projekte umsetzen können.
@@ -45,9 +48,9 @@ Das Konzept der "erwünschten Schwierigkeiten" wirft Fragen auf. In Programmierk
 
 Erwünschte Schwierigkeiten sind solche, die zur Schemabildung beitragen. Syntax auswendig lernen ist weniger wichtig als Konzepte verstehen. Die Frage ist: Verstehen sie, warum der Code funktioniert? Können sie Fehler finden und beheben? Mehr dazu im Leitfaden unter [Von schwachen zu starken Methoden](../../guide/index.qmd#expertise) und [Prozeduralisierung](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-soziales}
 ### Soziale Arbeit: Reflexionsberichte und aktiver Abruf
 
 In der Sozialen Arbeit geht es viel um Gesprächsführung und die Entwicklung einer professionellen Haltung. Studierende schreiben oft Reflexionsberichte nach Praxiseinsätzen, das ist diese "aktive Retrieval"-Strategie, oder?
@@ -59,9 +62,9 @@ In der Sozialen Arbeit geht es viel um Gesprächsführung und die Entwicklung ei
 
 Das mühsame Formulieren ist tatsächlich Teil des Lernprozesses. Schreiben kann ein "epistemisches Werkzeug" sein: Gedanken entwickeln sich durch das Schreiben. Mögliche Ansätze: Handschriftliche Erstfassung, mündliche Reflexion, oder strukturierte Fragen, die KI-Nutzung erschweren. Mehr dazu im Leitfaden unter [Die Scaffolding-Hypothese](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-hafl}
 ### HAFL: Spaced Learning und KI-Tools in der Praxis
 
 In Bodenkunde und Pflanzenernährung ist ein wichtiger Teil des Lernens, dass Studierende lernen, Nährstoffmängel an Pflanzen zu erkennen und zu diagnostizieren. Das braucht Übung: Sie müssen viele Beispiele sehen und selbst interpretieren.
@@ -73,8 +76,7 @@ In Bodenkunde und Pflanzenernährung ist ein wichtiger Teil des Lernens, dass St
 
 Die Sequenzierung ist entscheidend: Erst die Grundlagen ohne KI, dann KI als Werkzeug. Gestaffelte Übungen können helfen: In frühen Phasen selbst diagnostizieren, später mit KI-Tool vergleichen und Unterschiede analysieren. Mehr dazu im Leitfaden unter [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen) und [Übungsphasen schützen](../../guide/index.qmd#expertise).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

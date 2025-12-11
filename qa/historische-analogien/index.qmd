@@ -3,6 +3,8 @@ title: "Historische Analogien"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Was wir aus der Vergangenheit lernen können
 
 Das Muster wiederholt sich bei verschiedenen Technologien:
@@ -14,8 +16,9 @@ Das Muster wiederholt sich bei verschiedenen Technologien:
 
 Der Unterschied: KI ist breiter als GPS oder Taschenrechner. Sie betrifft nicht eine kognitive Domäne, sondern potenziell alle.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Technologischer Fortschritt und Grundlagenwissen
 
 Die historische Entwicklung von Taschenrechner über GPS zu KI wirft Fragen auf. Ist der Vergleich nicht etwas schief? In der Informatik-Ausbildung wurde bewusst entschieden, dass Studierende keinen Assembler mehr von Hand schreiben müssen, weil Compiler das besser machen. Es wurde akzeptiert, dass gewisse Low-Level-Skills obsolet werden.
@@ -27,9 +30,9 @@ Die historische Entwicklung von Taschenrechner über GPS zu KI wirft Fragen auf.
 
 Die Grenze liegt dort, wo Wissen zur Bewertung von KI-Output nötig ist. Assembler kann man delegieren, weil Compiler deterministisch sind. KI-Output muss aber kritisch geprüft werden, und dafür braucht es Fachwissen. Die Frage ist: Was muss man verstehen, um Fehler zu erkennen? Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: Blindes Vertrauen in Modelle
 
 Die Analogie mit dem Taschenrechner ist interessant, aber im Bereich Wirtschaft zeigt sich ein Problem: Studierende müssen später in Unternehmen strategische Entscheidungen treffen, Geschäftsberichte analysieren, Budgets verteidigen.
@@ -41,9 +44,9 @@ Die Analogie mit dem Taschenrechner ist interessant, aber im Bereich Wirtschaft 
 
 Diese Sorge ist berechtigt und historisch fundiert. Das Muster wiederholt sich: Werkzeuge, die Experten produktiver machen, können bei unkritischer Nutzung zu Fehlentscheidungen führen. Die Fähigkeit zur kritischen Bewertung erfordert Fachwissen, das aufgebaut werden muss. Mehr dazu im Leitfaden unter [Der EdTech-Hype-Zyklus](../../guide/index.qmd#paradox) und [Der stärkste Gegeneinwand](../../guide/index.qmd#implikationen).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-hafl}
 ### HAFL: Praktische vs. digitale Kompetenzen
 
 Die historischen Beispiele kommen alle aus dem digitalen oder städtischen Bereich. Aber Studierende in der Agronomie, die später Landwirtschaftsbetriebe führen oder in der Beratung arbeiten, müssen raus aufs Feld, Böden beurteilen, Krankheiten an Pflanzen erkennen, Wetterentwicklungen einschätzen.
@@ -55,9 +58,9 @@ Die historischen Beispiele kommen alle aus dem digitalen oder städtischen Berei
 
 Die Erkenntnisse sind übertragbar, aber der Kontext ist anders. Praktische Fertigkeiten wie Bodenbeurteilung erfordern implizites Wissen, das nur durch Erfahrung aufgebaut wird. KI-Tools können hier unterstützen, aber nicht das geschulte Auge ersetzen. Die Gefahr ist, dass Studierende sich auf Apps verlassen, ohne das Grundverständnis aufzubauen. Mehr dazu im Leitfaden unter [Prozeduralisierung: Vom Wissen zum Können](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-architektur}
 ### Architektur: Handzeichnen und räumliches Verständnis
 
 Der Vergleich mit GPS ist spannend, weil in der Architektur etwas Ähnliches passiert ist: Früher mussten Studierende von Hand zeichnen und räumlich denken lernen. Dann kam CAD, und es gab grosse Diskussionen, ob das Handzeichnen noch nötig ist. Heute werden generative Design-Tools und KI für Entwurfsvarianten genutzt.
@@ -69,8 +72,7 @@ Der Vergleich mit GPS ist spannend, weil in der Architektur etwas Ähnliches pas
 
 Die Beobachtung bestätigt das Muster: Grundlegende Fertigkeiten (hier räumliches Denken) sind Voraussetzung für effektive Werkzeugnutzung. Die Sequenz "erst Grundlagen, dann Werkzeuge" ist wahrscheinlich effektiver als paralleles Arbeiten. Das Handzeichnen baut Verständnis auf, das bei der Bewertung von KI-Output hilft. Mehr dazu im Leitfaden unter [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen) und [Grundlagen BEVOR Werkzeuge](../../guide/index.qmd#fazit).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

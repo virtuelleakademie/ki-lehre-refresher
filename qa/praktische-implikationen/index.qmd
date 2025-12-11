@@ -3,6 +3,8 @@ title: "Praktische Implikationen für die Lehre"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Was bedeutet das konkret?
 
 Drei zentrale Prinzipien:
@@ -15,8 +17,9 @@ Drei zentrale Prinzipien:
 
 **Die Kernaussage:** Grundlagen BEVOR Werkzeuge. Erst das Fundament, dann die Erweiterung.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Grundlagen sicherstellen in der Praxis
 
 Die Aussage, dass Grundlagen vor Werkzeugen kommen müssen, ist relevant für die Physiotherapie. Im ersten Jahr lernen Studierende die Anatomie und die manuelle Befundaufnahme. Es zeigt sich aber immer mehr, dass sie ChatGPT nutzen, um Diagnosen zu "checken" oder Behandlungspläne zu erstellen, ohne die muskuloskelettalen Zusammenhänge wirklich zu verstehen.
@@ -28,9 +31,9 @@ Die Aussage, dass Grundlagen vor Werkzeugen kommen müssen, ist relevant für di
 
 Die praktischen Fertigkeiten ("Hände einsetzen") erfordern Prozeduralisierung, die nur durch Übung entsteht. KI kann hier nicht helfen. Formative Assessments ohne KI können den Lernstand erfassen. In frühen Phasen ist Zurückhaltung sinnvoll, später kann KI als Werkzeug dienen, dessen Vorschläge kritisch geprüft werden. Mehr dazu im Leitfaden unter [Prozeduralisierung: Vom Wissen zum Können](../../guide/index.qmd#expertise) und [Übungsphasen schützen](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Differenzierung nach Niveau
 
 Die Aussage "Expertise bestimmt den Nutzen" ist interessant. Im Software Engineering zeigt sich genau dieses Paradox: Studierende nutzen GitHub Copilot und ChatGPT schon ab dem ersten Semester für ihre Programmieraufgaben. Die fortgeschrittenen Studierenden nutzen es effektiv als Pair-Programming-Partner, aber die Anfänger kopieren Code, den sie nicht verstehen.
@@ -42,9 +45,9 @@ Die Aussage "Expertise bestimmt den Nutzen" ist interessant. Im Software Enginee
 
 Differenzierung nach Niveau ist sinnvoll. Für Anfänger: Grundlagen ohne KI aufbauen. Für Fortgeschrittene: KI als Werkzeug erlauben, aber Verständnis prüfen. Code erklären lassen ist ein guter Ansatz, aber nicht ausreichend. Auch: Code modifizieren, Fehler finden, auf neue Probleme anwenden. Mehr dazu im Leitfaden unter [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise) und [Entscheidungsrahmen](../../guide/index.qmd#implikationen).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-hafl}
 ### HAFL: Notwendige Grundlagen vs. delegierbare Berechnungen
 
 Die Aussage "Effort is the signal" und dass zu einfaches Lernen kein echtes Lernen ist, wirft Fragen auf. An der HAFL arbeiten Studierende viel mit Berechnungen zu Nährstoffkreisläufen, Bodenqualität und Ertragsprognosen. Früher haben sie das mühsam von Hand oder mit Excel durchgerechnet, heute können sie das alles von KI-Tools machen lassen.
@@ -56,9 +59,9 @@ Die Aussage "Effort is the signal" und dass zu einfaches Lernen kein echtes Lern
 
 Die Grenze liegt dort, wo Verstehen nötig ist, um Fehler zu erkennen und Anpassungen vorzunehmen. Routine-Berechnungen können delegiert werden, wenn die Konzepte verstanden sind. Die Frage ist: Können sie erkennen, wenn das Tool einen unrealistischen Wert ausgibt? Können sie bei veränderten Bedingungen anpassen? Das erfordert konzeptuelles Verständnis. Mehr dazu im Leitfaden unter [Der stärkste Gegeneinwand](../../guide/index.qmd#implikationen) und [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-soziales}
 ### Soziale Arbeit: KI als Tutor, nicht als Antwortgeber
 
 Der Punkt "KI als Tutor, nicht als Antwortgeber" ist relevant für die Soziale Arbeit. Es geht viel um Fallanalysen und die Entwicklung von Interventionsstrategien. Studierende müssen lernen, komplexe soziale Situationen zu verstehen und ethisch reflektierte Entscheidungen zu treffen.
@@ -70,8 +73,7 @@ Der Punkt "KI als Tutor, nicht als Antwortgeber" ist relevant für die Soziale A
 
 Die Sequenz "erst eigene Lösung, dann Reflexion mit KI" ist vielversprechend. Wichtig ist, dass KI nicht als Autorität wahrgenommen wird. Strukturierte Prompts können helfen, KI als Diskussionspartner zu nutzen, nicht als Antwortgeber. Die Gefahr der vorschnellen "Lösung" ist real. Gemeinsame Analyse von KI-Grenzen kann helfen. Mehr dazu im Leitfaden unter [Sokratisches Fragen in KI-Tutoren](../../guide/index.qmd#sokrates) und [KI-Tutoren evaluieren](../../guide/index.qmd#sokrates).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen
