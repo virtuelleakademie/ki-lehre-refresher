@@ -1,0 +1,312 @@
+---
+title: "Speaker Notes: KI in der Hochschulbildung (Kondensiert)"
+subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
+author: "Andrew Ellis"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+bibliography: ../bibliography.bib
+---
+
+## Legende
+
+| Symbol | Bedeutung |
+|--------|-----------|
+| 👆 | Klick auf Folie |
+| ⭐ | Kernaussage |
+| 🎓 | Kurs-Hinweis |
+| 📊 | Daten/Zahlen |
+| 💡 | Wichtiger Punkt |
+
+---
+
+## 1. Titelfolie: Eisberg-Metapher
+
+**Einstieg:**
+
+- Zwei übliche Narrative: "KI revolutioniert" vs. "KI zerstört" = beide zu einfach
+- Rahmen aus Kognitionspsychologie: Wann hilft KI, wann schadet sie?
+
+**Eisberg-Bild:**
+
+| Sichtbar (über Wasser) | Unsichtbar (unter Wasser) |
+|------------------------|---------------------------|
+| Performance | Learning |
+| Momentane Leistung | Dauerhafte Veränderung |
+
+**Vortragsstruktur:**
+
+1. Empirischer Einstieg (Bastani-Studie)
+2. Theoretischer Rahmen (Kognitionspsychologie)
+3. Differenzierung (Experten vs. Novizen)
+4. Praktische Implikationen
+
+---
+
+## 2. Ein überraschendes Ergebnis
+
+**Bastani et al. (2025):** ~1000 Gymnasiasten, Türkei, Mathematik
+
+| Phase | KI-Gruppe | Kontrollgruppe |
+|-------|-----------|----------------|
+| 👆 Übung (mit KI) | **+48%** mehr Aufgaben gelöst | Baseline |
+| 👆 Test (ohne KI) | **-17%** schlechter | Baseline |
+
+⭐ **Mehr Aufgaben gelöst ≠ mehr gelernt**
+
+📊 Effektstärke: 0.2-0.3 SD (klein bis mittel, aber relevant)
+
+💡 GPT-Tutor (mit Leitplanken) zeigte bessere Ergebnisse als direkter GPT-4-Zugang
+
+---
+
+## 3. Das Paradox
+
+**Grafik-Interpretation:**
+
+- Magenta = KI-Gruppe, Grau = Kontrollgruppe
+- Übungsphase: KI-Gruppe klar besser (keine Überlappung der Fehlerbalken)
+- Testphase: KI-Gruppe tendenziell schlechter (Fehlerbalken überlappen)
+
+⭐ **Aufgabenleistung ≠ Lernen**
+
+**Robert Bjork's Unterscheidung:**
+
+| Performance | Learning |
+|-------------|----------|
+| Momentan | Dauerhaft |
+| Mit Hilfe | Ohne Hilfe |
+| Sichtbar | Unsichtbar |
+
+---
+
+## 4. Das Nadelöhr des Lernens
+
+**Gedächtnismodell:**
+
+```
+[Neue Info] → [Arbeitsgedächtnis 4±1] → [Langzeitgedächtnis]
+   ∞              Nadelöhr!                    ∞
+```
+
+⭐ **Alles Lernen muss durch das Arbeitsgedächtnis. Keine Abkürzung. Keine KI umgeht das.**
+
+**Cognitive Load Theory (Sweller):**
+
+| Typ | Beschreibung | Ziel |
+|-----|--------------|------|
+| Intrinsic | Inhärente Komplexität | Nicht reduzierbar |
+| Extraneous | Schlechtes Design | Minimieren |
+| Germane | Produktive Anstrengung | Optimieren |
+
+💡 KI reduziert potenziell Germane Load = gut für Experten, schlecht für Lernende
+
+---
+
+## 5. Erwünschte Schwierigkeiten
+
+**Bjork-Zitat:**
+
+> "Conditions that slow apparent learning often optimize long-term retention."
+
+⭐ **Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.**
+
+---
+
+## 6. Die vier Strategien
+
+| # | Strategie | Beschreibung | KI-Risiko |
+|---|-----------|--------------|-----------|
+| ✏️ | Selbst generieren | Eigene Antworten formulieren | KI generiert für uns |
+| 📅 | Verteilt lernen | 4×1h > 1×4h | KI liefert instant |
+| 🧠 | Aktiv abrufen | Aus Gedächtnis holen | KI macht Abruf unnötig |
+| 🔀 | Variieren | Themen mischen | KI löst einzeln |
+
+⭐ **KI kann jede dieser Strategien untergraben**
+
+🎓 Intermediate-Kurs: KI-Anwendungen so gestalten, dass sie Strategien unterstützen
+
+---
+
+## 7. Der Generierungseffekt
+
+**Behaltensleistung:**
+
+| Quelle | Behalten |
+|--------|----------|
+| Selbst generiert | ~70% |
+| Gelesen | ~50% |
+| Von KI erhalten | ~35% (illustrativ) |
+
+⭐ **Wenn KI generiert, entfällt der Lerneffekt**
+
+---
+
+## 8. Historische Analogien
+
+| Dekade | Technologie | Effekt |
+|--------|-------------|--------|
+| 1970er | 🧮 Taschenrechner | Konzeptuelles Verständnis ↓ |
+| 1990er | 📍 GPS | Räumliches Gedächtnis ↓ |
+| 2000er | 🔍 Google | "Google-Effekt": WO > WAS |
+| 2020er | 🤖 KI | Alle Domänen betroffen |
+
+⭐ **KI ist breiter: betrifft nicht eine Domäne, sondern alle**
+
+---
+
+## 9. Die entscheidende Frage
+
+**Muster:**
+
+- 🧮 Taschenrechner: hilft Mathematikern, schadet Lernenden
+- 📍 GPS: hilft Taxifahrern, schwächt untrainiertes Gedächtnis
+
+⭐ **Nicht OB KI nützt/schadet, sondern WER profitiert**
+
+---
+
+## 10. Was Experten sehen
+
+**Schach-Beispiel (Chase & Simon):**
+
+| Novize sieht | Experte sieht |
+|--------------|---------------|
+| 64 Felder, 32 Figuren | "Sizilianische Verteidigung" |
+| Einzelteile | Muster & Bedeutung |
+
+**5-Sekunden-Test:**
+
+- Meister: ~16/24 Figuren erinnert
+- Anfänger: ~4/24 Figuren erinnert
+- Bei Zufallsstellung: beide ~3-4
+
+⭐ **Experten speichern Wissen in "Chunks" (~50.000 bei Grossmeistern)**
+
+---
+
+## 11. Der Expertise-Umkehr-Effekt
+
+**Interaktive Grafik:**
+
+| Vorwissen | Beste Methode |
+|-----------|---------------|
+| Niedrig (20%) | Hohe Unterstützung (Beispiele, Schritt-für-Schritt) |
+| Hoch (80%+) | Niedrige Unterstützung (problembasiert) |
+
+⭐ **Was für Novizen optimal ist, ist für Experten suboptimal. Und umgekehrt.**
+
+💡 "Fading": Mit hoher Unterstützung beginnen, graduell reduzieren
+
+---
+
+## 12. Warum Experten profitieren, Lernende nicht
+
+| 🎓 Experten | 👤 Lernende |
+|-------------|-------------|
+| ✅ Können Routine auslagern | ❌ Können KI-Output nicht bewerten |
+| ✅ Können KI-Output bewerten | ❌ Überspringen Grundlagen |
+| ✅ Mehr Kapazität für Komplexes | ❌ Risiko: "fliessende Inkompetenz" |
+
+⭐ **Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen**
+
+🎓 Beginner-Kurs: Funktionsweise und Limitationen von Sprachmodellen
+
+---
+
+## 13. Kritisches Denken braucht Fachwissen
+
+**Willingham-Zitat:**
+
+> "Critical thinking is not a skill that can be deployed regardless of context."
+
+**Beispiel:**
+
+- 🎓 Biomedizin-Experte erkennt ChatGPT-Fehler in Biochemie
+- 👤 Novize kann das nicht
+
+⭐ **Du kannst nicht kritisch bewerten, was du nicht verstehst**
+
+---
+
+## 14. Kognition erweitern vs. ersetzen
+
+**Andy Clark's Unterscheidung:**
+
+| ➕ Erweitern | ➖ Ersetzen |
+|-------------|-------------|
+| Mensch bleibt engagiert | Mensch wird passiv |
+| Werkzeug verstärkt | Werkzeug übernimmt |
+| Taschenrechner für Mathematiker | Student lässt Essay schreiben |
+
+⭐ **Dasselbe Werkzeug kann beides sein:**
+
+- ChatGPT als Brainstorming-Partner = Erweiterung
+- ChatGPT als Ghostwriter = Ersetzung
+
+---
+
+## 15. Die Sequenzierungsfrage
+
+```
+[Novize] ←————————— ? —————————→ [Experte]
+                 Schwelle
+```
+
+**Das Problem:**
+
+- ❓ Schwelle ist unbekannt
+- ❓ Variiert nach Domäne und Person
+- ❓ Keine pauschalen Regeln
+
+⭐ **Wer profitiert? Hängt ab von Kontext, Person, Aufgabe**
+
+---
+
+## 16. Die Kernaussage
+
+⭐⭐⭐ **KI-Werkzeuge sind für Experten gemacht**
+
+**Sie machen Experten produktiver:**
+
+- 💻 Programmierer mit GitHub Copilot
+- 📚 Forscher mit Literature-Review-Tools
+- 🖊️ Schreiber mit KI-Unterstützung
+
+**Aber:** Lernende profitieren oft nicht
+
+💡 **GPT-Tutor aus Bastani-Studie:** KI, die Fragen stellt statt Antworten gibt = erhält kognitive Anstrengung
+
+🎓 Advanced-Kurs: Eigenes pädagogisches KI-Tool entwickeln
+
+⭐ **Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht**
+
+---
+
+## 17. Was bedeutet das für die Lehre?
+
+| # | Prinzip | Erklärung |
+|---|---------|-----------|
+| 1️⃣ | Anstrengung ist das Signal | Zu leicht = kein Lernen |
+| 2️⃣ | KI als Tutor, nicht Antwortgeber | Fragen stellen, Hinweise geben |
+| 3️⃣ | Expertise bestimmt den Nutzen | Differenzieren nach Vorwissen |
+
+⭐⭐⭐ **GRUNDLAGEN BEVOR WERKZEUGE**
+
+- Erst das Fundament, dann die Erweiterung
+- Erst verstehen, dann automatisieren
+- Erst selbst können, dann delegieren
+
+---
+
+## 18. Referenzen (Hauptquellen)
+
+| Autor | Thema |
+|-------|-------|
+| Bastani et al. (2025) | Empirische Studie |
+| Sweller | Cognitive Load Theory |
+| Bjork | Erwünschte Schwierigkeiten |
+| Kalyuga | Expertise-Umkehr-Effekt |
+| Willingham | Kritisches Denken |
+| Clark | Erweiterung vs. Ersetzung |
