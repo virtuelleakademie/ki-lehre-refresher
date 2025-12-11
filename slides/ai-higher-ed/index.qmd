@@ -6,7 +6,7 @@ author:
     url: https://github.com/awellis
     affiliation: Virtuelle Akademie, Berner Fachhochschule
     affiliation-url: https://virtuelleakademie.ch
-    orcid: 0000-0002-2788-936"
+    orcid: 0000-0002-2788-936X 
 # institute: "Virtuelle Akademie, Berner Fachhochschule"
 format:
   revealjs:
