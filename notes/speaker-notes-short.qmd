@@ -44,15 +44,23 @@ Die Studie von Bastani et al. (2025) "Generative AI Can Harm Learning" ist eine 
 - Fach: Mathematik
 - Intervention: GPT-4 Zugang während Übungsphasen
 - Der 17%-Nachteil betraf den direkten GPT-4-Zugang
-- Eine Variante mit "GPT Tutor" (pädagogische Leitplanken) zeigte bessere Ergebnisse
+
+**Praktische Einordnung der Effektstärke:**
+
+Der 17%-Nachteil klingt dramatisch, sollte aber eingeordnet werden. In der Studie entspricht dies etwa 0.2-0.3 Standardabweichungen, ein kleiner bis mittlerer Effekt. Zum Vergleich: Der Unterschied zwischen einem Schüler auf dem 50. und dem 40. Perzentil. Relevant, aber kein Totalausfall.
+
+**Der GPT-Tutor-Befund (oft übersehen):**
+
+Die Studie testete auch einen "GPT Tutor" mit pädagogischen Leitplanken: Das System gab keine direkten Antworten, sondern Hinweise und Fragen. Diese Bedingung zeigte deutlich bessere Ergebnisse als der direkte GPT-4-Zugang. Das ist ein zentraler Befund: Das Problem ist nicht KI an sich, sondern wie KI eingesetzt wird. Ein gut designtes KI-Tutoring-System kann die negativen Effekte abmildern oder vermeiden.
 
 **Einschränkungen:**
 
 - Spezifischer Kontext (Türkei, Mathematik, Gymnasium)
-- Kurzfristige Messung
+- Kurzfristige Messung (Wochen, nicht Semester)
 - Replikationen stehen aus
+- Generalisierung auf Schweizer Hochschulstudierende in anderen Fächern erfordert Vorsicht
 
-**Dennoch wichtig:** Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist theoretisch gut fundiert und deckt sich mit der Cognitive Load Theory.
+**Dennoch wichtig:** Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist theoretisch gut fundiert und deckt sich mit der Cognitive Load Theory. Und der GPT-Tutor-Befund zeigt einen Weg nach vorne.
 :::
 
 ---
@@ -290,12 +298,12 @@ Das Muster wiederholt sich. Aber der Unterschied: KI ist breiter als GPS oder Ta
 **Taschenrechner (1970er-heute):**
 Meta-Analysen zeigen gemischte Ergebnisse. Der Schlüssel ist WANN Taschenrechner eingesetzt werden. Für bereits beherrschte Algorithmen: förderlich. Bevor konzeptuelles Verständnis aufgebaut ist: hinderlich.
 
-**GPS (Dahmani & Bhorer, 2020):**
+**GPS [@dahmaniHabitualUseGPS2020]:**
 Die Studie zeigte, dass häufiger GPS-Gebrauch mit schlechterem räumlichem Gedächtnis korreliert, auch nach Kontrolle für andere Faktoren. Die Kausalität ist schwer zu etablieren, aber die Theorie ist plausibel: Wer nicht navigiert, trainiert den Hippocampus nicht.
 
 Die berühmte Taxifahrer-Studie (Maguire et al., 2000) zeigte strukturelle Gehirnveränderungen bei Londoner Cabbies. Interessanterweise: Nach der Pensionierung bildete sich der Effekt teilweise zurück.
 
-**Google-Effekt (Sparrow et al., 2011):**
+**Google-Effekt [@sparrowGoogleEffectsMemory2011]:**
 Teilnehmer erinnerten Information schlechter, wenn sie glaubten, diese sei gespeichert und abrufbar. Aber sie erinnerten den Speicherort besser. Das Gehirn outsourcet strategisch.
 
 **Die KI-Frage:**
@@ -686,7 +694,9 @@ Sie machen Experten produktiver. Ein erfahrener Programmierer mit GitHub Copilot
 
 Aber: Lernende profitieren oft nicht. Und hier kommt die wichtige Begründung: Lernen erfordert genau die kognitive Anstrengung, die KI zu eliminieren droht.
 
-Das ist nicht KI-Feindlichkeit. Das ist eine kognitionspsychologische Tatsache. Lernen braucht Anstrengung. KI reduziert Anstrengung. Also kann KI Lernen behindern.
+Das ist nicht KI-Feindlichkeit. Das ist eine kognitionspsychologische Tatsache. Lernen braucht Anstrengung. Und hier ist der entscheidende Punkt: KI *kann* diese Anstrengung reduzieren, wenn sie passiv genutzt wird. Wer sich Antworten generieren lässt, statt selbst zu denken, umgeht die produktive Mühe.
+
+Aber: Es ist nicht unvermeidlich. Erinnern Sie sich an den GPT-Tutor aus der Bastani-Studie? Dort wurde KI so eingesetzt, dass sie Fragen stellte und Hinweise gab, statt Antworten zu liefern. Das erhielt die kognitive Anstrengung. Die Art der Nutzung entscheidet.
 
 [KLICK]
 
