@@ -25,11 +25,9 @@ Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.
 
 ### Gesundheit: Prüfungen und praktische Kompetenz
 
-*Dr. med. Sarah Meier, Pflegewissenschaft*
+Im klinischen Reasoning im 2. Semester Pflege zeigt sich folgendes Risiko: Studierende könnten mit ChatGPT sehr flüssig klingende Pflegediagnosen erstellen, ohne die zugrundeliegenden Symptommuster wirklich zu erkennen.
 
-Ich unterrichte klinisches Reasoning im 2. Semester Pflege. Wenn ich die Ausführungen richtig verstehe, könnten meine Studierenden mit ChatGPT sehr flüssig klingende Pflegediagnosen erstellen, ohne die zugrundeliegenden Symptommuster wirklich zu erkennen.
-
-**Frage:** Wie kann ich in Prüfungssituationen überhaupt noch feststellen, ob jemand eine Situation selbstständig einschätzen kann? Und noch wichtiger: Wenn Studierende im Praktikum sind und dort möglicherweise KI-Tools nutzen, um Dokumentationen zu schreiben, wie stelle ich sicher, dass sie die kritischen Warnsignale bei Patienten trotzdem wahrnehmen und nicht nur schön formulierte, aber inhaltlich falsche Einschätzungen abgeben?
+**Frage:** Wie kann in Prüfungssituationen überhaupt noch festgestellt werden, ob jemand eine Situation selbstständig einschätzen kann? Und noch wichtiger: Wenn Studierende im Praktikum möglicherweise KI-Tools nutzen, um Dokumentationen zu schreiben, wie stellt man sicher, dass sie die kritischen Warnsignale bei Patienten trotzdem wahrnehmen und nicht nur schön formulierte, aber inhaltlich falsche Einschätzungen abgeben?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -41,11 +39,9 @@ Das Risiko der "fliessenden Inkompetenz" ist hier besonders kritisch. Praktische
 
 ### Technik und Informatik: Grundstudium ohne Code-Assistenten?
 
-*Prof. Thomas Gerber, Informatik*
+In der Informatik zeigt sich das Paradox täglich: Studierende können mit GitHub Copilot funktionierenden Code produzieren, aber wenn nachgefragt wird, warum sie genau diese Datenstruktur gewählt haben, kommt oft nichts.
 
-Bei uns in der Informatik sehe ich das Paradox täglich: Studierende können mit GitHub Copilot funktionierenden Code produzieren, aber wenn ich nachfrage, warum sie genau diese Datenstruktur gewählt haben, kommt oft nichts.
-
-**Frage:** Sollten wir im Grundstudium bewusst auf Code-Assistenten verzichten, damit die Studierenden erst mal die fundamentalen Patterns selbst entwickeln? Oder ist das realitätsfern, weil sie in der Berufswelt ja sowieso mit diesen Tools arbeiten werden? Und wie baue ich Übungen, bei denen sie lernen, KI-generierten Code kritisch zu evaluieren, wenn sie dafür ja genau das Expertenwissen brauchen, das sie erst aufbauen sollten?
+**Frage:** Sollte im Grundstudium bewusst auf Code-Assistenten verzichtet werden, damit Studierende erst mal die fundamentalen Patterns selbst entwickeln? Oder ist das realitätsfern, weil sie in der Berufswelt ja sowieso mit diesen Tools arbeiten werden? Und wie baut man Übungen, bei denen sie lernen, KI-generierten Code kritisch zu evaluieren, wenn sie dafür ja genau das Expertenwissen brauchen, das sie erst aufbauen sollten?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -57,11 +53,9 @@ Das ist das Kerndilemma: Um KI kritisch zu nutzen, braucht man Expertise. Um Exp
 
 ### Soziale Arbeit: Systemisches Verstehen vs. Textbausteine
 
-*Claudia Brunner, Soziale Arbeit*
+Das Konzept der "Chunks" und Erfahrungsmuster ist relevant für die Soziale Arbeit, wo viel mit Falldokumentationen und Analysen komplexer Lebenssituationen gearbeitet wird.
 
-Das mit den "Chunks" und Erfahrungsmustern hat mich sehr zum Nachdenken gebracht. In der Sozialen Arbeit arbeiten wir viel mit Falldokumentationen und Analysen komplexer Lebenssituationen.
-
-**Frage:** Wenn Studierende jetzt KI nutzen, um Sozialberichte zu schreiben oder Interventionsstrategien zu entwickeln: Wie unterscheide ich, ob sie wirklich die systemischen Zusammenhänge verstehen oder nur AI-generierte Fachliteratur-Versatzstücke aneinanderreihen? Besonders kritisch finde ich das bei ethischen Dilemmata: KI kann ja durchaus schlüssig klingende Argumentationen liefern, aber erfasst sie die moralische Komplexität realer Fälle? Wie trainiere ich diese professionelle Urteilsfähigkeit, wenn die Studierenden sich an KI-Output gewöhnen?
+**Frage:** Wenn Studierende KI nutzen, um Sozialberichte zu schreiben oder Interventionsstrategien zu entwickeln: Wie unterscheidet man, ob sie wirklich die systemischen Zusammenhänge verstehen oder nur AI-generierte Fachliteratur-Versatzstücke aneinanderreihen? Besonders kritisch ist das bei ethischen Dilemmata: KI kann durchaus schlüssig klingende Argumentationen liefern, aber erfasst sie die moralische Komplexität realer Fälle? Wie trainiert man diese professionelle Urteilsfähigkeit, wenn Studierende sich an KI-Output gewöhnen?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -73,11 +67,9 @@ Die professionelle Urteilsfähigkeit ist das, was Experten von Novizen untersche
 
 ### Wirtschaft: Business-Logik vs. formale Korrektheit
 
-*Dr. oec. HSG Martin Keller, Betriebswirtschaft*
+Im strategischen Management und Business Analytics zeigt sich ein Problem: Studierende können mit KI-Tools beeindruckende Marktanalysen erstellen, aber auf die Frage "Ist diese Strategie für dieses spezifische Unternehmen sinnvoll?" fehlt ihnen das Gespür.
 
-Ich lehre strategisches Management und Business Analytics. Die Unterscheidung zwischen Experten und Lernenden trifft genau ein Problem, das ich beobachte: Studierende können mit KI-Tools beeindruckende Marktanalysen erstellen, aber wenn ich frage "Ist diese Strategie für dieses spezifische Unternehmen sinnvoll?", fehlt ihnen das Gespür.
-
-**Frage:** Wie gestalte ich Fallstudien und Prüfungen so, dass Studierende zeigen müssen, dass sie die Business-Logik verstehen und nicht nur KI-Output aufhübschen? Und praktisch: Wenn ich in Gruppenarbeiten sehe, dass die Analyse zwar formal korrekt ist, aber komplett an der Realität des Unternehmens vorbeigeht, wie thematisiere ich das, ohne dass es wie ein generelles KI-Verbot klingt?
+**Frage:** Wie gestaltet man Fallstudien und Prüfungen so, dass Studierende zeigen müssen, dass sie die Business-Logik verstehen und nicht nur KI-Output aufhübschen? Und praktisch: Wenn in Gruppenarbeiten die Analyse zwar formal korrekt ist, aber komplett an der Realität des Unternehmens vorbeigeht, wie thematisiert man das, ohne dass es wie ein generelles KI-Verbot klingt?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort

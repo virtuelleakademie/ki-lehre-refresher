@@ -19,11 +19,9 @@ Drei zentrale Prinzipien:
 
 ### Gesundheit: Grundlagen sicherstellen in der Praxis
 
-*Dr. med. Sandra Meier, Physiotherapie*
+Die Aussage, dass Grundlagen vor Werkzeugen kommen müssen, ist relevant für die Physiotherapie. Im ersten Jahr lernen Studierende die Anatomie und die manuelle Befundaufnahme. Es zeigt sich aber immer mehr, dass sie ChatGPT nutzen, um Diagnosen zu "checken" oder Behandlungspläne zu erstellen, ohne die muskuloskelettalen Zusammenhänge wirklich zu verstehen.
 
-Du sagst, dass Grundlagen vor Werkzeugen kommen müssen. Bei uns in der Physiotherapie lernen die Studierenden im ersten Jahr die Anatomie und die manuelle Befundaufnahme. Ich sehe aber immer mehr, dass sie ChatGPT nutzen, um Diagnosen zu "checken" oder Behandlungspläne zu erstellen, ohne die muskuloskelettalen Zusammenhänge wirklich zu verstehen.
-
-**Frage:** Wie kann ich konkret sicherstellen, dass sie diese Grundlagen wirklich beherrschen, bevor sie KI-Tools nutzen? Soll ich die Nutzung in den ersten Semestern komplett verbieten, oder gibt es einen Weg, wie ich KI so einsetzen kann, dass sie das Verständnis fördert statt ersetzt? Bei praktischen Prüfungen am Patienten merke ich nämlich, dass einige zwar theoretisch viel wissen, aber die Hände nicht richtig einsetzen können.
+**Frage:** Wie kann konkret sichergestellt werden, dass Studierende diese Grundlagen wirklich beherrschen, bevor sie KI-Tools nutzen? Sollte die Nutzung in den ersten Semestern komplett verboten werden, oder gibt es einen Weg, KI so einzusetzen, dass sie das Verständnis fördert statt ersetzt? Bei praktischen Prüfungen am Patienten zeigt sich nämlich, dass einige zwar theoretisch viel wissen, aber die Hände nicht richtig einsetzen können.
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -35,11 +33,9 @@ Die praktischen Fertigkeiten ("Hände einsetzen") erfordern Prozeduralisierung, 
 
 ### Technik und Informatik: Differenzierung nach Niveau
 
-*Prof. Michael Weber, Software Engineering*
+Die Aussage "Expertise bestimmt den Nutzen" ist interessant. Im Software Engineering zeigt sich genau dieses Paradox: Studierende nutzen GitHub Copilot und ChatGPT schon ab dem ersten Semester für ihre Programmieraufgaben. Die fortgeschrittenen Studierenden nutzen es effektiv als Pair-Programming-Partner, aber die Anfänger kopieren Code, den sie nicht verstehen.
 
-Interessant, was du über "Expertise bestimmt den Nutzen" sagst. Bei uns im Software Engineering haben wir genau dieses Paradox: Die Studierenden nutzen GitHub Copilot und ChatGPT schon ab dem ersten Semester für ihre Programmieraufgaben. Die fortgeschrittenen Studierenden nutzen es effektiv als Pair-Programming-Partner, aber die Anfänger kopieren Code, den sie nicht verstehen.
-
-**Frage:** Wie unterscheide ich in der Aufgabenstellung zwischen Anfängern und Fortgeschrittenen? Soll ich für Erstsemester andere Regeln haben als für Masterstudierende? Und wie formuliere ich Programmieraufgaben so, dass auch mit KI-Unterstützung noch echtes Lernen stattfindet? Reicht es, wenn ich verlange, dass sie den generierten Code erklären können, oder braucht es fundamentale Coding-Aufgaben komplett ohne KI?
+**Frage:** Wie unterscheidet man in der Aufgabenstellung zwischen Anfängern und Fortgeschrittenen? Sollten für Erstsemester andere Regeln gelten als für Masterstudierende? Und wie formuliert man Programmieraufgaben so, dass auch mit KI-Unterstützung noch echtes Lernen stattfindet? Reicht es, wenn verlangt wird, dass sie den generierten Code erklären können, oder braucht es fundamentale Coding-Aufgaben komplett ohne KI?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -51,11 +47,9 @@ Differenzierung nach Niveau ist sinnvoll. Für Anfänger: Grundlagen ohne KI auf
 
 ### HAFL: Notwendige Grundlagen vs. delegierbare Berechnungen
 
-*Daniel Brunner, Agrarwissenschaften*
+Die Aussage "Effort is the signal" und dass zu einfaches Lernen kein echtes Lernen ist, wirft Fragen auf. An der HAFL arbeiten Studierende viel mit Berechnungen zu Nährstoffkreisläufen, Bodenqualität und Ertragsprognosen. Früher haben sie das mühsam von Hand oder mit Excel durchgerechnet, heute können sie das alles von KI-Tools machen lassen.
 
-Du sprichst von "Effort is the signal" und dass zu einfaches Lernen kein echtes Lernen ist. Bei uns an der HAFL arbeiten die Studierenden viel mit Berechnungen zu Nährstoffkreisläufen, Bodenqualität und Ertragsprognosen. Früher haben sie das mühsam von Hand oder mit Excel durchgerechnet, heute können sie das alles von KI-Tools machen lassen.
-
-**Frage:** Müssen sie diese Berechnungen wirklich noch selbst durchführen können, oder reicht es, wenn sie die Resultate interpretieren und validieren können? In der Praxis auf dem Betrieb werden sie ja auch digitale Tools nutzen. Wo genau ziehe ich die Grenze zwischen "nötigem Aufwand für Verständnis" und "ineffizienter Zeitverschwendung"? Welche Grundlagen sind wirklich unverzichtbar, und wo darf die KI die mühsame Arbeit übernehmen?
+**Frage:** Müssen Studierende diese Berechnungen wirklich noch selbst durchführen können, oder reicht es, wenn sie die Resultate interpretieren und validieren können? In der Praxis auf dem Betrieb werden sie ja auch digitale Tools nutzen. Wo genau liegt die Grenze zwischen "nötigem Aufwand für Verständnis" und "ineffizienter Zeitverschwendung"? Welche Grundlagen sind wirklich unverzichtbar, und wo darf die KI die mühsame Arbeit übernehmen?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -67,11 +61,9 @@ Die Grenze liegt dort, wo Verstehen nötig ist, um Fehler zu erkennen und Anpass
 
 ### Soziale Arbeit: KI als Tutor, nicht als Antwortgeber
 
-*Karin Lüthi, Soziale Arbeit*
+Der Punkt "KI als Tutor, nicht als Antwortgeber" ist relevant für die Soziale Arbeit. Es geht viel um Fallanalysen und die Entwicklung von Interventionsstrategien. Studierende müssen lernen, komplexe soziale Situationen zu verstehen und ethisch reflektierte Entscheidungen zu treffen.
 
-Dein Punkt "KI als Tutor, nicht als Antwortgeber" spricht mich an. In der Sozialen Arbeit geht es viel um Fallanalysen und die Entwicklung von Interventionsstrategien. Die Studierenden müssen lernen, komplexe soziale Situationen zu verstehen und ethisch reflektierte Entscheidungen zu treffen.
-
-**Frage:** Wenn ich jetzt KI als "Tutor" einsetzen möchte, der das Denken stimuliert: Wie mache ich das konkret? Soll ich ihnen Prompts vorgeben, mit denen sie Fälle diskutieren sollen? Oder soll ich sie auffordern, ihre eigenen Lösungsansätze zuerst zu entwickeln und dann mit der KI zu reflektieren? Meine Sorge ist, dass die KI zu schnell fertige "Lösungen" anbietet, obwohl es in der Sozialen Arbeit selten eindeutige Antworten gibt. Wie verhindere ich, dass die Studierenden die KI-Antworten als "richtig" übernehmen, statt kritisch zu hinterfragen?
+**Frage:** Wenn KI als "Tutor" eingesetzt werden soll, der das Denken stimuliert: Wie macht man das konkret? Sollten Prompts vorgegeben werden, mit denen Studierende Fälle diskutieren? Oder sollten sie aufgefordert werden, ihre eigenen Lösungsansätze zuerst zu entwickeln und dann mit der KI zu reflektieren? Die Sorge ist, dass die KI zu schnell fertige "Lösungen" anbietet, obwohl es in der Sozialen Arbeit selten eindeutige Antworten gibt. Wie verhindert man, dass Studierende die KI-Antworten als "richtig" übernehmen, statt kritisch zu hinterfragen?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort

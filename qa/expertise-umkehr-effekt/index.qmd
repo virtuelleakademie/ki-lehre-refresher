@@ -16,11 +16,9 @@ Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt und 
 
 ### Gesundheit: Heterogene Vorkenntnisse im Kurs
 
-*Dozentin für Pflegewissenschaft, Klinische Assessment-Methoden*
+Das Konzept ist klar, aber wie setzt man es konkret um? In Kursen zur Patientenbeurteilung gibt es oft Studierende mit sehr unterschiedlichen Vorkenntnissen: Einige kommen direkt von der Matur, andere haben bereits eine FaGe-Ausbildung oder Jahre Praxiserfahrung als Pflegeassistenz.
 
-Ich verstehe das Konzept grundsätzlich, aber wie soll ich das konkret umsetzen? In meinem Kurs zur Patientenbeurteilung habe ich Studierende mit sehr unterschiedlichen Vorkenntnissen: Einige kommen direkt von der Matur, andere haben bereits eine FaGe-Ausbildung oder Jahre Praxiserfahrung als Pflegeassistenz.
-
-**Frage:** Wenn ich jetzt sage, "nutzt ChatGPT zur Vorbereitung auf die OSCE-Prüfung", könnte das den Anfängern helfen, aber den Erfahrenen schaden? Wie finde ich denn heraus, wo bei meinen Studierenden diese Schwelle liegt? Soll ich verschiedene Aufgabenstellungen für verschiedene Levels machen, oder soll ich den KI-Einsatz einfach ganz verbieten, bis alle ein Grundniveau erreicht haben?
+**Frage:** Wenn die Empfehlung lautet, "nutzt ChatGPT zur Vorbereitung auf die OSCE-Prüfung", könnte das den Anfängern helfen, aber den Erfahrenen schaden? Wie findet man heraus, wo bei den Studierenden diese Schwelle liegt? Sollten verschiedene Aufgabenstellungen für verschiedene Levels gemacht werden, oder sollte der KI-Einsatz einfach ganz verboten werden, bis alle ein Grundniveau erreicht haben?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -32,11 +30,9 @@ Differenzierung ist der Schlüssel. Verschiedene Aufgaben für verschiedene Nive
 
 ### Technik und Informatik: KI-Nutzung nach Expertise differenzieren
 
-*Dozent für Software Engineering, Web-Entwicklung*
+In der Informatik ist die Situation noch komplizierter. Studierende im Web-Development-Kurs kennen teilweise GitHub Copilot sehr gut. Die Frage ist nicht mehr, ob sie KI nutzen, sondern wie.
 
-Bei uns in der Informatik ist das doch noch komplizierter, oder? Meine Studierenden im Web-Development-Kurs kennen teilweise GitHub Copilot besser als ich. Die Frage ist nicht mehr, ob sie KI nutzen, sondern wie.
-
-**Frage:** Aber wenn ich jetzt höre, dass hohe Unterstützung bei Experten schaden kann: Heisst das, ich sollte meinen fortgeschrittenen Studierenden abraten, Copilot zu nutzen? Das scheint realitätsfern, denn in der Industrie arbeitet heute jeder damit. Oder geht es darum, dass sie Copilot anders nutzen sollten als Anfänger? Wie kann ich das in meinen Übungsaufgaben berücksichtigen, wenn die "Schwelle" bei jedem anders liegt und sich während des Semesters verschiebt?
+**Frage:** Wenn hohe Unterstützung bei Experten schaden kann: Heisst das, dass fortgeschrittenen Studierenden abgeraten werden sollte, Copilot zu nutzen? Das scheint realitätsfern, denn in der Industrie arbeitet heute jeder damit. Oder geht es darum, dass sie Copilot anders nutzen sollten als Anfänger? Wie kann das in Übungsaufgaben berücksichtigt werden, wenn die "Schwelle" bei jedem anders liegt und sich während des Semesters verschiebt?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -48,11 +44,9 @@ Der Expertise-Umkehr-Effekt bezieht sich auf Instruktion, nicht auf Werkzeugnutz
 
 ### Wirtschaft: Fallstudien und direkte Instruktion
 
-*Dozentin für Marketing und Kommunikation, Grundlagen Marketing*
+Das wirft eine grundsätzliche didaktische Frage auf: In Einführungskursen Marketing wird viel mit Fallstudien gearbeitet. Die Annahme ist oft, dass selbstständiges Problemlösen die beste Methode ist, "Learning by doing".
 
-Das wirft für mich eine grundsätzliche didaktische Frage auf: In meinem Einführungskurs Marketing arbeite ich viel mit Fallstudien. Bisher habe ich immer gedacht, dass selbstständiges Problemlösen die beste Methode ist, "Learning by doing".
-
-**Frage:** Aber wenn ich dich richtig verstehe, könnte das für meine Erstsemester-Studierenden, die noch keine Marketingkonzepte kennen, zu wenig Struktur sein? Müsste ich dann am Anfang mehr direkte Instruktion geben, bevor ich sie an die Fälle lasse? Und wenn sie dann KI-Tools wie ChatGPT nutzen, um ihre Fallanalysen zu schreiben: Ist das dann quasi eine Form von Unterstützung, die Anfänger brauchen, oder verhindert es genau den Lerneffekt?
+**Frage:** Könnte das für Erstsemester-Studierende, die noch keine Marketingkonzepte kennen, zu wenig Struktur sein? Müsste am Anfang mehr direkte Instruktion gegeben werden, bevor es an die Fälle geht? Und wenn Studierende dann KI-Tools wie ChatGPT nutzen, um ihre Fallanalysen zu schreiben: Ist das dann quasi eine Form von Unterstützung, die Anfänger brauchen, oder verhindert es genau den Lerneffekt?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
@@ -64,11 +58,9 @@ Für Novizen ist direkte Instruktion mit Worked Examples tatsächlich oft effekt
 
 ### Künste: Grundlagen vor generativen Tools
 
-*Dozent für Komposition und Musiktheorie*
+In der künstlerischen Ausbildung ist die Situation speziell: Kreativität entsteht oft gerade durch Einschränkungen und durch das Ringen mit dem Material.
 
-In der künstlerischen Ausbildung haben wir ja eine ganz spezielle Situation: Kreativität entsteht oft gerade durch Einschränkungen und durch das Ringen mit dem Material.
-
-**Frage:** Wenn ich jetzt Studierende habe, die ihre Gehörbildungsübungen oder Harmonielehre-Aufgaben mit KI-Tools lösen, einige können schon ganz gut harmonisieren, andere kämpfen noch mit Grundlagen, wo liegt da die Grenze? Bei den Fortgeschrittenen könnte ich mir vorstellen, dass KI als "Sparringpartner" funktioniert, um verschiedene Varianten durchzuspielen. Aber schadet es den Anfängern nicht fundamental, wenn sie die KI Lösungen generieren lassen, bevor sie überhaupt ein intuitives Gefühl für Stimmführung entwickelt haben? Wie unterscheide ich zwischen "hilfreicher Unterstützung" und "verhindert den grundlegenden Lernprozess"?
+**Frage:** Wenn Studierende ihre Gehörbildungsübungen oder Harmonielehre-Aufgaben mit KI-Tools lösen, einige können schon ganz gut harmonisieren, andere kämpfen noch mit Grundlagen, wo liegt da die Grenze? Bei den Fortgeschrittenen könnte KI als "Sparringpartner" funktionieren, um verschiedene Varianten durchzuspielen. Aber schadet es den Anfängern nicht fundamental, wenn sie die KI Lösungen generieren lassen, bevor sie überhaupt ein intuitives Gefühl für Stimmführung entwickelt haben? Wie unterscheidet man zwischen "hilfreicher Unterstützung" und "verhindert den grundlegenden Lernprozess"?
 
 ::: {.callout-tip collapse="true"}
 ## Hinweise zur Antwort
