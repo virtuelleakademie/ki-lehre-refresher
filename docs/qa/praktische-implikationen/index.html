@@ -88,28 +88,16 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-individual.callout {
-  border-left-color: #A3195B;
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
+  content: '\f005';
   background-image: none;
 }
 div.callout-experiment.callout {
@@ -122,6 +110,42 @@ div.callout-experiment .callout-toggle::before {  background-image: url('data:im
 div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f0c3';
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
   background-image: none;
 }
 div.callout-source-check.callout {
@@ -148,16 +172,28 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   content: '\f0eb';
   background-image: none;
 }
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
+div.callout-group.callout {
+  border-left-color: #A3195B;
 }
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
   background-image: none;
 }
 div.callout-warning.callout {
@@ -172,52 +208,16 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
   content: '\f06a';
   background-image: none;
 }
-div.callout-key-point.callout {
+div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
-div.callout-key-point.callout-style-default > .callout-header {
+div.callout-pro-tip.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
+  content: '\e2ca';
   background-image: none;
 }
 </style>
@@ -265,7 +265,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
+    <a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/" title="BFH Weiterbildungen" class="quarto-navigation-tool px-1" aria-label="BFH Weiterbildungen" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -414,9 +415,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 <h2 class="anchored" data-anchor-id="häufige-fragen">Häufige Fragen</h2>
 <section id="gesundheit-grundlagen-sicherstellen-in-der-praxis" class="level3">
 <h3 class="anchored" data-anchor-id="gesundheit-grundlagen-sicherstellen-in-der-praxis">Gesundheit: Grundlagen sicherstellen in der Praxis</h3>
-<p><em>Dr.&nbsp;med. Sandra Meier, Physiotherapie</em></p>
-<p>Du sagst, dass Grundlagen vor Werkzeugen kommen müssen. Bei uns in der Physiotherapie lernen die Studierenden im ersten Jahr die Anatomie und die manuelle Befundaufnahme. Ich sehe aber immer mehr, dass sie ChatGPT nutzen, um Diagnosen zu “checken” oder Behandlungspläne zu erstellen, ohne die muskuloskelettalen Zusammenhänge wirklich zu verstehen.</p>
-<p><strong>Frage:</strong> Wie kann ich konkret sicherstellen, dass sie diese Grundlagen wirklich beherrschen, bevor sie KI-Tools nutzen? Soll ich die Nutzung in den ersten Semestern komplett verbieten, oder gibt es einen Weg, wie ich KI so einsetzen kann, dass sie das Verständnis fördert statt ersetzt? Bei praktischen Prüfungen am Patienten merke ich nämlich, dass einige zwar theoretisch viel wissen, aber die Hände nicht richtig einsetzen können.</p>
+<p>Die Aussage, dass Grundlagen vor Werkzeugen kommen müssen, ist relevant für die Physiotherapie. Im ersten Jahr lernen Studierende die Anatomie und die manuelle Befundaufnahme. Es zeigt sich aber immer mehr, dass sie ChatGPT nutzen, um Diagnosen zu “checken” oder Behandlungspläne zu erstellen, ohne die muskuloskelettalen Zusammenhänge wirklich zu verstehen.</p>
+<p><strong>Frage:</strong> Wie kann konkret sichergestellt werden, dass Studierende diese Grundlagen wirklich beherrschen, bevor sie KI-Tools nutzen? Sollte die Nutzung in den ersten Semestern komplett verboten werden, oder gibt es einen Weg, KI so einzusetzen, dass sie das Verständnis fördert statt ersetzt? Bei praktischen Prüfungen am Patienten zeigt sich nämlich, dass einige zwar theoretisch viel wissen, aber die Hände nicht richtig einsetzen können.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -437,9 +437,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 </section>
 <section id="technik-und-informatik-differenzierung-nach-niveau" class="level3">
 <h3 class="anchored" data-anchor-id="technik-und-informatik-differenzierung-nach-niveau">Technik und Informatik: Differenzierung nach Niveau</h3>
-<p><em>Prof.&nbsp;Michael Weber, Software Engineering</em></p>
-<p>Interessant, was du über “Expertise bestimmt den Nutzen” sagst. Bei uns im Software Engineering haben wir genau dieses Paradox: Die Studierenden nutzen GitHub Copilot und ChatGPT schon ab dem ersten Semester für ihre Programmieraufgaben. Die fortgeschrittenen Studierenden nutzen es effektiv als Pair-Programming-Partner, aber die Anfänger kopieren Code, den sie nicht verstehen.</p>
-<p><strong>Frage:</strong> Wie unterscheide ich in der Aufgabenstellung zwischen Anfängern und Fortgeschrittenen? Soll ich für Erstsemester andere Regeln haben als für Masterstudierende? Und wie formuliere ich Programmieraufgaben so, dass auch mit KI-Unterstützung noch echtes Lernen stattfindet? Reicht es, wenn ich verlange, dass sie den generierten Code erklären können, oder braucht es fundamentale Coding-Aufgaben komplett ohne KI?</p>
+<p>Die Aussage “Expertise bestimmt den Nutzen” ist interessant. Im Software Engineering zeigt sich genau dieses Paradox: Studierende nutzen GitHub Copilot und ChatGPT schon ab dem ersten Semester für ihre Programmieraufgaben. Die fortgeschrittenen Studierenden nutzen es effektiv als Pair-Programming-Partner, aber die Anfänger kopieren Code, den sie nicht verstehen.</p>
+<p><strong>Frage:</strong> Wie unterscheidet man in der Aufgabenstellung zwischen Anfängern und Fortgeschrittenen? Sollten für Erstsemester andere Regeln gelten als für Masterstudierende? Und wie formuliert man Programmieraufgaben so, dass auch mit KI-Unterstützung noch echtes Lernen stattfindet? Reicht es, wenn verlangt wird, dass sie den generierten Code erklären können, oder braucht es fundamentale Coding-Aufgaben komplett ohne KI?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -460,9 +459,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 </section>
 <section id="hafl-notwendige-grundlagen-vs.-delegierbare-berechnungen" class="level3">
 <h3 class="anchored" data-anchor-id="hafl-notwendige-grundlagen-vs.-delegierbare-berechnungen">HAFL: Notwendige Grundlagen vs.&nbsp;delegierbare Berechnungen</h3>
-<p><em>Daniel Brunner, Agrarwissenschaften</em></p>
-<p>Du sprichst von “Effort is the signal” und dass zu einfaches Lernen kein echtes Lernen ist. Bei uns an der HAFL arbeiten die Studierenden viel mit Berechnungen zu Nährstoffkreisläufen, Bodenqualität und Ertragsprognosen. Früher haben sie das mühsam von Hand oder mit Excel durchgerechnet, heute können sie das alles von KI-Tools machen lassen.</p>
-<p><strong>Frage:</strong> Müssen sie diese Berechnungen wirklich noch selbst durchführen können, oder reicht es, wenn sie die Resultate interpretieren und validieren können? In der Praxis auf dem Betrieb werden sie ja auch digitale Tools nutzen. Wo genau ziehe ich die Grenze zwischen “nötigem Aufwand für Verständnis” und “ineffizienter Zeitverschwendung”? Welche Grundlagen sind wirklich unverzichtbar, und wo darf die KI die mühsame Arbeit übernehmen?</p>
+<p>Die Aussage “Effort is the signal” und dass zu einfaches Lernen kein echtes Lernen ist, wirft Fragen auf. An der HAFL arbeiten Studierende viel mit Berechnungen zu Nährstoffkreisläufen, Bodenqualität und Ertragsprognosen. Früher haben sie das mühsam von Hand oder mit Excel durchgerechnet, heute können sie das alles von KI-Tools machen lassen.</p>
+<p><strong>Frage:</strong> Müssen Studierende diese Berechnungen wirklich noch selbst durchführen können, oder reicht es, wenn sie die Resultate interpretieren und validieren können? In der Praxis auf dem Betrieb werden sie ja auch digitale Tools nutzen. Wo genau liegt die Grenze zwischen “nötigem Aufwand für Verständnis” und “ineffizienter Zeitverschwendung”? Welche Grundlagen sind wirklich unverzichtbar, und wo darf die KI die mühsame Arbeit übernehmen?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -483,9 +481,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 </section>
 <section id="soziale-arbeit-ki-als-tutor-nicht-als-antwortgeber" class="level3">
 <h3 class="anchored" data-anchor-id="soziale-arbeit-ki-als-tutor-nicht-als-antwortgeber">Soziale Arbeit: KI als Tutor, nicht als Antwortgeber</h3>
-<p><em>Karin Lüthi, Soziale Arbeit</em></p>
-<p>Dein Punkt “KI als Tutor, nicht als Antwortgeber” spricht mich an. In der Sozialen Arbeit geht es viel um Fallanalysen und die Entwicklung von Interventionsstrategien. Die Studierenden müssen lernen, komplexe soziale Situationen zu verstehen und ethisch reflektierte Entscheidungen zu treffen.</p>
-<p><strong>Frage:</strong> Wenn ich jetzt KI als “Tutor” einsetzen möchte, der das Denken stimuliert: Wie mache ich das konkret? Soll ich ihnen Prompts vorgeben, mit denen sie Fälle diskutieren sollen? Oder soll ich sie auffordern, ihre eigenen Lösungsansätze zuerst zu entwickeln und dann mit der KI zu reflektieren? Meine Sorge ist, dass die KI zu schnell fertige “Lösungen” anbietet, obwohl es in der Sozialen Arbeit selten eindeutige Antworten gibt. Wie verhindere ich, dass die Studierenden die KI-Antworten als “richtig” übernehmen, statt kritisch zu hinterfragen?</p>
+<p>Der Punkt “KI als Tutor, nicht als Antwortgeber” ist relevant für die Soziale Arbeit. Es geht viel um Fallanalysen und die Entwicklung von Interventionsstrategien. Studierende müssen lernen, komplexe soziale Situationen zu verstehen und ethisch reflektierte Entscheidungen zu treffen.</p>
+<p><strong>Frage:</strong> Wenn KI als “Tutor” eingesetzt werden soll, der das Denken stimuliert: Wie macht man das konkret? Sollten Prompts vorgegeben werden, mit denen Studierende Fälle diskutieren? Oder sollten sie aufgefordert werden, ihre eigenen Lösungsansätze zuerst zu entwickeln und dann mit der KI zu reflektieren? Die Sorge ist, dass die KI zu schnell fertige “Lösungen” anbietet, obwohl es in der Sozialen Arbeit selten eindeutige Antworten gibt. Wie verhindert man, dass Studierende die KI-Antworten als “richtig” übernehmen, statt kritisch zu hinterfragen?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

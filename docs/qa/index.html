@@ -88,6 +88,18 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
+  background-image: none;
+}
 div.callout-group.callout {
   border-left-color: #A3195B;
 }
@@ -112,64 +124,16 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   content: '\f075';
   background-image: none;
 }
-div.callout-reflect.callout {
+div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
-div.callout-reflect.callout-style-default > .callout-header {
+div.callout-source-check.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
+  content: '\f002';
   background-image: none;
 }
 div.callout-key-point.callout {
@@ -184,16 +148,64 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
   content: '\f005';
   background-image: none;
 }
-div.callout-source-check.callout {
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
-div.callout-source-check.callout-style-default > .callout-header {
+div.callout-pro-tip.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f002';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
   background-image: none;
 }
 div.callout-individual.callout {
@@ -206,18 +218,6 @@ div.callout-individual .callout-toggle::before {  background-image: url('data:im
 div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f007';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
   background-image: none;
 }
 </style>
@@ -265,7 +265,8 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
+    <a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/" title="BFH Weiterbildungen" class="quarto-navigation-tool px-1" aria-label="BFH Weiterbildungen" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -367,18 +368,7 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#themenübersicht" id="toc-themenübersicht" class="nav-link active" data-scroll-target="#themenübersicht">Themenübersicht</a>
-  <ul class="collapse">
-  <li><a href="#das-produktivitäts-lern-paradox" id="toc-das-produktivitäts-lern-paradox" class="nav-link" data-scroll-target="#das-produktivitäts-lern-paradox">Das Produktivitäts-Lern-Paradox</a></li>
-  <li><a href="#kognitive-grundlagen" id="toc-kognitive-grundlagen" class="nav-link" data-scroll-target="#kognitive-grundlagen">Kognitive Grundlagen</a></li>
-  <li><a href="#erwünschte-schwierigkeiten" id="toc-erwünschte-schwierigkeiten" class="nav-link" data-scroll-target="#erwünschte-schwierigkeiten">Erwünschte Schwierigkeiten</a></li>
-  <li><a href="#der-generierungseffekt" id="toc-der-generierungseffekt" class="nav-link" data-scroll-target="#der-generierungseffekt">Der Generierungseffekt</a></li>
-  <li><a href="#historische-analogien" id="toc-historische-analogien" class="nav-link" data-scroll-target="#historische-analogien">Historische Analogien</a></li>
-  <li><a href="#experten-vs.-lernende" id="toc-experten-vs.-lernende" class="nav-link" data-scroll-target="#experten-vs.-lernende">Experten vs.&nbsp;Lernende</a></li>
-  <li><a href="#der-expertise-umkehr-effekt" id="toc-der-expertise-umkehr-effekt" class="nav-link" data-scroll-target="#der-expertise-umkehr-effekt">Der Expertise-Umkehr-Effekt</a></li>
-  <li><a href="#kritisches-denken-und-fachwissen" id="toc-kritisches-denken-und-fachwissen" class="nav-link" data-scroll-target="#kritisches-denken-und-fachwissen">Kritisches Denken und Fachwissen</a></li>
-  <li><a href="#praktische-implikationen" id="toc-praktische-implikationen" class="nav-link" data-scroll-target="#praktische-implikationen">Praktische Implikationen</a></li>
-  </ul></li>
+  <li><a href="#themenübersicht" id="toc-themenübersicht" class="nav-link active" data-scroll-target="#themenübersicht">Themenübersicht</a></li>
   <li><a href="#weiterführende-ressourcen" id="toc-weiterführende-ressourcen" class="nav-link" data-scroll-target="#weiterführende-ressourcen">Weiterführende Ressourcen</a></li>
   </ul>
 </nav>
@@ -409,47 +399,58 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 <p>Die Fragen sind nach Themen geordnet. Für vertiefte Informationen verweisen wir auf den <a href="../guide/index.html">Leitfaden</a>.</p>
 <section id="themenübersicht" class="level2">
 <h2 class="anchored" data-anchor-id="themenübersicht">Themenübersicht</h2>
-<section id="das-produktivitäts-lern-paradox" class="level3">
-<h3 class="anchored" data-anchor-id="das-produktivitäts-lern-paradox"><a href="../qa/paradox/index.html">Das Produktivitäts-Lern-Paradox</a></h3>
-<p>Warum können Studierende mit KI mehr Aufgaben lösen, aber trotzdem weniger lernen?</p>
-</section>
-<section id="kognitive-grundlagen" class="level3">
-<h3 class="anchored" data-anchor-id="kognitive-grundlagen"><a href="../qa/kognitive-grundlagen/index.html">Kognitive Grundlagen</a></h3>
-<p>Das Arbeitsgedächtnis als Nadelöhr des Lernens und die Cognitive Load Theory.</p>
-</section>
-<section id="erwünschte-schwierigkeiten" class="level3">
-<h3 class="anchored" data-anchor-id="erwünschte-schwierigkeiten"><a href="../qa/erwuenschte-schwierigkeiten/index.html">Erwünschte Schwierigkeiten</a></h3>
-<p>Warum Anstrengung beim Lernen notwendig ist und wie KI diese untergraben kann.</p>
-</section>
-<section id="der-generierungseffekt" class="level3">
-<h3 class="anchored" data-anchor-id="der-generierungseffekt"><a href="../qa/generierungseffekt/index.html">Der Generierungseffekt</a></h3>
-<p>Warum selbst generierte Information besser behalten wird.</p>
-</section>
-<section id="historische-analogien" class="level3">
-<h3 class="anchored" data-anchor-id="historische-analogien"><a href="../qa/historische-analogien/index.html">Historische Analogien</a></h3>
-<p>Was wir von Taschenrechner, GPS und Google über KI lernen können.</p>
-</section>
-<section id="experten-vs.-lernende" class="level3">
-<h3 class="anchored" data-anchor-id="experten-vs.-lernende"><a href="../qa/experten-vs-lernende/index.html">Experten vs.&nbsp;Lernende</a></h3>
-<p>Warum dasselbe Werkzeug unterschiedliche Auswirkungen hat.</p>
-</section>
-<section id="der-expertise-umkehr-effekt" class="level3">
-<h3 class="anchored" data-anchor-id="der-expertise-umkehr-effekt"><a href="../qa/expertise-umkehr-effekt/index.html">Der Expertise-Umkehr-Effekt</a></h3>
-<p>Wie das Vorwissen bestimmt, welche Lehrmethode optimal ist.</p>
-</section>
-<section id="kritisches-denken-und-fachwissen" class="level3">
-<h3 class="anchored" data-anchor-id="kritisches-denken-und-fachwissen"><a href="../qa/kritisches-denken/index.html">Kritisches Denken und Fachwissen</a></h3>
-<p>Warum kritische KI-Bewertung Domänenwissen erfordert.</p>
-</section>
-<section id="praktische-implikationen" class="level3">
-<h3 class="anchored" data-anchor-id="praktische-implikationen"><a href="../qa/praktische-implikationen/index.html">Praktische Implikationen</a></h3>
-<p>Was bedeutet das konkret für die Lehre?</p>
-</section>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Thema</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../qa/paradox/index.html">Das Produktivitäts-Lern-Paradox</a></td>
+<td>Warum können Studierende mit KI mehr Aufgaben lösen, aber trotzdem weniger lernen?</td>
+</tr>
+<tr class="even">
+<td><a href="../qa/kognitive-grundlagen/index.html">Kognitive Grundlagen</a></td>
+<td>Das Arbeitsgedächtnis als Nadelöhr des Lernens und die Cognitive Load Theory.</td>
+</tr>
+<tr class="odd">
+<td><a href="../qa/erwuenschte-schwierigkeiten/index.html">Erwünschte Schwierigkeiten</a></td>
+<td>Warum Anstrengung beim Lernen notwendig ist und wie KI diese untergraben kann.</td>
+</tr>
+<tr class="even">
+<td><a href="../qa/generierungseffekt/index.html">Der Generierungseffekt</a></td>
+<td>Warum selbst generierte Information besser behalten wird.</td>
+</tr>
+<tr class="odd">
+<td><a href="../qa/historische-analogien/index.html">Historische Analogien</a></td>
+<td>Was wir von Taschenrechner, GPS und Google über KI lernen können.</td>
+</tr>
+<tr class="even">
+<td><a href="../qa/experten-vs-lernende/index.html">Experten vs.&nbsp;Lernende</a></td>
+<td>Warum dasselbe Werkzeug unterschiedliche Auswirkungen hat.</td>
+</tr>
+<tr class="odd">
+<td><a href="../qa/expertise-umkehr-effekt/index.html">Der Expertise-Umkehr-Effekt</a></td>
+<td>Wie das Vorwissen bestimmt, welche Lehrmethode optimal ist.</td>
+</tr>
+<tr class="even">
+<td><a href="../qa/kritisches-denken/index.html">Kritisches Denken und Fachwissen</a></td>
+<td>Warum kritische KI-Bewertung Domänenwissen erfordert.</td>
+</tr>
+<tr class="odd">
+<td><a href="../qa/praktische-implikationen/index.html">Praktische Implikationen</a></td>
+<td>Was bedeutet das konkret für die Lehre?</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="weiterführende-ressourcen" class="level2">
 <h2 class="anchored" data-anchor-id="weiterführende-ressourcen">Weiterführende Ressourcen</h2>
 <ul>
 <li><a href="../guide/index.html">Leitfaden: KI in der Hochschulbildung</a></li>
+<li><a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/">BFH Weiterbildungen: KI in der Lehre</a></li>
 <li><a href="https://virtuelleakademie.ch/knowledge-base/">Virtuelle Akademie Knowledge Base</a></li>
 </ul>
 
