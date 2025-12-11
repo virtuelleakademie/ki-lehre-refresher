@@ -3,6 +3,8 @@ title: "Das Produktivitäts-Lern-Paradox"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Das zentrale Ergebnis
 
 In der Präsentation wurde eine Studie vorgestellt, bei der rund 1000 Gymnasiasten GPT-4-Zugang während Mathematik-Übungen erhielten. Das Ergebnis:
@@ -12,8 +14,9 @@ In der Präsentation wurde eine Studie vorgestellt, bei der rund 1000 Gymnasiast
 
 Dies illustriert das Produktivitäts-Lern-Paradox: Mehr Aufgaben gelöst bedeutet nicht automatisch mehr gelernt.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Klinisches Reasoning und Pflegediagnostik
 
 Im Unterricht von klinischem Reasoning und Pflegediagnostik im 2. Studienjahr müssen Studierende lernen, Patientensituationen zu analysieren und eigenständig Pflegediagnosen zu stellen. Dabei wird festgestellt, dass einige ChatGPT nutzen, um Fallbeispiele zu lösen.
@@ -25,9 +28,9 @@ Im Unterricht von klinischem Reasoning und Pflegediagnostik im 2. Studienjahr m�
 
 Das Problem liegt in der Unterscheidung zwischen Aufgabenleistung und Lernen. Regelmässige formative Assessments ohne KI-Zugang können helfen, den tatsächlichen Lernstand zu erfassen. Mehr dazu im Leitfaden unter [Das Produktivitäts-Lern-Paradox](../../guide/index.qmd#paradox) und [Lernsituationen gestalten](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Code-Assistenten und Grundlagen
 
 In Modulen zur objektorientierten Programmierung und Softwarearchitektur sollen Studierende eigenständig kleinere Projekte entwickeln und dabei Design Patterns anwenden lernen.
@@ -39,9 +42,9 @@ In Modulen zur objektorientierten Programmierung und Softwarearchitektur sollen 
 
 Die Sequenzierung ist entscheidend: Grundlagen vor Werkzeugen. Der Expertise-Umkehr-Effekt zeigt, dass dieselbe Unterstützung für Novizen schädlich und für Fortgeschrittene hilfreich sein kann. Mehr dazu im Leitfaden unter [Die Sequenzierungsfrage](../../guide/index.qmd#implikationen) und [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: Konzeptverständnis vs. Formelanwendung
 
 Im Finanzmanagement und Corporate Finance im Bachelor müssen Studierende Investitionsrechnungen durchführen, Cash-Flow-Analysen erstellen und Unternehmensbewertungen vornehmen können.
@@ -53,9 +56,9 @@ Im Finanzmanagement und Corporate Finance im Bachelor müssen Studierende Invest
 
 Der Generierungseffekt zeigt: Selbst erarbeitetes Wissen wird besser behalten. Aufgaben sollten den Prozess bewerten, nicht nur das Produkt. Zwischenschritte einfordern und begründen lassen. Mehr dazu im Leitfaden unter [Der Generierungseffekt](../../guide/index.qmd#paradox) und [Prozess bewerten, nicht nur Produkt](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-soziales}
 ### Soziale Arbeit: Reflexionsfähigkeit und Beziehungsarbeit
 
 Im Unterricht von Gesprächsführung und Case Management lernen Studierende, mit Klientinnen und Klienten professionelle Beratungsgespräche zu führen und individuelle Unterstützungspläne zu entwickeln.
@@ -67,8 +70,7 @@ Im Unterricht von Gesprächsführung und Case Management lernen Studierende, mit
 
 Lernen erfordert die kognitive Anstrengung, die KI zu eliminieren droht. Praktische Übungen ohne KI-Unterstützung sind hier besonders wichtig. Die Reflexionsfähigkeit entsteht durch den mühsamen Prozess des Formulierens. Mehr dazu im Leitfaden unter [Desirable Difficulties](../../guide/index.qmd#paradox) und [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

@@ -588,6 +588,70 @@ li::marker {
 }
 
 // =============================================================================
+// Q&A DISCIPLINE CATEGORIES
+// =============================================================================
+
+// Discipline-specific colors for visual scanning
+$discipline-gesundheit: #2E7D32;    // Green - Health/Nursing
+$discipline-technik: #1565C0;       // Blue - IT/Tech
+$discipline-wirtschaft: #6A1B9A;    // Purple - Business
+$discipline-soziales: #C62828;      // Red - Social Work
+$discipline-kuenste: #EF6C00;       // Orange - Arts
+$discipline-hafl: #558B2F;          // Olive - Agriculture
+
+// Base styles for discipline sections
+.discipline-section {
+  padding-left: $spacing-md;
+  margin-bottom: $spacing-xl;
+  border-left: $border-width-thick solid $color-grey-300;
+}
+
+.discipline-section h3 {
+  margin-top: 0;
+}
+
+// Specific discipline colors
+.discipline-gesundheit {
+  border-left-color: $discipline-gesundheit;
+}
+
+.discipline-technik {
+  border-left-color: $discipline-technik;
+}
+
+.discipline-wirtschaft {
+  border-left-color: $discipline-wirtschaft;
+}
+
+.discipline-soziales {
+  border-left-color: $discipline-soziales;
+}
+
+.discipline-kuenste {
+  border-left-color: $discipline-kuenste;
+}
+
+.discipline-hafl {
+  border-left-color: $discipline-hafl;
+}
+
+.discipline-architektur {
+  border-left-color: $discipline-kuenste;  // Use same as arts
+}
+
+// Navigation link styling
+.qa-nav-link {
+  display: inline-block;
+  margin-bottom: $spacing-lg;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+
+  &:hover {
+    color: $color-text;
+  }
+}
+
+// =============================================================================
 // RESPONSIVE
 // =============================================================================
 

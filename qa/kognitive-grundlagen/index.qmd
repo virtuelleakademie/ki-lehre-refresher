@@ -3,6 +3,8 @@ title: "Kognitive Grundlagen"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Das Nadelöhr des Lernens
 
 Das Arbeitsgedächtnis hat eine stark begrenzte Kapazität von etwa 4 plus/minus 1 Elementen. Alles Lernen muss durch dieses Nadelöhr. Es gibt keinen Weg drumherum, keine Abkürzung, und keine KI kann diesen biologischen Engpass umgehen.
@@ -13,8 +15,9 @@ Die Cognitive Load Theory unterscheidet drei Arten der Belastung:
 - **Extrinsische Belastung:** Schlecht gestaltete Instruktion (minimieren)
 - **Lernförderliche Belastung:** Produktive Anstrengung für Schemabildung (erhalten)
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Notfallsituationen und Informationsverarbeitung
 
 Im Bachelor Pflege müssen Studierende in Notfallsituationen sehr schnell viele Informationen gleichzeitig verarbeiten: Vitalwerte, Symptome, Medikamentenwirkungen, und so weiter.
@@ -26,9 +29,9 @@ Im Bachelor Pflege müssen Studierende in Notfallsituationen sehr schnell viele 
 
 Chunking ist tatsächlich der Schlüssel: Experten speichern Wissen in vernetzten Strukturen, die automatisch abgerufen werden. Diese "Chunks" müssen aber durch Übung aufgebaut werden. KI kann diesen Prozess nicht abkürzen, aber gut gestaltete Simulationen können helfen, Muster zu erkennen. Mehr dazu im Leitfaden unter [Wie Expertise entsteht](../../guide/index.qmd#expertise) und [Was Experten sehen](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: Code verstehen vs. kopieren
 
 Studierende im dritten Semester Informatik programmieren zunehmend mit GitHub Copilot und ChatGPT. Theoretisch umgeht das die kognitive Verarbeitung nicht wirklich: Sie müssen den generierten Code ja trotzdem verstehen und durchdenken.
@@ -40,9 +43,9 @@ Studierende im dritten Semester Informatik programmieren zunehmend mit GitHub Co
 
 Das Problem ist, dass KI die lernförderliche Belastung eliminieren kann. Aufgabenstellungen sollten den Denkprozess fordern: Code erklären lassen, Varianten vergleichen, Fehler finden. Kleinere, fokussierte Beispiele können helfen, die kognitive Belastung zu managen. Mehr dazu im Leitfaden unter [Cognitive Load Theory](../../guide/index.qmd#expertise) und [Drei Arten kognitiver Belastung](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: KI zur Komplexitätsreduktion
 
 Im Kurs "Strategisches Management" wird viel mit komplexen Fallstudien gearbeitet: Marktanalysen, Finanzberichte, Wettbewerbsszenarien. Die Studierenden nutzen mittlerweile KI, um diese Fälle vorab zusammenzufassen.
@@ -54,9 +57,9 @@ Im Kurs "Strategisches Management" wird viel mit komplexen Fallstudien gearbeite
 
 Das ist eine wichtige Unterscheidung: KI kann extrinsische Belastung reduzieren (gut) oder lernförderliche Belastung eliminieren (problematisch). Die Fähigkeit, Relevantes von Irrelevantem zu unterscheiden, ist selbst eine Expertise, die aufgebaut werden muss. Mehr dazu im Leitfaden unter [Welche Art der Belastung reduziert KI?](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-kuenste}
 ### Künste: Kognitive Überlastung durch KI-Output
 
 In der Visuellen Kommunikation arbeiten Studierende oft sehr intuitiv und visuell. Viele experimentieren mit Midjourney oder DALL-E und generieren in kurzer Zeit sehr viele Designvarianten.
@@ -68,8 +71,7 @@ In der Visuellen Kommunikation arbeiten Studierende oft sehr intuitiv und visuel
 
 Ja, zu viele Optionen können das Arbeitsgedächtnis überlasten und den Lernprozess behindern. Bewusste Einschränkungen und fokussierte Iterationen können helfen. Der kreative Prozess des Skizzierens, Iterierens und Verwerfens hat einen eigenen Lernwert. Mehr dazu im Leitfaden unter [Das Nadelöhr des Lernens](../../guide/index.qmd#expertise).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

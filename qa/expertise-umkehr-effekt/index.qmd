@@ -3,6 +3,8 @@ title: "Der Expertise-Umkehr-Effekt"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Vorwissen bestimmt die optimale Methode
 
 Der Expertise-Umkehr-Effekt zeigt: Dieselbe Instruktionsmethode kann gegenteilige Effekte haben, abhängig vom Vorwissen der Lernenden.
@@ -12,8 +14,9 @@ Der Expertise-Umkehr-Effekt zeigt: Dieselbe Instruktionsmethode kann gegenteilig
 
 Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt und variiert nach Domäne und Person.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Heterogene Vorkenntnisse im Kurs
 
 Das Konzept ist klar, aber wie setzt man es konkret um? In Kursen zur Patientenbeurteilung gibt es oft Studierende mit sehr unterschiedlichen Vorkenntnissen: Einige kommen direkt von der Matur, andere haben bereits eine FaGe-Ausbildung oder Jahre Praxiserfahrung als Pflegeassistenz.
@@ -25,9 +28,9 @@ Das Konzept ist klar, aber wie setzt man es konkret um? In Kursen zur Patientenb
 
 Differenzierung ist der Schlüssel. Verschiedene Aufgaben für verschiedene Niveaus können sinnvoll sein. Eine Möglichkeit: Selbsteinschätzung kombiniert mit diagnostischen Aufgaben, um das Vorwissen zu erfassen. Dann gestufte KI-Nutzung. Mehr dazu im Leitfaden unter [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise) und [Unterstützung anpassen](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-technik}
 ### Technik und Informatik: KI-Nutzung nach Expertise differenzieren
 
 In der Informatik ist die Situation noch komplizierter. Studierende im Web-Development-Kurs kennen teilweise GitHub Copilot sehr gut. Die Frage ist nicht mehr, ob sie KI nutzen, sondern wie.
@@ -39,9 +42,9 @@ In der Informatik ist die Situation noch komplizierter. Studierende im Web-Devel
 
 Der Expertise-Umkehr-Effekt bezieht sich auf Instruktion, nicht auf Werkzeugnutzung per se. Fortgeschrittene können KI produktiv nutzen, weil sie den Output bewerten können. Die Frage ist: Nutzen sie KI als Abkürzung (problematisch) oder als Effizienzwerkzeug bei bereits verstandenen Konzepten (ok)? Mehr dazu im Leitfaden unter [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: Fallstudien und direkte Instruktion
 
 Das wirft eine grundsätzliche didaktische Frage auf: In Einführungskursen Marketing wird viel mit Fallstudien gearbeitet. Die Annahme ist oft, dass selbstständiges Problemlösen die beste Methode ist, "Learning by doing".
@@ -53,9 +56,9 @@ Das wirft eine grundsätzliche didaktische Frage auf: In Einführungskursen Mark
 
 Für Novizen ist direkte Instruktion mit Worked Examples tatsächlich oft effektiver als problembasiertes Lernen. KI-Nutzung ist aber nicht dasselbe wie gute Instruktion: KI gibt Antworten, aber nicht didaktisch strukturierte Erklärungen. Die Sequenz wäre: Erst Grundlagen vermitteln (direkte Instruktion), dann angeleitete Übung, dann selbstständige Anwendung, dann KI als Werkzeug. Mehr dazu im Leitfaden unter [Explizite Instruktion](../../guide/index.qmd#expertise) und [Worked Examples](../../guide/index.qmd#expertise).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-kuenste}
 ### Künste: Grundlagen vor generativen Tools
 
 In der künstlerischen Ausbildung ist die Situation speziell: Kreativität entsteht oft gerade durch Einschränkungen und durch das Ringen mit dem Material.
@@ -67,8 +70,7 @@ In der künstlerischen Ausbildung ist die Situation speziell: Kreativität entst
 
 In künstlerischen Fächern ist das "Ringen mit dem Material" besonders wichtig. Die intuitive Kompetenz entwickelt sich durch Übung, nicht durch Betrachtung von KI-Output. Für Anfänger ist KI-Nutzung hier wahrscheinlich kontraproduktiv. Für Fortgeschrittene kann KI als Experimentierfeld dienen. Die Schwelle liegt dort, wo die Grundlagen internalisiert sind. Mehr dazu im Leitfaden unter [Der Expertise-Umkehr-Effekt](../../guide/index.qmd#expertise) und [Prozeduralisierung](../../guide/index.qmd#expertise).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

@@ -3,14 +3,17 @@ title: "Der Generierungseffekt"
 sidebar: qa
 ---
 
+[← Zurück zur Übersicht](../index.qmd){.qa-nav-link}
+
 ## Selbst generiert wird besser behalten
 
 Der Generierungseffekt ist ein robuster Befund der Gedächtnisforschung: Selbst generierte Information wird besser behalten als passiv erhaltene.
 
 Die Implikation für KI: Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt. Das Endprodukt mag ähnlich aussehen, aber der Lernprozess ist fundamental anders.
 
-## Häufige Fragen
+## Anwendungsfragen
 
+::: {.discipline-section .discipline-gesundheit}
 ### Gesundheit: Pflegepläne und professionelles Verständnis
 
 Im Fachbereich Pflege erstellen Studierende Pflegepläne für Fallbeispiele. Einige nutzen mittlerweile ChatGPT, um diese Pflegepläne zu generieren. Das Endprodukt sieht oft sehr professionell aus, aber im Praktikum zeigt sich, dass ihnen das Verständnis fehlt.
@@ -22,9 +25,9 @@ Im Fachbereich Pflege erstellen Studierende Pflegepläne für Fallbeispiele. Ein
 
 Ein Mittelweg könnte sein: Erst eigenen Entwurf erstellen (Generierungseffekt nutzen), dann mit KI-Version vergleichen und Unterschiede analysieren. Der Prozess der eigenen Erstellung ist der Lernmoment, nicht das Endprodukt. Mehr dazu im Leitfaden unter [Der Generierungseffekt](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-wirtschaft}
 ### Wirtschaft: Analysefähigkeit vs. Tool-Kompetenz
 
 Im Kurs "Strategisches Management" müssen Studierende Unternehmensanalysen durchführen. Wenn sie einfach eine SWOT-Analyse von ChatGPT generieren lassen, ist das Problem mit dem Generierungseffekt klar.
@@ -36,9 +39,9 @@ Im Kurs "Strategisches Management" müssen Studierende Unternehmensanalysen durc
 
 Es geht nicht um Verbot, sondern um Sequenzierung. Experten können KI produktiv nutzen, weil sie den Output bewerten können. Studierende müssen erst die analytischen Grundlagen aufbauen. Später kann KI als Werkzeug dienen, dessen Output kritisch geprüft wird. Mehr dazu im Leitfaden unter [Warum Experten profitieren, Lernende nicht](../../guide/index.qmd#paradox) und [Kognition erweitern vs. ersetzen](../../guide/index.qmd#implikationen).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-kuenste}
 ### Künste: Kreativer Prozess vs. KI-Varianten
 
 In Visueller Kommunikation und Design geht es sehr viel um den kreativen Prozess: Skizzieren, Iterieren, Verwerfen, Neuanfangen. Das ist der Kern des Lernens. Wenn Studierende jetzt mit Midjourney oder DALL-E arbeiten und in Sekunden 20 Designvarianten bekommen, fehlt dieser ganze Prozess.
@@ -50,9 +53,9 @@ In Visueller Kommunikation und Design geht es sehr viel um den kreativen Prozess
 
 Der kreative Prozess des Skizzierens und Iterierens hat eigenen Lernwert. KI-generierte Varianten können als Inspiration dienen, sollten aber nicht das eigene Gestalten ersetzen. Möglicher Ansatz: Erst eigene Skizzen, dann KI als Ideengeber, dann bewusste Auswahl und Weiterentwicklung mit eigener Hand. Mehr dazu im Leitfaden unter [Die Scaffolding-Hypothese](../../guide/index.qmd#paradox).
 :::
+:::
 
----
-
+::: {.discipline-section .discipline-hafl}
 ### HAFL: Vernetztes Denken in der Landwirtschaft
 
 In der Agronomie sollen Studierende Bewirtschaftungspläne für landwirtschaftliche Betriebe entwickeln. Dabei müssen sie Fruchtfolgen planen, Nährstoffbilanzen berechnen, Arbeitsspitzen berücksichtigen: Das ist komplexes, vernetztes Denken.
@@ -64,8 +67,7 @@ In der Agronomie sollen Studierende Bewirtschaftungspläne für landwirtschaftli
 
 Das Verstehen der Zusammenhänge ist die Kernkompetenz. Aufgaben sollten Begründungen und Anpassungen an veränderte Bedingungen fordern. KI kann das Resultat liefern, aber nicht die Anpassungsfähigkeit an unvorhergesehene Situationen. Mehr dazu im Leitfaden unter [Kritisches Denken erfordert Fachwissen](../../guide/index.qmd#kritisches-denken).
 :::
-
----
+:::
 
 ::: {.callout-note}
 ## Vertiefte Informationen

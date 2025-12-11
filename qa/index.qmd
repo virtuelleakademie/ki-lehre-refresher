@@ -1,9 +1,17 @@
 ---
-title: "Q & A"
+title: "Anwendungsfragen"
 sidebar: qa
 ---
 
-Diese Seite sammelt häufig gestellte Fragen zur Präsentation "KI in der Hochschulbildung: Werkzeuge für Experten, Herausforderungen für Lernende".
+Diese Seite sammelt typische Fragen und Anwendungsszenarien zur Präsentation "KI in der Hochschulbildung: Werkzeuge für Experten, Herausforderungen für Lernende".
+
+Die Fragen wurden als repräsentative Beispiele entwickelt und illustrieren, wie die vorgestellten Konzepte in verschiedenen Fachbereichen relevant werden. Sie laden zur eigenen Reflexion ein.
+
+::: {.callout-tip}
+## Tipp zur Nutzung
+
+Versuche, jede Frage zuerst selbst zu beantworten, bevor du die Hinweise aufklappst. Welche Konzepte aus der Präsentation sind relevant? Diese aktive Auseinandersetzung vertieft das Verständnis.
+:::
 
 Die Fragen sind nach Themen geordnet. Für vertiefte Informationen verweisen wir auf den [Leitfaden](../guide/index.qmd).
 
