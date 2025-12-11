@@ -846,18 +846,25 @@ Kann diese Bewertung nicht vornehmen
 
 <br>
 
+::: {style="text-align: center; font-size: 1.3em; margin-bottom: 40px;"}
+[Novize]{style="color: #A3195B; font-weight: bold;"}
+——— [**Schwelle?**]{style="background: #D4A03E; padding: 5px 15px; border-radius: 4px;"} ———
+[Experte]{style="color: #24526B; font-weight: bold;"}
+:::
+
 ::: {.incremental}
-- Studierende brauchen wahrscheinlich **Grundwissen**, bevor KI vorteilhaft wird
-- Der Expertise-Umkehr-Effekt empfiehlt **dynamische** KI-Nutzungsregeln
-- Die Schwelle ist **unbekannt** und vermutlich domänenspezifisch
-- Es gibt **keine Pauschallösung**
+- Die Schwelle ist **unbekannt** und empirisch nicht bestimmt
+- Sie variiert nach **Domäne** und **Person**
+- Der Expertise-Umkehr-Effekt erfordert **dynamische** KI-Nutzungsempfehlungen
 :::
 
 . . .
 
 <br>
 
-**Grundlagen BEVOR Werkzeuge**
+::: {style="text-align: center; font-size: 1.2em;"}
+**Wer profitiert von KI-Werkzeugen? Wer nicht?**
+:::
 
 ## Die Kernaussage
 
@@ -947,11 +954,7 @@ KI-Werkzeuge sind für Experten gemacht.
 
 <br>
 
-::: {style="background-color: #F5E6C8; padding: 1em; border-radius: 8px; text-align: left;"}
-{{< fa lightbulb >}} Fachwissen ist unerlässlich, und Kritische KI-Nutzung im Fachkontext üben
-
-{{< fa lightbulb >}} KI-Nutzung sollte an den Kenntnisstand der Lernenden angepasst werden.
-:::
+**Grundlagen BEVOR Werkzeuge**
 
 ## Referenzen
 
