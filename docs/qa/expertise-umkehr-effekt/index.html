@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-552df2bedc27db21b492a0df63bab367.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -101,16 +101,28 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   content: '\f075';
   background-image: none;
 }
-div.callout-reflect.callout {
+div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
-div.callout-reflect.callout-style-default > .callout-header {
+div.callout-source-check.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
   background-image: none;
 }
 div.callout-individual.callout {
@@ -123,42 +135,6 @@ div.callout-individual .callout-toggle::before {  background-image: url('data:im
 div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f007';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -185,6 +161,54 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
   content: '\f0c0';
   background-image: none;
 }
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
 div.callout-experiment.callout {
   border-left-color: #A3195B;
 }
@@ -195,30 +219,6 @@ div.callout-experiment .callout-toggle::before {  background-image: url('data:im
 div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f0c3';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
   background-image: none;
 }
 </style>
@@ -291,7 +291,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../qa/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q &amp; A</span></a>
+ <span class="menu-text">Anwendungsfragen</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -370,7 +370,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
    
   <ul>
   <li><a href="#vorwissen-bestimmt-die-optimale-methode" id="toc-vorwissen-bestimmt-die-optimale-methode" class="nav-link active" data-scroll-target="#vorwissen-bestimmt-die-optimale-methode">Vorwissen bestimmt die optimale Methode</a></li>
-  <li><a href="#häufige-fragen" id="toc-häufige-fragen" class="nav-link" data-scroll-target="#häufige-fragen">Häufige Fragen</a>
+  <li><a href="#anwendungsfragen" id="toc-anwendungsfragen" class="nav-link" data-scroll-target="#anwendungsfragen">Anwendungsfragen</a>
   <ul class="collapse">
   <li><a href="#gesundheit-heterogene-vorkenntnisse-im-kurs" id="toc-gesundheit-heterogene-vorkenntnisse-im-kurs" class="nav-link" data-scroll-target="#gesundheit-heterogene-vorkenntnisse-im-kurs">Gesundheit: Heterogene Vorkenntnisse im Kurs</a></li>
   <li><a href="#technik-und-informatik-ki-nutzung-nach-expertise-differenzieren" id="toc-technik-und-informatik-ki-nutzung-nach-expertise-differenzieren" class="nav-link" data-scroll-target="#technik-und-informatik-ki-nutzung-nach-expertise-differenzieren">Technik und Informatik: KI-Nutzung nach Expertise differenzieren</a></li>
@@ -402,6 +402,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </header>
 
 
+<p><a href="../../qa/index.html" class="qa-nav-link">← Zurück zur Übersicht</a></p>
 <section id="vorwissen-bestimmt-die-optimale-methode" class="level2">
 <h2 class="anchored" data-anchor-id="vorwissen-bestimmt-die-optimale-methode">Vorwissen bestimmt die optimale Methode</h2>
 <p>Der Expertise-Umkehr-Effekt zeigt: Dieselbe Instruktionsmethode kann gegenteilige Effekte haben, abhängig vom Vorwissen der Lernenden.</p>
@@ -411,9 +412,9 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </ul>
 <p>Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist unbekannt und variiert nach Domäne und Person.</p>
 </section>
-<section id="häufige-fragen" class="level2">
-<h2 class="anchored" data-anchor-id="häufige-fragen">Häufige Fragen</h2>
-<section id="gesundheit-heterogene-vorkenntnisse-im-kurs" class="level3">
+<section id="anwendungsfragen" class="level2">
+<h2 class="anchored" data-anchor-id="anwendungsfragen">Anwendungsfragen</h2>
+<section id="gesundheit-heterogene-vorkenntnisse-im-kurs" class="level3 discipline-section discipline-gesundheit">
 <h3 class="anchored" data-anchor-id="gesundheit-heterogene-vorkenntnisse-im-kurs">Gesundheit: Heterogene Vorkenntnisse im Kurs</h3>
 <p>Das Konzept ist klar, aber wie setzt man es konkret um? In Kursen zur Patientenbeurteilung gibt es oft Studierende mit sehr unterschiedlichen Vorkenntnissen: Einige kommen direkt von der Matur, andere haben bereits eine FaGe-Ausbildung oder Jahre Praxiserfahrung als Pflegeassistenz.</p>
 <p><strong>Frage:</strong> Wenn die Empfehlung lautet, “nutzt ChatGPT zur Vorbereitung auf die OSCE-Prüfung”, könnte das den Anfängern helfen, aber den Erfahrenen schaden? Wie findet man heraus, wo bei den Studierenden diese Schwelle liegt? Sollten verschiedene Aufgabenstellungen für verschiedene Levels gemacht werden, oder sollte der KI-Einsatz einfach ganz verboten werden, bis alle ein Grundniveau erreicht haben?</p>
@@ -433,9 +434,8 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="technik-und-informatik-ki-nutzung-nach-expertise-differenzieren" class="level3">
+<section id="technik-und-informatik-ki-nutzung-nach-expertise-differenzieren" class="level3 discipline-section discipline-technik">
 <h3 class="anchored" data-anchor-id="technik-und-informatik-ki-nutzung-nach-expertise-differenzieren">Technik und Informatik: KI-Nutzung nach Expertise differenzieren</h3>
 <p>In der Informatik ist die Situation noch komplizierter. Studierende im Web-Development-Kurs kennen teilweise GitHub Copilot sehr gut. Die Frage ist nicht mehr, ob sie KI nutzen, sondern wie.</p>
 <p><strong>Frage:</strong> Wenn hohe Unterstützung bei Experten schaden kann: Heisst das, dass fortgeschrittenen Studierenden abgeraten werden sollte, Copilot zu nutzen? Das scheint realitätsfern, denn in der Industrie arbeitet heute jeder damit. Oder geht es darum, dass sie Copilot anders nutzen sollten als Anfänger? Wie kann das in Übungsaufgaben berücksichtigt werden, wenn die “Schwelle” bei jedem anders liegt und sich während des Semesters verschiebt?</p>
@@ -455,9 +455,8 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="wirtschaft-fallstudien-und-direkte-instruktion" class="level3">
+<section id="wirtschaft-fallstudien-und-direkte-instruktion" class="level3 discipline-section discipline-wirtschaft">
 <h3 class="anchored" data-anchor-id="wirtschaft-fallstudien-und-direkte-instruktion">Wirtschaft: Fallstudien und direkte Instruktion</h3>
 <p>Das wirft eine grundsätzliche didaktische Frage auf: In Einführungskursen Marketing wird viel mit Fallstudien gearbeitet. Die Annahme ist oft, dass selbstständiges Problemlösen die beste Methode ist, “Learning by doing”.</p>
 <p><strong>Frage:</strong> Könnte das für Erstsemester-Studierende, die noch keine Marketingkonzepte kennen, zu wenig Struktur sein? Müsste am Anfang mehr direkte Instruktion gegeben werden, bevor es an die Fälle geht? Und wenn Studierende dann KI-Tools wie ChatGPT nutzen, um ihre Fallanalysen zu schreiben: Ist das dann quasi eine Form von Unterstützung, die Anfänger brauchen, oder verhindert es genau den Lerneffekt?</p>
@@ -477,9 +476,8 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="künste-grundlagen-vor-generativen-tools" class="level3">
+<section id="künste-grundlagen-vor-generativen-tools" class="level3 discipline-section discipline-kuenste">
 <h3 class="anchored" data-anchor-id="künste-grundlagen-vor-generativen-tools">Künste: Grundlagen vor generativen Tools</h3>
 <p>In der künstlerischen Ausbildung ist die Situation speziell: Kreativität entsteht oft gerade durch Einschränkungen und durch das Ringen mit dem Material.</p>
 <p><strong>Frage:</strong> Wenn Studierende ihre Gehörbildungsübungen oder Harmonielehre-Aufgaben mit KI-Tools lösen, einige können schon ganz gut harmonisieren, andere kämpfen noch mit Grundlagen, wo liegt da die Grenze? Bei den Fortgeschrittenen könnte KI als “Sparringpartner” funktionieren, um verschiedene Varianten durchzuspielen. Aber schadet es den Anfängern nicht fundamental, wenn sie die KI Lösungen generieren lassen, bevor sie überhaupt ein intuitives Gefühl für Stimmführung entwickelt haben? Wie unterscheidet man zwischen “hilfreicher Unterstützung” und “verhindert den grundlegenden Lernprozess”?</p>
@@ -499,7 +497,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </div>
 </div>
 </div>
-<hr>
+</section>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -520,7 +518,6 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->

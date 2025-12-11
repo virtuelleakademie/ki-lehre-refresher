@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-552df2bedc27db21b492a0df63bab367.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-24728153f8066441142e3853327fc888.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-459092a39a16279a63347cb1e841c362.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -89,28 +89,16 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-warning.callout {
+div.callout-individual.callout {
   border-left-color: #A3195B;
 }
-div.callout-warning.callout-style-default > .callout-header {
+div.callout-individual.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
+  content: '\f007';
   background-image: none;
 }
 div.callout-source-check.callout {
@@ -125,16 +113,16 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
   content: '\f002';
   background-image: none;
 }
-div.callout-individual.callout {
-  border-left-color: #A3195B;
+div.callout-scenario.callout {
+  border-left-color: #666666;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
+  content: '\f075';
   background-image: none;
 }
 div.callout-experiment.callout {
@@ -147,30 +135,6 @@ div.callout-experiment .callout-toggle::before {  background-image: url('data:im
 div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f0c3';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
   background-image: none;
 }
 div.callout-reflect.callout {
@@ -195,6 +159,42 @@ div.callout-group .callout-toggle::before {  background-image: url('data:image/s
 div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f0c0';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -291,7 +291,7 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../qa/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q &amp; A</span></a>
+ <span class="menu-text">Anwendungsfragen</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -370,7 +370,7 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
    
   <ul>
   <li><a href="#selbst-generiert-wird-besser-behalten" id="toc-selbst-generiert-wird-besser-behalten" class="nav-link active" data-scroll-target="#selbst-generiert-wird-besser-behalten">Selbst generiert wird besser behalten</a></li>
-  <li><a href="#häufige-fragen" id="toc-häufige-fragen" class="nav-link" data-scroll-target="#häufige-fragen">Häufige Fragen</a>
+  <li><a href="#anwendungsfragen" id="toc-anwendungsfragen" class="nav-link" data-scroll-target="#anwendungsfragen">Anwendungsfragen</a>
   <ul class="collapse">
   <li><a href="#gesundheit-pflegepläne-und-professionelles-verständnis" id="toc-gesundheit-pflegepläne-und-professionelles-verständnis" class="nav-link" data-scroll-target="#gesundheit-pflegepläne-und-professionelles-verständnis">Gesundheit: Pflegepläne und professionelles Verständnis</a></li>
   <li><a href="#wirtschaft-analysefähigkeit-vs.-tool-kompetenz" id="toc-wirtschaft-analysefähigkeit-vs.-tool-kompetenz" class="nav-link" data-scroll-target="#wirtschaft-analysefähigkeit-vs.-tool-kompetenz">Wirtschaft: Analysefähigkeit vs.&nbsp;Tool-Kompetenz</a></li>
@@ -402,14 +402,15 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </header>
 
 
+<p><a href="../../qa/index.html" class="qa-nav-link">← Zurück zur Übersicht</a></p>
 <section id="selbst-generiert-wird-besser-behalten" class="level2">
 <h2 class="anchored" data-anchor-id="selbst-generiert-wird-besser-behalten">Selbst generiert wird besser behalten</h2>
 <p>Der Generierungseffekt ist ein robuster Befund der Gedächtnisforschung: Selbst generierte Information wird besser behalten als passiv erhaltene.</p>
 <p>Die Implikation für KI: Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt. Das Endprodukt mag ähnlich aussehen, aber der Lernprozess ist fundamental anders.</p>
 </section>
-<section id="häufige-fragen" class="level2">
-<h2 class="anchored" data-anchor-id="häufige-fragen">Häufige Fragen</h2>
-<section id="gesundheit-pflegepläne-und-professionelles-verständnis" class="level3">
+<section id="anwendungsfragen" class="level2">
+<h2 class="anchored" data-anchor-id="anwendungsfragen">Anwendungsfragen</h2>
+<section id="gesundheit-pflegepläne-und-professionelles-verständnis" class="level3 discipline-section discipline-gesundheit">
 <h3 class="anchored" data-anchor-id="gesundheit-pflegepläne-und-professionelles-verständnis">Gesundheit: Pflegepläne und professionelles Verständnis</h3>
 <p>Im Fachbereich Pflege erstellen Studierende Pflegepläne für Fallbeispiele. Einige nutzen mittlerweile ChatGPT, um diese Pflegepläne zu generieren. Das Endprodukt sieht oft sehr professionell aus, aber im Praktikum zeigt sich, dass ihnen das Verständnis fehlt.</p>
 <p><strong>Frage:</strong> Wie kann die Aufgabenstellung so angepasst werden, dass Studierende den Generierungseffekt wirklich nutzen, aber trotzdem von KI profitieren können? Soll KI komplett verboten werden oder gibt es einen Mittelweg?</p>
@@ -429,9 +430,8 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="wirtschaft-analysefähigkeit-vs.-tool-kompetenz" class="level3">
+<section id="wirtschaft-analysefähigkeit-vs.-tool-kompetenz" class="level3 discipline-section discipline-wirtschaft">
 <h3 class="anchored" data-anchor-id="wirtschaft-analysefähigkeit-vs.-tool-kompetenz">Wirtschaft: Analysefähigkeit vs.&nbsp;Tool-Kompetenz</h3>
 <p>Im Kurs “Strategisches Management” müssen Studierende Unternehmensanalysen durchführen. Wenn sie einfach eine SWOT-Analyse von ChatGPT generieren lassen, ist das Problem mit dem Generierungseffekt klar.</p>
 <p><strong>Frage:</strong> Aber gleichzeitig werden sie später im Beruf genau solche Tools nutzen. Wie bereitet man sie realistisch auf die Praxis vor, ohne dass sie das analytische Denken verlernen? Ist es nicht widersprüchlich, wenn im Studium KI verboten wird, aber in der Wirtschaft ist sie Standard?</p>
@@ -451,9 +451,8 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="künste-kreativer-prozess-vs.-ki-varianten" class="level3">
+<section id="künste-kreativer-prozess-vs.-ki-varianten" class="level3 discipline-section discipline-kuenste">
 <h3 class="anchored" data-anchor-id="künste-kreativer-prozess-vs.-ki-varianten">Künste: Kreativer Prozess vs.&nbsp;KI-Varianten</h3>
 <p>In Visueller Kommunikation und Design geht es sehr viel um den kreativen Prozess: Skizzieren, Iterieren, Verwerfen, Neuanfangen. Das ist der Kern des Lernens. Wenn Studierende jetzt mit Midjourney oder DALL-E arbeiten und in Sekunden 20 Designvarianten bekommen, fehlt dieser ganze Prozess.</p>
 <p><strong>Frage:</strong> Andererseits experimentieren sie vielleicht dadurch mit Ideen, auf die sie sonst nicht gekommen wären. Wie bewertet man das? Wie stellt man sicher, dass der Generierungseffekt nicht verloren geht, wenn das eigene Gestalten quasi ausgelagert wird?</p>
@@ -473,9 +472,8 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </div>
 </div>
 </div>
-<hr>
 </section>
-<section id="hafl-vernetztes-denken-in-der-landwirtschaft" class="level3">
+<section id="hafl-vernetztes-denken-in-der-landwirtschaft" class="level3 discipline-section discipline-hafl">
 <h3 class="anchored" data-anchor-id="hafl-vernetztes-denken-in-der-landwirtschaft">HAFL: Vernetztes Denken in der Landwirtschaft</h3>
 <p>In der Agronomie sollen Studierende Bewirtschaftungspläne für landwirtschaftliche Betriebe entwickeln. Dabei müssen sie Fruchtfolgen planen, Nährstoffbilanzen berechnen, Arbeitsspitzen berücksichtigen: Das ist komplexes, vernetztes Denken.</p>
 <p><strong>Frage:</strong> Wenn Studierende das von einer KI machen lassen, haben sie vielleicht ein korrektes Resultat, aber verstehen nicht die Zusammenhänge. Später als Berater müssen sie aber genau diese Entscheidungen begründen und anpassen können. Wie kann sichergestellt werden, dass sie den Denkprozess durchlaufen, auch wenn KI-Tools in der Praxis immer verfügbarer werden?</p>
@@ -495,7 +493,7 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </div>
 </div>
 </div>
-<hr>
+</section>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -516,7 +514,6 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
