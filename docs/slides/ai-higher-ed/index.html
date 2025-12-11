@@ -9,7 +9,9 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
-<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Andrew Ellis">
@@ -31,6 +33,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -155,19 +223,9 @@
       margin-right: 0; 
     }
   </style>
+  <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
-  div.callout-source-check.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f002';
-    background-image: none;
-  }
   div.callout-pro-tip.callout {
     border-left-color: #D4A03E;
   }
@@ -180,40 +238,16 @@
     content: '\e2ca';
     background-image: none;
   }
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
+  div.callout-reflect.callout {
+    border-left-color: #D4A03E;
   }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
   }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
-    background-image: none;
-  }
-  div.callout-experiment.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
+    content: '\f0eb';
     background-image: none;
   }
   div.callout-scenario.callout {
@@ -228,28 +262,28 @@
     content: '\f075';
     background-image: none;
   }
-  div.callout-prompt.callout {
+  div.callout-demonstration.callout {
     border-left-color: #333333;
   }
-  div.callout-prompt.callout-style-default > .callout-header {
+  div.callout-demonstration.callout-style-default > .callout-header {
     background-color: rgba(51, 51, 51, 0.13);
   }
-  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f328';
+    content: '\f51b';
     background-image: none;
   }
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
+  div.callout-group.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
+    content: '\f0c0';
     background-image: none;
   }
   div.callout-key-point.callout {
@@ -276,16 +310,52 @@
     content: '\f06a';
     background-image: none;
   }
-  div.callout-group.callout {
+  div.callout-prompt.callout {
+    border-left-color: #333333;
+  }
+  div.callout-prompt.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f328';
+    background-image: none;
+  }
+  div.callout-source-check.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
+  div.callout-experiment.callout {
     border-left-color: #A3195B;
   }
-  div.callout-group.callout-style-default > .callout-header {
+  div.callout-experiment.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
+    content: '\f0c3';
+    background-image: none;
+  }
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
     background-image: none;
   }
   </style>
@@ -316,1236 +386,917 @@
 </div>
 
 </section>
-<section>
-<section id="teil-1-was-ki-heute-kann" class="title-slide slide level1 center" data-background-color="#F0D4D4">
-<h1>Teil 1: Was KI heute kann</h1>
+<section id="ein-überraschendes-ergebnis" class="slide level2">
+<h2>Ein überraschendes Ergebnis</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Mit KI-Zugang:</strong></p>
+<p><br></p>
+<p><span class="fragment" style="font-size: 2em; font-weight: bold; color: #2E7D32;">48% mehr Aufgaben</span></p>
+<p><span class="fragment">korrekt gelöst</span></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Ohne KI (später):</strong></p>
+<p><br></p>
+<p><span class="fragment" style="font-size: 2em; font-weight: bold; color: #A3195B;">17% schlechter</span></p>
+<p><span class="fragment">als die Kontrollgruppe</span></p>
+</div></div>
+<div class="fragment">
+<p><br><br></p>
+<div style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;">
+<p><strong>Quelle:</strong> <span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">Bastani u.&nbsp;a. (<a href="#/referenzen" role="doc-biblioref" onclick="">2025</a>)</span>:</p>
+<p>~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen</p>
+</div>
+<aside class="notes">
+<p>Ich möchte mit einem überraschenden Befund beginnen, der die Komplexität unseres Themas illustriert.</p>
+<p>In einer gross angelegten Studie mit etwa 1000 Gymnasiasten in der Türkei erhielten Schüler Zugang zu GPT-4 während ihrer Mathematik-Übungen.</p>
+<p>[KLICK] Die Ergebnisse während der Übungsphase waren beeindruckend: 48 Prozent mehr Aufgaben korrekt gelöst.</p>
+<p>[KLICK] Klingt nach einem Erfolg, oder? Aber dann kam der Test ohne KI-Zugang.</p>
+<p>[KLICK] 17 Prozent schlechter als die Kontrollgruppe.</p>
+<p>[KLICK] Das ist die zentrale Spannung: Mehr Aufgaben gelöst bedeutet nicht automatisch mehr gelernt.</p>
+<p>Der 17%-Nachteil entspricht etwa 0.2-0.3 Standardabweichungen. Relevant, aber kein Totalausfall. Wichtig: Die Studie testete auch einen “GPT Tutor” mit pädagogischen Leitplanken, der deutlich bessere Ergebnisse zeigte. Das Problem ist nicht KI an sich, sondern wie sie eingesetzt wird.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="das-paradox" class="slide level2">
+<h2>Das Paradox</h2>
+<p><br></p>
 
+<img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="1152" class="r-stretch"><div class="fragment">
+<p><br></p>
+<p><strong>Aufgabenleistung ≠ Lernen</strong></p>
+<aside class="notes">
+<p>Hier sehen wir das Paradox visualisiert.</p>
+<p>Die magentafarbene Linie zeigt die Gruppe mit KI-Zugang, die graue die Kontrollgruppe ohne KI.</p>
+<p>In der Übungsphase links performt die KI-Gruppe deutlich besser. Das macht Sinn: Sie hatten ja Hilfe. Der Unterschied ist klar, die Fehlerbalken überlappen nicht.</p>
+<p>Aber schauen Sie, was beim Test passiert. Die KI-Gruppe schneidet tendenziell schlechter ab, aber beachten Sie die Fehlerbalken: Sie überlappen sich. Der Unterschied ist statistisch nicht so dramatisch, wie die Linien allein suggerieren würden.</p>
+<p>[KLICK] Die Kernaussage: Aufgabenleistung ist nicht dasselbe wie Lernen. Wir verwechseln oft Performanz mit Kompetenz. Wenn Studierende mit KI-Hilfe eine Aufgabe lösen, sehen wir die Performanz des Systems, nicht unbedingt das Lernen des Studierenden.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section>
-<section id="die-zentrale-frage" class="slide level2">
-<h2>Die zentrale Frage</h2>
+<section id="das-nadelöhr-des-lernens" class="slide level2 nostretch">
+<h2>Das Nadelöhr des Lernens</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; margin-top: 0.5em;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> <strong>Kernaussage:</strong> Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses <span class="citation" data-cites="swellerCognitiveLoadTheory2024">(<a href="#/referenzen" role="doc-biblioref" onclick="">Sweller 2024</a>)</span>.</p>
+</div>
+<aside class="notes">
+<p>Um zu verstehen, warum das passiert, müssen wir einen kurzen Ausflug in die Kognitionspsychologie machen.</p>
+<p>Hier sehen Sie ein vereinfachtes Modell des menschlichen Gedächtnisses. Links die neue Information, rechts das Langzeitgedächtnis, und in der Mitte: das Nadelöhr.</p>
+<p>Das Arbeitsgedächtnis hat eine stark begrenzte Kapazität: etwa 4 plus/minus 1 Elemente gleichzeitig. Neue Information links ist unbegrenzt. Das Langzeitgedächtnis rechts ist praktisch unbegrenzt. Aber alles, was von links nach rechts wandern soll, muss durch dieses enge Nadelöhr.</p>
+<p>[KLICK] Das ist die Kernaussage der Cognitive Load Theory: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses. Es gibt keinen Weg drumherum. Keine Abkürzung. Keine KI kann diesen biologischen Engpass umgehen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="erwünschte-schwierigkeiten" class="slide level2">
+<h2>Erwünschte Schwierigkeiten</h2>
+<p><br><br></p>
+<div style="font-size: 1.4em; text-align: center; font-style: italic; max-width: 80%; margin: 0 auto;">
+<p>“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”</p>
+</div>
+<p><br></p>
+<div style="text-align: center; color: #666;">
+<p>Robert Bjork <span class="citation" data-cites="bjorkMakingThingsHard2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Bjork und Bjork 2011</a>)</span></p>
+</div>
+<div class="fragment">
+<p><br><br></p>
+<div style="text-align: center; font-size: 1.2em;">
+<p><strong>Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.</strong></p>
+</div>
+<aside class="notes">
+<p>Das bringt uns zu einem kontraintuitiven Konzept: den erwünschten Schwierigkeiten, oder auf Englisch “Desirable Difficulties”.</p>
+<p>Hier ein Zitat von Robert Bjork: “Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”</p>
+<p>Übersetzt: Bedingungen, die das scheinbare Lernen verlangsamen, optimieren oft das langfristige Behalten und den Transfer.</p>
+<p>[KLICK] Oder noch kürzer: Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.</p>
+<p>Das ist ein fundamentales Prinzip, das wir immer wieder vergessen. Wenn Lernen sich leicht anfühlt, lernen wir wahrscheinlich weniger, als wenn es sich anstrengend anfühlt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="die-vier-strategien" class="slide level2">
+<h2>Die vier Strategien</h2>
+<p><br></p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Was KI kann:</strong></p>
-<ul>
-<li>Anwaltsprüfungen bestehen</li>
-<li>Code schreiben und debuggen</li>
-<li>Krankheiten diagnostizieren</li>
-<li>Wissenschaftliche Texte verfassen</li>
-<li>Komplexe Analysen durchführen</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Aber was bedeutet das für Lernen?</strong></p>
-<ul>
-<li>Mit KI → 48% mehr Aufgaben gelöst</li>
-<li>Ohne KI → 17% schlechter an der Prüfung</li>
-</ul>
-<p><span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Bastani u.&nbsp;a. 2025</a>)</span></p>
+<div class="column" style="width:25%;">
+<p><i class="fa-solid fa-pen fa-3x" aria-label="pen"></i></p>
+<p><br></p>
+<p><strong>Selbst generieren</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Eigene Antworten formulieren</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-calendar fa-3x" aria-label="calendar"></i></p>
+<p><br></p>
+<p><strong>Verteilt lernen</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Zeitliche Abstände einbauen</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-brain fa-3x" aria-label="brain"></i></p>
+<p><br></p>
+<p><strong>Aktiv abrufen</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Wissen aus dem Gedächtnis holen</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-shuffle fa-3x" aria-label="shuffle"></i></p>
+<p><br></p>
+<p><strong>Variieren</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Themen und Aufgaben mischen</span></p>
 </div></div>
 <div class="fragment">
-<p><strong>Die Frage ist nicht ob KI hilft, sondern: Wann hilft sie, und wann schadet sie?</strong></p>
+<p><br><br></p>
+<div style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; text-align: center;">
+<p><i class="fa-solid fa-robot" aria-label="robot"></i> <strong>KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.</strong></p>
+</div>
+<aside class="notes">
+<p>Bjork hat vier konkrete Strategien identifiziert, die als erwünschte Schwierigkeiten fungieren:</p>
+<p>[KLICK] Erstens, selbst generieren. Eigene Antworten formulieren, statt vorgegebene zu lesen.</p>
+<p>[KLICK] Zweitens, verteilt lernen. Zeitliche Abstände einbauen.</p>
+<p>[KLICK] Drittens, aktiv abrufen. Wissen aus dem Gedächtnis holen, statt es nachzuschlagen.</p>
+<p>[KLICK] Viertens, variieren. Themen und Aufgabentypen mischen.</p>
+<p>[KLICK] Und hier kommt der kritische Punkt: KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.</p>
+<p>Warum selbst generieren, wenn KI es besser kann? Warum sich anstrengen, wenn die Antwort einen Klick entfernt ist? Warum aus dem Gedächtnis abrufen, wenn ich nachfragen kann?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="wie-llms-text-produzieren" class="slide level2">
-<h2>Wie LLMs Text produzieren</h2>
-<ul>
-<li class="fragment"><strong>Next-word prediction</strong>: Welches Wort kommt am wahrscheinlichsten als nächstes?</li>
-<li class="fragment">Training auf Milliarden von Textdokumenten</li>
-<li class="fragment">Erkennen von Mustern in Sprache, Argumentation, Stil</li>
-<li class="fragment"><strong>Metapher</strong>: Extrem ausgeklügelte Autovervollständigung</li>
-</ul>
+<section id="der-generierungseffekt" class="slide level2 nostretch">
+<h2>Der Generierungseffekt</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Selbst generierte Information wird besser behalten <span class="citation" data-cites="slameckaGenerationEffectDelineation1978">(<a href="#/referenzen" role="doc-biblioref" onclick="">Slamecka und Graf 1978</a>)</span>.</p>
 <div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p><br></p>
+<p><strong>Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.</strong></p>
 </div>
-<p><strong>Wichtig</strong></p>
-</div>
-<div class="callout-content">
-<p>LLMs <em>rufen</em> kein Wissen ab. Sie <em>generieren</em> Text basierend auf statistischen Mustern.</p>
-</div>
-</div>
-</div>
+<div class="fragment">
+<p><br></p>
+<p><span style="color: #666; font-style: italic;">Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…</span></p>
+<aside class="notes">
+<p>Schauen wir uns den Generierungseffekt genauer an, weil er besonders relevant für KI ist.</p>
+<p>Die Grafik zeigt die Behaltensleistung in Prozent. Selbst generierte Information wird am besten behalten, etwa 70 Prozent. Gelesene Information liegt bei etwa 50 Prozent. Und von KI erhaltene Information? Noch niedriger, hier illustrativ bei etwa 35 Prozent dargestellt.</p>
+<p>Die Forschung zum Generierungseffekt stammt aus den 1970er Jahren. Slamecka und Graf zeigten, dass selbst produziertes Material besser behalten wird als passiv aufgenommenes.</p>
+<p>[KLICK] Die Implikation ist klar: Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.</p>
+<p>[KLICK] Aber dieser Effekt ist nicht neu. Das bringt uns zu den historischen Analogien.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="wie-denken-in-ki-funktioniert" class="slide level2">
-<h2>Wie “Denken” in KI funktioniert</h2>
-<p><strong>Chain-of-Thought Reasoning:</strong></p>
+<section id="historische-analogien" class="slide level2 nostretch">
+<h2>Historische Analogien</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="text-align: center;">
+<p><strong>Das Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.</strong></p>
+<p><span style="color: #999; font-size: 0.8em;"><span class="citation" data-cites="dahmaniHabitualUseGPS2020 sparrowGoogleEffectsMemory2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Dahmani und Bohbot 2020</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Sparrow, Liu, und Wegner 2011</a>)</span></span></p>
+</div>
+<aside class="notes">
+<p>Hier sehen Sie eine Zeitlinie technologischer Entwicklungen und ihrer Auswirkungen auf unsere kognitiven Fähigkeiten.</p>
+<p>Die 1970er: Der Taschenrechner. Studien zeigen, dass früher und intensiver Taschenrechner-Einsatz das konzeptuelle mathematische Verständnis beeinträchtigen kann.</p>
+<p>Die 1990er: GPS-Navigation. Habitueller GPS-Gebrauch ist mit schwächerem räumlichem Gedächtnis assoziiert.</p>
+<p>Die 2000er: Google. Der “Google-Effekt”: Wir erinnern besser, WO Information zu finden ist, als WAS die Information ist.</p>
+<p>Die 2020er: KI. Und jetzt? KI kombiniert und verstärkt all diese Effekte.</p>
+<p>[KLICK] Das Muster wiederholt sich. Aber der Unterschied: KI ist breiter als GPS oder Taschenrechner. Sie betrifft nicht eine kognitive Domäne, sondern potenziell alle.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="die-entscheidende-frage" class="slide level2">
+<h2>Die entscheidende Frage</h2>
+<p><br><br></p>
+<div style="font-size: 1.3em; text-align: center;">
+<p>Dasselbe Werkzeug, unterschiedliche Ergebnisse.</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="text-align: center;">
+<p>Taschenrechner helfen Mathematikern, können aber Lernenden schaden.</p>
+<p>GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.</p>
+</div>
+</div>
+<div class="fragment">
+<p><br><br></p>
+<div style="font-size: 1.4em; text-align: center; font-weight: bold;">
+<p>Die Frage ist nicht <em>ob</em> KI, sondern <em>wer</em> davon profitiert.</p>
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><span style="color: #666; font-style: italic; display: block; text-align: center;">Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.</span></p>
+<aside class="notes">
+<p>Das bringt uns zur entscheidenden Frage.</p>
+<p>Dasselbe Werkzeug, unterschiedliche Ergebnisse.</p>
+<p>[KLICK] Taschenrechner helfen Mathematikern enorm. Aber für Lernende, die gerade erst das Rechnen verstehen sollen, können sie schädlich sein.</p>
+<p>GPS unterstützt Taxifahrer bei der Navigation. Aber es schwächt nachweislich das räumliche Gedächtnis von Menschen, die es noch nicht aufgebaut haben.</p>
+<p>[KLICK] Die Frage ist also nicht, OB KI nützt oder schadet. Die Frage ist: WER profitiert und wer nicht?</p>
+<p>[KLICK] Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="was-experten-sehen" class="slide level2">
+<h2>Was Experten sehen</h2>
+<p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><em>Ohne Reasoning:</em></p>
-<p>“Was ist 17 × 24?” → “408”</p>
+<p><img data-src="../../assets/images/chess.png" style="width:90.0%"></p>
 </div><div class="column" style="width:50%;">
-<p><em>Mit Reasoning:</em></p>
-<p>“Was ist 17 × 24?” → “Lass mich das aufteilen: 17 × 20 = 340 17 × 4 = 68 340 + 68 = 408”</p>
+<p><br></p>
+<p><strong>Novize:</strong> sieht Einzelteile</p>
+<p>“64 Felder, 32 Figuren, viele Möglichkeiten”</p>
+<p>. . .</p>
+<p><strong>Experte:</strong> sieht Muster und Bedeutung</p>
+<p>“Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7”</p>
+<p>. . .</p>
+<p><br></p>
+<p>Experten speichern Wissen in <strong>Chunks</strong>: vernetzte Wissensstrukturen, die automatisch abgerufen werden <span class="citation" data-cites="grootThoughtChoiceChess1978 chasePerceptionChess1973">(<a href="#/referenzen" role="doc-biblioref" onclick="">Groot und Groot 1978</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Chase und Simon 1973</a>)</span>.</p>
 </div></div>
-<div class="fragment">
-<p><strong>Kernpunkt:</strong> Immer noch Mustererkennung, aber über Denkschritte statt nur über Antworten.</p>
-</div>
-</section>
-<section id="werkzeug-fähige-agenten" class="slide level2">
-<h2>Werkzeug-fähige Agenten</h2>
-<p><strong>LLM + Werkzeuge = Agent</strong></p>
-<ul>
-<li class="fragment">Websuche durchführen</li>
-<li class="fragment">Code ausführen</li>
-<li class="fragment">Dateien lesen und schreiben</li>
-<li class="fragment">Berechnungen anstellen</li>
-<li class="fragment">APIs aufrufen</li>
-</ul>
-<div class="fragment">
-<p><strong>Konsequenz:</strong> Agenten können fast jede kognitive Aufgabe ausführen:</p>
-<ul>
-<li>Literaturrecherche</li>
-<li>Datenanalyse</li>
-<li>Schreiben und Überarbeiten</li>
-<li>Programmieren</li>
-</ul>
-</div>
-</section>
-<section id="diskussion" class="slide level2" data-background-color="#F5E6C8">
-<h2>Diskussion</h2>
-                    <div id="timer-1"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("timer-1", 300, "slide");
-                        });
-                    </script>
-                
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Kurze Diskussion</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Welche KI-Fähigkeiten haben dich überrascht?</li>
-<li>Wo hast du Studierende beim Einsatz von KI beobachtet?</li>
-</ul>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="teil-2-wie-expertise-entsteht" class="title-slide slide level1 center" data-background-color="#F0D4D4">
-<h1>Teil 2: Wie Expertise entsteht</h1>
-
-</section>
-<section id="experten-und-novizen-sind-grundlegend-verschieden" class="slide level2">
-<h2>Experten und Novizen sind grundlegend verschieden</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Nicht nur “mehr Wissen”</strong></p>
-<p>Sondern eine andere <em>kognitive Architektur</em></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Klassisches Beispiel:</strong> <span class="citation" data-cites="grootThoughtChoiceChess1978 chasePerceptionChess1973">(<a href="#/referenzen" role="doc-biblioref" onclick="">Groot und Groot 1978</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Chase und Simon 1973</a>)</span></p>
-<p>Schachmeister sehen <em>Muster und Strategien</em></p>
-<p>Anfänger sehen <em>Figuren auf Feldern</em></p>
-</div></div>
-<div class="fragment">
-<blockquote>
-<p>“Experts don’t just know more; they organize knowledge differently.”</p>
-</blockquote>
-</div>
-</section>
-<section id="von-schwachen-zu-starken-methoden" class="slide level2">
-<h2>Von schwachen zu starken Methoden</h2>
-<p><strong>Newell &amp; Simon</strong> <span class="citation" data-cites="newellHumanProblemSolving1972">(<a href="#/referenzen" role="doc-biblioref" onclick="">Newell und Simon 1972</a>)</span> | <strong>ACT-R</strong> <span class="citation" data-cites="andersonAcquisitionCognitiveSkill1982">(<a href="#/referenzen" role="doc-biblioref" onclick="">Anderson 1982</a>)</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Novizen: Schwache Methoden</strong></p>
-<ul>
-<li>Mittel-Ziel-Analyse</li>
-<li>Versuch und Irrtum</li>
-<li>Analogiebildung</li>
-<li>Rückwärtsarbeiten</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Experten: Starke Methoden</strong></p>
-<ul>
-<li>Automatische Mustererkennung</li>
-<li>Prozeduralisiertes Wissen</li>
-<li>Direkte Lösungswege</li>
-</ul>
-</div></div>
-<div class="fragment">
-<p><strong>Der Übergang erfordert umfangreiche Übung.</strong></p>
-</div>
-</section>
-<section id="prozeduralisierung-und-kompilation" class="slide level2">
-<h2>Prozeduralisierung und Kompilation</h2>
-<ol type="1">
-<li class="fragment"><strong>Deklaratives Wissen</strong>: “Man muss beim Autofahren die Kupplung treten, bevor man schaltet”</li>
-<li class="fragment"><strong>Bewusste Schritte</strong>: Aktiv an jeden Schritt denken</li>
-<li class="fragment"><strong>Prozeduralisierung</strong>: Schritte werden zu Einheiten zusammengefasst</li>
-<li class="fragment"><strong>Automatisierung</strong>: Unbewusste, flüssige Ausführung</li>
-</ol>
-<div class="fragment">
-<p><strong>Diese Transformation kann nicht übersprungen werden.</strong></p>
-</div>
-</section>
-<section id="cognitive-load-theory-die-grundlagen" class="slide level2">
-<h2>Cognitive Load Theory: Die Grundlagen</h2>
-<p><strong>John Sweller</strong> <span class="citation" data-cites="swellerCognitiveLoadTheory2024">(<a href="#/referenzen" role="doc-biblioref" onclick="">Sweller 2024</a>)</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Arbeitsgedächtnis</strong></p>
-<ul>
-<li>4±1 Elemente</li>
-<li>15-30 Sekunden</li>
-<li>Der <em>Engpass</em> allen Lernens</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Langzeitgedächtnis</strong></p>
-<ul>
-<li>Unbegrenzte Kapazität</li>
-<li>Dauerhafte Speicherung</li>
-<li>Hier <em>lebt</em> Expertise</li>
-</ul>
-</div></div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Kernaussage</strong></p>
-</div>
-<div class="callout-content">
-<p>Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="drei-arten-kognitiver-belastung" class="slide level2">
-<h2>Drei Arten kognitiver Belastung</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 56%">
-<col style="width: 24%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Typ</th>
-<th>Beschreibung</th>
-<th>Ziel</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Intrinsisch</strong></td>
-<td>Inhärente Komplexität des Materials</td>
-<td>Kann nicht reduziert werden ohne Vereinfachung</td>
-</tr>
-<tr class="even">
-<td><strong>Extrinsisch</strong></td>
-<td>Schlecht gestaltete Instruktion</td>
-<td><strong>Minimieren</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Lernförderlich</strong> (Germane)</td>
-<td>Produktive Anstrengung für Schemabildung</td>
-<td><strong>Erhalten</strong></td>
-</tr>
-</tbody>
-</table>
-<p><em>(Anmerkung: Die Unterscheidung von lernförderlicher und intrinsischer Belastung ist in der Literatur umstritten)</em></p>
-<div class="fragment">
-<p><strong>Entscheidende Frage:</strong> Welche Art der Belastung reduziert KI?</p>
-</div>
+<aside class="notes">
+<p>Schauen wir uns an, was Experten von Novizen unterscheidet. Das klassische Beispiel kommt aus der Schachforschung.</p>
+<p>Was sieht ein Novize? 64 Felder, 32 Figuren, viele Möglichkeiten. Er sieht die Einzelteile.</p>
+<p>[KLICK] Was sieht ein Experte? “Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7.” Er sieht Muster und Bedeutung.</p>
+<p>[KLICK] Das ist der fundamentale Unterschied. Experten speichern Wissen in sogenannten “Chunks”: vernetzte Wissensstrukturen, die automatisch abgerufen werden.</p>
+<p>Ein Schachmeister hat etwa 50.000 solcher Chunks im Langzeitgedächtnis. Die Forschung dazu geht auf de Groot zurück und wurde von Chase und Simon quantifiziert.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="der-expertise-umkehr-effekt" class="slide level2">
 <h2>Der Expertise-Umkehr-Effekt</h2>
-<p><strong>Forschungsüberblick</strong> <span class="citation" data-cites="kalyugaExpertiseReversalEffect2009">(<a href="#/referenzen" role="doc-biblioref" onclick="">Kalyuga 2009</a>)</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Geringe Vorkenntnisse:</strong></p>
-<p>Profitieren von hoher Unterstützung</p>
-<p><em>Mittlere bis grosse Effekte</em></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Hohe Vorkenntnisse:</strong></p>
-<p>Profitieren von <em>niedriger</em> Unterstützung</p>
-<p><em>Effekte kehren sich um</em></p>
-</div></div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div style="background-color: #f5f5f5; padding: 0.6em 1em; border-radius: 6px; font-size: 0.9em; margin-bottom: 0.5em;">
+<p><i class="fa-solid fa-hand-pointer" aria-label="hand-pointer"></i> <strong>Interaktiv:</strong> Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.</p>
 </div>
-<p><strong>Implikation</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Dasselbe Werkzeug kann gegenteilige Effekte haben, abhängig vom Expertisegrad.</strong></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="explizite-instruktion-was-lernen-fördert" class="slide level2">
-<h2>Explizite Instruktion: Was Lernen fördert</h2>
-<p><strong>Das Problem mit minimaler Anleitung</strong> <span class="citation" data-cites="kirschnerWhyMinimalGuidance2006">(<a href="#/referenzen" role="doc-biblioref" onclick="">Kirschner, und and Clark 2006</a>)</span></p>
-<ul>
-<li class="fragment">Konstruktivistische, entdeckende Ansätze klingen attraktiv</li>
-<li class="fragment">Aber: Für Novizen ist minimale Anleitung weniger effektiv</li>
-<li class="fragment">Novizen haben keine Schemata im Langzeitgedächtnis</li>
-<li class="fragment">Ihr Arbeitsgedächtnis wird schnell überlastet</li>
-</ul>
-<div class="fragment">
-<p><strong>Evidenzbasierte Alternative:</strong> Explizite Instruktion mit <em>Worked Examples</em></p>
-</div>
-</section>
-<section id="worked-examples-ein-robuster-befund" class="slide level2">
-<h2>Worked Examples: Ein robuster Befund</h2>
-<p><strong>Statt Probleme selbst lösen: Ausgearbeitete Lösungswege zeigen</strong> <span class="citation" data-cites="cooperEffectsSchemaAcquisition1987">(<a href="#/referenzen" role="doc-biblioref" onclick="">Cooper und Sweller 1987</a>)</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Für Novizen:</strong></p>
-<ul>
-<li>Reduziert extrinsische Belastung</li>
-<li>Lässt Kapazität für Schemabildung</li>
-<li>Einer der robustesten Befunde der Instruktionsforschung</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Aber Achtung:</strong></p>
-<p>Worked Examples ≠ KI-generierte Lösungen</p>
-</div></div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Der entscheidende Unterschied</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Worked Examples</strong> sind didaktisch gestaltet, heben relevante Schritte hervor, bauen systematisch Komplexität auf und werden von Lehrenden ausgewählt.</p>
-<p><strong>KI-generierte Antworten</strong> beantworten die gestellte Frage, aber ohne Einbettung in eine geplante Lernprogression.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Nuance</strong></p>
-</div>
-<div class="callout-content">
-<p>LLMs <em>können</em> mit entsprechendem Prompting didaktisch strukturierte Erklärungen liefern, aber das erfordert pädagogisches Wissen, das Novizen typischerweise nicht haben.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="von-worked-examples-zu-selbständigem-lösen" class="slide level2">
-<h2>Von Worked Examples zu selbständigem Lösen</h2>
-<p><strong>Fading: Unterstützung systematisch reduzieren</strong></p>
-<ol type="1">
-<li class="fragment"><strong>Vollständige Worked Examples</strong> zeigen</li>
-<li class="fragment"><strong>Completion Problems</strong>: Teilweise gelöste Aufgaben vervollständigen</li>
-<li class="fragment"><strong>Zunehmend weniger</strong> Vorgaben</li>
-<li class="fragment"><strong>Selbständiges Lösen</strong> ohne Unterstützung</li>
-</ol>
-<div class="fragment">
-<p><strong>Verbindung zum Expertise-Umkehr-Effekt:</strong></p>
-<p>Was Novizen hilft, kann Experten behindern. Daher: dynamische Anpassung.</p>
-</div>
-</section>
-<section id="diskussion-think-pair-share" class="slide level2" data-background-color="#F5E6C8">
-<h2>Diskussion: Think-Pair-Share</h2>
-                    <div id="timer-2"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("timer-2", 600, "slide");
-                        });
-                    </script>
-                
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Reflexion</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Think:</strong> Denke an eine Fähigkeit, die du gemeistert hast. Wie hat sich der Lernprozess angefühlt?</p>
-<p><strong>Pair:</strong> Tausche dich mit deinem Nachbarn aus.</p>
-<p><strong>Share:</strong> Wie hat sich dein Denken verändert, als du Experte wurdest?</p>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="teil-3-kritisches-denken-braucht-fachwissen" class="title-slide slide level1 center" data-background-color="#F0D4D4">
-<h1>Teil 3: Kritisches Denken braucht Fachwissen</h1>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="632" data-source-offset="-230"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 631;"><span id="cb1-632"><a></a>config <span class="op">=</span> ({</span>
+<span id="cb1-633"><a></a>  <span class="co">// Color palette</span></span>
+<span id="cb1-634"><a></a>  <span class="dt">colors</span><span class="op">:</span> {</span>
+<span id="cb1-635"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span></span>
+<span id="cb1-636"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span></span>
+<span id="cb1-637"><a></a>    <span class="dt">neutral</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span></span>
+<span id="cb1-638"><a></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#f5f5f5"</span></span>
+<span id="cb1-639"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-640"><a></a>  <span class="co">// Line equations: y = intercept + slope * x</span></span>
+<span id="cb1-641"><a></a>  <span class="co">// Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x</span></span>
+<span id="cb1-642"><a></a>  <span class="dt">lines</span><span class="op">:</span> {</span>
+<span id="cb1-643"><a></a>    <span class="dt">high</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">65</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.4</span> }<span class="op">,</span></span>
+<span id="cb1-644"><a></a>    <span class="dt">low</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="fl">0.4</span> }</span>
+<span id="cb1-645"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-646"><a></a>  <span class="co">// Input options</span></span>
+<span id="cb1-647"><a></a>  <span class="dt">steps</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-648"><a></a>  <span class="dt">defaultValue</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb1-649"><a></a>  <span class="co">// Plot dimensions</span></span>
+<span id="cb1-650"><a></a>  <span class="dt">plot</span><span class="op">:</span> {</span>
+<span id="cb1-651"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
+<span id="cb1-652"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
+<span id="cb1-653"><a></a>    <span class="dt">margins</span><span class="op">:</span> { <span class="dt">left</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">bottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">top</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">right</span><span class="op">:</span> <span class="dv">40</span> }</span>
+<span id="cb1-654"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-655"><a></a>  <span class="co">// Labels</span></span>
+<span id="cb1-656"><a></a>  <span class="dt">labels</span><span class="op">:</span> {</span>
+<span id="cb1-657"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"Hohe Unterstützung"</span><span class="op">,</span></span>
+<span id="cb1-658"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span><span class="op">,</span></span>
+<span id="cb1-659"><a></a>    <span class="dt">highExamples</span><span class="op">:</span> [<span class="st">"📖 Worked Examples"</span><span class="op">,</span> <span class="st">"🧭 Direkte Instruktion"</span>]<span class="op">,</span></span>
+<span id="cb1-660"><a></a>    <span class="dt">lowExamples</span><span class="op">:</span> [<span class="st">"🧩 Problembasiertes Lernen"</span><span class="op">,</span> <span class="st">"🔍 Eigene Lösungswege"</span>]</span>
+<span id="cb1-661"><a></a>  }</span>
+<span id="cb1-662"><a></a>})</span>
+<span id="cb1-663"><a></a></span>
+<span id="cb1-664"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-665"><a></a><span class="co">// Derived values: Computed from config (no magic numbers)</span></span>
+<span id="cb1-666"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-667"><a></a></span>
+<span id="cb1-668"><a></a><span class="co">// Crossover point: solve for x where both lines intersect</span></span>
+<span id="cb1-669"><a></a>crossoverPoint <span class="op">=</span> {</span>
+<span id="cb1-670"><a></a>  <span class="kw">const</span> { high<span class="op">,</span> low } <span class="op">=</span> config<span class="op">.</span><span class="at">lines</span><span class="op">;</span></span>
+<span id="cb1-671"><a></a>  <span class="cf">return</span> (high<span class="op">.</span><span class="at">intercept</span> <span class="op">-</span> low<span class="op">.</span><span class="at">intercept</span>) <span class="op">/</span> (low<span class="op">.</span><span class="at">slope</span> <span class="op">-</span> high<span class="op">.</span><span class="at">slope</span>)<span class="op">;</span></span>
+<span id="cb1-672"><a></a>}</span>
+<span id="cb1-673"><a></a></span>
+<span id="cb1-674"><a></a><span class="co">// Helper function to calculate y-value on a line</span></span>
+<span id="cb1-675"><a></a>calcY <span class="op">=</span> (line<span class="op">,</span> x) <span class="kw">=&gt;</span> line<span class="op">.</span><span class="at">intercept</span> <span class="op">+</span> line<span class="op">.</span><span class="at">slope</span> <span class="op">*</span> x</span>
+<span id="cb1-676"><a></a></span>
+<span id="cb1-677"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-678"><a></a><span class="co">// State: Single source of truth for user input (hidden, controlled by buttons)</span></span>
+<span id="cb1-679"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-680"><a></a>viewof vorwissen <span class="op">=</span> {</span>
+<span id="cb1-681"><a></a>  <span class="kw">const</span> input <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(config<span class="op">.</span><span class="at">steps</span><span class="op">,</span> {</span>
+<span id="cb1-682"><a></a>    <span class="dt">value</span><span class="op">:</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">,</span></span>
+<span id="cb1-683"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
+<span id="cb1-684"><a></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x <span class="op">+</span> <span class="st">"%"</span></span>
+<span id="cb1-685"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-686"><a></a>  input<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span><span class="op">;</span></span>
+<span id="cb1-687"><a></a>  <span class="cf">return</span> input<span class="op">;</span></span>
+<span id="cb1-688"><a></a>}</span>
+<span id="cb1-689"><a></a></span>
+<span id="cb1-690"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-691"><a></a><span class="co">// Reactive calculations based on current state</span></span>
+<span id="cb1-692"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-693"><a></a>currentState <span class="op">=</span> {</span>
+<span id="cb1-694"><a></a>  <span class="kw">const</span> x <span class="op">=</span> vorwissen <span class="op">??</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">;</span></span>
+<span id="cb1-695"><a></a>  <span class="kw">const</span> highY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">high</span><span class="op">,</span> x)<span class="op">;</span></span>
+<span id="cb1-696"><a></a>  <span class="kw">const</span> lowY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">low</span><span class="op">,</span> x)<span class="op">;</span></span>
+<span id="cb1-697"><a></a>  <span class="kw">const</span> isHighBetter <span class="op">=</span> x <span class="op">&lt;=</span> crossoverPoint<span class="op">;</span></span>
+<span id="cb1-698"><a></a></span>
+<span id="cb1-699"><a></a>  <span class="cf">return</span> {</span>
+<span id="cb1-700"><a></a>    x<span class="op">,</span></span>
+<span id="cb1-701"><a></a>    highY<span class="op">,</span></span>
+<span id="cb1-702"><a></a>    lowY<span class="op">,</span></span>
+<span id="cb1-703"><a></a>    isHighBetter<span class="op">,</span></span>
+<span id="cb1-704"><a></a>    <span class="dt">optimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> highY <span class="op">:</span> lowY<span class="op">,</span></span>
+<span id="cb1-705"><a></a>    <span class="dt">suboptimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> lowY <span class="op">:</span> highY<span class="op">,</span></span>
+<span id="cb1-706"><a></a>    <span class="dt">optimalLabel</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
+<span id="cb1-707"><a></a>    <span class="dt">optimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
+<span id="cb1-708"><a></a>    <span class="dt">suboptimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span></span>
+<span id="cb1-709"><a></a>  }<span class="op">;</span></span>
+<span id="cb1-710"><a></a>}</span>
+<span id="cb1-711"><a></a></span>
+<span id="cb1-712"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-713"><a></a><span class="co">// Plot: Visualization with all marks</span></span>
+<span id="cb1-714"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-715"><a></a>expertisePlot <span class="op">=</span> {</span>
+<span id="cb1-716"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> lines<span class="op">,</span> plot<span class="op">,</span> labels } <span class="op">=</span> config<span class="op">;</span></span>
+<span id="cb1-717"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> highY<span class="op">,</span> lowY<span class="op">,</span> isHighBetter<span class="op">,</span> optimalY<span class="op">,</span> suboptimalY<span class="op">,</span> optimalColor<span class="op">,</span> suboptimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
+<span id="cb1-718"><a></a></span>
+<span id="cb1-719"><a></a>  <span class="co">// Generate line data points</span></span>
+<span id="cb1-720"><a></a>  <span class="kw">const</span> highLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
+<span id="cb1-721"><a></a>  <span class="kw">const</span> lowLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
+<span id="cb1-722"><a></a></span>
+<span id="cb1-723"><a></a>  <span class="co">// Label positions (relative to line endpoints)</span></span>
+<span id="cb1-724"><a></a>  <span class="kw">const</span> labelOffsetY <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span>
+<span id="cb1-725"><a></a>  <span class="kw">const</span> exampleBaseY <span class="op">=</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> labelOffsetY<span class="op">;</span></span>
+<span id="cb1-726"><a></a></span>
+<span id="cb1-727"><a></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-728"><a></a>    <span class="dt">width</span><span class="op">:</span> plot<span class="op">.</span><span class="at">width</span><span class="op">,</span></span>
+<span id="cb1-729"><a></a>    <span class="dt">height</span><span class="op">:</span> plot<span class="op">.</span><span class="at">height</span><span class="op">,</span></span>
+<span id="cb1-730"><a></a>    <span class="dt">marginLeft</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">left</span><span class="op">,</span></span>
+<span id="cb1-731"><a></a>    <span class="dt">marginBottom</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">bottom</span><span class="op">,</span></span>
+<span id="cb1-732"><a></a>    <span class="dt">marginTop</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">top</span><span class="op">,</span></span>
+<span id="cb1-733"><a></a>    <span class="dt">marginRight</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">right</span><span class="op">,</span></span>
+<span id="cb1-734"><a></a>    <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
+<span id="cb1-735"><a></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-736"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-737"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
+<span id="cb1-738"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
+<span id="cb1-739"><a></a>      <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-740"><a></a>      <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
+<span id="cb1-741"><a></a>    }<span class="op">,</span></span>
+<span id="cb1-742"><a></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-743"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-744"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
+<span id="cb1-745"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb1-746"><a></a>      <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-747"><a></a>    }<span class="op">,</span></span>
+<span id="cb1-748"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-749"><a></a>      <span class="co">// Support lines</span></span>
+<span id="cb1-750"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(highLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-751"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(lowLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-752"><a></a></span>
+<span id="cb1-753"><a></a>      <span class="co">// Vertical position indicator</span></span>
+<span id="cb1-754"><a></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([x]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">neutral</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
+<span id="cb1-755"><a></a></span>
+<span id="cb1-756"><a></a>      <span class="co">// Suboptimal dot (smaller, faded)</span></span>
+<span id="cb1-757"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> suboptimalY}]<span class="op">,</span> {</span>
+<span id="cb1-758"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-759"><a></a>        <span class="dt">fill</span><span class="op">:</span> suboptimalColor<span class="op">,</span></span>
+<span id="cb1-760"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span></span>
+<span id="cb1-761"><a></a>        <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.4</span></span>
+<span id="cb1-762"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-763"><a></a></span>
+<span id="cb1-764"><a></a>      <span class="co">// Optimal dot (larger, prominent with white stroke)</span></span>
+<span id="cb1-765"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> optimalY}]<span class="op">,</span> {</span>
+<span id="cb1-766"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-767"><a></a>        <span class="dt">fill</span><span class="op">:</span> optimalColor<span class="op">,</span></span>
+<span id="cb1-768"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span></span>
+<span id="cb1-769"><a></a>        <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb1-770"><a></a>        <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
+<span id="cb1-771"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-772"><a></a></span>
+<span id="cb1-773"><a></a>      <span class="co">// High support examples (left side, near line start)</span></span>
+<span id="cb1-774"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
+<span id="cb1-775"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-776"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-777"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
+<span id="cb1-778"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-779"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-780"><a></a></span>
+<span id="cb1-781"><a></a>      <span class="co">// Low support examples (right side)</span></span>
+<span id="cb1-782"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
+<span id="cb1-783"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-784"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-785"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
+<span id="cb1-786"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-787"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-788"><a></a></span>
+<span id="cb1-789"><a></a>      <span class="co">// Line labels (near line ends)</span></span>
+<span id="cb1-790"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
+<span id="cb1-791"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
+<span id="cb1-792"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-793"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
+<span id="cb1-794"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
+<span id="cb1-795"><a></a>      })</span>
+<span id="cb1-796"><a></a>    ]</span>
+<span id="cb1-797"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-798"><a></a>}</span>
+<span id="cb1-799"><a></a></span>
+<span id="cb1-800"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-801"><a></a><span class="co">// Button Group: Custom styled segmented control</span></span>
+<span id="cb1-802"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-803"><a></a>buttonGroup <span class="op">=</span> {</span>
+<span id="cb1-804"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> optimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
+<span id="cb1-805"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> steps } <span class="op">=</span> config<span class="op">;</span></span>
+<span id="cb1-806"><a></a></span>
+<span id="cb1-807"><a></a>  <span class="kw">const</span> buttonStyle <span class="op">=</span> (isSelected<span class="op">,</span> selectColor) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb1-808"><a></a><span class="vs">    padding: 12px 18px;</span></span>
+<span id="cb1-809"><a></a><span class="vs">    border: none;</span></span>
+<span id="cb1-810"><a></a><span class="vs">    background: </span><span class="sc">${</span>isSelected <span class="op">?</span> selectColor <span class="op">:</span> colors<span class="op">.</span><span class="at">background</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-811"><a></a><span class="vs">    color: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'white'</span> <span class="op">:</span> <span class="st">'#333'</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-812"><a></a><span class="vs">    font-size: 1em;</span></span>
+<span id="cb1-813"><a></a><span class="vs">    font-weight: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'bold'</span> <span class="op">:</span> <span class="st">'normal'</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-814"><a></a><span class="vs">    cursor: pointer;</span></span>
+<span id="cb1-815"><a></a><span class="vs">    border-right: 1px solid #ddd;</span></span>
+<span id="cb1-816"><a></a><span class="vs">    transition: background 0.15s ease;</span></span>
+<span id="cb1-817"><a></a><span class="vs">  `</span><span class="op">;</span></span>
+<span id="cb1-818"><a></a></span>
+<span id="cb1-819"><a></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb1-820"><a></a></span>
+<span id="cb1-821"><a></a>  steps<span class="op">.</span><span class="fu">forEach</span>(v <span class="kw">=&gt;</span> {</span>
+<span id="cb1-822"><a></a>    <span class="kw">const</span> isSelected <span class="op">=</span> x <span class="op">===</span> v<span class="op">;</span></span>
+<span id="cb1-823"><a></a>    <span class="kw">const</span> selectColor <span class="op">=</span> v <span class="op">&lt;=</span> crossoverPoint <span class="op">?</span> colors<span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">;</span></span>
+<span id="cb1-824"><a></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button style="</span><span class="sc">${</span><span class="fu">buttonStyle</span>(isSelected<span class="op">,</span> selectColor)<span class="sc">}</span><span class="vs">"&gt;</span><span class="sc">${</span>v<span class="sc">}</span><span class="vs">%&lt;/button&gt;`</span><span class="op">;</span></span>
+<span id="cb1-825"><a></a>    btn<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-826"><a></a>      viewof vorwissen<span class="op">.</span><span class="at">value</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb1-827"><a></a>      viewof vorwissen<span class="op">.</span><span class="fu">dispatchEvent</span>(<span class="kw">new</span> <span class="bu">Event</span>(<span class="st">'input'</span><span class="op">,</span> {<span class="dt">bubbles</span><span class="op">:</span> <span class="kw">true</span>}))<span class="op">;</span></span>
+<span id="cb1-828"><a></a>    }<span class="op">;</span></span>
+<span id="cb1-829"><a></a>    container<span class="op">.</span><span class="fu">appendChild</span>(btn)<span class="op">;</span></span>
+<span id="cb1-830"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-831"><a></a></span>
+<span id="cb1-832"><a></a>  <span class="cf">return</span> container<span class="op">;</span></span>
+<span id="cb1-833"><a></a>}</span>
+<span id="cb1-834"><a></a></span>
+<span id="cb1-835"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-836"><a></a><span class="co">// Layout: Compose all elements</span></span>
+<span id="cb1-837"><a></a><span class="co">// =============================================================================</span></span>
+<span id="cb1-838"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
+<span id="cb1-839"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-840"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;"&gt;</span></span>
+<span id="cb1-841"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
+<span id="cb1-842"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>buttonGroup<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-843"><a></a><span class="vs">    &lt;div style="font-size: 1.3em; text-align: center; padding: 15px; background: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">22; border-radius: 8px; border-left: 4px solid </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">;"&gt;</span></span>
+<span id="cb1-844"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalLabel</span><span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;</span></span>
+<span id="cb1-845"><a></a><span class="vs">      &lt;span style="font-size: 0.8em; color: #666;"&gt;ist effektiver&lt;/span&gt;</span></span>
+<span id="cb1-846"><a></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-847"><a></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-848"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
 
-</section>
-<section id="die-traditionelle-annahme" class="slide level2">
-<h2>Die traditionelle Annahme</h2>
-<ul>
-<li class="fragment">Kritisches Denken als <em>übertragbare Fähigkeit</em></li>
-<li class="fragment">“21st Century Skills”-Initiativen</li>
-<li class="fragment">KI-Kompetenz als <em>generische Fertigkeit</em></li>
-<li class="fragment">“Wir müssen Studierende lehren, KI kritisch zu nutzen”</li>
-</ul>
-<div class="fragment">
-<p><strong>Aber stimmt diese Annahme?</strong></p>
-</div>
-</section>
-<section id="willinghams-herausforderung" class="slide level2">
-<h2>Willinghams Herausforderung</h2>
-<blockquote>
-<p>“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”</p>
-<p><span class="citation" data-cites="willinghamCriticalThinkingWhy2008">(<a href="#/referenzen" role="doc-biblioref" onclick="">Willingham 2008</a>)</span></p>
-</blockquote>
-<div class="fragment">
-<p><strong>Denkprozesse sind eng mit Fachwissen verflochten.</strong></p>
-<p><em>Willinghams Formulierung ist zugespitzt — aber der Kern stimmt: Transfer ist schwieriger als oft angenommen.</em></p>
-</div>
-</section>
-<section id="evidenz-für-domänenspezifität" class="slide level2">
-<h2>Evidenz für Domänenspezifität</h2>
-<ul>
-<li class="fragment">Neurologen können Herzerkrankungen nicht gut diagnostizieren</li>
-<li class="fragment">Fachredakteure können keine Zeitungsartikel schreiben</li>
-<li class="fragment">Selbst Philosophen werden von irrelevanten Merkmalen beeinflusst</li>
-</ul>
-<div class="fragment">
-<blockquote>
-<p>“Abstract principles like ‘look for hidden assumptions’ won’t help much in evaluating an argument about a topic you know little about.”</p>
-</blockquote>
-</div>
-</section>
-<section id="angewendet-auf-ki-bewertung" class="slide level2">
-<h2>Angewendet auf KI-Bewertung</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Experte in Biomedizin:</strong></p>
-<p>Erkennt, wenn ChatGPT bei Biochemie falsch liegt</p>
-<p><em>Hat das Domänenwissen zur Bewertung</em></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Novize:</strong></p>
-<p>Kann diese Bewertung nicht vornehmen, <em>unabhängig von “kritischem Denken”</em></p>
-<p><em>Fehlendes Fachwissen verhindert Evaluation</em></p>
-</div></div>
-<div class="fragment">
-<p><strong>Was wie “kritisches Denken” aussieht, ist oft Domänenwissen in Aktion.</strong></p>
-</div>
-</section>
-<section id="was-transferiert-und-was-nicht" class="slide level2">
-<h2>Was transferiert — und was nicht</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Transferiert (teilweise):</strong></p>
-<ul>
-<li>Planung des Vorgehens</li>
-<li>Überwachung des Verständnisses</li>
-<li>Selbstregulation</li>
-<li>Bereitschaft, Annahmen zu hinterfragen</li>
-</ul>
-<p><em>Metakognitive Strategien zeigen gewisse Generalisierung</em></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Transferiert kaum:</strong></p>
-<ul>
-<li>Wissen, <em>was</em> plausibel ist</li>
-<li>Wissen, <em>welche</em> Quellen autoritativ sind</li>
-<li>Erkennen von <em>fachspezifischen</em> Fehlern</li>
-</ul>
-<p><em>Inhaltliche Bewertung erfordert Domänenwissen</em></p>
-</div></div>
-<div class="fragment">
-<p><strong>Kernpunkt:</strong> Die <em>Strategien</em> kann man lehren — ihre <em>Anwendung</em> erfordert Fachwissen.</p>
-</div>
-</section>
-<section id="die-zentrale-implikation" class="slide level2">
-<h2>Die zentrale Implikation</h2>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Kernaussage</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Studierende, die “mit hohem kritischem Denken” von KI profitieren, haben wahrscheinlich mehr <strong>Domänenexpertise</strong></li>
-<li>Die beste Vorbereitung für kritische KI-Nutzung ist <strong>tiefes Fachlernen</strong></li>
-<li>Generische “KI-Kompetenz” kann Fachwissen <strong>ergänzen, aber nicht ersetzen</strong></li>
-</ul>
 </div>
 </div>
 </div>
-</section>
-<section id="diskussion-1" class="slide level2" data-background-color="#F5E6C8">
-<h2>Diskussion</h2>
-                    <div id="timer-3"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("timer-3", 300, "slide");
-                        });
-                    </script>
-                
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Kurze Diskussion</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Hast du beobachtet, dass Studierende KI-Outputs in deinem Fach nicht bewerten können?</li>
-<li>Welches Domänenwissen wäre nötig?</li>
-</ul>
-</div>
-</div>
-</div>
-</section></section>
-<section id="pause" class="title-slide slide level1 center" data-background-color="#E5E4E2">
-<h1>Pause</h1>
-                    <div id="timer-4"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("timer-4", 900, "slide");
-                        });
-                    </script>
-                
-</section>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
 
-<section>
-<section id="teil-4-das-produktivitäts-lern-paradox" class="title-slide slide level1 center" data-background-color="#F0D4D4">
-<h1>Teil 4: Das Produktivitäts-Lern-Paradox</h1>
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
 
-</section>
-<section id="das-zentrale-paradox" class="slide level2">
-<h2>Das zentrale Paradox</h2>
-<blockquote>
-<p>“Learning and task completion are not synonymous.”</p>
-<p><span class="citation" data-cites="joseOutsourcingCognitionPsychological2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Jose u.&nbsp;a. 2025</a>)</span></p>
-</blockquote>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>KI verbessert nachweislich:</strong></p>
-<ul>
-<li>Aufgabenleistung</li>
-<li>Geschwindigkeit</li>
-<li>Output-Qualität</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Aber:</strong></p>
-<p>Aufgabenleistung ≠ Lernen</p>
-<p>Produktivität ≠ Kompetenzaufbau</p>
-</div></div>
 </div>
-</section>
-<section id="die-bastani-studie-mathematik" class="slide level2">
-<h2>Die Bastani-Studie: Mathematik</h2>
-<p><strong>Randomisierte kontrollierte Studie</strong> <span class="citation" data-cites="bastaniGenerativeAIGuardrails2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Bastani u.&nbsp;a. 2025</a>)</span></p>
-<p><em>Einzelstudie, Replikation ausstehend</em></p>
-<ul>
-<li>~1000 türkische Gymnasiasten</li>
-<li>GPT-4 Zugang während des Übens</li>
-</ul>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Mit KI:</strong></p>
-<p>48% mehr Aufgaben korrekt gelöst (direkter Zugang)</p>
-<p><strong>127% mit “GPT Tutor”</strong> (strukturierte Unterstützung)</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Ohne KI (später):</strong></p>
-<p>17% schlechter als Kontrollgruppe</p>
-<p><em>Die nie KI hatte</em></p>
-</div></div>
 </div>
-<div class="fragment">
-<blockquote>
-<p>“Students attempt to use GPT-4 as a ‘crutch’ during practice sessions, and when successful, perform worse on their own.”</p>
-</blockquote>
 </div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
 </div>
-<p><strong>Nuance</strong></p>
 </div>
-<div class="callout-content">
-<p>Die Schlussfolgerungen gelten hauptsächlich für KI als <strong>Antwortgeber</strong>. KI als <strong>pädagogisch gestalteter Tutor</strong> könnte andere Effekte haben — wie die 127% beim “GPT Tutor” andeuten.</p>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="expression">
+
 </div>
 </div>
 </div>
 </div>
-</section>
-<section id="desirable-difficulties-warum-anstrengung-nötig-ist" class="slide level2">
-<h2>Desirable Difficulties: Warum Anstrengung nötig ist</h2>
-<p><strong>Robert Bjork</strong> <span class="citation" data-cites="bjorkMakingThingsHard2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Bjork und Bjork 2011</a>)</span></p>
-<blockquote>
-<p>“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”</p>
-</blockquote>
-<div class="fragment">
-<p><strong>Vier bewährte “erwünschte Schwierigkeiten”:</strong></p>
-<ol type="1">
-<li><strong>Variation</strong> der Lernbedingungen</li>
-<li><strong>Interleaving</strong>: Mischen von Aufgabentypen</li>
-<li><strong>Spacing</strong>: Verteiltes statt massiertes Lernen</li>
-<li><strong>Retrieval Practice</strong>: Abrufen statt Wiederlesen <span class="citation" data-cites="roedigerTestenhancedLearningTaking2006">(<a href="#/referenzen" role="doc-biblioref" onclick="">Roediger und Karpicke 2006</a>)</span></li>
-</ol>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Mechanismus</strong></p>
-</div>
-<div class="callout-content">
-<p>Sofortiger KI-Zugang kann Abrufversuche kurzschliessen, <em>bevor</em> sie Gedächtnisspuren stärken können.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="der-generierungseffekt" class="slide level2">
-<h2>Der Generierungseffekt</h2>
-<p><strong>Selbst generierte Information wird besser behalten</strong> <span class="citation" data-cites="slameckaGenerationEffectDelineation1978">(<a href="#/referenzen" role="doc-biblioref" onclick="">Slamecka und Graf 1978</a>)</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Selbst generiert:</strong></p>
-<p>Aktiviert breite neuronale Netzwerke</p>
-<p>Bessere Langzeitspeicherung</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Passiv erhalten:</strong></p>
-<p>Geringere Verarbeitung</p>
-<p>Schwächere Erinnerung</p>
-</div></div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Implikation</strong></p>
-</div>
-<div class="callout-content">
-<p>Wenn KI generiert, was Studierende selbst produzieren sollten, wird der Generierungseffekt eliminiert.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="die-scaffolding-hypothese" class="slide level2">
-<h2>Die Scaffolding-Hypothese</h2>
-<p><strong>Was wissen wir, was vermuten wir?</strong></p>
-<ul>
-<li class="fragment"><strong>Was wir wissen (Evidenz):</strong> Atrophie von Fähigkeiten ist dokumentiert. Eine vorhandene Fähigkeit verkümmert durch Nichtgebrauch. Das ist reversibel.</li>
-<li class="fragment"><strong>Was wir theoretisch ableiten:</strong> Wenn KI die kognitiven Prozesse übernimmt, die für Lernen notwendig sind, sollte weniger Lernen stattfinden. Das folgt aus der CLT.</li>
-<li class="fragment"><strong>Was wir vermuten (Hypothese):</strong> Es könnte einen Unterschied geben zwischen Fertigkeitsatrophie und Entwicklungsbeeinträchtigung.</li>
-</ul>
-<div class="fragment">
-<p><strong>Die Hypothese:</strong> Grundfertigkeiten wie Schreiben sind nicht nur <em>Fertigkeiten</em>, sondern <em>Prozesse</em>, die kognitive Architektur aufbauen. Schreiben könnte ein “epistemisches Werkzeug” sein.</p>
-</div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Vorsicht</strong></p>
-</div>
-<div class="callout-content">
-<p>Diese Hypothese ist plausibel, aber nicht empirisch belegt. Wir haben keine Längsschnittstudien. Die Bedenken verdienen Aufmerksamkeit, sollten aber nicht als gesicherte Fakten behandelt werden.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="historische-analogien" class="slide level2">
-<h2>Historische Analogien</h2>
-<p><strong>GPS und räumliches Gedächtnis</strong> <span class="citation" data-cites="dahmaniHabitualUseGPS2020">(<a href="#/referenzen" role="doc-biblioref" onclick="">Dahmani und Bohbot 2020</a>)</span></p>
-<ul>
-<li>Stärkere GPS-Nutzung korreliert mit steilerem Rückgang des räumlichen Gedächtnisses</li>
-<li>Longitudinale Studie über 3 Jahre</li>
-<li>Zeitliche Abfolge konsistent mit kausaler Interpretation (ungemessene Konfundierende nicht ausgeschlossen)</li>
-</ul>
-<div class="fragment">
-<p><strong>Konzeptuelles Verständnis</strong> <span class="citation" data-cites="lortie-forguesConceptualKnowledgeDecimal2017">(<a href="#/referenzen" role="doc-biblioref" onclick="">Lortie-Forgues und Siegler 2017</a>)</span></p>
-<ul>
-<li>Auch Erwachsene mit Rechenhilfen zeigen Lücken im konzeptuellen Verständnis</li>
-<li><strong>Werkzeugnutzung ersetzt kein Grundverständnis</strong></li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>Google-Effekt</strong> <span class="citation" data-cites="sparrowGoogleEffectsMemory2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Sparrow, Liu, und Wegner 2011</a>)</span></p>
-<ul>
-<li>Geringere Erinnerung, wenn Information als verfügbar erwartet wird</li>
-<li>Menschen erinnern <em>wo</em>, nicht <em>was</em></li>
-</ul>
-</div>
-</section>
-<section id="grenzen-historischer-analogien" class="slide level2">
-<h2>Grenzen historischer Analogien</h2>
-<ul>
-<li class="fragment">GPS, Taschenrechner, Google: jeweils <em>spezifische</em>, <em>enge</em> kognitive Funktionen</li>
-<li class="fragment">Generative KI kann fast <em>jede</em> kognitive Aufgabe übernehmen</li>
-<li class="fragment">Schreiben, Argumentieren, Analysieren, Synthetisieren, Bewerten</li>
-<li class="fragment">Die Breite ist beispiellos</li>
-</ul>
-<div class="fragment">
-<p><strong>Aber:</strong> Die historischen Bedenken hatten oft Berechtigung. GPS <em>beeinflusst</em> räumliche Kognition. Taschenrechner <em>veränderten</em> Mathematikunterricht.</p>
-</div>
-</section>
-<section id="der-edtech-hype-zyklus" class="slide level2">
-<h2>Der EdTech-Hype-Zyklus</h2>
-<p><strong>Bildungstechnologien folgen einem wiederkehrenden Muster</strong> <span class="citation" data-cites="reichFailureDisruptWhy2020">(<a href="#/referenzen" role="doc-biblioref" onclick="">Reich 2020</a>)</span></p>
-<ul>
-<li class="fragment"><strong>Radio</strong> sollte die besten Vorlesungen in jedes Klassenzimmer bringen</li>
-<li class="fragment"><strong>Fernsehen</strong> sollte Lernen revolutionieren</li>
-<li class="fragment"><strong>Computer</strong> sollten Unterricht personalisieren</li>
-<li class="fragment"><strong>MOOCs</strong> sollten Elite-Bildung demokratisieren</li>
-</ul>
-<div class="fragment">
-<p>Jede Technologie fand eine Nische, aber keine erfüllte die transformativen Versprechen.</p>
-</div>
-<div class="fragment">
-<p><strong>Was macht KI anders?</strong> Die Breite ist beispiellos. Aber dieselben strukturellen Kräfte könnten wirken.</p>
-</div>
-</section>
-<section id="das-haben-sie-über-das-schreiben-auch-gesagt" class="slide level2">
-<h2>“Das haben sie über das Schreiben auch gesagt”</h2>
-<p><strong>Sokrates’ Warnung im Phaidros:</strong> Schrift wird das Gedächtnis schwächen.</p>
-<div class="fragment">
-<p><strong>Drei Antworten:</strong></p>
-<ol type="1">
-<li class="fragment">Schrift <em>hat</em> Kognition tiefgreifend verändert</li>
-<li class="fragment">Einige Bedenken waren berechtigt (mündliche Gedächtnistraditionen <em>sind</em> zurückgegangen)</li>
-<li class="fragment">Schriftkultur entwickelte sich über Jahrhunderte — KI-Integration geschieht in Jahren</li>
-</ol>
-</div>
+<p><br> <br></p>
+<p>Der Expertise-Umkehr-Effekt <span class="citation" data-cites="kalyugaExpertiseReversalEffect2009">(<a href="#/referenzen" role="doc-biblioref" onclick="">Kalyuga 2009</a>)</span>.</p>
+<aside class="notes">
+<p>Das bringt uns zu einem der wichtigsten Befunde der Instruktionsforschung: dem Expertise-Umkehr-Effekt.</p>
+<p>Sie können die Prozent-Buttons anklicken, um zu sehen, wie sich die optimale Lehrmethode verändert.</p>
+<p>Auf der x-Achse sehen Sie das Vorwissen des Lernenden. Auf der y-Achse den Lerneffekt.</p>
+<p>Die magentafarbene Linie zeigt hohe Unterstützung: ausgearbeitete Beispiele, direkte Instruktion. Die graue Linie zeigt niedrige Unterstützung: problembasiertes Lernen, eigene Lösungswege.</p>
+<p>Bei niedrigem Vorwissen ist hohe Unterstützung klar besser. Novizen brauchen Struktur.</p>
+<p>Aber bei hohem Vorwissen kehrt sich der Effekt um. Für Experten ist niedrige Unterstützung besser. Die detaillierten Anleitungen werden redundant und stören sogar.</p>
+<p>Das ist der Expertise-Umkehr-Effekt: Was für Novizen optimal ist, ist für Experten suboptimal. Und umgekehrt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="warum-experten-profitieren-lernende-nicht" class="slide level2">
 <h2>Warum Experten profitieren, Lernende nicht</h2>
+<p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Experten können:</strong></p>
+<p><strong>Experten:</strong></p>
+<p><br></p>
 <ul>
-<li>Routine-Aufgaben sicher auslagern (sie wissen, was “Routine” ist)</li>
-<li>Höheres Denken aufrechterhalten (kognitive Kapazität wird frei)</li>
-<li>KI-Outputs bewerten (sie haben Domänenexpertise)</li>
-<li>Ihre Grundfähigkeiten verkümmern nicht (sie sind schon da)</li>
+<li><i class="fa-solid fa-cogs" aria-label="cogs"></i> Können Routine auslagern</li>
+<li><i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> Können KI-Output bewerten</li>
+<li><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Mehr Kapazität für Komplexes</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Lernenden fehlt:</strong></p>
+<p><strong>Lernende:</strong></p>
+<p><br></p>
 <ul>
-<li>Wissen zur Bewertung (sie können nicht einschätzen, ob KI richtig liegt)</li>
-<li>Etablierte Grundfähigkeiten (was nicht da ist, entsteht auch nicht)</li>
-<li>Metakognitive Kontrolle (sie wissen nicht, wann KI-Nutzung schadet)</li>
+<li><i class="fa-solid fa-eye-slash" aria-label="eye-slash"></i> Können nicht bewerten</li>
+<li><i class="fa-solid fa-forward-fast" aria-label="forward-fast"></i> Überspringen Grundlagen</li>
+<li><i class="fa-solid fa-mask" aria-label="mask"></i> Risiko: “Fliessende Inkompetenz”</li>
 </ul>
 </div></div>
 <div class="fragment">
-<p>Das Ergebnis kann <strong>“fliessende Inkompetenz”</strong> sein: Anspruchsvoll wirkende Outputs ohne zugrundeliegendes Verständnis.</p>
-</div>
-<div class="fragment">
-<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen. Das ist der Expertise-Umkehr-Effekt, angewandt auf KI.</strong></p>
-</div>
-</section>
-<section id="diskussion-think-pair-share-1" class="slide level2" data-background-color="#F5E6C8">
-<h2>Diskussion: Think-Pair-Share</h2>
-                    <div id="timer-5"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("timer-5", 900, "slide");
-                        });
-                    </script>
-                
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Reflexion</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Think:</strong> Wo könnte KI-Unterstützung in deinem Fach die produktive Anstrengung eliminieren, die Lernen ermöglicht?</p>
-<p><strong>Pair:</strong> Diskutiere mit deinem Nachbarn.</p>
-<p><strong>Share:</strong> Welche Grundfähigkeiten könnten bei KI-Nutzung verkümmern?</p>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="exkurs-sokratisches-fragen-in-ki-tutoren" class="title-slide slide level1 center" data-background-color="#F0D4D4">
-<h1>Exkurs: “Sokratisches Fragen” in KI-Tutoren</h1>
-
-</section>
-<section id="der-hype-um-den-digitalen-sokrates" class="slide level2">
-<h2>Der Hype um den digitalen Sokrates</h2>
-<ul>
-<li class="fragment">EdTech verspricht: KI-Tutoren mit “sokratischer Methode”</li>
-<li class="fragment">Blooms “Two Sigma Problem” <span class="citation" data-cites="bloom2SigmaProblem1984">(<a href="#/referenzen" role="doc-biblioref" onclick="">BLOOM 1984</a>)</span>: 1:1-Tutoring erzielt 2 SD Verbesserung</li>
-<li class="fragment"><strong>Versprechen:</strong> Demokratisierung personalisierter Bildung durch KI</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Aber</strong></p>
-</div>
-<div class="callout-content">
-<p>Die Begeisterung übersteigt die Evidenz erheblich.</p>
-</div>
-</div>
-</div>
+<p><br></p>
+<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</strong></p>
+<aside class="notes">
+<p>Jetzt können wir zusammenfassen, warum Experten und Lernende so unterschiedlich von KI-Werkzeugen betroffen sind.</p>
+<p>[KLICK] Experten können Routine auslagern. Sie können KI-Output bewerten. Und sie haben mehr Kapazität für Komplexes.</p>
+<p>[KLICK] Lernende hingegen können KI-Output nicht bewerten. Sie überspringen möglicherweise Grundlagen. Und das Risiko ist “fliessende Inkompetenz”: Sie können mit Hilfe alles, ohne Hilfe nichts.</p>
+<p>[KLICK] Das Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="warum-fragen-theoretisch-helfen-könnten" class="slide level2">
-<h2>Warum Fragen theoretisch helfen könnten</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Generierungseffekt</strong></p>
-<p>Selbst erzeugte Antworten werden besser behalten als passiv erhaltene <span class="citation" data-cites="slameckaGenerationEffectDelineation1978">(<a href="#/referenzen" role="doc-biblioref" onclick="">Slamecka und Graf 1978</a>)</span></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Selbsterklärungseffekt</strong></p>
-<p>Erklären fördert tiefere Verarbeitung und deckt Wissenslücken auf <span class="citation" data-cites="chiElicitingSelfExplanationsImproves1994">(<a href="#/referenzen" role="doc-biblioref" onclick="">Chi u.&nbsp;a. 1994</a>)</span></p>
-</div></div>
-<div class="fragment">
-<p><strong>Aber:</strong> Diese Effekte erfordern, dass Lernende genug Vorwissen haben, um sinnvolle Antworten zu generieren.</p>
-</div>
-</section>
-<section id="was-die-evidenz-tatsächlich-zeigt" class="slide level2">
-<h2>Was die Evidenz tatsächlich zeigt</h2>
-<p><strong><span class="citation" data-cites="vanlehnRelativeEffectivenessHuman2011">VanLEHN (<a href="#/referenzen" role="doc-biblioref" onclick="">2011</a>)</span>:</strong> Meta-Analyse zu Tutoring</p>
-<ul>
-<li class="fragment">Menschliche Tutoren: <strong>d = 0.79</strong> (nicht 2.0 wie Bloom behauptete)</li>
-<li class="fragment">Intelligente Tutorsysteme: <strong>d = 0.76</strong> (vergleichbar)</li>
-<li class="fragment"><strong>Aber:</strong> Schritt-für-Schritt-Feedback war wesentlich; die Rolle des sokratischen Dialogs ist schwer zu isolieren</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Zu LLM-basierten sokratischen Tutoren</strong></p>
-</div>
-<div class="callout-content">
-<p>Keine gut kontrollierten RCTs vorhanden. Die Evidenz besteht hauptsächlich aus Zufriedenheitsumfragen und Vergleichen mit “kein Tutoring”.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="das-diagnose-problem" class="slide level2">
-<h2>Das Diagnose-Problem</h2>
-<p><strong>Effektives sokratisches Fragen erfordert:</strong></p>
-<ul>
-<li class="fragment">Genaue Einschätzung des aktuellen Wissensstands</li>
-<li class="fragment">Unterscheidung verschiedener Fehlertypen</li>
-<li class="fragment">Anpassung der Fragen an den Lernenden</li>
-</ul>
-<div class="fragment">
-<p><strong>Beispiel:</strong> “1/2 + 1/3 = 2/5” kann bedeuten:</p>
-<ul>
-<li>Prozeduraler Fehler (Zähler und Nenner addiert)</li>
-<li>Konzeptueller Fehler (versteht Brüche nicht)</li>
-<li>Flüchtigkeitsfehler</li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>KI-Systeme können diese Unterscheidung nicht zuverlässig treffen.</strong></p>
-</div>
-</section>
-<section id="weitere-implementierungsherausforderungen" class="slide level2">
-<h2>Weitere Implementierungsherausforderungen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Fragesequenzierung</strong></p>
-<ul>
-<li>Sokratischer Dialog ist kontingent</li>
-<li>Jede Frage baut auf vorherigen Antworten auf</li>
-<li>LLMs generieren Token, keine pädagogischen Pläne</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Feedback-Timing</strong></p>
-<ul>
-<li>Wann korrigieren, wann weiter fragen?</li>
-<li>Abhängig von Lernenden und Fehlertyp</li>
-<li>KI kann das nicht zuverlässig beurteilen</li>
-</ul>
-</div></div>
-<div class="fragment">
-<p><strong>Tendenz von LLMs:</strong> Zu nachgiebig, akzeptieren falsche Antworten, vermeiden produktives Unbehagen</p>
-</div>
-</section>
-<section id="praktische-empfehlungen" class="slide level2">
-<h2>Praktische Empfehlungen</h2>
-<ol type="1">
-<li class="fragment"><strong>Evidenz verlangen:</strong> Peer-Review-Studien mit Lernoutcomes, nicht nur Zufriedenheit</li>
-<li class="fragment"><strong>Diagnose-Fähigkeit prüfen:</strong> Kann das System verschiedene Fehlertypen unterscheiden?</li>
-<li class="fragment"><strong>Opportunitätskosten bedenken:</strong> Ist KI-Tutoring besser als Alternativen?</li>
-<li class="fragment"><strong>Mit strukturierten Domänen beginnen:</strong> Mathematik vor Literaturanalyse</li>
-<li class="fragment"><strong>Auf unbeabsichtigte Folgen achten:</strong> Gaming, Abhängigkeit von externen Prompts</li>
-</ol>
-</section>
-<section id="fazit-zum-sokratischen-ki-tutoring" class="slide level2">
-<h2>Fazit zum sokratischen KI-Tutoring</h2>
+<section id="kritisches-denken-braucht-fachwissen" class="slide level2">
+<h2>Kritisches Denken braucht Fachwissen</h2>
+<p><br></p>
 <blockquote>
-<p>“Die ehrliche Antwort ist: Wir wissen es noch nicht.”</p>
+<p>“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”</p>
+<p>Daniel Willingham <span class="citation" data-cites="willinghamCriticalThinkingWhy2008">(<a href="#/referenzen" role="doc-biblioref" onclick="">Willingham 2008</a>)</span></p>
 </blockquote>
 <div class="fragment">
+<p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Was plausibel ist:</strong></p>
-<p>Selbsterklärung und Generierung fördern Lernen</p>
+<p><strong>Biomedizin-Experte:</strong></p>
+<p>Erkennt, wenn ChatGPT bei Biochemie falsch liegt</p>
 </div><div class="column" style="width:50%;">
-<p><strong>Was nicht belegt ist:</strong></p>
-<p>Dass aktuelle KI-Systeme dies effektiv implementieren können</p>
+<p><strong>Novize:</strong></p>
+<p>Kann diese Bewertung nicht vornehmen</p>
 </div></div>
 </div>
 <div class="fragment">
-<p><strong>Sokrates würde es schätzen:</strong> Die beste Art, Werkzeuge zu bewerten, die seine Methode beanspruchen, ist, kritische Fragen zu stellen und unbegründete Antworten nicht zu akzeptieren.</p>
-</div>
-</section></section>
-<section>
-<section id="teil-5-implikationen-und-synthese" class="title-slide slide level1 center" data-background-color="#F0D4D4">
-<h1>Teil 5: Implikationen und Synthese</h1>
-
-</section>
-<section id="die-unbequeme-wahrheit" class="slide level2">
-<h2>Die unbequeme Wahrheit</h2>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Kernaussage</strong></p>
-</div>
-<div class="callout-content">
-<p>Was KI für Produktivität nützlich macht, <strong>droht</strong> sie für Lernen schädlich zu machen.</p>
-<p>Sofortige Antworten <strong>können</strong> die Anstrengung eliminieren, die Kompetenz aufbaut.</p>
-<p><strong>Dies ist kein Mangel aktueller KI. Es folgt aus etablierten Prinzipien der Kognitionswissenschaft. Die Frage ist daher nicht ob, sondern wie KI eingesetzt wird.</strong></p>
-</div>
-</div>
+<p><br></p>
+<p><strong>Du kannst nicht kritisch bewerten, was du nicht verstehst.</strong></p>
 </div>
 <div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Einschränkung</strong></p>
-</div>
-<div class="callout-content">
-<p>Es gibt noch wenige Studien, die <em>direkt</em> messen, wie KI-Nutzung Lernen über längere Zeit beeinflusst. Die theoretische Argumentation basiert auf etablierten Prinzipien, aber empirische Langzeitstudien zu generativer KI fehlen noch.</p>
-</div>
-</div>
-</div>
+<p><br></p>
+<p><span style="color: #666; font-style: italic;">Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.</span></p>
+<aside class="notes">
+<p>An diesem Punkt höre ich oft einen Einwand: “Dann bringen wir den Studierenden eben bei, KI-Output kritisch zu prüfen.”</p>
+<p>Aber hier kommt ein wichtiger Punkt von Daniel Willingham: Kritisches Denken ist keine kontextfreie Fähigkeit. Man kann nicht einfach “kritisch denken lernen” und es dann überall anwenden.</p>
+<p>[KLICK] Ein Biomedizin-Experte erkennt, wenn ChatGPT bei Biochemie falsch liegt. Ein Novize kann diese Bewertung nicht vornehmen.</p>
+<p>[KLICK] Die Kernaussage: Du kannst nicht kritisch bewerten, was du nicht verstehst.</p>
+<p>[KLICK] Und genau deshalb ist Fachwissen so entscheidend.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="mind-extending-vs.-mind-replacing" class="slide level2">
-<h2>Mind-extending vs.&nbsp;Mind-replacing</h2>
-<p><strong>Andy Clark</strong> <span class="citation" data-cites="clarkExtendingMindsGenerative2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Clark 2025</a>)</span></p>
+<section id="kognition-erweitern-vs.-ersetzen" class="slide level2">
+<h2>Kognition erweitern vs.&nbsp;ersetzen</h2>
+<p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Kognition erweitern:</strong></p>
+<p><strong><i class="fa-solid fa-expand" aria-label="expand"></i> Kognition erweitern:</strong></p>
+<p><br></p>
 <ul>
-<li>Der Mensch bleibt kognitiv engagiert</li>
+<li>Mensch bleibt kognitiv engagiert</li>
 <li>Werkzeug verstärkt, ersetzt nicht</li>
-<li>Beispiel: Taschenrechner für Mathematiker</li>
-<li>Fähigkeiten bleiben erhalten und werden ausgebaut</li>
+<li>Fähigkeiten bleiben erhalten</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Kognition ersetzen:</strong></p>
+<p><strong><i class="fa-solid fa-compress" aria-label="compress"></i> Kognition ersetzen:</strong></p>
+<p><br></p>
 <ul>
-<li>Der Mensch wird passiv</li>
+<li>Mensch wird passiv</li>
 <li>Werkzeug übernimmt das Denken</li>
-<li>Beispiel: KI schreibt Essay, Studierender submittet</li>
-<li>Abhängigkeit entsteht, Fähigkeiten verkümmern</li>
+<li>Abhängigkeit entsteht</li>
 </ul>
 </div></div>
 <div class="fragment">
-<p><strong>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.</strong></p>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Aus Sicht der Cognitive Load Theory</strong></p>
-</div>
-<div class="callout-content">
-<p>Wissen im Langzeitgedächtnis unterscheidet sich fundamental von extern zugänglichem Wissen. Internalisiertes Wissen ermöglicht automatische Mustererkennung, befreit das Arbeitsgedächtnis und erlaubt höheres Denken. Externer Zugang erfordert immer bewusste Abrufprozesse.</p>
-</div>
-</div>
-</div>
+<p><br></p>
+<p><strong>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung</strong> <span class="citation" data-cites="clarkExtendingMindsGenerative2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Clark 2025</a>)</span>.</p>
+<aside class="notes">
+<p>Andy Clark, ein Philosoph, hat eine nützliche Unterscheidung eingeführt.</p>
+<p>[KLICK] Kognition erweitern: Der Mensch bleibt kognitiv engagiert. Das Werkzeug verstärkt, ersetzt nicht. Die Fähigkeiten bleiben erhalten.</p>
+<p>[KLICK] Kognition ersetzen: Der Mensch wird passiv. Das Werkzeug übernimmt das Denken. Es entsteht Abhängigkeit.</p>
+<p>[KLICK] Und hier ist der wichtige Punkt: Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung.</p>
+<p>ChatGPT kann ein Brainstorming-Partner sein, der die eigene Kreativität verstärkt. Oder es kann ein Ghostwriter sein, der das Denken ersetzt. Die Frage ist nicht das Werkzeug. Die Frage ist die Nutzung.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="die-sequenzierungsfrage" class="slide level2">
 <h2>Die Sequenzierungsfrage</h2>
+<p><br></p>
+<div style="text-align: center; font-size: 1.3em; margin-bottom: 40px;">
+<p><span style="color: #A3195B; font-weight: bold;">Novize</span> ——— <span style="background: #D4A03E; padding: 5px 15px; border-radius: 4px;"><strong>Schwelle?</strong></span> ——— <span style="color: #24526B; font-weight: bold;">Experte</span></p>
+</div>
 <ul>
-<li class="fragment">Studierende brauchen wahrscheinlich <strong>Grundwissen BEVOR</strong> KI vorteilhaft wird</li>
-<li class="fragment">Der Expertise-Umkehr-Effekt empfiehlt <strong>dynamische</strong> KI-Nutzungsregeln</li>
-<li class="fragment">Die Schwelle, ab der KI von schädlich zu hilfreich wechselt, ist <strong>unbekannt</strong></li>
-<li class="fragment">Die Antwort ist vermutlich <strong>domänen- und personenspezifisch</strong></li>
+<li class="fragment">Die Schwelle ist <strong>unbekannt</strong> und empirisch nicht bestimmt</li>
+<li class="fragment">Sie variiert nach <strong>Domäne</strong> und <strong>Person</strong></li>
+<li class="fragment">Der Expertise-Umkehr-Effekt erfordert <strong>dynamische</strong> KI-Nutzungsempfehlungen</li>
 </ul>
 <div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p><br></p>
+<div style="text-align: center; font-size: 1.2em;">
+<p><strong>Wer profitiert von KI-Werkzeugen? Wer nicht?</strong></p>
 </div>
-<p><strong>Keine Pauschallösungen</strong></p>
-</div>
-<div class="callout-content">
-<p>Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen: abhängig vom Fach, vom Vorwissen und den Lernzielen.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="die-entwicklungsfrage" class="slide level2">
-<h2>Die Entwicklungsfrage</h2>
-<p><strong>Kognitive Entwicklung und KI</strong></p>
-<ul>
-<li class="fragment">Der präfrontale Kortex entwickelt sich bis etwa Mitte 20 (individuelle Variation erheblich)</li>
-<li class="fragment">Exekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung</li>
-<li class="fragment"><strong>Paradox:</strong> Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Die Kohortenfrage</strong></p>
-</div>
-<div class="callout-content">
-<p>Die aktuelle Studierendengeneration ist möglicherweise die erste, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft.</p>
-<p>Wenn wir Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.</p>
-</div>
-</div>
-</div>
+<aside class="notes">
+<p>Das bringt uns zur praktischen Frage: Wenn Experten profitieren und Lernende Gefahr laufen, wann ist der Übergang?</p>
+<p>Links der Novize, rechts der Experte. Irgendwo dazwischen liegt eine Schwelle.</p>
+<p>[KLICK] Das Problem ist: Diese Schwelle ist unbekannt.</p>
+<p>[KLICK] Sie variiert nach Domäne und Person.</p>
+<p>[KLICK] Der Expertise-Umkehr-Effekt erfordert dynamische Empfehlungen.</p>
+<p>[KLICK] Die praktische Frage: Wer profitiert von KI-Werkzeugen? Und wer nicht? Diese Frage können wir nicht pauschal beantworten.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="die-soziale-dimension" class="slide level2">
-<h2>Die soziale Dimension</h2>
-<p><strong>Lernen ist nicht nur ein kognitiver, sondern ein sozialer Prozess</strong> <span class="citation" data-cites="reichFailureDisruptWhy2020">(<a href="#/referenzen" role="doc-biblioref" onclick="">Reich 2020</a>)</span></p>
-<ul>
-<li class="fragment">Studierende lernen besser, wenn sie sich mit Lehrenden und Peers verbunden fühlen</li>
-<li class="fragment">Peers werden seltener konsultiert, wenn KI antwortet: kollaboratives Lernen leidet</li>
-<li class="fragment">Beziehungen zu Lehrenden werden oberflächlicher, wenn Rückfragen an die KI gehen</li>
-<li class="fragment">Gelegenheiten für Mentoring und informelles Lernen nehmen ab</li>
-</ul>
+<section id="die-kernaussage" class="slide level2">
+<h2>Die Kernaussage</h2>
 <div class="fragment">
-<p><strong>Die Rolle der Lehrperson:</strong> Wenn KI sofortige Antworten und Feedback liefert, verschiebt sich die Rolle der Lehrenden. Beziehung, Motivation, Vorbild, Kontext: diese unersetzliche Funktion muss neu definiert werden.</p>
+<div style="font-size: 2em; text-align: center; margin-top: 1.5em; font-weight: 700; color: #24526B;">
+<p>KI-Werkzeuge sind für Experten gemacht.</p>
+</div>
+</div>
+<div class="fragment">
+<div style="display: flex; justify-content: center; gap: 3em; margin-top: 2em; margin-bottom: 2em;">
+<div style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #D4A03E;">
+<p><span style="font-size: 1.1em; color: #24526B;">Sie machen Experten produktiver.</span></p>
+</div>
+<div style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #A3195B;">
+<p><span style="font-size: 1.1em; color: #A3195B;">Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.</span></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;">
+<p><span style="font-size: 1.4em; color: #A3195B;"><strong>Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.</strong></span></p>
+</div>
+<aside class="notes">
+<p>[Pause, dann KLICK] KI-Werkzeuge sind für Experten gemacht.</p>
+<p>[KLICK] Das ist keine Wertung, sondern eine Feststellung. Diese Werkzeuge wurden von Experten entwickelt und funktionieren am besten für Menschen, die bereits wissen, was sie tun.</p>
+<p>Sie machen Experten produktiver.</p>
+<p>[KLICK] Aber: Lernende profitieren oft nicht. Lernen erfordert genau die kognitive Anstrengung, die KI zu eliminieren droht.</p>
+<p>Das ist nicht KI-Feindlichkeit. Lernen braucht Anstrengung. KI kann diese Anstrengung reduzieren, wenn sie passiv genutzt wird. Aber: Es ist nicht unvermeidlich. Erinnern Sie sich an den GPT-Tutor? Die Art der Nutzung entscheidet.</p>
+<p>[KLICK] Die Konsequenz: Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht. Nicht “keine KI”, aber “Fundament zuerst”.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="die-equity-dimension" class="slide level2">
-<h2>Die Equity-Dimension</h2>
-<p><strong>Die dritte digitale Kluft</strong> <span class="citation" data-cites="michaeltrucanoAINextDigital2023">(<a href="#/referenzen" role="doc-biblioref" onclick="">Michael Trucano 2023</a>)</span></p>
+<section id="was-bedeutet-das-für-die-lehre" class="slide level2">
+<h2>Was bedeutet das für die Lehre?</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><i class="fa-solid fa-dumbbell fa-3x" aria-label="dumbbell"></i></p>
+<p><br></p>
+<p><strong>Anstrengung ist das Signal</strong></p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-solid fa-comments fa-3x" aria-label="comments"></i></p>
+<p><br></p>
+<p><strong>KI als Tutor, nicht als Antwortgeber</strong></p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-solid fa-stairs fa-3x" aria-label="stairs"></i></p>
+<p><br></p>
+<p><strong>Expertise bestimmt den Nutzen</strong></p>
+</div></div>
 <div class="fragment">
-<table class="caption-top">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 34%">
-<col style="width: 34%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Erste Kluft</th>
-<th>Zweite Kluft</th>
-<th>Dritte Kluft</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Zugang zu Geräten</td>
-<td>Fähigkeit zur sinnvollen Nutzung</td>
-<td>Qualität der pädagogischen Integration</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fragment">
-<p><strong>Konkrete Ungleichheiten:</strong></p>
-<ul>
-<li><strong>Kosten:</strong> Premium-KI-Werkzeuge kosten Geld. Wer kann sich ChatGPT Plus leisten?</li>
-<li><strong>Institutionelle Ressourcen:</strong> Welche Hochschulen haben Zeit und Expertise für durchdachte Integration?</li>
-<li><strong>Betreuung:</strong> Wer hat Dozierende, die über KI-Risiken aufklären?</li>
-</ul>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><span style="color: #666;">Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.</span></p>
+</div><div class="column" style="width:33%;">
+<p><span style="color: #666;">KI soll Denkprozesse anregen, nicht ersetzen.</span></p>
+</div><div class="column" style="width:33%;">
+<p><span style="color: #666;">Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.</span></p>
+</div></div>
 </div>
 <div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Risiko</strong></p>
-</div>
-<div class="callout-content">
-<p>“Demokratisierung” von Bildung durch KI könnte genau jene benachteiligen, denen sie helfen soll.</p>
-<p>Das MOOC-Muster wiederholt sich möglicherweise: Eine Technologie, die “allen” zugänglich ist, nützt vor allem jenen, die bereits die Voraussetzungen mitbringen.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="der-stärkste-gegeneinwand" class="slide level2">
-<h2>Der stärkste Gegeneinwand</h2>
-<blockquote>
-<p>“Wenn KI immer verfügbar ist, müssen Fähigkeiten nicht internalisiert werden.”</p>
-</blockquote>
-<div class="fragment">
-<p><strong>Vier Antworten:</strong></p>
-<ol type="1">
-<li class="fragment"><strong>Permanenzannahme</strong>: Setzt voraus, dass KI immer verfügbar, funktional und bezahlbar bleibt</li>
-<li class="fragment"><strong>Rekursionsproblem</strong>: Wer erkennt, wenn KI falsch liegt? Wer erweitert menschliches Wissen?</li>
-<li class="fragment"><strong>Autonomie-Argument</strong>: Eigenständige kognitive Fähigkeit hat intrinsischen Wert</li>
-<li class="fragment"><strong>Unbekannte Unbekannte</strong>: Wir wissen nicht, welche Kaskadeneffekte folgen könnten</li>
-</ol>
-</div>
-</section>
-<section id="was-wir-noch-nicht-wissen" class="slide level2">
-<h2>Was wir noch nicht wissen</h2>
-<ul>
-<li class="fragment"><strong>Längsschnittstudien über Jahre:</strong> Praktisch nicht vorhanden</li>
-<li class="fragment"><strong>Transfer auf neue Kontexte:</strong> Unerforscht</li>
-<li class="fragment"><strong>Optimale Scaffolding-Bedingungen:</strong> Unbekannt</li>
-<li class="fragment"><strong>Disziplinspezifische Effekte:</strong> Untererforscht</li>
-<li class="fragment"><strong>Publikationsbias:</strong> Wahrscheinlich vorhanden</li>
-</ul>
-<div class="fragment">
-<p><strong>Epistemische Bescheidenheit ist angebracht.</strong></p>
-</div>
-</section>
-<section id="fazit-die-zentrale-botschaft" class="slide level2">
-<h2>Fazit: Die zentrale Botschaft</h2>
-<blockquote>
-<p>KI-Werkzeuge sind primär für Experten konzipiert. Sie machen Experten produktiver, während Lernende ohne durchdachte Integration oft nicht profitieren, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.</p>
-</blockquote>
-<div class="fragment">
-<p><strong>Die Argumentation stützt sich auf:</strong></p>
-<ul>
-<li>Cognitive Load Theory: Produktive Anstrengung durch das Nadelöhr des Arbeitsgedächtnisses</li>
-<li>Expertise-Umkehr-Effekt: Dieselbe Unterstützung kann Novizen helfen und Experten schaden</li>
-<li>Domänenspezifität: Kritische KI-Bewertung erfordert Fachwissen</li>
-<li>Desirable Difficulties: Schwierigkeiten optimieren oft Langzeitbehalten</li>
-<li>Generierungseffekt: Selbst erzeugte Information wird besser behalten</li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>Die praktischen Implikationen:</strong> Grundlagen vor Werkzeugen | Prozess bewerten | Nach Vorwissen differenzieren | “Ohne-KI”-Phasen | Kritische KI-Nutzung im Fachkontext üben</p>
-</div>
-</section>
-<section id="abschliessende-provokationen" class="slide level2">
-<h2>Abschliessende Provokationen</h2>
-<blockquote>
-<p>“If AI assistance during education impairs independent capability, students may graduate less prepared for contexts where AI is unavailable.”</p>
-</blockquote>
-<div class="fragment">
-<blockquote>
-<p>“The productivity gains during education would come at the cost of capability thereafter.”</p>
-</blockquote>
-</div>
-<div class="fragment">
-<blockquote>
-<p>“Whether this tradeoff is acceptable depends on assumptions about the future that educators cannot verify.”</p>
-</blockquote>
-</div>
-<div class="fragment">
-<blockquote>
-<p>“Wenn wir uns bei den Risiken irren, haben wir die Einführung nützlicher Technologie etwas verlangsamt. Wenn sich die Kritiker bei der Sicherheit irren, haben wir möglicherweise die kognitive Entwicklung einer Generation beeinträchtigt.”</p>
-</blockquote>
-</div>
-</section>
-<section id="offene-diskussion" class="slide level2" data-background-color="#F5E6C8">
-<h2>Offene Diskussion</h2>
-                    <div id="timer-6"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("timer-6", 900, "slide");
-                        });
-                    </script>
-                
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Diskussionsfragen</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Was bedeutet das für deine Lehre?</li>
-<li>Wo siehst du die Experten-Lernenden-Unterscheidung in der Praxis?</li>
-<li>Was sind die schwierigsten Fragen, die das aufwirft?</li>
-</ul>
-</div>
-</div>
+<p><br></p>
+<p><strong>Grundlagen BEVOR Werkzeuge</strong></p>
+<aside class="notes">
+<p>Zum Abschluss: Was bedeutet das konkret für unsere Lehre?</p>
+<p>[KLICK] Erstens: Anstrengung ist das Signal. Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.</p>
+<p>[KLICK] Zweitens: KI als Tutor, nicht als Antwortgeber. KI soll Denkprozesse anregen, nicht ersetzen.</p>
+<p>[KLICK] Drittens: Expertise bestimmt den Nutzen. Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.</p>
+<p>[KLICK] Und die Zusammenfassung: Grundlagen BEVOR Werkzeuge.</p>
+<p>Erst das Fundament, dann die Erweiterung. Erst verstehen, dann automatisieren. Erst selbst können, dann delegieren.</p>
+<p>Vielen Dank.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="referenzen" class="slide level2 smaller scrollable">
 <h2>Referenzen</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-andersonAcquisitionCognitiveSkill1982" class="csl-entry" role="listitem">
-Anderson, John R. 1982. <span>„Acquisition of Cognitive Skill“</span>. <em>Psychological Review</em> 89 (4): 369–406. <a href="https://doi.org/10.1037/0033-295X.89.4.369">https://doi.org/10.1037/0033-295X.89.4.369</a>.
-</div>
 <div id="ref-bastaniGenerativeAIGuardrails2025" class="csl-entry" role="listitem">
 Bastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. <span>„Generative <span>AI</span> Without Guardrails Can Harm Learning: <span>Evidence</span> from High School Mathematics“</span>. <em>Proceedings of the National Academy of Sciences of the United States of America</em> 122 (26): e2422633122. <a href="https://doi.org/10.1073/pnas.2422633122">https://doi.org/10.1073/pnas.2422633122</a>.
 </div>
 <div id="ref-bjorkMakingThingsHard2011" class="csl-entry" role="listitem">
 Bjork, Elizabeth Ligon, und Robert A. Bjork. 2011. <span>„Making Things Hard on Yourself, but in a Good Way: <span>Creating</span> Desirable Difficulties to Enhance Learning“</span>. In <em>Psychology and the Real World: <span>Essays</span> Illustrating Fundamental Contributions to Society</em>, 56–64. New York, NY, US: Worth Publishers.
 </div>
-<div id="ref-bloom2SigmaProblem1984" class="csl-entry" role="listitem">
-BLOOM, BENJAMIN S. 1984. <span>„The 2 <span>Sigma Problem</span>: <span>The Search</span> for <span>Methods</span> of <span>Group Instruction</span> as <span>Effective</span> as <span>One-to-One Tutoring</span>“</span>. <em>Educational Researcher</em> 13 (6): 4–16. <a href="https://doi.org/10.3102/0013189X013006004">https://doi.org/10.3102/0013189X013006004</a>.
-</div>
 <div id="ref-chasePerceptionChess1973" class="csl-entry" role="listitem">
 Chase, William G., und Herbert A. Simon. 1973. <span>„Perception in Chess“</span>. <em>Cognitive Psychology</em> 4 (1): 55–81. <a href="https://doi.org/10.1016/0010-0285(73)90004-2">https://doi.org/10.1016/0010-0285(73)90004-2</a>.
 </div>
-<div id="ref-chiElicitingSelfExplanationsImproves1994" class="csl-entry" role="listitem">
-Chi, Michelene T. H., Nicholas De Leeuw, Mei-Hung Chiu, und Christian Lavancher. 1994. <span>„Eliciting <span>Self-Explanations Improves Understanding</span>“</span>. <em>Cognitive Science</em> 18 (3): 439–77. <a href="https://doi.org/10.1207/s15516709cog1803_3">https://doi.org/10.1207/s15516709cog1803_3</a>.
-</div>
 <div id="ref-clarkExtendingMindsGenerative2025" class="csl-entry" role="listitem">
 Clark, Andy. 2025. <span>„Extending <span>Minds</span> with <span>Generative AI</span>“</span>. <em>Nature Communications</em> 16 (1): 4627. <a href="https://doi.org/10.1038/s41467-025-59906-9">https://doi.org/10.1038/s41467-025-59906-9</a>.
-</div>
-<div id="ref-cooperEffectsSchemaAcquisition1987" class="csl-entry" role="listitem">
-Cooper, Graham, und John Sweller. 1987. <span>„Effects of Schema Acquisition and Rule Automation on Mathematical Problem-Solving Transfer“</span>. <em>Journal of Educational Psychology</em> 79 (4): 347–62. <a href="https://doi.org/10.1037/0022-0663.79.4.347">https://doi.org/10.1037/0022-0663.79.4.347</a>.
 </div>
 <div id="ref-dahmaniHabitualUseGPS2020" class="csl-entry" role="listitem">
 Dahmani, Louisa, und Véronique D. Bohbot. 2020. <span>„Habitual Use of <span>GPS</span> Negatively Impacts Spatial Memory During Self-Guided Navigation“</span>. <em>Scientific Reports</em> 10 (1): 6310. <a href="https://doi.org/10.1038/s41598-020-62877-0">https://doi.org/10.1038/s41598-020-62877-0</a>.
@@ -1553,29 +1304,8 @@ Dahmani, Louisa, und Véronique D. Bohbot. 2020. <span>„Habitual Use of <span>
 <div id="ref-grootThoughtChoiceChess1978" class="csl-entry" role="listitem">
 Groot, Adriaan D. De, und Adrianus Dingeman de Groot. 1978. <em>Thought and <span>Choice</span> in <span>Chess</span></em>. Walter de Gruyter. <a href="https://books.google.com?id=EI4gr42NwDQC">https://books.google.com?id=EI4gr42NwDQC</a>.
 </div>
-<div id="ref-joseOutsourcingCognitionPsychological2025" class="csl-entry" role="listitem">
-Jose, Binny, Deepak Joseph, Visakh Mohan, Elizabeth Alexander, Subi K. Varghese, und Abhijith Roy. 2025. <span>„Outsourcing Cognition: The Psychological Costs of <span>AI-Era</span> Convenience“</span>. <em>Frontiers in Psychology</em> 16 (Dezember). <a href="https://doi.org/10.3389/fpsyg.2025.1645237">https://doi.org/10.3389/fpsyg.2025.1645237</a>.
-</div>
 <div id="ref-kalyugaExpertiseReversalEffect2009" class="csl-entry" role="listitem">
 Kalyuga, Slava. 2009. <span>„The <span>Expertise Reversal Effect</span>“</span>. In <em>Managing <span>Cognitive Load</span> in <span>Adaptive Multimedia Learning</span></em>, 58–80. IGI Global Scientific Publishing. <a href="https://doi.org/10.4018/978-1-60566-048-6.ch003">https://doi.org/10.4018/978-1-60566-048-6.ch003</a>.
-</div>
-<div id="ref-kirschnerWhyMinimalGuidance2006" class="csl-entry" role="listitem">
-Kirschner, Paul A., Sweller, und Richard E. and Clark. 2006. <span>„Why <span>Minimal Guidance During Instruction Does Not Work</span>: <span>An Analysis</span> of the <span>Failure</span> of <span>Constructivist</span>, <span>Discovery</span>, <span>Problem-Based</span>, <span>Experiential</span>, and <span>Inquiry-Based Teaching</span>“</span>. <em>Educational Psychologist</em> 41 (2): 75–86. <a href="https://doi.org/10.1207/s15326985ep4102_1">https://doi.org/10.1207/s15326985ep4102_1</a>.
-</div>
-<div id="ref-lortie-forguesConceptualKnowledgeDecimal2017" class="csl-entry" role="listitem">
-Lortie-Forgues, Hugues, und Robert S. Siegler. 2017. <span>„Conceptual Knowledge of Decimal Arithmetic.“</span> <em>Journal of Educational Psychology</em> 109 (3): 374–86. <a href="https://doi.org/10.1037/edu0000148">https://doi.org/10.1037/edu0000148</a>.
-</div>
-<div id="ref-michaeltrucanoAINextDigital2023" class="csl-entry" role="listitem">
-Michael Trucano. 2023. <span>„<span>AI</span> and the Next Digital Divide in Education“</span>. Brookings. 7. Oktober 2023. <a href="https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/">https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/</a>.
-</div>
-<div id="ref-newellHumanProblemSolving1972" class="csl-entry" role="listitem">
-Newell, Allen, und Herbert A. Simon. 1972. <em>Human <span>Problem Solving</span></em>. Brattleboro, Vermont: Echo Point Books &amp; Media.
-</div>
-<div id="ref-reichFailureDisruptWhy2020" class="csl-entry" role="listitem">
-Reich, Justin. 2020. <em>Failure to <span>Disrupt</span>: <span>Why Technology Alone Can</span>’t <span>Transform Education</span></em>. Cambridge London: Harvard University Press.
-</div>
-<div id="ref-roedigerTestenhancedLearningTaking2006" class="csl-entry" role="listitem">
-Roediger, Henry L., und Jeffrey D. Karpicke. 2006. <span>„Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention“</span>. <em>Psychological Science</em> 17 (3): 249–55. <a href="https://doi.org/10.1111/j.1467-9280.2006.01693.x">https://doi.org/10.1111/j.1467-9280.2006.01693.x</a>.
 </div>
 <div id="ref-slameckaGenerationEffectDelineation1978" class="csl-entry" role="listitem">
 Slamecka, Norman J., und Peter Graf. 1978. <span>„The Generation Effect: <span>Delineation</span> of a Phenomenon“</span>. <em>Journal of Experimental Psychology: Human Learning and Memory</em> 4 (6): 592–604. <a href="https://doi.org/10.1037/0278-7393.4.6.592">https://doi.org/10.1037/0278-7393.4.6.592</a>.
@@ -1586,16 +1316,13 @@ Sparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. <span>„Google Effects o
 <div id="ref-swellerCognitiveLoadTheory2024" class="csl-entry" role="listitem">
 Sweller, John. 2024. <span>„Cognitive Load Theory and Individual Differences“</span>. <em>Learning and Individual Differences</em> 110 (Februar): 102423. <a href="https://doi.org/10.1016/j.lindif.2024.102423">https://doi.org/10.1016/j.lindif.2024.102423</a>.
 </div>
-<div id="ref-vanlehnRelativeEffectivenessHuman2011" class="csl-entry" role="listitem">
-VanLEHN, KURT. 2011. <span>„The <span>Relative Effectiveness</span> of <span>Human Tutoring</span>, <span>Intelligent Tutoring Systems</span>, and <span>Other Tutoring Systems</span>“</span>. <em>Educational Psychologist</em> 46 (4): 197–221. <a href="https://doi.org/10.1080/00461520.2011.611369">https://doi.org/10.1080/00461520.2011.611369</a>.
-</div>
 <div id="ref-willinghamCriticalThinkingWhy2008" class="csl-entry" role="listitem">
 Willingham, Daniel T. 2008. <span>„Critical <span>Thinking</span>: <span>Why Is It So Hard</span> to <span>Teach</span>?“</span> <em>Arts Education Policy Review</em> 109 (4): 21–32. <a href="https://doi.org/10.3200/AEPR.109.4.21-32">https://doi.org/10.3200/AEPR.109.4.21-32</a>.
 </div>
 </div>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -1811,6 +1538,55 @@ Willingham, Daniel T. 2008. <span>„Critical <span>Thinking</span>: <span>Why I
         ]
       });
     </script>
+    <script type="ojs-module-contents">
+    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIENvbmZpZ3VyYXRpb246IEFsbCBwYXJhbWV0ZXJzIGluIG9uZSBwbGFjZSBmb3IgZWFzeSBtYWludGVuYW5jZVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmNvbmZpZyA9ICh7XG4gIC8vIENvbG9yIHBhbGV0dGVcbiAgY29sb3JzOiB7XG4gICAgaGlnaFN1cHBvcnQ6IFwiI0EzMTk1QlwiLFxuICAgIGxvd1N1cHBvcnQ6IFwiIzY2NjY2NlwiLFxuICAgIG5ldXRyYWw6IFwiIzMzM1wiLFxuICAgIGJhY2tncm91bmQ6IFwiI2Y1ZjVmNVwiXG4gIH0sXG4gIC8vIExpbmUgZXF1YXRpb25zOiB5ID0gaW50ZXJjZXB0ICsgc2xvcGUgKiB4XG4gIC8vIExpbmVzIGNyb3NzIHdoZXJlOiBoaWdoSW50ZXJjZXB0ICsgaGlnaFNsb3BlKnggPSBsb3dJbnRlcmNlcHQgKyBsb3dTbG9wZSp4XG4gIGxpbmVzOiB7XG4gICAgaGlnaDogeyBpbnRlcmNlcHQ6IDY1LCBzbG9wZTogLTAuNCB9LFxuICAgIGxvdzogeyBpbnRlcmNlcHQ6IDI1LCBzbG9wZTogMC40IH1cbiAgfSxcbiAgLy8gSW5wdXQgb3B0aW9uc1xuICBzdGVwczogWzAsIDIwLCA0MCwgNjAsIDgwLCAxMDBdLFxuICBkZWZhdWx0VmFsdWU6IDIwLFxuICAvLyBQbG90IGRpbWVuc2lvbnNcbiAgcGxvdDoge1xuICAgIHdpZHRoOiA5MDAsXG4gICAgaGVpZ2h0OiA0ODAsXG4gICAgbWFyZ2luczogeyBsZWZ0OiA3MCwgYm90dG9tOiA2MCwgdG9wOiAzMCwgcmlnaHQ6IDQwIH1cbiAgfSxcbiAgLy8gTGFiZWxzXG4gIGxhYmVsczoge1xuICAgIGhpZ2hTdXBwb3J0OiBcIkhvaGUgVW50ZXJzdMO8dHp1bmdcIixcbiAgICBsb3dTdXBwb3J0OiBcIk5pZWRyaWdlIFVudGVyc3TDvHR6dW5nXCIsXG4gICAgaGlnaEV4YW1wbGVzOiBbXCLwn5OWIFdvcmtlZCBFeGFtcGxlc1wiLCBcIvCfp60gRGlyZWt0ZSBJbnN0cnVrdGlvblwiXSxcbiAgICBsb3dFeGFtcGxlczogW1wi8J+nqSBQcm9ibGVtYmFzaWVydGVzIExlcm5lblwiLCBcIvCflI0gRWlnZW5lIEzDtnN1bmdzd2VnZVwiXVxuICB9XG59KVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gRGVyaXZlZCB2YWx1ZXM6IENvbXB1dGVkIGZyb20gY29uZmlnIChubyBtYWdpYyBudW1iZXJzKVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuLy8gQ3Jvc3NvdmVyIHBvaW50OiBzb2x2ZSBmb3IgeCB3aGVyZSBib3RoIGxpbmVzIGludGVyc2VjdFxuY3Jvc3NvdmVyUG9pbnQgPSB7XG4gIGNvbnN0IHsgaGlnaCwgbG93IH0gPSBjb25maWcubGluZXM7XG4gIHJldHVybiAoaGlnaC5pbnRlcmNlcHQgLSBsb3cuaW50ZXJjZXB0KSAvIChsb3cuc2xvcGUgLSBoaWdoLnNsb3BlKTtcbn1cblxuLy8gSGVscGVyIGZ1bmN0aW9uIHRvIGNhbGN1bGF0ZSB5LXZhbHVlIG9uIGEgbGluZVxuY2FsY1kgPSAobGluZSwgeCkgPT4gbGluZS5pbnRlcmNlcHQgKyBsaW5lLnNsb3BlICogeFxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU3RhdGU6IFNpbmdsZSBzb3VyY2Ugb2YgdHJ1dGggZm9yIHVzZXIgaW5wdXQgKGhpZGRlbiwgY29udHJvbGxlZCBieSBidXR0b25zKVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbnZpZXdvZiB2b3J3aXNzZW4gPSB7XG4gIGNvbnN0IGlucHV0ID0gSW5wdXRzLnJhZGlvKGNvbmZpZy5zdGVwcywge1xuICAgIHZhbHVlOiBjb25maWcuZGVmYXVsdFZhbHVlLFxuICAgIGxhYmVsOiBcIlwiLFxuICAgIGZvcm1hdDogeCA9PiB4ICsgXCIlXCJcbiAgfSk7XG4gIGlucHV0LnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gUmVhY3RpdmUgY2FsY3VsYXRpb25zIGJhc2VkIG9uIGN1cnJlbnQgc3RhdGVcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5jdXJyZW50U3RhdGUgPSB7XG4gIGNvbnN0IHggPSB2b3J3aXNzZW4gPz8gY29uZmlnLmRlZmF1bHRWYWx1ZTtcbiAgY29uc3QgaGlnaFkgPSBjYWxjWShjb25maWcubGluZXMuaGlnaCwgeCk7XG4gIGNvbnN0IGxvd1kgPSBjYWxjWShjb25maWcubGluZXMubG93LCB4KTtcbiAgY29uc3QgaXNIaWdoQmV0dGVyID0geCA8PSBjcm9zc292ZXJQb2ludDtcblxuICByZXR1cm4ge1xuICAgIHgsXG4gICAgaGlnaFksXG4gICAgbG93WSxcbiAgICBpc0hpZ2hCZXR0ZXIsXG4gICAgb3B0aW1hbFk6IGlzSGlnaEJldHRlciA/IGhpZ2hZIDogbG93WSxcbiAgICBzdWJvcHRpbWFsWTogaXNIaWdoQmV0dGVyID8gbG93WSA6IGhpZ2hZLFxuICAgIG9wdGltYWxMYWJlbDogaXNIaWdoQmV0dGVyID8gY29uZmlnLmxhYmVscy5oaWdoU3VwcG9ydCA6IGNvbmZpZy5sYWJlbHMubG93U3VwcG9ydCxcbiAgICBvcHRpbWFsQ29sb3I6IGlzSGlnaEJldHRlciA/IGNvbmZpZy5jb2xvcnMuaGlnaFN1cHBvcnQgOiBjb25maWcuY29sb3JzLmxvd1N1cHBvcnQsXG4gICAgc3Vib3B0aW1hbENvbG9yOiBpc0hpZ2hCZXR0ZXIgPyBjb25maWcuY29sb3JzLmxvd1N1cHBvcnQgOiBjb25maWcuY29sb3JzLmhpZ2hTdXBwb3J0XG4gIH07XG59XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBQbG90OiBWaXN1YWxpemF0aW9uIHdpdGggYWxsIG1hcmtzXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZXhwZXJ0aXNlUGxvdCA9IHtcbiAgY29uc3QgeyBjb2xvcnMsIGxpbmVzLCBwbG90LCBsYWJlbHMgfSA9IGNvbmZpZztcbiAgY29uc3QgeyB4LCBoaWdoWSwgbG93WSwgaXNIaWdoQmV0dGVyLCBvcHRpbWFsWSwgc3Vib3B0aW1hbFksIG9wdGltYWxDb2xvciwgc3Vib3B0aW1hbENvbG9yIH0gPSBjdXJyZW50U3RhdGU7XG5cbiAgLy8gR2VuZXJhdGUgbGluZSBkYXRhIHBvaW50c1xuICBjb25zdCBoaWdoTGluZURhdGEgPSBbe3g6IDAsIHk6IGNhbGNZKGxpbmVzLmhpZ2gsIDApfSwge3g6IDEwMCwgeTogY2FsY1kobGluZXMuaGlnaCwgMTAwKX1dO1xuICBjb25zdCBsb3dMaW5lRGF0YSA9IFt7eDogMCwgeTogY2FsY1kobGluZXMubG93LCAwKX0sIHt4OiAxMDAsIHk6IGNhbGNZKGxpbmVzLmxvdywgMTAwKX1dO1xuXG4gIC8vIExhYmVsIHBvc2l0aW9ucyAocmVsYXRpdmUgdG8gbGluZSBlbmRwb2ludHMpXG4gIGNvbnN0IGxhYmVsT2Zmc2V0WSA9IDc7XG4gIGNvbnN0IGV4YW1wbGVCYXNlWSA9IGNhbGNZKGxpbmVzLmhpZ2gsIDApICsgbGFiZWxPZmZzZXRZO1xuXG4gIHJldHVybiBQbG90LnBsb3Qoe1xuICAgIHdpZHRoOiBwbG90LndpZHRoLFxuICAgIGhlaWdodDogcGxvdC5oZWlnaHQsXG4gICAgbWFyZ2luTGVmdDogcGxvdC5tYXJnaW5zLmxlZnQsXG4gICAgbWFyZ2luQm90dG9tOiBwbG90Lm1hcmdpbnMuYm90dG9tLFxuICAgIG1hcmdpblRvcDogcGxvdC5tYXJnaW5zLnRvcCxcbiAgICBtYXJnaW5SaWdodDogcGxvdC5tYXJnaW5zLnJpZ2h0LFxuICAgIHN0eWxlOiB7IGZvbnRTaXplOiBcIjE2cHhcIiB9LFxuICAgIHg6IHtcbiAgICAgIGRvbWFpbjogWzAsIDEwMF0sXG4gICAgICBsYWJlbDogXCJWb3J3aXNzZW4g4oaSXCIsXG4gICAgICBsYWJlbE9mZnNldDogNDUsXG4gICAgICB0aWNrczogWzAsIDUwLCAxMDBdLFxuICAgICAgdGlja0Zvcm1hdDogZCA9PiBkID09PSAwID8gXCJOaWVkcmlnXCIgOiBkID09PSA1MCA/IFwiTWl0dGVsXCIgOiBcIkhvY2hcIlxuICAgIH0sXG4gICAgeToge1xuICAgICAgZG9tYWluOiBbMCwgMTAwXSxcbiAgICAgIGxhYmVsOiBcIuKGkSBMZXJuZWZmZWt0XCIsXG4gICAgICBsYWJlbE9mZnNldDogNTAsXG4gICAgICBncmlkOiB0cnVlXG4gICAgfSxcbiAgICBtYXJrczogW1xuICAgICAgLy8gU3VwcG9ydCBsaW5lc1xuICAgICAgUGxvdC5saW5lKGhpZ2hMaW5lRGF0YSwge3g6IFwieFwiLCB5OiBcInlcIiwgc3Ryb2tlOiBjb2xvcnMuaGlnaFN1cHBvcnQsIHN0cm9rZVdpZHRoOiAzfSksXG4gICAgICBQbG90LmxpbmUobG93TGluZURhdGEsIHt4OiBcInhcIiwgeTogXCJ5XCIsIHN0cm9rZTogY29sb3JzLmxvd1N1cHBvcnQsIHN0cm9rZVdpZHRoOiAzfSksXG5cbiAgICAgIC8vIFZlcnRpY2FsIHBvc2l0aW9uIGluZGljYXRvclxuICAgICAgUGxvdC5ydWxlWChbeF0sIHtzdHJva2U6IGNvbG9ycy5uZXV0cmFsLCBzdHJva2VXaWR0aDogMS41LCBzdHJva2VEYXNoYXJyYXk6IFwiOCw1XCJ9KSxcblxuICAgICAgLy8gU3Vib3B0aW1hbCBkb3QgKHNtYWxsZXIsIGZhZGVkKVxuICAgICAgUGxvdC5kb3QoW3t4LCB5OiBzdWJvcHRpbWFsWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIixcbiAgICAgICAgZmlsbDogc3Vib3B0aW1hbENvbG9yLFxuICAgICAgICByOiA4LFxuICAgICAgICBvcGFjaXR5OiAwLjRcbiAgICAgIH0pLFxuXG4gICAgICAvLyBPcHRpbWFsIGRvdCAobGFyZ2VyLCBwcm9taW5lbnQgd2l0aCB3aGl0ZSBzdHJva2UpXG4gICAgICBQbG90LmRvdChbe3gsIHk6IG9wdGltYWxZfV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLFxuICAgICAgICBmaWxsOiBvcHRpbWFsQ29sb3IsXG4gICAgICAgIHI6IDE0LFxuICAgICAgICBzdHJva2U6IFwid2hpdGVcIixcbiAgICAgICAgc3Ryb2tlV2lkdGg6IDNcbiAgICAgIH0pLFxuXG4gICAgICAvLyBIaWdoIHN1cHBvcnQgZXhhbXBsZXMgKGxlZnQgc2lkZSwgbmVhciBsaW5lIHN0YXJ0KVxuICAgICAgUGxvdC50ZXh0KFt7eDogMTUsIHk6IGV4YW1wbGVCYXNlWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5oaWdoRXhhbXBsZXNbMF1dLCBmaWxsOiBjb2xvcnMuaGlnaFN1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG4gICAgICBQbG90LnRleHQoW3t4OiAxNSwgeTogZXhhbXBsZUJhc2VZIC0gNn1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5oaWdoRXhhbXBsZXNbMV1dLCBmaWxsOiBjb2xvcnMuaGlnaFN1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG5cbiAgICAgIC8vIExvdyBzdXBwb3J0IGV4YW1wbGVzIChyaWdodCBzaWRlKVxuICAgICAgUGxvdC50ZXh0KFt7eDogODUsIHk6IGV4YW1wbGVCYXNlWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5sb3dFeGFtcGxlc1swXV0sIGZpbGw6IGNvbG9ycy5sb3dTdXBwb3J0LCBmb250U2l6ZTogMTNcbiAgICAgIH0pLFxuICAgICAgUGxvdC50ZXh0KFt7eDogODUsIHk6IGV4YW1wbGVCYXNlWSAtIDZ9XSwge1xuICAgICAgICB4OiBcInhcIiwgeTogXCJ5XCIsIHRleHQ6IFtsYWJlbHMubG93RXhhbXBsZXNbMV1dLCBmaWxsOiBjb2xvcnMubG93U3VwcG9ydCwgZm9udFNpemU6IDEzXG4gICAgICB9KSxcblxuICAgICAgLy8gTGluZSBsYWJlbHMgKG5lYXIgbGluZSBlbmRzKVxuICAgICAgUGxvdC50ZXh0KFt7eDogODgsIHk6IGNhbGNZKGxpbmVzLmhpZ2gsIDEwMCkgLSA1fV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbbGFiZWxzLmhpZ2hTdXBwb3J0XSwgZmlsbDogY29sb3JzLmhpZ2hTdXBwb3J0LCBmb250U2l6ZTogMTUsIGZvbnRXZWlnaHQ6IFwiYm9sZFwiXG4gICAgICB9KSxcbiAgICAgIFBsb3QudGV4dChbe3g6IDEyLCB5OiBjYWxjWShsaW5lcy5sb3csIDApIC0gNX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5sb3dTdXBwb3J0XSwgZmlsbDogY29sb3JzLmxvd1N1cHBvcnQsIGZvbnRTaXplOiAxNSwgZm9udFdlaWdodDogXCJib2xkXCJcbiAgICAgIH0pXG4gICAgXVxuICB9KTtcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIEJ1dHRvbiBHcm91cDogQ3VzdG9tIHN0eWxlZCBzZWdtZW50ZWQgY29udHJvbFxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmJ1dHRvbkdyb3VwID0ge1xuICBjb25zdCB7IHgsIG9wdGltYWxDb2xvciB9ID0gY3VycmVudFN0YXRlO1xuICBjb25zdCB7IGNvbG9ycywgc3RlcHMgfSA9IGNvbmZpZztcblxuICBjb25zdCBidXR0b25TdHlsZSA9IChpc1NlbGVjdGVkLCBzZWxlY3RDb2xvcikgPT4gYFxuICAgIHBhZGRpbmc6IDEycHggMThweDtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgYmFja2dyb3VuZDogJHtpc1NlbGVjdGVkID8gc2VsZWN0Q29sb3IgOiBjb2xvcnMuYmFja2dyb3VuZH07XG4gICAgY29sb3I6ICR7aXNTZWxlY3RlZCA/ICd3aGl0ZScgOiAnIzMzMyd9O1xuICAgIGZvbnQtc2l6ZTogMWVtO1xuICAgIGZvbnQtd2VpZ2h0OiAke2lzU2VsZWN0ZWQgPyAnYm9sZCcgOiAnbm9ybWFsJ307XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkICNkZGQ7XG4gICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZCAwLjE1cyBlYXNlO1xuICBgO1xuXG4gIGNvbnN0IGNvbnRhaW5lciA9IGh0bWxgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGJvcmRlci1yYWRpdXM6IDhweDsgb3ZlcmZsb3c6IGhpZGRlbjsgYm9yZGVyOiAycHggc29saWQgI2RkZDtcIj48L2Rpdj5gO1xuXG4gIHN0ZXBzLmZvckVhY2godiA9PiB7XG4gICAgY29uc3QgaXNTZWxlY3RlZCA9IHggPT09IHY7XG4gICAgY29uc3Qgc2VsZWN0Q29sb3IgPSB2IDw9IGNyb3Nzb3ZlclBvaW50ID8gY29sb3JzLmhpZ2hTdXBwb3J0IDogY29sb3JzLmxvd1N1cHBvcnQ7XG4gICAgY29uc3QgYnRuID0gaHRtbGA8YnV0dG9uIHN0eWxlPVwiJHtidXR0b25TdHlsZShpc1NlbGVjdGVkLCBzZWxlY3RDb2xvcil9XCI+JHt2fSU8L2J1dHRvbj5gO1xuICAgIGJ0bi5vbmNsaWNrID0gKCkgPT4ge1xuICAgICAgdmlld29mIHZvcndpc3Nlbi52YWx1ZSA9IHY7XG4gICAgICB2aWV3b2Ygdm9yd2lzc2VuLmRpc3BhdGNoRXZlbnQobmV3IEV2ZW50KCdpbnB1dCcsIHtidWJibGVzOiB0cnVlfSkpO1xuICAgIH07XG4gICAgY29udGFpbmVyLmFwcGVuZENoaWxkKGJ0bik7XG4gIH0pO1xuXG4gIHJldHVybiBjb250YWluZXI7XG59XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBMYXlvdXQ6IENvbXBvc2UgYWxsIGVsZW1lbnRzXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IGNlbnRlcjsgZ2FwOiA0MHB4O1wiPlxuICA8ZGl2PiR7ZXhwZXJ0aXNlUGxvdH08L2Rpdj5cbiAgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47IGFsaWduLWl0ZW1zOiBjZW50ZXI7IGdhcDogMjBweDsgbWluLXdpZHRoOiAyODBweDtcIj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC13ZWlnaHQ6IGJvbGQ7IGZvbnQtc2l6ZTogMS4xZW07XCI+Vm9yd2lzc2VuIGRlcyBMZXJuZW5kZW48L2Rpdj5cbiAgICA8ZGl2PiR7YnV0dG9uR3JvdXB9PC9kaXY+XG4gICAgPGRpdiBzdHlsZT1cImZvbnQtc2l6ZTogMS4zZW07IHRleHQtYWxpZ246IGNlbnRlcjsgcGFkZGluZzogMTVweDsgYmFja2dyb3VuZDogJHtjdXJyZW50U3RhdGUub3B0aW1hbENvbG9yfTIyOyBib3JkZXItcmFkaXVzOiA4cHg7IGJvcmRlci1sZWZ0OiA0cHggc29saWQgJHtjdXJyZW50U3RhdGUub3B0aW1hbENvbG9yfTtcIj5cbiAgICAgIDxzcGFuIHN0eWxlPVwiY29sb3I6ICR7Y3VycmVudFN0YXRlLm9wdGltYWxDb2xvcn07IGZvbnQtd2VpZ2h0OiBib2xkO1wiPiR7Y3VycmVudFN0YXRlLm9wdGltYWxMYWJlbH08L3NwYW4+PGJyPlxuICAgICAgPHNwYW4gc3R5bGU9XCJmb250LXNpemU6IDAuOGVtOyBjb2xvcjogIzY2NjtcIj5pc3QgZWZmZWt0aXZlcjwvc3Bhbj5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG48L2Rpdj5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3Zvcndpc3NlbicpIn1dfQ==
+    </script>
+    <script type="module">
+    if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+    window._ojs.paths.runtimeToDoc = "../../slides/ai-higher-ed";
+    window._ojs.paths.runtimeToRoot = "../..";
+    window._ojs.paths.docToRoot = "../..";
+    window._ojs.selfContained = false;
+    window._ojs.runtime.interpretFromScriptTags();
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
