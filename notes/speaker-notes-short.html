@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="speaker-notes-short_files/libs/clipboard/clipboard.min.js"></script>
@@ -126,15 +146,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Fach: Mathematik</li>
 <li>Intervention: GPT-4 Zugang während Übungsphasen</li>
 <li>Der 17%-Nachteil betraf den direkten GPT-4-Zugang</li>
-<li>Eine Variante mit “GPT Tutor” (pädagogische Leitplanken) zeigte bessere Ergebnisse</li>
 </ul>
+<p><strong>Praktische Einordnung der Effektstärke:</strong></p>
+<p>Der 17%-Nachteil klingt dramatisch, sollte aber eingeordnet werden. In der Studie entspricht dies etwa 0.2-0.3 Standardabweichungen, ein kleiner bis mittlerer Effekt. Zum Vergleich: Der Unterschied zwischen einem Schüler auf dem 50. und dem 40. Perzentil. Relevant, aber kein Totalausfall.</p>
+<p><strong>Der GPT-Tutor-Befund (oft übersehen):</strong></p>
+<p>Die Studie testete auch einen “GPT Tutor” mit pädagogischen Leitplanken: Das System gab keine direkten Antworten, sondern Hinweise und Fragen. Diese Bedingung zeigte deutlich bessere Ergebnisse als der direkte GPT-4-Zugang. Das ist ein zentraler Befund: Das Problem ist nicht KI an sich, sondern wie KI eingesetzt wird. Ein gut designtes KI-Tutoring-System kann die negativen Effekte abmildern oder vermeiden.</p>
 <p><strong>Einschränkungen:</strong></p>
 <ul>
 <li>Spezifischer Kontext (Türkei, Mathematik, Gymnasium)</li>
-<li>Kurzfristige Messung</li>
+<li>Kurzfristige Messung (Wochen, nicht Semester)</li>
 <li>Replikationen stehen aus</li>
+<li>Generalisierung auf Schweizer Hochschulstudierende in anderen Fächern erfordert Vorsicht</li>
 </ul>
-<p><strong>Dennoch wichtig:</strong> Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist theoretisch gut fundiert und deckt sich mit der Cognitive Load Theory.</p>
+<p><strong>Dennoch wichtig:</strong> Die Kernaussage, dass Aufgabenleistung und Lernen auseinanderfallen können, ist theoretisch gut fundiert und deckt sich mit der Cognitive Load Theory. Und der GPT-Tutor-Befund zeigt einen Weg nach vorne.</p>
 </div>
 </div>
 <hr>
@@ -336,9 +360,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Taschenrechner (1970er-heute):</strong> Meta-Analysen zeigen gemischte Ergebnisse. Der Schlüssel ist WANN Taschenrechner eingesetzt werden. Für bereits beherrschte Algorithmen: förderlich. Bevor konzeptuelles Verständnis aufgebaut ist: hinderlich.</p>
-<p><strong>GPS <span class="citation" data-cites="dahmaniHabitualUseGPS2020">[@dahmaniHabitualUseGPS2020]</span>:</strong> Die Studie zeigte, dass häufiger GPS-Gebrauch mit schlechterem räumlichem Gedächtnis korreliert, auch nach Kontrolle für andere Faktoren. Die Kausalität ist schwer zu etablieren, aber die Theorie ist plausibel: Wer nicht navigiert, trainiert den Hippocampus nicht.</p>
+<p><strong>GPS <span class="citation" data-cites="dahmaniHabitualUseGPS2020">(<a href="#ref-dahmaniHabitualUseGPS2020" role="doc-biblioref">Dahmani and Bohbot 2020</a>)</span>:</strong> Die Studie zeigte, dass häufiger GPS-Gebrauch mit schlechterem räumlichem Gedächtnis korreliert, auch nach Kontrolle für andere Faktoren. Die Kausalität ist schwer zu etablieren, aber die Theorie ist plausibel: Wer nicht navigiert, trainiert den Hippocampus nicht.</p>
 <p>Die berühmte Taxifahrer-Studie (Maguire et al., 2000) zeigte strukturelle Gehirnveränderungen bei Londoner Cabbies. Interessanterweise: Nach der Pensionierung bildete sich der Effekt teilweise zurück.</p>
-<p><strong>Google-Effekt <span class="citation" data-cites="sparrowGoogleEffectsMemory2011">[@sparrowGoogleEffectsMemory2011]</span>:</strong> Teilnehmer erinnerten Information schlechter, wenn sie glaubten, diese sei gespeichert und abrufbar. Aber sie erinnerten den Speicherort besser. Das Gehirn outsourcet strategisch.</p>
+<p><strong>Google-Effekt <span class="citation" data-cites="sparrowGoogleEffectsMemory2011">(<a href="#ref-sparrowGoogleEffectsMemory2011" role="doc-biblioref">Sparrow, Liu, and Wegner 2011</a>)</span>:</strong> Teilnehmer erinnerten Information schlechter, wenn sie glaubten, diese sei gespeichert und abrufbar. Aber sie erinnerten den Speicherort besser. Das Gehirn outsourcet strategisch.</p>
 <p><strong>Die KI-Frage:</strong> Was passiert, wenn wir nicht nur Faktenwissen, sondern auch Denk- und Analyseprozesse outsourcen können? Die historischen Analogien sind instruktiv, aber KI ist qualitativ anders.</p>
 </div>
 </div>
@@ -487,8 +511,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="kritisches-denken-braucht-fachwissen" class="level1" data-number="12">
 <h1 data-number="12"><span class="header-section-number">12</span> Kritisches Denken braucht Fachwissen</h1>
 <p><strong>Sprechtext:</strong></p>
-<p>Man könnte einwenden: “Dann bringen wir den Studierenden eben bei, KI-Output kritisch zu prüfen.”</p>
-<p>Aber hier kommt ein wichtiger Punkt von Daniel Willingham:</p>
+<p>An diesem Punkt höre ich oft einen Einwand: “Gut, Lernende können KI-Output nicht bewerten. Aber das ist doch lösbar! Wir bringen ihnen einfach bei, KI-Output kritisch zu prüfen. Kritisches Denken als Kompetenz.”</p>
+<p>Das klingt vernünftig. Aber hier kommt ein wichtiger Punkt von Daniel Willingham, der diesen Ansatz grundlegend in Frage stellt:</p>
 <p>[Zitat vorlesen] “Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”</p>
 <p>Kritisches Denken ist keine kontextfreie Fähigkeit. Man kann nicht einfach “kritisch denken lernen” und es dann überall anwenden.</p>
 <p>[KLICK]</p>
@@ -613,7 +637,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Sie machen Experten produktiver. Ein erfahrener Programmierer mit GitHub Copilot ist schneller. Ein erfahrener Forscher mit Literature-Review-Tools findet mehr. Ein erfahrener Schreiber mit KI-Unterstützung produziert mehr.</p>
 <p>[KLICK]</p>
 <p>Aber: Lernende profitieren oft nicht. Und hier kommt die wichtige Begründung: Lernen erfordert genau die kognitive Anstrengung, die KI zu eliminieren droht.</p>
-<p>Das ist nicht KI-Feindlichkeit. Das ist eine kognitionspsychologische Tatsache. Lernen braucht Anstrengung. KI reduziert Anstrengung. Also kann KI Lernen behindern.</p>
+<p>Das ist nicht KI-Feindlichkeit. Das ist eine kognitionspsychologische Tatsache. Lernen braucht Anstrengung. Und hier ist der entscheidende Punkt: KI <em>kann</em> diese Anstrengung reduzieren, wenn sie passiv genutzt wird. Wer sich Antworten generieren lässt, statt selbst zu denken, umgeht die produktive Mühe.</p>
+<p>Aber: Es ist nicht unvermeidlich. Erinnern Sie sich an den GPT-Tutor aus der Bastani-Studie? Dort wurde KI so eingesetzt, dass sie Fragen stellte und Hinweise gab, statt Antworten zu liefern. Das erhielt die kognitive Anstrengung. Die Art der Nutzung entscheidet.</p>
 <p>[KLICK]</p>
 <p>Die Konsequenz, und das ist vielleicht die wichtigste Aussage heute: Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.</p>
 <p>Nicht “keine KI”, aber “Fundament zuerst”.</p>
@@ -746,9 +771,17 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </div>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-dahmaniHabitualUseGPS2020" class="csl-entry" role="listitem">
+Dahmani, Louisa, and Véronique D. Bohbot. 2020. <span>“Habitual Use of <span>GPS</span> Negatively Impacts Spatial Memory During Self-Guided Navigation.”</span> <em>Scientific Reports</em> 10 (1): 6310. <a href="https://doi.org/10.1038/s41598-020-62877-0">https://doi.org/10.1038/s41598-020-62877-0</a>.
+</div>
+<div id="ref-sparrowGoogleEffectsMemory2011" class="csl-entry" role="listitem">
+Sparrow, Betsy, Jenny Liu, and Daniel M. Wegner. 2011. <span>“Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips.”</span> <em>Science (New York, N.Y.)</em> 333 (6043): 776–78. <a href="https://doi.org/10.1126/science.1207745">https://doi.org/10.1126/science.1207745</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
