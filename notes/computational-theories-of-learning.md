@@ -43,7 +43,7 @@ Despite these limitations, CLT's prescriptive value for instructional design is 
 - [Cognitive Load Theory (InstructionalDesign.org)](https://www.instructionaldesign.org/theories/cognitive-load/)
 - [Sweller (2011) chapter on CLT](https://www.emrahakman.com/wp-content/uploads/2024/10/Cognitive-Load-Sweller-2011.pdf)
 - [Expertise Reversal Effect (Kalyuga 2007)](https://www.uky.edu/~gmswan3/EDC608/Kalyuga2007_Article_ExpertiseReversalEffectAndItsI.pdf)
-- [CLT criticism (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11852728/)
+- [CLT criticism (PMC)]()
 
 ---
 
@@ -154,7 +154,7 @@ Bayesian models are highly computational: they specify exact representations, in
 
 ### Overview
 
-Predictive processing (PP), developed by Karl Friston, Andy Clark, and others, proposes that the brain is fundamentally a *prediction machine*. The brain maintains a hierarchical generative model of the world and constantly generates predictions about incoming sensory signals.
+Predictive processing (PP), developed by Karl Friston and others, proposes that the brain is fundamentally a *prediction machine*. The brain maintains a hierarchical generative model of the world and constantly generates predictions about incoming sensory signals.
 
 ### The free energy principle
 
@@ -195,7 +195,6 @@ The Mind Brain Education community has begun exploring PP for education. Key ins
 
 - [Free Energy Principle (Wikipedia)](https://en.wikipedia.org/wiki/Free_energy_principle)
 - [Active inference and learning (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5167251/)
-- [Andy Clark - Whatever next? (PDF)](https://perception.jhu.edu/chaz/teaching/courses/tp/files/readings/5/Clark_Clark_2013_Behavioral_and_Brain_Sciences_Whatever_next_Predictive_brains_situated_agents_and_the_future_of_cognitive_science.pdf)
 - [Predictive Processing and Education (Mind Brain Education)](https://www.mindbrained.org/october-2020-predictive-processing/)
 
 ---
@@ -277,6 +276,7 @@ Combining these perspectives, we can sketch a computational view of learning:
 The learner builds an internal model that captures how the domain works: causal relationships, constraints, and regularities. In physics, this means understanding how circuits behave, how oscillators work, why superposition applies.
 
 This corresponds to:
+
 - Schema acquisition (CLT)
 - Declarative knowledge (ACT-R)
 - Hypothesis space / prior structure (Bayesian models)
@@ -288,6 +288,7 @@ This corresponds to:
 Given a novel problem, the learner runs their internal model: simulating, deriving, generating a solution path. This is effortful and slow but flexible.
 
 This corresponds to:
+
 - Working memory engagement (CLT)
 - Interpretive application of declarative knowledge (ACT-R)
 - Posterior inference (Bayesian models)
@@ -299,6 +300,7 @@ This corresponds to:
 Repeated generation for similar problems builds fast recognition: the learner can directly produce solutions without full simulation.
 
 This corresponds to:
+
 - Schema automation (CLT)
 - Proceduralization / knowledge compilation (ACT-R)
 - Amortized inference (Bayesian/ML)
@@ -310,6 +312,7 @@ This corresponds to:
 **Stage 1: Build the generative model**
 
 The learner needs to acquire the underlying model of the domain. This requires:
+
 - Explicit instruction on concepts, principles, causal structure
 - Self-explanation of worked examples (running one's model against the solution)
 - Feedback that highlights where predictions diverge from reality
@@ -351,27 +354,134 @@ The student ends up with model-free habits that lack a model-based foundation. T
 
 ---
 
+## 8. Reframing CLT effects in Bayesian terms
+
+The instructional effects discovered by CLT researchers are empirically robust, but their theoretical explanations invoke vague notions of "load" and "capacity." A Bayesian reframing can sharpen these explanations and generate novel predictions.
+
+### Split-attention effect
+
+**CLT version**: When information is split across multiple sources (e.g., diagram + separate text), learners must mentally integrate them, consuming working memory.
+
+**Bayesian reframing**: The learner must infer not just the domain content but also the *mapping structure* between sources. With integrated materials, the relational structure (how text corresponds to diagram) is given explicitly. With split materials, the learner must perform additional inference to discover this structure. This is an extra inference problem layered on top of learning the domain content itself.
+
+The Bayesian framing predicts that split attention effects should be reduced if the relational structure is made explicit even without physical integration (e.g., "the labels A, B, C in the text correspond to positions A, B, C in the diagram").
+
+### Redundancy effect
+
+**CLT version**: When identical information appears in multiple formats unnecessarily (e.g., spoken narration + identical on-screen text), it hurts learning because both must be processed.
+
+**Bayesian reframing**: Redundant information provides no additional evidence for updating beliefs. The likelihood P(data|hypothesis) is unchanged whether you observe the same fact once or twice. However, if the redundancy is *unexpected*, the learner may initially treat both sources as potentially distinct, wasting inference effort trying to determine why there are two sources and whether they contain different information.
+
+**Expected vs unexpected redundancy**: This analysis suggests that redundancy is harmful primarily when it is *surprising*. If the learner knows in advance that the narration will exactly match the on-screen text, they can efficiently ignore one channel. No inference is wasted searching for differences that don't exist.
+
+This generates a testable prediction: explicitly telling learners "the audio will match the text exactly" should eliminate or substantially reduce the redundancy effect. The original CLT experiments likely did not control for this, so learners had to discover the redundancy themselves.
+
+More generally: information that confirms what you already confidently believe provides minimal evidence for model updating. This is not "wasted capacity" but simply the mathematics of Bayesian inference. The problem arises only when you don't know in advance that the information will be redundant.
+
+### Modality effect
+
+**CLT version**: Using both visual and auditory channels increases effective working memory capacity.
+
+**Bayesian reframing**: Different sensory channels provide *conditionally independent* evidence about the same underlying content. Two independent observations narrow the posterior distribution faster than two correlated observations. This is not about "more capacity" but about the statistical properties of evidence aggregation.
+
+If you hear a concept explained while simultaneously seeing a complementary diagram, you have two partially independent sources of evidence about the underlying structure. The posterior after observing both is more concentrated than after observing either alone. This is standard Bayesian evidence combination.
+
+### Worked example effect
+
+**CLT version**: Worked examples reduce cognitive load compared to problem-solving because the learner doesn't need to search for solutions.
+
+**Bayesian reframing**: Worked examples provide *supervised* training data: the learner observes both the problem and the complete solution path. This is maximally informative for updating beliefs about which procedures are correct and when they apply.
+
+Problem-solving without feedback provides only sparse information: you discover whether your final answer is right or wrong, but not which steps were correct or why. The likelihood function P(outcome|procedure) is much less informative than P(complete solution path|procedure).
+
+From a Bayesian perspective, worked examples are efficient because they provide high-bandwidth evidence about the generative process that produces correct solutions.
+
+### Expertise reversal effect
+
+**CLT version**: Techniques that help novices become redundant or harmful for experts because experts already have schemas.
+
+**Bayesian reframing**: Experts have strong priors: their posterior beliefs are already concentrated on correct hypotheses. Additional evidence (guidance, worked examples) provides diminishing returns for updating an already-concentrated posterior.
+
+Worse, for experts, detailed guidance may constitute *expected* information that provides no learning signal. An expert studying a worked example already knows what each step will be. There is no surprise, no belief updating, no learning.
+
+For novices, the same worked example is *unexpected*: each step provides information that updates their diffuse prior. The same instructional material has different information content depending on the learner's prior knowledge.
+
+This explains why experts benefit from problem-solving: generating solutions produces opportunities for their predictions to be wrong. Even experts occasionally make errors or discover edge cases. Problem-solving generates the unexpected outcomes that drive belief updating, while worked examples (for experts) generate only expected confirmations.
+
+### Element interactivity as inference complexity
+
+**CLT version**: High element interactivity means many elements must be processed simultaneously because they depend on each other. This increases intrinsic cognitive load.
+
+**Bayesian reframing**: Element interactivity corresponds to the *density of dependencies* in the inference problem. Consider knowledge as a graphical model: variables (concepts, quantities) connected by dependency relationships.
+
+- **Low interactivity**: Variables are mostly independent. The inference problem *factorizes* into independent sub-problems. You can infer each variable separately and combine the results. Computationally tractable.
+
+- **High interactivity**: Variables are densely connected. To infer the state of any one variable, you must consider the states of many others simultaneously. The problem does not decompose. Computationally expensive (potentially NP-hard in the worst case).
+
+**Working memory as inference buffer**: In this view, working memory is not a container with a fixed number of "slots" but a computational buffer for holding the variables involved in a single inference step. If the inference factorizes, you can process sequentially: infer one variable, commit the result to long-term memory, proceed to the next. If it doesn't factorize, you must hold multiple variables simultaneously while computing their joint posterior.
+
+The capacity limit is not about "number of items" but about the *size of inference problems* that can be solved in a single pass.
+
+**Schemas as learned factorizations**: A schema, in this framing, is a *learned factorization* of a previously high-interactivity problem. Once you have chunked "series resistors" into a single unit with known composite behavior, you've reduced the number of variables in play. The internal complexity of the chunk is handled by the schema; only its external interface participates in ongoing inference.
+
+Expertise, then, means possessing schemas that make objectively high-interactivity problems *subjectively* low-interactivity by providing useful factorizations.
+
+### Summary: CLT effects as properties of Bayesian inference
+
+| CLT concept | Bayesian interpretation |
+|-------------|------------------------|
+| Working memory load | Size of the inference problem that must be solved jointly |
+| Element interactivity | Density of dependencies in the graphical model |
+| Schema | A learned factorization that chunks interacting variables |
+| Intrinsic load | Irreducible inference complexity of the domain structure |
+| Extraneous load | Unnecessary inference (e.g., inferring structure that could have been given) |
+| Split attention | Additional inference required to discover cross-source mappings |
+| Redundancy | Wasted inference when redundancy is unexpected; harmless when expected |
+| Modality effect | Benefit of conditionally independent evidence sources |
+| Worked example effect | High-bandwidth supervised evidence vs. sparse outcome feedback |
+| Expertise reversal | Diminishing information value for concentrated priors |
+
+### Instructional implications
+
+1. **Reduce unnecessary inference**: Make structure explicit rather than requiring learners to infer it. This includes relational mappings (split attention), the presence of redundancy, and hierarchical organization.
+
+2. **Provide informative evidence**: Worked examples are effective because they provide complete solution paths, not just outcomes. Design instruction to maximize the information content of each observation.
+
+3. **Calibrate to prior knowledge**: The same material has different information content for different learners. Novices need evidence that updates diffuse priors; experts need opportunities for unexpected outcomes.
+
+4. **Build useful factorizations**: Teach chunks that encapsulate frequently-occurring patterns of interaction. Sequence instruction so that components with fewer dependencies are mastered first, becoming available as schemas for later, more complex material.
+
+5. **Generate, don't just observe**: For learning to occur, the learner must make predictions that can be confirmed or violated. Passive observation of expected information produces no belief updating.
+
+---
+
 ## References
 
 ### Cognitive Load Theory
+
 - Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science*, 12(2), 257-285.
 - Kalyuga, S. et al. (2003). The expertise reversal effect. *Educational Psychologist*, 38(1), 23-31.
 
 ### ACT-R
+
 - Anderson, J. R. (1982). Acquisition of cognitive skill. *Psychological Review*, 89(4), 369-406.
 - Anderson, J. R. (1990). *The Adaptive Character of Thought*. Lawrence Erlbaum.
 
 ### Bayesian Models
+
 - Tenenbaum, J. B., Kemp, C., Griffiths, T. L., & Goodman, N. D. (2011). How to grow a mind: Statistics, structure, and abstraction. *Science*, 331(6022), 1279-1285.
 - Griffiths, T. L., Kemp, C., & Tenenbaum, J. B. (2008). Bayesian models of cognition. In R. Sun (Ed.), *Cambridge Handbook of Computational Cognitive Science*.
 
 ### Predictive Processing
+
 - Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences*, 36(3), 181-204.
 - Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127-138.
 
 ### Model-based and Model-free Learning
+
 - Daw, N. D., Niv, Y., & Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioral control. *Nature Neuroscience*, 8(12), 1704-1711.
 
 ### Amortized Inference
+
 - Kingma, D. P., & Welling, M. (2014). Auto-encoding variational bayes. *ICLR*.
 - Ritchie, D. et al. (2016). Deep amortized inference for probabilistic programs. *arXiv preprint*.
