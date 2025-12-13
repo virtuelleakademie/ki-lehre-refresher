@@ -651,15 +651,6 @@ Was bedeutet das praktisch? Die Forschung legt nahe:
 
 Pauschale Empfehlungen zu geben ist schwierig. Die Forschung liefert Prinzipien, aber deren Anwendung erfordert kontextspezifisches Urteilsvermögen und ist abhängig vom Fach, vom Vorwissen und den Lernzielen.
 
-### Die Entwicklungsfrage
-
-Ein besonderes Anliegen betrifft die kognitive Entwicklung:
-
-- Der präfrontale Kortex entwickelt sich bis etwa Mitte 20, wobei verschiedene Funktionen unterschiedlich schnell reifen und individuelle Variation erheblich ist
-- Exekutive Funktionen, Metakognition, Selbstregulation sind bei vielen Studierenden noch in Entwicklung
-- Jene, die KI-Nutzung am wenigsten regulieren können, sind möglicherweise am verletzlichsten
-
-Die aktuelle Studierendengeneration könnte die erste sein, die ihre gesamte Bildungslaufbahn mit generativer KI durchläuft. Wenn wir in 20 Jahren Langzeitdaten haben, wird eine Generation bereits das Experiment gewesen sein.
 
 ### Die soziale Dimension
 
