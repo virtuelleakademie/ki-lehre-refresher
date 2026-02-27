@@ -7,7 +7,7 @@ project:
     - _extensions/quarto-ext/fontawesome/assets/css/all.css
     - _extensions/quarto-ext/fontawesome/assets/webfonts/*
   preview:
-    port: 8800
+    port: 8804
     browser: false
   output-dir: docs
   render:
