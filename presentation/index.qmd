@@ -33,4 +33,6 @@ Dieser Refresher bietet einen kompakten Überblick über den aktuellen Forschung
 
 [KI in der Lehre: Advanced](https://virtuelleakademie.github.io/ki-lehre-advanced/): Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.
 
-<!-- Weitere Informationen: [KI in der Lehre Kurse](https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/) -->
+### Archiv
+
+[Refresher 2025](../slides/archive/ai-higher-ed-2025/index.html): Frühere Version der Präsentation (Fokus auf Produktivitäts-Lern-Paradox und Expertise-Umkehr-Effekt).

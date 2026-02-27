@@ -225,41 +225,22 @@
   </style>
   <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+  <link href="../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+  <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="../../site_libs/viz-1.8.2/viz.js"></script>
+  <link href="../../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+  <script src="../../site_libs/grViz-binding-1.0.11/grViz.js"></script>
   <style>
-  div.callout-experiment.callout {
+  div.callout-individual.callout {
     border-left-color: #A3195B;
   }
-  div.callout-experiment.callout-style-default > .callout-header {
+  div.callout-individual.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
-    background-image: none;
-  }
-  div.callout-source-check.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f002';
-    background-image: none;
-  }
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
+    content: '\f007';
     background-image: none;
   }
   div.callout-demonstration.callout {
@@ -274,18 +255,6 @@
     content: '\f51b';
     background-image: none;
   }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
   div.callout-pro-tip.callout {
     border-left-color: #D4A03E;
   }
@@ -298,28 +267,16 @@
     content: '\e2ca';
     background-image: none;
   }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
+  div.callout-reflect.callout {
+    border-left-color: #D4A03E;
   }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
   }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
-    background-image: none;
-  }
-  div.callout-warning.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-warning.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f06a';
+    content: '\f0eb';
     background-image: none;
   }
   div.callout-prompt.callout {
@@ -334,16 +291,28 @@
     content: '\f328';
     background-image: none;
   }
-  div.callout-scenario.callout {
-    border-left-color: #666666;
+  div.callout-experiment.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
+  div.callout-experiment.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f075';
+    content: '\f0c3';
+    background-image: none;
+  }
+  div.callout-group.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c0';
     background-image: none;
   }
   div.callout-key-point.callout {
@@ -356,6 +325,42 @@
   div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f005';
+    background-image: none;
+  }
+  div.callout-warning.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-warning.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f06a';
+    background-image: none;
+  }
+  div.callout-source-check.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
+  div.callout-scenario.callout {
+    border-left-color: #666666;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(102, 102, 102, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
     background-image: none;
   }
   </style>
@@ -386,7 +391,7 @@
 </div>
 
 </section>
-<section id="section" class="slide level2">
+<section id="section" class="slide level2 center">
 <h2></h2>
 <div style="text-align: center; padding-top: 3em;">
 <div class="cell" data-layout-align="center">
@@ -419,6 +424,102 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="wie-funktionieren-sprachmodelle" class="slide level2">
+<h2>Wie funktionieren Sprachmodelle?</h2>
+<p><br></p>
+<div style="font-size: 1.3em; text-align: center; margin-bottom: 1em;">
+<p><strong>Statistische Mustervervollständigung auf Basis von Kontext</strong></p>
+</div>
+<div class="fragment">
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><i class="fa-solid fa-chart-bar fa-2x" aria-label="chart-bar"></i></p>
+<p><br></p>
+<p><strong>Nächstes-Wort-Vorhersage</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Das Modell berechnet Wahrscheinlichkeiten für das nächste Wort basierend auf allem, was vorher kam.</span></p>
+</div><div class="column" style="width:50%;">
+<p><i class="fa-solid fa-sliders fa-2x" aria-label="sliders"></i></p>
+<p><br></p>
+<p><strong>Kontext bestimmt das Ergebnis</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Derselbe Prompt mit leicht verändertem Kontext kann zu völlig anderen Antworten führen.</span></p>
+</div></div>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; text-align: center;">
+<p>Kein “Verstehen”, kein “Wissen”, keine eingebaute Faktenkontrolle.</p>
+</div>
+<aside class="notes">
+<ul>
+<li>LLMs sagen das nächste Wort vorher, basierend auf statistischen Mustern</li>
+<li>Kontext bestimmt das Ergebnis: Prompt Engineering funktioniert genau deswegen</li>
+<li>Kein Verstehen, kein Wissen: nur Muster aus Trainingsdaten</li>
+<li>Wichtig für die Diskussion: Was heisst das für Lernen?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="fähigkeiten-und-grenzen" class="slide level2">
+<h2>Fähigkeiten und Grenzen</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Vielseitig einsetzbar:</strong></p>
+<p><br></p>
+<ul>
+<li><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> Text generieren und überarbeiten</li>
+<li><i class="fa-solid fa-image" aria-label="image"></i> Bilder analysieren und erstellen</li>
+<li><i class="fa-solid fa-code" aria-label="code"></i> Code schreiben und debuggen</li>
+<li><i class="fa-solid fa-globe" aria-label="globe"></i> Web-Suche und Recherche</li>
+<li><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Dokumente zusammenfassen</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Aber:</strong></p>
+<p><br></p>
+<ul>
+<li><i class="fa-solid fa-circle-exclamation" aria-label="circle-exclamation"></i> Keine eingebaute Faktenkontrolle</li>
+<li><i class="fa-solid fa-ghost" aria-label="ghost"></i> Halluzinationen (überzeugend, aber falsch)</li>
+<li><i class="fa-solid fa-rotate" aria-label="rotate"></i> Inkonsistente Ergebnisse</li>
+<li><i class="fa-solid fa-database" aria-label="database"></i> Wissen hat ein Ablaufdatum</li>
+<li><i class="fa-solid fa-user-slash" aria-label="user-slash"></i> Kein Verständnis, nur Muster</li>
+</ul>
+</div></div>
+<div class="fragment">
+<p><br></p>
+<div style="text-align: center; font-size: 1.2em; font-weight: bold;">
+<p>Vielseitig, aber immer überprüfen.</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Multi-modale Tools: Text, Bilder, Code, Web-Suche</li>
+<li>Keine eingebaute Faktenkontrolle, Halluzinationen</li>
+<li>Konsequenz: Vielseitig, aber immer überprüfen</li>
+<li>Frage: Was bedeutet “überprüfen” wenn man das Fach noch lernt?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section>
 <section id="ein-überraschendes-ergebnis" class="slide level2">
 <h2>Ein überraschendes Ergebnis</h2>
@@ -632,16 +733,11 @@
 <div class="fragment">
 <p><br></p>
 <p><strong>Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.</strong></p>
-</div>
-<div class="fragment">
-<p><br></p>
-<p><span style="color: #666; font-style: italic;">Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…</span></p>
 <aside class="notes">
 <ul>
 <li>Behaltensleistung: Selbst generiert (~70%) &gt; Gelesen (~50%) &gt; Von KI (~35%)</li>
 <li>Forschung seit 1970er (Slamecka &amp; Graf)</li>
 <li>Wenn KI generiert statt Studierende → Lerneffekt entfällt</li>
-<li>Effekt nicht neu → historische Analogien</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -656,13 +752,44 @@
       }</style></aside>
 </div>
 </section>
+<section id="offloading-vs.-outsourcing" class="slide level2 nostretch">
+<h2>Offloading vs.&nbsp;Outsourcing</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>Offloading: Werkzeug reduziert Arbeitsgedächtnislast, du denkst weiter</li>
+<li>Outsourcing: Werkzeug ersetzt dein Denken</li>
+<li>Nicht jede KI-Nutzung ist gleich: Spektrum von hilfreich bis schädlich</li>
+<li>Beispiele zeigen den graduellen Übergang</li>
+<li>Die entscheidende Frage: Bleibt die lernrelevante Verarbeitung beim Lernenden?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="historische-analogien" class="slide level2 nostretch">
 <h2>Historische Analogien</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -694,73 +821,36 @@
       }</style></aside>
 </div>
 </section>
-<section id="die-entscheidende-frage" class="slide level2">
-<h2>Die entscheidende Frage</h2>
-<p><br><br></p>
-<div style="font-size: 1.3em; text-align: center;">
-<p>Dasselbe Werkzeug, unterschiedliche Ergebnisse.</p>
-</div>
-<div class="fragment">
-<p><br></p>
-<div style="text-align: left;">
-<p><i class="fa-solid fa-calculator" aria-label="calculator"></i> Taschenrechner helfen Mathematikern, können aber Lernenden schaden.</p>
-<p><i class="fa-solid fa-map-location-dot" aria-label="map-location-dot"></i> GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.</p>
-</div>
-</div>
-<div class="fragment">
-<p><br><br></p>
-<div style="font-size: 1.4em; text-align: center; font-weight: bold;">
-<p>Die Frage ist nicht <em>ob</em> KI, sondern <em>wer</em> davon profitiert.</p>
-</div>
-</div>
-<div class="fragment">
-<p><br></p>
-<p><span style="color: #666; font-style: italic; display: block; text-align: center;">Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.</span></p>
-<aside class="notes">
-<ul>
-<li>Dasselbe Werkzeug, unterschiedliche Ergebnisse</li>
-<li>Taschenrechner: hilft Mathematikern, kann Lernenden schaden</li>
-<li>GPS: hilft Taxifahrern, schwächt räumliches Gedächtnis von Neulingen</li>
-<li>Frage nicht OB KI nützt/schadet, sondern WER profitiert</li>
-<li>Antwort: Was unterscheidet Experten von Lernenden?</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</section>
-<section id="was-experten-sehen" class="slide level2">
-<h2>Was Experten sehen</h2>
+<section id="experten-vs.-lernende" class="slide level2">
+<h2>Experten vs.&nbsp;Lernende</h2>
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="../../assets/images/chess.png" style="width:90.0%"></p>
+<p><strong>Experten:</strong></p>
+<p><br></p>
+<ul>
+<li><i class="fa-solid fa-cogs" aria-label="cogs"></i> Können Routine auslagern</li>
+<li><i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> Können KI-Output bewerten</li>
+<li><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Mehr Kapazität für Komplexes</li>
+</ul>
 </div><div class="column" style="width:50%;">
+<p><strong>Lernende:</strong></p>
 <p><br></p>
-<p><strong>Novize:</strong> sieht Einzelteile</p>
-<p>“64 Felder, 32 Figuren, viele Möglichkeiten”</p>
-<p>. . .</p>
-<p><strong>Experte:</strong> sieht Muster und Bedeutung</p>
-<p>“Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7”</p>
-<p>. . .</p>
-<p><br></p>
-<p>Experten speichern Wissen in <strong>Chunks</strong>: vernetzte Wissensstrukturen, die automatisch abgerufen werden <span class="citation" data-cites="grootThoughtChoiceChess1978 chasePerceptionChess1973">(<a href="#/referenzen" role="doc-biblioref" onclick="">Groot und Groot 1978</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Chase und Simon 1973</a>)</span>.</p>
+<ul>
+<li><i class="fa-solid fa-eye-slash" aria-label="eye-slash"></i> Können nicht bewerten</li>
+<li><i class="fa-solid fa-forward-fast" aria-label="forward-fast"></i> Überspringen Grundlagen</li>
+<li><i class="fa-solid fa-mask" aria-label="mask"></i> Risiko: “Fliessende Inkompetenz”</li>
+</ul>
 </div></div>
+<div class="fragment">
+<p><br></p>
+<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</strong></p>
 <aside class="notes">
 <ul>
-<li>Schachforschung als klassisches Beispiel</li>
-<li>Novize: sieht Einzelteile (64 Felder, 32 Figuren)</li>
-<li>Experte: sieht Muster und Bedeutung (“Sizilianische Verteidigung”)</li>
-<li>Experten speichern Wissen in “Chunks” (vernetzte Strukturen)</li>
-<li>Schachmeister: ~50.000 Chunks (de Groot, Chase &amp; Simon)</li>
+<li>Experten: können Routine auslagern, Output bewerten, Kapazität für Komplexes</li>
+<li>Lernende: können Output nicht bewerten, überspringen Grundlagen</li>
+<li>Risiko: “fliessende Inkompetenz” (mit Hilfe alles, ohne Hilfe nichts)</li>
+<li>Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -773,6 +863,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</div>
 </section>
 <section id="der-expertise-umkehr-effekt" class="slide level2">
 <h2>Der Expertise-Umkehr-Effekt</h2>
@@ -780,223 +871,186 @@
 <p><i class="fa-solid fa-hand-pointer" aria-label="hand-pointer"></i> <strong>Interaktiv:</strong> Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.</p>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="629" data-source-offset="-230"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 628;"><span id="cb1-629"><a></a>config <span class="op">=</span> ({</span>
-<span id="cb1-630"><a></a>  <span class="co">// Color palette</span></span>
-<span id="cb1-631"><a></a>  <span class="dt">colors</span><span class="op">:</span> {</span>
-<span id="cb1-632"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span></span>
-<span id="cb1-633"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span></span>
-<span id="cb1-634"><a></a>    <span class="dt">neutral</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span></span>
-<span id="cb1-635"><a></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#f5f5f5"</span></span>
-<span id="cb1-636"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-637"><a></a>  <span class="co">// Line equations: y = intercept + slope * x</span></span>
-<span id="cb1-638"><a></a>  <span class="co">// Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x</span></span>
-<span id="cb1-639"><a></a>  <span class="dt">lines</span><span class="op">:</span> {</span>
-<span id="cb1-640"><a></a>    <span class="dt">high</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">65</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.4</span> }<span class="op">,</span></span>
-<span id="cb1-641"><a></a>    <span class="dt">low</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="fl">0.4</span> }</span>
-<span id="cb1-642"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-643"><a></a>  <span class="co">// Input options</span></span>
-<span id="cb1-644"><a></a>  <span class="dt">steps</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-645"><a></a>  <span class="dt">defaultValue</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
-<span id="cb1-646"><a></a>  <span class="co">// Plot dimensions</span></span>
-<span id="cb1-647"><a></a>  <span class="dt">plot</span><span class="op">:</span> {</span>
-<span id="cb1-648"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
-<span id="cb1-649"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
-<span id="cb1-650"><a></a>    <span class="dt">margins</span><span class="op">:</span> { <span class="dt">left</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">bottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">top</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">right</span><span class="op">:</span> <span class="dv">40</span> }</span>
-<span id="cb1-651"><a></a>  }<span class="op">,</span></span>
-<span id="cb1-652"><a></a>  <span class="co">// Labels</span></span>
-<span id="cb1-653"><a></a>  <span class="dt">labels</span><span class="op">:</span> {</span>
-<span id="cb1-654"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"Hohe Unterstützung"</span><span class="op">,</span></span>
-<span id="cb1-655"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span><span class="op">,</span></span>
-<span id="cb1-656"><a></a>    <span class="dt">highExamples</span><span class="op">:</span> [<span class="st">"📖 Worked Examples"</span><span class="op">,</span> <span class="st">"🧭 Direkte Instruktion"</span>]<span class="op">,</span></span>
-<span id="cb1-657"><a></a>    <span class="dt">lowExamples</span><span class="op">:</span> [<span class="st">"🧩 Problembasiertes Lernen"</span><span class="op">,</span> <span class="st">"🔍 Eigene Lösungswege"</span>]</span>
-<span id="cb1-658"><a></a>  }</span>
-<span id="cb1-659"><a></a>})</span>
-<span id="cb1-660"><a></a></span>
-<span id="cb1-661"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-662"><a></a><span class="co">// Derived values: Computed from config (no magic numbers)</span></span>
-<span id="cb1-663"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-664"><a></a></span>
-<span id="cb1-665"><a></a><span class="co">// Crossover point: solve for x where both lines intersect</span></span>
-<span id="cb1-666"><a></a>crossoverPoint <span class="op">=</span> {</span>
-<span id="cb1-667"><a></a>  <span class="kw">const</span> { high<span class="op">,</span> low } <span class="op">=</span> config<span class="op">.</span><span class="at">lines</span><span class="op">;</span></span>
-<span id="cb1-668"><a></a>  <span class="cf">return</span> (high<span class="op">.</span><span class="at">intercept</span> <span class="op">-</span> low<span class="op">.</span><span class="at">intercept</span>) <span class="op">/</span> (low<span class="op">.</span><span class="at">slope</span> <span class="op">-</span> high<span class="op">.</span><span class="at">slope</span>)<span class="op">;</span></span>
-<span id="cb1-669"><a></a>}</span>
-<span id="cb1-670"><a></a></span>
-<span id="cb1-671"><a></a><span class="co">// Helper function to calculate y-value on a line</span></span>
-<span id="cb1-672"><a></a>calcY <span class="op">=</span> (line<span class="op">,</span> x) <span class="kw">=&gt;</span> line<span class="op">.</span><span class="at">intercept</span> <span class="op">+</span> line<span class="op">.</span><span class="at">slope</span> <span class="op">*</span> x</span>
-<span id="cb1-673"><a></a></span>
-<span id="cb1-674"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-675"><a></a><span class="co">// State: Single source of truth for user input (hidden, controlled by buttons)</span></span>
-<span id="cb1-676"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-677"><a></a>viewof vorwissen <span class="op">=</span> {</span>
-<span id="cb1-678"><a></a>  <span class="kw">const</span> input <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(config<span class="op">.</span><span class="at">steps</span><span class="op">,</span> {</span>
-<span id="cb1-679"><a></a>    <span class="dt">value</span><span class="op">:</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">,</span></span>
-<span id="cb1-680"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
-<span id="cb1-681"><a></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x <span class="op">+</span> <span class="st">"%"</span></span>
-<span id="cb1-682"><a></a>  })<span class="op">;</span></span>
-<span id="cb1-683"><a></a>  input<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span><span class="op">;</span></span>
-<span id="cb1-684"><a></a>  <span class="cf">return</span> input<span class="op">;</span></span>
-<span id="cb1-685"><a></a>}</span>
-<span id="cb1-686"><a></a></span>
-<span id="cb1-687"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-688"><a></a><span class="co">// Reactive calculations based on current state</span></span>
-<span id="cb1-689"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-690"><a></a>currentState <span class="op">=</span> {</span>
-<span id="cb1-691"><a></a>  <span class="kw">const</span> x <span class="op">=</span> vorwissen <span class="op">??</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">;</span></span>
-<span id="cb1-692"><a></a>  <span class="kw">const</span> highY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">high</span><span class="op">,</span> x)<span class="op">;</span></span>
-<span id="cb1-693"><a></a>  <span class="kw">const</span> lowY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">low</span><span class="op">,</span> x)<span class="op">;</span></span>
-<span id="cb1-694"><a></a>  <span class="kw">const</span> isHighBetter <span class="op">=</span> x <span class="op">&lt;=</span> crossoverPoint<span class="op">;</span></span>
-<span id="cb1-695"><a></a></span>
-<span id="cb1-696"><a></a>  <span class="cf">return</span> {</span>
-<span id="cb1-697"><a></a>    x<span class="op">,</span></span>
-<span id="cb1-698"><a></a>    highY<span class="op">,</span></span>
-<span id="cb1-699"><a></a>    lowY<span class="op">,</span></span>
-<span id="cb1-700"><a></a>    isHighBetter<span class="op">,</span></span>
-<span id="cb1-701"><a></a>    <span class="dt">optimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> highY <span class="op">:</span> lowY<span class="op">,</span></span>
-<span id="cb1-702"><a></a>    <span class="dt">suboptimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> lowY <span class="op">:</span> highY<span class="op">,</span></span>
-<span id="cb1-703"><a></a>    <span class="dt">optimalLabel</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
-<span id="cb1-704"><a></a>    <span class="dt">optimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
-<span id="cb1-705"><a></a>    <span class="dt">suboptimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span></span>
-<span id="cb1-706"><a></a>  }<span class="op">;</span></span>
-<span id="cb1-707"><a></a>}</span>
-<span id="cb1-708"><a></a></span>
-<span id="cb1-709"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-710"><a></a><span class="co">// Plot: Visualization with all marks</span></span>
-<span id="cb1-711"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-712"><a></a>expertisePlot <span class="op">=</span> {</span>
-<span id="cb1-713"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> lines<span class="op">,</span> plot<span class="op">,</span> labels } <span class="op">=</span> config<span class="op">;</span></span>
-<span id="cb1-714"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> highY<span class="op">,</span> lowY<span class="op">,</span> isHighBetter<span class="op">,</span> optimalY<span class="op">,</span> suboptimalY<span class="op">,</span> optimalColor<span class="op">,</span> suboptimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
-<span id="cb1-715"><a></a></span>
-<span id="cb1-716"><a></a>  <span class="co">// Generate line data points</span></span>
-<span id="cb1-717"><a></a>  <span class="kw">const</span> highLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
-<span id="cb1-718"><a></a>  <span class="kw">const</span> lowLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
-<span id="cb1-719"><a></a></span>
-<span id="cb1-720"><a></a>  <span class="co">// Label positions (relative to line endpoints)</span></span>
-<span id="cb1-721"><a></a>  <span class="kw">const</span> labelOffsetY <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span>
-<span id="cb1-722"><a></a>  <span class="kw">const</span> exampleBaseY <span class="op">=</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> labelOffsetY<span class="op">;</span></span>
-<span id="cb1-723"><a></a></span>
-<span id="cb1-724"><a></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-725"><a></a>    <span class="dt">width</span><span class="op">:</span> plot<span class="op">.</span><span class="at">width</span><span class="op">,</span></span>
-<span id="cb1-726"><a></a>    <span class="dt">height</span><span class="op">:</span> plot<span class="op">.</span><span class="at">height</span><span class="op">,</span></span>
-<span id="cb1-727"><a></a>    <span class="dt">marginLeft</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">left</span><span class="op">,</span></span>
-<span id="cb1-728"><a></a>    <span class="dt">marginBottom</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">bottom</span><span class="op">,</span></span>
-<span id="cb1-729"><a></a>    <span class="dt">marginTop</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">top</span><span class="op">,</span></span>
-<span id="cb1-730"><a></a>    <span class="dt">marginRight</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">right</span><span class="op">,</span></span>
-<span id="cb1-731"><a></a>    <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
-<span id="cb1-732"><a></a>    <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb1-733"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-734"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
-<span id="cb1-735"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
-<span id="cb1-736"><a></a>      <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-737"><a></a>      <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
-<span id="cb1-738"><a></a>    }<span class="op">,</span></span>
-<span id="cb1-739"><a></a>    <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb1-740"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
-<span id="cb1-741"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
-<span id="cb1-742"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb1-743"><a></a>      <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-744"><a></a>    }<span class="op">,</span></span>
-<span id="cb1-745"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-746"><a></a>      <span class="co">// Support lines</span></span>
-<span id="cb1-747"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(highLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
-<span id="cb1-748"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(lowLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
-<span id="cb1-749"><a></a></span>
-<span id="cb1-750"><a></a>      <span class="co">// Vertical position indicator</span></span>
-<span id="cb1-751"><a></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([x]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">neutral</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
-<span id="cb1-752"><a></a></span>
-<span id="cb1-753"><a></a>      <span class="co">// Suboptimal dot (smaller, faded)</span></span>
-<span id="cb1-754"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> suboptimalY}]<span class="op">,</span> {</span>
-<span id="cb1-755"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
-<span id="cb1-756"><a></a>        <span class="dt">fill</span><span class="op">:</span> suboptimalColor<span class="op">,</span></span>
-<span id="cb1-757"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span></span>
-<span id="cb1-758"><a></a>        <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.4</span></span>
-<span id="cb1-759"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-760"><a></a></span>
-<span id="cb1-761"><a></a>      <span class="co">// Optimal dot (larger, prominent with white stroke)</span></span>
-<span id="cb1-762"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> optimalY}]<span class="op">,</span> {</span>
-<span id="cb1-763"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
-<span id="cb1-764"><a></a>        <span class="dt">fill</span><span class="op">:</span> optimalColor<span class="op">,</span></span>
-<span id="cb1-765"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span></span>
-<span id="cb1-766"><a></a>        <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb1-767"><a></a>        <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
-<span id="cb1-768"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-769"><a></a></span>
-<span id="cb1-770"><a></a>      <span class="co">// High support examples (left side, near line start)</span></span>
-<span id="cb1-771"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
-<span id="cb1-772"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-773"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-774"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
-<span id="cb1-775"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-776"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-777"><a></a></span>
-<span id="cb1-778"><a></a>      <span class="co">// Low support examples (right side)</span></span>
-<span id="cb1-779"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
-<span id="cb1-780"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-781"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-782"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
-<span id="cb1-783"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
-<span id="cb1-784"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-785"><a></a></span>
-<span id="cb1-786"><a></a>      <span class="co">// Line labels (near line ends)</span></span>
-<span id="cb1-787"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
-<span id="cb1-788"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
-<span id="cb1-789"><a></a>      })<span class="op">,</span></span>
-<span id="cb1-790"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
-<span id="cb1-791"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
-<span id="cb1-792"><a></a>      })</span>
-<span id="cb1-793"><a></a>    ]</span>
-<span id="cb1-794"><a></a>  })<span class="op">;</span></span>
-<span id="cb1-795"><a></a>}</span>
-<span id="cb1-796"><a></a></span>
-<span id="cb1-797"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-798"><a></a><span class="co">// Button Group: Custom styled segmented control</span></span>
-<span id="cb1-799"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-800"><a></a>buttonGroup <span class="op">=</span> {</span>
-<span id="cb1-801"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> optimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
-<span id="cb1-802"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> steps } <span class="op">=</span> config<span class="op">;</span></span>
-<span id="cb1-803"><a></a></span>
-<span id="cb1-804"><a></a>  <span class="kw">const</span> buttonStyle <span class="op">=</span> (isSelected<span class="op">,</span> selectColor) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
-<span id="cb1-805"><a></a><span class="vs">    padding: 12px 18px;</span></span>
-<span id="cb1-806"><a></a><span class="vs">    border: none;</span></span>
-<span id="cb1-807"><a></a><span class="vs">    background: </span><span class="sc">${</span>isSelected <span class="op">?</span> selectColor <span class="op">:</span> colors<span class="op">.</span><span class="at">background</span><span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-808"><a></a><span class="vs">    color: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'white'</span> <span class="op">:</span> <span class="st">'#333'</span><span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-809"><a></a><span class="vs">    font-size: 1em;</span></span>
-<span id="cb1-810"><a></a><span class="vs">    font-weight: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'bold'</span> <span class="op">:</span> <span class="st">'normal'</span><span class="sc">}</span><span class="vs">;</span></span>
-<span id="cb1-811"><a></a><span class="vs">    cursor: pointer;</span></span>
-<span id="cb1-812"><a></a><span class="vs">    border-right: 1px solid #ddd;</span></span>
-<span id="cb1-813"><a></a><span class="vs">    transition: background 0.15s ease;</span></span>
-<span id="cb1-814"><a></a><span class="vs">  `</span><span class="op">;</span></span>
-<span id="cb1-815"><a></a></span>
-<span id="cb1-816"><a></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
-<span id="cb1-817"><a></a></span>
-<span id="cb1-818"><a></a>  steps<span class="op">.</span><span class="fu">forEach</span>(v <span class="kw">=&gt;</span> {</span>
-<span id="cb1-819"><a></a>    <span class="kw">const</span> isSelected <span class="op">=</span> x <span class="op">===</span> v<span class="op">;</span></span>
-<span id="cb1-820"><a></a>    <span class="kw">const</span> selectColor <span class="op">=</span> v <span class="op">&lt;=</span> crossoverPoint <span class="op">?</span> colors<span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">;</span></span>
-<span id="cb1-821"><a></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button style="</span><span class="sc">${</span><span class="fu">buttonStyle</span>(isSelected<span class="op">,</span> selectColor)<span class="sc">}</span><span class="vs">"&gt;</span><span class="sc">${</span>v<span class="sc">}</span><span class="vs">%&lt;/button&gt;`</span><span class="op">;</span></span>
-<span id="cb1-822"><a></a>    btn<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-823"><a></a>      viewof vorwissen<span class="op">.</span><span class="at">value</span> <span class="op">=</span> v<span class="op">;</span></span>
-<span id="cb1-824"><a></a>      viewof vorwissen<span class="op">.</span><span class="fu">dispatchEvent</span>(<span class="kw">new</span> <span class="bu">Event</span>(<span class="st">'input'</span><span class="op">,</span> {<span class="dt">bubbles</span><span class="op">:</span> <span class="kw">true</span>}))<span class="op">;</span></span>
-<span id="cb1-825"><a></a>    }<span class="op">;</span></span>
-<span id="cb1-826"><a></a>    container<span class="op">.</span><span class="fu">appendChild</span>(btn)<span class="op">;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="784" data-source-offset="-230"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 783;"><span id="cb1-784"><a></a>config <span class="op">=</span> ({</span>
+<span id="cb1-785"><a></a>  <span class="co">// Color palette</span></span>
+<span id="cb1-786"><a></a>  <span class="dt">colors</span><span class="op">:</span> {</span>
+<span id="cb1-787"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span></span>
+<span id="cb1-788"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"#666666"</span><span class="op">,</span></span>
+<span id="cb1-789"><a></a>    <span class="dt">neutral</span><span class="op">:</span> <span class="st">"#333"</span><span class="op">,</span></span>
+<span id="cb1-790"><a></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#f5f5f5"</span></span>
+<span id="cb1-791"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-792"><a></a>  <span class="co">// Line equations: y = intercept + slope * x</span></span>
+<span id="cb1-793"><a></a>  <span class="dt">lines</span><span class="op">:</span> {</span>
+<span id="cb1-794"><a></a>    <span class="dt">high</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">65</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.4</span> }<span class="op">,</span></span>
+<span id="cb1-795"><a></a>    <span class="dt">low</span><span class="op">:</span> { <span class="dt">intercept</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span> <span class="dt">slope</span><span class="op">:</span> <span class="fl">0.4</span> }</span>
+<span id="cb1-796"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-797"><a></a>  <span class="co">// Input options</span></span>
+<span id="cb1-798"><a></a>  <span class="dt">steps</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">60</span><span class="op">,</span> <span class="dv">80</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-799"><a></a>  <span class="dt">defaultValue</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb1-800"><a></a>  <span class="co">// Plot dimensions</span></span>
+<span id="cb1-801"><a></a>  <span class="dt">plot</span><span class="op">:</span> {</span>
+<span id="cb1-802"><a></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">900</span><span class="op">,</span></span>
+<span id="cb1-803"><a></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">480</span><span class="op">,</span></span>
+<span id="cb1-804"><a></a>    <span class="dt">margins</span><span class="op">:</span> { <span class="dt">left</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">bottom</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">top</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">right</span><span class="op">:</span> <span class="dv">40</span> }</span>
+<span id="cb1-805"><a></a>  }<span class="op">,</span></span>
+<span id="cb1-806"><a></a>  <span class="co">// Labels</span></span>
+<span id="cb1-807"><a></a>  <span class="dt">labels</span><span class="op">:</span> {</span>
+<span id="cb1-808"><a></a>    <span class="dt">highSupport</span><span class="op">:</span> <span class="st">"Hohe Unterstützung"</span><span class="op">,</span></span>
+<span id="cb1-809"><a></a>    <span class="dt">lowSupport</span><span class="op">:</span> <span class="st">"Niedrige Unterstützung"</span><span class="op">,</span></span>
+<span id="cb1-810"><a></a>    <span class="dt">highExamples</span><span class="op">:</span> [<span class="st">"📖 Worked Examples"</span><span class="op">,</span> <span class="st">"🧭 Direkte Instruktion"</span>]<span class="op">,</span></span>
+<span id="cb1-811"><a></a>    <span class="dt">lowExamples</span><span class="op">:</span> [<span class="st">"🧩 Problembasiertes Lernen"</span><span class="op">,</span> <span class="st">"🔍 Eigene Lösungswege"</span>]</span>
+<span id="cb1-812"><a></a>  }</span>
+<span id="cb1-813"><a></a>})</span>
+<span id="cb1-814"><a></a></span>
+<span id="cb1-815"><a></a>crossoverPoint <span class="op">=</span> {</span>
+<span id="cb1-816"><a></a>  <span class="kw">const</span> { high<span class="op">,</span> low } <span class="op">=</span> config<span class="op">.</span><span class="at">lines</span><span class="op">;</span></span>
+<span id="cb1-817"><a></a>  <span class="cf">return</span> (high<span class="op">.</span><span class="at">intercept</span> <span class="op">-</span> low<span class="op">.</span><span class="at">intercept</span>) <span class="op">/</span> (low<span class="op">.</span><span class="at">slope</span> <span class="op">-</span> high<span class="op">.</span><span class="at">slope</span>)<span class="op">;</span></span>
+<span id="cb1-818"><a></a>}</span>
+<span id="cb1-819"><a></a></span>
+<span id="cb1-820"><a></a>calcY <span class="op">=</span> (line<span class="op">,</span> x) <span class="kw">=&gt;</span> line<span class="op">.</span><span class="at">intercept</span> <span class="op">+</span> line<span class="op">.</span><span class="at">slope</span> <span class="op">*</span> x</span>
+<span id="cb1-821"><a></a></span>
+<span id="cb1-822"><a></a>viewof vorwissen <span class="op">=</span> {</span>
+<span id="cb1-823"><a></a>  <span class="kw">const</span> input <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(config<span class="op">.</span><span class="at">steps</span><span class="op">,</span> {</span>
+<span id="cb1-824"><a></a>    <span class="dt">value</span><span class="op">:</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">,</span></span>
+<span id="cb1-825"><a></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
+<span id="cb1-826"><a></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x <span class="op">+</span> <span class="st">"%"</span></span>
 <span id="cb1-827"><a></a>  })<span class="op">;</span></span>
-<span id="cb1-828"><a></a></span>
-<span id="cb1-829"><a></a>  <span class="cf">return</span> container<span class="op">;</span></span>
+<span id="cb1-828"><a></a>  input<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span><span class="op">;</span></span>
+<span id="cb1-829"><a></a>  <span class="cf">return</span> input<span class="op">;</span></span>
 <span id="cb1-830"><a></a>}</span>
 <span id="cb1-831"><a></a></span>
-<span id="cb1-832"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-833"><a></a><span class="co">// Layout: Compose all elements</span></span>
-<span id="cb1-834"><a></a><span class="co">// =============================================================================</span></span>
-<span id="cb1-835"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
-<span id="cb1-836"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb1-837"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;"&gt;</span></span>
-<span id="cb1-838"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
-<span id="cb1-839"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>buttonGroup<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb1-840"><a></a><span class="vs">    &lt;div style="font-size: 1.3em; text-align: center; padding: 15px; background: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">22; border-radius: 8px; border-left: 4px solid </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">;"&gt;</span></span>
-<span id="cb1-841"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalLabel</span><span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;</span></span>
-<span id="cb1-842"><a></a><span class="vs">      &lt;span style="font-size: 0.8em; color: #666;"&gt;ist effektiver&lt;/span&gt;</span></span>
-<span id="cb1-843"><a></a><span class="vs">    &lt;/div&gt;</span></span>
-<span id="cb1-844"><a></a><span class="vs">  &lt;/div&gt;</span></span>
-<span id="cb1-845"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-832"><a></a>currentState <span class="op">=</span> {</span>
+<span id="cb1-833"><a></a>  <span class="kw">const</span> x <span class="op">=</span> vorwissen <span class="op">??</span> config<span class="op">.</span><span class="at">defaultValue</span><span class="op">;</span></span>
+<span id="cb1-834"><a></a>  <span class="kw">const</span> highY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">high</span><span class="op">,</span> x)<span class="op">;</span></span>
+<span id="cb1-835"><a></a>  <span class="kw">const</span> lowY <span class="op">=</span> <span class="fu">calcY</span>(config<span class="op">.</span><span class="at">lines</span><span class="op">.</span><span class="at">low</span><span class="op">,</span> x)<span class="op">;</span></span>
+<span id="cb1-836"><a></a>  <span class="kw">const</span> isHighBetter <span class="op">=</span> x <span class="op">&lt;=</span> crossoverPoint<span class="op">;</span></span>
+<span id="cb1-837"><a></a></span>
+<span id="cb1-838"><a></a>  <span class="cf">return</span> {</span>
+<span id="cb1-839"><a></a>    x<span class="op">,</span></span>
+<span id="cb1-840"><a></a>    highY<span class="op">,</span></span>
+<span id="cb1-841"><a></a>    lowY<span class="op">,</span></span>
+<span id="cb1-842"><a></a>    isHighBetter<span class="op">,</span></span>
+<span id="cb1-843"><a></a>    <span class="dt">optimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> highY <span class="op">:</span> lowY<span class="op">,</span></span>
+<span id="cb1-844"><a></a>    <span class="dt">suboptimalY</span><span class="op">:</span> isHighBetter <span class="op">?</span> lowY <span class="op">:</span> highY<span class="op">,</span></span>
+<span id="cb1-845"><a></a>    <span class="dt">optimalLabel</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">labels</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
+<span id="cb1-846"><a></a>    <span class="dt">optimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span></span>
+<span id="cb1-847"><a></a>    <span class="dt">suboptimalColor</span><span class="op">:</span> isHighBetter <span class="op">?</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">lowSupport</span> <span class="op">:</span> config<span class="op">.</span><span class="at">colors</span><span class="op">.</span><span class="at">highSupport</span></span>
+<span id="cb1-848"><a></a>  }<span class="op">;</span></span>
+<span id="cb1-849"><a></a>}</span>
+<span id="cb1-850"><a></a></span>
+<span id="cb1-851"><a></a>expertisePlot <span class="op">=</span> {</span>
+<span id="cb1-852"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> lines<span class="op">,</span> plot<span class="op">,</span> labels } <span class="op">=</span> config<span class="op">;</span></span>
+<span id="cb1-853"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> highY<span class="op">,</span> lowY<span class="op">,</span> isHighBetter<span class="op">,</span> optimalY<span class="op">,</span> suboptimalY<span class="op">,</span> optimalColor<span class="op">,</span> suboptimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
+<span id="cb1-854"><a></a></span>
+<span id="cb1-855"><a></a>  <span class="kw">const</span> highLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
+<span id="cb1-856"><a></a>  <span class="kw">const</span> lowLineData <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>)}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">100</span>)}]<span class="op">;</span></span>
+<span id="cb1-857"><a></a></span>
+<span id="cb1-858"><a></a>  <span class="kw">const</span> labelOffsetY <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span>
+<span id="cb1-859"><a></a>  <span class="kw">const</span> exampleBaseY <span class="op">=</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> labelOffsetY<span class="op">;</span></span>
+<span id="cb1-860"><a></a></span>
+<span id="cb1-861"><a></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-862"><a></a>    <span class="dt">width</span><span class="op">:</span> plot<span class="op">.</span><span class="at">width</span><span class="op">,</span></span>
+<span id="cb1-863"><a></a>    <span class="dt">height</span><span class="op">:</span> plot<span class="op">.</span><span class="at">height</span><span class="op">,</span></span>
+<span id="cb1-864"><a></a>    <span class="dt">marginLeft</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">left</span><span class="op">,</span></span>
+<span id="cb1-865"><a></a>    <span class="dt">marginBottom</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">bottom</span><span class="op">,</span></span>
+<span id="cb1-866"><a></a>    <span class="dt">marginTop</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">top</span><span class="op">,</span></span>
+<span id="cb1-867"><a></a>    <span class="dt">marginRight</span><span class="op">:</span> plot<span class="op">.</span><span class="at">margins</span><span class="op">.</span><span class="at">right</span><span class="op">,</span></span>
+<span id="cb1-868"><a></a>    <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="st">"16px"</span> }<span class="op">,</span></span>
+<span id="cb1-869"><a></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb1-870"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-871"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"Vorwissen →"</span><span class="op">,</span></span>
+<span id="cb1-872"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
+<span id="cb1-873"><a></a>      <span class="dt">ticks</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-874"><a></a>      <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> d <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Niedrig"</span> <span class="op">:</span> d <span class="op">===</span> <span class="dv">50</span> <span class="op">?</span> <span class="st">"Mittel"</span> <span class="op">:</span> <span class="st">"Hoch"</span></span>
+<span id="cb1-875"><a></a>    }<span class="op">,</span></span>
+<span id="cb1-876"><a></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb1-877"><a></a>      <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span></span>
+<span id="cb1-878"><a></a>      <span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Lerneffekt"</span><span class="op">,</span></span>
+<span id="cb1-879"><a></a>      <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb1-880"><a></a>      <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-881"><a></a>    }<span class="op">,</span></span>
+<span id="cb1-882"><a></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-883"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(highLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-884"><a></a>      Plot<span class="op">.</span><span class="fu">line</span>(lowLineData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-885"><a></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([x]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> colors<span class="op">.</span><span class="at">neutral</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"8,5"</span>})<span class="op">,</span></span>
+<span id="cb1-886"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> suboptimalY}]<span class="op">,</span> {</span>
+<span id="cb1-887"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-888"><a></a>        <span class="dt">fill</span><span class="op">:</span> suboptimalColor<span class="op">,</span></span>
+<span id="cb1-889"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span></span>
+<span id="cb1-890"><a></a>        <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.4</span></span>
+<span id="cb1-891"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-892"><a></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{x<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> optimalY}]<span class="op">,</span> {</span>
+<span id="cb1-893"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span></span>
+<span id="cb1-894"><a></a>        <span class="dt">fill</span><span class="op">:</span> optimalColor<span class="op">,</span></span>
+<span id="cb1-895"><a></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span></span>
+<span id="cb1-896"><a></a>        <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb1-897"><a></a>        <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
+<span id="cb1-898"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-899"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
+<span id="cb1-900"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-901"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-902"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
+<span id="cb1-903"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-904"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-905"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY}]<span class="op">,</span> {</span>
+<span id="cb1-906"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">0</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-907"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-908"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> exampleBaseY <span class="op">-</span> <span class="dv">6</span>}]<span class="op">,</span> {</span>
+<span id="cb1-909"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowExamples</span>[<span class="dv">1</span>]]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span></span>
+<span id="cb1-910"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-911"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">high</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
+<span id="cb1-912"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">highSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">highSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
+<span id="cb1-913"><a></a>      })<span class="op">,</span></span>
+<span id="cb1-914"><a></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">x</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="fu">calcY</span>(lines<span class="op">.</span><span class="at">low</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">-</span> <span class="dv">5</span>}]<span class="op">,</span> {</span>
+<span id="cb1-915"><a></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [labels<span class="op">.</span><span class="at">lowSupport</span>]<span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span></span>
+<span id="cb1-916"><a></a>      })</span>
+<span id="cb1-917"><a></a>    ]</span>
+<span id="cb1-918"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-919"><a></a>}</span>
+<span id="cb1-920"><a></a></span>
+<span id="cb1-921"><a></a>buttonGroup <span class="op">=</span> {</span>
+<span id="cb1-922"><a></a>  <span class="kw">const</span> { x<span class="op">,</span> optimalColor } <span class="op">=</span> currentState<span class="op">;</span></span>
+<span id="cb1-923"><a></a>  <span class="kw">const</span> { colors<span class="op">,</span> steps } <span class="op">=</span> config<span class="op">;</span></span>
+<span id="cb1-924"><a></a></span>
+<span id="cb1-925"><a></a>  <span class="kw">const</span> buttonStyle <span class="op">=</span> (isSelected<span class="op">,</span> selectColor) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb1-926"><a></a><span class="vs">    padding: 12px 18px;</span></span>
+<span id="cb1-927"><a></a><span class="vs">    border: none;</span></span>
+<span id="cb1-928"><a></a><span class="vs">    background: </span><span class="sc">${</span>isSelected <span class="op">?</span> selectColor <span class="op">:</span> colors<span class="op">.</span><span class="at">background</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-929"><a></a><span class="vs">    color: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'white'</span> <span class="op">:</span> <span class="st">'#333'</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-930"><a></a><span class="vs">    font-size: 1em;</span></span>
+<span id="cb1-931"><a></a><span class="vs">    font-weight: </span><span class="sc">${</span>isSelected <span class="op">?</span> <span class="st">'bold'</span> <span class="op">:</span> <span class="st">'normal'</span><span class="sc">}</span><span class="vs">;</span></span>
+<span id="cb1-932"><a></a><span class="vs">    cursor: pointer;</span></span>
+<span id="cb1-933"><a></a><span class="vs">    border-right: 1px solid #ddd;</span></span>
+<span id="cb1-934"><a></a><span class="vs">    transition: background 0.15s ease;</span></span>
+<span id="cb1-935"><a></a><span class="vs">  `</span><span class="op">;</span></span>
+<span id="cb1-936"><a></a></span>
+<span id="cb1-937"><a></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb1-938"><a></a></span>
+<span id="cb1-939"><a></a>  steps<span class="op">.</span><span class="fu">forEach</span>(v <span class="kw">=&gt;</span> {</span>
+<span id="cb1-940"><a></a>    <span class="kw">const</span> isSelected <span class="op">=</span> x <span class="op">===</span> v<span class="op">;</span></span>
+<span id="cb1-941"><a></a>    <span class="kw">const</span> selectColor <span class="op">=</span> v <span class="op">&lt;=</span> crossoverPoint <span class="op">?</span> colors<span class="op">.</span><span class="at">highSupport</span> <span class="op">:</span> colors<span class="op">.</span><span class="at">lowSupport</span><span class="op">;</span></span>
+<span id="cb1-942"><a></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button style="</span><span class="sc">${</span><span class="fu">buttonStyle</span>(isSelected<span class="op">,</span> selectColor)<span class="sc">}</span><span class="vs">"&gt;</span><span class="sc">${</span>v<span class="sc">}</span><span class="vs">%&lt;/button&gt;`</span><span class="op">;</span></span>
+<span id="cb1-943"><a></a>    btn<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-944"><a></a>      viewof vorwissen<span class="op">.</span><span class="at">value</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb1-945"><a></a>      viewof vorwissen<span class="op">.</span><span class="fu">dispatchEvent</span>(<span class="kw">new</span> <span class="bu">Event</span>(<span class="st">'input'</span><span class="op">,</span> {<span class="dt">bubbles</span><span class="op">:</span> <span class="kw">true</span>}))<span class="op">;</span></span>
+<span id="cb1-946"><a></a>    }<span class="op">;</span></span>
+<span id="cb1-947"><a></a>    container<span class="op">.</span><span class="fu">appendChild</span>(btn)<span class="op">;</span></span>
+<span id="cb1-948"><a></a>  })<span class="op">;</span></span>
+<span id="cb1-949"><a></a></span>
+<span id="cb1-950"><a></a>  <span class="cf">return</span> container<span class="op">;</span></span>
+<span id="cb1-951"><a></a>}</span>
+<span id="cb1-952"><a></a></span>
+<span id="cb1-953"><a></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; align-items: center; gap: 40px;"&gt;</span></span>
+<span id="cb1-954"><a></a><span class="vs">  &lt;div&gt;</span><span class="sc">${</span>expertisePlot<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-955"><a></a><span class="vs">  &lt;div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;"&gt;</span></span>
+<span id="cb1-956"><a></a><span class="vs">    &lt;div style="font-weight: bold; font-size: 1.1em;"&gt;Vorwissen des Lernenden&lt;/div&gt;</span></span>
+<span id="cb1-957"><a></a><span class="vs">    &lt;div&gt;</span><span class="sc">${</span>buttonGroup<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-958"><a></a><span class="vs">    &lt;div style="font-size: 1.3em; text-align: center; padding: 15px; background: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">22; border-radius: 8px; border-left: 4px solid </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">;"&gt;</span></span>
+<span id="cb1-959"><a></a><span class="vs">      &lt;span style="color: </span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalColor</span><span class="sc">}</span><span class="vs">; font-weight: bold;"&gt;</span><span class="sc">${</span>currentState<span class="op">.</span><span class="at">optimalLabel</span><span class="sc">}</span><span class="vs">&lt;/span&gt;&lt;br&gt;</span></span>
+<span id="cb1-960"><a></a><span class="vs">      &lt;span style="font-size: 0.8em; color: #666;"&gt;ist effektiver&lt;/span&gt;</span></span>
+<span id="cb1-961"><a></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-962"><a></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-963"><a></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -1054,7 +1108,7 @@
 </div>
 </div>
 </div>
-<p><br> <br></p>
+<p><br></p>
 <p>Der Expertise-Umkehr-Effekt <span class="citation" data-cites="kalyugaExpertiseReversalEffect2009">(<a href="#/referenzen" role="doc-biblioref" onclick="">Kalyuga 2009</a>)</span>.</p>
 <aside class="notes">
 <ul>
@@ -1077,36 +1131,23 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="warum-experten-profitieren-lernende-nicht" class="slide level2">
-<h2>Warum Experten profitieren, Lernende nicht</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Experten:</strong></p>
-<p><br></p>
-<ul>
-<li><i class="fa-solid fa-cogs" aria-label="cogs"></i> Können Routine auslagern</li>
-<li><i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> Können KI-Output bewerten</li>
-<li><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Mehr Kapazität für Komplexes</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Lernende:</strong></p>
-<p><br></p>
-<ul>
-<li><i class="fa-solid fa-eye-slash" aria-label="eye-slash"></i> Können nicht bewerten</li>
-<li><i class="fa-solid fa-forward-fast" aria-label="forward-fast"></i> Überspringen Grundlagen</li>
-<li><i class="fa-solid fa-mask" aria-label="mask"></i> Risiko: “Fliessende Inkompetenz”</li>
-</ul>
-</div></div>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+<p><br><br></p>
+<div style="font-size: 1.4em; text-align: center; max-width: 80%; margin: 0 auto;">
+<p>Die bisherigen Kurse haben gezeigt:</p>
+<p><strong>Es kommt darauf an, WER das Werkzeug nutzt.</strong></p>
+</div>
 <div class="fragment">
-<p><br></p>
-<p><strong>Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.</strong></p>
+<p><br><br></p>
+<div style="font-size: 1.2em; text-align: center; color: #666;">
+<p>Aber warum genau ist die Situation für Lernende so problematisch?</p>
+</div>
 <aside class="notes">
 <ul>
-<li>Experten: können Routine auslagern, Output bewerten, Kapazität für Komplexes</li>
-<li>Lernende: können Output nicht bewerten, überspringen Grundlagen</li>
-<li>Risiko: “fliessende Inkompetenz” (mit Hilfe alles, ohne Hilfe nichts)</li>
-<li>Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen</li>
+<li>Übergang von Summary zu Deep Dive</li>
+<li>Zusammenfassung: Es kommt darauf an, WER das Werkzeug nutzt</li>
+<li>Jetzt gehen wir tiefer: Warum genau ist es für Lernende problematisch?</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1121,38 +1162,191 @@
       }</style></aside>
 </div>
 </section>
-<section id="kritisches-denken-braucht-fachwissen" class="slide level2">
-<h2>Kritisches Denken braucht Fachwissen</h2>
+<section id="das-evaluationsparadox" class="slide level2">
+<h2>Das Evaluationsparadox</h2>
+<p><br></p>
+<div style="font-size: 1.5em; text-align: center; max-width: 85%; margin: 0 auto; line-height: 1.5;">
+<p>Um KI-Output kritisch zu bewerten, braucht man die Kompetenz, die erst durch Lernen entsteht.</p>
+</div>
+<div class="fragment">
+<p><br><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span style="color: #666;"><strong>Für Experten:</strong></span></p>
+<p>Bewertung möglich, weil Wissen vorhanden</p>
+</div><div class="column" style="width:50%;">
+<p><span style="color: #A3195B;"><strong>Für Lernende:</strong></span></p>
+<p>Bewertung unmöglich, weil Wissen erst aufgebaut wird</p>
+</div></div>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Das ist die zentrale Spannung beim KI-Einsatz in der Lehre.</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Das Evaluationsparadox: Um KI-Output zu bewerten, braucht man Kompetenz</li>
+<li>Experten können bewerten, weil Wissen vorhanden</li>
+<li>Lernende können nicht bewerten, weil Wissen erst aufgebaut wird</li>
+<li>Das ist die zentrale Spannung beim KI-Einsatz in der Lehre</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="vier-kognitive-operationen" class="slide level2">
+<h2>Vier kognitive Operationen</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:25%;">
+<p><i class="fa-solid fa-database fa-2x" aria-label="database"></i></p>
+<p><br></p>
+<p><strong>Abrufen</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Wissen aus dem Gedächtnis aktivieren</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-pen fa-2x" aria-label="pen"></i></p>
+<p><br></p>
+<p><strong>Generieren</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Eigene Lösungen produzieren</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-link fa-2x" aria-label="link"></i></p>
+<p><br></p>
+<p><strong>Verknüpfen</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Elemente vergleichen und integrieren</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-eye fa-2x" aria-label="eye"></i></p>
+<p><br></p>
+<p><strong>Überwachen</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Gegen interne Kriterien bewerten</span></p>
+</div></div>
+<div class="fragment">
+<p><br><br></p>
+<div style="text-align: center; font-size: 1.2em;">
+<p>Diese Operationen bauen Schemata auf. <strong>KI kann jede einzelne ersetzen.</strong></p>
+</div>
+<aside class="notes">
+<ul>
+<li>Vier kognitive Operationen, die Schemata aufbauen:
+<ol type="1">
+<li>Abrufen: Wissen aus dem Gedächtnis aktivieren</li>
+<li>Generieren: Eigene Lösungen produzieren</li>
+<li>Verknüpfen: Elemente vergleichen und integrieren</li>
+<li>Überwachen: Gegen interne Kriterien bewerten</li>
+</ol></li>
+<li>KI kann jede dieser Operationen ersetzen</li>
+<li>Wenn die KI abruft, generiert, verknüpft und überwacht, lernt der Mensch nicht</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="das-paradox-visualisiert" class="slide level2">
+<h2>Das Paradox visualisiert</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-8ccba399c016fdba09cc" style="width:960px;height:672px;"></div>
+<script type="application/json" data-for="htmlwidget-8ccba399c016fdba09cc">{"x":{"diagram":"\ndigraph evaluation_paradox {\n  graph [\n    fontname = \"Helvetica\"\n    bgcolor = \"transparent\"\n    nodesep = 0.8\n    ranksep = 1.0\n    label = \"\"\n    labelloc = t\n    fontsize = 16\n    fontcolor = \"#666666\"\n  ]\n\n  node [\n    fontname = \"Helvetica\"\n    fontsize = 14\n    style = \"filled,rounded\"\n    fontcolor = \"white\"\n    penwidth = 0\n    shape = box\n    margin = \"0.25,0.15\"\n  ]\n\n  edge [\n    fontname = \"Helvetica\"\n    fontsize = 13\n    color = \"#999999\"\n    arrowsize = 0.8\n  ]\n\n  evaluate [\n    label = \"KI-Output\\nbewerten\"\n    fillcolor = \"#A3195B\"\n  ]\n\n  competence [\n    label = \"Fachkompetenz\"\n    fillcolor = \"#666666\"\n  ]\n\n  learning [\n    label = \"Eigenes\\nLernen\"\n    fillcolor = \"#666666\"\n  ]\n\n  thinking [\n    label = \"Eigenes\\nDenken\"\n    fillcolor = \"#333333\"\n  ]\n\n  center [\n    label = \"Internes Modell\\nnoch nicht aufgebaut\"\n    fillcolor = \"#F5F5F5\"\n    fontcolor = \"#A3195B\"\n    style = \"filled\"\n    shape = plaintext\n    fontsize = 13\n  ]\n\n  evaluate -> competence [label = \"  erfordert  \"]\n  competence -> learning [label = \"  entsteht durch  \"]\n  learning -> thinking [label = \"  erfordert  \"]\n  thinking -> evaluate [label = \"  wird ersetzt\\n  durch KI  \" style = dashed color = \"#A3195B\"]\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>Zyklus: KI-Output bewerten → erfordert Fachkompetenz → entsteht durch Lernen → erfordert eigenes Denken → wird ersetzt durch KI</li>
+<li>Der Kreislauf schliesst sich: KI ersetzt genau das Denken, das zum Lernen nötig wäre</li>
+<li>Gestrichelte Linie zeigt den problematischen Bruch</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="kannst-du-diesen-ki-output-bewerten" class="slide level2">
+<h2>Kannst du diesen KI-Output bewerten?</h2>
+<p><br></p>
+<div style="background-color: #f0f0f0; padding: 1.5em; border-radius: 8px; font-family: monospace; font-size: 0.9em;">
+<p><strong>Prompt:</strong> “Erkläre die Pathophysiologie der diabetischen Ketoazidose.”</p>
+<p><strong>KI-Antwort:</strong> “Bei DKA führt Insulinmangel zu unkontrollierter Lipolyse. Die freigesetzten Fettsäuren werden in der Leber zu Ketonkörpern (Acetoacetat, β-Hydroxybutyrat) metabolisiert. Die resultierende metabolische Azidose mit erhöhter Anionenlücke triggert kompensatorische Kussmaul-Atmung…”</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="text-align: center; font-size: 1.3em;">
+<p>Ist das korrekt? Fehlt etwas? Ist etwas subtil falsch?</p>
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="text-align: center; font-size: 1.2em; color: #A3195B; font-weight: bold;">
+<p>Deine Studierenden sind in genau dieser Position für DEIN Fach.</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Live-Demonstration: KI-generierter medizinischer Text</li>
+<li>Ohne Fachwissen kann niemand im Raum bewerten, ob das stimmt</li>
+<li>Genau diese Erfahrung machen Studierende täglich mit KI-Output in ihrem Fach</li>
+<li>“Deine Studierenden sind in genau dieser Position für DEIN Fach”</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="was-das-für-die-lehre-bedeutet" class="slide level2">
+<h2>Was das für die Lehre bedeutet</h2>
+<p><br></p>
+<div style="font-size: 1.3em; text-align: center; margin-bottom: 1em;">
+<p>Studierende müssen <strong>interne Modelle aufbauen</strong>, bevor sie KI kritisch nutzen können.</p>
+</div>
+<div class="fragment">
 <p><br></p>
 <blockquote>
 <p>“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”</p>
 <p>Daniel Willingham <span class="citation" data-cites="willinghamCriticalThinkingWhy2008">(<a href="#/referenzen" role="doc-biblioref" onclick="">Willingham 2008</a>)</span></p>
 </blockquote>
-<div class="fragment">
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Biomedizin-Experte:</strong></p>
-<p>Erkennt, wenn ChatGPT bei Biochemie falsch liegt</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Novize:</strong></p>
-<p>Kann diese Bewertung nicht vornehmen</p>
-</div></div>
 </div>
 <div class="fragment">
 <p><br></p>
-<p><strong>Du kannst nicht kritisch bewerten, was du nicht verstehst.</strong></p>
+<div style="text-align: center; font-size: 1.1em;">
+<p>Die vier Operationen (Abrufen, Generieren, Verknüpfen, Überwachen) müssen <strong>im Kopf der Lernenden</strong> stattfinden, nicht in der KI.</p>
 </div>
-<div class="fragment">
-<p><br></p>
-<p><span style="color: #666; font-style: italic;">Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.</span></p>
 <aside class="notes">
 <ul>
-<li>Einwand: “Dann lehren wir kritisches Prüfen von KI-Output”</li>
+<li>Studierende brauchen interne Modelle BEVOR sie KI kritisch nutzen können</li>
 <li>Willingham: Kritisches Denken ist keine kontextfreie Fähigkeit</li>
-<li>Biomedizin-Experte erkennt Fehler in Biochemie, Novize nicht</li>
-<li>Kernaussage: Du kannst nicht bewerten, was du nicht verstehst</li>
-<li>Deshalb ist Fachwissen entscheidend</li>
+<li>Die vier kognitiven Operationen müssen im Kopf der Lernenden stattfinden</li>
+<li>Keine Abkürzung: erst das Fundament, dann das Werkzeug</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1167,37 +1361,81 @@
       }</style></aside>
 </div>
 </section>
-<section id="kognition-erweitern-vs.-ersetzen" class="slide level2">
-<h2>Kognition erweitern vs.&nbsp;ersetzen</h2>
+<section id="section-2" class="slide level2 center">
+<h2></h2>
+<p><br><br><br></p>
+<div style="font-size: 1.4em; text-align: center;">
+<p>Aber warum lagern Studierende überhaupt aus?</p>
+</div>
+<div class="fragment">
+<p><br><br></p>
+<div style="font-size: 1.6em; text-align: center;">
+<p>Sind sie faul? Unehrlich? Oder… <span style="color: #A3195B;"><strong>rational?</strong></span></p>
+</div>
+<aside class="notes">
+<ul>
+<li>Übergang zur Bounded Rationality</li>
+<li>Warum lagern Studierende kognitive Arbeit an KI aus?</li>
+<li>Naheliegende Erklärungen: Faulheit, Unehrlichkeit</li>
+<li>Alternative Erklärung: rationales Verhalten in einer bestimmten Umgebung</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="ein-gespräch-an-der-bfh" class="slide level2">
+<h2>Ein Gespräch an der BFH</h2>
+<div style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; border-left: 4px solid #666;">
+<p><strong>Ein Mathematik-Dozent berichtet:</strong></p>
+<p>“Wir nutzen lokale KI-Modelle für Prüfungserstellung und Korrektur. Aber bei Studierenden sehen wir: Sie kommen nicht zu Übungsstunden, stellen keine Fragen, üben nicht. <strong>Ihnen fehlt die intrinsische Motivation.</strong>”</p>
+</div>
+<div class="fragment">
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong><i class="fa-solid fa-expand" aria-label="expand"></i> Kognition erweitern:</strong></p>
-<p><br></p>
-<ul>
-<li>Mensch bleibt kognitiv engagiert</li>
-<li>Werkzeug verstärkt, ersetzt nicht</li>
-<li>Fähigkeiten bleiben erhalten</li>
-</ul>
+<p><span style="color: #666;"><strong>Die Diagnose:</strong></span></p>
+<p><i class="fa-solid fa-user-xmark" aria-label="user-xmark"></i> Motivationsproblem</p>
+<p><span style="font-size: 0.85em; color: #999;">KI-Lösung: Gamifizierte KI-Übungen, KI-Tutoren die “engagieren”</span></p>
 </div><div class="column" style="width:50%;">
-<p><strong><i class="fa-solid fa-compress" aria-label="compress"></i> Kognition ersetzen:</strong></p>
-<p><br></p>
-<ul>
-<li>Mensch wird passiv</li>
-<li>Werkzeug übernimmt das Denken</li>
-<li>Abhängigkeit entsteht</li>
-</ul>
+<p><span style="color: #A3195B;"><strong>Das eigentliche Problem:</strong></span></p>
+<p><i class="fa-solid fa-brain" aria-label="brain"></i> Cognitive Overload</p>
+<p><span style="font-size: 0.85em; color: #999;">Die Aufgaben überlasten das Arbeitsgedächtnis, weil die nötigen Schemata fehlen.</span></p>
 </div></div>
+</div>
 <div class="fragment">
 <p><br></p>
-<p><strong>Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung</strong> <span class="citation" data-cites="clarkExtendingMindsGenerative2025">(<a href="#/referenzen" role="doc-biblioref" onclick="">Clark 2025</a>)</span>.</p>
+<div style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> <strong>Falsche Diagnose führt zu falscher KI-Intervention.</strong> Nicht die Ameise ist das Problem, sondern der Strand.</p>
+</div>
 <aside class="notes">
 <ul>
-<li>Andy Clark: Unterscheidung erweitern vs.&nbsp;ersetzen</li>
-<li>Erweitern: Mensch bleibt engagiert, Werkzeug verstärkt, Fähigkeiten bleiben</li>
-<li>Ersetzen: Mensch passiv, Werkzeug übernimmt Denken, Abhängigkeit</li>
-<li>Dasselbe Werkzeug kann beides sein (Nutzung entscheidet)</li>
-<li>ChatGPT: Brainstorming-Partner oder Ghostwriter?</li>
+<li>Reales Gespräch mit BFH-Mathematik-Dozent (anonymisiert)</li>
+<li>Der Dozent ist selbst KI-Praktiker: lokale Modelle für Prüfungen, Korrekturen, vertrauliche Dokumente</li>
+<li>Er repräsentiert genau das Publikum dieser Präsentation</li>
+<li>Seine Diagnose: Studierende haben keine intrinsische Motivation zum Üben</li>
+<li>Reframing: Die Studierenden sind nicht unmotiviert, sie sind überfordert</li>
+<li>Wenn Arbeitsgedächtnis überlastet ist (fehlende Schemata), fühlt sich jede Aufgabe unmöglich an</li>
+<li>Das sieht aus wie Motivationsmangel, ist aber kognitive Überlastung</li>
+<li>Falsche Diagnose führt zu falscher KI-Intervention:
+<ul>
+<li>“Motivation” → Gamification, KI-Engagement-Tools → behandelt Symptom</li>
+<li>“Cognitive Load” → Scaffolded Übungen, besseres Aufgabendesign → behandelt Ursache</li>
+</ul></li>
+<li>Der richtige KI-Einsatz: KI für den DOZENTEN zum Redesign der Aufgaben
+<ul>
+<li>Schwierigkeit kalibrieren, gestufte Übungen erstellen</li>
+<li>Nicht KI für Studierende, die den Struggle umgeht</li>
+</ul></li>
+<li>Verbindung zum Evaluationsparadox: Wenn Studierende Aufgaben nicht lösen können, gibt ihnen KI-Zugang die Illusion von Kompetenz ohne echtes Lernen</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1212,28 +1450,123 @@
       }</style></aside>
 </div>
 </section>
-<section id="die-sequenzierungsfrage" class="slide level2">
-<h2>Die Sequenzierungsfrage</h2>
-<p><br></p>
-<div style="text-align: center; font-size: 1.3em; margin-bottom: 40px;">
-<p><span style="color: #A3195B; font-weight: bold;">Novize</span> ——— <span style="background: #D4A03E; padding: 5px 15px; border-radius: 4px;"><strong>Schwelle?</strong></span> ——— <span style="color: #24526B; font-weight: bold;">Experte</span></p>
+<section id="the-beach-not-the-ant" class="slide level2">
+<h2>The Beach, Not the Ant</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-70cb831ad67a74963a8a" style="width:960px;height:672px;"></div>
+<script type="application/json" data-for="htmlwidget-70cb831ad67a74963a8a">{"x":{"diagram":"\ndigraph beach_ant {\n  graph [\n    fontname = \"Helvetica\"\n    bgcolor = \"transparent\"\n    nodesep = 0.6\n    ranksep = 0.8\n    label = \"Herbert Simon: Das Verhalten wird von der Umgebung geformt, nicht von der Motivation\"\n    labelloc = t\n    fontsize = 16\n    fontcolor = \"#666666\"\n  ]\n\n  node [\n    fontname = \"Helvetica\"\n    fontsize = 14\n    style = \"filled,rounded\"\n    fontcolor = \"white\"\n    penwidth = 0\n    shape = box\n    margin = \"0.25,0.15\"\n  ]\n\n  edge [\n    fontname = \"Helvetica\"\n    fontsize = 12\n    arrowsize = 0.8\n    color = \"#999999\"\n  ]\n\n  beach [\n    label = \"Der Strand\\n(Lernumgebung)\"\n    fillcolor = \"#333333\"\n    fontsize = 16\n    margin = \"0.3,0.2\"\n  ]\n\n  terrain1 [\n    label = \"Aufgabendesign\\nWas wird verlangt?\"\n    fillcolor = \"#666666\"\n  ]\n\n  terrain2 [\n    label = \"Prüfungsformat\\nWas wird gemessen?\"\n    fillcolor = \"#666666\"\n  ]\n\n  terrain3 [\n    label = \"KI-Zugänglichkeit\\nWas ist verfügbar?\"\n    fillcolor = \"#666666\"\n  ]\n\n  terrain4 [\n    label = \"Strukturelle Anreize\\nWas ist der einfachste Weg?\"\n    fillcolor = \"#666666\"\n  ]\n\n  ant [\n    label = \"Die Ameise\\n(Studierende)\"\n    fillcolor = \"#999999\"\n    fontsize = 16\n    margin = \"0.3,0.2\"\n  ]\n\n  path_good [\n    label = \"Produktiver Weg\\nEigenes Denken\"\n    fillcolor = \"#333333\"\n  ]\n\n  path_easy [\n    label = \"Einfacher Weg\\nKI-Outsourcing\"\n    fillcolor = \"#A3195B\"\n  ]\n\n  beach -> terrain1\n  beach -> terrain2\n  beach -> terrain3\n  beach -> terrain4\n\n  terrain1 -> ant [style = invis]\n  terrain4 -> ant [style = invis]\n\n  ant -> path_good [label = \"  Wenn Umgebung\\nAnstrengung belohnt  \" color = \"#333333\"]\n  ant -> path_easy [label = \"  Wenn Umgebung\\nAbkürzung ermöglicht  \" color = \"#A3195B\"]\n\n  insight [\n    label = \"Gestalte den Strand,\\nnicht die Ameise.\"\n    fillcolor = \"#F5F5F5\"\n    fontcolor = \"#A3195B\"\n    style = \"filled\"\n    shape = plaintext\n    fontsize = 15\n    fontname = \"Helvetica Bold\"\n  ]\n\n  path_good -> insight [style = invis]\n  path_easy -> insight [style = invis]\n\n  {rank = same; terrain1; terrain2; terrain3; terrain4}\n  {rank = same; path_good; path_easy}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
+</div>
+<p><span class="citation" data-cites="simonSciencesArtificialReissue2019">(<a href="#/referenzen" role="doc-biblioref" onclick="">Simon und Laird 2019</a>)</span></p>
+<aside class="notes">
 <ul>
-<li class="fragment">Die Schwelle ist <strong>unbekannt</strong> und empirisch nicht bestimmt</li>
-<li class="fragment">Sie variiert nach <strong>Domäne</strong> und <strong>Person</strong></li>
-<li class="fragment">Der Expertise-Umkehr-Effekt erfordert <strong>dynamische</strong> KI-Nutzungsempfehlungen</li>
+<li>Herbert Simons Einsicht: Verhalten wird von der Umgebung geformt, nicht von der Motivation</li>
+<li>Die Ameise am Strand: Der komplexe Weg der Ameise spiegelt die Oberfläche wider, nicht die Ameise</li>
+<li>Studierende verhalten sich rational in der gegebenen Umgebung</li>
+<li>Vier Umgebungsfaktoren: Aufgabendesign, Prüfungsformat, KI-Zugänglichkeit, Strukturelle Anreize</li>
+<li>Gestalte den Strand, nicht die Ameise</li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="studierende-als-rationale-akteure" class="slide level2">
+<h2>Studierende als rationale Akteure</h2>
+<p><br></p>
+<div style="font-size: 1.3em; text-align: center; margin-bottom: 1.5em;">
+<p>Wenn die Umgebung Outsourcing zum einfachsten Weg macht,<br>werden rationale Akteure outsourcen.</p>
+</div>
 <div class="fragment">
 <p><br></p>
-<div style="text-align: center; font-size: 1.2em;">
-<p><strong>Wer profitiert von KI-Werkzeugen? Wer nicht?</strong></p>
+<div style="text-align: center; font-size: 1.2em; color: #A3195B; font-weight: bold; margin-bottom: 1.5em;">
+<p>Das ist kein Charakterproblem. Es ist ein Designproblem.</p>
+</div>
+</div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:25%;">
+<p><i class="fa-solid fa-pencil-ruler" aria-label="pencil-ruler"></i></p>
+<p><strong>Aufgabendesign</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Was wird verlangt?</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-clipboard-check" aria-label="clipboard-check"></i></p>
+<p><strong>Prüfungsformat</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Was wird gemessen?</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-robot" aria-label="robot"></i></p>
+<p><strong>KI-Zugänglichkeit</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Was ist verfügbar?</span></p>
+</div><div class="column" style="width:25%;">
+<p><i class="fa-solid fa-road" aria-label="road"></i></p>
+<p><strong>Strukturelle Anreize</strong></p>
+<p><span style="color: #666; font-size: 0.85em;">Was ist der einfachste Weg?</span></p>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Wenn Outsourcing der einfachste Weg ist, werden rationale Akteure outsourcen</li>
+<li>Kein Charakterproblem, sondern ein Designproblem</li>
+<li>Vier Faktoren des “Terrains”:
+<ol type="1">
+<li>Aufgabendesign: Was wird verlangt?</li>
+<li>Prüfungsformat: Was wird gemessen?</li>
+<li>KI-Zugänglichkeit: Was ist verfügbar?</li>
+<li>Strukturelle Anreize: Was ist der einfachste Weg?</li>
+</ol></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="gestalte-den-strand-nicht-die-ameise" class="slide level2">
+<h2>Gestalte den Strand, nicht die Ameise</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><i class="fa-solid fa-hammer fa-2x" aria-label="hammer"></i></p>
+<p><br></p>
+<p><strong>Kognitive Arbeit als Produkt</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Aufgaben gestalten, bei denen der Denkprozess das Ergebnis ist, nicht nur das Endprodukt.</span></p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-solid fa-microscope fa-2x" aria-label="microscope"></i></p>
+<p><br></p>
+<p><strong>Prozess bewerten</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Den Weg zum Ergebnis prüfen, nicht nur das Ergebnis selbst.</span></p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-solid fa-mountain fa-2x" aria-label="mountain"></i></p>
+<p><br></p>
+<p><strong>Produktiven Struggle ermöglichen</strong></p>
+<p><span style="color: #666; font-size: 0.9em;">Den Weg des eigenen Denkens zum Weg des geringsten Widerstands machen.</span></p>
+</div></div>
+<div class="fragment">
+<p><br></p>
+<div style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; text-align: center;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> <strong>Der richtige KI-Einsatz:</strong> KI für Dozierende zum Redesign der Lernumgebung, nicht KI für Studierende zum Umgehen des Lernprozesses.</p>
 </div>
 <aside class="notes">
 <ul>
-<li>Praktische Frage: Wann ist der Übergang von Novize zu Experte?</li>
-<li>Schwelle ist unbekannt, variiert nach Domäne und Person</li>
-<li>Expertise-Umkehr-Effekt erfordert dynamische Empfehlungen</li>
-<li>Frage “Wer profitiert?” nicht pauschal beantwortbar</li>
+<li>Kognitive Arbeit als Produkt: Nicht nur das Ergebnis zählt, sondern der Denkprozess</li>
+<li>Prozess bewerten: Nicht nur was rauskommt, sondern wie</li>
+<li>Produktiven Struggle ermöglichen: Eigenes Denken als Weg des geringsten Widerstands</li>
+<li>KI für Dozierende: Aufgaben besser kalibrieren, gestufte Übungen erstellen</li>
+<li>Nicht KI für Studierende, die den Lernprozess umgeht</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1250,83 +1583,40 @@
 </section>
 <section id="die-kernaussage" class="slide level2">
 <h2>Die Kernaussage</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Das Evaluationsparadox:</strong></p>
+<p>Studierende <span style="color: #A3195B;"><strong>können</strong></span> KI-Nutzung nicht selbst regulieren.</p>
+<p><span style="color: #666; font-size: 0.9em;">Ihnen fehlt die Kompetenz, um KI-Output zu bewerten.</span></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Bounded Rationality:</strong></p>
+<p>Studierende <span style="color: #A3195B;"><strong>werden</strong></span> KI-Nutzung nicht selbst regulieren.</p>
+<p><span style="color: #666; font-size: 0.9em;">Die Umgebung macht Outsourcing zum rationalen Weg.</span></p>
+</div></div>
 <div class="fragment">
-<div style="font-size: 2em; text-align: center; margin-top: 1.5em; font-weight: 700; color: #24526B;">
+<p><br></p>
+<div style="text-align: center; font-size: 1.1em;">
+<p>Zusammen: Wir können uns nicht auf das Urteilsvermögen der Studierenden allein verlassen.</p>
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<div style="font-size: 2em; text-align: center; font-weight: 700; color: #24526B;">
 <p>KI-Werkzeuge sind für Experten gemacht.</p>
 </div>
 </div>
 <div class="fragment">
-<div style="display: flex; justify-content: center; gap: 3em; margin-top: 2em; margin-bottom: 2em;">
-<div style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #D4A03E;">
-<p><span style="font-size: 1.1em; color: #24526B;">Sie machen Experten produktiver.</span></p>
-</div>
-<div style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #A3195B;">
-<p><span style="font-size: 1.1em; color: #A3195B;">Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.</span></p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;">
-<p><span style="font-size: 1.4em; color: #A3195B;"><strong>Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.</strong></span></p>
+<div style="text-align: center; margin-top: 1em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;">
+<p><span style="font-size: 1.2em; color: #A3195B;">Fundamente zuerst aufbauen. Umgebungen gestalten, die Denken erfordern. Produktiven Struggle als natürlichen Weg ermöglichen.</span></p>
 </div>
 <aside class="notes">
 <ul>
+<li>Evaluationsparadox: Studierende KÖNNEN nicht selbst regulieren (fehlende Kompetenz)</li>
+<li>Bounded Rationality: Studierende WERDEN nicht selbst regulieren (Umgebung ermöglicht Abkürzung)</li>
+<li>Zusammen: Wir können uns nicht auf Studierende allein verlassen</li>
 <li>KI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)</li>
-<li>Werkzeuge von Experten entwickelt, funktionieren am besten für Experten</li>
-<li>Lernende profitieren oft nicht: Lernen braucht kognitive Anstrengung</li>
-<li>Nicht KI-feindlich: Art der Nutzung entscheidet (GPT-Tutor!)</li>
-<li>Konsequenz: Fundament zuerst, dann KI</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</section>
-<section id="was-bedeutet-das-für-die-lehre" class="slide level2">
-<h2>Was bedeutet das für die Lehre?</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><i class="fa-solid fa-dumbbell fa-3x" aria-label="dumbbell"></i></p>
-<p><br></p>
-<p><strong>Anstrengung ist das Signal</strong></p>
-</div><div class="column" style="width:33%;">
-<p><i class="fa-solid fa-comments fa-3x" aria-label="comments"></i></p>
-<p><br></p>
-<p><strong>KI als Tutor, nicht als Antwortgeber</strong></p>
-</div><div class="column" style="width:33%;">
-<p><i class="fa-solid fa-stairs fa-3x" aria-label="stairs"></i></p>
-<p><br></p>
-<p><strong>Expertise bestimmt den Nutzen</strong></p>
-</div></div>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><span style="color: #666;">Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.</span></p>
-</div><div class="column" style="width:33%;">
-<p><span style="color: #666;">KI soll Denkprozesse anregen, nicht ersetzen.</span></p>
-</div><div class="column" style="width:33%;">
-<p><span style="color: #666;">Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.</span></p>
-</div></div>
-</div>
-<div class="fragment">
-<p><br></p>
-<p><strong>Grundlagen BEVOR Werkzeuge</strong></p>
-<aside class="notes">
-<ul>
-<li>Anstrengung ist das Signal: Zu leicht = kein Lernen</li>
-<li>KI als Tutor, nicht Antwortgeber: Denkprozesse anregen, nicht ersetzen</li>
-<li>Expertise bestimmt Nutzen: Vorwissen entscheidet über Wirkung</li>
-<li>Grundlagen BEVOR Werkzeuge</li>
-<li>Erst Fundament, dann Erweiterung; erst verstehen, dann automatisieren</li>
+<li>Konsequenz: Fundamente zuerst, Umgebungen gestalten, produktiven Struggle ermöglichen</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1350,20 +1640,14 @@ Bastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Ma
 <div id="ref-bjorkMakingThingsHard2011" class="csl-entry" role="listitem">
 Bjork, Elizabeth Ligon, und Robert A. Bjork. 2011. <span>„Making Things Hard on Yourself, but in a Good Way: <span>Creating</span> Desirable Difficulties to Enhance Learning“</span>. In <em>Psychology and the Real World: <span>Essays</span> Illustrating Fundamental Contributions to Society</em>, 56–64. New York, NY, US: Worth Publishers.
 </div>
-<div id="ref-chasePerceptionChess1973" class="csl-entry" role="listitem">
-Chase, William G., und Herbert A. Simon. 1973. <span>„Perception in Chess“</span>. <em>Cognitive Psychology</em> 4 (1): 55–81. <a href="https://doi.org/10.1016/0010-0285(73)90004-2">https://doi.org/10.1016/0010-0285(73)90004-2</a>.
-</div>
-<div id="ref-clarkExtendingMindsGenerative2025" class="csl-entry" role="listitem">
-Clark, Andy. 2025. <span>„Extending <span>Minds</span> with <span>Generative AI</span>“</span>. <em>Nature Communications</em> 16 (1): 4627. <a href="https://doi.org/10.1038/s41467-025-59906-9">https://doi.org/10.1038/s41467-025-59906-9</a>.
-</div>
 <div id="ref-dahmaniHabitualUseGPS2020" class="csl-entry" role="listitem">
 Dahmani, Louisa, und Véronique D. Bohbot. 2020. <span>„Habitual Use of <span>GPS</span> Negatively Impacts Spatial Memory During Self-Guided Navigation“</span>. <em>Scientific Reports</em> 10 (1): 6310. <a href="https://doi.org/10.1038/s41598-020-62877-0">https://doi.org/10.1038/s41598-020-62877-0</a>.
 </div>
-<div id="ref-grootThoughtChoiceChess1978" class="csl-entry" role="listitem">
-Groot, Adriaan D. De, und Adrianus Dingeman de Groot. 1978. <em>Thought and <span>Choice</span> in <span>Chess</span></em>. Walter de Gruyter. <a href="https://books.google.com?id=EI4gr42NwDQC">https://books.google.com?id=EI4gr42NwDQC</a>.
-</div>
 <div id="ref-kalyugaExpertiseReversalEffect2009" class="csl-entry" role="listitem">
 Kalyuga, Slava. 2009. <span>„The <span>Expertise Reversal Effect</span>“</span>. In <em>Managing <span>Cognitive Load</span> in <span>Adaptive Multimedia Learning</span></em>, 58–80. IGI Global Scientific Publishing. <a href="https://doi.org/10.4018/978-1-60566-048-6.ch003">https://doi.org/10.4018/978-1-60566-048-6.ch003</a>.
+</div>
+<div id="ref-simonSciencesArtificialReissue2019" class="csl-entry" role="listitem">
+Simon, Herbert A., und John E. Laird. 2019. <em>The <span>Sciences</span> of the <span>Artificial</span>: <span>Reissue</span> of the Third Edition with a New Introduction by <span>John Laird</span></em>. Cambridge, Massachusetts: MIT Press.
 </div>
 <div id="ref-slameckaGenerationEffectDelineation1978" class="csl-entry" role="listitem">
 Slamecka, Norman J., und Peter Graf. 1978. <span>„The Generation Effect: <span>Delineation</span> of a Phenomenon“</span>. <em>Journal of Experimental Psychology: Human Learning and Memory</em> 4 (6): 592–604. <a href="https://doi.org/10.1037/0278-7393.4.6.592">https://doi.org/10.1037/0278-7393.4.6.592</a>.
@@ -1384,7 +1668,7 @@ Willingham, Daniel T. 2008. <span>„Critical <span>Thinking</span>: <span>Why I
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>KI in der Lehre: Refresher</p>
+<p>KI in der Lehre: Refresher 2026</p>
 </div>
 </div></div>
 
@@ -1597,7 +1881,7 @@ Willingham, Daniel T. 2008. <span>„Critical <span>Thinking</span>: <span>Why I
       });
     </script>
     <script type="ojs-module-contents">
-    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIENvbmZpZ3VyYXRpb246IEFsbCBwYXJhbWV0ZXJzIGluIG9uZSBwbGFjZSBmb3IgZWFzeSBtYWludGVuYW5jZVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmNvbmZpZyA9ICh7XG4gIC8vIENvbG9yIHBhbGV0dGVcbiAgY29sb3JzOiB7XG4gICAgaGlnaFN1cHBvcnQ6IFwiI0EzMTk1QlwiLFxuICAgIGxvd1N1cHBvcnQ6IFwiIzY2NjY2NlwiLFxuICAgIG5ldXRyYWw6IFwiIzMzM1wiLFxuICAgIGJhY2tncm91bmQ6IFwiI2Y1ZjVmNVwiXG4gIH0sXG4gIC8vIExpbmUgZXF1YXRpb25zOiB5ID0gaW50ZXJjZXB0ICsgc2xvcGUgKiB4XG4gIC8vIExpbmVzIGNyb3NzIHdoZXJlOiBoaWdoSW50ZXJjZXB0ICsgaGlnaFNsb3BlKnggPSBsb3dJbnRlcmNlcHQgKyBsb3dTbG9wZSp4XG4gIGxpbmVzOiB7XG4gICAgaGlnaDogeyBpbnRlcmNlcHQ6IDY1LCBzbG9wZTogLTAuNCB9LFxuICAgIGxvdzogeyBpbnRlcmNlcHQ6IDI1LCBzbG9wZTogMC40IH1cbiAgfSxcbiAgLy8gSW5wdXQgb3B0aW9uc1xuICBzdGVwczogWzAsIDIwLCA0MCwgNjAsIDgwLCAxMDBdLFxuICBkZWZhdWx0VmFsdWU6IDIwLFxuICAvLyBQbG90IGRpbWVuc2lvbnNcbiAgcGxvdDoge1xuICAgIHdpZHRoOiA5MDAsXG4gICAgaGVpZ2h0OiA0ODAsXG4gICAgbWFyZ2luczogeyBsZWZ0OiA3MCwgYm90dG9tOiA2MCwgdG9wOiAzMCwgcmlnaHQ6IDQwIH1cbiAgfSxcbiAgLy8gTGFiZWxzXG4gIGxhYmVsczoge1xuICAgIGhpZ2hTdXBwb3J0OiBcIkhvaGUgVW50ZXJzdMO8dHp1bmdcIixcbiAgICBsb3dTdXBwb3J0OiBcIk5pZWRyaWdlIFVudGVyc3TDvHR6dW5nXCIsXG4gICAgaGlnaEV4YW1wbGVzOiBbXCLwn5OWIFdvcmtlZCBFeGFtcGxlc1wiLCBcIvCfp60gRGlyZWt0ZSBJbnN0cnVrdGlvblwiXSxcbiAgICBsb3dFeGFtcGxlczogW1wi8J+nqSBQcm9ibGVtYmFzaWVydGVzIExlcm5lblwiLCBcIvCflI0gRWlnZW5lIEzDtnN1bmdzd2VnZVwiXVxuICB9XG59KVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gRGVyaXZlZCB2YWx1ZXM6IENvbXB1dGVkIGZyb20gY29uZmlnIChubyBtYWdpYyBudW1iZXJzKVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuLy8gQ3Jvc3NvdmVyIHBvaW50OiBzb2x2ZSBmb3IgeCB3aGVyZSBib3RoIGxpbmVzIGludGVyc2VjdFxuY3Jvc3NvdmVyUG9pbnQgPSB7XG4gIGNvbnN0IHsgaGlnaCwgbG93IH0gPSBjb25maWcubGluZXM7XG4gIHJldHVybiAoaGlnaC5pbnRlcmNlcHQgLSBsb3cuaW50ZXJjZXB0KSAvIChsb3cuc2xvcGUgLSBoaWdoLnNsb3BlKTtcbn1cblxuLy8gSGVscGVyIGZ1bmN0aW9uIHRvIGNhbGN1bGF0ZSB5LXZhbHVlIG9uIGEgbGluZVxuY2FsY1kgPSAobGluZSwgeCkgPT4gbGluZS5pbnRlcmNlcHQgKyBsaW5lLnNsb3BlICogeFxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU3RhdGU6IFNpbmdsZSBzb3VyY2Ugb2YgdHJ1dGggZm9yIHVzZXIgaW5wdXQgKGhpZGRlbiwgY29udHJvbGxlZCBieSBidXR0b25zKVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbnZpZXdvZiB2b3J3aXNzZW4gPSB7XG4gIGNvbnN0IGlucHV0ID0gSW5wdXRzLnJhZGlvKGNvbmZpZy5zdGVwcywge1xuICAgIHZhbHVlOiBjb25maWcuZGVmYXVsdFZhbHVlLFxuICAgIGxhYmVsOiBcIlwiLFxuICAgIGZvcm1hdDogeCA9PiB4ICsgXCIlXCJcbiAgfSk7XG4gIGlucHV0LnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gUmVhY3RpdmUgY2FsY3VsYXRpb25zIGJhc2VkIG9uIGN1cnJlbnQgc3RhdGVcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5jdXJyZW50U3RhdGUgPSB7XG4gIGNvbnN0IHggPSB2b3J3aXNzZW4gPz8gY29uZmlnLmRlZmF1bHRWYWx1ZTtcbiAgY29uc3QgaGlnaFkgPSBjYWxjWShjb25maWcubGluZXMuaGlnaCwgeCk7XG4gIGNvbnN0IGxvd1kgPSBjYWxjWShjb25maWcubGluZXMubG93LCB4KTtcbiAgY29uc3QgaXNIaWdoQmV0dGVyID0geCA8PSBjcm9zc292ZXJQb2ludDtcblxuICByZXR1cm4ge1xuICAgIHgsXG4gICAgaGlnaFksXG4gICAgbG93WSxcbiAgICBpc0hpZ2hCZXR0ZXIsXG4gICAgb3B0aW1hbFk6IGlzSGlnaEJldHRlciA/IGhpZ2hZIDogbG93WSxcbiAgICBzdWJvcHRpbWFsWTogaXNIaWdoQmV0dGVyID8gbG93WSA6IGhpZ2hZLFxuICAgIG9wdGltYWxMYWJlbDogaXNIaWdoQmV0dGVyID8gY29uZmlnLmxhYmVscy5oaWdoU3VwcG9ydCA6IGNvbmZpZy5sYWJlbHMubG93U3VwcG9ydCxcbiAgICBvcHRpbWFsQ29sb3I6IGlzSGlnaEJldHRlciA/IGNvbmZpZy5jb2xvcnMuaGlnaFN1cHBvcnQgOiBjb25maWcuY29sb3JzLmxvd1N1cHBvcnQsXG4gICAgc3Vib3B0aW1hbENvbG9yOiBpc0hpZ2hCZXR0ZXIgPyBjb25maWcuY29sb3JzLmxvd1N1cHBvcnQgOiBjb25maWcuY29sb3JzLmhpZ2hTdXBwb3J0XG4gIH07XG59XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBQbG90OiBWaXN1YWxpemF0aW9uIHdpdGggYWxsIG1hcmtzXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZXhwZXJ0aXNlUGxvdCA9IHtcbiAgY29uc3QgeyBjb2xvcnMsIGxpbmVzLCBwbG90LCBsYWJlbHMgfSA9IGNvbmZpZztcbiAgY29uc3QgeyB4LCBoaWdoWSwgbG93WSwgaXNIaWdoQmV0dGVyLCBvcHRpbWFsWSwgc3Vib3B0aW1hbFksIG9wdGltYWxDb2xvciwgc3Vib3B0aW1hbENvbG9yIH0gPSBjdXJyZW50U3RhdGU7XG5cbiAgLy8gR2VuZXJhdGUgbGluZSBkYXRhIHBvaW50c1xuICBjb25zdCBoaWdoTGluZURhdGEgPSBbe3g6IDAsIHk6IGNhbGNZKGxpbmVzLmhpZ2gsIDApfSwge3g6IDEwMCwgeTogY2FsY1kobGluZXMuaGlnaCwgMTAwKX1dO1xuICBjb25zdCBsb3dMaW5lRGF0YSA9IFt7eDogMCwgeTogY2FsY1kobGluZXMubG93LCAwKX0sIHt4OiAxMDAsIHk6IGNhbGNZKGxpbmVzLmxvdywgMTAwKX1dO1xuXG4gIC8vIExhYmVsIHBvc2l0aW9ucyAocmVsYXRpdmUgdG8gbGluZSBlbmRwb2ludHMpXG4gIGNvbnN0IGxhYmVsT2Zmc2V0WSA9IDc7XG4gIGNvbnN0IGV4YW1wbGVCYXNlWSA9IGNhbGNZKGxpbmVzLmhpZ2gsIDApICsgbGFiZWxPZmZzZXRZO1xuXG4gIHJldHVybiBQbG90LnBsb3Qoe1xuICAgIHdpZHRoOiBwbG90LndpZHRoLFxuICAgIGhlaWdodDogcGxvdC5oZWlnaHQsXG4gICAgbWFyZ2luTGVmdDogcGxvdC5tYXJnaW5zLmxlZnQsXG4gICAgbWFyZ2luQm90dG9tOiBwbG90Lm1hcmdpbnMuYm90dG9tLFxuICAgIG1hcmdpblRvcDogcGxvdC5tYXJnaW5zLnRvcCxcbiAgICBtYXJnaW5SaWdodDogcGxvdC5tYXJnaW5zLnJpZ2h0LFxuICAgIHN0eWxlOiB7IGZvbnRTaXplOiBcIjE2cHhcIiB9LFxuICAgIHg6IHtcbiAgICAgIGRvbWFpbjogWzAsIDEwMF0sXG4gICAgICBsYWJlbDogXCJWb3J3aXNzZW4g4oaSXCIsXG4gICAgICBsYWJlbE9mZnNldDogNDUsXG4gICAgICB0aWNrczogWzAsIDUwLCAxMDBdLFxuICAgICAgdGlja0Zvcm1hdDogZCA9PiBkID09PSAwID8gXCJOaWVkcmlnXCIgOiBkID09PSA1MCA/IFwiTWl0dGVsXCIgOiBcIkhvY2hcIlxuICAgIH0sXG4gICAgeToge1xuICAgICAgZG9tYWluOiBbMCwgMTAwXSxcbiAgICAgIGxhYmVsOiBcIuKGkSBMZXJuZWZmZWt0XCIsXG4gICAgICBsYWJlbE9mZnNldDogNTAsXG4gICAgICBncmlkOiB0cnVlXG4gICAgfSxcbiAgICBtYXJrczogW1xuICAgICAgLy8gU3VwcG9ydCBsaW5lc1xuICAgICAgUGxvdC5saW5lKGhpZ2hMaW5lRGF0YSwge3g6IFwieFwiLCB5OiBcInlcIiwgc3Ryb2tlOiBjb2xvcnMuaGlnaFN1cHBvcnQsIHN0cm9rZVdpZHRoOiAzfSksXG4gICAgICBQbG90LmxpbmUobG93TGluZURhdGEsIHt4OiBcInhcIiwgeTogXCJ5XCIsIHN0cm9rZTogY29sb3JzLmxvd1N1cHBvcnQsIHN0cm9rZVdpZHRoOiAzfSksXG5cbiAgICAgIC8vIFZlcnRpY2FsIHBvc2l0aW9uIGluZGljYXRvclxuICAgICAgUGxvdC5ydWxlWChbeF0sIHtzdHJva2U6IGNvbG9ycy5uZXV0cmFsLCBzdHJva2VXaWR0aDogMS41LCBzdHJva2VEYXNoYXJyYXk6IFwiOCw1XCJ9KSxcblxuICAgICAgLy8gU3Vib3B0aW1hbCBkb3QgKHNtYWxsZXIsIGZhZGVkKVxuICAgICAgUGxvdC5kb3QoW3t4LCB5OiBzdWJvcHRpbWFsWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIixcbiAgICAgICAgZmlsbDogc3Vib3B0aW1hbENvbG9yLFxuICAgICAgICByOiA4LFxuICAgICAgICBvcGFjaXR5OiAwLjRcbiAgICAgIH0pLFxuXG4gICAgICAvLyBPcHRpbWFsIGRvdCAobGFyZ2VyLCBwcm9taW5lbnQgd2l0aCB3aGl0ZSBzdHJva2UpXG4gICAgICBQbG90LmRvdChbe3gsIHk6IG9wdGltYWxZfV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLFxuICAgICAgICBmaWxsOiBvcHRpbWFsQ29sb3IsXG4gICAgICAgIHI6IDE0LFxuICAgICAgICBzdHJva2U6IFwid2hpdGVcIixcbiAgICAgICAgc3Ryb2tlV2lkdGg6IDNcbiAgICAgIH0pLFxuXG4gICAgICAvLyBIaWdoIHN1cHBvcnQgZXhhbXBsZXMgKGxlZnQgc2lkZSwgbmVhciBsaW5lIHN0YXJ0KVxuICAgICAgUGxvdC50ZXh0KFt7eDogMTUsIHk6IGV4YW1wbGVCYXNlWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5oaWdoRXhhbXBsZXNbMF1dLCBmaWxsOiBjb2xvcnMuaGlnaFN1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG4gICAgICBQbG90LnRleHQoW3t4OiAxNSwgeTogZXhhbXBsZUJhc2VZIC0gNn1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5oaWdoRXhhbXBsZXNbMV1dLCBmaWxsOiBjb2xvcnMuaGlnaFN1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG5cbiAgICAgIC8vIExvdyBzdXBwb3J0IGV4YW1wbGVzIChyaWdodCBzaWRlKVxuICAgICAgUGxvdC50ZXh0KFt7eDogODUsIHk6IGV4YW1wbGVCYXNlWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5sb3dFeGFtcGxlc1swXV0sIGZpbGw6IGNvbG9ycy5sb3dTdXBwb3J0LCBmb250U2l6ZTogMTNcbiAgICAgIH0pLFxuICAgICAgUGxvdC50ZXh0KFt7eDogODUsIHk6IGV4YW1wbGVCYXNlWSAtIDZ9XSwge1xuICAgICAgICB4OiBcInhcIiwgeTogXCJ5XCIsIHRleHQ6IFtsYWJlbHMubG93RXhhbXBsZXNbMV1dLCBmaWxsOiBjb2xvcnMubG93U3VwcG9ydCwgZm9udFNpemU6IDEzXG4gICAgICB9KSxcblxuICAgICAgLy8gTGluZSBsYWJlbHMgKG5lYXIgbGluZSBlbmRzKVxuICAgICAgUGxvdC50ZXh0KFt7eDogODgsIHk6IGNhbGNZKGxpbmVzLmhpZ2gsIDEwMCkgLSA1fV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbbGFiZWxzLmhpZ2hTdXBwb3J0XSwgZmlsbDogY29sb3JzLmhpZ2hTdXBwb3J0LCBmb250U2l6ZTogMTUsIGZvbnRXZWlnaHQ6IFwiYm9sZFwiXG4gICAgICB9KSxcbiAgICAgIFBsb3QudGV4dChbe3g6IDEyLCB5OiBjYWxjWShsaW5lcy5sb3csIDApIC0gNX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5sb3dTdXBwb3J0XSwgZmlsbDogY29sb3JzLmxvd1N1cHBvcnQsIGZvbnRTaXplOiAxNSwgZm9udFdlaWdodDogXCJib2xkXCJcbiAgICAgIH0pXG4gICAgXVxuICB9KTtcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIEJ1dHRvbiBHcm91cDogQ3VzdG9tIHN0eWxlZCBzZWdtZW50ZWQgY29udHJvbFxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmJ1dHRvbkdyb3VwID0ge1xuICBjb25zdCB7IHgsIG9wdGltYWxDb2xvciB9ID0gY3VycmVudFN0YXRlO1xuICBjb25zdCB7IGNvbG9ycywgc3RlcHMgfSA9IGNvbmZpZztcblxuICBjb25zdCBidXR0b25TdHlsZSA9IChpc1NlbGVjdGVkLCBzZWxlY3RDb2xvcikgPT4gYFxuICAgIHBhZGRpbmc6IDEycHggMThweDtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgYmFja2dyb3VuZDogJHtpc1NlbGVjdGVkID8gc2VsZWN0Q29sb3IgOiBjb2xvcnMuYmFja2dyb3VuZH07XG4gICAgY29sb3I6ICR7aXNTZWxlY3RlZCA/ICd3aGl0ZScgOiAnIzMzMyd9O1xuICAgIGZvbnQtc2l6ZTogMWVtO1xuICAgIGZvbnQtd2VpZ2h0OiAke2lzU2VsZWN0ZWQgPyAnYm9sZCcgOiAnbm9ybWFsJ307XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkICNkZGQ7XG4gICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZCAwLjE1cyBlYXNlO1xuICBgO1xuXG4gIGNvbnN0IGNvbnRhaW5lciA9IGh0bWxgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGJvcmRlci1yYWRpdXM6IDhweDsgb3ZlcmZsb3c6IGhpZGRlbjsgYm9yZGVyOiAycHggc29saWQgI2RkZDtcIj48L2Rpdj5gO1xuXG4gIHN0ZXBzLmZvckVhY2godiA9PiB7XG4gICAgY29uc3QgaXNTZWxlY3RlZCA9IHggPT09IHY7XG4gICAgY29uc3Qgc2VsZWN0Q29sb3IgPSB2IDw9IGNyb3Nzb3ZlclBvaW50ID8gY29sb3JzLmhpZ2hTdXBwb3J0IDogY29sb3JzLmxvd1N1cHBvcnQ7XG4gICAgY29uc3QgYnRuID0gaHRtbGA8YnV0dG9uIHN0eWxlPVwiJHtidXR0b25TdHlsZShpc1NlbGVjdGVkLCBzZWxlY3RDb2xvcil9XCI+JHt2fSU8L2J1dHRvbj5gO1xuICAgIGJ0bi5vbmNsaWNrID0gKCkgPT4ge1xuICAgICAgdmlld29mIHZvcndpc3Nlbi52YWx1ZSA9IHY7XG4gICAgICB2aWV3b2Ygdm9yd2lzc2VuLmRpc3BhdGNoRXZlbnQobmV3IEV2ZW50KCdpbnB1dCcsIHtidWJibGVzOiB0cnVlfSkpO1xuICAgIH07XG4gICAgY29udGFpbmVyLmFwcGVuZENoaWxkKGJ0bik7XG4gIH0pO1xuXG4gIHJldHVybiBjb250YWluZXI7XG59XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBMYXlvdXQ6IENvbXBvc2UgYWxsIGVsZW1lbnRzXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IGNlbnRlcjsgZ2FwOiA0MHB4O1wiPlxuICA8ZGl2PiR7ZXhwZXJ0aXNlUGxvdH08L2Rpdj5cbiAgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47IGFsaWduLWl0ZW1zOiBjZW50ZXI7IGdhcDogMjBweDsgbWluLXdpZHRoOiAyODBweDtcIj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC13ZWlnaHQ6IGJvbGQ7IGZvbnQtc2l6ZTogMS4xZW07XCI+Vm9yd2lzc2VuIGRlcyBMZXJuZW5kZW48L2Rpdj5cbiAgICA8ZGl2PiR7YnV0dG9uR3JvdXB9PC9kaXY+XG4gICAgPGRpdiBzdHlsZT1cImZvbnQtc2l6ZTogMS4zZW07IHRleHQtYWxpZ246IGNlbnRlcjsgcGFkZGluZzogMTVweDsgYmFja2dyb3VuZDogJHtjdXJyZW50U3RhdGUub3B0aW1hbENvbG9yfTIyOyBib3JkZXItcmFkaXVzOiA4cHg7IGJvcmRlci1sZWZ0OiA0cHggc29saWQgJHtjdXJyZW50U3RhdGUub3B0aW1hbENvbG9yfTtcIj5cbiAgICAgIDxzcGFuIHN0eWxlPVwiY29sb3I6ICR7Y3VycmVudFN0YXRlLm9wdGltYWxDb2xvcn07IGZvbnQtd2VpZ2h0OiBib2xkO1wiPiR7Y3VycmVudFN0YXRlLm9wdGltYWxMYWJlbH08L3NwYW4+PGJyPlxuICAgICAgPHNwYW4gc3R5bGU9XCJmb250LXNpemU6IDAuOGVtOyBjb2xvcjogIzY2NjtcIj5pc3QgZWZmZWt0aXZlcjwvc3Bhbj5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG48L2Rpdj5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3Zvcndpc3NlbicpIn1dfQ==
+    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIENvbmZpZ3VyYXRpb246IEFsbCBwYXJhbWV0ZXJzIGluIG9uZSBwbGFjZSBmb3IgZWFzeSBtYWludGVuYW5jZVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmNvbmZpZyA9ICh7XG4gIC8vIENvbG9yIHBhbGV0dGVcbiAgY29sb3JzOiB7XG4gICAgaGlnaFN1cHBvcnQ6IFwiI0EzMTk1QlwiLFxuICAgIGxvd1N1cHBvcnQ6IFwiIzY2NjY2NlwiLFxuICAgIG5ldXRyYWw6IFwiIzMzM1wiLFxuICAgIGJhY2tncm91bmQ6IFwiI2Y1ZjVmNVwiXG4gIH0sXG4gIC8vIExpbmUgZXF1YXRpb25zOiB5ID0gaW50ZXJjZXB0ICsgc2xvcGUgKiB4XG4gIGxpbmVzOiB7XG4gICAgaGlnaDogeyBpbnRlcmNlcHQ6IDY1LCBzbG9wZTogLTAuNCB9LFxuICAgIGxvdzogeyBpbnRlcmNlcHQ6IDI1LCBzbG9wZTogMC40IH1cbiAgfSxcbiAgLy8gSW5wdXQgb3B0aW9uc1xuICBzdGVwczogWzAsIDIwLCA0MCwgNjAsIDgwLCAxMDBdLFxuICBkZWZhdWx0VmFsdWU6IDIwLFxuICAvLyBQbG90IGRpbWVuc2lvbnNcbiAgcGxvdDoge1xuICAgIHdpZHRoOiA5MDAsXG4gICAgaGVpZ2h0OiA0ODAsXG4gICAgbWFyZ2luczogeyBsZWZ0OiA3MCwgYm90dG9tOiA2MCwgdG9wOiAzMCwgcmlnaHQ6IDQwIH1cbiAgfSxcbiAgLy8gTGFiZWxzXG4gIGxhYmVsczoge1xuICAgIGhpZ2hTdXBwb3J0OiBcIkhvaGUgVW50ZXJzdMO8dHp1bmdcIixcbiAgICBsb3dTdXBwb3J0OiBcIk5pZWRyaWdlIFVudGVyc3TDvHR6dW5nXCIsXG4gICAgaGlnaEV4YW1wbGVzOiBbXCLwn5OWIFdvcmtlZCBFeGFtcGxlc1wiLCBcIvCfp60gRGlyZWt0ZSBJbnN0cnVrdGlvblwiXSxcbiAgICBsb3dFeGFtcGxlczogW1wi8J+nqSBQcm9ibGVtYmFzaWVydGVzIExlcm5lblwiLCBcIvCflI0gRWlnZW5lIEzDtnN1bmdzd2VnZVwiXVxuICB9XG59KVxuXG5jcm9zc292ZXJQb2ludCA9IHtcbiAgY29uc3QgeyBoaWdoLCBsb3cgfSA9IGNvbmZpZy5saW5lcztcbiAgcmV0dXJuIChoaWdoLmludGVyY2VwdCAtIGxvdy5pbnRlcmNlcHQpIC8gKGxvdy5zbG9wZSAtIGhpZ2guc2xvcGUpO1xufVxuXG5jYWxjWSA9IChsaW5lLCB4KSA9PiBsaW5lLmludGVyY2VwdCArIGxpbmUuc2xvcGUgKiB4XG5cbnZpZXdvZiB2b3J3aXNzZW4gPSB7XG4gIGNvbnN0IGlucHV0ID0gSW5wdXRzLnJhZGlvKGNvbmZpZy5zdGVwcywge1xuICAgIHZhbHVlOiBjb25maWcuZGVmYXVsdFZhbHVlLFxuICAgIGxhYmVsOiBcIlwiLFxuICAgIGZvcm1hdDogeCA9PiB4ICsgXCIlXCJcbiAgfSk7XG4gIGlucHV0LnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG5jdXJyZW50U3RhdGUgPSB7XG4gIGNvbnN0IHggPSB2b3J3aXNzZW4gPz8gY29uZmlnLmRlZmF1bHRWYWx1ZTtcbiAgY29uc3QgaGlnaFkgPSBjYWxjWShjb25maWcubGluZXMuaGlnaCwgeCk7XG4gIGNvbnN0IGxvd1kgPSBjYWxjWShjb25maWcubGluZXMubG93LCB4KTtcbiAgY29uc3QgaXNIaWdoQmV0dGVyID0geCA8PSBjcm9zc292ZXJQb2ludDtcblxuICByZXR1cm4ge1xuICAgIHgsXG4gICAgaGlnaFksXG4gICAgbG93WSxcbiAgICBpc0hpZ2hCZXR0ZXIsXG4gICAgb3B0aW1hbFk6IGlzSGlnaEJldHRlciA/IGhpZ2hZIDogbG93WSxcbiAgICBzdWJvcHRpbWFsWTogaXNIaWdoQmV0dGVyID8gbG93WSA6IGhpZ2hZLFxuICAgIG9wdGltYWxMYWJlbDogaXNIaWdoQmV0dGVyID8gY29uZmlnLmxhYmVscy5oaWdoU3VwcG9ydCA6IGNvbmZpZy5sYWJlbHMubG93U3VwcG9ydCxcbiAgICBvcHRpbWFsQ29sb3I6IGlzSGlnaEJldHRlciA/IGNvbmZpZy5jb2xvcnMuaGlnaFN1cHBvcnQgOiBjb25maWcuY29sb3JzLmxvd1N1cHBvcnQsXG4gICAgc3Vib3B0aW1hbENvbG9yOiBpc0hpZ2hCZXR0ZXIgPyBjb25maWcuY29sb3JzLmxvd1N1cHBvcnQgOiBjb25maWcuY29sb3JzLmhpZ2hTdXBwb3J0XG4gIH07XG59XG5cbmV4cGVydGlzZVBsb3QgPSB7XG4gIGNvbnN0IHsgY29sb3JzLCBsaW5lcywgcGxvdCwgbGFiZWxzIH0gPSBjb25maWc7XG4gIGNvbnN0IHsgeCwgaGlnaFksIGxvd1ksIGlzSGlnaEJldHRlciwgb3B0aW1hbFksIHN1Ym9wdGltYWxZLCBvcHRpbWFsQ29sb3IsIHN1Ym9wdGltYWxDb2xvciB9ID0gY3VycmVudFN0YXRlO1xuXG4gIGNvbnN0IGhpZ2hMaW5lRGF0YSA9IFt7eDogMCwgeTogY2FsY1kobGluZXMuaGlnaCwgMCl9LCB7eDogMTAwLCB5OiBjYWxjWShsaW5lcy5oaWdoLCAxMDApfV07XG4gIGNvbnN0IGxvd0xpbmVEYXRhID0gW3t4OiAwLCB5OiBjYWxjWShsaW5lcy5sb3csIDApfSwge3g6IDEwMCwgeTogY2FsY1kobGluZXMubG93LCAxMDApfV07XG5cbiAgY29uc3QgbGFiZWxPZmZzZXRZID0gNztcbiAgY29uc3QgZXhhbXBsZUJhc2VZID0gY2FsY1kobGluZXMuaGlnaCwgMCkgKyBsYWJlbE9mZnNldFk7XG5cbiAgcmV0dXJuIFBsb3QucGxvdCh7XG4gICAgd2lkdGg6IHBsb3Qud2lkdGgsXG4gICAgaGVpZ2h0OiBwbG90LmhlaWdodCxcbiAgICBtYXJnaW5MZWZ0OiBwbG90Lm1hcmdpbnMubGVmdCxcbiAgICBtYXJnaW5Cb3R0b206IHBsb3QubWFyZ2lucy5ib3R0b20sXG4gICAgbWFyZ2luVG9wOiBwbG90Lm1hcmdpbnMudG9wLFxuICAgIG1hcmdpblJpZ2h0OiBwbG90Lm1hcmdpbnMucmlnaHQsXG4gICAgc3R5bGU6IHsgZm9udFNpemU6IFwiMTZweFwiIH0sXG4gICAgeDoge1xuICAgICAgZG9tYWluOiBbMCwgMTAwXSxcbiAgICAgIGxhYmVsOiBcIlZvcndpc3NlbiDihpJcIixcbiAgICAgIGxhYmVsT2Zmc2V0OiA0NSxcbiAgICAgIHRpY2tzOiBbMCwgNTAsIDEwMF0sXG4gICAgICB0aWNrRm9ybWF0OiBkID0+IGQgPT09IDAgPyBcIk5pZWRyaWdcIiA6IGQgPT09IDUwID8gXCJNaXR0ZWxcIiA6IFwiSG9jaFwiXG4gICAgfSxcbiAgICB5OiB7XG4gICAgICBkb21haW46IFswLCAxMDBdLFxuICAgICAgbGFiZWw6IFwi4oaRIExlcm5lZmZla3RcIixcbiAgICAgIGxhYmVsT2Zmc2V0OiA1MCxcbiAgICAgIGdyaWQ6IHRydWVcbiAgICB9LFxuICAgIG1hcmtzOiBbXG4gICAgICBQbG90LmxpbmUoaGlnaExpbmVEYXRhLCB7eDogXCJ4XCIsIHk6IFwieVwiLCBzdHJva2U6IGNvbG9ycy5oaWdoU3VwcG9ydCwgc3Ryb2tlV2lkdGg6IDN9KSxcbiAgICAgIFBsb3QubGluZShsb3dMaW5lRGF0YSwge3g6IFwieFwiLCB5OiBcInlcIiwgc3Ryb2tlOiBjb2xvcnMubG93U3VwcG9ydCwgc3Ryb2tlV2lkdGg6IDN9KSxcbiAgICAgIFBsb3QucnVsZVgoW3hdLCB7c3Ryb2tlOiBjb2xvcnMubmV1dHJhbCwgc3Ryb2tlV2lkdGg6IDEuNSwgc3Ryb2tlRGFzaGFycmF5OiBcIjgsNVwifSksXG4gICAgICBQbG90LmRvdChbe3gsIHk6IHN1Ym9wdGltYWxZfV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLFxuICAgICAgICBmaWxsOiBzdWJvcHRpbWFsQ29sb3IsXG4gICAgICAgIHI6IDgsXG4gICAgICAgIG9wYWNpdHk6IDAuNFxuICAgICAgfSksXG4gICAgICBQbG90LmRvdChbe3gsIHk6IG9wdGltYWxZfV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLFxuICAgICAgICBmaWxsOiBvcHRpbWFsQ29sb3IsXG4gICAgICAgIHI6IDE0LFxuICAgICAgICBzdHJva2U6IFwid2hpdGVcIixcbiAgICAgICAgc3Ryb2tlV2lkdGg6IDNcbiAgICAgIH0pLFxuICAgICAgUGxvdC50ZXh0KFt7eDogMTUsIHk6IGV4YW1wbGVCYXNlWX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5oaWdoRXhhbXBsZXNbMF1dLCBmaWxsOiBjb2xvcnMuaGlnaFN1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG4gICAgICBQbG90LnRleHQoW3t4OiAxNSwgeTogZXhhbXBsZUJhc2VZIC0gNn1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5oaWdoRXhhbXBsZXNbMV1dLCBmaWxsOiBjb2xvcnMuaGlnaFN1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG4gICAgICBQbG90LnRleHQoW3t4OiA4NSwgeTogZXhhbXBsZUJhc2VZfV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbbGFiZWxzLmxvd0V4YW1wbGVzWzBdXSwgZmlsbDogY29sb3JzLmxvd1N1cHBvcnQsIGZvbnRTaXplOiAxM1xuICAgICAgfSksXG4gICAgICBQbG90LnRleHQoW3t4OiA4NSwgeTogZXhhbXBsZUJhc2VZIC0gNn1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5sb3dFeGFtcGxlc1sxXV0sIGZpbGw6IGNvbG9ycy5sb3dTdXBwb3J0LCBmb250U2l6ZTogMTNcbiAgICAgIH0pLFxuICAgICAgUGxvdC50ZXh0KFt7eDogODgsIHk6IGNhbGNZKGxpbmVzLmhpZ2gsIDEwMCkgLSA1fV0sIHtcbiAgICAgICAgeDogXCJ4XCIsIHk6IFwieVwiLCB0ZXh0OiBbbGFiZWxzLmhpZ2hTdXBwb3J0XSwgZmlsbDogY29sb3JzLmhpZ2hTdXBwb3J0LCBmb250U2l6ZTogMTUsIGZvbnRXZWlnaHQ6IFwiYm9sZFwiXG4gICAgICB9KSxcbiAgICAgIFBsb3QudGV4dChbe3g6IDEyLCB5OiBjYWxjWShsaW5lcy5sb3csIDApIC0gNX1dLCB7XG4gICAgICAgIHg6IFwieFwiLCB5OiBcInlcIiwgdGV4dDogW2xhYmVscy5sb3dTdXBwb3J0XSwgZmlsbDogY29sb3JzLmxvd1N1cHBvcnQsIGZvbnRTaXplOiAxNSwgZm9udFdlaWdodDogXCJib2xkXCJcbiAgICAgIH0pXG4gICAgXVxuICB9KTtcbn1cblxuYnV0dG9uR3JvdXAgPSB7XG4gIGNvbnN0IHsgeCwgb3B0aW1hbENvbG9yIH0gPSBjdXJyZW50U3RhdGU7XG4gIGNvbnN0IHsgY29sb3JzLCBzdGVwcyB9ID0gY29uZmlnO1xuXG4gIGNvbnN0IGJ1dHRvblN0eWxlID0gKGlzU2VsZWN0ZWQsIHNlbGVjdENvbG9yKSA9PiBgXG4gICAgcGFkZGluZzogMTJweCAxOHB4O1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBiYWNrZ3JvdW5kOiAke2lzU2VsZWN0ZWQgPyBzZWxlY3RDb2xvciA6IGNvbG9ycy5iYWNrZ3JvdW5kfTtcbiAgICBjb2xvcjogJHtpc1NlbGVjdGVkID8gJ3doaXRlJyA6ICcjMzMzJ307XG4gICAgZm9udC1zaXplOiAxZW07XG4gICAgZm9udC13ZWlnaHQ6ICR7aXNTZWxlY3RlZCA/ICdib2xkJyA6ICdub3JtYWwnfTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2RkZDtcbiAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kIDAuMTVzIGVhc2U7XG4gIGA7XG5cbiAgY29uc3QgY29udGFpbmVyID0gaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgYm9yZGVyLXJhZGl1czogOHB4OyBvdmVyZmxvdzogaGlkZGVuOyBib3JkZXI6IDJweCBzb2xpZCAjZGRkO1wiPjwvZGl2PmA7XG5cbiAgc3RlcHMuZm9yRWFjaCh2ID0+IHtcbiAgICBjb25zdCBpc1NlbGVjdGVkID0geCA9PT0gdjtcbiAgICBjb25zdCBzZWxlY3RDb2xvciA9IHYgPD0gY3Jvc3NvdmVyUG9pbnQgPyBjb2xvcnMuaGlnaFN1cHBvcnQgOiBjb2xvcnMubG93U3VwcG9ydDtcbiAgICBjb25zdCBidG4gPSBodG1sYDxidXR0b24gc3R5bGU9XCIke2J1dHRvblN0eWxlKGlzU2VsZWN0ZWQsIHNlbGVjdENvbG9yKX1cIj4ke3Z9JTwvYnV0dG9uPmA7XG4gICAgYnRuLm9uY2xpY2sgPSAoKSA9PiB7XG4gICAgICB2aWV3b2Ygdm9yd2lzc2VuLnZhbHVlID0gdjtcbiAgICAgIHZpZXdvZiB2b3J3aXNzZW4uZGlzcGF0Y2hFdmVudChuZXcgRXZlbnQoJ2lucHV0Jywge2J1YmJsZXM6IHRydWV9KSk7XG4gICAgfTtcbiAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQoYnRuKTtcbiAgfSk7XG5cbiAgcmV0dXJuIGNvbnRhaW5lcjtcbn1cblxuaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IGNlbnRlcjsgZ2FwOiA0MHB4O1wiPlxuICA8ZGl2PiR7ZXhwZXJ0aXNlUGxvdH08L2Rpdj5cbiAgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47IGFsaWduLWl0ZW1zOiBjZW50ZXI7IGdhcDogMjBweDsgbWluLXdpZHRoOiAyODBweDtcIj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC13ZWlnaHQ6IGJvbGQ7IGZvbnQtc2l6ZTogMS4xZW07XCI+Vm9yd2lzc2VuIGRlcyBMZXJuZW5kZW48L2Rpdj5cbiAgICA8ZGl2PiR7YnV0dG9uR3JvdXB9PC9kaXY+XG4gICAgPGRpdiBzdHlsZT1cImZvbnQtc2l6ZTogMS4zZW07IHRleHQtYWxpZ246IGNlbnRlcjsgcGFkZGluZzogMTVweDsgYmFja2dyb3VuZDogJHtjdXJyZW50U3RhdGUub3B0aW1hbENvbG9yfTIyOyBib3JkZXItcmFkaXVzOiA4cHg7IGJvcmRlci1sZWZ0OiA0cHggc29saWQgJHtjdXJyZW50U3RhdGUub3B0aW1hbENvbG9yfTtcIj5cbiAgICAgIDxzcGFuIHN0eWxlPVwiY29sb3I6ICR7Y3VycmVudFN0YXRlLm9wdGltYWxDb2xvcn07IGZvbnQtd2VpZ2h0OiBib2xkO1wiPiR7Y3VycmVudFN0YXRlLm9wdGltYWxMYWJlbH08L3NwYW4+PGJyPlxuICAgICAgPHNwYW4gc3R5bGU9XCJmb250LXNpemU6IDAuOGVtOyBjb2xvcjogIzY2NjtcIj5pc3QgZWZmZWt0aXZlcjwvc3Bhbj5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG48L2Rpdj5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3Zvcndpc3NlbicpIn1dfQ==
     </script>
     <script type="module">
     if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
