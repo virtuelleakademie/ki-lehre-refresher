@@ -106,7 +106,7 @@ Replace `slides/ai-higher-ed/index.qmd` with the new presentation. Structure bel
 - "Aber warum genau ist die Situation fur Lernende so problematisch?"
 - Bridge from summary to deep dive
 
-#### Part B: Deep Dive (~11 slides, ~12 min)
+#### Part B: Deep Dive (~12 slides, ~12 min)
 
 **Slide 14: The Evaluation Paradox - Setup**
 - Title: "Das Evaluationsparadox"
@@ -140,31 +140,65 @@ Replace `slides/ai-higher-ed/index.qmd` with the new presentation. Structure bel
 - "But why do students outsource in the first place?"
 - "Are they lazy? Dishonest? Or... rational?"
 
-**Slide 20: The Beach, Not the Ant** (Simon)
+**Slide 20: Case Study: "Ein Gesprach an der BFH"** (NEW)
+- Based on a real conversation with a BFH math lecturer
+- Narrative structure using RevealJS fragments (progressive reveal):
+
+- Fragment 1: Grey-boxed quote from the lecturer (anonymized, condensed):
+  "Wir nutzen lokale KI-Modelle fur Prufungserstellung und Korrektur. Aber bei
+  Studierenden sehen wir: Sie kommen nicht zu Ubungsstunden, stellen keine
+  Fragen, uben nicht. Ihnen fehlt die intrinsische Motivation."
+  Key detail: the lecturer is already an AI practitioner (local models for exams,
+  essay correction, confidential documents). The audience sees themselves.
+
+- Fragment 2: Two-column comparison:
+  Left (grey): "Die Diagnose" = Motivationsproblem.
+    KI-Losung: gamifizierte KI-Ubungen, KI-Tutoren die "engagieren"
+  Right (magenta): "Das eigentliche Problem" = Cognitive Overload.
+    Die Aufgaben uberlasten das Arbeitsgedachtnis, weil die notigen Schemata fehlen.
+
+- Fragment 3: Gold callout bridging to Beach/Ant:
+  "Falsche Diagnose -> falsche KI-Intervention.
+  Nicht die Ameise ist das Problem, sondern der Strand."
+
+- AI connections made explicit:
+  1. Lecturer as audience proxy (already using AI in teaching)
+  2. Wrong diagnosis leads to wrong AI intervention (AI tutors for "engagement"
+     treat the symptom; redesigning cognitive load treats the cause)
+  3. Right AI use: AI for the INSTRUCTOR to calibrate task difficulty and create
+     scaffolded exercises, not AI for students to bypass productive struggle
+
+- Speaker notes: connect to Evaluation Paradox (students who can't solve problems
+  also can't evaluate AI-generated solutions), elaborate on how this case
+  demonstrates that "motivation" attributions are often cognitive load problems
+  in disguise
+
+**Slide 21: The Beach, Not the Ant** (Simon)
 - Visual: DiagrammeR diagram (port from intermediate fig-beach-ant.qmd)
 - Herbert Simon's insight: behavior is shaped by environment more than motivation
 - Student behavior reflects the "terrain" we design
+- Now lands with force because audience just saw the concrete case study
 
-**Slide 21: Students as Rational Agents**
+**Slide 22: Students as Rational Agents**
 - If the environment makes outsourcing the easiest path, rational agents will outsource
 - This is not a character problem; it's an environmental design problem
 - Four terrain factors: Task design, Assessment format, AI accessibility, Structural incentives
 
-**Slide 22: "Gestalte den Strand, nicht die Ameise"**
+**Slide 23: "Gestalte den Strand, nicht die Ameise"**
 - Practical implications:
   - Design tasks where the cognitive work IS the deliverable (not just the product)
   - Assess the process, not just the output
   - Make productive struggle the path of least resistance
 - Brief examples
 
-**Slide 23: Combining Both Insights**
-- The Evaluation Paradox tells us WHY students can't self-regulate AI use
-- Bounded Rationality tells us WHY they won't, even if they could
-- Together: We cannot rely on student judgment alone. We must design environments where productive cognitive work is the natural path.
-
-**Slide 24: Core Message**
-- "KI-Werkzeuge sind fur Experten gemacht."
-- For teaching: Build foundations first. Design environments that require thinking. Trust the process of productive struggle.
+**Slide 24: Core Message** (merged from previous slides 23+24)
+- Two columns:
+  - Evaluation Paradox: students CAN'T self-regulate AI use (lack competence to evaluate)
+  - Bounded Rationality: students WON'T self-regulate (environment makes outsourcing rational)
+- Together: We cannot rely on student judgment alone
+- Core statement: "KI-Werkzeuge sind fur Experten gemacht."
+- For teaching: Build foundations first. Design environments that require thinking.
+  Trust the process of productive struggle.
 
 **Slide 25: References**
 
@@ -181,12 +215,13 @@ Replace `slides/ai-higher-ed/index.qmd` with the new presentation. Structure bel
 **Port from intermediate course** (adapt to refresher color palette):
 - Offloading spectrum (slide 9): from `ki-lehre-intermediate/resources/figures/fig-offloading-spectrum.qmd`
 - Evaluation paradox diagram (slide 16): from `ki-lehre-intermediate/resources/figures/fig-evaluation-paradox.qmd`
-- Beach/Ant diagram (slide 20): from `ki-lehre-intermediate/resources/figures/fig-beach-ant.qmd`
+- Beach/Ant diagram (slide 21): from `ki-lehre-intermediate/resources/figures/fig-beach-ant.qmd`
 
 **Create new:**
 - Four cognitive operations visual (slide 15): simple ggplot or HTML/CSS grid
 - Transition slides (13, 19): text-only, minimal
-- "Combining insights" summary (slide 23): text-based or simple visual
+- Case study slide (slide 20): styled quote box, two-column fragment, gold callout
+- Merged core message slide (slide 24): two-column layout with summary
 
 ### Color palette adaptation
 
