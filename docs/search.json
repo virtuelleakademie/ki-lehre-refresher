@@ -257,39 +257,25 @@
     ]
   },
   {
-    "objectID": "presentation/index.html",
-    "href": "presentation/index.html",
-    "title": "Präsentation",
-    "section": "",
-    "text": "Fokussierter Vortrag (30 Min) mit anschliessender Diskussion (30 Min).\n    Folien in neuem Tab öffnen\n       \n      \n    \n  \n\nNutze die Pfeiltasten oder die Leertaste um durch die Präsentation zu navigieren. Drücke F für Vollbild.\n\nVertiefung\nFür eine umfassende Behandlung aller Konzepte, Beispiele und theoretischen Hintergründe siehe den Leitfaden.\n\nWeiterbildungsangebot\nDieser Refresher bietet einen kompakten Überblick über den aktuellen Forschungsstand und die lernwissenschaftlichen Grundlagen. Die BFH bietet drei aufbauende Kurse an, die diese Themen vertiefen:\nKI in der Lehre: Beginner: Grundlagen zu Sprachmodellen und Chatbots.\nKI in der Lehre: Intermediate: Lernpsychologie und KI-gestütztes Lerndesign.\nKI in der Lehre: Advanced: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.\n\n\n\n\n\n\n Zurück nach oben"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "KI in der Lehre: Refresher",
-    "section": "",
-    "text": "Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochschulbildung.\n\n\n\nPräsentation: Slides zum Workshop (Voll- und Kurzversion)\nLeitfaden: Vertiefende Informationen zu KI in der Hochschulbildung\nQ & A: Fragen, Antworten und weiterführende Ressourcen"
-  },
-  {
-    "objectID": "index.html#willkommen",
-    "href": "index.html#willkommen",
-    "title": "KI in der Lehre: Refresher",
-    "section": "",
-    "text": "Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochschulbildung.\n\n\n\nPräsentation: Slides zum Workshop (Voll- und Kurzversion)\nLeitfaden: Vertiefende Informationen zu KI in der Hochschulbildung\nQ & A: Fragen, Antworten und weiterführende Ressourcen"
-  },
-  {
-    "objectID": "index.html#kontakt",
-    "href": "index.html#kontakt",
-    "title": "KI in der Lehre: Refresher",
-    "section": "Kontakt",
-    "text": "Kontakt\nDr. Andrew Ellis ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule. Er erforscht, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann."
-  },
-  {
     "objectID": "slides/ai-higher-ed/index.html#section",
     "href": "slides/ai-higher-ed/index.html#section",
     "title": "KI in der Hochschulbildung",
     "section": "",
     "text": "Werkzeuge für Experten,Herausforderungen für Lernende\n\n\n\nZwei Narrative zu KI in Bildung: “revolutioniert” vs. “zerstört” — beide zu einfach\nKognitionspsychologie liefert Rahmen: wann hilft KI, wann schadet sie?\nEisberg-Metapher: Performance (sichtbar) ≠ Learning (unsichtbar)\nAufbau: Studie → Warum? (Gedächtnisarchitektur) → Rahmen für differenzierte Beurteilung"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#wie-funktionieren-sprachmodelle",
+    "href": "slides/ai-higher-ed/index.html#wie-funktionieren-sprachmodelle",
+    "title": "KI in der Hochschulbildung",
+    "section": "Wie funktionieren Sprachmodelle?",
+    "text": "Wie funktionieren Sprachmodelle?\n\n\nStatistische Mustervervollständigung auf Basis von Kontext\n\n\n\n\n\n\n\nNächstes-Wort-Vorhersage\nDas Modell berechnet Wahrscheinlichkeiten für das nächste Wort basierend auf allem, was vorher kam.\n\n\n\nKontext bestimmt das Ergebnis\nDerselbe Prompt mit leicht verändertem Kontext kann zu völlig anderen Antworten führen.\n\n\n\n\n\nKein “Verstehen”, kein “Wissen”, keine eingebaute Faktenkontrolle.\n\n\n\nLLMs sagen das nächste Wort vorher, basierend auf statistischen Mustern\nKontext bestimmt das Ergebnis: Prompt Engineering funktioniert genau deswegen\nKein Verstehen, kein Wissen: nur Muster aus Trainingsdaten\nWichtig für die Diskussion: Was heisst das für Lernen?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#fähigkeiten-und-grenzen",
+    "href": "slides/ai-higher-ed/index.html#fähigkeiten-und-grenzen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Fähigkeiten und Grenzen",
+    "text": "Fähigkeiten und Grenzen\n\n\n\nVielseitig einsetzbar:\n\n\n Text generieren und überarbeiten\n Bilder analysieren und erstellen\n Code schreiben und debuggen\n Web-Suche und Recherche\n Dokumente zusammenfassen\n\n\nAber:\n\n\n Keine eingebaute Faktenkontrolle\n Halluzinationen (überzeugend, aber falsch)\n Inkonsistente Ergebnisse\n Wissen hat ein Ablaufdatum\n Kein Verständnis, nur Muster\n\n\n\n\n\nVielseitig, aber immer überprüfen.\n\n\n\nMulti-modale Tools: Text, Bilder, Code, Web-Suche\nKeine eingebaute Faktenkontrolle, Halluzinationen\nKonsequenz: Vielseitig, aber immer überprüfen\nFrage: Was bedeutet “überprüfen” wenn man das Fach noch lernt?"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#ein-überraschendes-ergebnis",
@@ -331,7 +317,14 @@
     "href": "slides/ai-higher-ed/index.html#der-generierungseffekt",
     "title": "KI in der Hochschulbildung",
     "section": "Der Generierungseffekt",
-    "text": "Der Generierungseffekt\n\n\n\n\n\n\n\n\n\nSelbst generierte Information wird besser behalten (Slamecka und Graf 1978).\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.\n\n\n\nDer Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…\n\n\nBehaltensleistung: Selbst generiert (~70%) &gt; Gelesen (~50%) &gt; Von KI (~35%)\nForschung seit 1970er (Slamecka & Graf)\nWenn KI generiert statt Studierende → Lerneffekt entfällt\nEffekt nicht neu → historische Analogien"
+    "text": "Der Generierungseffekt\n\n\n\n\n\n\n\n\n\nSelbst generierte Information wird besser behalten (Slamecka und Graf 1978).\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.\n\n\nBehaltensleistung: Selbst generiert (~70%) &gt; Gelesen (~50%) &gt; Von KI (~35%)\nForschung seit 1970er (Slamecka & Graf)\nWenn KI generiert statt Studierende → Lerneffekt entfällt"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#offloading-vs.-outsourcing",
+    "href": "slides/ai-higher-ed/index.html#offloading-vs.-outsourcing",
+    "title": "KI in der Hochschulbildung",
+    "section": "Offloading vs. Outsourcing",
+    "text": "Offloading vs. Outsourcing\n\n\n\n\n\n\n\n\n\n\n\nOffloading: Werkzeug reduziert Arbeitsgedächtnislast, du denkst weiter\nOutsourcing: Werkzeug ersetzt dein Denken\nNicht jede KI-Nutzung ist gleich: Spektrum von hilfreich bis schädlich\nBeispiele zeigen den graduellen Übergang\nDie entscheidende Frage: Bleibt die lernrelevante Verarbeitung beim Lernenden?"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#historische-analogien",
@@ -341,71 +334,260 @@
     "text": "Historische Analogien\n\n\n\n\n\n\n\n\n\n\n\n\nDas Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.\n(Dahmani und Bohbot 2020; Sparrow, Liu, und Wegner 2011)\n\n\n\n1970er Taschenrechner: konzeptuelles Mathe-Verständnis ↓\n1990er GPS: räumliches Gedächtnis ↓\n2000er Google: “Wo” ersetzt “Was”\n2020er KI: kombiniert und verstärkt alle Effekte\nUnterschied: KI betrifft alle kognitiven Domänen, nicht nur eine"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#die-entscheidende-frage",
-    "href": "slides/ai-higher-ed/index.html#die-entscheidende-frage",
+    "objectID": "slides/ai-higher-ed/index.html#experten-vs.-lernende",
+    "href": "slides/ai-higher-ed/index.html#experten-vs.-lernende",
     "title": "KI in der Hochschulbildung",
-    "section": "Die entscheidende Frage",
-    "text": "Die entscheidende Frage\n\n\nDasselbe Werkzeug, unterschiedliche Ergebnisse.\n\n\n\n\n Taschenrechner helfen Mathematikern, können aber Lernenden schaden.\n GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.\n\n\n\n\n\nDie Frage ist nicht ob KI, sondern wer davon profitiert.\n\n\n\n\nDie Antwort liegt in dem, was Experten von Lernenden unterscheidet.\n\n\nDasselbe Werkzeug, unterschiedliche Ergebnisse\nTaschenrechner: hilft Mathematikern, kann Lernenden schaden\nGPS: hilft Taxifahrern, schwächt räumliches Gedächtnis von Neulingen\nFrage nicht OB KI nützt/schadet, sondern WER profitiert\nAntwort: Was unterscheidet Experten von Lernenden?"
-  },
-  {
-    "objectID": "slides/ai-higher-ed/index.html#was-experten-sehen",
-    "href": "slides/ai-higher-ed/index.html#was-experten-sehen",
-    "title": "KI in der Hochschulbildung",
-    "section": "Was Experten sehen",
-    "text": "Was Experten sehen\n\n\n\n\n\n\nNovize: sieht Einzelteile\n“64 Felder, 32 Figuren, viele Möglichkeiten”\n. . .\nExperte: sieht Muster und Bedeutung\n“Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7”\n. . .\n\nExperten speichern Wissen in Chunks: vernetzte Wissensstrukturen, die automatisch abgerufen werden (Groot und Groot 1978; Chase und Simon 1973).\n\n\n\nSchachforschung als klassisches Beispiel\nNovize: sieht Einzelteile (64 Felder, 32 Figuren)\nExperte: sieht Muster und Bedeutung (“Sizilianische Verteidigung”)\nExperten speichern Wissen in “Chunks” (vernetzte Strukturen)\nSchachmeister: ~50.000 Chunks (de Groot, Chase & Simon)"
+    "section": "Experten vs. Lernende",
+    "text": "Experten vs. Lernende\n\n\n\nExperten:\n\n\n Können Routine auslagern\n Können KI-Output bewerten\n Mehr Kapazität für Komplexes\n\n\nLernende:\n\n\n Können nicht bewerten\n Überspringen Grundlagen\n Risiko: “Fliessende Inkompetenz”\n\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.\n\n\nExperten: können Routine auslagern, Output bewerten, Kapazität für Komplexes\nLernende: können Output nicht bewerten, überspringen Grundlagen\nRisiko: “fliessende Inkompetenz” (mit Hilfe alles, ohne Hilfe nichts)\nFazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#der-expertise-umkehr-effekt",
     "href": "slides/ai-higher-ed/index.html#der-expertise-umkehr-effekt",
     "title": "KI in der Hochschulbildung",
     "section": "Der Expertise-Umkehr-Effekt",
-    "text": "Der Expertise-Umkehr-Effekt\n\n Interaktiv: Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.\n\n\nconfig = ({\n  // Color palette\n  colors: {\n    highSupport: \"#A3195B\",\n    lowSupport: \"#666666\",\n    neutral: \"#333\",\n    background: \"#f5f5f5\"\n  },\n  // Line equations: y = intercept + slope * x\n  // Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x\n  lines: {\n    high: { intercept: 65, slope: -0.4 },\n    low: { intercept: 25, slope: 0.4 }\n  },\n  // Input options\n  steps: [0, 20, 40, 60, 80, 100],\n  defaultValue: 20,\n  // Plot dimensions\n  plot: {\n    width: 900,\n    height: 480,\n    margins: { left: 70, bottom: 60, top: 30, right: 40 }\n  },\n  // Labels\n  labels: {\n    highSupport: \"Hohe Unterstützung\",\n    lowSupport: \"Niedrige Unterstützung\",\n    highExamples: [\"📖 Worked Examples\", \"🧭 Direkte Instruktion\"],\n    lowExamples: [\"🧩 Problembasiertes Lernen\", \"🔍 Eigene Lösungswege\"]\n  }\n})\n\n// =============================================================================\n// Derived values: Computed from config (no magic numbers)\n// =============================================================================\n\n// Crossover point: solve for x where both lines intersect\ncrossoverPoint = {\n  const { high, low } = config.lines;\n  return (high.intercept - low.intercept) / (low.slope - high.slope);\n}\n\n// Helper function to calculate y-value on a line\ncalcY = (line, x) =&gt; line.intercept + line.slope * x\n\n// =============================================================================\n// State: Single source of truth for user input (hidden, controlled by buttons)\n// =============================================================================\nviewof vorwissen = {\n  const input = Inputs.radio(config.steps, {\n    value: config.defaultValue,\n    label: \"\",\n    format: x =&gt; x + \"%\"\n  });\n  input.style.display = \"none\";\n  return input;\n}\n\n// =============================================================================\n// Reactive calculations based on current state\n// =============================================================================\ncurrentState = {\n  const x = vorwissen ?? config.defaultValue;\n  const highY = calcY(config.lines.high, x);\n  const lowY = calcY(config.lines.low, x);\n  const isHighBetter = x &lt;= crossoverPoint;\n\n  return {\n    x,\n    highY,\n    lowY,\n    isHighBetter,\n    optimalY: isHighBetter ? highY : lowY,\n    suboptimalY: isHighBetter ? lowY : highY,\n    optimalLabel: isHighBetter ? config.labels.highSupport : config.labels.lowSupport,\n    optimalColor: isHighBetter ? config.colors.highSupport : config.colors.lowSupport,\n    suboptimalColor: isHighBetter ? config.colors.lowSupport : config.colors.highSupport\n  };\n}\n\n// =============================================================================\n// Plot: Visualization with all marks\n// =============================================================================\nexpertisePlot = {\n  const { colors, lines, plot, labels } = config;\n  const { x, highY, lowY, isHighBetter, optimalY, suboptimalY, optimalColor, suboptimalColor } = currentState;\n\n  // Generate line data points\n  const highLineData = [{x: 0, y: calcY(lines.high, 0)}, {x: 100, y: calcY(lines.high, 100)}];\n  const lowLineData = [{x: 0, y: calcY(lines.low, 0)}, {x: 100, y: calcY(lines.low, 100)}];\n\n  // Label positions (relative to line endpoints)\n  const labelOffsetY = 7;\n  const exampleBaseY = calcY(lines.high, 0) + labelOffsetY;\n\n  return Plot.plot({\n    width: plot.width,\n    height: plot.height,\n    marginLeft: plot.margins.left,\n    marginBottom: plot.margins.bottom,\n    marginTop: plot.margins.top,\n    marginRight: plot.margins.right,\n    style: { fontSize: \"16px\" },\n    x: {\n      domain: [0, 100],\n      label: \"Vorwissen →\",\n      labelOffset: 45,\n      ticks: [0, 50, 100],\n      tickFormat: d =&gt; d === 0 ? \"Niedrig\" : d === 50 ? \"Mittel\" : \"Hoch\"\n    },\n    y: {\n      domain: [0, 100],\n      label: \"↑ Lerneffekt\",\n      labelOffset: 50,\n      grid: true\n    },\n    marks: [\n      // Support lines\n      Plot.line(highLineData, {x: \"x\", y: \"y\", stroke: colors.highSupport, strokeWidth: 3}),\n      Plot.line(lowLineData, {x: \"x\", y: \"y\", stroke: colors.lowSupport, strokeWidth: 3}),\n\n      // Vertical position indicator\n      Plot.ruleX([x], {stroke: colors.neutral, strokeWidth: 1.5, strokeDasharray: \"8,5\"}),\n\n      // Suboptimal dot (smaller, faded)\n      Plot.dot([{x, y: suboptimalY}], {\n        x: \"x\", y: \"y\",\n        fill: suboptimalColor,\n        r: 8,\n        opacity: 0.4\n      }),\n\n      // Optimal dot (larger, prominent with white stroke)\n      Plot.dot([{x, y: optimalY}], {\n        x: \"x\", y: \"y\",\n        fill: optimalColor,\n        r: 14,\n        stroke: \"white\",\n        strokeWidth: 3\n      }),\n\n      // High support examples (left side, near line start)\n      Plot.text([{x: 15, y: exampleBaseY}], {\n        x: \"x\", y: \"y\", text: [labels.highExamples[0]], fill: colors.highSupport, fontSize: 13\n      }),\n      Plot.text([{x: 15, y: exampleBaseY - 6}], {\n        x: \"x\", y: \"y\", text: [labels.highExamples[1]], fill: colors.highSupport, fontSize: 13\n      }),\n\n      // Low support examples (right side)\n      Plot.text([{x: 85, y: exampleBaseY}], {\n        x: \"x\", y: \"y\", text: [labels.lowExamples[0]], fill: colors.lowSupport, fontSize: 13\n      }),\n      Plot.text([{x: 85, y: exampleBaseY - 6}], {\n        x: \"x\", y: \"y\", text: [labels.lowExamples[1]], fill: colors.lowSupport, fontSize: 13\n      }),\n\n      // Line labels (near line ends)\n      Plot.text([{x: 88, y: calcY(lines.high, 100) - 5}], {\n        x: \"x\", y: \"y\", text: [labels.highSupport], fill: colors.highSupport, fontSize: 15, fontWeight: \"bold\"\n      }),\n      Plot.text([{x: 12, y: calcY(lines.low, 0) - 5}], {\n        x: \"x\", y: \"y\", text: [labels.lowSupport], fill: colors.lowSupport, fontSize: 15, fontWeight: \"bold\"\n      })\n    ]\n  });\n}\n\n// =============================================================================\n// Button Group: Custom styled segmented control\n// =============================================================================\nbuttonGroup = {\n  const { x, optimalColor } = currentState;\n  const { colors, steps } = config;\n\n  const buttonStyle = (isSelected, selectColor) =&gt; `\n    padding: 12px 18px;\n    border: none;\n    background: ${isSelected ? selectColor : colors.background};\n    color: ${isSelected ? 'white' : '#333'};\n    font-size: 1em;\n    font-weight: ${isSelected ? 'bold' : 'normal'};\n    cursor: pointer;\n    border-right: 1px solid #ddd;\n    transition: background 0.15s ease;\n  `;\n\n  const container = html`&lt;div style=\"display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;\"&gt;&lt;/div&gt;`;\n\n  steps.forEach(v =&gt; {\n    const isSelected = x === v;\n    const selectColor = v &lt;= crossoverPoint ? colors.highSupport : colors.lowSupport;\n    const btn = html`&lt;button style=\"${buttonStyle(isSelected, selectColor)}\"&gt;${v}%&lt;/button&gt;`;\n    btn.onclick = () =&gt; {\n      viewof vorwissen.value = v;\n      viewof vorwissen.dispatchEvent(new Event('input', {bubbles: true}));\n    };\n    container.appendChild(btn);\n  });\n\n  return container;\n}\n\n// =============================================================================\n// Layout: Compose all elements\n// =============================================================================\nhtml`&lt;div style=\"display: flex; align-items: center; gap: 40px;\"&gt;\n  &lt;div&gt;${expertisePlot}&lt;/div&gt;\n  &lt;div style=\"display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;\"&gt;\n    &lt;div style=\"font-weight: bold; font-size: 1.1em;\"&gt;Vorwissen des Lernenden&lt;/div&gt;\n    &lt;div&gt;${buttonGroup}&lt;/div&gt;\n    &lt;div style=\"font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 8px; border-left: 4px solid ${currentState.optimalColor};\"&gt;\n      &lt;span style=\"color: ${currentState.optimalColor}; font-weight: bold;\"&gt;${currentState.optimalLabel}&lt;/span&gt;&lt;br&gt;\n      &lt;span style=\"font-size: 0.8em; color: #666;\"&gt;ist effektiver&lt;/span&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nDer Expertise-Umkehr-Effekt (Kalyuga 2009).\n\n\nExpertise-Umkehr-Effekt: wichtiger Befund der Instruktionsforschung\nX-Achse: Vorwissen, Y-Achse: Lerneffekt\nMagenta = hohe Unterstützung, Grau = niedrige Unterstützung\nNiedriges Vorwissen → hohe Unterstützung besser (Novizen brauchen Struktur)\nHohes Vorwissen → niedrige Unterstützung besser (Anleitungen werden redundant)\nWas für Novizen optimal ist, ist für Experten suboptimal"
+    "text": "Der Expertise-Umkehr-Effekt\n\n Interaktiv: Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.\n\n\nconfig = ({\n  // Color palette\n  colors: {\n    highSupport: \"#A3195B\",\n    lowSupport: \"#666666\",\n    neutral: \"#333\",\n    background: \"#f5f5f5\"\n  },\n  // Line equations: y = intercept + slope * x\n  lines: {\n    high: { intercept: 65, slope: -0.4 },\n    low: { intercept: 25, slope: 0.4 }\n  },\n  // Input options\n  steps: [0, 20, 40, 60, 80, 100],\n  defaultValue: 20,\n  // Plot dimensions\n  plot: {\n    width: 900,\n    height: 480,\n    margins: { left: 70, bottom: 60, top: 30, right: 40 }\n  },\n  // Labels\n  labels: {\n    highSupport: \"Hohe Unterstützung\",\n    lowSupport: \"Niedrige Unterstützung\",\n    highExamples: [\"📖 Worked Examples\", \"🧭 Direkte Instruktion\"],\n    lowExamples: [\"🧩 Problembasiertes Lernen\", \"🔍 Eigene Lösungswege\"]\n  }\n})\n\ncrossoverPoint = {\n  const { high, low } = config.lines;\n  return (high.intercept - low.intercept) / (low.slope - high.slope);\n}\n\ncalcY = (line, x) =&gt; line.intercept + line.slope * x\n\nviewof vorwissen = {\n  const input = Inputs.radio(config.steps, {\n    value: config.defaultValue,\n    label: \"\",\n    format: x =&gt; x + \"%\"\n  });\n  input.style.display = \"none\";\n  return input;\n}\n\ncurrentState = {\n  const x = vorwissen ?? config.defaultValue;\n  const highY = calcY(config.lines.high, x);\n  const lowY = calcY(config.lines.low, x);\n  const isHighBetter = x &lt;= crossoverPoint;\n\n  return {\n    x,\n    highY,\n    lowY,\n    isHighBetter,\n    optimalY: isHighBetter ? highY : lowY,\n    suboptimalY: isHighBetter ? lowY : highY,\n    optimalLabel: isHighBetter ? config.labels.highSupport : config.labels.lowSupport,\n    optimalColor: isHighBetter ? config.colors.highSupport : config.colors.lowSupport,\n    suboptimalColor: isHighBetter ? config.colors.lowSupport : config.colors.highSupport\n  };\n}\n\nexpertisePlot = {\n  const { colors, lines, plot, labels } = config;\n  const { x, highY, lowY, isHighBetter, optimalY, suboptimalY, optimalColor, suboptimalColor } = currentState;\n\n  const highLineData = [{x: 0, y: calcY(lines.high, 0)}, {x: 100, y: calcY(lines.high, 100)}];\n  const lowLineData = [{x: 0, y: calcY(lines.low, 0)}, {x: 100, y: calcY(lines.low, 100)}];\n\n  const labelOffsetY = 7;\n  const exampleBaseY = calcY(lines.high, 0) + labelOffsetY;\n\n  return Plot.plot({\n    width: plot.width,\n    height: plot.height,\n    marginLeft: plot.margins.left,\n    marginBottom: plot.margins.bottom,\n    marginTop: plot.margins.top,\n    marginRight: plot.margins.right,\n    style: { fontSize: \"16px\" },\n    x: {\n      domain: [0, 100],\n      label: \"Vorwissen →\",\n      labelOffset: 45,\n      ticks: [0, 50, 100],\n      tickFormat: d =&gt; d === 0 ? \"Niedrig\" : d === 50 ? \"Mittel\" : \"Hoch\"\n    },\n    y: {\n      domain: [0, 100],\n      label: \"↑ Lerneffekt\",\n      labelOffset: 50,\n      grid: true\n    },\n    marks: [\n      Plot.line(highLineData, {x: \"x\", y: \"y\", stroke: colors.highSupport, strokeWidth: 3}),\n      Plot.line(lowLineData, {x: \"x\", y: \"y\", stroke: colors.lowSupport, strokeWidth: 3}),\n      Plot.ruleX([x], {stroke: colors.neutral, strokeWidth: 1.5, strokeDasharray: \"8,5\"}),\n      Plot.dot([{x, y: suboptimalY}], {\n        x: \"x\", y: \"y\",\n        fill: suboptimalColor,\n        r: 8,\n        opacity: 0.4\n      }),\n      Plot.dot([{x, y: optimalY}], {\n        x: \"x\", y: \"y\",\n        fill: optimalColor,\n        r: 14,\n        stroke: \"white\",\n        strokeWidth: 3\n      }),\n      Plot.text([{x: 15, y: exampleBaseY}], {\n        x: \"x\", y: \"y\", text: [labels.highExamples[0]], fill: colors.highSupport, fontSize: 13\n      }),\n      Plot.text([{x: 15, y: exampleBaseY - 6}], {\n        x: \"x\", y: \"y\", text: [labels.highExamples[1]], fill: colors.highSupport, fontSize: 13\n      }),\n      Plot.text([{x: 85, y: exampleBaseY}], {\n        x: \"x\", y: \"y\", text: [labels.lowExamples[0]], fill: colors.lowSupport, fontSize: 13\n      }),\n      Plot.text([{x: 85, y: exampleBaseY - 6}], {\n        x: \"x\", y: \"y\", text: [labels.lowExamples[1]], fill: colors.lowSupport, fontSize: 13\n      }),\n      Plot.text([{x: 88, y: calcY(lines.high, 100) - 5}], {\n        x: \"x\", y: \"y\", text: [labels.highSupport], fill: colors.highSupport, fontSize: 15, fontWeight: \"bold\"\n      }),\n      Plot.text([{x: 12, y: calcY(lines.low, 0) - 5}], {\n        x: \"x\", y: \"y\", text: [labels.lowSupport], fill: colors.lowSupport, fontSize: 15, fontWeight: \"bold\"\n      })\n    ]\n  });\n}\n\nbuttonGroup = {\n  const { x, optimalColor } = currentState;\n  const { colors, steps } = config;\n\n  const buttonStyle = (isSelected, selectColor) =&gt; `\n    padding: 12px 18px;\n    border: none;\n    background: ${isSelected ? selectColor : colors.background};\n    color: ${isSelected ? 'white' : '#333'};\n    font-size: 1em;\n    font-weight: ${isSelected ? 'bold' : 'normal'};\n    cursor: pointer;\n    border-right: 1px solid #ddd;\n    transition: background 0.15s ease;\n  `;\n\n  const container = html`&lt;div style=\"display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;\"&gt;&lt;/div&gt;`;\n\n  steps.forEach(v =&gt; {\n    const isSelected = x === v;\n    const selectColor = v &lt;= crossoverPoint ? colors.highSupport : colors.lowSupport;\n    const btn = html`&lt;button style=\"${buttonStyle(isSelected, selectColor)}\"&gt;${v}%&lt;/button&gt;`;\n    btn.onclick = () =&gt; {\n      viewof vorwissen.value = v;\n      viewof vorwissen.dispatchEvent(new Event('input', {bubbles: true}));\n    };\n    container.appendChild(btn);\n  });\n\n  return container;\n}\n\nhtml`&lt;div style=\"display: flex; align-items: center; gap: 40px;\"&gt;\n  &lt;div&gt;${expertisePlot}&lt;/div&gt;\n  &lt;div style=\"display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;\"&gt;\n    &lt;div style=\"font-weight: bold; font-size: 1.1em;\"&gt;Vorwissen des Lernenden&lt;/div&gt;\n    &lt;div&gt;${buttonGroup}&lt;/div&gt;\n    &lt;div style=\"font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 8px; border-left: 4px solid ${currentState.optimalColor};\"&gt;\n      &lt;span style=\"color: ${currentState.optimalColor}; font-weight: bold;\"&gt;${currentState.optimalLabel}&lt;/span&gt;&lt;br&gt;\n      &lt;span style=\"font-size: 0.8em; color: #666;\"&gt;ist effektiver&lt;/span&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDer Expertise-Umkehr-Effekt (Kalyuga 2009).\n\n\nExpertise-Umkehr-Effekt: wichtiger Befund der Instruktionsforschung\nX-Achse: Vorwissen, Y-Achse: Lerneffekt\nMagenta = hohe Unterstützung, Grau = niedrige Unterstützung\nNiedriges Vorwissen → hohe Unterstützung besser (Novizen brauchen Struktur)\nHohes Vorwissen → niedrige Unterstützung besser (Anleitungen werden redundant)\nWas für Novizen optimal ist, ist für Experten suboptimal"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#warum-experten-profitieren-lernende-nicht",
-    "href": "slides/ai-higher-ed/index.html#warum-experten-profitieren-lernende-nicht",
+    "objectID": "slides/ai-higher-ed/index.html#section-1",
+    "href": "slides/ai-higher-ed/index.html#section-1",
     "title": "KI in der Hochschulbildung",
-    "section": "Warum Experten profitieren, Lernende nicht",
-    "text": "Warum Experten profitieren, Lernende nicht\n\n\n\nExperten:\n\n\n Können Routine auslagern\n Können KI-Output bewerten\n Mehr Kapazität für Komplexes\n\n\nLernende:\n\n\n Können nicht bewerten\n Überspringen Grundlagen\n Risiko: “Fliessende Inkompetenz”\n\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.\n\n\nExperten: können Routine auslagern, Output bewerten, Kapazität für Komplexes\nLernende: können Output nicht bewerten, überspringen Grundlagen\nRisiko: “fliessende Inkompetenz” (mit Hilfe alles, ohne Hilfe nichts)\nFazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen"
+    "section": "",
+    "text": "Die bisherigen Kurse haben gezeigt:\nEs kommt darauf an, WER das Werkzeug nutzt.\n\n\n\n\nAber warum genau ist die Situation für Lernende so problematisch?\n\n\n\nÜbergang von Summary zu Deep Dive\nZusammenfassung: Es kommt darauf an, WER das Werkzeug nutzt\nJetzt gehen wir tiefer: Warum genau ist es für Lernende problematisch?"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#kritisches-denken-braucht-fachwissen",
-    "href": "slides/ai-higher-ed/index.html#kritisches-denken-braucht-fachwissen",
+    "objectID": "slides/ai-higher-ed/index.html#das-evaluationsparadox",
+    "href": "slides/ai-higher-ed/index.html#das-evaluationsparadox",
     "title": "KI in der Hochschulbildung",
-    "section": "Kritisches Denken braucht Fachwissen",
-    "text": "Kritisches Denken braucht Fachwissen\n\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\nDaniel Willingham (Willingham 2008)\n\n\n\n\n\nBiomedizin-Experte:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\n\nNovize:\nKann diese Bewertung nicht vornehmen\n\n\n\n\nDu kannst nicht kritisch bewerten, was du nicht verstehst.\n\n\n\nWarum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.\n\n\nEinwand: “Dann lehren wir kritisches Prüfen von KI-Output”\nWillingham: Kritisches Denken ist keine kontextfreie Fähigkeit\nBiomedizin-Experte erkennt Fehler in Biochemie, Novize nicht\nKernaussage: Du kannst nicht bewerten, was du nicht verstehst\nDeshalb ist Fachwissen entscheidend"
+    "section": "Das Evaluationsparadox",
+    "text": "Das Evaluationsparadox\n\n\nUm KI-Output kritisch zu bewerten, braucht man die Kompetenz, die erst durch Lernen entsteht.\n\n\n\n\n\nFür Experten:\nBewertung möglich, weil Wissen vorhanden\n\nFür Lernende:\nBewertung unmöglich, weil Wissen erst aufgebaut wird\n\n\n\n\n\n Das ist die zentrale Spannung beim KI-Einsatz in der Lehre.\n\n\n\nDas Evaluationsparadox: Um KI-Output zu bewerten, braucht man Kompetenz\nExperten können bewerten, weil Wissen vorhanden\nLernende können nicht bewerten, weil Wissen erst aufgebaut wird\nDas ist die zentrale Spannung beim KI-Einsatz in der Lehre"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#kognition-erweitern-vs.-ersetzen",
-    "href": "slides/ai-higher-ed/index.html#kognition-erweitern-vs.-ersetzen",
+    "objectID": "slides/ai-higher-ed/index.html#vier-kognitive-operationen",
+    "href": "slides/ai-higher-ed/index.html#vier-kognitive-operationen",
     "title": "KI in der Hochschulbildung",
-    "section": "Kognition erweitern vs. ersetzen",
-    "text": "Kognition erweitern vs. ersetzen\n\n\n\n Kognition erweitern:\n\n\nMensch bleibt kognitiv engagiert\nWerkzeug verstärkt, ersetzt nicht\nFähigkeiten bleiben erhalten\n\n\n Kognition ersetzen:\n\n\nMensch wird passiv\nWerkzeug übernimmt das Denken\nAbhängigkeit entsteht\n\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung (Clark 2025).\n\n\nAndy Clark: Unterscheidung erweitern vs. ersetzen\nErweitern: Mensch bleibt engagiert, Werkzeug verstärkt, Fähigkeiten bleiben\nErsetzen: Mensch passiv, Werkzeug übernimmt Denken, Abhängigkeit\nDasselbe Werkzeug kann beides sein (Nutzung entscheidet)\nChatGPT: Brainstorming-Partner oder Ghostwriter?"
+    "section": "Vier kognitive Operationen",
+    "text": "Vier kognitive Operationen\n\n\n\n\n\nAbrufen\nWissen aus dem Gedächtnis aktivieren\n\n\n\nGenerieren\nEigene Lösungen produzieren\n\n\n\nVerknüpfen\nElemente vergleichen und integrieren\n\n\n\nÜberwachen\nGegen interne Kriterien bewerten\n\n\n\n\nDiese Operationen bauen Schemata auf. KI kann jede einzelne ersetzen.\n\n\n\nVier kognitive Operationen, die Schemata aufbauen:\n\nAbrufen: Wissen aus dem Gedächtnis aktivieren\nGenerieren: Eigene Lösungen produzieren\nVerknüpfen: Elemente vergleichen und integrieren\nÜberwachen: Gegen interne Kriterien bewerten\n\nKI kann jede dieser Operationen ersetzen\nWenn die KI abruft, generiert, verknüpft und überwacht, lernt der Mensch nicht"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#die-sequenzierungsfrage",
-    "href": "slides/ai-higher-ed/index.html#die-sequenzierungsfrage",
+    "objectID": "slides/ai-higher-ed/index.html#das-paradox-visualisiert",
+    "href": "slides/ai-higher-ed/index.html#das-paradox-visualisiert",
     "title": "KI in der Hochschulbildung",
-    "section": "Die Sequenzierungsfrage",
-    "text": "Die Sequenzierungsfrage\n\n\nNovize ——— Schwelle? ——— Experte\n\n\nDie Schwelle ist unbekannt und empirisch nicht bestimmt\nSie variiert nach Domäne und Person\nDer Expertise-Umkehr-Effekt erfordert dynamische KI-Nutzungsempfehlungen\n\n\n\n\nWer profitiert von KI-Werkzeugen? Wer nicht?\n\n\n\nPraktische Frage: Wann ist der Übergang von Novize zu Experte?\nSchwelle ist unbekannt, variiert nach Domäne und Person\nExpertise-Umkehr-Effekt erfordert dynamische Empfehlungen\nFrage “Wer profitiert?” nicht pauschal beantwortbar"
+    "section": "Das Paradox visualisiert",
+    "text": "Das Paradox visualisiert\n\n\n\n\n\n\n\n\nZyklus: KI-Output bewerten → erfordert Fachkompetenz → entsteht durch Lernen → erfordert eigenes Denken → wird ersetzt durch KI\nDer Kreislauf schliesst sich: KI ersetzt genau das Denken, das zum Lernen nötig wäre\nGestrichelte Linie zeigt den problematischen Bruch"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#kannst-du-diesen-ki-output-bewerten",
+    "href": "slides/ai-higher-ed/index.html#kannst-du-diesen-ki-output-bewerten",
+    "title": "KI in der Hochschulbildung",
+    "section": "Kannst du diesen KI-Output bewerten?",
+    "text": "Kannst du diesen KI-Output bewerten?\n\n\nPrompt: “Erkläre die Pathophysiologie der diabetischen Ketoazidose.”\nKI-Antwort: “Bei DKA führt Insulinmangel zu unkontrollierter Lipolyse. Die freigesetzten Fettsäuren werden in der Leber zu Ketonkörpern (Acetoacetat, β-Hydroxybutyrat) metabolisiert. Die resultierende metabolische Azidose mit erhöhter Anionenlücke triggert kompensatorische Kussmaul-Atmung…”\n\n\n\n\nIst das korrekt? Fehlt etwas? Ist etwas subtil falsch?\n\n\n\n\n\nDeine Studierenden sind in genau dieser Position für DEIN Fach.\n\n\n\nLive-Demonstration: KI-generierter medizinischer Text\nOhne Fachwissen kann niemand im Raum bewerten, ob das stimmt\nGenau diese Erfahrung machen Studierende täglich mit KI-Output in ihrem Fach\n“Deine Studierenden sind in genau dieser Position für DEIN Fach”"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#was-das-für-die-lehre-bedeutet",
+    "href": "slides/ai-higher-ed/index.html#was-das-für-die-lehre-bedeutet",
+    "title": "KI in der Hochschulbildung",
+    "section": "Was das für die Lehre bedeutet",
+    "text": "Was das für die Lehre bedeutet\n\n\nStudierende müssen interne Modelle aufbauen, bevor sie KI kritisch nutzen können.\n\n\n\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\nDaniel Willingham (Willingham 2008)\n\n\n\n\n\nDie vier Operationen (Abrufen, Generieren, Verknüpfen, Überwachen) müssen im Kopf der Lernenden stattfinden, nicht in der KI.\n\n\n\nStudierende brauchen interne Modelle BEVOR sie KI kritisch nutzen können\nWillingham: Kritisches Denken ist keine kontextfreie Fähigkeit\nDie vier kognitiven Operationen müssen im Kopf der Lernenden stattfinden\nKeine Abkürzung: erst das Fundament, dann das Werkzeug"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#section-2",
+    "href": "slides/ai-higher-ed/index.html#section-2",
+    "title": "KI in der Hochschulbildung",
+    "section": "",
+    "text": "Aber warum lagern Studierende überhaupt aus?\n\n\n\n\nSind sie faul? Unehrlich? Oder… rational?\n\n\n\nÜbergang zur Bounded Rationality\nWarum lagern Studierende kognitive Arbeit an KI aus?\nNaheliegende Erklärungen: Faulheit, Unehrlichkeit\nAlternative Erklärung: rationales Verhalten in einer bestimmten Umgebung"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#ein-gespräch-an-der-bfh",
+    "href": "slides/ai-higher-ed/index.html#ein-gespräch-an-der-bfh",
+    "title": "KI in der Hochschulbildung",
+    "section": "Ein Gespräch an der BFH",
+    "text": "Ein Gespräch an der BFH\n\nEin Mathematik-Dozent berichtet:\n“Wir nutzen lokale KI-Modelle für Prüfungserstellung und Korrektur. Aber bei Studierenden sehen wir: Sie kommen nicht zu Übungsstunden, stellen keine Fragen, üben nicht. Ihnen fehlt die intrinsische Motivation.”\n\n\n\n\n\nDie Diagnose:\n Motivationsproblem\nKI-Lösung: Gamifizierte KI-Übungen, KI-Tutoren die “engagieren”\n\nDas eigentliche Problem:\n Cognitive Overload\nDie Aufgaben überlasten das Arbeitsgedächtnis, weil die nötigen Schemata fehlen.\n\n\n\n\n\n Falsche Diagnose führt zu falscher KI-Intervention. Nicht die Ameise ist das Problem, sondern der Strand.\n\n\n\nReales Gespräch mit BFH-Mathematik-Dozent (anonymisiert)\nDer Dozent ist selbst KI-Praktiker: lokale Modelle für Prüfungen, Korrekturen, vertrauliche Dokumente\nEr repräsentiert genau das Publikum dieser Präsentation\nSeine Diagnose: Studierende haben keine intrinsische Motivation zum Üben\nReframing: Die Studierenden sind nicht unmotiviert, sie sind überfordert\nWenn Arbeitsgedächtnis überlastet ist (fehlende Schemata), fühlt sich jede Aufgabe unmöglich an\nDas sieht aus wie Motivationsmangel, ist aber kognitive Überlastung\nFalsche Diagnose führt zu falscher KI-Intervention:\n\n“Motivation” → Gamification, KI-Engagement-Tools → behandelt Symptom\n“Cognitive Load” → Scaffolded Übungen, besseres Aufgabendesign → behandelt Ursache\n\nDer richtige KI-Einsatz: KI für den DOZENTEN zum Redesign der Aufgaben\n\nSchwierigkeit kalibrieren, gestufte Übungen erstellen\nNicht KI für Studierende, die den Struggle umgeht\n\nVerbindung zum Evaluationsparadox: Wenn Studierende Aufgaben nicht lösen können, gibt ihnen KI-Zugang die Illusion von Kompetenz ohne echtes Lernen"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#the-beach-not-the-ant",
+    "href": "slides/ai-higher-ed/index.html#the-beach-not-the-ant",
+    "title": "KI in der Hochschulbildung",
+    "section": "The Beach, Not the Ant",
+    "text": "The Beach, Not the Ant\n\n\n\n\n\n\n(Simon und Laird 2019)\n\n\nHerbert Simons Einsicht: Verhalten wird von der Umgebung geformt, nicht von der Motivation\nDie Ameise am Strand: Der komplexe Weg der Ameise spiegelt die Oberfläche wider, nicht die Ameise\nStudierende verhalten sich rational in der gegebenen Umgebung\nVier Umgebungsfaktoren: Aufgabendesign, Prüfungsformat, KI-Zugänglichkeit, Strukturelle Anreize\nGestalte den Strand, nicht die Ameise"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#studierende-als-rationale-akteure",
+    "href": "slides/ai-higher-ed/index.html#studierende-als-rationale-akteure",
+    "title": "KI in der Hochschulbildung",
+    "section": "Studierende als rationale Akteure",
+    "text": "Studierende als rationale Akteure\n\n\nWenn die Umgebung Outsourcing zum einfachsten Weg macht,werden rationale Akteure outsourcen.\n\n\n\n\nDas ist kein Charakterproblem. Es ist ein Designproblem.\n\n\n\n\n\n\nAufgabendesign\nWas wird verlangt?\n\n\nPrüfungsformat\nWas wird gemessen?\n\n\nKI-Zugänglichkeit\nWas ist verfügbar?\n\n\nStrukturelle Anreize\nWas ist der einfachste Weg?\n\n\n\nWenn Outsourcing der einfachste Weg ist, werden rationale Akteure outsourcen\nKein Charakterproblem, sondern ein Designproblem\nVier Faktoren des “Terrains”:\n\nAufgabendesign: Was wird verlangt?\nPrüfungsformat: Was wird gemessen?\nKI-Zugänglichkeit: Was ist verfügbar?\nStrukturelle Anreize: Was ist der einfachste Weg?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#gestalte-den-strand-nicht-die-ameise",
+    "href": "slides/ai-higher-ed/index.html#gestalte-den-strand-nicht-die-ameise",
+    "title": "KI in der Hochschulbildung",
+    "section": "Gestalte den Strand, nicht die Ameise",
+    "text": "Gestalte den Strand, nicht die Ameise\n\n\n\n\n\nKognitive Arbeit als Produkt\nAufgaben gestalten, bei denen der Denkprozess das Ergebnis ist, nicht nur das Endprodukt.\n\n\n\nProzess bewerten\nDen Weg zum Ergebnis prüfen, nicht nur das Ergebnis selbst.\n\n\n\nProduktiven Struggle ermöglichen\nDen Weg des eigenen Denkens zum Weg des geringsten Widerstands machen.\n\n\n\n\n Der richtige KI-Einsatz: KI für Dozierende zum Redesign der Lernumgebung, nicht KI für Studierende zum Umgehen des Lernprozesses.\n\n\n\nKognitive Arbeit als Produkt: Nicht nur das Ergebnis zählt, sondern der Denkprozess\nProzess bewerten: Nicht nur was rauskommt, sondern wie\nProduktiven Struggle ermöglichen: Eigenes Denken als Weg des geringsten Widerstands\nKI für Dozierende: Aufgaben besser kalibrieren, gestufte Übungen erstellen\nNicht KI für Studierende, die den Lernprozess umgeht"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#die-kernaussage",
     "href": "slides/ai-higher-ed/index.html#die-kernaussage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Kernaussage",
+    "text": "Die Kernaussage\n\n\n\nDas Evaluationsparadox:\nStudierende können KI-Nutzung nicht selbst regulieren.\nIhnen fehlt die Kompetenz, um KI-Output zu bewerten.\n\nBounded Rationality:\nStudierende werden KI-Nutzung nicht selbst regulieren.\nDie Umgebung macht Outsourcing zum rationalen Weg.\n\n\n\n\nZusammen: Wir können uns nicht auf das Urteilsvermögen der Studierenden allein verlassen.\n\n\n\n\n\nKI-Werkzeuge sind für Experten gemacht.\n\n\n\n\nFundamente zuerst aufbauen. Umgebungen gestalten, die Denken erfordern. Produktiven Struggle als natürlichen Weg ermöglichen.\n\n\n\nEvaluationsparadox: Studierende KÖNNEN nicht selbst regulieren (fehlende Kompetenz)\nBounded Rationality: Studierende WERDEN nicht selbst regulieren (Umgebung ermöglicht Abkürzung)\nZusammen: Wir können uns nicht auf Studierende allein verlassen\nKI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)\nKonsequenz: Fundamente zuerst, Umgebungen gestalten, produktiven Struggle ermöglichen"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#referenzen",
+    "href": "slides/ai-higher-ed/index.html#referenzen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Referenzen",
+    "text": "Referenzen\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. „Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics“. Proceedings of the National Academy of Sciences of the United States of America 122 (26): e2422633122. https://doi.org/10.1073/pnas.2422633122.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory During Self-Guided Navigation“. Scientific Reports 10 (1): 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nSimon, Herbert A., und John E. Laird. 2019. The Sciences of the Artificial: Reissue of the Third Edition with a New Introduction by John Laird. Cambridge, Massachusetts: MIT Press.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science (New York, N.Y.) 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KI in der Lehre: Refresher",
+    "section": "",
+    "text": "Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochschulbildung.\n\n\n\nPräsentation: Slides zum Workshop (Voll- und Kurzversion)\nLeitfaden: Vertiefende Informationen zu KI in der Hochschulbildung\nQ & A: Fragen, Antworten und weiterführende Ressourcen"
+  },
+  {
+    "objectID": "index.html#willkommen",
+    "href": "index.html#willkommen",
+    "title": "KI in der Lehre: Refresher",
+    "section": "",
+    "text": "Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochschulbildung.\n\n\n\nPräsentation: Slides zum Workshop (Voll- und Kurzversion)\nLeitfaden: Vertiefende Informationen zu KI in der Hochschulbildung\nQ & A: Fragen, Antworten und weiterführende Ressourcen"
+  },
+  {
+    "objectID": "index.html#kontakt",
+    "href": "index.html#kontakt",
+    "title": "KI in der Lehre: Refresher",
+    "section": "Kontakt",
+    "text": "Kontakt\nDr. Andrew Ellis ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule. Er erforscht, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann."
+  },
+  {
+    "objectID": "presentation/index.html",
+    "href": "presentation/index.html",
+    "title": "Präsentation",
+    "section": "",
+    "text": "Fokussierter Vortrag (30 Min) mit anschliessender Diskussion (30 Min).\n    Folien in neuem Tab öffnen\n       \n      \n    \n  \n\nNutze die Pfeiltasten oder die Leertaste um durch die Präsentation zu navigieren. Drücke F für Vollbild.\n\nVertiefung\nFür eine umfassende Behandlung aller Konzepte, Beispiele und theoretischen Hintergründe siehe den Leitfaden.\n\nWeiterbildungsangebot\nDieser Refresher bietet einen kompakten Überblick über den aktuellen Forschungsstand und die lernwissenschaftlichen Grundlagen. Die BFH bietet drei aufbauende Kurse an, die diese Themen vertiefen:\nKI in der Lehre: Beginner: Grundlagen zu Sprachmodellen und Chatbots.\nKI in der Lehre: Intermediate: Lernpsychologie und KI-gestütztes Lerndesign.\nKI in der Lehre: Advanced: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.\n\n\n\nArchiv\nRefresher 2025: Frühere Version der Präsentation (Fokus auf Produktivitäts-Lern-Paradox und Expertise-Umkehr-Effekt).\n\n\n\n\n Zurück nach oben"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#section",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#section",
+    "title": "KI in der Hochschulbildung",
+    "section": "",
+    "text": "Werkzeuge für Experten,Herausforderungen für Lernende\n\n\n\nZwei Narrative zu KI in Bildung: “revolutioniert” vs. “zerstört” — beide zu einfach\nKognitionspsychologie liefert Rahmen: wann hilft KI, wann schadet sie?\nEisberg-Metapher: Performance (sichtbar) ≠ Learning (unsichtbar)\nAufbau: Studie → Warum? (Gedächtnisarchitektur) → Rahmen für differenzierte Beurteilung"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#ein-überraschendes-ergebnis",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#ein-überraschendes-ergebnis",
+    "title": "KI in der Hochschulbildung",
+    "section": "Ein überraschendes Ergebnis",
+    "text": "Ein überraschendes Ergebnis\n\n\n\nMit KI-Zugang:\n\n+48% / +127%\nAufgaben korrekt gelöst\nGPT Base / GPT Tutor\n\nOhne KI (später):\n\n−17% / ±0%\nvs. Kontrollgruppe\nGPT Base / GPT Tutor\n\n\n\n\nQuelle: Bastani u. a. (2025):\n~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen\n\n\n\nStudie: ~1000 Gymnasiasten, GPT-4 bei Mathe-Übungen\nGPT Base: +48% Aufgaben gelöst, GPT Tutor: +127%\nPrüfung ohne KI: GPT Base −17%, GPT Tutor ±0% vs. Kontrolle\nFazit: Uneingeschränkter KI-Zugang = bessere Performance, schlechteres Lernen\nPädagogische Leitplanken neutralisieren Schaden, aber kein Lernvorteil"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#das-paradox",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#das-paradox",
+    "title": "KI in der Hochschulbildung",
+    "section": "Das Paradox",
+    "text": "Das Paradox\n\n\n\n\nAufgabenleistung ≠ Lernen\n\n\nMagenta = KI-Gruppe, Grau = Kontrollgruppe\nÜbungsphase: KI-Gruppe klar besser (keine Überlappung der Fehlerbalken)\nTest: KI-Gruppe schlechter, aber Fehlerbalken überlappen\nKernaussage: Aufgabenleistung ≠ Lernen\nMit KI-Hilfe sehen wir Systemperformanz, nicht Lernen"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#das-nadelöhr-des-lernens",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#das-nadelöhr-des-lernens",
+    "title": "KI in der Hochschulbildung",
+    "section": "Das Nadelöhr des Lernens",
+    "text": "Das Nadelöhr des Lernens\n\n\n\n\n\n\n\n\n\n\n\n Kernaussage: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses (Sweller 2024).\n\n\n\nVereinfachtes Gedächtnismodell: Neue Info → Arbeitsgedächtnis → Langzeitgedächtnis\nArbeitsgedächtnis: nur 4±1 Elemente gleichzeitig\nNeue Info und Langzeitgedächtnis: unbegrenzt\nCognitive Load Theory: Alles Lernen muss durch dieses Nadelöhr\nKeine Abkürzung, keine KI kann biologischen Engpass umgehen"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#erwünschte-schwierigkeiten",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#erwünschte-schwierigkeiten",
+    "title": "KI in der Hochschulbildung",
+    "section": "Erwünschte Schwierigkeiten",
+    "text": "Erwünschte Schwierigkeiten\n\n\n“Conditions that slow the rate of apparent learning often optimize long-term retention and transfer.”\n\n\n\nRobert Bjork (Bjork und Bjork 2011)\n\n\n\n\nSchwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.\n\n\n\n“Desirable Difficulties” (erwünschte Schwierigkeiten)\nBjork: Bedingungen, die Lernen verlangsamen, optimieren langfristiges Behalten\nSchwerer fühlt sich schlechter an, ist aber besser fürs Lernen\nWenn Lernen sich leicht anfühlt, lernen wir wahrscheinlich weniger"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#die-vier-strategien",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#die-vier-strategien",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die vier Strategien",
+    "text": "Die vier Strategien\n\n\n\n\n\nSelbst generieren\nEigene Antworten formulieren\n\n\n\nVerteilt lernen\nZeitliche Abstände einbauen\n\n\n\nAktiv abrufen\nWissen aus dem Gedächtnis holen\n\n\n\nVariieren\nThemen und Aufgaben mischen\n\n\n\n\n KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.\n\n\n\nVier Strategien nach Bjork:\n\nSelbst generieren (eigene Antworten)\nVerteilt lernen (zeitliche Abstände)\nAktiv abrufen (aus Gedächtnis holen)\nVariieren (Themen/Aufgaben mischen)\n\nKI kann alle vier untergraben, wenn sie kognitive Arbeit übernimmt"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#der-generierungseffekt",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#der-generierungseffekt",
+    "title": "KI in der Hochschulbildung",
+    "section": "Der Generierungseffekt",
+    "text": "Der Generierungseffekt\n\n\n\n\n\n\n\n\n\nSelbst generierte Information wird besser behalten (Slamecka und Graf 1978).\n\n\nWenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.\n\n\n\nDer Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster…\n\n\nBehaltensleistung: Selbst generiert (~70%) &gt; Gelesen (~50%) &gt; Von KI (~35%)\nForschung seit 1970er (Slamecka & Graf)\nWenn KI generiert statt Studierende → Lerneffekt entfällt\nEffekt nicht neu → historische Analogien"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#historische-analogien",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#historische-analogien",
+    "title": "KI in der Hochschulbildung",
+    "section": "Historische Analogien",
+    "text": "Historische Analogien\n\n\n\n\n\n\n\n\n\n\n\n\nDas Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.\n(Dahmani und Bohbot 2020; Sparrow, Liu, und Wegner 2011)\n\n\n\n1970er Taschenrechner: konzeptuelles Mathe-Verständnis ↓\n1990er GPS: räumliches Gedächtnis ↓\n2000er Google: “Wo” ersetzt “Was”\n2020er KI: kombiniert und verstärkt alle Effekte\nUnterschied: KI betrifft alle kognitiven Domänen, nicht nur eine"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#die-entscheidende-frage",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#die-entscheidende-frage",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die entscheidende Frage",
+    "text": "Die entscheidende Frage\n\n\nDasselbe Werkzeug, unterschiedliche Ergebnisse.\n\n\n\n\n Taschenrechner helfen Mathematikern, können aber Lernenden schaden.\n GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.\n\n\n\n\n\nDie Frage ist nicht ob KI, sondern wer davon profitiert.\n\n\n\n\nDie Antwort liegt in dem, was Experten von Lernenden unterscheidet.\n\n\nDasselbe Werkzeug, unterschiedliche Ergebnisse\nTaschenrechner: hilft Mathematikern, kann Lernenden schaden\nGPS: hilft Taxifahrern, schwächt räumliches Gedächtnis von Neulingen\nFrage nicht OB KI nützt/schadet, sondern WER profitiert\nAntwort: Was unterscheidet Experten von Lernenden?"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#was-experten-sehen",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#was-experten-sehen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Was Experten sehen",
+    "text": "Was Experten sehen\n\n\n\n\n\n\nNovize: sieht Einzelteile\n“64 Felder, 32 Figuren, viele Möglichkeiten”\n. . .\nExperte: sieht Muster und Bedeutung\n“Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7”\n. . .\n\nExperten speichern Wissen in Chunks: vernetzte Wissensstrukturen, die automatisch abgerufen werden (Groot und Groot 1978; Chase und Simon 1973).\n\n\n\nSchachforschung als klassisches Beispiel\nNovize: sieht Einzelteile (64 Felder, 32 Figuren)\nExperte: sieht Muster und Bedeutung (“Sizilianische Verteidigung”)\nExperten speichern Wissen in “Chunks” (vernetzte Strukturen)\nSchachmeister: ~50.000 Chunks (de Groot, Chase & Simon)"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#der-expertise-umkehr-effekt",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#der-expertise-umkehr-effekt",
+    "title": "KI in der Hochschulbildung",
+    "section": "Der Expertise-Umkehr-Effekt",
+    "text": "Der Expertise-Umkehr-Effekt\n\n Interaktiv: Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.\n\n\nconfig = ({\n  // Color palette\n  colors: {\n    highSupport: \"#A3195B\",\n    lowSupport: \"#666666\",\n    neutral: \"#333\",\n    background: \"#f5f5f5\"\n  },\n  // Line equations: y = intercept + slope * x\n  // Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x\n  lines: {\n    high: { intercept: 65, slope: -0.4 },\n    low: { intercept: 25, slope: 0.4 }\n  },\n  // Input options\n  steps: [0, 20, 40, 60, 80, 100],\n  defaultValue: 20,\n  // Plot dimensions\n  plot: {\n    width: 900,\n    height: 480,\n    margins: { left: 70, bottom: 60, top: 30, right: 40 }\n  },\n  // Labels\n  labels: {\n    highSupport: \"Hohe Unterstützung\",\n    lowSupport: \"Niedrige Unterstützung\",\n    highExamples: [\"📖 Worked Examples\", \"🧭 Direkte Instruktion\"],\n    lowExamples: [\"🧩 Problembasiertes Lernen\", \"🔍 Eigene Lösungswege\"]\n  }\n})\n\n// =============================================================================\n// Derived values: Computed from config (no magic numbers)\n// =============================================================================\n\n// Crossover point: solve for x where both lines intersect\ncrossoverPoint = {\n  const { high, low } = config.lines;\n  return (high.intercept - low.intercept) / (low.slope - high.slope);\n}\n\n// Helper function to calculate y-value on a line\ncalcY = (line, x) =&gt; line.intercept + line.slope * x\n\n// =============================================================================\n// State: Single source of truth for user input (hidden, controlled by buttons)\n// =============================================================================\nviewof vorwissen = {\n  const input = Inputs.radio(config.steps, {\n    value: config.defaultValue,\n    label: \"\",\n    format: x =&gt; x + \"%\"\n  });\n  input.style.display = \"none\";\n  return input;\n}\n\n// =============================================================================\n// Reactive calculations based on current state\n// =============================================================================\ncurrentState = {\n  const x = vorwissen ?? config.defaultValue;\n  const highY = calcY(config.lines.high, x);\n  const lowY = calcY(config.lines.low, x);\n  const isHighBetter = x &lt;= crossoverPoint;\n\n  return {\n    x,\n    highY,\n    lowY,\n    isHighBetter,\n    optimalY: isHighBetter ? highY : lowY,\n    suboptimalY: isHighBetter ? lowY : highY,\n    optimalLabel: isHighBetter ? config.labels.highSupport : config.labels.lowSupport,\n    optimalColor: isHighBetter ? config.colors.highSupport : config.colors.lowSupport,\n    suboptimalColor: isHighBetter ? config.colors.lowSupport : config.colors.highSupport\n  };\n}\n\n// =============================================================================\n// Plot: Visualization with all marks\n// =============================================================================\nexpertisePlot = {\n  const { colors, lines, plot, labels } = config;\n  const { x, highY, lowY, isHighBetter, optimalY, suboptimalY, optimalColor, suboptimalColor } = currentState;\n\n  // Generate line data points\n  const highLineData = [{x: 0, y: calcY(lines.high, 0)}, {x: 100, y: calcY(lines.high, 100)}];\n  const lowLineData = [{x: 0, y: calcY(lines.low, 0)}, {x: 100, y: calcY(lines.low, 100)}];\n\n  // Label positions (relative to line endpoints)\n  const labelOffsetY = 7;\n  const exampleBaseY = calcY(lines.high, 0) + labelOffsetY;\n\n  return Plot.plot({\n    width: plot.width,\n    height: plot.height,\n    marginLeft: plot.margins.left,\n    marginBottom: plot.margins.bottom,\n    marginTop: plot.margins.top,\n    marginRight: plot.margins.right,\n    style: { fontSize: \"16px\" },\n    x: {\n      domain: [0, 100],\n      label: \"Vorwissen →\",\n      labelOffset: 45,\n      ticks: [0, 50, 100],\n      tickFormat: d =&gt; d === 0 ? \"Niedrig\" : d === 50 ? \"Mittel\" : \"Hoch\"\n    },\n    y: {\n      domain: [0, 100],\n      label: \"↑ Lerneffekt\",\n      labelOffset: 50,\n      grid: true\n    },\n    marks: [\n      // Support lines\n      Plot.line(highLineData, {x: \"x\", y: \"y\", stroke: colors.highSupport, strokeWidth: 3}),\n      Plot.line(lowLineData, {x: \"x\", y: \"y\", stroke: colors.lowSupport, strokeWidth: 3}),\n\n      // Vertical position indicator\n      Plot.ruleX([x], {stroke: colors.neutral, strokeWidth: 1.5, strokeDasharray: \"8,5\"}),\n\n      // Suboptimal dot (smaller, faded)\n      Plot.dot([{x, y: suboptimalY}], {\n        x: \"x\", y: \"y\",\n        fill: suboptimalColor,\n        r: 8,\n        opacity: 0.4\n      }),\n\n      // Optimal dot (larger, prominent with white stroke)\n      Plot.dot([{x, y: optimalY}], {\n        x: \"x\", y: \"y\",\n        fill: optimalColor,\n        r: 14,\n        stroke: \"white\",\n        strokeWidth: 3\n      }),\n\n      // High support examples (left side, near line start)\n      Plot.text([{x: 15, y: exampleBaseY}], {\n        x: \"x\", y: \"y\", text: [labels.highExamples[0]], fill: colors.highSupport, fontSize: 13\n      }),\n      Plot.text([{x: 15, y: exampleBaseY - 6}], {\n        x: \"x\", y: \"y\", text: [labels.highExamples[1]], fill: colors.highSupport, fontSize: 13\n      }),\n\n      // Low support examples (right side)\n      Plot.text([{x: 85, y: exampleBaseY}], {\n        x: \"x\", y: \"y\", text: [labels.lowExamples[0]], fill: colors.lowSupport, fontSize: 13\n      }),\n      Plot.text([{x: 85, y: exampleBaseY - 6}], {\n        x: \"x\", y: \"y\", text: [labels.lowExamples[1]], fill: colors.lowSupport, fontSize: 13\n      }),\n\n      // Line labels (near line ends)\n      Plot.text([{x: 88, y: calcY(lines.high, 100) - 5}], {\n        x: \"x\", y: \"y\", text: [labels.highSupport], fill: colors.highSupport, fontSize: 15, fontWeight: \"bold\"\n      }),\n      Plot.text([{x: 12, y: calcY(lines.low, 0) - 5}], {\n        x: \"x\", y: \"y\", text: [labels.lowSupport], fill: colors.lowSupport, fontSize: 15, fontWeight: \"bold\"\n      })\n    ]\n  });\n}\n\n// =============================================================================\n// Button Group: Custom styled segmented control\n// =============================================================================\nbuttonGroup = {\n  const { x, optimalColor } = currentState;\n  const { colors, steps } = config;\n\n  const buttonStyle = (isSelected, selectColor) =&gt; `\n    padding: 12px 18px;\n    border: none;\n    background: ${isSelected ? selectColor : colors.background};\n    color: ${isSelected ? 'white' : '#333'};\n    font-size: 1em;\n    font-weight: ${isSelected ? 'bold' : 'normal'};\n    cursor: pointer;\n    border-right: 1px solid #ddd;\n    transition: background 0.15s ease;\n  `;\n\n  const container = html`&lt;div style=\"display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;\"&gt;&lt;/div&gt;`;\n\n  steps.forEach(v =&gt; {\n    const isSelected = x === v;\n    const selectColor = v &lt;= crossoverPoint ? colors.highSupport : colors.lowSupport;\n    const btn = html`&lt;button style=\"${buttonStyle(isSelected, selectColor)}\"&gt;${v}%&lt;/button&gt;`;\n    btn.onclick = () =&gt; {\n      viewof vorwissen.value = v;\n      viewof vorwissen.dispatchEvent(new Event('input', {bubbles: true}));\n    };\n    container.appendChild(btn);\n  });\n\n  return container;\n}\n\n// =============================================================================\n// Layout: Compose all elements\n// =============================================================================\nhtml`&lt;div style=\"display: flex; align-items: center; gap: 40px;\"&gt;\n  &lt;div&gt;${expertisePlot}&lt;/div&gt;\n  &lt;div style=\"display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;\"&gt;\n    &lt;div style=\"font-weight: bold; font-size: 1.1em;\"&gt;Vorwissen des Lernenden&lt;/div&gt;\n    &lt;div&gt;${buttonGroup}&lt;/div&gt;\n    &lt;div style=\"font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 8px; border-left: 4px solid ${currentState.optimalColor};\"&gt;\n      &lt;span style=\"color: ${currentState.optimalColor}; font-weight: bold;\"&gt;${currentState.optimalLabel}&lt;/span&gt;&lt;br&gt;\n      &lt;span style=\"font-size: 0.8em; color: #666;\"&gt;ist effektiver&lt;/span&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nDer Expertise-Umkehr-Effekt (Kalyuga 2009).\n\n\nExpertise-Umkehr-Effekt: wichtiger Befund der Instruktionsforschung\nX-Achse: Vorwissen, Y-Achse: Lerneffekt\nMagenta = hohe Unterstützung, Grau = niedrige Unterstützung\nNiedriges Vorwissen → hohe Unterstützung besser (Novizen brauchen Struktur)\nHohes Vorwissen → niedrige Unterstützung besser (Anleitungen werden redundant)\nWas für Novizen optimal ist, ist für Experten suboptimal"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#warum-experten-profitieren-lernende-nicht",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#warum-experten-profitieren-lernende-nicht",
+    "title": "KI in der Hochschulbildung",
+    "section": "Warum Experten profitieren, Lernende nicht",
+    "text": "Warum Experten profitieren, Lernende nicht\n\n\n\nExperten:\n\n\n Können Routine auslagern\n Können KI-Output bewerten\n Mehr Kapazität für Komplexes\n\n\nLernende:\n\n\n Können nicht bewerten\n Überspringen Grundlagen\n Risiko: “Fliessende Inkompetenz”\n\n\n\n\nDasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.\n\n\nExperten: können Routine auslagern, Output bewerten, Kapazität für Komplexes\nLernende: können Output nicht bewerten, überspringen Grundlagen\nRisiko: “fliessende Inkompetenz” (mit Hilfe alles, ohne Hilfe nichts)\nFazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#kritisches-denken-braucht-fachwissen",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#kritisches-denken-braucht-fachwissen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Kritisches Denken braucht Fachwissen",
+    "text": "Kritisches Denken braucht Fachwissen\n\n\n“Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context.”\nDaniel Willingham (Willingham 2008)\n\n\n\n\n\nBiomedizin-Experte:\nErkennt, wenn ChatGPT bei Biochemie falsch liegt\n\nNovize:\nKann diese Bewertung nicht vornehmen\n\n\n\n\nDu kannst nicht kritisch bewerten, was du nicht verstehst.\n\n\n\nWarum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.\n\n\nEinwand: “Dann lehren wir kritisches Prüfen von KI-Output”\nWillingham: Kritisches Denken ist keine kontextfreie Fähigkeit\nBiomedizin-Experte erkennt Fehler in Biochemie, Novize nicht\nKernaussage: Du kannst nicht bewerten, was du nicht verstehst\nDeshalb ist Fachwissen entscheidend"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#kognition-erweitern-vs.-ersetzen",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#kognition-erweitern-vs.-ersetzen",
+    "title": "KI in der Hochschulbildung",
+    "section": "Kognition erweitern vs. ersetzen",
+    "text": "Kognition erweitern vs. ersetzen\n\n\n\n Kognition erweitern:\n\n\nMensch bleibt kognitiv engagiert\nWerkzeug verstärkt, ersetzt nicht\nFähigkeiten bleiben erhalten\n\n\n Kognition ersetzen:\n\n\nMensch wird passiv\nWerkzeug übernimmt das Denken\nAbhängigkeit entsteht\n\n\n\n\nDasselbe Werkzeug kann beides sein, abhängig von der Nutzung (Clark 2025).\n\n\nAndy Clark: Unterscheidung erweitern vs. ersetzen\nErweitern: Mensch bleibt engagiert, Werkzeug verstärkt, Fähigkeiten bleiben\nErsetzen: Mensch passiv, Werkzeug übernimmt Denken, Abhängigkeit\nDasselbe Werkzeug kann beides sein (Nutzung entscheidet)\nChatGPT: Brainstorming-Partner oder Ghostwriter?"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#die-sequenzierungsfrage",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#die-sequenzierungsfrage",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die Sequenzierungsfrage",
+    "text": "Die Sequenzierungsfrage\n\n\nNovize ——— Schwelle? ——— Experte\n\n\nDie Schwelle ist unbekannt und empirisch nicht bestimmt\nSie variiert nach Domäne und Person\nDer Expertise-Umkehr-Effekt erfordert dynamische KI-Nutzungsempfehlungen\n\n\n\n\nWer profitiert von KI-Werkzeugen? Wer nicht?\n\n\n\nPraktische Frage: Wann ist der Übergang von Novize zu Experte?\nSchwelle ist unbekannt, variiert nach Domäne und Person\nExpertise-Umkehr-Effekt erfordert dynamische Empfehlungen\nFrage “Wer profitiert?” nicht pauschal beantwortbar"
+  },
+  {
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#die-kernaussage",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#die-kernaussage",
+    "title": "KI in der Hochschulbildung",
+    "section": "Die Kernaussage",
     "text": "Die Kernaussage\n\n\nKI-Werkzeuge sind für Experten gemacht.\n\n\n\n\n\nSie machen Experten produktiver.\n\n\nLernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.\n\n\n\n\n\nLernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.\n\n\n\nKI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)\nWerkzeuge von Experten entwickelt, funktionieren am besten für Experten\nLernende profitieren oft nicht: Lernen braucht kognitive Anstrengung\nNicht KI-feindlich: Art der Nutzung entscheidet (GPT-Tutor!)\nKonsequenz: Fundament zuerst, dann KI"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#was-bedeutet-das-für-die-lehre",
-    "href": "slides/ai-higher-ed/index.html#was-bedeutet-das-für-die-lehre",
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#was-bedeutet-das-für-die-lehre",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#was-bedeutet-das-für-die-lehre",
     "title": "KI in der Hochschulbildung",
     "section": "Was bedeutet das für die Lehre?",
     "text": "Was bedeutet das für die Lehre?\n\n\n\n\n\nAnstrengung ist das Signal\n\n\n\nKI als Tutor, nicht als Antwortgeber\n\n\n\nExpertise bestimmt den Nutzen\n\n\n\n\nWenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.\n\nKI soll Denkprozesse anregen, nicht ersetzen.\n\nDasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.\n\n\n\n\nGrundlagen BEVOR Werkzeuge\n\n\nAnstrengung ist das Signal: Zu leicht = kein Lernen\nKI als Tutor, nicht Antwortgeber: Denkprozesse anregen, nicht ersetzen\nExpertise bestimmt Nutzen: Vorwissen entscheidet über Wirkung\nGrundlagen BEVOR Werkzeuge\nErst Fundament, dann Erweiterung; erst verstehen, dann automatisieren"
   },
   {
-    "objectID": "slides/ai-higher-ed/index.html#referenzen",
-    "href": "slides/ai-higher-ed/index.html#referenzen",
+    "objectID": "slides/archive/ai-higher-ed-2025/index.html#referenzen",
+    "href": "slides/archive/ai-higher-ed-2025/index.html#referenzen",
     "title": "KI in der Hochschulbildung",
     "section": "Referenzen",
     "text": "Referenzen\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. „Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics“. Proceedings of the National Academy of Sciences of the United States of America 122 (26): e2422633122. https://doi.org/10.1073/pnas.2422633122.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nChase, William G., und Herbert A. Simon. 1973. „Perception in Chess“. Cognitive Psychology 4 (1): 55–81. https://doi.org/10.1016/0010-0285(73)90004-2.\n\n\nClark, Andy. 2025. „Extending Minds with Generative AI“. Nature Communications 16 (1): 4627. https://doi.org/10.1038/s41467-025-59906-9.\n\n\nDahmani, Louisa, und Véronique D. Bohbot. 2020. „Habitual Use of GPS Negatively Impacts Spatial Memory During Self-Guided Navigation“. Scientific Reports 10 (1): 6310. https://doi.org/10.1038/s41598-020-62877-0.\n\n\nGroot, Adriaan D. De, und Adrianus Dingeman de Groot. 1978. Thought and Choice in Chess. Walter de Gruyter. https://books.google.com?id=EI4gr42NwDQC.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nSlamecka, Norman J., und Peter Graf. 1978. „The Generation Effect: Delineation of a Phenomenon“. Journal of Experimental Psychology: Human Learning and Memory 4 (6): 592–604. https://doi.org/10.1037/0278-7393.4.6.592.\n\n\nSparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. „Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“. Science (New York, N.Y.) 333 (6043): 776–78. https://doi.org/10.1126/science.1207745.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."

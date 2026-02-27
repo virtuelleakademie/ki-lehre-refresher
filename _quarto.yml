@@ -14,6 +14,7 @@ project:
     - index.qmd
     - presentation/**/*.qmd
     - slides/**/*.qmd
+    - slides/archive/**/*.qmd
     - qa/**/*.qmd
     - guide/**/*.qmd
     # - notes/**/*.qmd
@@ -45,6 +46,12 @@ website:
       - icon: chat-dots
         text: "Q & A"
         href: qa/index.qmd
+
+      - icon: archive
+        text: Archiv
+        menu:
+          - text: "Refresher 2025"
+            href: slides/archive/ai-higher-ed-2025/index.qmd
 
     tools:
       - icon: mortarboard-fill
