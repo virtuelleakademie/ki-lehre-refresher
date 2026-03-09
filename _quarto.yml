@@ -104,6 +104,7 @@ format:
     link-external-newwindow: true
     anchor-sections: true
     smooth-scroll: true
+    linkcolor: "#1A1714"
 
 comments:
   hypothesis:
@@ -122,26 +123,26 @@ filters:
   - custom-callout
 
 custom-callout:
-  # Activity types - what participants DO (Magenta)
+  # Activity types - what participants DO (Terracotta)
   experiment:
     title: "Deine Aufgabe"
     icon-symbol: "fa-flask"
     appearance: default
     collapse: false
-    color: "#A3195B"  # Deep Magenta (action)
+    color: "#A63D2F"  # Deep Terracotta (action)
 
   individual:
     title: "Einzelarbeit"
     icon-symbol: "fa-user"
     appearance: default
-    color: "#A3195B"  # Deep Magenta (action)
+    color: "#A63D2F"  # Deep Terracotta (action)
     collapse: false
 
   group:
     title: "Gruppenarbeit"
     icon-symbol: "fa-users"
     appearance: default
-    color: "#A3195B"  # Deep Magenta (action)
+    color: "#A63D2F"  # Deep Terracotta (action)
     collapse: false
 
   demonstration:
@@ -149,21 +150,21 @@ custom-callout:
     icon-symbol: "fa-chalkboard"
     appearance: default
     collapse: false
-    color: "#333333"  # Dark grey (instructor-led, neutral)
+    color: "#6E6560"  # Warm grey (instructor-led, neutral)
 
-  # Thinking types - reflection and insights (Gold)
+  # Thinking types - reflection and insights (Navy)
   scenario:
     title: "Szenario"
     icon-symbol: "fa-comment"
     appearance: default
-    color: "#666666"  # Medium grey (neutral context)
+    color: "#6E6560"  # Warm grey (neutral context)
     collapse: false
 
   reflect:
     title: "Reflexion"
     icon-symbol: "fa-lightbulb"
     appearance: default
-    color: "#D4A03E"  # Warm Gold (insight)
+    color: "#1E3A5F"  # Ink Navy (insight)
     collapse: false
 
   key-point:
@@ -171,29 +172,29 @@ custom-callout:
     icon-symbol: "fa-star"
     appearance: default
     collapse: false
-    color: "#D4A03E"  # Warm Gold (importance)
+    color: "#1E3A5F"  # Ink Navy (importance)
 
   # Alert type
   warning:
     title: "Achtung"
     icon-symbol: "fa-exclamation-circle"
     appearance: default
-    color: "#A3195B"  # Deep Magenta (attention)
+    color: "#A63D2F"  # Deep Terracotta (attention)
     collapse: false
 
-  # Guidance types (Gold)
+  # Guidance types (Navy)
   pro-tip:
     title: "Tipp"
     icon-symbol: "fa-wand-magic-sparkles"
     appearance: default
-    color: "#D4A03E"  # Warm Gold (helpful)
+    color: "#1E3A5F"  # Ink Navy (helpful)
     collapse: true
 
   source-check:
     title: "Quellen-Check"
     icon-symbol: "fa-search"
     appearance: default
-    color: "#D4A03E"  # Warm Gold (verification)
+    color: "#1E3A5F"  # Ink Navy (verification)
     collapse: false
 
   # Technical - copyable prompt for chatbot input
@@ -201,5 +202,5 @@ custom-callout:
     title: "Prompt"
     icon-symbol: "fa-clipboard"
     appearance: default
-    color: "#333333"  # Dark grey (code-like)
+    color: "#6E6560"  # Warm grey (code-like)
     collapse: false
