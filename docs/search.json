@@ -352,7 +352,7 @@
     "href": "slides/ai-higher-ed/index.html#section-1",
     "title": "KI in der Hochschulbildung",
     "section": "",
-    "text": "Die bisherigen Kurse haben gezeigt:\nEs kommt darauf an, WER das Werkzeug nutzt.\n\n\n\n\nAber warum genau ist die Situation für Lernende so problematisch?\n\n\n\nÜbergang von Summary zu Deep Dive\nZusammenfassung: Es kommt darauf an, WER das Werkzeug nutzt\nJetzt gehen wir tiefer: Warum genau ist es für Lernende problematisch?"
+    "text": "Aus den bisherigen Kursen wisst ihr, was Sprachmodelle sind und was sie können.\n\n\n\n\nHeute: Was passiert, wenn Lernende sie benutzen?\n\n\n\nKurzer Rückblick: LLMs als statistische Mustervervollständigung, kein Verstehen\nDas Publikum kennt das bereits aus früheren Refreshers\nHeute fokussieren wir auf die Lernsituation: Was passiert mit Studierenden?"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#das-evaluationsparadox",
@@ -394,7 +394,7 @@
     "href": "slides/ai-higher-ed/index.html#section-2",
     "title": "KI in der Hochschulbildung",
     "section": "",
-    "text": "Aber warum lagern Studierende überhaupt aus?\n\n\n\n\nSind sie faul? Unehrlich? Oder… rational?\n\n\n\nÜbergang zur Bounded Rationality\nWarum lagern Studierende kognitive Arbeit an KI aus?\nNaheliegende Erklärungen: Faulheit, Unehrlichkeit\nAlternative Erklärung: rationales Verhalten in einer bestimmten Umgebung"
+    "text": "Die bisherigen Kurse haben gezeigt:\nEs kommt darauf an, WER das Werkzeug nutzt.\n\n\n\n\nAber warum genau ist die Situation für Lernende so problematisch?\n\n\n\nÜbergang von Summary zu Deep Dive\nZusammenfassung: Es kommt darauf an, WER das Werkzeug nutzt\nJetzt gehen wir tiefer: Warum genau ist es für Lernende problematisch?"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#ein-gespräch-an-der-bfh",
@@ -429,7 +429,7 @@
     "href": "slides/ai-higher-ed/index.html#die-kernaussage",
     "title": "KI in der Hochschulbildung",
     "section": "Die Kernaussage",
-    "text": "Die Kernaussage\n\n\n\nDas Evaluationsparadox:\nStudierende können KI-Nutzung nicht selbst regulieren.\nIhnen fehlt die Kompetenz, um KI-Output zu bewerten.\n\nBounded Rationality:\nStudierende werden KI-Nutzung nicht selbst regulieren.\nDie Umgebung macht Outsourcing zum rationalen Weg.\n\n\n\n\nZusammen: Wir können uns nicht auf das Urteilsvermögen der Studierenden allein verlassen.\n\n\n\n\n\nKI-Werkzeuge sind für Experten gemacht.\n\n\n\n\nFundamente zuerst aufbauen. Umgebungen gestalten, die Denken erfordern. Produktiven Struggle als natürlichen Weg ermöglichen.\n\n\n\nEvaluationsparadox: Studierende KÖNNEN nicht selbst regulieren (fehlende Kompetenz)\nBounded Rationality: Studierende WERDEN nicht selbst regulieren (Umgebung ermöglicht Abkürzung)\nZusammen: Wir können uns nicht auf Studierende allein verlassen\nKI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)\nKonsequenz: Fundamente zuerst, Umgebungen gestalten, produktiven Struggle ermöglichen"
+    "text": "Die Kernaussage\n\n\n\nDas Evaluationsparadox:\nStudierende können KI-Nutzung nicht selbst regulieren.\nIhnen fehlt die Kompetenz, um KI-Output zu bewerten.\n\nDer Expertise-Umkehr-Effekt:\nDieselbe KI-Unterstützung wirkt gegensätzlich je nach Vorwissen.\nWas Novizen hilft, schadet Fortgeschrittenen. Was Experten nützt, überfordert Anfänger.\n\n\n\n\nDaraus folgt: KI-Einsatz in der Lehre braucht Differenzierung nach Vorwissen, nicht pauschale Regeln.\n\n\n\n\n\nKI-Werkzeuge sind für Experten gemacht.\n\n\n\n\nFundamente zuerst aufbauen. Unterstützung an das Vorwissen anpassen. Scaffolding bewusst ausblenden, wenn Kompetenz wächst.\n\n\n\nEvaluationsparadox: Studierende KÖNNEN nicht selbst regulieren (fehlende Kompetenz)\nExpertise-Umkehr-Effekt: Dieselbe Hilfe wirkt je nach Vorwissen gegensätzlich\nKonsequenz: Differenzierung nach Vorwissen, nicht pauschale KI-Verbote oder -Freigaben\nKI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)\nHandlungsempfehlung: Fundamente aufbauen, Unterstützung anpassen, Scaffolding ausblenden"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#referenzen",
@@ -768,5 +768,26 @@
       "Themen",
       "Praktische Implikationen für die Lehre"
     ]
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#section-3",
+    "href": "slides/ai-higher-ed/index.html#section-3",
+    "title": "KI in der Hochschulbildung",
+    "section": "",
+    "text": "Aber warum lagern Studierende überhaupt aus?\n\n\n\n\nSind sie faul? Unehrlich? Oder… rational?\n\n\n\nÜbergang zur Bounded Rationality\nWarum lagern Studierende kognitive Arbeit an KI aus?\nNaheliegende Erklärungen: Faulheit, Unehrlichkeit\nAlternative Erklärung: rationales Verhalten in einer bestimmten Umgebung"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#warum-lagern-studierende-aus",
+    "href": "slides/ai-higher-ed/index.html#warum-lagern-studierende-aus",
+    "title": "KI in der Hochschulbildung",
+    "section": "Warum lagern Studierende aus?",
+    "text": "Warum lagern Studierende aus?\n\n\nEin Mathematik-Dozent berichtet:\n“Studierende kommen nicht zu Übungsstunden, stellen keine Fragen, üben nicht. Ihnen fehlt die intrinsische Motivation.”\n\n\n\n\n\nSeine Diagnose:\n Motivationsproblem\nKI-Lösung: Gamifizierte KI-Übungen, KI-Tutoren die “engagieren”\n\nDie alternative Erklärung:\n Cognitive Overload\nDie Aufgaben überlasten das Arbeitsgedächtnis, weil die nötigen Schemata fehlen.\n\n\n\n\n\n Herbert Simons Einsicht: Das Verhalten wird von der Umgebung geformt, nicht von der Motivation. Studierende verhalten sich rational: wenn Outsourcing der einfachste Weg ist, werden sie outsourcen. Das ist kein Charakterproblem, sondern ein Designproblem (Simon und Laird 2019).\n\n\n\nReales Gespräch mit BFH-Mathematik-Dozent (anonymisiert)\nSeine Diagnose: Motivationsmangel → führt zu Gamification, KI-Engagement-Tools\nReframing: Kognitive Überlastung, nicht Faulheit\nHerbert Simon: Das Verhalten der Ameise spiegelt den Strand wider, nicht die Ameise\nStudierende sind rationale Akteure in der gegebenen Umgebung\nKein Charakterproblem, sondern ein Designproblem\nFalsche Diagnose führt zu falscher KI-Intervention"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#was-echte-personalisierung-bedeutet",
+    "href": "slides/ai-higher-ed/index.html#was-echte-personalisierung-bedeutet",
+    "title": "KI in der Hochschulbildung",
+    "section": "Was echte Personalisierung bedeutet",
+    "text": "Was echte Personalisierung bedeutet\n\n\nDer Expertise-Umkehr-Effekt zeigt: Dieselbe Unterstützung wirkt je nach Vorwissen gegensätzlich.\n\n\n\n\n\n\n\nScaffolding anpassen\nHohe Unterstützung für Novizen, abnehmende Unterstützung bei wachsendem Wissen.\n\n\n\nAufgaben kalibrieren\nSchwierigkeit und Anleitung an das aktuelle Vorwissen anpassen.\n\n\n\nHilfe ausblenden\nWorked Examples → Completion Problems → eigene Lösungen: den Übergang bewusst gestalten.\n\n\n\n\n\n Personalisierung heisst nicht Gamification für mehr Engagement. Es heisst: die richtige Unterstützung zur richtigen Zeit, basierend auf dem Vorwissen der Lernenden (Kalyuga 2009; Sweller 2024).\n\n\n\nPersonalisierung durch KI: oft missverstanden als Gamification oder Engagement-Steigerung\nDie Forschung zeigt: echte Personalisierung heisst Anpassung an das Vorwissen\nScaffolding: hohe Unterstützung am Anfang, abnehmend mit wachsender Kompetenz\nKalibrierung: Aufgabenschwierigkeit ans aktuelle Niveau anpassen\nGuidance Fading: Worked Examples → Completion Problems → eigene Lösungen\nKI für Dozierende: Aufgaben besser kalibrieren, gestufte Übungen erstellen\nNicht KI für Studierende, die den Lernprozess umgeht"
   }
 ]
