@@ -99,106 +99,26 @@ ggplot() +
 - Aufbau: Studie → Warum? (Gedächtnisarchitektur) → Rahmen für differenzierte Beurteilung
 :::
 
-## Wie funktionieren Sprachmodelle?
+## {.center}
 
-<br>
+<br><br>
 
-::: {style="font-size: 1.3em; text-align: center; margin-bottom: 1em;"}
-**Statistische Mustervervollständigung auf Basis von Kontext**
+::: {style="font-size: 1.3em; text-align: center; max-width: 80%; margin: 0 auto;"}
+Aus den bisherigen Kursen wisst ihr, was Sprachmodelle sind und was sie können.
 :::
 
 . . .
 
 <br>
 
-::: {.columns}
-::: {.column width="50%"}
-
-{{< fa chart-bar size=2x >}}
-
-<br>
-
-**Nächstes-Wort-Vorhersage**
-
-[Das Modell berechnet Wahrscheinlichkeiten für das nächste Wort basierend auf allem, was vorher kam.]{style="color: #666; font-size: 0.9em;"}
-
-:::
-
-::: {.column width="50%"}
-
-{{< fa sliders size=2x >}}
-
-<br>
-
-**Kontext bestimmt das Ergebnis**
-
-[Derselbe Prompt mit leicht verändertem Kontext kann zu völlig anderen Antworten führen.]{style="color: #666; font-size: 0.9em;"}
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; text-align: center;"}
-Kein "Verstehen", kein "Wissen", keine eingebaute Faktenkontrolle.
+::: {style="font-size: 1.6em; text-align: center; font-weight: bold;"}
+Heute: Was passiert, wenn Lernende sie benutzen?
 :::
 
 ::: {.notes}
-- LLMs sagen das nächste Wort vorher, basierend auf statistischen Mustern
-- Kontext bestimmt das Ergebnis: Prompt Engineering funktioniert genau deswegen
-- Kein Verstehen, kein Wissen: nur Muster aus Trainingsdaten
-- Wichtig für die Diskussion: Was heisst das für Lernen?
-:::
-
-## Fähigkeiten und Grenzen
-
-<br>
-
-::: {.columns}
-::: {.column width="50%"}
-
-**Vielseitig einsetzbar:**
-
-<br>
-
-- {{< fa file-lines >}} Text generieren und überarbeiten
-- {{< fa image >}} Bilder analysieren und erstellen
-- {{< fa code >}} Code schreiben und debuggen
-- {{< fa globe >}} Web-Suche und Recherche
-- {{< fa file-pdf >}} Dokumente zusammenfassen
-
-:::
-
-::: {.column width="50%"}
-
-**Aber:**
-
-<br>
-
-- {{< fa circle-exclamation >}} Keine eingebaute Faktenkontrolle
-- {{< fa ghost >}} Halluzinationen (überzeugend, aber falsch)
-- {{< fa rotate >}} Inkonsistente Ergebnisse
-- {{< fa database >}} Wissen hat ein Ablaufdatum
-- {{< fa user-slash >}} Kein Verständnis, nur Muster
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.2em; font-weight: bold;"}
-Vielseitig, aber immer überprüfen.
-:::
-
-::: {.notes}
-- Multi-modale Tools: Text, Bilder, Code, Web-Suche
-- Keine eingebaute Faktenkontrolle, Halluzinationen
-- Konsequenz: Vielseitig, aber immer überprüfen
-- Frage: Was bedeutet "überprüfen" wenn man das Fach noch lernt?
+- Kurzer Rückblick: LLMs als statistische Mustervervollständigung, kein Verstehen
+- Das Publikum kennt das bereits aus früheren Refreshers
+- Heute fokussieren wir auf die Lernsituation: Was passiert mit Studierenden?
 :::
 
 ## Ein überraschendes Ergebnis
@@ -1262,35 +1182,14 @@ Die vier Operationen (Abrufen, Generieren, Verknüpfen, Überwachen) müssen **i
 - Keine Abkürzung: erst das Fundament, dann das Werkzeug
 :::
 
-## {.center}
+## Warum lagern Studierende aus?
 
-<br><br><br>
-
-::: {style="font-size: 1.4em; text-align: center;"}
-Aber warum lagern Studierende überhaupt aus?
-:::
-
-. . .
-
-<br><br>
-
-::: {style="font-size: 1.6em; text-align: center;"}
-Sind sie faul? Unehrlich? Oder... [**rational?**]{style="color: #A3195B;"}
-:::
-
-::: {.notes}
-- Übergang zur Bounded Rationality
-- Warum lagern Studierende kognitive Arbeit an KI aus?
-- Naheliegende Erklärungen: Faulheit, Unehrlichkeit
-- Alternative Erklärung: rationales Verhalten in einer bestimmten Umgebung
-:::
-
-## Ein Gespräch an der BFH
+<br>
 
 ::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; border-left: 4px solid #666;"}
 **Ein Mathematik-Dozent berichtet:**
 
-"Wir nutzen lokale KI-Modelle für Prüfungserstellung und Korrektur. Aber bei Studierenden sehen wir: Sie kommen nicht zu Übungsstunden, stellen keine Fragen, üben nicht. **Ihnen fehlt die intrinsische Motivation.**"
+"Studierende kommen nicht zu Übungsstunden, stellen keine Fragen, üben nicht. **Ihnen fehlt die intrinsische Motivation.**"
 :::
 
 . . .
@@ -1300,7 +1199,7 @@ Sind sie faul? Unehrlich? Oder... [**rational?**]{style="color: #A3195B;"}
 ::: {.columns}
 ::: {.column width="50%"}
 
-[**Die Diagnose:**]{style="color: #666;"}
+[**Seine Diagnose:**]{style="color: #666;"}
 
 {{< fa user-xmark >}} Motivationsproblem
 
@@ -1310,7 +1209,7 @@ Sind sie faul? Unehrlich? Oder... [**rational?**]{style="color: #A3195B;"}
 
 ::: {.column width="50%"}
 
-[**Das eigentliche Problem:**]{style="color: #A3195B;"}
+[**Die alternative Erklärung:**]{style="color: #A3195B;"}
 
 {{< fa brain >}} Cognitive Overload
 
@@ -1324,257 +1223,65 @@ Sind sie faul? Unehrlich? Oder... [**rational?**]{style="color: #A3195B;"}
 <br>
 
 ::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px;"}
-{{< fa lightbulb >}} **Falsche Diagnose führt zu falscher KI-Intervention.** Nicht die Ameise ist das Problem, sondern der Strand.
+{{< fa lightbulb >}} **Herbert Simons Einsicht:** Das Verhalten wird von der Umgebung geformt, nicht von der Motivation. Studierende verhalten sich rational: wenn Outsourcing der einfachste Weg ist, werden sie outsourcen. Das ist kein Charakterproblem, sondern ein Designproblem [@simonSciencesArtificialReissue2019].
 :::
 
 ::: {.notes}
 - Reales Gespräch mit BFH-Mathematik-Dozent (anonymisiert)
-- Der Dozent ist selbst KI-Praktiker: lokale Modelle für Prüfungen, Korrekturen, vertrauliche Dokumente
-- Er repräsentiert genau das Publikum dieser Präsentation
-- Seine Diagnose: Studierende haben keine intrinsische Motivation zum Üben
-- Reframing: Die Studierenden sind nicht unmotiviert, sie sind überfordert
-- Wenn Arbeitsgedächtnis überlastet ist (fehlende Schemata), fühlt sich jede Aufgabe unmöglich an
-- Das sieht aus wie Motivationsmangel, ist aber kognitive Überlastung
-- Falsche Diagnose führt zu falscher KI-Intervention:
-  - "Motivation" → Gamification, KI-Engagement-Tools → behandelt Symptom
-  - "Cognitive Load" → Scaffolded Übungen, besseres Aufgabendesign → behandelt Ursache
-- Der richtige KI-Einsatz: KI für den DOZENTEN zum Redesign der Aufgaben
-  - Schwierigkeit kalibrieren, gestufte Übungen erstellen
-  - Nicht KI für Studierende, die den Struggle umgeht
-- Verbindung zum Evaluationsparadox: Wenn Studierende Aufgaben nicht lösen können,
-  gibt ihnen KI-Zugang die Illusion von Kompetenz ohne echtes Lernen
-:::
-
-## The Beach, Not the Ant
-
-```{r}
-#| echo: false
-#| fig-width: 10
-#| fig-height: 7
-
-# Adapted from intermediate course, using refresher palette
-grViz("
-digraph beach_ant {
-  graph [
-    fontname = 'Helvetica'
-    bgcolor = 'transparent'
-    nodesep = 0.6
-    ranksep = 0.8
-    label = 'Herbert Simon: Das Verhalten wird von der Umgebung geformt, nicht von der Motivation'
-    labelloc = t
-    fontsize = 16
-    fontcolor = '#666666'
-  ]
-
-  node [
-    fontname = 'Helvetica'
-    fontsize = 14
-    style = 'filled,rounded'
-    fontcolor = 'white'
-    penwidth = 0
-    shape = box
-    margin = '0.25,0.15'
-  ]
-
-  edge [
-    fontname = 'Helvetica'
-    fontsize = 12
-    arrowsize = 0.8
-    color = '#999999'
-  ]
-
-  beach [
-    label = 'Der Strand\\n(Lernumgebung)'
-    fillcolor = '#333333'
-    fontsize = 16
-    margin = '0.3,0.2'
-  ]
-
-  terrain1 [
-    label = 'Aufgabendesign\\nWas wird verlangt?'
-    fillcolor = '#666666'
-  ]
-
-  terrain2 [
-    label = 'Prüfungsformat\\nWas wird gemessen?'
-    fillcolor = '#666666'
-  ]
-
-  terrain3 [
-    label = 'KI-Zugänglichkeit\\nWas ist verfügbar?'
-    fillcolor = '#666666'
-  ]
-
-  terrain4 [
-    label = 'Strukturelle Anreize\\nWas ist der einfachste Weg?'
-    fillcolor = '#666666'
-  ]
-
-  ant [
-    label = 'Die Ameise\\n(Studierende)'
-    fillcolor = '#999999'
-    fontsize = 16
-    margin = '0.3,0.2'
-  ]
-
-  path_good [
-    label = 'Produktiver Weg\\nEigenes Denken'
-    fillcolor = '#333333'
-  ]
-
-  path_easy [
-    label = 'Einfacher Weg\\nKI-Outsourcing'
-    fillcolor = '#A3195B'
-  ]
-
-  beach -> terrain1
-  beach -> terrain2
-  beach -> terrain3
-  beach -> terrain4
-
-  terrain1 -> ant [style = invis]
-  terrain4 -> ant [style = invis]
-
-  ant -> path_good [label = '  Wenn Umgebung\\nAnstrengung belohnt  ' color = '#333333']
-  ant -> path_easy [label = '  Wenn Umgebung\\nAbkürzung ermöglicht  ' color = '#A3195B']
-
-  insight [
-    label = 'Gestalte den Strand,\\nnicht die Ameise.'
-    fillcolor = '#F5F5F5'
-    fontcolor = '#A3195B'
-    style = 'filled'
-    shape = plaintext
-    fontsize = 15
-    fontname = 'Helvetica Bold'
-  ]
-
-  path_good -> insight [style = invis]
-  path_easy -> insight [style = invis]
-
-  {rank = same; terrain1; terrain2; terrain3; terrain4}
-  {rank = same; path_good; path_easy}
-}
-")
-```
-
-[@simonSciencesArtificialReissue2019]
-
-::: {.notes}
-- Herbert Simons Einsicht: Verhalten wird von der Umgebung geformt, nicht von der Motivation
-- Die Ameise am Strand: Der komplexe Weg der Ameise spiegelt die Oberfläche wider, nicht die Ameise
-- Studierende verhalten sich rational in der gegebenen Umgebung
-- Vier Umgebungsfaktoren: Aufgabendesign, Prüfungsformat, KI-Zugänglichkeit, Strukturelle Anreize
-- Gestalte den Strand, nicht die Ameise
-:::
-
-## Studierende als rationale Akteure
-
-<br>
-
-::: {style="font-size: 1.3em; text-align: center; margin-bottom: 1.5em;"}
-Wenn die Umgebung Outsourcing zum einfachsten Weg macht,<br>werden rationale Akteure outsourcen.
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.2em; color: #A3195B; font-weight: bold; margin-bottom: 1.5em;"}
-Das ist kein Charakterproblem. Es ist ein Designproblem.
-:::
-
-. . .
-
-::: {.columns}
-::: {.column width="25%"}
-
-{{< fa pencil-ruler >}}
-
-**Aufgabendesign**
-
-[Was wird verlangt?]{style="color: #666; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa clipboard-check >}}
-
-**Prüfungsformat**
-
-[Was wird gemessen?]{style="color: #666; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa robot >}}
-
-**KI-Zugänglichkeit**
-
-[Was ist verfügbar?]{style="color: #666; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa road >}}
-
-**Strukturelle Anreize**
-
-[Was ist der einfachste Weg?]{style="color: #666; font-size: 0.85em;"}
-
-:::
-:::
-
-::: {.notes}
-- Wenn Outsourcing der einfachste Weg ist, werden rationale Akteure outsourcen
+- Seine Diagnose: Motivationsmangel → führt zu Gamification, KI-Engagement-Tools
+- Reframing: Kognitive Überlastung, nicht Faulheit
+- Herbert Simon: Das Verhalten der Ameise spiegelt den Strand wider, nicht die Ameise
+- Studierende sind rationale Akteure in der gegebenen Umgebung
 - Kein Charakterproblem, sondern ein Designproblem
-- Vier Faktoren des "Terrains":
-  1. Aufgabendesign: Was wird verlangt?
-  2. Prüfungsformat: Was wird gemessen?
-  3. KI-Zugänglichkeit: Was ist verfügbar?
-  4. Strukturelle Anreize: Was ist der einfachste Weg?
+- Falsche Diagnose führt zu falscher KI-Intervention
 :::
 
-## Gestalte den Strand, nicht die Ameise
+## Was echte Personalisierung bedeutet
+
+<br>
+
+::: {style="font-size: 1.2em; text-align: center; margin-bottom: 1.5em;"}
+Der Expertise-Umkehr-Effekt zeigt: **Dieselbe Unterstützung wirkt je nach Vorwissen gegensätzlich.**
+:::
+
+. . .
 
 <br>
 
 ::: {.columns}
 ::: {.column width="33%"}
 
-{{< fa hammer size=2x >}}
+{{< fa stairs size=2x >}}
 
 <br>
 
-**Kognitive Arbeit als Produkt**
+**Scaffolding anpassen**
 
-[Aufgaben gestalten, bei denen der Denkprozess das Ergebnis ist, nicht nur das Endprodukt.]{style="color: #666; font-size: 0.9em;"}
+[Hohe Unterstützung für Novizen, abnehmende Unterstützung bei wachsendem Wissen.]{style="color: #666; font-size: 0.9em;"}
 
 :::
 
 ::: {.column width="33%"}
 
-{{< fa microscope size=2x >}}
+{{< fa sliders size=2x >}}
 
 <br>
 
-**Prozess bewerten**
+**Aufgaben kalibrieren**
 
-[Den Weg zum Ergebnis prüfen, nicht nur das Ergebnis selbst.]{style="color: #666; font-size: 0.9em;"}
+[Schwierigkeit und Anleitung an das aktuelle Vorwissen anpassen.]{style="color: #666; font-size: 0.9em;"}
 
 :::
 
 ::: {.column width="33%"}
 
-{{< fa mountain size=2x >}}
+{{< fa arrow-down-short-wide size=2x >}}
 
 <br>
 
-**Produktiven Struggle ermöglichen**
+**Hilfe ausblenden**
 
-[Den Weg des eigenen Denkens zum Weg des geringsten Widerstands machen.]{style="color: #666; font-size: 0.9em;"}
+[Worked Examples → Completion Problems → eigene Lösungen: den Übergang bewusst gestalten.]{style="color: #666; font-size: 0.9em;"}
 
 :::
 :::
@@ -1584,13 +1291,15 @@ Das ist kein Charakterproblem. Es ist ein Designproblem.
 <br>
 
 ::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; text-align: center;"}
-{{< fa lightbulb >}} **Der richtige KI-Einsatz:** KI für Dozierende zum Redesign der Lernumgebung, nicht KI für Studierende zum Umgehen des Lernprozesses.
+{{< fa lightbulb >}} **Personalisierung heisst nicht Gamification für mehr Engagement.** Es heisst: die richtige Unterstützung zur richtigen Zeit, basierend auf dem Vorwissen der Lernenden [@kalyugaExpertiseReversalEffect2009; @swellerCognitiveLoadTheory2024].
 :::
 
 ::: {.notes}
-- Kognitive Arbeit als Produkt: Nicht nur das Ergebnis zählt, sondern der Denkprozess
-- Prozess bewerten: Nicht nur was rauskommt, sondern wie
-- Produktiven Struggle ermöglichen: Eigenes Denken als Weg des geringsten Widerstands
+- Personalisierung durch KI: oft missverstanden als Gamification oder Engagement-Steigerung
+- Die Forschung zeigt: echte Personalisierung heisst Anpassung an das Vorwissen
+- Scaffolding: hohe Unterstützung am Anfang, abnehmend mit wachsender Kompetenz
+- Kalibrierung: Aufgabenschwierigkeit ans aktuelle Niveau anpassen
+- Guidance Fading: Worked Examples → Completion Problems → eigene Lösungen
 - KI für Dozierende: Aufgaben besser kalibrieren, gestufte Übungen erstellen
 - Nicht KI für Studierende, die den Lernprozess umgeht
 :::
@@ -1612,11 +1321,11 @@ Studierende [**können**]{style="color: #A3195B;"} KI-Nutzung nicht selbst regul
 
 ::: {.column width="50%"}
 
-**Bounded Rationality:**
+**Der Expertise-Umkehr-Effekt:**
 
-Studierende [**werden**]{style="color: #A3195B;"} KI-Nutzung nicht selbst regulieren.
+Dieselbe KI-Unterstützung [**wirkt gegensätzlich**]{style="color: #A3195B;"} je nach Vorwissen.
 
-[Die Umgebung macht Outsourcing zum rationalen Weg.]{style="color: #666; font-size: 0.9em;"}
+[Was Novizen hilft, schadet Fortgeschrittenen. Was Experten nützt, überfordert Anfänger.]{style="color: #666; font-size: 0.9em;"}
 
 :::
 :::
@@ -1626,7 +1335,7 @@ Studierende [**werden**]{style="color: #A3195B;"} KI-Nutzung nicht selbst reguli
 <br>
 
 ::: {style="text-align: center; font-size: 1.1em;"}
-Zusammen: Wir können uns nicht auf das Urteilsvermögen der Studierenden allein verlassen.
+Daraus folgt: KI-Einsatz in der Lehre braucht **Differenzierung nach Vorwissen**, nicht pauschale Regeln.
 :::
 
 . . .
@@ -1640,15 +1349,15 @@ KI-Werkzeuge sind für Experten gemacht.
 . . .
 
 ::: {style="text-align: center; margin-top: 1em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;"}
-[Fundamente zuerst aufbauen. Umgebungen gestalten, die Denken erfordern. Produktiven Struggle als natürlichen Weg ermöglichen.]{style="font-size: 1.2em; color: #A3195B;"}
+[Fundamente zuerst aufbauen. Unterstützung an das Vorwissen anpassen. Scaffolding bewusst ausblenden, wenn Kompetenz wächst.]{style="font-size: 1.2em; color: #A3195B;"}
 :::
 
 ::: {.notes}
 - Evaluationsparadox: Studierende KÖNNEN nicht selbst regulieren (fehlende Kompetenz)
-- Bounded Rationality: Studierende WERDEN nicht selbst regulieren (Umgebung ermöglicht Abkürzung)
-- Zusammen: Wir können uns nicht auf Studierende allein verlassen
+- Expertise-Umkehr-Effekt: Dieselbe Hilfe wirkt je nach Vorwissen gegensätzlich
+- Konsequenz: Differenzierung nach Vorwissen, nicht pauschale KI-Verbote oder -Freigaben
 - KI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)
-- Konsequenz: Fundamente zuerst, Umgebungen gestalten, produktiven Struggle ermöglichen
+- Handlungsempfehlung: Fundamente aufbauen, Unterstützung anpassen, Scaffolding ausblenden
 :::
 
 ## Referenzen
