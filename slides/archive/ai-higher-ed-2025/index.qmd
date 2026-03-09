@@ -1,28 +1,10 @@
 ---
 title: "KI in der Hochschulbildung"
 subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
-author:
-  - name: Andrew Ellis
-    url: https://github.com/awellis
-    affiliation: Virtuelle Akademie, Berner Fachhochschule
-    affiliation-url: https://virtuelleakademie.ch
-    orcid: 0000-0002-2788-936X 
-# institute: "Virtuelle Akademie, Berner Fachhochschule"
 format:
   revealjs:
-    theme: default
-    slide-number: true
-    preview-links: auto
+    theme: [simple, ../../../styles/custom-reveal.scss]
     footer: "KI in der Lehre: Refresher (Archiv 2025)"
-    navigation-mode: linear
-    controls: true
-    progress: true
-    hash: true
-    center: false
-    transition: fade
-    width: 1600
-    height: 900
-    margin: 0.1
 bibliography: ../../../bibliography.bib
 ---
 
@@ -34,9 +16,9 @@ library(tidyverse)
 set.seed(2025)
 
 # Color palette - define once, use everywhere
-color_primary <- "#A3195B"
-color_secondary <- "#666666"
-color_tertiary <- "#999999"
+color_primary <- "#A63D2F"
+color_secondary <- "#6E6560"
+color_tertiary <- "#9A9490"
 
 # Base minimalist theme for all figures
 theme_minimal_custom <- theme_minimal(base_size = 18) +
@@ -77,8 +59,8 @@ eisberg <- data.frame(
 ggplot() +
   geom_polygon(data = eisberg, aes(x, y), fill = color_primary, alpha = 0.4) +
   geom_hline(yintercept = 0, color = "#24526B", linewidth = 1.5) +
-  annotate("text", x = 1.5, y = 0.5, label = "Performance", size = 7, fontface = "bold", color = "#333") +
-  annotate("text", x = 1.5, y = -1.5, label = "Learning", size = 7, fontface = "bold", color = "#333") +
+  annotate("text", x = 1.5, y = 0.5, label = "Performance", size = 7, fontface = "bold", color = "#1A1714") +
+  annotate("text", x = 1.5, y = -1.5, label = "Learning", size = 7, fontface = "bold", color = "#1A1714") +
   theme_void() +
   coord_fixed(ratio = 1.2) +
   xlim(-1, 4) +
@@ -87,7 +69,7 @@ ggplot() +
 
 <br><br>
 
-[Werkzeuge für [Experten]{style="color: #666;"},<br>Herausforderungen für [Lernende]{style="color: #A3195B; font-weight: 600;"}]{style="font-size: 1.6em;"}
+[Werkzeuge für [Experten]{style="color: #6E6560;"},<br>Herausforderungen für [Lernende]{style="color: #A63D2F; font-weight: 600;"}]{style="font-size: 1.6em;"}
 
 :::
 
@@ -113,7 +95,7 @@ ggplot() +
 
 [Aufgaben korrekt gelöst]{.fragment}
 
-[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #666;"}
+[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #6E6560;"}
 
 :::
 
@@ -123,11 +105,11 @@ ggplot() +
 
 <br>
 
-[−17% / ±0%]{.fragment style="font-size: 2em; font-weight: bold; color: #A3195B;"}
+[−17% / ±0%]{.fragment style="font-size: 2em; font-weight: bold; color: #A63D2F;"}
 
 [vs. Kontrollgruppe]{.fragment}
 
-[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #666;"}
+[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #6E6560;"}
 
 :::
 :::
@@ -136,7 +118,7 @@ ggplot() +
 
 <br><br>
 
-::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
+::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 0;"}
 **Quelle:** @bastaniGenerativeAIGuardrails2025:
 
 ~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
@@ -284,7 +266,7 @@ ggplot() +
 
 . . .
 
-::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; margin-top: 0.5em;"}
+::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0; margin-top: 0.5em;"}
 {{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024].
 :::
 
@@ -306,7 +288,7 @@ ggplot() +
 
 <br>
 
-::: {style="text-align: center; color: #666;"}
+::: {style="text-align: center; color: #6E6560;"}
 Robert Bjork [@bjorkMakingThingsHard2011]
 :::
 
@@ -338,7 +320,7 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 
 **Selbst generieren**
 
-[Eigene Antworten formulieren]{style="color: #666; font-size: 0.9em;"}
+[Eigene Antworten formulieren]{style="color: #6E6560; font-size: 0.9em;"}
 
 :::
 
@@ -350,7 +332,7 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 
 **Verteilt lernen**
 
-[Zeitliche Abstände einbauen]{style="color: #666; font-size: 0.9em;"}
+[Zeitliche Abstände einbauen]{style="color: #6E6560; font-size: 0.9em;"}
 
 :::
 
@@ -362,7 +344,7 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 
 **Aktiv abrufen**
 
-[Wissen aus dem Gedächtnis holen]{style="color: #666; font-size: 0.9em;"}
+[Wissen aus dem Gedächtnis holen]{style="color: #6E6560; font-size: 0.9em;"}
 
 :::
 
@@ -374,7 +356,7 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 
 **Variieren**
 
-[Themen und Aufgaben mischen]{style="color: #666; font-size: 0.9em;"}
+[Themen und Aufgaben mischen]{style="color: #6E6560; font-size: 0.9em;"}
 
 :::
 :::
@@ -383,7 +365,7 @@ Robert Bjork [@bjorkMakingThingsHard2011]
 
 <br><br>
 
-::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; text-align: center;"}
+::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 0; text-align: center;"}
 {{< fa robot >}} **KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.**
 :::
 
@@ -455,7 +437,7 @@ Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDel
 
 <br>
 
-[Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster...]{style="color: #666; font-style: italic;"}
+[Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster...]{style="color: #6E6560; font-style: italic;"}
 
 ::: {.notes}
 - Behaltensleistung: Selbst generiert (~70%) > Gelesen (~50%) > Von KI (~35%)
@@ -499,13 +481,13 @@ ggplot(timeline_data) +
   geom_point(aes(x = x, y = 0, color = highlight), size = 16, show.legend = FALSE) +
   geom_point(aes(x = x, y = 0), size = 14, color = "white", show.legend = FALSE) +
   geom_point(aes(x = x, y = 0, color = highlight), size = 12, show.legend = FALSE) +
-  scale_color_manual(values = c("FALSE" = "#666666", "TRUE" = color_primary)) +
+  scale_color_manual(values = c("FALSE" = "#6E6560", "TRUE" = color_primary)) +
   # Technology names
   geom_text(aes(x = x, y = -0.25, label = name, color = highlight),
             size = 6, fontface = "bold", show.legend = FALSE) +
   # Decade labels
   geom_text(aes(x = x, y = -0.45, label = decade),
-            size = 4.5, color = "#999999") +
+            size = 4.5, color = "#9A9490") +
   # Effect labels
   geom_text(aes(x = x, y = 0.35, label = effect, color = highlight),
             size = 4, fontface = "italic", lineheight = 0.9, show.legend = FALSE) +
@@ -562,7 +544,7 @@ Die Frage ist nicht *ob* KI, sondern *wer* davon profitiert.
 
 <br>
 
-[Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.]{style="color: #666; font-style: italic; display: block; text-align: center;"}
+[Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.]{style="color: #6E6560; font-style: italic; display: block; text-align: center;"}
 
 ::: {.notes}
 - Dasselbe Werkzeug, unterschiedliche Ergebnisse
@@ -629,9 +611,9 @@ Experten speichern Wissen in **Chunks**: vernetzte Wissensstrukturen, die automa
 config = ({
   // Color palette
   colors: {
-    highSupport: "#A3195B",
-    lowSupport: "#666666",
-    neutral: "#333",
+    highSupport: "#A63D2F",
+    lowSupport: "#6E6560",
+    neutral: "#1A1714",
     background: "#f5f5f5"
   },
   // Line equations: y = intercept + slope * x
@@ -813,7 +795,7 @@ buttonGroup = {
     transition: background 0.15s ease;
   `;
 
-  const container = html`<div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"></div>`;
+  const container = html`<div style="display: flex; border-radius: 0; overflow: hidden; border: 2px solid #ddd;"></div>`;
 
   steps.forEach(v => {
     const isSelected = x === v;
@@ -837,9 +819,9 @@ html`<div style="display: flex; align-items: center; gap: 40px;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;">
     <div style="font-weight: bold; font-size: 1.1em;">Vorwissen des Lernenden</div>
     <div>${buttonGroup}</div>
-    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 8px; border-left: 4px solid ${currentState.optimalColor};">
+    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 0; border-left: 4px solid ${currentState.optimalColor};">
       <span style="color: ${currentState.optimalColor}; font-weight: bold;">${currentState.optimalLabel}</span><br>
-      <span style="font-size: 0.8em; color: #666;">ist effektiver</span>
+      <span style="font-size: 0.8em; color: #6E6560;">ist effektiver</span>
     </div>
   </div>
 </div>`
@@ -942,7 +924,7 @@ Kann diese Bewertung nicht vornehmen
 
 <br>
 
-[Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.]{style="color: #666; font-style: italic;"}
+[Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.]{style="color: #6E6560; font-style: italic;"}
 
 ::: {.notes}
 - Einwand: "Dann lehren wir kritisches Prüfen von KI-Output"
@@ -1001,8 +983,8 @@ Kann diese Bewertung nicht vornehmen
 <br>
 
 ::: {style="text-align: center; font-size: 1.3em; margin-bottom: 40px;"}
-[Novize]{style="color: #A3195B; font-weight: bold;"}
-——— [**Schwelle?**]{style="background: #D4A03E; padding: 5px 15px; border-radius: 4px;"} ———
+[Novize]{style="color: #A63D2F; font-weight: bold;"}
+——— [**Schwelle?**]{style="background: #B8821A; padding: 5px 15px; border-radius: 4px;"} ———
 [Experte]{style="color: #24526B; font-weight: bold;"}
 :::
 
@@ -1038,19 +1020,19 @@ KI-Werkzeuge sind für Experten gemacht.
 . . .
 
 ::: {style="display: flex; justify-content: center; gap: 3em; margin-top: 2em; margin-bottom: 2em;"}
-::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #D4A03E;"}
+::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #B8821A;"}
 [Sie machen Experten produktiver.]{style="font-size: 1.1em; color: #24526B;"}
 :::
 
-::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #A3195B;"}
-[Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.]{style="font-size: 1.1em; color: #A3195B;"}
+::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #A63D2F;"}
+[Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.]{style="font-size: 1.1em; color: #A63D2F;"}
 :::
 :::
 
 . . .
 
-::: {style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;"}
-[**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**]{style="font-size: 1.4em; color: #A3195B;"}
+::: {style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A63D2F; border-radius: 0;"}
+[**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**]{style="font-size: 1.4em; color: #A63D2F;"}
 :::
 
 ::: {.notes}
@@ -1102,19 +1084,19 @@ KI-Werkzeuge sind für Experten gemacht.
 ::: {.columns}
 ::: {.column width="33%"}
 
-[Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.]{style="color: #666;"}
+[Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.]{style="color: #6E6560;"}
 
 :::
 
 ::: {.column width="33%"}
 
-[KI soll Denkprozesse anregen, nicht ersetzen.]{style="color: #666;"}
+[KI soll Denkprozesse anregen, nicht ersetzen.]{style="color: #6E6560;"}
 
 :::
 
 ::: {.column width="33%"}
 
-[Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.]{style="color: #666;"}
+[Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.]{style="color: #6E6560;"}
 
 :::
 :::
