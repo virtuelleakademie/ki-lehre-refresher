@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Andrew Ellis">
-  <title>KI in der Lehre: Refresher</title>
+  <title>KI in der Lehre: Refresher – Wenn Outsourcing die rationale Strategie ist</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -224,42 +224,6 @@
   <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
-  div.callout-source-check.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f002';
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #6E6560;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(110, 101, 96, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
-    background-image: none;
-  }
-  div.callout-demonstration.callout {
-    border-left-color: #6E6560;
-  }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(110, 101, 96, 0.13);
-  }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
-    background-image: none;
-  }
   div.callout-prompt.callout {
     border-left-color: #6E6560;
   }
@@ -296,52 +260,16 @@
     content: '\f0c3';
     background-image: none;
   }
-  div.callout-warning.callout {
-    border-left-color: #A63D2F;
+  div.callout-scenario.callout {
+    border-left-color: #6E6560;
   }
-  div.callout-warning.callout-style-default > .callout-header {
-    background-color: rgba(166, 61, 47, 0.13);
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(110, 101, 96, 0.13);
   }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f06a';
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A63D2F;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(166, 61, 47, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
-    background-image: none;
-  }
-  div.callout-reflect.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
+    content: '\f075';
     background-image: none;
   }
   div.callout-pro-tip.callout {
@@ -356,10 +284,82 @@
     content: '\e2ca';
     background-image: none;
   }
+  div.callout-key-point.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
+  div.callout-source-check.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
+  div.callout-group.callout {
+    border-left-color: #A63D2F;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(166, 61, 47, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c0';
+    background-image: none;
+  }
+  div.callout-demonstration.callout {
+    border-left-color: #6E6560;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(110, 101, 96, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
+    background-image: none;
+  }
+  div.callout-warning.callout {
+    border-left-color: #A63D2F;
+  }
+  div.callout-warning.callout-style-default > .callout-header {
+    background-color: rgba(166, 61, 47, 0.13);
+  }
+  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f06a';
+    background-image: none;
+  }
+  div.callout-reflect.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0eb';
+    background-image: none;
+  }
   </style>
-<meta property="og:title" content="KI in der Lehre: Refresher">
-<meta property="og:description" content="Verstehen kann man nicht auslagern">
-<meta property="og:image" content="https://virtuelleakademie.github.io/ki-lehre-refresher/slides/ai-higher-ed/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:title" content="Wenn Outsourcing die rationale Strategie ist – KI in der Lehre: Refresher">
+<meta property="og:description" content="Warum Studierende an KI auslagern und wie wir die Anreize ändern können">
+<meta property="og:image" content="https://virtuelleakademie.github.io/ki-lehre-refresher/slides/outsourcing-rational/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="KI in der Lehre: Refresher">
 </head>
 <body class="quarto-light">
@@ -367,8 +367,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">KI in der Lehre: Refresher</h1>
-  <p class="subtitle">Verstehen kann man nicht auslagern</p>
+  <h1 class="title">Wenn Outsourcing die rationale Strategie ist</h1>
+  <p class="subtitle">Warum Studierende an KI auslagern und wie wir die Anreize ändern können</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -1137,41 +1137,21 @@
 <h1>Was heisst das für die Lehre?</h1>
 
 </section>
-<section id="zwei-ansätze" class="slide level2 smaller">
-<h2>Zwei Ansätze</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<div style="border: 2px solid #64748b; border-radius: 8px; padding: 1.2em; height: 100%;">
-<p><span style="font-weight: bold; font-size: 1.1em; color: #64748b;">Generische Tipps</span></p>
-<ul>
-<li>“Eigenen Versuch zuerst”</li>
-<li>“KI als Sparringpartner, nicht als Orakel”</li>
-<li>“Prozess sichtbar machen”</li>
-<li>“Outsourcing thematisieren”</li>
-<li>“Mündliche Komponenten einbauen”</li>
-</ul>
+<section id="das-eigentliche-problem" class="slide level2 center">
+<h2>Das eigentliche Problem</h2>
 <p><br></p>
-<p><span style="color: #64748b;">Alles gute Ratschläge. Aber sie ändern nichts an der Grundstruktur:</span></p>
-<p><span style="color: #D55E00;"><strong>Die Note gibt es weiterhin für das Produkt.</strong></span></p>
-<p>Wer outsourced, wird nicht schlechter bewertet. Also wird outgesourced.</p>
-</div>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<div style="border: 2px solid #0072B2; border-radius: 8px; padding: 1.2em; height: 100%;">
-<p><span style="font-weight: bold; font-size: 1.1em; color: #0072B2;">Anreizstruktur ändern</span></p>
-<ul>
-<li>Verstehen <em>ist</em> das Produkt: Mündliche Prüfung, Erklären mit Rückfragen, Live-Debugging</li>
-<li>KI-Output bewerten statt generieren: Studierende erhalten fehlerhaften Output und die Aufgabe <em>ist</em> die Evaluation</li>
-<li>Prozess wird benotet, nicht nur Endprodukt</li>
-</ul>
+<div style="font-size: 1.3em; max-width: 80%; margin: 0 auto; line-height: 1.8;">
+<p>Das ist kein Problem, das einzelne Dozierende mit besserem Aufgabendesign lösen.</p>
 <p><br></p>
-<p><span style="color: #0072B2;">Lernen wird zur rationalen Strategie,</span> <strong>weil es sich in der Note niederschlägt.</strong></p>
-<p>Wer outsourced, kann keine gute Note bekommen. Also wird gelernt.</p>
+<p>Noten belohnen Produkte. Produkte lassen sich outsourcen.</p>
+<p><br></p>
+<p>KI hat diese Fehlanpassung nicht erzeugt. Sie hat sie <span style="color: #D55E00; font-weight: bold;">sichtbar</span> gemacht.</p>
+<p><br></p>
+<p>Die Frage ist nicht: <em>Wie verhindern wir Outsourcing?</em></p>
+<p>Die Frage ist: <span style="color: #0072B2; font-weight: bold;">Wie sähe ein System aus, in dem Lernen die rationale Strategie ist?</span></p>
 </div>
-</div></div>
 <aside class="notes">
-<p>Zwei Ansätze im Vergleich. Links die generischen Tipps: eigener Versuch zuerst, KI als Sparringpartner, Prozess sichtbar machen. Alles gute Ratschläge. Aber sie ändern nichts an der Grundstruktur: Die Note gibt es weiterhin für das Produkt. Und solange das so ist, bleibt Outsourcing rational. Rechts der alternative Ansatz: Die Anreizstruktur ändern. Verstehen ist das Produkt. Mündliche Prüfung, Erklären mit Rückfragen, Live-Debugging. Das sind Settings, in denen ohne Verständnis kein brauchbarer Output möglich ist. Statt KI-Output generieren lassen, KI-Output bewerten lassen: Studierende erhalten fehlerhaften Output und die Aufgabe ist die Evaluation. Das trainiert genau die Kompetenz, die durch Outsourcing verloren geht. Der Prozess wird benotet, nicht nur das Endprodukt. Der Unterschied: Links appelliert man an die Studierenden, trotz falscher Anreize das Richtige zu tun. Rechts macht man Lernen zur rationalen Strategie, weil es sich in der Note niederschlägt. Wenn wir die Nutzenfunktion ernst nehmen, ist nur der rechte Ansatz nachhaltig.</p>
+<p>Das eigentliche Problem ist strukturell, nicht individuell. Alles, was wir gezeigt haben, führt zu einem Schluss: Es reicht nicht, bessere Aufgaben zu entwerfen. Die Grundstruktur muss sich ändern. Noten belohnen Produkte. Produkte lassen sich outsourcen. Also wird outgesourced. Und das ist rational. KI hat diese Fehlanpassung nicht geschaffen. Sie war immer da. Gute Produkte ohne Verständnis waren früher einfach zu aufwändig, also hat die Korrelation zwischen Produkt und Lernen gehalten. KI hat diese Korrelation gebrochen und damit die Schwäche im System sichtbar gemacht. Die richtige Frage ist also nicht: Wie verhindern wir Outsourcing? Die richtige Frage ist: Wie sähe ein System aus, in dem Lernen die rationale Strategie ist? Das ist die Frage, die wir in der Diskussion gemeinsam bearbeiten wollen.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1184,18 +1164,16 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="drei-kernaussagen" class="slide level2 center">
-<h2>Drei Kernaussagen</h2>
-<p><br></p>
+<section id="zwei-erkenntnisse" class="slide level2 center">
+<h2>Zwei Erkenntnisse</h2>
+<p><br><br></p>
 <div style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 2;">
-<p><span style="color: #A63D2F; font-weight: bold;">1.</span> Outsourcing ist ein <strong>kognitiver Default</strong>, keine individuelle Schwäche. 80% folgen falscher KI. Anreize allein verhindern das nicht.</p>
+<p><span style="color: #A63D2F; font-weight: bold;">1.</span> Outsourcing ist ein <strong>kognitiver Default</strong>, keine individuelle Schwäche. 80% folgen falscher KI. Das ist rational, kein Charakterfehler.</p>
 <p><br></p>
 <p><span style="color: #A63D2F; font-weight: bold;">2.</span> <strong>Verstehen kann man nicht auslagern.</strong> Wer die kognitive Arbeit delegiert, verliert nicht nur Kompetenz, sondern auch die Fähigkeit, diesen Verlust zu erkennen.</p>
-<p><br></p>
-<p><span style="color: #A63D2F; font-weight: bold;">3.</span> Die Antwort ist <strong>Anreize umgestalten</strong>, nicht neue Theorie. Wenn Noten Verstehen belohnen statt Produkte, wird Lernen die rationale Strategie.</p>
 </div>
 <aside class="notes">
-<p>Drei Kernaussagen zum Mitnehmen. Erstens: Outsourcing ist der Default, nicht die Ausnahme, und nicht ein Charakterfehler. Shaw und Nave haben das überzeugend quantifiziert. Zweitens: Verstehen kann man nicht auslagern. Und das ist doppelt: Wer die kognitive Arbeit delegiert, verliert nicht nur Kompetenz, sondern auch die Fähigkeit, diesen Verlust zu erkennen. Die Falle schliesst sich. Drittens: Die produktive Antwort ist, die Anreize umzugestalten. Wenn Noten demonstriertes Verstehen belohnen statt Produkte, wird Lernen zur rationalen Strategie. Nicht neue Theorie, sondern eine andere Nutzenfunktion.</p>
+<p>Zwei Erkenntnisse zum Mitnehmen. Keine Handlungsanweisungen, sondern zwei Tatsachen, die die Präsentation belegt hat. Erstens: Outsourcing ist der Default, nicht die Ausnahme. Shaw und Nave haben das überzeugend quantifiziert: 80% folgen falscher KI. Und das ist rational, wenn man die Anreizstruktur betrachtet. Zweitens: Verstehen kann man nicht auslagern. Und das ist doppelt: Wer die kognitive Arbeit delegiert, verliert nicht nur Kompetenz, sondern auch die Fähigkeit, diesen Verlust zu erkennen. Die Falle schliesst sich. Was daraus folgt, ist eine offene Frage, die wir gemeinsam bearbeiten.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1211,15 +1189,16 @@
 <section id="diskussion" class="slide level2 center">
 <h2>Diskussion</h2>
 <p><br><br></p>
-<div style="font-size: 1.4em; text-align: center; max-width: 80%; margin: 0 auto; line-height: 1.6; color: #6E6560;">
-<p>Wo in euren Aufgaben ist der Weg des geringsten Widerstands <em>nicht</em> der Lernweg?</p>
+<div style="font-size: 1.3em; text-align: center; max-width: 80%; margin: 0 auto; line-height: 1.8; color: #1A1714;">
+<p>Noten belohnen Produkte. Produkte lassen sich outsourcen.</p>
+<p><span style="color: #0072B2; font-weight: bold;">Wie sähe ein System aus, in dem Lernen die rationale Strategie ist?</span></p>
 </div>
 <p><br><br></p>
-<div style="text-align: center; font-size: 0.9em; color: #9A9490;">
-<p>Und: Was wäre die kleinste Änderung, die das ändert?</p>
+<div style="text-align: center; font-size: 1.0em; color: #6E6560;">
+<p>Und konkreter: Wo in euren Kursen ist Outsourcing <em>bereits</em> die rationale Strategie?</p>
 </div>
 <aside class="notes">
-<p>Offene Diskussion. Die zentrale Frage: Wo in euren eigenen Aufgaben können Studierende ein gutes Produkt abliefern, ohne die kognitive Arbeit zu leisten, die ihr beabsichtigt? Und was wäre die kleinste Designänderung, die das ändert?</p>
+<p>Offene Diskussion, 30 Minuten. Die zentrale Frage wiederholt die Folie davor: Wie sähe ein System aus, in dem Lernen die rationale Strategie ist? Und als Einstieg eine konkretere Frage: Wo in euren eigenen Kursen ist Outsourcing bereits die rationale Strategie? Wo können Studierende eine gute Note bekommen, ohne verstanden zu haben? Das ist keine rhetorische Frage. Das ist die Diagnose, mit der man anfangen muss.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1248,7 +1227,7 @@ Shaw, Steven D., und Gideon Nave. 2026. <span>„Thinking—<span>Fast</span>, <
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>KI in der Lehre: Refresher</p>
+<p>Wenn Outsourcing die rationale Strategie ist</p>
 </div>
 </div></div>
 
@@ -1465,7 +1444,7 @@ Shaw, Steven D., und Gideon Nave. 2026. <span>„Thinking—<span>Fast</span>, <
     </script>
     <script type="module">
     if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-    window._ojs.paths.runtimeToDoc = "../../slides/ai-higher-ed";
+    window._ojs.paths.runtimeToDoc = "../../slides/outsourcing-rational";
     window._ojs.paths.runtimeToRoot = "../..";
     window._ojs.paths.docToRoot = "../..";
     window._ojs.selfContained = false;
