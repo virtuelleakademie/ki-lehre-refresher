@@ -259,9 +259,9 @@
   {
     "objectID": "slides/ai-higher-ed/index.html#section",
     "href": "slides/ai-higher-ed/index.html#section",
-    "title": "KI in der Hochschulbildung: Refresher 2026",
+    "title": "KI in der Lehre: Refresher 2026",
     "section": "",
-    "text": "80% der Menschen folgen einer KI-Empfehlung, auch wenn sie falsch liegt.\n\n\n\n\nIhre Konfidenz steigt dabei.\n\n\n\n\n\nVerstehen kann man nicht auslagern.\n\n\nShaw und Nave (2026)\n\n\n\nEinstieg mit der provokantesten Zahl aus Shaw & Nave: 80% folgen falscher KI\nKonfidenz steigt trotzdem\nDie These des heutigen Refreshers: Verstehen kann man nicht auslagern\nWas du weisst, bestimmt, ob KI dir hilft oder schadet"
+    "text": "80% der Menschen folgen einer KI-Empfehlung, auch wenn sie falsch liegt.\n\n\n\n\nIhre Konfidenz steigt dabei.\n\n\n\n\n\nShaw und Nave (2026)\n\n\nEinstieg mit der provokantesten Zahl aus einer neuen Studie von Shaw und Nave an der Wharton School. 80% folgen einer falschen KI-Empfehlung. Und gleichzeitig steigt ihre Konfidenz, dass die Antwort richtig ist. Das ist bemerkenswert: Nicht nur die Genauigkeit sinkt, die Leute werden gleichzeitig sicherer. Schauen wir uns die Studie genauer an."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#wie-funktionieren-sprachmodelle",
@@ -434,9 +434,9 @@
   {
     "objectID": "slides/ai-higher-ed/index.html#referenzen",
     "href": "slides/ai-higher-ed/index.html#referenzen",
-    "title": "KI in der Hochschulbildung: Refresher 2026",
+    "title": "KI in der Lehre: Refresher 2026",
     "section": "Referenzen",
-    "text": "Referenzen\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. „Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics“. Proceedings of the National Academy of Sciences of the United States of America 122 (26): e2422633122. https://doi.org/10.1073/pnas.2422633122.\n\n\nBjork, Elizabeth Ligon, und Robert A. Bjork. 2011. „Making Things Hard on Yourself, but in a Good Way: Creating Desirable Difficulties to Enhance Learning“. In Psychology and the Real World: Essays Illustrating Fundamental Contributions to Society, 56–64. New York, NY, US: Worth Publishers.\n\n\nBjork, Robert A. 1994. „Memory and Metamemory Considerations in the Training of Human Beings“. In Metacognition: Knowing about Knowing, 185–205. Cambridge, MA, US: The MIT Press. https://doi.org/10.7551/mitpress/4561.001.0001.\n\n\nClark, Andy, und David Chalmers. 1998. „The Extended Mind“. Analysis 58 (1): 7–19. https://www.jstor.org/stable/3328150.\n\n\nConant, Roger C., und W. Ross Ashby. 1970. „Every Good Regulator of a System Must Be a Model of That System“. International Journal of Systems Science 1 (2): 89–97. https://doi.org/10.1080/00207727008920220.\n\n\nGrinschgl, Sandra, Frank Papenmeier, und Hauke S Meyerhoff. 2021. „Consequences of Cognitive Offloading: Boosting Performance but Diminishing Memory“. Quarterly Journal of Experimental Psychology (2006) 74 (9): 1477–96. https://doi.org/10.1177/17470218211008060.\n\n\nKahneman, Daniel. 2011. Thinking, Fast and Slow. New York: Farrar, Straus; Giroux.\n\n\nKalyuga, Slava. 2009. „The Expertise Reversal Effect“. In Managing Cognitive Load in Adaptive Multimedia Learning, 58–80. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-60566-048-6.ch003.\n\n\nRisko, Evan F., und Sam J. Gilbert. 2016. „Cognitive Offloading“. Trends in Cognitive Sciences 20 (9): 676–88. https://doi.org/10.1016/j.tics.2016.07.002.\n\n\nShaw, Steven D., und Gideon Nave. 2026. „Thinking—Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning and the Rise of Cognitive Surrender“. SSRN Scholarly Paper. Rochester, NY. 11. Januar 2026. https://doi.org/10.2139/ssrn.6097646.\n\n\nSweller, John. 2024. „Cognitive Load Theory and Individual Differences“. Learning and Individual Differences 110 (Februar): 102423. https://doi.org/10.1016/j.lindif.2024.102423.\n\n\nWillingham, Daniel T. 2008. „Critical Thinking: Why Is It So Hard to Teach?“ Arts Education Policy Review 109 (4): 21–32. https://doi.org/10.3200/AEPR.109.4.21-32."
+    "text": "Referenzen\n\n\n\n\nMosier, Kathleen L., und Linda J. Skitka. 1996. „Automation Bias in an Accountable Environment“. Proceedings of the Human Factors and Ergonomics Society Annual Meeting 40 (4): 204–8. https://doi.org/10.1177/154193129604000413.\n\n\nShaw, Steven D., und Gideon Nave. 2026. „Thinking—Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning and the Rise of Cognitive Surrender“. SSRN Scholarly Paper. Rochester, NY. 11. Januar 2026. https://doi.org/10.2139/ssrn.6097646."
   },
   {
     "objectID": "index.html",
@@ -802,7 +802,7 @@
     "href": "slides/ai-higher-ed/index.html#die-zentrale-einsicht",
     "title": "KI in der Hochschulbildung: Refresher 2026",
     "section": "Die zentrale Einsicht",
-    "text": "Die zentrale Einsicht\n\n\n\n\n\n\n\n\n\n\n\n Kernaussage: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses. Keine KI kann diesen biologischen Engpass umgehen (Sweller 2024).\n\n\n\nDas zentrale Modell aus Kurs 2: Arbeitsgedächtnis als Nadelöhr\nNur 4±1 Elemente gleichzeitig verarbeitbar\nAlles Lernen muss hindurch, egal ob mit oder ohne KI\nKeine Abkürzung möglich"
+    "text": "Die zentrale Einsicht\n\n\n\n\n\n\n\n\n\n\n\n Kernaussage: Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses. Keine KI kann diesen biologischen Engpass umgehen (swellerCognitiveLoadTheory2024?).\n\n\n\nDas zentrale Modell aus Kurs 2: Arbeitsgedächtnis als Nadelöhr\nNur 4±1 Elemente gleichzeitig verarbeitbar\nAlles Lernen muss hindurch, egal ob mit oder ohne KI\nKeine Abkürzung möglich"
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#wie-verändert-ki-unser-denken",
@@ -863,9 +863,9 @@
   {
     "objectID": "slides/ai-higher-ed/index.html#wer-ist-anfällig",
     "href": "slides/ai-higher-ed/index.html#wer-ist-anfällig",
-    "title": "KI in der Hochschulbildung: Refresher 2026",
+    "title": "KI in der Lehre: Refresher 2026",
     "section": "Wer ist anfällig?",
-    "text": "Wer ist anfällig?\n\n\n\n\n\nHohes Vertrauen in KI\nMehr Surrender\nKonsultieren KI häufiger, folgen falschen Empfehlungen öfter\n\n\n\nHohe Need for Cognition\nMehr Widerstand\nDenken gerne nach, nutzen KI weniger\n\n\n\nHöherer Fluid IQ\nMehr Widerstand\nErkennen fehlerhafte KI besser, überstimmen häufiger\n\n\n\n\nAber: Niemand ist immun. Selbst die widerstandsfähigsten Teilnehmenden zeigten Surrender-Muster.\n\n\n\nIndividuelle Unterschiede: Drei Faktoren\nTrust in AI: Wer KI mehr vertraut, kapituliert eher\nNeed for Cognition: Wer gerne nachdenkt, widersteht eher\nFluid IQ: Höhere kognitive Fähigkeit schützt teilweise\nAber wichtig: Niemand ist komplett immun gegen Surrender"
+    "text": "Wer ist anfällig?\n\n\n\nAber: Niemand ist immun. Auch die widerstandsfähigsten Teilnehmenden zeigten das Muster.\n\n\nDie individuellen Unterschiede sind aufschlussreich. Wer der KI mehr vertraut, outrcsourct mehr. Wer Freude am Denken hat (hohe Need for Cognition) oder eine höhere fluide Intelligenz besitzt, widersteht eher. Aber der entscheidende Punkt ist: Auch die widerstandsfähigsten Teilnehmenden zeigten das Muster. Die Unterschiede sind graduell, nicht kategorisch. Outsourcing ist der Default, Widerstand ist die Ausnahme."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#das-paradox-neu-interpretiert",
@@ -940,9 +940,9 @@
   {
     "objectID": "slides/ai-higher-ed/index.html#drei-kernaussagen",
     "href": "slides/ai-higher-ed/index.html#drei-kernaussagen",
-    "title": "KI in der Hochschulbildung: Refresher 2026",
+    "title": "KI in der Lehre: Refresher 2026",
     "section": "Drei Kernaussagen",
-    "text": "Drei Kernaussagen\n\n\n1. Cognitive Surrender ist ein kognitiver Default, kein individuelles Versagen. 80% folgen falscher KI, selbst Anreize eliminieren es nicht vollständig.\n\n. . .\n2. Verstehen kann man nicht auslagern. Das interne Modell, das Wahrnehmung formt und Bewertung ermöglicht, entsteht nur durch eigene kognitive Arbeit.\n\n. . .\n3. Je mächtiger die KI, desto mehr Wissen brauchen die Nutzenden, nicht weniger. Das Good-Regulator-Theorem lässt keinen anderen Schluss zu.\n\n\n\nDrei Take-Aways\nSurrender ist menschlich und schwer zu verhindern\nVerstehen ist nicht auslagerbar, weil Wissen Wahrnehmung formt\nDie Anforderungen an internes Wissen steigen mit der KI-Fähigkeit"
+    "text": "Drei Kernaussagen\n\n\n1. Outsourcing ist ein kognitiver Default, keine individuelle Schwäche. 80% folgen falscher KI. Anreize allein verhindern das nicht.\n\n2. Verstehen kann man nicht auslagern. Kompetenz entsteht nur durch eigene kognitive Arbeit.\n\n3. Die Antwort ist besseres Aufgabendesign, nicht neue Theorie. Die Designschwächen waren immer da. KI macht sie folgenreich.\n\n\nDrei Kernaussagen zum Mitnehmen. Erstens: Outsourcing ist der Default, nicht die Ausnahme, und nicht ein Charakterfehler. Shaw und Nave haben das überzeugend quantifiziert. Zweitens: Verstehen kann man nicht auslagern. Die internen Modelle, die Wahrnehmung formen und Evaluation ermöglichen, entstehen nur durch eigene kognitive Arbeit. Drittens: Die produktive Antwort ist Aufgabendesign, nicht Überwachung und nicht neue Theorie. KI hat nicht verändert, was gute Lehre erfordert. Sie hat verändert, was passiert, wenn man es falsch macht."
   },
   {
     "objectID": "slides/ai-higher-ed/index.html#designprinzipien-für-ki-in-der-lehre",
@@ -950,5 +950,96 @@
     "title": "KI in der Hochschulbildung: Refresher 2026",
     "section": "Designprinzipien für KI in der Lehre",
     "text": "Designprinzipien für KI in der Lehre\n\n\n\n\n\nGenerative Modelle zuerst\nSchemata aufbauen, bevor KI-Zugang für Kernprozesse\n\n\n\nSparringspartner\nKI erzeugt Vorhersagen, Lernende bewerten\n\n\n\nScaffolding anpassen\nUnterstützung an Vorwissen kalibrieren\n\n\n\nSurrender adressieren\nMetakognition fördern, Bewertung einüben\n\n\n\n\n Nicht anti-KI, sondern pro-Lernen. Die Frage ist nicht ob, sondern wann und wie KI eingesetzt wird.\n\n\n\nVier Designprinzipien, direkt aus der Theorie abgeleitet\nGenerative Modelle zuerst: Schemata vor KI-Zugang\nSparringspartner: KI als Gegenüber, nicht als Orakel\nScaffolding: Unterstützung ans Vorwissen anpassen\nSurrender adressieren: Metakognition explizit fördern"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#die-drei-kurse-im-überblick",
+    "href": "slides/ai-higher-ed/index.html#die-drei-kurse-im-überblick",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Die drei Kurse im Überblick",
+    "text": "Die drei Kurse im Überblick\n\n\n\n\n\n\n\n\n\nKurs\nLeitfrage\nKernbotschaft\n\n\n\n\nBeginner\nWas ist KI?\nSprachmodelle als statistische Mustervervollständigung\n\n\nIntermediate\nWie funktioniert Lernen?\nArbeitsgedächtnis als Nadelöhr; Cognitive Load; Offloading vs. Outsourcing\n\n\nAdvanced\nWie gestalten wir Aufgaben?\nCLT als Designprinzip; 5 Leitfragen; Worked Examples\n\n\n\n\n\nDer rote Faden: Internes Wissen bestimmt, ob KI hilft oder schadet.\n\n\nKurze Orientierung: Wo stehen wir nach drei Kursen? Die Beginner-Kurse haben geklärt, was Sprachmodelle sind und was sie können. Im Intermediate-Kurs haben wir uns mit der kognitiven Architektur beschäftigt: Arbeitsgedächtnis, Cognitive Load, und die zentrale Unterscheidung zwischen Offloading und Outsourcing. Im Advanced-Kurs ging es um die praktische Umsetzung: Aufgaben gestalten mit den 5 Leitfragen. Heute schauen wir uns neue Forschung an, die unsere Frameworks bestätigt und erweitert."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#das-schlüsselkonzept-offloading-vs.-outsourcing",
+    "href": "slides/ai-higher-ed/index.html#das-schlüsselkonzept-offloading-vs.-outsourcing",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Das Schlüsselkonzept: Offloading vs. Outsourcing",
+    "text": "Das Schlüsselkonzept: Offloading vs. Outsourcing\n\n\nOffloading\nKI entlastet, aber eigenes Denken bleibt aktiv\n\nKI fasst Quellen zusammen, Studierende analysieren selbst\nChirurg:in nutzt Checkliste, Urteilsvermögen bleibt\nTaschenrechner für Arithmetik während Problemlösen\n\nExtrinsische Last wird reduziert\n\nOutsourcing\nKI ersetzt das Denken\n\nKI schreibt die Analyse, Studierende überarbeiten Formulierungen\nStudent:in übernimmt KI-Antwort ohne eigenen Versuch\nKI schreibt den Essay komplett\n\nIntrinsische Verarbeitung wird übersprungen\n\n\n\nDasselbe Tool, aber verschiedene Wirkungen. Der Unterschied liegt im Aufgabendesign.\n\n\nDas ist das Schlüsselkonzept aus dem Intermediate-Kurs, und es wird heute unser Werkzeug sein, um neue Forschung einzuordnen. Offloading reduziert extrinsische Last, das Denken bleibt bei den Lernenden. Outsourcing delegiert die intrinsische Verarbeitung, die eigentlich das Lernen ausmacht. Die entscheidende Frage ist immer: Welche kognitiven Operationen bleiben bei den Studierenden?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#die-studie",
+    "href": "slides/ai-higher-ed/index.html#die-studie",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Die Studie",
+    "text": "Die Studie\nShaw & Nave (2026): “Thinking: Fast, Slow, and Artificial” (Shaw und Nave 2026)\n\n\nDesign: Cognitive Reflection Test (CRT) mit manipulierter KI-Genauigkeit\nN = 1’372 Teilnehmende, 9’593 Durchgänge, 3 präregistrierte Studien\nTeilnehmende konnten frei eine KI (ChatGPT) konsultieren\nEntscheidend: Die KI lieferte zufällig korrekte oder falsche Antworten\n\n\n\n\nEffektstärke KI-korrekt vs. KI-falsch: Cohen’s h = 0.81\n\n\nDas Studiendesign ist elegant. Die Teilnehmenden lösen den Cognitive Reflection Test, den klassischen Test für analytisches Denken. Sie können dabei frei ChatGPT konsultieren. Aber die KI liefert über versteckte Prompts zufällig entweder die korrekte Antwort oder eine plausible, aber falsche Antwort. So kann man direkt messen: Denken die Leute selber nach, oder folgen sie einfach der KI? Die Ergebnisse sind eindeutig. Ohne KI: 45.8% korrekt, das ist die Baseline. Mit korrekter KI: 71%, die KI hilft. Aber mit falscher KI: 31.5%, das ist unter der Baseline! Die Leute werden durch falsche KI schlechter als ohne KI. Das ist ein grosser Effekt: h = 0.81."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#konfidenz-steigt-korrektur-scheitert",
+    "href": "slides/ai-higher-ed/index.html#konfidenz-steigt-korrektur-scheitert",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Konfidenz steigt, Korrektur scheitert",
+    "text": "Konfidenz steigt, Korrektur scheitert\n\n\nKonfidenz-Illusion\n\n\n\nBedingung\nKonfidenz\n\n\n\n\nOhne KI\n65.3%\n\n\nMit KI\n77.0%\n\n\n\n+12 Prozentpunkte, obwohl ~50% der KI-Antworten falsch waren.\nDie Leute werden sicherer, nicht genauer.\n\nLässt sich das verhindern?\n\n\n\nIntervention\nErgebnis\n\n\n\n\nZeitdruck (Studie 2)\nKein Effekt\n\n\nAnreize + Feedback (Studie 3)\nOverride-Rate steigt von 20% auf 42%\n\n\n\n. . .\nAber: 58% folgen auch unter optimalen Bedingungen der falschen KI.\n\n\n\nOutsourcing ist nicht leicht zu verhindern. Selbst bei Anreizen und direktem Feedback bleibt die Mehrheit beim KI-Vorschlag.\n\n\nZwei weitere bemerkenswerte Befunde. Erstens: Die Konfidenz steigt um 12 Prozentpunkte, obwohl die Hälfte der KI-Antworten absichtlich falsch war. Die Leute denken, sie wissen es besser, weil sie die KI gefragt haben, selbst wenn die KI sie in die Irre geführt hat. Das ist die metakognitive Falle in Aktion. Zweitens: Lässt sich das verhindern? Zeitdruck macht es nicht besser. Anreize und Feedback helfen etwas: Die Override-Rate verdoppelt sich. Aber selbst unter optimalen Bedingungen folgen 58% der falschen KI. Das Verhalten ist robust."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#shaw-nave-nennen-das-system-3",
+    "href": "slides/ai-higher-ed/index.html#shaw-nave-nennen-das-system-3",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Shaw & Nave nennen das “System 3”",
+    "text": "Shaw & Nave nennen das “System 3”\nDie Autoren schlagen eine Tri-System-Theorie vor:\n\n\n\n\n\n\n\n\n\n\n\nSystem 1\nSystem 2\nSystem 3\n\n\n\n\nVerarbeitung\nSchnell, intuitiv\nLangsam, analytisch\nExtern, algorithmisch\n\n\nOrt\nIm Kopf\nIm Kopf\nIn der Maschine\n\n\nAufwand\nGering\nHoch\nKeiner (für den Nutzer)\n\n\n\n\nShaw & Nave sehen KI als drittes kognitives System, das Intuition und Deliberation ergänzt, verdrängt oder verzerrt.\n\n\nDie theoretische Ambition ist klar: Kahneman erweitern für das KI-Zeitalter.\n\n\nShaw und Nave gehen über die Empirie hinaus und schlagen ein neues theoretisches Modell vor: System 3. Neben Kahnemans System 1 (schnell, intuitiv) und System 2 (langsam, analytisch) positionieren sie KI als drittes kognitives System: extern, algorithmisch, und für den Nutzer ohne kognitiven Aufwand. Das ist eine ambitionierte These. Aber brauchen wir das wirklich?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#brauchen-wir-ein-neues-system",
+    "href": "slides/ai-higher-ed/index.html#brauchen-wir-ein-neues-system",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Brauchen wir ein neues System?",
+    "text": "Brauchen wir ein neues System?\nDie Befunde lassen sich mit bestehenden Konzepten erklären:\n\n\n\n\n\n\n\n\nShaw & Nave Befund\nBestehende Erklärung\n\n\n\n\nUnkritische Übernahme von KI-Output\nExtremes Ende des Offloading-Outsourcing-Spektrums\n\n\nKonfidenz steigt trotz Fehlern\nMetakognitive Falle: Flüssigkeit wird mit Richtigkeit verwechselt\n\n\nRobust gegen Anreize\nAutomation Bias (Mosier und Skitka 1996): gut etabliert\n\n\nIndividuelle Unterschiede (NFC, IQ)\nStandardmoderatoren der System-2-Aktivierung\n\n\n\n\n\nDer Mechanismus: KI-Output ist flüssig, selbstbewusst und kohärent. Genau das unterdrückt das Konfliktsignal, das normalerweise System 2 aktiviert.\n\n\n\nDie Daten sind exzellent. Die Theorie ist überflüssig.\n\n\nIch denke, wir brauchen kein neues kognitives System, um diese Befunde zu erklären. Unkritische Übernahme? Das ist das extreme Ende des Offloading-Outsourcing-Spektrums, das wir im Intermediate-Kurs behandelt haben. Konfidenz-Inflation? Das ist die metakognitive Falle: Flüssiger Output wird mit korrektem Output verwechselt. Robustheit gegen Anreize? Das kennen wir seit Jahrzehnten aus der Automation-Bias-Literatur. Der Mechanismus ist einfach: KI-Output ist flüssig, selbstbewusst und kohärent. Das unterdrückt genau das Konfliktsignal, das normalerweise analytisches Denken aktiviert. Dafür braucht man kein neues System. Man muss nur erkennen, dass KI ein beispiellos effektiver Auslöser für bestehende kognitive Abkürzungen ist."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#eine-bessere-erklärung-es-ist-rational",
+    "href": "slides/ai-higher-ed/index.html#eine-bessere-erklärung-es-ist-rational",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Eine bessere Erklärung: Es ist rational",
+    "text": "Eine bessere Erklärung: Es ist rational\nShaw & Nave sehen ein kognitives Architektur-Problem (System 3 verdrängt System 2).\nIch sehe ein Aufgabendesign-Problem.\n\n\n\nStudierende lösen ein Optimierungsproblem:\n\nU = Note(jetzt) - Aufwand + Lernwert(Zukunft)\n\nWenn KI guten Output billig macht, ist Outsourcing die rationale Strategie.\n\n\nDas Proxy-Problem:\nNoten belohnen Produkte (Essays, Code, Berichte).\nDiese korrelierten historisch mit Lernen, weil gute Produkte ohne Verständnis aufwändig waren.\nKI bricht diese Korrelation.\nDie Designschwächen waren immer da. Sie waren nur nicht folgenreich.\n\n\n\n\nNicht “kognitives Versagen”. Nicht “System 3”. Sondern: rationale Antwort auf eine fehlausgerichtete Aufgabenumgebung.\n\n\nHier ist mein alternativer Erklärungsrahmen. Ich sehe kein Problem der kognitiven Architektur, sondern ein Problem des Aufgabendesigns. Studierende lösen ein implizites Optimierungsproblem: Note jetzt, minus Aufwand, plus diskontierter Lernwert in der Zukunft. Wenn KI gute Produkte billig macht, ist Outsourcing die rationale Strategie. Das ist kein kognitives Versagen und kein neues System. Es ist eine rationale Antwort auf eine fehlausgerichtete Aufgabenumgebung. Noten belohnen Produkte. Produkte korrelierten historisch mit Lernen, weil man sie ohne Verständnis nicht herstellen konnte. KI bricht diese Korrelation. Die Designschwächen waren immer da, sie waren nur nicht folgenreich."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#die-selbstverstärkende-falle",
+    "href": "slides/ai-higher-ed/index.html#die-selbstverstärkende-falle",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Die selbstverstärkende Falle",
+    "text": "Die selbstverstärkende Falle\n\n\n\nOutsourcing → Kompetenz stagniert → Selbsteinschätzung steigt → kein internes Signal zum Aufhören\nDas ist das Evaluationsparadox in dynamischer Form: Um KI-Output zu bewerten, braucht man genau die Kompetenz, die das Lernen aufbauen sollte.\n\n\nHier sehen wir, warum Outsourcing in den Daten von Shaw und Nave so robust ist. Es ist eine selbstverstärkende Falle. Beim eigenen Arbeiten wachsen Kompetenz und Selbsteinschätzung ungefähr parallel. Beim Outsourcing aber stagniert die Kompetenz, während die Selbsteinschätzung steigt, weil der flüssige KI-Output das Gefühl erzeugt, man habe etwas verstanden. Das ist das Evaluationsparadox in dynamischer Form. Um zu beurteilen, ob die KI-Antwort stimmt, braucht man genau die Kompetenz, die die Aufgabe hätte aufbauen sollen. Ohne diese Kompetenz gibt es kein internes Signal, das sagt: “Stopp, hier stimmt etwas nicht.” Die Falle schliesst sich."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#die-antwort-ist-aufgabendesign",
+    "href": "slides/ai-higher-ed/index.html#die-antwort-ist-aufgabendesign",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Die Antwort ist Aufgabendesign",
+    "text": "Die Antwort ist Aufgabendesign\nNicht Überwachung. Nicht Verbote. Nicht neue Theorie.\n\n\n\n\n\n\n\n\nPrinzip\nUmsetzung\n\n\n\n\nEigener Versuch zuerst\nStudierende arbeiten vor dem KI-Einsatz. Dann vergleichen.\n\n\nProzess, nicht nur Produkt\nZwischenartefakte sichtbar machen (Entwürfe, Arbeitsprotokolle, Revisionen)\n\n\nSparringpartner, nicht Orakel\nKI generiert Gegenargumente, Fehler, Alternativen, die Studierende bewerten\n\n\nMündliche Komponente\nErklären in Echtzeit mit Rückfragen ist der stärkste und am wenigsten genutzte Designhebel\n\n\nOutsourcing explizit thematisieren\nDas Muster benennen, nicht moralisieren. Es ist ein Default, kein Charakterfehler.\n\n\n\n\n\nDie Leitfrage: Kann jemand dieses Produkt abliefern, ohne die kognitive Arbeit zu leisten, die ich beabsichtige? Wenn ja: Designproblem.\n\n\nDie Konsequenz aus all dem ist nicht mehr Überwachung und nicht neue Theorie. Es ist besseres Aufgabendesign. Fünf Prinzipien, keines davon erwähnt KI, aber alle produzieren KI-resiliente Aufgaben. Erstens: Eigener Versuch vor dem KI-Einsatz. Das ist das Try-Then-Check-Muster aus dem Intermediate-Kurs. Zweitens: Prozess sichtbar machen, nicht nur das Endprodukt bewerten. Drittens: KI als Sparringpartner einsetzen, der Fehler und Gegenargumente liefert, nicht als Orakel, das Antworten gibt. Viertens: Mündliche Komponenten. Erklären in Echtzeit mit Rückfragen ist der stärkste Designhebel, den wir haben. Fünftens: Outsourcing explizit thematisieren, als Default, nicht als Charakterfehler. Die Leitfrage für jede Aufgabe ist: Kann jemand dieses Produkt abliefern, ohne die kognitive Arbeit zu leisten, die ich beabsichtige? Wenn ja, ist das ein Designproblem."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#diskussion",
+    "href": "slides/ai-higher-ed/index.html#diskussion",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Diskussion",
+    "text": "Diskussion\n\n\nWo in euren Aufgaben ist der Weg des geringsten Widerstands nicht der Lernweg?\n\n\n\nUnd: Was wäre die kleinste Änderung, die das ändert?\n\n\nOffene Diskussion. Die zentrale Frage: Wo in euren eigenen Aufgaben können Studierende ein gutes Produkt abliefern, ohne die kognitive Arbeit zu leisten, die ihr beabsichtigt? Und was wäre die kleinste Designänderung, die das ändert?"
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#kurs-1-was-ist-ki",
+    "href": "slides/ai-higher-ed/index.html#kurs-1-was-ist-ki",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Kurs 1: Was ist KI?",
+    "text": "Kurs 1: Was ist KI?\nBeginner: Grundlagen für Lehrende\n\n\nKontext bestimmt das Ergebnis. Sprachmodelle arbeiten durch statistische Mustervervollständigung. Wenn das Ergebnis nicht passt, fehlt meistens Kontext im Prompt.\nVielseitig, aber fehleranfällig. Chatbots haben keine eingebaute Faktenprüfung. Kritische Evaluation ist immer notwendig.\nExpert:innen profitieren. Lernende riskieren Lernverlust. Lernen erfordert kognitive Anstrengung, die KI zu übernehmen droht.\n\n\nIm Beginner-Kurs haben wir drei Grundfragen beantwortet: Was ist KI, was kann sie, und wann sollte man sie einsetzen? Die zentrale Einsicht: Sprachmodelle sind statistische Muster-Vervollständiger. Sie sind vielseitig, aber fehleranfällig. Und die entscheidende Unterscheidung: Expert:innen profitieren, weil sie Ergebnisse evaluieren können. Lernende riskieren, dass die kognitive Arbeit, die das Lernen ausmacht, an die KI delegiert wird."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#kurs-2-wie-funktioniert-lernen",
+    "href": "slides/ai-higher-ed/index.html#kurs-2-wie-funktioniert-lernen",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Kurs 2: Wie funktioniert Lernen?",
+    "text": "Kurs 2: Wie funktioniert Lernen?\nIntermediate: Kognitive Architektur und KI\n\n\nLernen = Schemabildung durch produktive kognitive Verarbeitung. Arbeitsgedächtnis ist das Nadelöhr: ~4 Elemente gleichzeitig. Was nicht aktiv verarbeitet wird, wird nicht gelernt.\nDas Evaluationsparadox. Um KI-Output kritisch zu beurteilen, braucht man genau die Kompetenz, die die Aufgabe aufbauen sollte. Kompetente KI-Nutzung setzt Kompetenz voraus.\nDie Reihenfolge entscheidet. Eigener Versuch vor dem KI-Einsatz. Fünf Leitfragen schützen die kognitiven Operationen, die Schemata aufbauen.\n\n\nDer Intermediate-Kurs war der umfangreichste. Drei Kernbotschaften: Erstens, Lernen bedeutet Schemabildung, und das Arbeitsgedächtnis ist das Nadelöhr. Alles muss durch diesen Engpass, keine KI kann das umgehen. Zweitens, das Evaluationsparadox: Um zu beurteilen, ob ein KI-Output stimmt, braucht man die Expertise, die man gerade erst aufbauen sollte. Drittens, die Reihenfolge ist entscheidend: Eigener Versuch zuerst, dann KI-Feedback. Die fünf Leitfragen helfen, Aufgaben so zu gestalten, dass die lernrelevante kognitive Arbeit bei den Studierenden bleibt."
+  },
+  {
+    "objectID": "slides/ai-higher-ed/index.html#kurs-3-wie-gestalten-wir-aufgaben",
+    "href": "slides/ai-higher-ed/index.html#kurs-3-wie-gestalten-wir-aufgaben",
+    "title": "KI in der Lehre: Refresher 2026",
+    "section": "Kurs 3: Wie gestalten wir Aufgaben?",
+    "text": "Kurs 3: Wie gestalten wir Aufgaben?\nAdvanced: KI-Tools für die Lehre bauen\n\n\nDer Worked-Example-Effekt. Lernende, die durchgearbeitete Beispiele studieren, lernen besser als solche, die unangeleitet Probleme lösen. Grund: weniger kognitive Belastung, mehr Kapazität für Schemabildung.\nPersonalisierung senkt extrinsische Last. Vertraute Kontexte reduzieren unnötige kognitive Belastung und erhöhen die Motivation. Bessere Schemabildung und Transfer.\nStrukturierte KI-Outputs als Werkzeug. Personalisierte Worked-Example-Generatoren bauen: Lernprofil erfassen, Beispiele anpassen, Scaffolding bereitstellen, schrittweise Lösungen anbieten.\n\n\nIm Advanced-Kurs haben wir die Theorie in die Praxis umgesetzt. Der Kurs selbst war ein Worked Example: Wir haben gezeigt, wie man personalisierte Worked-Example-Generatoren mit KI baut. Die drei Botschaften: Der Worked-Example-Effekt ist einer der robustesten Befunde der Lernforschung. Personalisierung senkt die extrinsische Last und erhöht die Motivation. Und mit strukturierten KI-Outputs kann man diese Prinzipien skalieren."
   }
 ]

@@ -1,5 +1,5 @@
 ---
-title: "KI in der Hochschulbildung: Refresher 2026"
+title: "KI in der Lehre: Refresher 2026"
 subtitle: "Verstehen kann man nicht auslagern"
 format:
   revealjs:
@@ -12,7 +12,6 @@ bibliography:
 ```{r}
 #| include: false
 library(tidyverse)
-library(DiagrammeR)
 
 # Set seed for reproducible simulated data
 set.seed(2025)
@@ -38,14 +37,104 @@ theme_minimal_custom <- theme_minimal(base_size = 18) +
     legend.background = element_rect(fill = "#F5F0E8", color = NA),
     text = element_text(color = "#1A1714")
   )
-
-# Variant with top legend for line plots
-theme_minimal_top_legend <- theme_minimal_custom +
-  theme(
-    legend.position = "top",
-    legend.text = element_text(size = 16)
-  )
 ```
+
+
+# Wo wir stehen
+
+
+## Kurs 1: Was ist KI? {.smaller}
+
+**Beginner: Grundlagen für Lehrende**
+
+<br>
+
+1. **Kontext bestimmt das Ergebnis.** Sprachmodelle arbeiten durch statistische Mustervervollständigung. Wenn das Ergebnis nicht passt, fehlt meistens Kontext im Prompt.
+
+2. **Vielseitig, aber fehleranfällig.** Chatbots haben keine eingebaute Faktenprüfung. Kritische Evaluation ist immer notwendig.
+
+3. **Expert:innen profitieren. Lernende riskieren Lernverlust.** Lernen erfordert kognitive Anstrengung, die KI zu übernehmen droht.
+
+::: {.notes}
+Im Beginner-Kurs haben wir drei Grundfragen beantwortet: Was ist KI, was kann sie, und wann sollte man sie einsetzen? Die zentrale Einsicht: Sprachmodelle sind statistische Muster-Vervollständiger. Sie sind vielseitig, aber fehleranfällig. Und die entscheidende Unterscheidung: Expert:innen profitieren, weil sie Ergebnisse evaluieren können. Lernende riskieren, dass die kognitive Arbeit, die das Lernen ausmacht, an die KI delegiert wird.
+:::
+
+
+## Kurs 2: Wie funktioniert Lernen? {.smaller}
+
+**Intermediate: Kognitive Architektur und KI**
+
+<br>
+
+1. **Lernen = Schemabildung durch produktive kognitive Verarbeitung.** Arbeitsgedächtnis ist das Nadelöhr: ~4 Elemente gleichzeitig. Was nicht aktiv verarbeitet wird, wird nicht gelernt.
+
+2. **Das Evaluationsparadox.** Um KI-Output kritisch zu beurteilen, braucht man genau die Kompetenz, die die Aufgabe aufbauen sollte. Kompetente KI-Nutzung setzt Kompetenz voraus.
+
+3. **Die Reihenfolge entscheidet.** Eigener Versuch *vor* dem KI-Einsatz. Fünf Leitfragen schützen die kognitiven Operationen, die Schemata aufbauen.
+
+::: {.notes}
+Der Intermediate-Kurs war der umfangreichste. Drei Kernbotschaften: Erstens, Lernen bedeutet Schemabildung, und das Arbeitsgedächtnis ist das Nadelöhr. Alles muss durch diesen Engpass, keine KI kann das umgehen. Zweitens, das Evaluationsparadox: Um zu beurteilen, ob ein KI-Output stimmt, braucht man die Expertise, die man gerade erst aufbauen sollte. Drittens, die Reihenfolge ist entscheidend: Eigener Versuch zuerst, dann KI-Feedback. Die fünf Leitfragen helfen, Aufgaben so zu gestalten, dass die lernrelevante kognitive Arbeit bei den Studierenden bleibt.
+:::
+
+
+## Kurs 3: Wie gestalten wir Aufgaben? {.smaller}
+
+**Advanced: KI-Tools für die Lehre bauen**
+
+<br>
+
+1. **Der Worked-Example-Effekt.** Lernende, die durchgearbeitete Beispiele studieren, lernen besser als solche, die unangeleitet Probleme lösen. Grund: weniger kognitive Belastung, mehr Kapazität für Schemabildung.
+
+2. **Personalisierung senkt extrinsische Last.** Vertraute Kontexte reduzieren unnötige kognitive Belastung und erhöhen die Motivation. Bessere Schemabildung und Transfer.
+
+3. **Strukturierte KI-Outputs als Werkzeug.** Personalisierte Worked-Example-Generatoren bauen: Lernprofil erfassen, Beispiele anpassen, Scaffolding bereitstellen, schrittweise Lösungen anbieten.
+
+::: {.notes}
+Im Advanced-Kurs haben wir die Theorie in die Praxis umgesetzt. Der Kurs selbst war ein Worked Example: Wir haben gezeigt, wie man personalisierte Worked-Example-Generatoren mit KI baut. Die drei Botschaften: Der Worked-Example-Effekt ist einer der robustesten Befunde der Lernforschung. Personalisierung senkt die extrinsische Last und erhöht die Motivation. Und mit strukturierten KI-Outputs kann man diese Prinzipien skalieren.
+:::
+
+
+## Das Schlüsselkonzept: Offloading vs. Outsourcing {.smaller}
+
+::::{.columns}
+:::{.column width="50%"}
+### Offloading
+
+KI **entlastet**, aber eigenes Denken bleibt aktiv
+
+- KI fasst Quellen zusammen, Studierende analysieren selbst
+- Chirurg:in nutzt Checkliste, Urteilsvermögen bleibt
+- Taschenrechner für Arithmetik *während* Problemlösen
+
+[Extrinsische Last wird reduziert]{style="color: #B8821A; font-weight: bold;"}
+:::
+
+:::{.column width="50%"}
+### Outsourcing
+
+KI **ersetzt** das Denken
+
+- KI schreibt die Analyse, Studierende überarbeiten Formulierungen
+- Student:in übernimmt KI-Antwort ohne eigenen Versuch
+- KI schreibt den Essay komplett
+
+[Intrinsische Verarbeitung wird übersprungen]{style="color: #A63D2F; font-weight: bold;"}
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Dasselbe Tool, aber verschiedene Wirkungen. Der Unterschied liegt im Aufgabendesign.
+:::
+
+::: {.notes}
+Das ist das Schlüsselkonzept aus dem Intermediate-Kurs, und es wird heute unser Werkzeug sein, um neue Forschung einzuordnen. Offloading reduziert extrinsische Last, das Denken bleibt bei den Lernenden. Outsourcing delegiert die intrinsische Verarbeitung, die eigentlich das Lernen ausmacht. Die entscheidende Frage ist immer: Welche kognitiven Operationen bleiben bei den Studierenden?
+:::
+
+
+# Neue Forschung
+
 
 ## {.center}
 
@@ -66,1846 +155,385 @@ Ihre Konfidenz steigt dabei.
 
 . . .
 
-<br><br>
+<br>
 
-::: {style="font-size: 2em; text-align: center; font-weight: 700; color: #24526B;"}
-Verstehen kann man nicht auslagern.
-:::
-
-::: {style="text-align: center; color: #999; font-size: 0.8em; margin-top: 0.5em;"}
+::: {style="text-align: center; color: #999; font-size: 0.9em;"}
 @shawThinkingFastSlow2026
 :::
 
 ::: {.notes}
-- Einstieg mit der provokantesten Zahl aus Shaw & Nave: 80% folgen falscher KI
-- Konfidenz steigt trotzdem
-- Die These des heutigen Refreshers: Verstehen kann man nicht auslagern
-- Was du weisst, bestimmt, ob KI dir hilft oder schadet
+Einstieg mit der provokantesten Zahl aus einer neuen Studie von Shaw und Nave an der Wharton School. 80% folgen einer falschen KI-Empfehlung. Und gleichzeitig steigt ihre Konfidenz, dass die Antwort richtig ist. Das ist bemerkenswert: Nicht nur die Genauigkeit sinkt, die Leute werden gleichzeitig sicherer. Schauen wir uns die Studie genauer an.
 :::
 
 
-## Was wir bisher gemacht haben
+## Die Studie {.smaller}
+
+**Shaw & Nave (2026)**: "Thinking: Fast, Slow, and Artificial" [@shawThinkingFastSlow2026]
 
 <br>
 
-::: {.columns}
-::: {.column width="33%"}
-
-{{< fa microchip size=2x >}}
-
-<br>
-
-**Kurs 1: Was ist KI?**
-
-[Sprachmodelle als statistische Mustervervollständigung]{style="color: #6E6560; font-size: 0.9em;"}
-
-:::
-
-::: {.column width="33%"}
-
-{{< fa brain size=2x >}}
+- **Design:** Cognitive Reflection Test (CRT) mit manipulierter KI-Genauigkeit
+- **N = 1'372** Teilnehmende, 9'593 Durchgänge, 3 präregistrierte Studien
+- Teilnehmende konnten frei eine KI (ChatGPT) konsultieren
+- Entscheidend: Die KI lieferte zufällig **korrekte oder falsche** Antworten
 
 <br>
-
-**Kurs 2: Lernen verstehen**
-
-[Arbeitsgedächtnis, Cognitive Load, erwünschte Schwierigkeiten]{style="color: #6E6560; font-size: 0.9em;"}
-
-:::
-
-::: {.column width="33%"}
-
-{{< fa tools size=2x >}}
-
-<br>
-
-**Kurs 3: Implementierung**
-
-[CLT als Designprinzip, Worked Examples, KI-Werkzeuge bauen]{style="color: #6E6560; font-size: 0.9em;"}
-
-:::
-:::
-
-. . .
-
-<br><br>
-
-::: {style="text-align: center; font-size: 1.2em;"}
-**Der rote Faden:** Was du bereits weisst, bestimmt, ob KI dir hilft oder schadet.
-:::
-
-::: {.notes}
-- Kurzer Rückblick: drei Kurse, ein roter Faden
-- Kurs 1: Was Sprachmodelle sind und was sie können
-- Kurs 2: Kognitionswissenschaftliche Grundlagen des Lernens
-- Kurs 3: Praktische Anwendung mit Cognitive Load Theory
-- Der rote Faden war immer: Expertise bestimmt den Nutzen von KI
-:::
-
-
-## Die zentrale Einsicht {.nostretch}
-
-```{r}
-#| fig-width: 14
-#| fig-height: 5.5
-#| echo: false
-#| out-width: "95%"
-#| fig-align: "center"
-
-ggplot() +
-  # Left box: Neue Information (wide)
-  geom_rect(
-    aes(xmin = 0.5, xmax = 2, ymin = 0.2, ymax = 0.8),
-    fill = color_tertiary, color = "white", linewidth = 2
-  ) +
-  # Right box: Langzeitgedächtnis (wide)
-  geom_rect(
-    aes(xmin = 4, xmax = 5.5, ymin = 0.2, ymax = 0.8),
-    fill = color_secondary, color = "white", linewidth = 2
-  ) +
-  # Middle: Bottleneck/hourglass shape using polygon
-  geom_polygon(
-    aes(
-      x = c(2.4, 2.85, 3.15, 3.6, 3.6, 3.15, 2.85, 2.4),
-      y = c(0.8, 0.55, 0.55, 0.8, 0.2, 0.45, 0.45, 0.2)
-    ),
-    fill = color_primary, color = "white", linewidth = 2
-  ) +
-  # Arrows connecting components
-  geom_segment(
-    aes(x = 2.05, xend = 2.35, y = 0.5, yend = 0.5),
-    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
-    linewidth = 2, color = "grey40"
-  ) +
-  geom_segment(
-    aes(x = 3.65, xend = 3.95, y = 0.5, yend = 0.5),
-    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
-    linewidth = 2, color = "grey40"
-  ) +
-  # Labels above shapes
-  geom_text(
-    aes(x = 1.25, y = 0.93, label = "Neue\nInformation"),
-    size = 6, fontface = "bold", lineheight = 0.9
-  ) +
-  geom_text(
-    aes(x = 3, y = 0.93, label = "Arbeitsgedächtnis"),
-    size = 6, fontface = "bold"
-  ) +
-  geom_text(
-    aes(x = 4.75, y = 0.93, label = "Langzeit-\ngedächtnis"),
-    size = 6, fontface = "bold", lineheight = 0.9
-  ) +
-  # Capacity labels inside shapes
-  geom_text(
-    aes(x = 1.25, y = 0.5, label = "∞"),
-    size = 14, color = "white", fontface = "bold"
-  ) +
-  geom_text(
-    aes(x = 3, y = 0.5, label = "4±1"),
-    size = 7, color = "white", fontface = "bold"
-  ) +
-  geom_text(
-    aes(x = 4.75, y = 0.5, label = "∞"),
-    size = 14, color = "white", fontface = "bold"
-  ) +
-  # Bottleneck annotation
-  geom_text(
-    aes(x = 3, y = 0.07, label = "DAS NADELÖHR"),
-    size = 6, color = color_primary, fontface = "bold"
-  ) +
-  coord_cartesian(xlim = c(0.2, 5.8), ylim = c(0, 1)) +
-  theme_void() +
-  theme(plot.margin = margin(5, 5, 5, 5))
-```
-
-. . .
-
-::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0; margin-top: 0.5em;"}
-{{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses. Keine KI kann diesen biologischen Engpass umgehen [@swellerCognitiveLoadTheory2024].
-:::
-
-::: {.notes}
-- Das zentrale Modell aus Kurs 2: Arbeitsgedächtnis als Nadelöhr
-- Nur 4±1 Elemente gleichzeitig verarbeitbar
-- Alles Lernen muss hindurch, egal ob mit oder ohne KI
-- Keine Abkürzung möglich
-:::
-
-
-## {.center}
-
-<br><br>
-
-::: {style="font-size: 1.3em; text-align: center; max-width: 80%; margin: 0 auto;"}
-Was passiert, wenn Menschen KI tatsächlich beim Denken einsetzen?
-:::
-
-. . .
-
-<br><br>
-
-::: {style="font-size: 1.6em; text-align: center; font-weight: bold;"}
-Neue Forschung gibt Antworten.
-:::
-
-::: {.notes}
-- Überleitung zu Shaw & Nave
-- Wir wissen aus den Kursen, dass KI Lernen untergraben kann
-- Jetzt: Was passiert tatsächlich, wenn Menschen KI-gestützt denken?
-:::
-
-
-## Wie verändert KI unser Denken?
-
-<br>
-
-::: {style="font-size: 1.3em; text-align: center; max-width: 85%; margin: 0 auto; line-height: 1.6;"}
-"Wenn KI kognitiv leistungsfähig genug ist, um menschliches Denken zu ergänzen oder zu ersetzen: tut sie das?"
-:::
-
-. . .
-
-<br><br>
-
-::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 0;"}
-**Shaw & Nave (2026):** "Thinking: Fast, Slow, and Artificial"
-
-- 3 präregistrierte Studien
-- N = 1'372 Teilnehmende, 9'593 Trials
-- Cognitive Reflection Test mit manipulierter KI-Genauigkeit
-
-[@shawThinkingFastSlow2026]
-:::
-
-::: {.notes}
-- Shaw & Nave von der Wharton School stellen die zentrale Frage
-- Elegantes Design: CRT-Aufgaben, bei denen die KI-Genauigkeit manipuliert wurde
-- Teilnehmende konnten frei entscheiden, ob sie die KI konsultieren
-- Innerhalb der KI-Bedingung: manche Antworten korrekt, manche absichtlich falsch
-:::
-
-
-## System 1 und System 2
-
-<br>
-
-::: {.columns}
-::: {.column width="45%"}
-
-{{< fa bolt size=3x >}}
-
-<br>
-
-**System 1: Schnell**
-
-[Intuitiv, automatisch, mühelos]{style="color: #6E6560; font-size: 0.95em;"}
-
-<br>
-
-[Heuristiken, Mustererkennung, erste Eindrücke]{style="color: #999; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="45%"}
-
-{{< fa brain size=3x >}}
-
-<br>
-
-**System 2: Langsam**
-
-[Deliberativ, kontrolliert, anstrengend]{style="color: #6E6560; font-size: 0.95em;"}
-
-<br>
-
-[Logisches Denken, Planung, kritische Analyse]{style="color: #999; font-size: 0.85em;"}
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; color: #6E6560;"}
-Das klassische Dual-Process-Modell [@kahnemanThinkingFastSlow2011]. Aber: es geht von rein interner Kognition aus.
-:::
-
-::: {.notes}
-- Kahnemans Dual-Process-Modell: System 1 schnell und intuitiv, System 2 langsam und deliberativ
-- Wichtig: Beide Systeme sind INTERN, im biologischen Gehirn
-- Das Modell wurde entwickelt, bevor KI ein Faktor war
-- Shaw & Nave: Was passiert, wenn ein externes System dazukommt?
-:::
-
-
-## System 3: Künstliche Kognition {.nostretch}
-
-```{r}
-#| fig-width: 14
-#| fig-height: 4
-#| echo: false
-#| out-width: "95%"
-#| fig-align: "center"
-
-# Tri-System diagram
-ggplot() +
-  # System 1 box
-  geom_rect(aes(xmin = 0.5, xmax = 3.5, ymin = 0.2, ymax = 0.8),
-            fill = color_secondary, color = "white", linewidth = 2) +
-  # System 2 box
-  geom_rect(aes(xmin = 4.5, xmax = 7.5, ymin = 0.2, ymax = 0.8),
-            fill = color_secondary, color = "white", linewidth = 2) +
-  # System 3 box (highlighted)
-  geom_rect(aes(xmin = 8.5, xmax = 11.5, ymin = 0.2, ymax = 0.8),
-            fill = color_primary, color = "white", linewidth = 2) +
-  # Dashed boundary line
-  geom_segment(aes(x = 8.2, xend = 8.2, y = 0.0, yend = 1.0),
-               linetype = "dashed", color = "#1A1714", linewidth = 1) +
-  # Boundary labels
-  geom_text(aes(x = 4.0, y = 0.97, label = "Intern (in vivo)"),
-            size = 4.5, color = color_secondary, fontface = "italic") +
-  geom_text(aes(x = 10.0, y = 0.97, label = "Extern (in silico)"),
-            size = 4.5, color = color_primary, fontface = "italic") +
-  # System labels
-  geom_text(aes(x = 2, y = 0.6, label = "System 1"),
-            size = 6, color = "white", fontface = "bold") +
-  geom_text(aes(x = 2, y = 0.4, label = "Schnell"),
-            size = 4.5, color = "white") +
-  geom_text(aes(x = 6, y = 0.6, label = "System 2"),
-            size = 6, color = "white", fontface = "bold") +
-  geom_text(aes(x = 6, y = 0.4, label = "Langsam"),
-            size = 4.5, color = "white") +
-  geom_text(aes(x = 10, y = 0.6, label = "System 3"),
-            size = 6, color = "white", fontface = "bold") +
-  geom_text(aes(x = 10, y = 0.4, label = "Künstlich"),
-            size = 4.5, color = "white") +
-  # Descriptors below
-  geom_text(aes(x = 2, y = 0.07, label = "Intuitiv\nAutomatisch"),
-            size = 3.8, color = color_secondary, lineheight = 0.9) +
-  geom_text(aes(x = 6, y = 0.07, label = "Deliberativ\nKontrolliert"),
-            size = 3.8, color = color_secondary, lineheight = 0.9) +
-  geom_text(aes(x = 10, y = 0.07, label = "Algorithmisch\nDatengetrieben"),
-            size = 3.8, color = color_primary, lineheight = 0.9) +
-  coord_cartesian(xlim = c(0, 12), ylim = c(-0.1, 1.05)) +
-  theme_void() +
-  theme(plot.margin = margin(10, 10, 10, 10))
-```
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Shaw & Nave: KI ist nicht nur ein Werkzeug, sondern ein **funktionaler kognitiver Agent**, der menschliches Denken ergänzen, ersetzen oder verzerren kann [@shawThinkingFastSlow2026].
-:::
-
-::: {.notes}
-- Shaw & Nave erweitern das Modell um System 3: externe, automatisierte, datengetriebene Kognition
-- Wichtiger Unterschied: S1 und S2 sind intern (im Gehirn), S3 ist extern (in silico)
-- S3 ist nicht nur ein passives Werkzeug, sondern ein aktiver Teilnehmer am Denkprozess
-- Die gestrichelte Linie markiert die Grenze des biologischen Gehirns
-:::
-
-
-## Die Routen der Kognition
-
-<br>
-
-::: {style="font-size: 0.85em;"}
-
-| Route | System(e) | Beschreibung |
-|:------|:---------:|:-------------|
-| **Intuition** | S1 | Schnelle, automatische Reaktion ohne Reflexion |
-| **Deliberation** | S2 | Bewusstes Nachdenken bei Unsicherheit |
-| [**Cognitive Offloading**]{style="color: #B8821A;"} | [S2 → S3]{style="color: #B8821A;"} | [Strategische Delegation: S2 bleibt aktiv und bewertet]{style="color: #B8821A;"} |
-| [**Cognitive Surrender**]{style="color: #A63D2F;"} | [S1 → S3]{style="color: #A63D2F;"} | [Unkritische Übernahme: S2 wird umgangen]{style="color: #A63D2F;"} |
-| **Autopilot** | S3 | Stimulus → KI → Antwort, ohne interne Verarbeitung |
-
-: Adaptiert nach @shawThinkingFastSlow2026, Table 2 {.striped}
-:::
-
-. . .
-
-<br>
-
-::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0;"}
-{{< fa lightbulb >}} **Der entscheidende Unterschied:** Offloading ist bewusst und strategisch (System 2 aktiv). Surrender ist automatisch und unkritisch (System 2 umgangen).
-:::
-
-::: {.notes}
-- Fünf Routen der Kognition nach Shaw & Nave
-- Offloading: bewusste Delegation, man denkt mit und bewertet das Ergebnis
-- Surrender: unkritische Übernahme, man akzeptiert ohne zu prüfen
-- Autopilot: die extremste Form, kein internes Denken mehr
-- Die Frage ist: Welche Route nehmen Studierende typischerweise?
-:::
-
-
-## Offloading vs. Kapitulation {.nostretch}
-
-```{r}
-#| fig-width: 12
-#| fig-height: 6
-#| echo: false
-#| out-width: "90%"
-#| fig-align: "center"
-
-spectrum_examples <- tibble(
-  position = c(0.12, 0.30, 0.50, 0.75, 0.92),
-  label = c(
-    "KI prüft\nZitationsformat",
-    "Taschenrechner\nfür Arithmetik",
-    "Studierender\nüberarbeitet\nKI-Entwurf",
-    "Frage an KI ohne\neigenen Versuch",
-    "KI schreibt\nden Aufsatz"
-  ),
-  y_offset = c(0.72, 0.72, 0.76, 0.72, 0.72)
-)
-
-gradient_data <- tibble(
-  x = seq(0, 1, length.out = 200)
-) |>
-  mutate(fill_value = x)
-
-ggplot() +
-  geom_tile(
-    data = gradient_data,
-    aes(x = x, y = 0.2, fill = fill_value, width = 0.006, height = 0.15),
-    show.legend = FALSE
-  ) +
-  scale_fill_gradient(low = color_secondary, high = color_primary) +
-  annotate(
-    "rect",
-    xmin = 0, xmax = 1,
-    ymin = 0.125, ymax = 0.275,
-    fill = NA, color = "#1A1714", linewidth = 0.8
-  ) +
-  geom_segment(
-    data = spectrum_examples,
-    aes(x = position, xend = position, y = 0.30, yend = 0.50),
-    color = "#1A1714", linewidth = 0.6
-  ) +
-  geom_point(
-    data = spectrum_examples,
-    aes(x = position, y = 0.50),
-    size = 5, color = "#1A1714", fill = "white",
-    shape = 21, stroke = 1.5
-  ) +
-  geom_text(
-    data = spectrum_examples,
-    aes(x = position, y = y_offset, label = label),
-    size = 3.8, lineheight = 0.9, fontface = "bold",
-    color = "#1A1714"
-  ) +
-  annotate(
-    "text", x = 0, y = 0.04,
-    label = "Cognitive Offloading",
-    hjust = 0, size = 4.5, fontface = "bold",
-    color = color_secondary
-  ) +
-  annotate(
-    "text", x = 1, y = 0.04,
-    label = "Cognitive Surrender",
-    hjust = 1, size = 4.5, fontface = "bold",
-    color = color_primary
-  ) +
-  annotate(
-    "segment",
-    x = 0, xend = 1, y = -0.08, yend = -0.08,
-    arrow = arrow(length = unit(0.2, "cm"), ends = "both", type = "closed"),
-    color = "#1A1714", linewidth = 0.8
-  ) +
-  annotate(
-    "text", x = 0, y = -0.15,
-    label = "System 2 aktiv: strategische Delegation",
-    hjust = 0, size = 3.8, fontface = "italic",
-    color = color_secondary
-  ) +
-  annotate(
-    "text", x = 1, y = -0.15,
-    label = "System 2 umgangen: unkritische Übernahme",
-    hjust = 1, size = 3.8, fontface = "italic",
-    color = color_primary
-  ) +
-  scale_x_continuous(limits = c(-0.05, 1.05), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(-0.22, 0.95), expand = c(0, 0)) +
-  labs(
-    title = "Spektrum: Cognitive Offloading vs. Cognitive Surrender",
-    subtitle = "Der Übergang von strategischer Nutzung zu unkritischer Übernahme"
-  ) +
-  theme_void() +
-  theme(
-    plot.title = element_text(
-      face = "bold", size = 16, color = "#1A1714",
-      hjust = 0.5, margin = margin(b = 5)
-    ),
-    plot.subtitle = element_text(
-      size = 11, color = "#6E6560",
-      hjust = 0.5, margin = margin(b = 20)
-    ),
-    plot.margin = margin(20, 20, 20, 20)
-  )
-```
-
-::: {.notes}
-- Das Spektrum aus dem Aufbaukurs, jetzt mit der Terminologie von Shaw & Nave
-- Links: Offloading (System 2 aktiv, bewusste Delegation)
-- Rechts: Surrender (System 2 umgangen, unkritische Übernahme)
-- Die entscheidende Frage: Bleibt die eigene Denkarbeit erhalten?
-:::
-
-
-## Studie 1: Cognitive Surrender in Aktion {.nostretch}
 
 ```{r}
 #| fig-width: 10
-#| fig-height: 5.5
-#| echo: false
-#| out-width: "70%"
-#| fig-align: "center"
+#| fig-height: 4.5
+#| fig-align: center
 
-surrender_data <- tibble(
-  condition = factor(
-    c("Ohne KI\n(Brain-Only)", "KI korrekt\n(AI-Accurate)", "KI falsch\n(AI-Faulty)"),
-    levels = c("Ohne KI\n(Brain-Only)", "KI korrekt\n(AI-Accurate)", "KI falsch\n(AI-Faulty)")
+accuracy_data <- tibble(
+  Bedingung = factor(
+    c("Ohne KI\n(Baseline)", "KI korrekt", "KI falsch"),
+    levels = c("Ohne KI\n(Baseline)", "KI korrekt", "KI falsch")
   ),
-  accuracy = c(45.8, 71.0, 31.5),
-  se = c(1.7, 1.6, 1.6),
-  fill_color = c(color_secondary, color_gold, color_primary)
+  Accuracy = c(45.8, 71.0, 31.5),
+  color = c(color_secondary, color_gold, color_primary)
 )
 
-ggplot(surrender_data, aes(x = condition, y = accuracy, fill = condition)) +
+ggplot(accuracy_data, aes(x = Bedingung, y = Accuracy, fill = color)) +
   geom_col(width = 0.6) +
-  geom_errorbar(
-    aes(ymin = accuracy - se, ymax = accuracy + se),
-    width = 0.2, linewidth = 0.8
-  ) +
-  geom_text(
-    aes(label = paste0(accuracy, "%")),
-    vjust = -1.5, size = 6, fontface = "bold"
-  ) +
-  scale_fill_manual(
-    values = c(color_secondary, color_gold, color_primary),
-    guide = "none"
-  ) +
-  # Annotation: below baseline
-  annotate(
-    "segment",
-    x = 1, xend = 3, y = 47.5, yend = 47.5,
-    linetype = "dashed", color = "#999", linewidth = 0.5
-  ) +
-  annotate(
-    "text", x = 2.7, y = 49,
-    label = "Baseline", size = 4, color = "#999"
-  ) +
-  scale_y_continuous(
-    limits = c(0, 85),
-    breaks = seq(0, 80, 20),
-    labels = function(x) paste0(x, "%")
-  ) +
-  labs(
-    x = NULL,
-    y = "Genauigkeit"
-  ) +
+  geom_text(aes(label = paste0(Accuracy, "%")),
+            vjust = -0.5, size = 6, fontface = "bold", color = "#1A1714") +
+  scale_fill_identity() +
+  scale_y_continuous(limits = c(0, 85), breaks = seq(0, 80, 20)) +
+  labs(y = "Korrekte Antworten (%)", x = NULL,
+       title = "Genauigkeit nach Bedingung (Studie 1)") +
   theme_minimal_custom +
-  theme(
-    axis.text.x = element_text(size = 14)
-  )
+  theme(axis.text.x = element_text(size = 16))
 ```
 
-. . .
-
-<br>
-
-::: {style="text-align: center;"}
-93% folgten korrekter KI. **80% folgten falscher KI.** Genauigkeit fiel unter die Baseline. [Cohen's *h* = 0.81]{style="color: #999;"}
+::: {style="text-align: center; color: #6E6560; font-size: 0.9em;"}
+Effektstärke KI-korrekt vs. KI-falsch: Cohen's *h* = 0.81
 :::
 
 ::: {.notes}
-- Die Kernbefunde aus Studie 1: 359 Teilnehmende
-- Ohne KI: 46% korrekt (Baseline)
-- Mit korrekter KI: 71% korrekt (KI hilft)
-- Mit falscher KI: 31.5% korrekt (UNTER der Baseline!)
-- 93% folgten der korrekten KI, 80% folgten der FALSCHEN KI
-- Das ist kein informiertes Entscheiden, das ist Kapitulation
+Das Studiendesign ist elegant. Die Teilnehmenden lösen den Cognitive Reflection Test, den klassischen Test für analytisches Denken. Sie können dabei frei ChatGPT konsultieren. Aber die KI liefert über versteckte Prompts zufällig entweder die korrekte Antwort oder eine plausible, aber falsche Antwort. So kann man direkt messen: Denken die Leute selber nach, oder folgen sie einfach der KI? Die Ergebnisse sind eindeutig. Ohne KI: 45.8% korrekt, das ist die Baseline. Mit korrekter KI: 71%, die KI hilft. Aber mit falscher KI: 31.5%, das ist unter der Baseline! Die Leute werden durch falsche KI schlechter als ohne KI. Das ist ein grosser Effekt: h = 0.81.
 :::
 
 
-## Konfidenz steigt, auch wenn KI falsch liegt {.nostretch}
+## Konfidenz steigt, Korrektur scheitert {.smaller}
 
-```{r}
-#| fig-width: 8
-#| fig-height: 5
-#| echo: false
-#| out-width: "55%"
-#| fig-align: "center"
+::::{.columns}
+:::{.column width="50%"}
+### Konfidenz-Illusion
 
-confidence_data <- tibble(
-  condition = factor(
-    c("Ohne KI\n(Brain-Only)", "Mit KI\n(AI-Assisted)"),
-    levels = c("Ohne KI\n(Brain-Only)", "Mit KI\n(AI-Assisted)")
-  ),
-  confidence = c(65.3, 77.0),
-  se = c(2.21, 1.30)
-)
+| Bedingung | Konfidenz |
+|-----------|-----------|
+| Ohne KI | 65.3% |
+| Mit KI | 77.0% |
 
-ggplot(confidence_data, aes(x = condition, y = confidence, fill = condition)) +
-  geom_col(width = 0.5) +
-  geom_errorbar(
-    aes(ymin = confidence - se, ymax = confidence + se),
-    width = 0.15, linewidth = 0.8
-  ) +
-  geom_text(
-    aes(label = paste0(confidence, "%")),
-    vjust = -1.5, size = 7, fontface = "bold"
-  ) +
-  scale_fill_manual(
-    values = c(color_secondary, color_primary),
-    guide = "none"
-  ) +
-  scale_y_continuous(
-    limits = c(0, 95),
-    breaks = seq(0, 100, 25),
-    labels = function(x) paste0(x, "%")
-  ) +
-  labs(
-    x = NULL,
-    y = "Konfidenz"
-  ) +
-  theme_minimal_custom +
-  theme(axis.text.x = element_text(size = 14))
-```
++12 Prozentpunkte, obwohl ~50% der KI-Antworten falsch waren.
+
+[Die Leute werden sicherer, nicht genauer.]{style="color: #A63D2F; font-weight: bold;"}
+:::
+
+:::{.column width="50%"}
+### Lässt sich das verhindern?
+
+| Intervention | Ergebnis |
+|---|---|
+| Zeitdruck (Studie 2) | Kein Effekt |
+| Anreize + Feedback (Studie 3) | Override-Rate steigt von 20% auf 42% |
 
 . . .
 
+[Aber: 58% folgen auch unter optimalen Bedingungen der falschen KI.]{style="color: #A63D2F; font-weight: bold;"}
+:::
+::::
+
 <br>
 
-::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0; text-align: center;"}
-{{< fa lightbulb >}} +12 Prozentpunkte Konfidenz durch KI-Zugang, **obwohl ca. 50% der KI-Antworten falsch waren.** Die Illusion der Kompetenz.
+::: {style="text-align: center; font-size: 1.05em;"}
+Outsourcing ist nicht leicht zu verhindern. Selbst bei Anreizen und direktem Feedback bleibt die Mehrheit beim KI-Vorschlag.
 :::
 
 ::: {.notes}
-- Besonders beunruhigend: Die Konfidenz stieg durch KI-Zugang um 12 Prozentpunkte
-- Obwohl ungefähr die Hälfte der KI-Antworten absichtlich falsch waren
-- Die Konfidenz sank NICHT, wenn mehr falsche Antworten kamen
-- Direkte Parallele: Performance-Gefühl vs. tatsächliche Kompetenz
-- Studierende fühlen sich sicherer MIT KI, auch wenn sie schlechter abschneiden
+Zwei weitere bemerkenswerte Befunde. Erstens: Die Konfidenz steigt um 12 Prozentpunkte, obwohl die Hälfte der KI-Antworten absichtlich falsch war. Die Leute denken, sie wissen es besser, weil sie die KI gefragt haben, selbst wenn die KI sie in die Irre geführt hat. Das ist die metakognitive Falle in Aktion. Zweitens: Lässt sich das verhindern? Zeitdruck macht es nicht besser. Anreize und Feedback helfen etwas: Die Override-Rate verdoppelt sich. Aber selbst unter optimalen Bedingungen folgen 58% der falschen KI. Das Verhalten ist robust.
 :::
 
 
-## Kann man Surrender verhindern? {.nostretch}
+## Wer ist anfällig? {.smaller}
 
 ```{r}
 #| fig-width: 10
 #| fig-height: 5
-#| echo: false
-#| out-width: "65%"
-#| fig-align: "center"
+#| fig-align: center
 
-override_data <- tibble(
-  condition = factor(
-    rep(c("Ohne Anreize\n(Kontrolle)", "Mit Anreizen\n+ Feedback"), each = 2),
-    levels = c("Ohne Anreize\n(Kontrolle)", "Mit Anreizen\n+ Feedback")
+moderator_data <- tibble(
+  Faktor = factor(
+    c("Hohes KI-Vertrauen", "Niedrige Need for Cognition", "Niedrige fluide Intelligenz",
+      "Niedriges KI-Vertrauen", "Hohe Need for Cognition", "Hohe fluide Intelligenz"),
+    levels = rev(c("Hohes KI-Vertrauen", "Niedrige Need for Cognition", "Niedrige fluide Intelligenz",
+                    "Niedriges KI-Vertrauen", "Hohe Need for Cognition", "Hohe fluide Intelligenz"))
   ),
-  ai_type = rep(c("KI korrekt", "KI falsch"), 2),
-  override_rate = c(12.4, 20.0, 7.8, 42.3),
-  se = c(1.6, 2.0, 1.4, 2.5)
+  Richtung = c("Mehr Outsourcing", "Mehr Outsourcing", "Mehr Outsourcing",
+                "Mehr Widerstand", "Mehr Widerstand", "Mehr Widerstand"),
+  x_pos = c(0.7, 0.6, 0.55, -0.5, -0.6, -0.55)
 )
 
-ggplot(override_data, aes(x = condition, y = override_rate, fill = ai_type)) +
-  geom_col(position = position_dodge(width = 0.7), width = 0.6) +
-  geom_errorbar(
-    aes(ymin = override_rate - se, ymax = override_rate + se),
-    position = position_dodge(width = 0.7),
-    width = 0.2, linewidth = 0.6
-  ) +
-  geom_text(
-    aes(label = paste0(round(override_rate), "%")),
-    position = position_dodge(width = 0.7),
-    vjust = -1.2, size = 5, fontface = "bold"
-  ) +
-  scale_fill_manual(
-    values = c("KI korrekt" = color_tertiary, "KI falsch" = color_primary),
-    name = NULL
-  ) +
-  scale_y_continuous(
-    limits = c(0, 55),
-    breaks = seq(0, 50, 10),
-    labels = function(x) paste0(x, "%")
-  ) +
-  labs(
-    x = NULL,
-    y = "Override-Rate\n(KI-Empfehlung abgelehnt)"
-  ) +
+ggplot(moderator_data, aes(x = x_pos, y = Faktor, fill = Richtung)) +
+  geom_col(width = 0.6) +
+  scale_fill_manual(values = c("Mehr Outsourcing" = color_primary, "Mehr Widerstand" = color_gold)) +
+  geom_vline(xintercept = 0, linewidth = 0.5) +
+  labs(x = NULL, y = NULL, fill = NULL,
+       title = "Individuelle Unterschiede in der Anfälligkeit") +
   theme_minimal_custom +
   theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
     legend.position = "top",
-    legend.text = element_text(size = 14),
-    axis.text.x = element_text(size = 13)
+    legend.text = element_text(size = 14)
   )
 ```
 
-. . .
-
 <br>
 
-::: {.columns}
-::: {.column width="50%"}
-[**Studie 2 (Zeitdruck):**]{style="color: #6E6560;"}
-
-Zeitdruck eliminiert Surrender nicht. KI puffert Zeitdruck-Kosten, wenn korrekt.
-:::
-
-::: {.column width="50%"}
-[**Studie 3 (Anreize + Feedback):**]{style="color: #A63D2F;"}
-
-Override-Rate bei falscher KI verdoppelt sich (20% → 42%). Aber: **58% folgen trotzdem.**
-:::
+::: {style="text-align: center; font-size: 1.1em; font-weight: bold;"}
+Aber: Niemand ist immun. Auch die widerstandsfähigsten Teilnehmenden zeigten das Muster.
 :::
 
 ::: {.notes}
-- Studie 2: Zeitdruck macht es schlimmer, nicht besser
-- Studie 3: Finanzielle Anreize + sofortiges Feedback verdoppeln die Override-Rate
-- Aber selbst unter optimalen Bedingungen: 58% folgen immer noch falscher KI
-- Surrender ist robust und schwer zu eliminieren
+Die individuellen Unterschiede sind aufschlussreich. Wer der KI mehr vertraut, outrcsourct mehr. Wer Freude am Denken hat (hohe Need for Cognition) oder eine höhere fluide Intelligenz besitzt, widersteht eher. Aber der entscheidende Punkt ist: Auch die widerstandsfähigsten Teilnehmenden zeigten das Muster. Die Unterschiede sind graduell, nicht kategorisch. Outsourcing ist der Default, Widerstand ist die Ausnahme.
 :::
 
 
-## Wer ist anfällig?
+# Einordnung
 
-<br><br>
 
-::: {.columns}
-::: {.column width="33%"}
+## Shaw & Nave nennen das "System 3" {.smaller}
 
-{{< fa handshake size=2x >}}
+Die Autoren schlagen eine **Tri-System-Theorie** vor:
 
 <br>
 
-**Hohes Vertrauen in KI**
-
-[Mehr Surrender]{style="color: #A63D2F; font-weight: bold;"}
-
-[Konsultieren KI häufiger, folgen falschen Empfehlungen öfter]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="33%"}
-
-{{< fa brain size=2x >}}
+| | System 1 | System 2 | System 3 |
+|---|---|---|---|
+| **Verarbeitung** | Schnell, intuitiv | Langsam, analytisch | Extern, algorithmisch |
+| **Ort** | Im Kopf | Im Kopf | In der Maschine |
+| **Aufwand** | Gering | Hoch | Keiner (für den Nutzer) |
 
 <br>
 
-**Hohe Need for Cognition**
-
-[Mehr Widerstand]{style="color: #B8821A; font-weight: bold;"}
-
-[Denken gerne nach, nutzen KI weniger]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="33%"}
-
-{{< fa chart-line size=2x >}}
+Shaw & Nave sehen KI als **drittes kognitives System**, das Intuition und Deliberation ergänzt, verdrängt oder verzerrt.
 
 <br>
 
-**Höherer Fluid IQ**
-
-[Mehr Widerstand]{style="color: #B8821A; font-weight: bold;"}
-
-[Erkennen fehlerhafte KI besser, überstimmen häufiger]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
+::: {style="text-align: center; font-size: 1.1em; color: #6E6560;"}
+Die theoretische Ambition ist klar: Kahneman erweitern für das KI-Zeitalter.
 :::
 
-. . .
+::: {.notes}
+Shaw und Nave gehen über die Empirie hinaus und schlagen ein neues theoretisches Modell vor: System 3. Neben Kahnemans System 1 (schnell, intuitiv) und System 2 (langsam, analytisch) positionieren sie KI als drittes kognitives System: extern, algorithmisch, und für den Nutzer ohne kognitiven Aufwand. Das ist eine ambitionierte These. Aber brauchen wir das wirklich?
+:::
+
+
+## Brauchen wir ein neues System? {.smaller}
+
+Die Befunde lassen sich mit **bestehenden Konzepten** erklären:
+
+<br>
+
+| Shaw & Nave Befund | Bestehende Erklärung |
+|---|---|
+| Unkritische Übernahme von KI-Output | Extremes Ende des **Offloading-Outsourcing-Spektrums** |
+| Konfidenz steigt trotz Fehlern | **Metakognitive Falle**: Flüssigkeit wird mit Richtigkeit verwechselt |
+| Robust gegen Anreize | **Automation Bias** [@mosierAutomationBiasAccountable1996]: gut etabliert |
+| Individuelle Unterschiede (NFC, IQ) | Standardmoderatoren der System-2-Aktivierung |
 
 <br>
 
 ::: {style="text-align: center; font-size: 1.1em;"}
-Aber: **Niemand ist immun.** Selbst die widerstandsfähigsten Teilnehmenden zeigten Surrender-Muster.
+Der Mechanismus: KI-Output ist flüssig, selbstbewusst und kohärent.
+Genau das unterdrückt das Konfliktsignal, das normalerweise System 2 aktiviert.
+:::
+
+. . .
+
+::: {style="text-align: center; font-size: 1.1em; color: #A63D2F; font-weight: bold;"}
+Die Daten sind exzellent. Die Theorie ist überflüssig.
 :::
 
 ::: {.notes}
-- Individuelle Unterschiede: Drei Faktoren
-- Trust in AI: Wer KI mehr vertraut, kapituliert eher
-- Need for Cognition: Wer gerne nachdenkt, widersteht eher
-- Fluid IQ: Höhere kognitive Fähigkeit schützt teilweise
-- Aber wichtig: Niemand ist komplett immun gegen Surrender
+Ich denke, wir brauchen kein neues kognitives System, um diese Befunde zu erklären. Unkritische Übernahme? Das ist das extreme Ende des Offloading-Outsourcing-Spektrums, das wir im Intermediate-Kurs behandelt haben. Konfidenz-Inflation? Das ist die metakognitive Falle: Flüssiger Output wird mit korrektem Output verwechselt. Robustheit gegen Anreize? Das kennen wir seit Jahrzehnten aus der Automation-Bias-Literatur. Der Mechanismus ist einfach: KI-Output ist flüssig, selbstbewusst und kohärent. Das unterdrückt genau das Konfliktsignal, das normalerweise analytisches Denken aktiviert. Dafür braucht man kein neues System. Man muss nur erkennen, dass KI ein beispiellos effektiver Auslöser für bestehende kognitive Abkürzungen ist.
 :::
 
 
-## Das Paradox neu interpretiert
+## Eine bessere Erklärung: Es ist rational {.smaller}
+
+Shaw & Nave sehen ein **kognitives Architektur-Problem** (System 3 verdrängt System 2).
+
+Ich sehe ein **Aufgabendesign-Problem**.
 
 <br>
 
-```{r}
-#| fig-width: 12
-#| fig-height: 5.5
-#| echo: false
+::::{.columns}
+:::{.column width="55%"}
+Studierende lösen ein Optimierungsproblem:
 
-paradox_data <- tibble(
-  phase = factor(
-    rep(c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)"), each = 2),
-    levels = c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)")
-  ),
-  gruppe = rep(c("Mit KI", "Ohne KI"), 2),
-  leistung = c(85, 60, 55, 60),
-  se = c(3, 3, 6, 5)
+::: {style="font-size: 1.2em; text-align: center; padding: 0.8em; background: #F5F0E8; border-left: 4px solid #A63D2F; margin: 0.5em 0;"}
+**U = Note(jetzt)**
+**- Aufwand**
+**+ Lernwert(Zukunft)**
+:::
+
+Wenn KI guten Output billig macht, ist Outsourcing die **rationale Strategie**.
+:::
+
+:::{.column width="45%"}
+::: {style="padding: 1em; background: #F5F0E8; border-radius: 4px;"}
+**Das Proxy-Problem:**
+
+Noten belohnen **Produkte** (Essays, Code, Berichte).
+
+Diese korrelierten historisch mit Lernen, weil gute Produkte ohne Verständnis aufwändig waren.
+
+KI bricht diese Korrelation.
+
+Die Designschwächen waren immer da. Sie waren nur nicht folgenreich.
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Nicht "kognitives Versagen". Nicht "System 3". Sondern: rationale Antwort auf eine fehlausgerichtete Aufgabenumgebung.
+:::
+
+::: {.notes}
+Hier ist mein alternativer Erklärungsrahmen. Ich sehe kein Problem der kognitiven Architektur, sondern ein Problem des Aufgabendesigns. Studierende lösen ein implizites Optimierungsproblem: Note jetzt, minus Aufwand, plus diskontierter Lernwert in der Zukunft. Wenn KI gute Produkte billig macht, ist Outsourcing die rationale Strategie. Das ist kein kognitives Versagen und kein neues System. Es ist eine rationale Antwort auf eine fehlausgerichtete Aufgabenumgebung. Noten belohnen Produkte. Produkte korrelierten historisch mit Lernen, weil man sie ohne Verständnis nicht herstellen konnte. KI bricht diese Korrelation. Die Designschwächen waren immer da, sie waren nur nicht folgenreich.
+:::
+
+
+## Die selbstverstärkende Falle {.smaller}
+
+```{r}
+#| fig-width: 10
+#| fig-height: 5
+#| fig-align: center
+
+# Simulate the diverging trajectories
+n_periods <- 20
+effort_path <- tibble(
+  Periode = 1:n_periods,
+  Kompetenz = cumsum(rnorm(n_periods, mean = 3, sd = 0.8)),
+  Selbsteinschaetzung = cumsum(rnorm(n_periods, mean = 3.2, sd = 1)),
+  Strategie = "Eigene Arbeit"
+)
+# Make self-assessment track competence roughly
+effort_path$Selbsteinschaetzung <- effort_path$Kompetenz + rnorm(n_periods, 0, 2)
+
+outsource_path <- tibble(
+  Periode = 1:n_periods,
+  Kompetenz = cumsum(rnorm(n_periods, mean = 0.3, sd = 0.5)),
+  Selbsteinschaetzung = cumsum(rnorm(n_periods, mean = 2.5, sd = 0.6)),
+  Strategie = "Outsourcing"
 )
 
-ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe)) +
-  geom_line(linewidth = 1.5) +
-  geom_errorbar(
-    aes(ymin = leistung - se, ymax = leistung + se),
-    width = 0.1,
-    linewidth = 0.8
-  ) +
-  geom_point(size = 5) +
-  scale_color_manual(
-    values = c("Mit KI" = color_primary, "Ohne KI" = color_secondary),
-    name = NULL
-  ) +
-  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 25)) +
-  labs(
-    x = NULL,
-    y = "Aufgabenleistung (%)"
-  ) +
-  theme_minimal_top_legend
-```
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Bastani et al.: Schüler mit KI-Zugang zeigten klassische **Cognitive Surrender** [@bastaniGenerativeAIGuardrails2025].
-Sie nutzten den S1→S3-Pfad (Kapitulation), nicht den S2→S3-Pfad (strategisches Offloading).
-:::
-
-::: {.notes}
-- Die Bastani-Studie aus Kurs 2 neu interpretiert
-- Schüler mit KI-Zugang: +48% Performance, aber -17% bei der Prüfung ohne KI
-- Mit der Tri-System-Brille: Die Schüler nutzten den Surrender-Pfad (S1→S3)
-- Sie haben die Antworten übernommen, ohne eigenes System-2-Denken
-- Deshalb kein Lerneffekt: Das interne Modell wurde nie aufgebaut
-:::
-
-
-## Brauchen wir "System 3"?
-
-<br>
-
-::: {style="font-size: 1.2em; margin-bottom: 1em;"}
-Die **empirischen Befunde** sind überzeugend. Aber ist "System 3" als theoretisches Konstrukt notwendig?
-:::
-
-. . .
-
-<br>
-
-::: {.columns}
-::: {.column width="50%"}
-
-[**Was bereits erklärt war:**]{style="color: #6E6560;"}
-
-- Cognitive Offloading [@riskoCognitiveOffloading2016]
-- Automation Bias
-- Extended Mind [@clarkExtendedMind1998]
-- Expertise Reversal [@kalyugaExpertiseReversalEffect2009]
-
-:::
-
-::: {.column width="50%"}
-
-[**Was Shaw & Nave hinzufügen:**]{style="color: #A63D2F;"}
-
-- Empirischer Nachweis der Kapitulation mit Effektstärken
-- Surrender ≠ Offloading (qualitativ verschieden)
-- Konfidenz-Inflation als Marker
-- Robustheit unter verschiedenen Bedingungen
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 0;"}
-Der Kern ist vielleicht einfacher: KI macht kognitive Abkürzungen leichter. Was Shaw & Nave "Surrender" nennen, lässt sich auch als Offloading verstehen, das die Schwelle zum Outsourcing überschritten hat, wo eigenes Denken nicht mehr stattfindet. Der Wert des Papers liegt in der empirischen Demonstration, nicht notwendigerweise in der theoretischen Architektur.
-:::
-
-::: {.notes}
-- Kritische Einordnung: Brauchen wir wirklich ein "System 3"?
-- Offloading, Automation Bias, Extended Mind erklären bereits Teilaspekte
-- Was Shaw & Nave wirklich beitragen: saubere empirische Demonstration
-- Die Effektstärken sind beeindruckend (Cohen's h = 0.81)
-- Die Konfidenz-Inflation ist neu und wichtig
-- Ob man das "System 3" nennen muss, ist debattierbar
-- Was zählt: Die Daten zeigen, dass Surrender real, robust und schwer zu verhindern ist
-:::
-
-
-## {.center}
-
-<br><br>
-
-::: {style="font-size: 1.3em; text-align: center; max-width: 80%; margin: 0 auto;"}
-Cognitive Surrender beschreibt **was** passiert.
-:::
-
-. . .
-
-<br><br>
-
-::: {style="font-size: 1.6em; text-align: center; font-weight: bold;"}
-Aber warum ist es so schädlich? Was genau geht verloren?
-:::
-
-::: {.notes}
-- Überleitung zu Teil 3
-- Shaw & Nave zeigen den Mechanismus
-- Jetzt: Warum ist das für Lernen so problematisch?
-- Was geht verloren, wenn wir das Denken delegieren?
-:::
-
-
-## Wissen ist nicht Information
-
-<br>
-
-::: {.columns}
-::: {.column width="50%"}
-
-[**Information:**]{style="color: #6E6560; font-size: 1.2em;"}
-
-<br>
-
-Daten in einem externen System. Stehen still. Formen nichts. Warten darauf, abgerufen zu werden.
-
-<br>
-
-[Ein Lehrbuch auf dem Regal liest sich nicht selbst.]{style="color: #999; font-style: italic;"}
-
-:::
-
-::: {.column width="50%"}
-
-[**Wissen:**]{style="color: #A63D2F; font-size: 1.2em;"}
-
-<br>
-
-In den Geist integriert. Formt Wahrnehmung, Denken, Handeln. Erzeugt Vorhersagen.
-
-<br>
-
-[Verändert, was du siehst, bevor du bewusst nachdenkst.]{style="color: #999; font-style: italic;"}
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.2em; font-weight: bold;"}
-Die Annahme, KI mache internes Wissen überflüssig, verwechselt diese beiden Kategorien.
-:::
-
-::: {.notes}
-- Der Kern des Arguments: Information und Wissen sind kategorial verschieden
-- Information in einer Datenbank verändert dein Denken nicht
-- Wissen, das du aufgebaut hast, verändert alles: Wahrnehmung, Fragen, Überraschung
-- Die "Future Skills"-Debatte verwechselt systematisch diese beiden Kategorien
-- "KI macht Wissen verfügbar" stimmt für Information, nicht für Wissen
-:::
-
-
-## Experten sehen anders
-
-<br>
-
-::: {.columns}
-::: {.column width="50%"}
-
-**Schach** (Chase & Simon, 1973)
-
-<br>
-
-Meister erinnern sich an sinnvolle Stellungen weit besser als Novizen.
-
-Bei **zufälligen** Anordnungen: kein Vorteil.
-
-[Die Expertise ist perzeptuell: Meister sehen Strukturen, nicht Figuren.]{style="color: #A63D2F;"}
-
-:::
-
-::: {.column width="50%"}
-
-**Physik** (Chi et al., 1981)
-
-<br>
-
-Experten kategorisieren nach tiefen Prinzipien (Energieerhaltung).
-
-Novizen kategorisieren nach Oberflächen (schiefe Ebene).
-
-[Die Expertise ist strukturell: Experten sehen Ursachen, nicht Erscheinungen.]{style="color: #A63D2F;"}
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0;"}
-{{< fa lightbulb >}} Expertise besteht aus reichhaltig organisierten Schemata, die als **generative Modelle** funktionieren: sie erzeugen Vorhersagen, unterstützen kausales Denken und revidieren sich, wenn Vorhersagen scheitern.
-:::
-
-::: {.notes}
-- Zwei klassische Studien zur Expertise
-- Chase & Simon: Schachmeister sehen Muster, nicht einzelne Figuren
-- Chi et al.: Physik-Experten kategorisieren nach Prinzipien, Novizen nach Oberflächen
-- Beide zeigen: Expertise ist nicht "mehr wissen", sondern "anders wahrnehmen"
-- Schemata funktionieren als generative Modelle: sie erzeugen aktiv Vorhersagen
-:::
-
-
-## Wissen erzeugt Vorhersagen
-
-<br>
-
-::: {style="font-size: 1.15em; max-width: 90%; margin: 0 auto; line-height: 1.6;"}
-Ein erfahrener Forscher liest eine neue Studie. **Vor jeder bewussten Evaluation** sieht er die Studie anders als ein Studierender:
-
-- Stichprobenzusammensetzung, Wahl der Outcome-Masse, kontrollierte Kovariaten
-- Diese stehen als methodische Entscheidungen mit Konsequenzen hervor
-
-Der Forscher kann **simulieren**: Was wäre, wenn die Autoren eine aktive Kontrollgruppe gehabt hätten?
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.3em; font-weight: bold; color: #A63D2F;"}
-Ein Novize hat keine Basis für Überraschung.
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; color: #6E6560;"}
-Fast jedes Ergebnis ist mit seinen diffusen Erwartungen vereinbar.
-:::
-
-::: {.notes}
-- Wissen ist nicht passiv, es erzeugt aktiv Vorhersagen
-- Ein Forscher liest einen Artikel und hat Erwartungen, die verletzt werden können
-- Vorhersagefehler tragen ein spezifisches Lernsignal
-- Ein Novize hat keine spezifischen Erwartungen, also kein Lernsignal
-- Das ist der Kern: Wissen bestimmt den Hypothesenraum
-:::
-
-
-## Anstrengung ist der Mechanismus
-
-<br><br>
-
-::: {style="font-size: 1.4em; text-align: center; font-style: italic; max-width: 80%; margin: 0 auto;"}
-"Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
-:::
-
-<br>
-
-::: {style="text-align: center; color: #6E6560;"}
-Robert Bjork [@bjorkMakingThingsHard2011]
-:::
-
-. . .
-
-<br><br>
-
-::: {style="text-align: center; font-size: 1.1em; max-width: 85%; margin: 0 auto;"}
-Das Gehirn baut **Erkennungsroutinen**, die durch wiederholte Erfahrung trainiert werden. Jede schwierige Aufgabe schärft das System, das zukünftige Urteile schneller und besser kalibriert macht. Wenn KI die Anstrengung eliminiert, wird diese Routine nie gebaut.
-:::
-
-::: {.notes}
-- Bjork: Desirable Difficulties sind kein Selbstzweck
-- Das Gehirn investiert Aufwand heute, um morgen schneller zu erkennen
-- Amortisierte Inferenz: Erkennungsroutinen werden durch Erfahrung trainiert
-- Wenn KI den Aufwand eliminiert (Surrender), wird die Routine nie gebaut
-- Das ist der tiefere Grund, warum Surrender schädlich ist
-:::
-
-
-## Das Evaluationsparadox
-
-<br>
-
-```{r}
-#| echo: false
-#| fig-width: 10
-#| fig-height: 6
-
-grViz("
-digraph evaluation_paradox {
-  graph [
-    fontname = 'Helvetica'
-    bgcolor = 'transparent'
-    nodesep = 0.8
-    ranksep = 1.0
-    label = ''
-    labelloc = t
-    fontsize = 16
-    fontcolor = '#6E6560'
-  ]
-
-  node [
-    fontname = 'Helvetica'
-    fontsize = 14
-    style = 'filled,rounded'
-    fontcolor = 'white'
-    penwidth = 0
-    shape = box
-    margin = '0.25,0.15'
-  ]
-
-  edge [
-    fontname = 'Helvetica'
-    fontsize = 13
-    color = '#9A9490'
-    arrowsize = 0.8
-  ]
-
-  evaluate [
-    label = 'KI-Output\nbewerten'
-    fillcolor = '#A63D2F'
-  ]
-
-  competence [
-    label = 'Fachkompetenz'
-    fillcolor = '#6E6560'
-  ]
-
-  learning [
-    label = 'Eigenes\nLernen'
-    fillcolor = '#6E6560'
-  ]
-
-  thinking [
-    label = 'Eigenes\nDenken'
-    fillcolor = '#333333'
-  ]
-
-  evaluate -> competence [label = '  erfordert  ']
-  competence -> learning [label = '  entsteht durch  ']
-  learning -> thinking [label = '  erfordert  ']
-  thinking -> evaluate [label = '  wird ersetzt\n  durch KI  ' style = dashed color = '#A63D2F']
-}
-")
-```
-
-. . .
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Um KI-Output zu bewerten, brauchst du die Kompetenz, die erst durch eigenes Lernen entsteht. Metakognitives Monitoring ist nicht kontextfrei: es hängt von Domänenwissen ab [@bjorkMemoryMetamemoryConsiderations1994].
-:::
-
-::: {.notes}
-- Das Evaluationsparadox: Um KI-Output zu bewerten, brauchst du Kompetenz
-- Metakognitives Monitoring ist domänenspezifisch
-- Du kannst nicht "kritisch denken" lernen und es auf jede Domäne anwenden
-- Der Kreislauf schliesst sich: KI ersetzt genau das Denken, das zum Lernen nötig wäre
-:::
-
-
-## Kannst du diesen KI-Output bewerten?
-
-<br>
-
-::: {style="background-color: #f0f0f0; padding: 1.5em; border-radius: 0; font-family: monospace; font-size: 0.9em;"}
-**Prompt:** "Erkläre die Pathophysiologie der diabetischen Ketoazidose."
-
-**KI-Antwort:** "Bei DKA führt Insulinmangel zu unkontrollierter Lipolyse. Die freigesetzten Fettsäuren werden in der Leber zu Ketonkörpern (Acetoacetat, β-Hydroxybutyrat) metabolisiert. Die resultierende metabolische Azidose mit erhöhter Anionenlücke triggert kompensatorische Kussmaul-Atmung..."
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.3em;"}
-Ist das korrekt? Fehlt etwas? Ist etwas subtil falsch?
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.2em; color: #A63D2F; font-weight: bold;"}
-Deine Studierenden sind in genau dieser Position für DEIN Fach.
-:::
-
-::: {.notes}
-- Live-Demonstration: KI-generierter medizinischer Text
-- Ohne Fachwissen kann niemand im Raum bewerten, ob das stimmt
-- Genau diese Erfahrung machen Studierende täglich mit KI-Output in ihrem Fach
-- Das ist Cognitive Surrender in der Praxis: der Text liest sich flüssig, egal ob korrekt
-:::
-
-
-## Wissen und Denken sind nicht trennbar
-
-<br>
-
-::: {style="font-size: 1.1em; max-width: 90%; margin: 0 auto;"}
-
-> "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
->
-> Daniel Willingham [@willinghamCriticalThinkingWhy2008]
-
-:::
-
-. . .
-
-<br>
-
-::: {style="max-width: 90%; margin: 0 auto;"}
-**Kompositionelle Generalisierung** erfordert strukturierte Repräsentationen. Du kannst Elemente nicht rekombinieren, die du nicht als abstrakte, trennbare Komponenten repräsentiert hast.
-
-<br>
-
-Der Physiker, der nach Energieerhaltung kategorisiert, hat die Domäne in abstrakte Primitive zerlegt, die über Situationen transferieren. Der Novize ist an Oberflächen gebunden.
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.2em; color: #A63D2F; font-weight: bold;"}
-"Zukunftskompetenzen" ohne Wissen imitieren Bewertung ohne Substanz.
-:::
-
-::: {.notes}
-- Willingham's zentraler Punkt: Kein kontextfreies kritisches Denken
-- Kompositionelle Generalisierung: Die Fähigkeit, bekannte Elemente neu zu kombinieren
-- Erfordert strukturierte Repräsentationen, die durch Lernen aufgebaut werden
-- "Future Skills" ohne Wissensbasis sind ein Widerspruch
-- Transfer entsteht durch Abstraktion, und Abstraktion erfordert tiefes Verständnis
-:::
-
-
-## Wann Offloading hilft, wann es schadet
-
-<br>
-
-::: {.columns}
-::: {.column width="45%"}
-
-[**Hilft:**]{style="color: #B8821A; font-size: 1.3em;"}
-
-Wenn es **Leistungseinschränkungen** entlastet, während Kompetenz erhalten bleibt.
-
-<br>
-
-[Chirurgin nutzt Checkliste → Aufmerksamkeit frei für Urteil]{style="color: #6E6560; font-size: 0.9em;"}
-
-[Programmierer nutzt Linter → Fokus auf Architektur]{style="color: #6E6560; font-size: 0.9em;"}
-
-<br>
-
-Die Kompetenz ist intakt. Das Werkzeug entlastet eine **Performance**-Grenze.
-
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="45%"}
-
-[**Schadet:**]{style="color: #A63D2F; font-size: 1.3em;"}
-
-Wenn die vermiedene Anstrengung genau der Mechanismus war, der **Kompetenz aufgebaut** hätte.
-
-<br>
-
-[KI schreibt den Aufsatz → Formulieren nie geübt]{style="color: #6E6560; font-size: 0.9em;"}
-
-[KI löst die Aufgabe → Problemlösen nie trainiert]{style="color: #6E6560; font-size: 0.9em;"}
-
-<br>
-
-Die Kompetenz fehlt. Das Werkzeug ersetzt eine **Lern**-Gelegenheit.
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Ein Taschenrechner erweitert den Mathematiker. Derselbe Taschenrechner ersetzt den Schüler, der Division noch nicht versteht [@grinschglConsequencesCognitiveOffloading2021].
-:::
-
-::: {.notes}
-- Die entscheidende Unterscheidung: Performance-Engpass vs. Lern-Engpass
-- Offloading hilft bei Performance-Grenzen (Arbeitsgedächtnis, Aufmerksamkeit)
-- Offloading schadet bei Lern-Grenzen (wenn die Anstrengung der Mechanismus ist)
-- Grinschgl et al.: Offloading boosted Performance, diminished Memory
-- Dasselbe Werkzeug, verschiedene Auswirkungen je nach Vorwissen
-:::
-
-
-## Je mächtiger das Werkzeug, desto mehr Wissen brauchst du {.nostretch}
-
-```{r}
-#| fig-width: 12
-#| fig-height: 5
-#| echo: false
-#| out-width: "85%"
-#| fig-align: "center"
-
-ggplot() +
-  # Central question
-  geom_rect(aes(xmin = 3.5, xmax = 6.5, ymin = 0.6, ymax = 0.9),
-            fill = "#24526B", color = "white", linewidth = 1.5) +
-  geom_text(aes(x = 5, y = 0.75, label = "KI wird mächtiger"),
-            size = 5.5, color = "white", fontface = "bold") +
-
-  # Arrow down-left (good path)
-  geom_segment(aes(x = 4.2, xend = 2.5, y = 0.58, yend = 0.42),
-               arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-               linewidth = 1.5, color = color_gold) +
-  # Arrow down-right (bad path)
-  geom_segment(aes(x = 5.8, xend = 7.5, y = 0.58, yend = 0.42),
-               arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-               linewidth = 1.5, color = color_primary) +
-
-  # Good path box
-  geom_rect(aes(xmin = 0.5, xmax = 4.2, ymin = 0.1, ymax = 0.4),
-            fill = color_gold, color = "white", linewidth = 1.5) +
-  geom_text(aes(x = 2.35, y = 0.3, label = "Internes Modell wird reicher"),
-            size = 5, color = "white", fontface = "bold") +
-  geom_text(aes(x = 2.35, y = 0.18, label = "Good Regulator"),
-            size = 4, color = "white") +
-
-  # Bad path box
-  geom_rect(aes(xmin = 5.8, xmax = 9.5, ymin = 0.1, ymax = 0.4),
-            fill = color_primary, color = "white", linewidth = 1.5) +
-  geom_text(aes(x = 7.65, y = 0.3, label = "Internes Modell wird einfacher"),
-            size = 5, color = "white", fontface = "bold") +
-  geom_text(aes(x = 7.65, y = 0.18, label = "Cognitive Surrender"),
-            size = 4, color = "white") +
-
-  coord_cartesian(xlim = c(0, 10), ylim = c(0.05, 0.95)) +
-  theme_void() +
-  theme(plot.margin = margin(10, 10, 10, 10))
-```
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-"Every good regulator of a system must be a model of that system." [@conantEveryGoodRegulator1970]
-
-<br>
-
-**Je fähiger das System, desto reichhaltiger muss das Modell des Nutzers sein.** Das ist das Gegenteil von dem, was gerade passiert.
-:::
-
-::: {.notes}
-- Conant & Ashby 1970: Good Regulator Theorem
-- Um ein System gut zu steuern, brauchst du ein Modell davon
-- Je komplexer das System, desto reicher muss dein Modell sein
-- KI wird mächtiger → Nutzer brauchen MEHR Wissen, nicht weniger
-- Die "KI macht Wissen überflüssig"-These ist das genaue Gegenteil der Wahrheit
-:::
-
-
-## Was KI ersetzt
-
-<br>
-
-::: {.columns}
-::: {.column width="25%"}
-
-{{< fa database size=2x >}}
-
-<br>
-
-**Abrufen**
-
-[Wissen aus dem Gedächtnis aktivieren]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa pen size=2x >}}
-
-<br>
-
-**Generieren**
-
-[Eigene Lösungen produzieren]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa link size=2x >}}
-
-<br>
-
-**Verknüpfen**
-
-[Elemente vergleichen und integrieren]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa eye size=2x >}}
-
-<br>
-
-**Überwachen**
-
-[Gegen interne Kriterien bewerten]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-:::
-
-. . .
-
-<br><br>
-
-::: {style="text-align: center; font-size: 1.2em;"}
-Diese Operationen bauen Schemata auf. **Bei Cognitive Surrender werden alle vier an die KI delegiert.**
-:::
-
-::: {.notes}
-- Die vier kognitiven Operationen aus dem Aufbaukurs
-- Abrufen, Generieren, Verknüpfen, Überwachen: diese bauen Schemata auf
-- Bei Cognitive Surrender übernimmt die KI alle vier
-- Das generative Modell des Lernenden wird nie aufgebaut
-- Wenn die KI abruft, generiert, verknüpft und überwacht, lernt der Mensch nicht
-:::
-
-
-## Was das für die Lehre bedeutet
-
-<br><br>
-
-::: {.columns}
-::: {.column width="45%"}
-
-::: {style="background-color: #B8821A22; padding: 1.2em; border-radius: 0; border-left: 4px solid #B8821A;"}
-
-[**Internes Modell trainieren:**]{style="color: #B8821A;"}
-
-<br>
-
-KI erzeugt Vorhersagen, die **Lernende bewerten**.
-
-KI generiert falsche Lösungen, Studierende **finden Fehler**.
-
-KI gibt Feedback auf **eigene** Überlegungen.
-
-:::
-
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="45%"}
-
-::: {style="background-color: #A63D2F22; padding: 1.2em; border-radius: 0; border-left: 4px solid #A63D2F;"}
-
-[**Internes Modell umgehen:**]{style="color: #A63D2F;"}
-
-<br>
-
-KI liefert Bewertungen, die Lernende **konsumieren**.
-
-KI generiert Lösungen, die Studierende **abgeben**.
-
-KI ersetzt das eigene **Denken**.
-
-:::
-
-:::
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; font-size: 1.3em; font-weight: bold;"}
-Sparringspartner, nicht Orakel.
-:::
-
-::: {.notes}
-- Die praktische Konsequenz: Die Richtung der Bewertung entscheidet
-- Wenn der Lernende bewertet, trainiert er sein Modell
-- Wenn die KI bewertet und der Lernende konsumiert, wird das Modell nicht gebraucht
-- Design-Prinzip: KI als Sparringspartner, nicht als Orakel
-- Konkrete Beispiele: KI erzeugt falsche Lösungen zum Finden, KI gibt Feedback auf eigene Versuche
-:::
-
-
-## Der Expertise-Umkehr-Effekt
-
-::: {style="background-color: #f5f5f5; padding: 0.6em 1em; border-radius: 6px; font-size: 0.9em; margin-bottom: 0.5em;"}
-{{< fa hand-pointer >}} **Interaktiv:** Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.
-:::
-
-```{ojs}
-//| echo: false
-
-// =============================================================================
-// Configuration: All parameters in one place for easy maintenance
-// =============================================================================
-config = ({
-  // Color palette
-  colors: {
-    highSupport: "#A63D2F",
-    lowSupport: "#6E6560",
-    neutral: "#1A1714",
-    background: "#f5f5f5"
-  },
-  // Line equations: y = intercept + slope * x
-  lines: {
-    high: { intercept: 65, slope: -0.4 },
-    low: { intercept: 25, slope: 0.4 }
-  },
-  // Input options
-  steps: [0, 20, 40, 60, 80, 100],
-  defaultValue: 20,
-  // Plot dimensions
-  plot: {
-    width: 900,
-    height: 480,
-    margins: { left: 70, bottom: 60, top: 30, right: 40 }
-  },
-  // Labels
-  labels: {
-    highSupport: "Hohe Unterstützung",
-    lowSupport: "Niedrige Unterstützung",
-    highExamples: ["Worked Examples", "Direkte Instruktion"],
-    lowExamples: ["Problembasiertes Lernen", "Eigene Lösungswege"]
-  }
-})
-
-crossoverPoint = {
-  const { high, low } = config.lines;
-  return (high.intercept - low.intercept) / (low.slope - high.slope);
-}
-
-calcY = (line, x) => line.intercept + line.slope * x
-
-viewof vorwissen = {
-  const input = Inputs.radio(config.steps, {
-    value: config.defaultValue,
-    label: "",
-    format: x => x + "%"
-  });
-  input.style.display = "none";
-  return input;
-}
-
-currentState = {
-  const x = vorwissen ?? config.defaultValue;
-  const highY = calcY(config.lines.high, x);
-  const lowY = calcY(config.lines.low, x);
-  const isHighBetter = x <= crossoverPoint;
-
-  return {
-    x,
-    highY,
-    lowY,
-    isHighBetter,
-    optimalY: isHighBetter ? highY : lowY,
-    suboptimalY: isHighBetter ? lowY : highY,
-    optimalLabel: isHighBetter ? config.labels.highSupport : config.labels.lowSupport,
-    optimalColor: isHighBetter ? config.colors.highSupport : config.colors.lowSupport,
-    suboptimalColor: isHighBetter ? config.colors.lowSupport : config.colors.highSupport
-  };
-}
-
-expertisePlot = {
-  const { colors, lines, plot, labels } = config;
-  const { x, highY, lowY, isHighBetter, optimalY, suboptimalY, optimalColor, suboptimalColor } = currentState;
-
-  const highLineData = [{x: 0, y: calcY(lines.high, 0)}, {x: 100, y: calcY(lines.high, 100)}];
-  const lowLineData = [{x: 0, y: calcY(lines.low, 0)}, {x: 100, y: calcY(lines.low, 100)}];
-
-  const labelOffsetY = 7;
-  const exampleBaseY = calcY(lines.high, 0) + labelOffsetY;
-
-  return Plot.plot({
-    width: plot.width,
-    height: plot.height,
-    marginLeft: plot.margins.left,
-    marginBottom: plot.margins.bottom,
-    marginTop: plot.margins.top,
-    marginRight: plot.margins.right,
-    style: { fontSize: "16px" },
-    x: {
-      domain: [0, 100],
-      label: "Vorwissen →",
-      labelOffset: 45,
-      ticks: [0, 50, 100],
-      tickFormat: d => d === 0 ? "Niedrig" : d === 50 ? "Mittel" : "Hoch"
-    },
-    y: {
-      domain: [0, 100],
-      label: "↑ Lerneffekt",
-      labelOffset: 50,
-      grid: true
-    },
-    marks: [
-      Plot.line(highLineData, {x: "x", y: "y", stroke: colors.highSupport, strokeWidth: 3}),
-      Plot.line(lowLineData, {x: "x", y: "y", stroke: colors.lowSupport, strokeWidth: 3}),
-      Plot.ruleX([x], {stroke: colors.neutral, strokeWidth: 1.5, strokeDasharray: "8,5"}),
-      Plot.dot([{x, y: suboptimalY}], {
-        x: "x", y: "y",
-        fill: suboptimalColor,
-        r: 8,
-        opacity: 0.4
-      }),
-      Plot.dot([{x, y: optimalY}], {
-        x: "x", y: "y",
-        fill: optimalColor,
-        r: 14,
-        stroke: "white",
-        strokeWidth: 3
-      }),
-      Plot.text([{x: 15, y: exampleBaseY}], {
-        x: "x", y: "y", text: [labels.highExamples[0]], fill: colors.highSupport, fontSize: 13
-      }),
-      Plot.text([{x: 15, y: exampleBaseY - 6}], {
-        x: "x", y: "y", text: [labels.highExamples[1]], fill: colors.highSupport, fontSize: 13
-      }),
-      Plot.text([{x: 85, y: exampleBaseY}], {
-        x: "x", y: "y", text: [labels.lowExamples[0]], fill: colors.lowSupport, fontSize: 13
-      }),
-      Plot.text([{x: 85, y: exampleBaseY - 6}], {
-        x: "x", y: "y", text: [labels.lowExamples[1]], fill: colors.lowSupport, fontSize: 13
-      }),
-      Plot.text([{x: 88, y: calcY(lines.high, 100) - 5}], {
-        x: "x", y: "y", text: [labels.highSupport], fill: colors.highSupport, fontSize: 15, fontWeight: "bold"
-      }),
-      Plot.text([{x: 12, y: calcY(lines.low, 0) - 5}], {
-        x: "x", y: "y", text: [labels.lowSupport], fill: colors.lowSupport, fontSize: 15, fontWeight: "bold"
-      })
-    ]
-  });
-}
-
-buttonGroup = {
-  const { x, optimalColor } = currentState;
-  const { colors, steps } = config;
-
-  const buttonStyle = (isSelected, selectColor) => `
-    padding: 12px 18px;
-    border: none;
-    background: ${isSelected ? selectColor : colors.background};
-    color: ${isSelected ? 'white' : '#333'};
-    font-size: 1em;
-    font-weight: ${isSelected ? 'bold' : 'normal'};
-    cursor: pointer;
-    border-right: 1px solid #ddd;
-    transition: background 0.15s ease;
-  `;
-
-  const container = html`<div style="display: flex; border-radius: 0; overflow: hidden; border: 2px solid #ddd;"></div>`;
-
-  steps.forEach(v => {
-    const isSelected = x === v;
-    const selectColor = v <= crossoverPoint ? colors.highSupport : colors.lowSupport;
-    const btn = html`<button style="${buttonStyle(isSelected, selectColor)}">${v}%</button>`;
-    btn.onclick = () => {
-      viewof vorwissen.value = v;
-      viewof vorwissen.dispatchEvent(new Event('input', {bubbles: true}));
-    };
-    container.appendChild(btn);
-  });
-
-  return container;
-}
-
-html`<div style="display: flex; align-items: center; gap: 40px;">
-  <div>${expertisePlot}</div>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;">
-    <div style="font-weight: bold; font-size: 1.1em;">Vorwissen des Lernenden</div>
-    <div>${buttonGroup}</div>
-    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 0; border-left: 4px solid ${currentState.optimalColor};">
-      <span style="color: ${currentState.optimalColor}; font-weight: bold;">${currentState.optimalLabel}</span><br>
-      <span style="font-size: 0.8em; color: #6E6560;">ist effektiver</span>
-    </div>
-  </div>
-</div>`
+both_paths <- bind_rows(effort_path, outsource_path) |>
+  pivot_longer(cols = c(Kompetenz, Selbsteinschaetzung),
+               names_to = "Variable", values_to = "Wert")
+
+ggplot(both_paths, aes(x = Periode, y = Wert, color = Variable, linetype = Strategie)) +
+  geom_line(linewidth = 1.2) +
+  scale_color_manual(values = c("Kompetenz" = color_primary, "Selbsteinschaetzung" = color_gold),
+                     labels = c("Tatsächliche Kompetenz", "Selbsteinschätzung")) +
+  scale_linetype_manual(values = c("Eigene Arbeit" = "solid", "Outsourcing" = "dashed")) +
+  labs(title = "Zwei Pfade: Eigene Arbeit vs. Outsourcing",
+       y = "Niveau", x = "Zeit",
+       color = NULL, linetype = NULL) +
+  theme_minimal_custom +
+  theme(legend.position = "top", legend.text = element_text(size = 13))
 ```
 
 <br>
 
-Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009]: Die richtige Unterstützung hängt vom Vorwissen ab.
+::: {style="text-align: center; font-size: 1.05em;"}
+**Outsourcing** &rarr; Kompetenz stagniert &rarr; Selbsteinschätzung steigt &rarr; kein internes Signal zum Aufhören
+
+Das ist das Evaluationsparadox in dynamischer Form: Um KI-Output zu bewerten, braucht man genau die Kompetenz, die das Lernen aufbauen sollte.
+:::
 
 ::: {.notes}
-- Der Expertise-Umkehr-Effekt: Was für Novizen optimal ist, schadet Experten
-- Novizen brauchen hohe Unterstützung (Worked Examples, Instruktion)
-- Experten brauchen niedrige Unterstützung (Problembasiertes Lernen)
-- KI-Unterstützung muss sich am Vorwissen orientieren
-- Das ist die Grundlage für die Scaffolding-Empfehlung
+Hier sehen wir, warum Outsourcing in den Daten von Shaw und Nave so robust ist. Es ist eine selbstverstärkende Falle. Beim eigenen Arbeiten wachsen Kompetenz und Selbsteinschätzung ungefähr parallel. Beim Outsourcing aber stagniert die Kompetenz, während die Selbsteinschätzung steigt, weil der flüssige KI-Output das Gefühl erzeugt, man habe etwas verstanden. Das ist das Evaluationsparadox in dynamischer Form. Um zu beurteilen, ob die KI-Antwort stimmt, braucht man genau die Kompetenz, die die Aufgabe hätte aufbauen sollen. Ohne diese Kompetenz gibt es kein internes Signal, das sagt: "Stopp, hier stimmt etwas nicht." Die Falle schliesst sich.
 :::
 
 
-## Drei Kernaussagen
+# Was heisst das für die Lehre?
+
+
+## Die Antwort ist Aufgabendesign {.smaller}
+
+Nicht Überwachung. Nicht Verbote. Nicht neue Theorie.
+
+<br>
+
+| Prinzip | Umsetzung |
+|---------|-----------|
+| **Eigener Versuch zuerst** | Studierende arbeiten *vor* dem KI-Einsatz. Dann vergleichen. |
+| **Prozess, nicht nur Produkt** | Zwischenartefakte sichtbar machen (Entwürfe, Arbeitsprotokolle, Revisionen) |
+| **Sparringpartner, nicht Orakel** | KI generiert Gegenargumente, Fehler, Alternativen, die Studierende bewerten |
+| **Mündliche Komponente** | Erklären in Echtzeit mit Rückfragen ist der stärkste und am wenigsten genutzte Designhebel |
+| **Outsourcing explizit thematisieren** | Das Muster benennen, nicht moralisieren. Es ist ein Default, kein Charakterfehler. |
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Die Leitfrage: Kann jemand dieses Produkt abliefern, **ohne die kognitive Arbeit zu leisten**, die ich beabsichtige?
+Wenn ja: Designproblem.
+:::
+
+::: {.notes}
+Die Konsequenz aus all dem ist nicht mehr Überwachung und nicht neue Theorie. Es ist besseres Aufgabendesign. Fünf Prinzipien, keines davon erwähnt KI, aber alle produzieren KI-resiliente Aufgaben. Erstens: Eigener Versuch vor dem KI-Einsatz. Das ist das Try-Then-Check-Muster aus dem Intermediate-Kurs. Zweitens: Prozess sichtbar machen, nicht nur das Endprodukt bewerten. Drittens: KI als Sparringpartner einsetzen, der Fehler und Gegenargumente liefert, nicht als Orakel, das Antworten gibt. Viertens: Mündliche Komponenten. Erklären in Echtzeit mit Rückfragen ist der stärkste Designhebel, den wir haben. Fünftens: Outsourcing explizit thematisieren, als Default, nicht als Charakterfehler. Die Leitfrage für jede Aufgabe ist: Kann jemand dieses Produkt abliefern, ohne die kognitive Arbeit zu leisten, die ich beabsichtige? Wenn ja, ist das ein Designproblem.
+:::
+
+
+## Drei Kernaussagen {.center}
+
+<br>
+
+::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 2;"}
+
+[1.]{style="color: #A63D2F; font-weight: bold;"} Outsourcing ist ein **kognitiver Default**, keine individuelle Schwäche.
+80% folgen falscher KI. Anreize allein verhindern das nicht.
+
+<br>
+
+[2.]{style="color: #A63D2F; font-weight: bold;"} **Verstehen kann man nicht auslagern.**
+Kompetenz entsteht nur durch eigene kognitive Arbeit.
+
+<br>
+
+[3.]{style="color: #A63D2F; font-weight: bold;"} Die Antwort ist **besseres Aufgabendesign**, nicht neue Theorie.
+Die Designschwächen waren immer da. KI macht sie folgenreich.
+:::
+
+::: {.notes}
+Drei Kernaussagen zum Mitnehmen. Erstens: Outsourcing ist der Default, nicht die Ausnahme, und nicht ein Charakterfehler. Shaw und Nave haben das überzeugend quantifiziert. Zweitens: Verstehen kann man nicht auslagern. Die internen Modelle, die Wahrnehmung formen und Evaluation ermöglichen, entstehen nur durch eigene kognitive Arbeit. Drittens: Die produktive Antwort ist Aufgabendesign, nicht Überwachung und nicht neue Theorie. KI hat nicht verändert, was gute Lehre erfordert. Sie hat verändert, was passiert, wenn man es falsch macht.
+:::
+
+
+## Diskussion {.center}
 
 <br><br>
 
-::: {style="font-size: 1.2em; max-width: 90%; margin: 0 auto;"}
-
-[**1.**]{style="color: #A63D2F; font-size: 1.4em;"} Cognitive Surrender ist ein kognitiver **Default**, kein individuelles Versagen. 80% folgen falscher KI, selbst Anreize eliminieren es nicht vollständig.
-
-<br>
-
-. . .
-
-[**2.**]{style="color: #A63D2F; font-size: 1.4em;"} Verstehen kann man **nicht auslagern**. Das interne Modell, das Wahrnehmung formt und Bewertung ermöglicht, entsteht nur durch eigene kognitive Arbeit.
-
-<br>
-
-. . .
-
-[**3.**]{style="color: #A63D2F; font-size: 1.4em;"} Je mächtiger die KI, desto **mehr** Wissen brauchen die Nutzenden, nicht weniger. Das Good-Regulator-Theorem lässt keinen anderen Schluss zu.
-
+::: {style="font-size: 1.4em; text-align: center; max-width: 80%; margin: 0 auto; line-height: 1.6; color: #6E6560;"}
+Wo in euren Aufgaben ist der Weg des geringsten Widerstands *nicht* der Lernweg?
 :::
-
-::: {.notes}
-- Drei Take-Aways
-- Surrender ist menschlich und schwer zu verhindern
-- Verstehen ist nicht auslagerbar, weil Wissen Wahrnehmung formt
-- Die Anforderungen an internes Wissen steigen mit der KI-Fähigkeit
-:::
-
-
-## Designprinzipien für KI in der Lehre
-
-<br>
-
-::: {.columns}
-::: {.column width="25%"}
-
-{{< fa cubes size=2x >}}
-
-<br>
-
-**Generative Modelle zuerst**
-
-[Schemata aufbauen, bevor KI-Zugang für Kernprozesse]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa comments size=2x >}}
-
-<br>
-
-**Sparringspartner**
-
-[KI erzeugt Vorhersagen, Lernende bewerten]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa sliders size=2x >}}
-
-<br>
-
-**Scaffolding anpassen**
-
-[Unterstützung an Vorwissen kalibrieren]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-
-::: {.column width="25%"}
-
-{{< fa shield-halved size=2x >}}
-
-<br>
-
-**Surrender adressieren**
-
-[Metakognition fördern, Bewertung einüben]{style="color: #6E6560; font-size: 0.85em;"}
-
-:::
-:::
-
-. . .
 
 <br><br>
 
-::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0; text-align: center;"}
-{{< fa lightbulb >}} Nicht anti-KI, sondern pro-Lernen. Die Frage ist nicht ob, sondern **wann und wie** KI eingesetzt wird.
+::: {style="text-align: center; font-size: 0.9em; color: #9A9490;"}
+Und: Was wäre die kleinste Änderung, die das ändert?
 :::
 
 ::: {.notes}
-- Vier Designprinzipien, direkt aus der Theorie abgeleitet
-- Generative Modelle zuerst: Schemata vor KI-Zugang
-- Sparringspartner: KI als Gegenüber, nicht als Orakel
-- Scaffolding: Unterstützung ans Vorwissen anpassen
-- Surrender adressieren: Metakognition explizit fördern
-:::
-
-
-## {.center}
-
-<br><br>
-
-::: {style="font-size: 2em; text-align: center; font-weight: 700; color: #24526B;"}
-KI-Werkzeuge sind für Experten gemacht.
-:::
-
-. . .
-
-<br>
-
-::: {style="font-size: 1.4em; text-align: center; color: #6E6560;"}
-Unsere Aufgabe: Studierende zu Experten machen, die KI sinnvoll nutzen können.
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; margin-top: 1em; padding: 1em 2em; border: 2px solid #A63D2F; border-radius: 0;"}
-[Fundamente zuerst aufbauen. Scaffolding an Vorwissen anpassen. Surrender erkennen und verhindern.]{style="font-size: 1.2em; color: #A63D2F;"}
-:::
-
-::: {.notes}
-- Schlussbild: KI-Werkzeuge sind für Experten gemacht
-- Unsere Aufgabe als Dozierende: Den Weg zur Expertise gestalten
-- Nicht KI verbieten, sondern den Entwicklungspfad bewusst steuern
-- Fundamente, Scaffolding, Surrender-Prävention
+Offene Diskussion. Die zentrale Frage: Wo in euren eigenen Aufgaben können Studierende ein gutes Produkt abliefern, ohne die kognitive Arbeit zu leisten, die ihr beabsichtigt? Und was wäre die kleinste Designänderung, die das ändert?
 :::
 
 
 ## Referenzen
-
-::: {#refs}
-:::
