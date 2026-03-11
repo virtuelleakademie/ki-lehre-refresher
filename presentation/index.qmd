@@ -4,20 +4,13 @@ title: "Präsentation"
 
 <!-- ## KI in der Hochschulbildung -->
 
-Fokussierter Vortrag (30 Min) mit anschliessender Diskussion (30 Min).
+Input (30 Min) mit anschliessender Diskussion (30 Min).
 
-{{< revealjs file="../slides/outsourcing-rational/index.html" height="500px" class="ratio ratio-16x9" >}}
-
-{{< revealjs file="../slides/understanding-cant-be-offloaded/index.html" height="500px" class="ratio ratio-16x9" >}}
-
+{{< revealjs file="../slides/refresher-20260312/index.html" height="500px" class="ratio ratio-16x9" >}}
 
 
 Nutze die Pfeiltasten oder die Leertaste um durch die Präsentation zu navigieren. Drücke `F` für Vollbild.
 
-
-### Vertiefung
-
-Für eine umfassende Behandlung aller Konzepte, Beispiele und theoretischen Hintergründe siehe den [Leitfaden](../guide/index.qmd).
 
 #### Weiterbildungsangebot
 
@@ -29,6 +22,3 @@ Dieser Refresher bietet einen kompakten Überblick über den aktuellen Forschung
 
 [KI in der Lehre: Advanced](https://virtuelleakademie.github.io/ki-lehre-advanced/): Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.
 
-### Archiv
-
-[Refresher 2025](../slides/archive/outsourcing-rational-2025/index.html): Frühere Version der Präsentation (Fokus auf Produktivitäts-Lern-Paradox und Expertise-Umkehr-Effekt).

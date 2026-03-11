@@ -4,7 +4,7 @@ subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
 format:
   revealjs:
     theme: [simple, ../../../styles/custom-reveal.scss]
-    footer: "KI in der Lehre: Refresher (Archiv 2025)"
+    footer: "KI in der Lehre: Refresher (17.12.2025)"
 bibliography: ../../../bibliography.bib
 ---
 

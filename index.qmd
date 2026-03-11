@@ -23,8 +23,7 @@ Diese Seite begleitet die Präsentation zum aktuellen Stand von KI in der Hochsc
 
 ### Inhalt
 
-- [Präsentation](presentation/index.qmd): Slides zum Workshop (Voll- und Kurzversion)
-- [Leitfaden](guide/index.qmd): Vertiefende Informationen zu KI in der Hochschulbildung
+- [Präsentation](presentation/index.qmd): Slides zum Workshop 
 - [Q & A](qa/index.qmd): Fragen, Antworten und weiterführende Ressourcen
 
 ## Kontakt
