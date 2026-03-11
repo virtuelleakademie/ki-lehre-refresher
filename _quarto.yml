@@ -16,8 +16,6 @@ project:
     - slides/**/*.qmd
     - slides/archive/**/*.qmd
     - qa/**/*.qmd
-    - guide/**/*.qmd
-    # - notes/**/*.qmd
 
 website:
   title: "KI in der Lehre: Refresher"
@@ -39,10 +37,6 @@ website:
         href: presentation/index.qmd
         text: Präsentation
 
-      - icon: book
-        href: guide/index.qmd
-        text: Leitfaden
-
       - icon: chat-dots
         text: "Q & A"
         href: qa/index.qmd
@@ -50,8 +44,12 @@ website:
       - icon: archive
         text: Archiv
         menu:
+          - text: "Outsourcing rational (Entwurf)"
+            href: slides/outsourcing-rational/index.qmd
+          - text: "Verstehen kann man nicht auslagern (Entwurf)"
+            href: slides/understanding-cant-be-offloaded/index.qmd
           - text: "Refresher 2025"
-            href: slides/archive/ai-higher-ed-2025/index.qmd
+            href: slides/archive/refresher-20251217/index.qmd
 
     tools:
       - icon: mortarboard-fill
