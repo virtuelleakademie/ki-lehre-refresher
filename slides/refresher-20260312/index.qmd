@@ -10,7 +10,7 @@ bibliography:
 
 ## Drei Kurse, drei Perspektiven {.smaller}
 
-Die BFH bietet drei aufbauende Kurse zu KI in der Lehre an. Hier das Wesentliche:
+Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 
 <br>
 
@@ -20,9 +20,10 @@ Die BFH bietet drei aufbauende Kurse zu KI in der Lehre an. Hier das Wesentliche
 
 *Was ist KI?*
 
-- Sprachmodelle arbeiten durch statistische Mustervervollständigung
-- Vielseitig, aber fehleranfällig
-- Expert:innen profitieren. Lernende riskieren Lernverlust.
+- Ein Sprachmodell ist eine Textvorhersagemaschine
+- Dafür muss es viel Wissen erworben haben
+- Es kann jeden Dialog simulieren, auch Expertendialoge
+- Der Output ist oft schwer zu beurteilen und erfordert Fachwissen
 :::
 
 :::{.column width="33%"}
@@ -30,9 +31,10 @@ Die BFH bietet drei aufbauende Kurse zu KI in der Lehre an. Hier das Wesentliche
 
 *Wie funktioniert Lernen?*
 
-- Lernen = Schemabildung durch produktive kognitive Verarbeitung
-- Das Evaluationsparadox: Kompetente KI-Nutzung setzt Kompetenz voraus
-- Eigener Versuch *vor* dem KI-Einsatz
+- Wir können nur wenig gleichzeitig im Arbeitsgedächtnis behalten
+- Lernen heisst: Wissen selbst aufbauen und vernetzen
+- Gutes Aufgabendesign unterstützt diesen Prozess
+<!-- - Das Evaluationsparadox: kompetente KI-Nutzung setzt Kompetenz voraus -->
 :::
 
 :::{.column width="33%"}
@@ -40,9 +42,9 @@ Die BFH bietet drei aufbauende Kurse zu KI in der Lehre an. Hier das Wesentliche
 
 *Wie gestalten wir Aufgaben?*
 
-- Der Worked-Example-Effekt: durchgearbeitete Beispiele sind effektiver als ungeleitetes Problemlösen
-- Personalisierung senkt extrinsische Last
-- Strukturierte KI-Outputs als Werkzeug
+- KI-Tools lassen sich lernwissenschaftlich fundiert gestalten
+- Das Ziel: die kognitive Arbeit bleibt bei den Lernenden
+- KI unterstützt, statt zu ersetzen
 :::
 ::::
 
@@ -57,80 +59,103 @@ Für alle, die die Kurse nicht besucht haben: Hier das Wesentliche in Kurzform. 
 :::
 
 
-## LLMs als Textvorhersage {.smaller}
+## Was ist ein Sprachmodell? {.smaller}
 
-Ein Sprachmodell sagt das **nächste Wort** vorher, basierend auf allem, was davor steht.
+<br>
+
+Der Mechanismus ist einfach: ein Sprachmodell sagt das Text vorher, Wort für Wort.
+
+Aus diesem einfachen Prinzip entsteht etwas Mächtiges:
 
 <br>
 
 ::::{.columns}
-:::{.column width="55%"}
+:::{.column width="30%"}
+::: {style="background: #f0f4f8; padding: 1.2em; border-radius: 8px; border-top: 3px solid #0072B2; min-height: 180px;"}
+[**Mathe-Tutorial**]{style="color: #0072B2; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
 
-$$P(\text{Wort}_{i+1} \mid \text{Kontext}, \text{Modell})$$
+"Erkläre mir die Ableitung von x²"
 
-<br>
-
-Gegeben _"Der Hund liegt auf dem"_, berechnet das Modell:
-
-- "Boden" → 32%
-- "Sofa" → 24%
-- "Bett" → 18%
-- "Teppich" → 14%
-- ...
-
-Das Modell wählt ein Wort, hängt es an den Kontext an, und wiederholt den Prozess. So entsteht Text, Wort für Wort.
+→ ein vollständiges Tutorial mit Herleitung und Beispielen
+:::
 :::
 
-:::{.column width="45%"}
+:::{.column width="30%"}
+::: {style="background: #f5f0eb; padding: 1.2em; border-radius: 8px; border-top: 3px solid #E69F00; min-height: 180px;"}
+[**Klinischer Bericht**]{style="color: #E69F00; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
 
-<br>
+"Schreibe eine Differentialdiagnose für..."
 
-::: {style="background: #f8f7f6; padding: 1.5em; border-radius: 8px; border-left: 4px solid #0072B2;"}
-**Zwei Faktoren bestimmen die Vorhersage:**
-
-1. **Kontext**: Was wurde bisher gesagt?
-2. **Modell**: Was hat das System aus Trainingsdaten gelernt?
+→ ein strukturierter Bericht mit Fachterminologie
+:::
 :::
 
-<br>
+:::{.column width="30%"}
+::: {style="background: #faf0f0; padding: 1.2em; border-radius: 8px; border-top: 3px solid #D55E00; min-height: 180px;"}
+[**Musterlösung**]{style="color: #D55E00; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
 
-::: {style="font-size: 0.9em; color: #6E6560;"}
-Für eine vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/ki-lehre-beginner/)
+"Löse diese Gleichung Schritt für Schritt"
+
+→ eine detaillierte Lösung
 :::
 :::
 ::::
 
-::: {.notes}
-Ein Sprachmodell wie ChatGPT funktioniert im Kern wie ein ausgefeilter Autocomplete-Mechanismus. Es sagt das nächste Wort vorher, basierend auf dem bisherigen Kontext und dem, was es aus Trainingsdaten gelernt hat. Dieser Prozess wiederholt sich Wort für Wort. Für eine vertiefte Einführung verweise ich auf den Beginner-Kurs. Was für unsere heutige Diskussion zählt, ist eine bestimmte Eigenschaft dieses Prozesses.
-:::
-
-
-## Die entscheidende Eigenschaft {.center}
-
-<br><br>
-
-::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 1.8; text-align: center;"}
-LLMs produzieren Text, der **flüssig**, **selbstbewusst** und **kohärent** klingt.
-:::
-
 <br>
 
-. . .
-
-::: {style="font-size: 1.2em; max-width: 80%; margin: 0 auto; text-align: center;"}
-Das Ergebnis *liest sich* wie ein Expertentext.
-
-[Aber Flüssigkeit ist nicht dasselbe wie Korrektheit.]{style="color: #D55E00; font-weight: bold;"}
+::: {style="text-align: center; font-size: 1.05em;"}
+Um solche Texte zu erzeugen, muss das Modell enormes Wissen erworben haben. [Aber: der Output ist oft schwer zu beurteilen und erfordert Fachwissen.]{style="color: #D55E00;"}
 :::
 
-<br>
-
-::: {style="text-align: center; color: #6E6560; font-size: 0.95em;"}
-Warum das für Lernen gefährlich ist, erklärt die Cognitive Load Theory.
+::: {style="text-align: center; font-size: 0.85em; color: #6E6560; margin-top: 0.5em;"}
+Vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/ki-lehre-beginner/)
 :::
 
 ::: {.notes}
-Die entscheidende Eigenschaft von LLMs für unsere Diskussion: Sie produzieren Text, der flüssig, selbstbewusst und kohärent klingt. Das Ergebnis liest sich wie ein Expertentext, unabhängig davon, ob der Inhalt stimmt. Flüssigkeit ist nicht dasselbe wie Korrektheit. Warum das für Lernen gefährlich ist, erklärt die Cognitive Load Theory.
+Ein Sprachmodell wie ChatGPT ist im Kern eine Textvorhersagemaschine. Es sagt das nächste Wort vorher, basierend auf dem bisherigen Kontext und dem, was es aus Trainingsdaten gelernt hat. Um Text vorhersagen zu können, muss es enorm viel Wissen erworben haben. Deshalb kann es jeden Dialog simulieren, auch Expertendialoge. Das Ergebnis liest sich wie ein Expertentext, unabhängig davon, ob der Inhalt stimmt. Der Output ist oft schwer zu beurteilen und erfordert Fachwissen. Warum das für Lernen relevant ist, erklärt die Cognitive Load Theory.
+:::
+
+
+## Cognitive Load Theory in 60 Sekunden {.smaller}
+
+Warum ist das für Lernen relevant? Die **Cognitive Load Theory** [@sweller1988] beschreibt drei Konzepte:
+
+<br>
+
+::::{.columns}
+:::{.column width="33%"}
+::: {style="background: #f8f7f6; padding: 1.2em; border-radius: 8px; border-top: 3px solid #E69F00; min-height: 160px;"}
+**Arbeitsgedächtnis**
+
+Unser Denken hat einen Engpass: wir können nur ~4 Elemente gleichzeitig verarbeiten, für 15-30 Sekunden.
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: #f8f7f6; padding: 1.2em; border-radius: 8px; border-top: 3px solid #0072B2; min-height: 160px;"}
+**Schemata**
+
+Wissen wird im Langzeitgedächtnis als vernetzte Strukturen gespeichert. Schemata machen Experten zu Experten.
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: #f8f7f6; padding: 1.2em; border-radius: 8px; border-top: 3px solid #A63D2F; min-height: 160px;"}
+**Kognitive Belastung**
+
+Die Beanspruchung des Arbeitsgedächtnisses. Gutes Design reduziert unnötige Belastung und fördert Schemabildung.
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Kernaussage: **Lernen findet nur statt, wenn das Arbeitsgedächtnis produktiv arbeitet.**
+:::
+
+::: {.notes}
+Die Cognitive Load Theory gibt uns das Vokabular, um über Lernen und KI präzise nachzudenken. Drei Begriffe: Erstens, das Arbeitsgedächtnis als Engpass. Zweitens, Schemata als das Ziel von Lernen. Drittens, kognitive Belastung als die Beanspruchung dieses Engpasses. Die nächsten Folien vertiefen diese Konzepte.
 :::
 
 
