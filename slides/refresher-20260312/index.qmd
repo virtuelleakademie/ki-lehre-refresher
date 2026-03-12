@@ -118,44 +118,108 @@ Ein Sprachmodell wie ChatGPT ist im Kern eine Textvorhersagemaschine. Es sagt da
 
 ## Cognitive Load Theory in 60 Sekunden {.smaller}
 
-Warum ist das für Lernen relevant? Die **Cognitive Load Theory** [@sweller1988] beschreibt drei Konzepte:
+Warum ist das für Lernen relevant? Die **Cognitive Load Theory** [@swellerIntegratedHumanCognitive2025a] erklärt, wie das Arbeitsgedächtnis beim Lernen beansprucht wird.
 
 <br>
 
+```{ojs}
+//| echo: false
+
+bottleneck_fig = {
+  const w = 900, h = 130;
+  const svg = d3.create("svg")
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .attr("width", "100%")
+    .style("font-family", "Space Grotesk, sans-serif")
+    .style("background", "transparent")
+    .style("max-height", "130px");
+
+  const boxes = [
+    { x: 30, w: 200, label: "Sensorischer Input", sub: "Umwelt", color: "#94a3b8", fontColor: "#222" },
+    { x: 330, w: 240, label: "Arbeitsgedächtnis", sub: "~4 Elemente · 15–30 Sek.", color: "#E69F00", fontColor: "#222" },
+    { x: 670, w: 200, label: "Langzeitgedächtnis", sub: "Schemata · unbegrenzt", color: "#0072B2", fontColor: "#fff" }
+  ];
+
+  const r = 10, bh = 70, by = 30;
+
+  boxes.forEach(b => {
+    svg.append("rect").attr("x", b.x).attr("y", by).attr("width", b.w).attr("height", bh)
+      .attr("rx", r).attr("fill", b.color);
+    svg.append("text").attr("x", b.x + b.w/2).attr("y", by + 28)
+      .attr("text-anchor", "middle").attr("font-size", 14).attr("font-weight", "bold").attr("fill", b.fontColor).text(b.label);
+    svg.append("text").attr("x", b.x + b.w/2).attr("y", by + 48)
+      .attr("text-anchor", "middle").attr("font-size", 11).attr("fill", b.fontColor).attr("opacity", 0.85).text(b.sub);
+  });
+
+  // Arrows
+  svg.append("defs").append("marker").attr("id", "arr-bn")
+    .attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
+    .attr("markerWidth", 7).attr("markerHeight", 7).attr("orient", "auto")
+    .append("path").attr("d", "M 0 0 L 10 5 L 0 10 Z").attr("fill", "#666");
+
+  // Forward arrows
+  svg.append("line").attr("x1", 230).attr("y1", by + bh/2 - 4).attr("x2", 325).attr("y2", by + bh/2 - 4)
+    .attr("stroke", "#666").attr("stroke-width", 1.5).attr("marker-end", "url(#arr-bn)");
+  svg.append("text").attr("x", 278).attr("y", by + bh/2 - 12)
+    .attr("text-anchor", "middle").attr("font-size", 10).attr("fill", "#666").text("Aufmerksamkeit");
+
+  svg.append("line").attr("x1", 570).attr("y1", by + bh/2 - 4).attr("x2", 665).attr("y2", by + bh/2 - 4)
+    .attr("stroke", "#666").attr("stroke-width", 1.5).attr("marker-end", "url(#arr-bn)");
+  svg.append("text").attr("x", 618).attr("y", by + bh/2 - 12)
+    .attr("text-anchor", "middle").attr("font-size", 10).attr("fill", "#666").text("Schemabildung");
+
+  // Backward arrow (dashed)
+  svg.append("line").attr("x1", 665).attr("y1", by + bh/2 + 10).attr("x2", 575).attr("y2", by + bh/2 + 10)
+    .attr("stroke", "#666").attr("stroke-width", 1.5).attr("stroke-dasharray", "4,3").attr("marker-end", "url(#arr-bn)");
+  svg.append("text").attr("x", 618).attr("y", by + bh/2 + 26)
+    .attr("text-anchor", "middle").attr("font-size", 10).attr("fill", "#666").text("Abruf");
+
+  return svg.node();
+}
+```
+
+<br><br>
+
+::: {.fragment}
 ::::{.columns}
 :::{.column width="33%"}
-::: {style="background: #f8f7f6; padding: 1.2em; border-radius: 8px; border-top: 3px solid #E69F00; min-height: 160px;"}
-**Arbeitsgedächtnis**
+::: {style="background: #faf0f0; padding: 1.0em; border-radius: 8px; border-top: 3px solid #D55E00;"}
+[**Extrinsische Belastung**]{style="color: #D55E00;"}
 
-Unser Denken hat einen Engpass: wir können nur ~4 Elemente gleichzeitig verarbeiten, für 15-30 Sekunden.
+Unnötige Belastung durch schlechtes Design.
+
+[→ Reduzieren!]{style="font-weight: bold;"}
 :::
 :::
 
 :::{.column width="33%"}
-::: {style="background: #f8f7f6; padding: 1.2em; border-radius: 8px; border-top: 3px solid #0072B2; min-height: 160px;"}
-**Schemata**
+::: {style="background: #f0f4f8; padding: 1.0em; border-radius: 8px; border-top: 3px solid #0072B2;"}
+[**Intrinsische Belastung**]{style="color: #0072B2;"}
 
-Wissen wird im Langzeitgedächtnis als vernetzte Strukturen gespeichert. Schemata machen Experten zu Experten.
+Bestimmt durch Material und Vorwissen.
+
+[→ Steuern durch Aufgabendesign]{style="font-weight: bold;"}
 :::
 :::
 
 :::{.column width="33%"}
-::: {style="background: #f8f7f6; padding: 1.2em; border-radius: 8px; border-top: 3px solid #A63D2F; min-height: 160px;"}
-**Kognitive Belastung**
+::: {style="background: #f5f5eb; padding: 1.0em; border-radius: 8px; border-top: 3px solid #1E3A5F;"}
+[**Lernrelevante Verarbeitung**]{style="color: #1E3A5F;"}
 
-Die Beanspruchung des Arbeitsgedächtnisses. Gutes Design reduziert unnötige Belastung und fördert Schemabildung.
+Produktive Denkarbeit, die Schemata aufbaut.
+
+[→ Maximieren!]{style="font-weight: bold;"}
 :::
 :::
 ::::
 
-<br>
-
-::: {style="text-align: center; font-size: 1.05em;"}
-Kernaussage: **Lernen findet nur statt, wenn das Arbeitsgedächtnis produktiv arbeitet.**
+::: {style="text-align: center; font-size: 1.0em; margin-top: 0.5em;"}
+Das Arbeitsgedächtnis hat **begrenzte Kapazität**.
+:::
 :::
 
 ::: {.notes}
-Die Cognitive Load Theory gibt uns das Vokabular, um über Lernen und KI präzise nachzudenken. Drei Begriffe: Erstens, das Arbeitsgedächtnis als Engpass. Zweitens, Schemata als das Ziel von Lernen. Drittens, kognitive Belastung als die Beanspruchung dieses Engpasses. Die nächsten Folien vertiefen diese Konzepte.
+Die Cognitive Load Theory unterscheidet drei Arten der Belastung des Arbeitsgedächtnisses. Oben sehen wir das Grundmodell: Information kommt rein, wird im Arbeitsgedächtnis verarbeitet, und wenn diese Verarbeitung produktiv ist, entstehen Schemata im Langzeitgedächtnis. Extrinsische Belastung entsteht durch schlechtes Design und sollte minimiert werden. Intrinsische Belastung hängt vom Material und dem Vorwissen ab. Lernrelevante Verarbeitung ist die Denkarbeit, die Schemata aufbaut. Das Ziel: extrinsische Belastung senken, damit mehr Kapazität für lernrelevante Verarbeitung bleibt.
 :::
 
 
@@ -183,19 +247,13 @@ Keine Technologie kann diesen Engpass umgehen. KI kann Information liefern, aber
 //| echo: false
 
 viewof cl_controls = {
-  const div = html`<div style="display:flex;flex-direction:column;gap:8px;font-size:15px;">
-    <div style="display:flex;align-items:center;gap:10px;">
-      <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
-      <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
-    </div>
-    <div>
-      <button style="padding:4px 14px;font-size:14px;border:1.5px solid #1E3A5F;border-radius:4px;background:transparent;color:#1E3A5F;cursor:pointer;white-space:nowrap;">Gutes Lerndesign</button>
-    </div>
+  const div = html`<div style="display:flex;align-items:center;gap:10px;font-size:15px;">
+    <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
+    <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
   </div>`;
 
   const slider = div.querySelector("input[type=range]");
   const label = div.querySelector("strong");
-  const resetBtn = div.querySelector("button");
 
   function emit() {
     div.value = +slider.value;
@@ -204,12 +262,6 @@ viewof cl_controls = {
 
   slider.oninput = () => {
     label.textContent = slider.value + "%";
-    emit();
-  };
-
-  resetBtn.onclick = () => {
-    slider.value = 10;
-    label.textContent = "10%";
     emit();
   };
 
@@ -287,13 +339,13 @@ cognitive_load_chart = {
 ::::
 
 ::: {.notes}
-Das Arbeitsgedächtnis ist der Flaschenhals, durch den alles Lernen hindurch muss. Es kann ungefähr vier Elemente gleichzeitig halten, und zwar für 15 bis 30 Sekunden. Bewegt den Slider: Bei hoher extrinsischer Belastung bleibt kaum Kapazität für lernrelevante Verarbeitung. Klickt auf "Gutes Lerndesign": Extrinsische Last auf 10%, und sofort wird Kapazität frei.
+Das Arbeitsgedächtnis ist der Flaschenhals, durch den alles Lernen hindurch muss. Es kann ungefähr vier Elemente gleichzeitig halten, und zwar für 15 bis 30 Sekunden. Bewegt den Slider: Bei hoher extrinsischer Belastung bleibt kaum Kapazität für lernrelevante Verarbeitung. Schiebt die extrinsische Last nach unten, und sofort wird Kapazität frei.
 :::
 
 
 ## Expertise = vernetzte Schemata {.smaller}
 
-Wie überwindet man den Engpass? Durch **Schemata**: mentale Strukturen, die viele Einzelelemente zu einer Einheit komprimieren.
+Wie überwindet man den Engpass? Durch **Vorwissen**. Wissen wird im Langzeitgedächtnis als **Schemata** gespeichert: mentale Strukturen, die viele Einzelelemente zu einer Einheit komprimieren. Je mehr Vorwissen, desto weniger Belastung für das Arbeitsgedächtnis.
 
 <br>
 
@@ -466,139 +518,44 @@ Wie überwindet man den Engpass? Durch Schemata. Ein Schema komprimiert viele Ei
 :::
 
 
-## Extrinsische Last: der Split-Attention-Effekt {.smaller}
+## Extrinsische Last reduzieren {.smaller}
 
-Wenn Lernende zwischen zwei Informationsquellen hin- und herspringen müssen, entsteht unnötige kognitive Belastung.
+Vorwissen entlastet das Arbeitsgedächtnis. Aber auch das **Design** einer Aufgabe beeinflusst die Belastung. Extrinsische Last entsteht durch unnötige Komplexität, die nichts mit dem Lerninhalt zu tun hat.
 
 <br>
 
-```{ojs}
-//| echo: false
+::::{.columns}
+:::{.column width="50%"}
+::: {style="background: #faf0f0; padding: 1.2em; border-radius: 8px; border-left: 3px solid #D55E00;"}
+**Typische Quellen extrinsischer Last**
 
-viewof format_toggle = {
-  const div = html`<div style="display:flex;align-items:center;gap:16px;font-size:0.85em;">
-    <label style="cursor:pointer;">
-      <input type="radio" name="fmt" value="split" checked style="accent-color:#D55E00;"> Split-Attention
-    </label>
-    <label style="cursor:pointer;">
-      <input type="radio" name="fmt" value="integrated" style="accent-color:#0072B2;"> Integriertes Format
-    </label>
-  </div>`;
-  const radios = div.querySelectorAll("input");
-  radios.forEach(r => r.oninput = () => {
-    div.value = r.value;
-    div.dispatchEvent(new Event("input", {bubbles: true}));
-  });
-  div.value = "split";
-  return div;
-}
-```
+- Information auf mehrere Quellen verteilt (Split-Attention)
+- Unklare oder mehrdeutige Aufgabenstellungen
+- Irrelevante Zusatzinformationen
+- Überladene Folien oder Arbeitsblätter
+:::
+:::
 
-```{ojs}
-//| echo: false
+:::{.column width="50%"}
+::: {style="background: #f0f4f8; padding: 1.2em; border-radius: 8px; border-left: 3px solid #0072B2;"}
+**Gegenstrategien**
 
-split_attention_fig = {
-  const w = 960;
-  const h = 340;
-  const fs = 14;
-  const fsSmall = 12;
-  const integrated = format_toggle === "integrated";
+- Zusammengehörige Information integrieren
+- Aufgaben klar und eindeutig formulieren
+- Nur zeigen, was gerade gebraucht wird
+- Schritt für Schritt statt alles auf einmal
+:::
+:::
+::::
 
-  const svg = d3.create("svg")
-    .attr("viewBox", `0 0 ${w} ${h}`)
-    .attr("width", "100%").attr("height", "100%")
-    .style("font-family", "system-ui, sans-serif")
-    .style("background", "transparent")
-    .style("max-height", "340px");
+<br>
 
-  const triCx = integrated ? w / 2 : w * 0.25;
-  const triCy = integrated ? h * 0.45 : h * 0.48;
-  const sz = 105;
-
-  const A = { x: triCx, y: triCy - sz };
-  const B = { x: triCx - sz * 0.9, y: triCy + sz * 0.6 };
-  const C = { x: triCx + sz * 0.9, y: triCy + sz * 0.6 };
-
-  svg.append("polygon")
-    .attr("points", `${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`)
-    .attr("fill", "none").attr("stroke", "#1A1714").attr("stroke-width", 2);
-
-  const arcR = 22;
-  const angAB = Math.atan2(B.y - A.y, B.x - A.x);
-  const angAC = Math.atan2(C.y - A.y, C.x - A.x);
-  svg.append("path")
-    .attr("d", `M ${A.x + arcR * Math.cos(angAB)} ${A.y + arcR * Math.sin(angAB)} A ${arcR} ${arcR} 0 0 1 ${A.x + arcR * Math.cos(angAC)} ${A.y + arcR * Math.sin(angAC)}`)
-    .attr("fill", "none").attr("stroke", "#A63D2F").attr("stroke-width", 1.5);
-
-  const arcS = 16;
-  const bA1 = Math.atan2(A.y - B.y, A.x - B.x);
-  const bA2 = Math.atan2(C.y - B.y, C.x - B.x);
-  svg.append("path")
-    .attr("d", `M ${B.x + arcS * Math.cos(bA2)} ${B.y + arcS * Math.sin(bA2)} A ${arcS} ${arcS} 0 0 1 ${B.x + arcS * Math.cos(bA1)} ${B.y + arcS * Math.sin(bA1)}`)
-    .attr("fill", "none").attr("stroke", "#1E3A5F").attr("stroke-width", 1.5);
-  const cA1 = Math.atan2(B.y - C.y, B.x - C.x);
-  const cA2 = Math.atan2(A.y - C.y, A.x - C.x);
-  svg.append("path")
-    .attr("d", `M ${C.x + arcS * Math.cos(cA2)} ${C.y + arcS * Math.sin(cA2)} A ${arcS} ${arcS} 0 0 1 ${C.x + arcS * Math.cos(cA1)} ${C.y + arcS * Math.sin(cA1)}`)
-    .attr("fill", "none").attr("stroke", "#1E3A5F").attr("stroke-width", 1.5);
-
-  svg.append("text").attr("x", A.x).attr("y", A.y - 12).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("A");
-  svg.append("text").attr("x", B.x - 14).attr("y", B.y + 16).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("B");
-  svg.append("text").attr("x", C.x + 14).attr("y", C.y + 16).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("C");
-  svg.append("text").attr("x", A.x).attr("y", A.y + 38).attr("text-anchor", "middle").attr("font-size", fs).attr("fill", "#A63D2F").attr("font-weight", "600").text("68°");
-
-  const abNorm = Math.atan2(B.y - A.y, B.x - A.x) + Math.PI / 2;
-  svg.append("text")
-    .attr("x", (A.x + B.x) / 2 + 18 * Math.cos(abNorm))
-    .attr("y", (A.y + B.y) / 2 + 18 * Math.sin(abNorm))
-    .attr("text-anchor", "middle").attr("font-size", fsSmall).attr("fill", "#555")
-    .attr("transform", `rotate(${angAB * 180 / Math.PI}, ${(A.x + B.x) / 2 + 18 * Math.cos(abNorm)}, ${(A.y + B.y) / 2 + 18 * Math.sin(abNorm)})`)
-    .text("AB = AC");
-
-  const tickLen = 7;
-  const abMid = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2 };
-  const abAng = Math.atan2(B.y - A.y, B.x - A.x) + Math.PI / 2;
-  svg.append("line").attr("x1", abMid.x + tickLen * Math.cos(abAng)).attr("y1", abMid.y + tickLen * Math.sin(abAng)).attr("x2", abMid.x - tickLen * Math.cos(abAng)).attr("y2", abMid.y - tickLen * Math.sin(abAng)).attr("stroke", "#1A1714").attr("stroke-width", 1.5);
-  const acMid = { x: (A.x + C.x) / 2, y: (A.y + C.y) / 2 };
-  const acAng = Math.atan2(C.y - A.y, C.x - A.x) + Math.PI / 2;
-  svg.append("line").attr("x1", acMid.x + tickLen * Math.cos(acAng)).attr("y1", acMid.y + tickLen * Math.sin(acAng)).attr("x2", acMid.x - tickLen * Math.cos(acAng)).attr("y2", acMid.y - tickLen * Math.sin(acAng)).attr("stroke", "#1A1714").attr("stroke-width", 1.5);
-
-  if (integrated) {
-    svg.append("text").attr("x", triCx).attr("y", A.y - 30).attr("text-anchor", "middle").attr("font-size", fs).attr("fill", "#1E3A5F").attr("font-weight", "500").text("Gesucht: Winkel B und C");
-    svg.append("text").attr("x", B.x + 22).attr("y", B.y - 8).attr("text-anchor", "start").attr("font-size", fs).attr("fill", "#1E3A5F").attr("font-weight", "600").text("56°");
-    svg.append("text").attr("x", C.x - 22).attr("y", C.y - 8).attr("text-anchor", "end").attr("font-size", fs).attr("fill", "#1E3A5F").attr("font-weight", "600").text("56°");
-    const stepY = B.y + 36;
-    svg.append("text").attr("x", triCx).attr("y", stepY).attr("text-anchor", "middle").attr("font-size", fsSmall).attr("fill", "#555").attr("font-weight", "500").text("AB = AC  →  gleichschenkliges Dreieck  →  Winkel B = Winkel C");
-    svg.append("text").attr("x", triCx).attr("y", stepY + 20).attr("text-anchor", "middle").attr("font-size", fsSmall).attr("fill", "#A63D2F").attr("font-weight", "600").text("B = C = (180° − 68°) / 2 = 56°");
-  } else {
-    const boxX = w * 0.50, boxY = 10, boxW = w * 0.46, boxH = h - 20;
-    svg.append("rect").attr("x", boxX).attr("y", boxY).attr("width", boxW).attr("height", boxH).attr("fill", "#f8f6f0").attr("stroke", "#ccc").attr("stroke-width", 1).attr("rx", 2);
-    svg.append("text").attr("x", boxX + boxW / 2).attr("y", boxY + 22).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("Lösungsschritte");
-    const steps = [
-      { text: "Schritt 1:", bold: true }, { text: "Erkenne, dass AB = AC" }, { text: "(gleichschenkliges Dreieck)." }, { text: "" },
-      { text: "Schritt 2:", bold: true }, { text: "In einem gleichschenkligen Dreieck" }, { text: "sind die Basiswinkel gleich: ∠B = ∠C." }, { text: "" },
-      { text: "Schritt 3:", bold: true }, { text: "Winkelsumme im Dreieck = 180°." }, { text: "∠B = ∠C = (180° − 68°) / 2" }, { text: "∠B = ∠C = 56°", color: "#A63D2F", bold: true },
-    ];
-    steps.forEach((s, i) => {
-      svg.append("text").attr("x", boxX + 14).attr("y", boxY + 44 + i * 16).attr("font-size", fsSmall - 1).attr("fill", s.color || "#1A1714").attr("font-weight", s.bold ? "600" : "400").text(s.text);
-    });
-    svg.append("defs").append("marker").attr("id", "arrowhead-split").attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto").append("path").attr("d", "M 0 0 L 10 5 L 0 10 Z").attr("fill", "#D55E00");
-    const arrowX1 = triCx + sz * 0.9 + 20, arrowX2 = boxX - 12, arrowY = h * 0.48;
-    svg.append("line").attr("x1", arrowX1).attr("y1", arrowY - 6).attr("x2", arrowX2).attr("y2", arrowY - 6).attr("stroke", "#D55E00").attr("stroke-width", 1.5).attr("stroke-dasharray", "5,4").attr("marker-end", "url(#arrowhead-split)");
-    svg.append("line").attr("x1", arrowX2).attr("y1", arrowY + 10).attr("x2", arrowX1).attr("y2", arrowY + 10).attr("stroke", "#D55E00").attr("stroke-width", 1.5).attr("stroke-dasharray", "5,4").attr("marker-end", "url(#arrowhead-split)");
-    svg.append("text").attr("x", (arrowX1 + arrowX2) / 2).attr("y", arrowY - 16).attr("text-anchor", "middle").attr("font-size", fsSmall - 1).attr("fill", "#D55E00").attr("font-weight", "600").text("Blickbewegung");
-  }
-
-  return svg.node();
-}
-```
-
-::: {style="text-align: center; font-size: 1.05em; color: #6E6560;"}
-Wechselt zwischen den Formaten. Integriertes Design eliminiert die unnötige kognitive Belastung.
+::: {style="text-align: center; font-size: 1.05em;"}
+Jede Reduktion extrinsischer Last schafft **Kapazität für lernrelevante Verarbeitung**.
 :::
 
 ::: {.notes}
-Der Split-Attention-Effekt ist ein klassisches Beispiel für extrinsische Last. Links das Split-Format: Die Lernenden müssen zwischen Dreieck und Lösungsschritten hin- und herspringen. Jede Blickbewegung kostet Arbeitsgedächtnis. Rechts das integrierte Format: Alles an einem Ort. Dieselbe Information, aber weniger extrinsische Last. Wechselt zwischen den Formaten, um den Unterschied zu sehen.
+Extrinsische Last entsteht durch schlechtes Instruktionsdesign. Ein klassisches Beispiel ist der Split-Attention-Effekt: wenn Lernende zwischen einer Grafik und einer separaten Erklärung hin- und herspringen müssen, kostet jede Blickbewegung Arbeitsgedächtnis. Die Lösung: Information integrieren, Aufgaben klar formulieren, und nur zeigen, was gerade gebraucht wird. Jede Reduktion extrinsischer Last schafft Kapazität für die produktive Denkarbeit, die Schemata aufbaut.
 :::
 
 
