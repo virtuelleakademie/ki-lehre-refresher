@@ -1,6 +1,6 @@
 ---
-title: "Wenn Outsourcing die rationale Strategie ist"
-subtitle: "Kognitive Grundlagen und neue empirische Befunde zu KI und Lernen"
+title: "Aufgabendesign nach Cognitive Load Theory"
+subtitle: "Von der kognitiven Architektur zum KI-gestützten Scaffolding"
 
 bibliography:
   - ../../bibliography.bib
@@ -8,106 +8,7 @@ bibliography:
 ---
 
 
-# Realität
-
-
-## {.center}
-
-<br><br>
-
-::: {style="font-size: 1.1em; text-align: center; color: #6E6560;"}
-The Guardian, 10. März 2026
-:::
-
-<br>
-
-::: {style="font-size: 1.5em; text-align: center; max-width: 85%; margin: 0 auto; line-height: 1.5;"}
-"I wish I could push ChatGPT off a cliff": [professors scramble to save critical thinking]{style="color: #A63D2F; font-weight: bold;"} in an age of AI
-:::
-
-<br>
-
-::: {style="text-align: center; color: #6E6560; font-size: 0.95em;"}
-Alice Speri
-:::
-
-::: {.notes}
-Die heutige Präsentation beginnt mit einem Artikel, der diese Woche im Guardian erschienen ist. Der Titel ist provokant, aber die Realität, die er beschreibt, kennen die meisten von euch.
-:::
-
-
-## Das Museum, das geschlossen war {.smaller}
-
-<br>
-
-Lea Pao, Literaturprofessorin an der Stanford University, bat ihre Studierenden, ein lokales Museum zu besuchen, 10 Minuten vor einem Gemälde zu stehen und danach ein paar Absätze über die Erfahrung zu schreiben.
-
-<br>
-
-Eine Studentin reichte einen Text ein: "too perfect, without saying anything."
-
-. . .
-
-<br>
-
-::: {style="font-size: 1.2em; text-align: center;"}
-[Das Museum war an dem Tag geschlossen.]{style="color: #A63D2F; font-weight: bold;"}
-:::
-
-<br>
-
-::: {style="text-align: center; color: #6E6560; font-size: 0.95em;"}
-Die Studentin hatte den Text von einer KI generieren lassen.
-:::
-
-::: {.notes}
-Lea Pao hat bewusst eine Aufgabe gewählt, die man eigentlich nicht outsourcen kann: Geh ins Museum, schau dir ein Bild an, beschreib deine Erfahrung. Eine Studentin reichte trotzdem einen KI-generierten Text ein, der, wie Pao sagte, "zu perfekt war, ohne etwas zu sagen." Pao fand später heraus, dass das Museum an dem Tag geschlossen war. Die Studentin hatte nie vor dem Gemälde gestanden.
-:::
-
-
-## Die Reaktionen {.smaller}
-
-Der Guardian hat ein Dutzend Professor:innen befragt. Was tun sie?
-
-<br>
-
-::::{.columns}
-:::{.column width="50%"}
-- Mündliche Prüfungen
-- Handschriftliche Notizbücher
-- Benotung von Beteiligung im Unterricht
-- KI komplett verbieten
-:::
-
-:::{.column width="50%"}
-- Transparenzberichte einfordern
-- Zufällige Wörter in Aufgaben verstecken ("broccoli", "Dua Lipa")
-- KI-Erkennungssoftware einsetzen
-:::
-::::
-
-<br>
-
-::: {style="font-size: 1.1em; text-align: center;"}
-"It creates hours of additional labor. [And makes me feel like a cop.]{style="color: #A63D2F; font-weight: bold;"}"
-
-[Danica Savonick, SUNY Cortland]{style="color: #6E6560; font-size: 0.85em;"}
-:::
-
-. . .
-
-<br>
-
-::: {style="font-size: 1.1em; max-width: 80%; margin: 0 auto; text-align: center; color: #6E6560;"}
-Jede Reaktion ist ein individueller Fix für ein strukturelles Problem. Um zu verstehen *warum*, müssen wir anschauen, wie Lernen funktioniert.
-:::
-
-::: {.notes}
-Die Reaktionen der Dozierenden sind bemerkenswert. Jede einzelne Person erfindet eigene Lösungen: mündliche Prüfungen, handschriftliche Notizbücher, Beteiligungsbewertung, KI-Verbote, Transparenzberichte, sogar das Verstecken von zufälligen Wörtern wie "broccoli" oder "Dua Lipa" in Aufgaben. Die Professorin Danica Savonick bringt es auf den Punkt: "Es verursacht Stunden zusätzlicher Arbeit. Und ich fühle mich wie eine Polizistin." Was all diese Reaktionen gemeinsam haben: Es sind individuelle Lösungen für ein systemisches Problem. Um zu verstehen, warum keine dieser Massnahmen das Problem löst, müssen wir anschauen, wie Lernen eigentlich funktioniert.
-:::
-
-
-# Wie Lernen funktioniert
+# Überblick
 
 
 ## Drei Kurse, drei Perspektiven {.smaller}
@@ -151,12 +52,95 @@ Die BFH bietet drei aufbauende Kurse zu KI in der Lehre an. Hier das Wesentliche
 <br>
 
 ::: {style="text-align: center; font-size: 1.05em; color: #6E6560;"}
-Die nächsten Folien vertiefen die Kernkonzepte aus dem Intermediate-Kurs.
+Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissenschaft, Werkzeugdesign.
 :::
 
 ::: {.notes}
-Für alle, die die Kurse nicht besucht haben: Hier das Wesentliche in Kurzform. Der Beginner-Kurs klärt, was KI ist und was sie kann. Der Intermediate-Kurs ist der umfangreichste: Er erklärt, wie Lernen funktioniert und warum KI-Einsatz beim Lernen riskant ist. Der Advanced-Kurs zeigt, wie man KI-gestützte Lerntools baut. Die nächsten Folien vertiefen die Kernkonzepte aus dem Intermediate-Kurs, weil sie die Grundlage für alles Weitere sind.
+Für alle, die die Kurse nicht besucht haben: Hier das Wesentliche in Kurzform. Der Beginner-Kurs klärt, was KI ist und was sie kann. Der Intermediate-Kurs erklärt, wie Lernen funktioniert und warum KI-Einsatz beim Lernen riskant ist. Der Advanced-Kurs zeigt, wie man KI-gestützte Lerntools baut. In dieser Präsentation gehen wir durch alle drei Perspektiven, weil sie zusammen ein kohärentes Bild ergeben.
 :::
+
+
+# Beginner: Was machen Sprachmodelle?
+
+
+## LLMs als Textvorhersage {.smaller}
+
+Ein Sprachmodell sagt das **nächste Wort** vorher, basierend auf allem, was davor steht.
+
+<br>
+
+::::{.columns}
+:::{.column width="55%"}
+
+$$P(\text{Wort}_{i+1} \mid \text{Kontext}, \text{Modell})$$
+
+<br>
+
+Gegeben _"Der Hund liegt auf dem"_, berechnet das Modell:
+
+- "Boden" → 32%
+- "Sofa" → 24%
+- "Bett" → 18%
+- "Teppich" → 14%
+- ...
+
+Das Modell wählt ein Wort, hängt es an den Kontext an, und wiederholt den Prozess. So entsteht Text, Wort für Wort.
+:::
+
+:::{.column width="45%"}
+
+<br>
+
+::: {style="background: #f8f7f6; padding: 1.5em; border-radius: 8px; border-left: 4px solid #0072B2;"}
+**Zwei Faktoren bestimmen die Vorhersage:**
+
+1. **Kontext**: Was wurde bisher gesagt?
+2. **Modell**: Was hat das System aus Trainingsdaten gelernt?
+:::
+
+<br>
+
+::: {style="font-size: 0.9em; color: #6E6560;"}
+Für eine vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/ki-lehre-beginner/)
+:::
+:::
+::::
+
+::: {.notes}
+Ein Sprachmodell wie ChatGPT funktioniert im Kern wie ein ausgefeilter Autocomplete-Mechanismus. Es sagt das nächste Wort vorher, basierend auf dem bisherigen Kontext und dem, was es aus Trainingsdaten gelernt hat. Dieser Prozess wiederholt sich Wort für Wort. Für eine vertiefte Einführung verweise ich auf den Beginner-Kurs. Was für unsere heutige Diskussion zählt, ist eine bestimmte Eigenschaft dieses Prozesses.
+:::
+
+
+## Die entscheidende Eigenschaft {.center}
+
+<br><br>
+
+::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 1.8; text-align: center;"}
+LLMs produzieren Text, der **flüssig**, **selbstbewusst** und **kohärent** klingt.
+:::
+
+<br>
+
+. . .
+
+::: {style="font-size: 1.2em; max-width: 80%; margin: 0 auto; text-align: center;"}
+Das Ergebnis *liest sich* wie ein Expertentext.
+
+[Aber Flüssigkeit ist nicht dasselbe wie Korrektheit.]{style="color: #D55E00; font-weight: bold;"}
+:::
+
+<br>
+
+::: {style="text-align: center; color: #6E6560; font-size: 0.95em;"}
+Warum das für Lernen gefährlich ist, erklärt die Cognitive Load Theory.
+:::
+
+::: {.notes}
+Die entscheidende Eigenschaft von LLMs für unsere Diskussion: Sie produzieren Text, der flüssig, selbstbewusst und kohärent klingt. Das Ergebnis liest sich wie ein Expertentext, unabhängig davon, ob der Inhalt stimmt. Flüssigkeit ist nicht dasselbe wie Korrektheit. Warum das für Lernen gefährlich ist, erklärt die Cognitive Load Theory.
+:::
+
+
+# Intermediate: Cognitive Load Theory
 
 
 ## Das Arbeitsgedächtnis als Nadelöhr {.smaller}
@@ -252,43 +236,344 @@ Das Arbeitsgedächtnis ist der Flaschenhals, durch den alles Lernen hindurch mus
 :::
 
 
-## Expertise = Schemata {.smaller}
+## Drei Arten kognitiver Belastung {.smaller}
 
-Wie überwindet man den Engpass? Durch **Schemata**: mentale Strukturen, die viele Einzelelemente zu einer Einheit komprimieren.
+Die Cognitive Load Theory unterscheidet drei Arten von Belastung, die um dieselbe begrenzte Kapazität konkurrieren:
+
+<br>
+
+::::{.columns}
+:::{.column width="33%"}
+::: {style="background: rgba(213, 94, 0, 0.08); padding: 1.2em; border-radius: 8px; border-top: 4px solid #D55E00; min-height: 280px;"}
+### Extrinsische Last
+
+Verursacht durch **schlechtes Design**
+
+- Unklare Aufgabenstellung
+- Inkonsistente Notation
+- Irrelevante Informationen
+
+[Trägt nichts zum Lernen bei. Minimieren.]{style="color: #D55E00; font-weight: bold;"}
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: rgba(100, 116, 139, 0.08); padding: 1.2em; border-radius: 8px; border-top: 4px solid #64748b; min-height: 280px;"}
+### Intrinsische Last
+
+Verursacht durch das **Material selbst**
+
+- Abhängig von der Elementinteraktivität
+- Bestimmt durch das Vorwissen der Lernenden
+- Kann durch Scaffolding gesteuert werden
+
+[Nicht eliminierbar, aber steuerbar.]{style="color: #64748b; font-weight: bold;"}
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: rgba(0, 114, 178, 0.08); padding: 1.2em; border-radius: 8px; border-top: 4px solid #0072B2; min-height: 280px;"}
+### Lernrelevante Verarbeitung
+
+Die **produktive** kognitive Arbeit
+
+- Schemabildung
+- Integration neuer Information
+- Automatisierung von Prozeduren
+
+[Das Ziel: maximieren.]{style="color: #0072B2; font-weight: bold;"}
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Aufgabendesign = extrinsische Last senken, intrinsische Last steuern, lernrelevante Verarbeitung maximieren.
+:::
+
+::: {.notes}
+Die Cognitive Load Theory unterscheidet drei Arten von Belastung. Extrinsische Last wird durch schlechtes Design verursacht und trägt nichts zum Lernen bei. Intrinsische Last kommt vom Material selbst und hängt entscheidend vom Vorwissen ab. Lernrelevante Verarbeitung ist die produktive kognitive Arbeit, die Schemata aufbaut. Alle drei konkurrieren um dieselbe begrenzte Kapazität. Das Ziel von Aufgabendesign: extrinsische Last minimieren, intrinsische Last steuern, lernrelevante Verarbeitung maximieren.
+:::
+
+
+## Prinzip 1: Extrinsische Last minimieren {.smaller}
+
+Extrinsische Last ist alles, was Arbeitsgedächtnis verbraucht, ohne zum Lernen beizutragen.
 
 <br>
 
 ::::{.columns}
 :::{.column width="50%"}
-### Anfänger:in
+::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
+### Typische Quellen in Mathe-Übungen
 
-- Sieht **isolierte Einzelteile**
-- Muss jedes Element einzeln verarbeiten
-- Arbeitsgedächtnis schnell überlastet
-- Nutzt **schwache Methoden**: Versuch und Irrtum, Analogie, Rückwärtsarbeiten
-
+- **Unklare Aufgabenstellung**: Was genau soll gelöst werden?
+- **Inkonsistente Notation**: Mal $x$, mal $X$, mal kursiv, mal nicht
+- **Split Attention**: Aufgabe auf Seite 3, Formelsammlung auf Seite 12
+- **Redundanz**: Dieselbe Information in Text und Grafik, leicht unterschiedlich formuliert
+:::
 :::
 
 :::{.column width="50%"}
-### Expert:in
+::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
+### Gegenstrategien
 
-- Sieht **Muster und Strukturen**
-- Ein Schema = ein "Slot" im Arbeitsgedächtnis
-- Kapazität reicht für komplexe Probleme
-- Nutzt **starke Methoden**: direkter Abruf, automatisierte Prozeduren
+- **Integriertes Format**: Alle relevanten Informationen direkt bei der Aufgabe
+- **Konsistente Notation**: Ein Symbol, eine Bedeutung
+- **Klare Aufgabenstruktur**: Sofort erkennbar, was zu tun ist
+- **Entfernen von Irrelevantem**: Weniger ist mehr
+:::
 :::
 ::::
 
 <br>
 
 ::: {style="text-align: center; font-size: 1.1em;"}
-Die Progression von schwachen zu starken Methoden erfordert **eigene kognitive Arbeit**.
+Extrinsische Last zu senken kostet nichts und gibt Kapazität frei.
 
-[KI liefert das Ergebnis der Expertise, ohne den Prozess, der sie aufbaut.]{style="color: #D55E00; font-weight: bold;"}
+[Das ist der einfachste Hebel im Aufgabendesign.]{style="color: #0072B2; font-weight: bold;"}
 :::
 
 ::: {.notes}
-Wie überwindet man den Engpass? Durch Schemata. Ein Schema komprimiert viele Einzelelemente zu einer Einheit und belegt nur einen Slot im Arbeitsgedächtnis. Anfänger sehen isolierte Einzelteile und nutzen schwache Methoden. Expert:innen sehen Muster und greifen auf automatisierte Prozeduren zurück. Diese Progression erfordert eigene kognitive Arbeit: Üben, Fehler machen, Feedback verarbeiten. KI liefert das Ergebnis der Expertise, den guten Text, die richtige Analyse, den eleganten Code, ohne den Prozess, der diese Expertise aufbaut. Die Schemata entstehen nicht.
+Extrinsische Last ist der einfachste Hebel, weil sie nichts zum Lernen beiträgt. In typischen Mathe-Übungen gibt es viele Quellen: unklare Aufgabenstellungen, inkonsistente Notation, Split Attention zwischen Aufgabe und Referenzmaterial. Die Gegenstrategien sind einfach: integriertes Format, konsistente Notation, klare Struktur. Das kostet nichts und gibt sofort Kapazität frei für lernrelevante Verarbeitung.
+:::
+
+
+## Prinzip 2: Vorwissen bestimmt das Aufgabendesign {.smaller}
+
+Dieselbe Aufgabe hat **unterschiedliche intrinsische Last** für verschiedene Lernende.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+
+**Aufgabe:** Löse $-1(-x - 7) = 2x - 20$
+
+<br>
+
+::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
+### Für Anfänger:innen
+
+Hohe Elementinteraktivität:
+
+- Was bedeutet das Minuszeichen vor der Klammer?
+- Wie verteile ich?
+- Wie bringe ich $x$ auf eine Seite?
+- Welche Rechenregeln gelten?
+
+Jedes Element muss **einzeln** im Arbeitsgedächtnis gehalten werden.
+:::
+:::
+
+:::{.column width="50%"}
+
+<br><br>
+
+::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
+### Für Fortgeschrittene
+
+Niedrige Elementinteraktivität:
+
+- "Klammer auflösen" → ein Schema
+- "Terme zusammenfassen" → ein Schema
+- "Nach $x$ auflösen" → ein Schema
+
+Drei Schritte, drei Slots. Problemlos.
+:::
+
+<br>
+
+::: {style="font-size: 1.05em; font-weight: bold; color: #D55E00;"}
+→ Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
+:::
+:::
+::::
+
+::: {.notes}
+Hier wird es für das Aufgabendesign entscheidend. Dieselbe Gleichung hat völlig unterschiedliche kognitive Kosten für verschiedene Lernende. Für Anfänger:innen ist jedes Element einzeln zu verarbeiten: Was bedeutet das Minus, wie verteile ich, wie bringe ich x auf eine Seite. Für Fortgeschrittene sind das drei automatisierte Schritte, drei Schemata, drei Slots. Dieselbe Aufgabe, aber radikal verschiedene Anforderungen ans Arbeitsgedächtnis.
+:::
+
+
+## Der Expertise-Umkehr-Effekt {.smaller}
+
+Was für Anfänger:innen hilft, schadet Fortgeschrittenen, und umgekehrt.
+
+<br>
+
+```{ojs}
+//| echo: false
+
+expertise_chart = {
+  const w = 650;
+  const h = 350;
+  const fs = "13px";
+
+  const levels = ["Anfänger:in", "Fortgeschritten", "Expert:in"];
+  const data = [
+    {Niveau: "Anfänger:in",    Methode: "Worked Examples",   Effektivität: 85},
+    {Niveau: "Anfänger:in",    Methode: "Problemlösen",      Effektivität: 35},
+    {Niveau: "Fortgeschritten", Methode: "Worked Examples",   Effektivität: 60},
+    {Niveau: "Fortgeschritten", Methode: "Problemlösen",      Effektivität: 65},
+    {Niveau: "Expert:in",      Methode: "Worked Examples",   Effektivität: 30},
+    {Niveau: "Expert:in",      Methode: "Problemlösen",      Effektivität: 80}
+  ];
+
+  return Plot.plot({
+    width: w,
+    height: h,
+    marginLeft: 50,
+    marginBottom: 50,
+    marginTop: 20,
+    style: {fontSize: fs, background: "transparent"},
+    x: {label: null, domain: levels, padding: 0.3},
+    y: {label: "Lerneffektivität (%)", domain: [0, 100]},
+    color: {
+      domain: ["Worked Examples", "Problemlösen"],
+      range: ["#0072B2", "#D55E00"],
+      legend: true
+    },
+    marks: [
+      Plot.barY(data, {
+        x: "Niveau", y: "Effektivität", fill: "Methode",
+        fx: null,
+        dodge: "x"
+      }),
+      Plot.text(data, {
+        x: "Niveau", y: "Effektivität",
+        text: d => d.Effektivität + "%",
+        dy: -10, fontSize: 12, fontWeight: "bold",
+        fill: "#1A1714",
+        dodge: "x"
+      })
+    ]
+  });
+}
+```
+
+<br>
+
+::: {style="text-align: center; font-size: 1.1em;"}
+Ein Übungsblatt für alle ist **per Definition** für die meisten falsch.
+
+[Die Aufgabe muss zum Vorwissen passen, nicht umgekehrt.]{style="color: #0072B2; font-weight: bold;"}
+:::
+
+::: {.notes}
+Der Expertise-Umkehr-Effekt zeigt: Was für Anfänger:innen hilft, schadet Fortgeschrittenen. Worked Examples sind für Anfänger:innen hochwirksam, weil sie die intrinsische Last managen. Für Expert:innen sind sie redundant und erzeugen unnötige extrinsische Last. Umgekehrt ist Problemlösen für Expert:innen effektiv, aber für Anfänger:innen überfordernd. Die Konsequenz: Ein Übungsblatt für alle ist per Definition für die meisten falsch. Die Aufgabe muss zum Vorwissen passen.
+:::
+
+
+## Prinzip 3: Scaffolding steuert die intrinsische Last {.smaller}
+
+Wenn die intrinsische Last zu hoch ist, brauchen Lernende **Gerüste**, nicht einfach mehr Zeit.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+### Vom Beispiel zum Problem (Fading)
+
+| Schritt | Format |
+|---|---|
+| 1 | **Worked Example**: Vollständig durchgearbeitetes Beispiel |
+| 2 | **Completion Problem**: Teilweise gelöst, Lücken füllen |
+| 3 | **Hinweis-gestützt**: Nur strategische Hinweise |
+| 4 | **Eigenständig**: Ohne Unterstützung |
+
+<br>
+
+::: {style="font-size: 0.95em; color: #6E6560;"}
+Jede Stufe reduziert die Unterstützung und erhöht die kognitive Eigenleistung.
+:::
+:::
+
+:::{.column width="50%"}
+### Beispiel: Gleichung lösen
+
+**Stufe 1** (Worked Example):
+
+::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
+$-1(-x - 7) = 2x - 20$
+
+Schritt 1: Klammer auflösen → $x + 7 = 2x - 20$
+
+Schritt 2: $x$ isolieren → $7 + 20 = 2x - x$
+
+Schritt 3: Vereinfachen → $27 = x$
+:::
+
+<br>
+
+**Stufe 2** (Completion):
+
+::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
+$-1(-x - 7) = 2x - 20$
+
+Schritt 1: Klammer auflösen → $\underline{\quad\quad\quad\quad}$
+
+Schritt 2: $x$ isolieren → $7 + 20 = 2x - x$
+
+Schritt 3: Vereinfachen → $27 = x$
+:::
+:::
+::::
+
+::: {.notes}
+Scaffolding ist das dritte Prinzip. Wenn die intrinsische Last zu hoch ist, brauchen Lernende Gerüste. Die effektivste Strategie ist Fading: Man beginnt mit vollständig durchgearbeiteten Beispielen, geht dann zu Completion Problems über, wo Teile fehlen, dann zu Hinweisen, und schliesslich zu eigenständigem Lösen. Bei unserem Gleichungsbeispiel: Stufe 1 zeigt die vollständige Lösung, Stufe 2 lässt den ersten Schritt offen. Die kognitive Eigenleistung steigt graduell.
+:::
+
+
+## Was passiert, wenn Studierende ChatGPT benutzen? {.smaller}
+
+ChatGPT liefert die Lösung. Aber **nicht** das Scaffolding.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
+### ChatGPT-Antwort
+
+"Löse $-1(-x - 7) = 2x - 20$"
+
+→ Sofort die vollständige Lösung, korrekt formatiert, flüssig formuliert.
+
+- Keine Diagnose des Vorwissens
+- Keine angepasste Unterstützung
+- Keine Lücken zum Selbstdenken
+- Kein Fading
+
+[Das Produkt sieht aus wie ein Worked Example, ist aber keines.]{style="color: #D55E00; font-weight: bold;"}
+:::
+:::
+
+:::{.column width="50%"}
+::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
+### Der Unterschied
+
+Ein **Worked Example** ist pädagogisch gestaltet:
+
+- Schritte sind so gewählt, dass Schemata aufgebaut werden
+- Die Struktur lädt zur **Selbsterklärung** ein
+- Es ist Teil einer Fading-Sequenz
+
+ChatGPT-Output ist optimiert für **Korrektheit und Flüssigkeit**, nicht für Schemabildung.
+
+[Wer die Lösung liest, ohne selbst zu verarbeiten, baut keine Schemata auf.]{style="color: #0072B2; font-weight: bold;"}
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.1em;"}
+Flüssiger Output erzeugt die **Illusion des Verstehens**. Die Lernenden merken nicht, dass die kognitive Arbeit fehlt.
+:::
+
+::: {.notes}
+Hier treffen die LLM-Eigenschaft aus dem Beginner-Teil und die CLT-Prinzipien aufeinander. Wenn Studierende ChatGPT die Gleichung lösen lassen, bekommen sie eine korrekte, flüssig formulierte Lösung. Das sieht aus wie ein Worked Example, ist aber keines. Ein echtes Worked Example ist pädagogisch gestaltet: Die Schritte sind so gewählt, dass Schemata aufgebaut werden, und es ist Teil einer Fading-Sequenz. ChatGPT-Output ist für Korrektheit und Flüssigkeit optimiert, nicht für Schemabildung. Und weil der Output flüssig ist, entsteht die Illusion des Verstehens. Die Lernenden merken nicht, dass die kognitive Arbeit fehlt.
 :::
 
 
@@ -299,7 +584,7 @@ Wie überwindet man den Engpass? Durch Schemata. Ein Schema komprimiert viele Ei
 ::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 1.8; text-align: center;"}
 Um KI-Output zu **beurteilen**,
 
-braucht man die Kompetenz,
+braucht man die Schemata,
 
 die die Aufgabe **aufbauen** sollte.
 :::
@@ -309,330 +594,117 @@ die die Aufgabe **aufbauen** sollte.
 . . .
 
 ::: {style="font-size: 1.1em; max-width: 80%; margin: 0 auto; text-align: center;"}
-[Expert:innen]{style="color: #0072B2; font-weight: bold;"} erkennen Fehler sofort.
+Ohne eigene Schemata gibt es kein **internes Referenzsignal**.
 
-[Anfänger:innen]{style="color: #D55E00; font-weight: bold;"} können nicht unterscheiden, ob der Output stimmt.
-:::
+Flüssiger KI-Output unterdrückt den Zweifel.
 
-<br>
-
-::: {style="text-align: center; color: #6E6560; font-size: 0.95em;"}
-Kompetente KI-Nutzung setzt Kompetenz voraus.
+[Das ist keine Frage der Motivation. Das ist kognitive Architektur.]{style="color: #D55E00; font-weight: bold;"}
 :::
 
 ::: {.notes}
-Das Evaluationsparadox ist der Kern des Arguments. Um zu beurteilen, ob ein KI-Output korrekt ist, braucht man genau die Kompetenz, die die Aufgabe eigentlich aufbauen sollte. Expert:innen erkennen Fehler sofort, weil sie Schemata haben, die als Referenz dienen. Anfänger:innen können nicht unterscheiden, ob der Output stimmt. Deshalb ist die Forderung "Nutze KI, aber prüfe kritisch" für Lernende ein Paradox.
+Das Evaluationsparadox schliesst den Kreis. Um zu beurteilen, ob ein KI-Output korrekt ist, braucht man genau die Schemata, die die Aufgabe aufbauen sollte. Ohne eigene Schemata gibt es kein internes Referenzsignal. Und weil der Output flüssig ist, wird der Zweifel unterdrückt. Das ist keine Frage der Motivation. Das ist kognitive Architektur. CLT erklärt, warum das passiert, und zeigt auch den Weg hinaus.
 :::
 
 
-## Offloading vs. Outsourcing {.smaller}
+# Advanced: KI-Tools nach CLT-Prinzipien
 
-Diese Unterscheidung folgt direkt aus der kognitiven Architektur:
+
+## Die Designfrage {.center}
+
+<br><br>
+
+::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 1.8; text-align: center;"}
+Wenn unstrukturierte ChatGPT-Nutzung das Problem ist:
 
 <br>
 
-::::{.columns}
-:::{.column width="50%"}
-### Offloading
-
-KI **entlastet**, aber eigenes Denken bleibt aktiv
-
-- KI fasst Quellen zusammen, Studierende analysieren selbst
-- Taschenrechner für Arithmetik *während* Problemlösen
-
-[Extrinsische Last sinkt, Schemata werden aufgebaut]{style="color: #0072B2; font-weight: bold;"}
+[Wie sähe ein KI-Tool aus, das CLT-Prinzipien umsetzt?]{style="color: #0072B2; font-weight: bold;"}
 :::
-
-:::{.column width="50%"}
-### Outsourcing
-
-KI **ersetzt** das Denken
-
-- KI schreibt die Analyse, Studierende editieren Formulierungen
-- Student:in übernimmt KI-Antwort ohne eigenen Versuch
-
-[Intrinsische Verarbeitung entfällt, keine Schemabildung]{style="color: #D55E00; font-weight: bold;"}
-:::
-::::
-
-<br>
-
-::: {style="text-align: center; font-size: 1.05em;"}
-Dasselbe Tool, aber verschiedene Wirkungen. Der Unterschied liegt darin, welche **kognitive Arbeit** bei den Lernenden bleibt.
-:::
-
-::: {.notes}
-Offloading reduziert extrinsische Last: Die KI übernimmt Arbeit, die nicht direkt zum Schemaaufbau beiträgt. Das Denken bleibt bei den Lernenden, Schemata werden aufgebaut. Outsourcing eliminiert die intrinsische Verarbeitung: Die KI übernimmt genau die kognitive Arbeit, die Schemata aufbauen würde. Das Ergebnis: kein Lernen. Und wegen des Evaluationsparadoxes merken die Lernenden es nicht einmal.
-:::
-
-
-# Neue Forschung
-
-
-## {.center}
-
-<br><br><br>
-
-::: {style="font-size: 1.5em; text-align: center; max-width: 85%; margin: 0 auto; line-height: 1.6;"}
-80% der Menschen folgen einer KI-Empfehlung,
-[auch wenn sie falsch liegt.]{style="color: #A63D2F; font-weight: bold;"}
-:::
-
-. . .
-
-<br>
-
-::: {style="font-size: 1.2em; text-align: center; color: #6E6560;"}
-Ihre Konfidenz steigt dabei.
-:::
-
-. . .
-
-<br>
-
-::: {style="text-align: center; color: #999; font-size: 0.9em;"}
-@shawThinkingFastSlow2026
-:::
-
-::: {.notes}
-Einstieg mit der provokantesten Zahl aus einer neuen Studie von Shaw und Nave an der Wharton School. 80% folgen einer falschen KI-Empfehlung. Und gleichzeitig steigt ihre Konfidenz, dass die Antwort richtig ist. Nicht nur die Genauigkeit sinkt, die Leute werden gleichzeitig sicherer.
-:::
-
-
-## Die Studie {.smaller}
-
-**Shaw & Nave (2026)**: "Thinking: Fast, Slow, and Artificial" [@shawThinkingFastSlow2026]
-
-- **Design:** Cognitive Reflection Test (CRT) mit manipulierter KI-Genauigkeit
-- **N = 1'372** Teilnehmende, 9'593 Durchgänge, 3 präregistrierte Studien
-- Teilnehmende konnten frei eine KI (ChatGPT) konsultieren
-- Entscheidend: Die KI lieferte zufällig **korrekte oder falsche** Antworten
-
-```{ojs}
-//| echo: false
-
-accuracy_chart = {
-  const w = 650;
-  const h = 350;
-  const fs = "14px";
-
-  const data = [
-    {Bedingung: "Ohne KI (Baseline)", Accuracy: 45.8, color: "#64748b"},
-    {Bedingung: "KI korrekt",         Accuracy: 71.0, color: "#0072B2"},
-    {Bedingung: "KI falsch",           Accuracy: 31.5, color: "#D55E00"}
-  ];
-
-  return Plot.plot({
-    width: w,
-    height: h,
-    marginLeft: 60,
-    marginBottom: 50,
-    marginTop: 20,
-    style: {fontSize: fs, background: "transparent"},
-    x: {label: null, padding: 0.4},
-    y: {label: "Korrekte Antworten (%)", domain: [0, 85], ticks: [0, 20, 40, 60, 80]},
-    color: {
-      domain: ["Ohne KI (Baseline)", "KI korrekt", "KI falsch"],
-      range: ["#64748b", "#0072B2", "#D55E00"]
-    },
-    marks: [
-      Plot.barY(data, {x: "Bedingung", y: "Accuracy", fill: "Bedingung", tip: true}),
-      Plot.text(data, {
-        x: "Bedingung", y: "Accuracy",
-        text: d => d.Accuracy + "%",
-        dy: -12, fontWeight: "bold", fontSize: 16, fill: "#1A1714"
-      }),
-      Plot.ruleY([45.8], {stroke: "#64748b", strokeDasharray: "6,4", strokeWidth: 1})
-    ]
-  });
-}
-```
-
-::: {style="text-align: center; color: #6E6560; font-size: 0.9em;"}
-Effektstärke KI-korrekt vs. KI-falsch: Cohen's *h* = 0.81
-:::
-
-::: {.notes}
-Das Studiendesign ist elegant. Die Teilnehmenden lösen den Cognitive Reflection Test, den klassischen Test für analytisches Denken. Sie können dabei frei ChatGPT konsultieren. Aber die KI liefert über versteckte Prompts zufällig entweder die korrekte Antwort oder eine plausible, aber falsche Antwort. Die Ergebnisse sind eindeutig. Ohne KI: 45.8% korrekt. Mit korrekter KI: 71%. Aber mit falscher KI: 31.5%, unter der Baseline. Die Leute werden durch falsche KI schlechter als ohne KI.
-:::
-
-
-## Konfidenz steigt, Korrektur scheitert {.smaller}
-
-::::{.columns}
-:::{.column width="50%"}
-### Konfidenz-Illusion
-
-| Bedingung | Konfidenz |
-|-----------|-----------|
-| Ohne KI | 65.3% |
-| Mit KI | 77.0% |
-
-+12 Prozentpunkte, obwohl ~50% der KI-Antworten falsch waren.
-
-[Die Leute werden sicherer, nicht genauer.]{style="color: #A63D2F; font-weight: bold;"}
-:::
-
-:::{.column width="50%"}
-### Lässt sich das verhindern?
-
-| Intervention | Ergebnis |
-|---|---|
-| Zeitdruck (Studie 2) | Kein Effekt |
-| Anreize + Feedback (Studie 3) | Override-Rate steigt von 20% auf 42% |
-
-. . .
-
-[Aber: 58% folgen auch unter optimalen Bedingungen der falschen KI.]{style="color: #A63D2F; font-weight: bold;"}
-:::
-::::
-
-<br>
-
-::: {style="text-align: center; font-size: 1.05em;"}
-Outsourcing ist nicht leicht zu verhindern. Selbst bei Anreizen und direktem Feedback bleibt die Mehrheit beim KI-Vorschlag.
-:::
-
-::: {.notes}
-Zwei weitere bemerkenswerte Befunde. Erstens: Die Konfidenz steigt um 12 Prozentpunkte, obwohl die Hälfte der KI-Antworten absichtlich falsch war. Die Leute denken, sie wissen es besser, weil sie die KI gefragt haben. Das ist die metakognitive Falle. Zweitens: Zeitdruck macht es nicht besser. Anreize und Feedback helfen etwas, die Override-Rate verdoppelt sich. Aber selbst unter optimalen Bedingungen folgen 58% der falschen KI. Das Verhalten ist robust.
-:::
-
-
-## Wer ist anfällig? {.smaller}
-
-```{ojs}
-//| echo: false
-
-moderator_chart = {
-  const w = 700;
-  const h = 350;
-  const fs = "13px";
-
-  const data = [
-    {Faktor: "Hohes KI-Vertrauen",           Stärke: 0.7,  Richtung: "Mehr Outsourcing"},
-    {Faktor: "Niedrige Need for Cognition",   Stärke: 0.6,  Richtung: "Mehr Outsourcing"},
-    {Faktor: "Niedrige fluide Intelligenz",   Stärke: 0.55, Richtung: "Mehr Outsourcing"},
-    {Faktor: "Niedriges KI-Vertrauen",        Stärke: 0.5,  Richtung: "Mehr Widerstand"},
-    {Faktor: "Hohe Need for Cognition",       Stärke: 0.6,  Richtung: "Mehr Widerstand"},
-    {Faktor: "Hohe fluide Intelligenz",       Stärke: 0.55, Richtung: "Mehr Widerstand"}
-  ];
-
-  return Plot.plot({
-    width: w,
-    height: h,
-    marginLeft: 220,
-    marginRight: 20,
-    marginTop: 10,
-    marginBottom: 40,
-    style: {fontSize: fs, background: "transparent"},
-    x: {label: null, domain: [-0.8, 0.8], ticks: []},
-    y: {label: null, padding: 0.3},
-    color: {
-      domain: ["Mehr Outsourcing", "Mehr Widerstand"],
-      range: ["#D55E00", "#0072B2"],
-      legend: true
-    },
-    marks: [
-      Plot.barX(data, {
-        y: "Faktor",
-        x: d => d.Richtung === "Mehr Outsourcing" ? d.Stärke : -d.Stärke,
-        fill: "Richtung",
-        tip: true
-      }),
-      Plot.ruleX([0], {stroke: "#1A1714", strokeWidth: 1})
-    ]
-  });
-}
-```
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em; font-weight: bold;"}
-Aber: Niemand ist immun. Auch die widerstandsfähigsten Teilnehmenden zeigten das Muster.
-:::
-
-::: {.notes}
-Die individuellen Unterschiede sind aufschlussreich. Wer der KI mehr vertraut, outsourct mehr. Wer Freude am Denken hat oder eine höhere fluide Intelligenz besitzt, widersteht eher. Aber der entscheidende Punkt: Auch die widerstandsfähigsten Teilnehmenden zeigten das Muster. Outsourcing ist der Default, Widerstand ist die Ausnahme.
-:::
-
-
-# Einordnung
-
-
-## Shaw & Nave nennen das "System 3" {.smaller}
-
-Die Autoren schlagen eine **Tri-System-Theorie** vor:
-
-<br>
-
-| | System 1 | System 2 | System 3 |
-|---|---|---|---|
-| **Verarbeitung** | Schnell, intuitiv | Langsam, analytisch | Extern, algorithmisch |
-| **Ort** | Im Kopf | Im Kopf | In der Maschine |
-| **Aufwand** | Gering | Hoch | Keiner (für den Nutzer) |
-
-<br>
-
-Shaw & Nave sehen KI als **drittes kognitives System**, das Intuition und Deliberation ergänzt, verdrängt oder verzerrt.
 
 <br>
 
 ::: {style="text-align: center; font-size: 1.1em; color: #6E6560;"}
-Die theoretische Ambition ist klar: Kahneman erweitern für das KI-Zeitalter.
+Antwort: Ein Tool, das **zuerst diagnostiziert** und dann **angepasst scaffoldet**.
 :::
 
 ::: {.notes}
-Shaw und Nave gehen über die Empirie hinaus und schlagen ein neues theoretisches Modell vor: System 3. Neben Kahnemans System 1, schnell und intuitiv, und System 2, langsam und analytisch, positionieren sie KI als drittes kognitives System: extern, algorithmisch, und für den Nutzer ohne kognitiven Aufwand. Das ist eine ambitionierte These. Aber brauchen wir das wirklich?
+Jetzt die Frage aus dem Advanced-Kurs: Wenn unstrukturierte ChatGPT-Nutzung das Problem ist, wie sähe ein KI-Tool aus, das CLT-Prinzipien umsetzt? Die Antwort: Ein Tool, das zuerst diagnostiziert, wo die Lernenden stehen, und dann die Unterstützung anpasst. Nicht eine Lösung für alle, sondern das richtige Scaffolding für das richtige Vorwissen.
 :::
 
 
-## Brauchen wir ein neues System? {.smaller}
+## Beispiel: Gleichungen lösen {.smaller}
 
-Die Befunde lassen sich mit **bestehenden Konzepten** erklären:
+**Aufgabe:** $-1(-x - 7) = 2x - 20$
 
-<br>
-
-| Shaw & Nave Befund | Bestehende Erklärung |
-|---|---|
-| Unkritische Übernahme von KI-Output | Extremes Ende des **Offloading-Outsourcing-Spektrums** |
-| Konfidenz steigt trotz Fehlern | **Metakognitive Falle**: Flüssigkeit wird mit Richtigkeit verwechselt |
-| Robust gegen Anreize | **Automation Bias** [@mosierAutomationBiasAccountable1996]: gut etabliert |
-| Individuelle Unterschiede (NFC, IQ) | Standardmoderatoren der System-2-Aktivierung |
+Diese Aufgabe erfordert drei Teilkompetenzen:
 
 <br>
 
-::: {style="text-align: center; font-size: 1.1em;"}
-Der Mechanismus: KI-Output ist flüssig, selbstbewusst und kohärent.
-Genau das unterdrückt das Konfliktsignal, das normalerweise System 2 aktiviert.
+::::{.columns}
+:::{.column width="33%"}
+::: {style="background: rgba(0, 114, 178, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
+### Schritt 1
+
+**Distribuieren**
+
+$-1 \cdot (-x) = x$
+
+$-1 \cdot (-7) = 7$
+
+→ $x + 7 = 2x - 20$
+:::
 :::
 
-. . .
+:::{.column width="33%"}
+::: {style="background: rgba(100, 116, 139, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
+### Schritt 2
 
-::: {style="text-align: center; font-size: 1.1em; color: #A63D2F; font-weight: bold;"}
-Die Daten sind exzellent. Die Theorie ist überflüssig.
+**Terme zusammenfassen**
+
+$7 + 20 = 2x - x$
+
+→ $27 = x$
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: rgba(213, 94, 0, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
+### Schritt 3
+
+**Variable isolieren**
+
+$x = 27$
+
+Prüfung: $-1(-27-7) = 2(27)-20$
+
+$34 = 34$ ✓
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die Person bereits?]{style="color: #0072B2; font-weight: bold;"}
 :::
 
 ::: {.notes}
-Wir brauchen kein neues kognitives System, um diese Befunde zu erklären. Unkritische Übernahme? Das ist das extreme Ende des Offloading-Outsourcing-Spektrums. Konfidenz-Inflation? Die metakognitive Falle: Flüssiger Output wird mit korrektem Output verwechselt. Robustheit gegen Anreize? Automation Bias, seit Jahrzehnten bekannt. Der Mechanismus ist einfach: KI-Output ist flüssig, selbstbewusst und kohärent. Das unterdrückt das Konfliktsignal, das normalerweise analytisches Denken aktiviert.
+Nehmen wir ein konkretes Beispiel: die Gleichung -1(-x - 7) = 2x - 20. Sie erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfassen, Variable isolieren. Ein CLT-informiertes Tool fragt nicht einfach "Löse die Gleichung", sondern diagnostiziert zuerst: Welche dieser Teilkompetenzen beherrscht die Person bereits? Je nach Antwort wird unterschiedlich scaffoldet.
 :::
 
 
-## Eine bessere Erklärung: Es ist rational {.smaller}
+## Diagnostik und Scaffolding {.smaller}
 
-Shaw & Nave sehen ein **kognitives Architektur-Problem** (System 3 verdrängt System 2).
-
-Ich sehe ein **Aufgabendesign-Problem**.
+Das Tool passt die Unterstützung an das **diagnostizierte Vorwissen** an:
 
 <br>
-
-Studierende lösen implizit ein Optimierungsproblem. In jedem Moment wägen sie drei Dinge ab:
 
 ```{ojs}
 //| echo: false
 
-utility_diagram = {
-  const w = 700;
-  const h = 280;
+flowchart = {
+  const w = 900;
+  const h = 520;
 
   const svg = d3.create("svg")
     .attr("viewBox", [0, 0, w, h])
@@ -641,314 +713,229 @@ utility_diagram = {
     .style("background", "transparent")
     .style("font-family", "system-ui, sans-serif");
 
-  const boxes = [
-    {x: 30,  label: "Note jetzt",       sub: "Wie gut ist\ndas Produkt?", color: "#0072B2", sign: "+"},
-    {x: 260, label: "Aufwand",          sub: "Wie anstrengend\nist der Weg?",  color: "#D55E00", sign: "\u2212"},
-    {x: 490, label: "Lernwert (Zukunft)", sub: "Bringt mir das\nspäter etwas?", color: "#64748b", sign: "+"}
-  ];
-
-  for (const b of boxes) {
-    const g = svg.append("g").attr("transform", `translate(${b.x}, 30)`);
-
-    // Sign circle
-    g.append("circle")
-      .attr("cx", 90).attr("cy", 0).attr("r", 16)
-      .attr("fill", b.color);
-    g.append("text")
-      .attr("x", 90).attr("y", 6)
-      .attr("text-anchor", "middle")
-      .attr("fill", "white").attr("font-size", "20px").attr("font-weight", "bold")
-      .text(b.sign);
-
-    // Box
+  // Helper functions
+  function roundRect(g, x, y, width, height, fill, stroke, text, fontSize) {
     g.append("rect")
-      .attr("x", 0).attr("y", 25).attr("width", 180).attr("height", 60)
-      .attr("rx", 6).attr("fill", b.color).attr("opacity", 0.12)
-      .attr("stroke", b.color).attr("stroke-width", 1.5);
-
-    // Label
-    g.append("text")
-      .attr("x", 90).attr("y", 60)
-      .attr("text-anchor", "middle")
-      .attr("fill", b.color).attr("font-size", "16px").attr("font-weight", "bold")
-      .text(b.label);
-
-    // Sub text
-    const lines = b.sub.split("\n");
+      .attr("x", x).attr("y", y)
+      .attr("width", width).attr("height", height)
+      .attr("rx", 8).attr("fill", fill)
+      .attr("stroke", stroke).attr("stroke-width", 1.5);
+    const lines = text.split("\n");
     for (let i = 0; i < lines.length; i++) {
       g.append("text")
-        .attr("x", 90).attr("y", 115 + i * 20)
-        .attr("text-anchor", "middle")
-        .attr("fill", "#64748b").attr("font-size", "13px")
+        .attr("x", x + width/2).attr("y", y + height/2 + (i - (lines.length-1)/2) * 18)
+        .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+        .attr("fill", "#1A1714").attr("font-size", fontSize || "13px")
         .text(lines[i]);
     }
   }
 
-  // Equation
-  svg.append("text")
-    .attr("x", w / 2).attr("y", 185)
-    .attr("text-anchor", "middle")
-    .attr("fill", "#1A1714").attr("font-size", "14px").attr("font-weight", "600")
-    .text("Nutzen = Note(jetzt) \u2212 Aufwand + \u03B2 \u00B7 Lernwert(Zukunft)");
+  function diamond(g, cx, cy, rx, ry, fill, stroke, text) {
+    const points = `${cx},${cy-ry} ${cx+rx},${cy} ${cx},${cy+ry} ${cx-rx},${cy}`;
+    g.append("polygon")
+      .attr("points", points)
+      .attr("fill", fill).attr("stroke", stroke).attr("stroke-width", 1.5);
+    const lines = text.split("\n");
+    for (let i = 0; i < lines.length; i++) {
+      g.append("text")
+        .attr("x", cx).attr("y", cy + (i - (lines.length-1)/2) * 16)
+        .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+        .attr("fill", "#1A1714").attr("font-size", "12px")
+        .text(lines[i]);
+    }
+  }
 
-  // Arrow + insight
-  svg.append("text")
-    .attr("x", w / 2).attr("y", 220)
-    .attr("text-anchor", "middle")
-    .attr("fill", "#D55E00").attr("font-size", "14px").attr("font-weight", "bold")
-    .text("Wenn KI guten Output billig macht: Aufwand \u2193 \u2192 Outsourcing wird rational");
+  function arrow(g, x1, y1, x2, y2, label, labelSide) {
+    g.append("line")
+      .attr("x1", x1).attr("y1", y1).attr("x2", x2).attr("y2", y2)
+      .attr("stroke", "#64748b").attr("stroke-width", 1.5)
+      .attr("marker-end", "url(#arrowhead)");
+    if (label) {
+      const mx = (x1 + x2) / 2;
+      const my = (y1 + y2) / 2;
+      const dx = labelSide === "left" ? -20 : (labelSide === "right" ? 20 : 0);
+      g.append("text")
+        .attr("x", mx + dx).attr("y", my - 6)
+        .attr("text-anchor", "middle").attr("fill", "#64748b")
+        .attr("font-size", "11px").attr("font-weight", "600")
+        .text(label);
+    }
+  }
 
-  svg.append("text")
-    .attr("x", w / 2).attr("y", 250)
-    .attr("text-anchor", "middle")
-    .attr("fill", "#64748b").attr("font-size", "13px")
-    .text("\u03B2 = wie sehr man den zukünftigen Lernwert gewichtet");
+  // Arrowhead marker
+  svg.append("defs").append("marker")
+    .attr("id", "arrowhead").attr("viewBox", "0 0 10 7")
+    .attr("refX", 10).attr("refY", 3.5)
+    .attr("markerWidth", 8).attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("polygon").attr("points", "0 0, 10 3.5, 0 7").attr("fill", "#64748b");
+
+  const g = svg.append("g");
+
+  // Start
+  roundRect(g, 350, 10, 200, 40, "#0072B2", "#0072B2", "Aufgabe präsentieren", "14px");
+  g.select("rect").attr("fill", "#0072B2");
+  g.selectAll("text").filter((d,i) => i === 0).attr("fill", "white").attr("font-weight", "bold");
+
+  // Diagnostic question 1
+  diamond(g, 450, 110, 160, 50, "rgba(0, 114, 178, 0.1)", "#0072B2", "Kannst du\n-1(-x-7) auflösen?");
+
+  arrow(g, 450, 50, 450, 60, null);
+
+  // Left: can't distribute
+  roundRect(g, 30, 170, 220, 55, "rgba(213, 94, 0, 0.08)", "#D55E00", "Worked Example:\nDistribuieren Schritt für Schritt");
+  arrow(g, 290, 110, 140, 170, "Nein", "left");
+
+  // Right: can distribute
+  diamond(g, 700, 200, 160, 50, "rgba(0, 114, 178, 0.1)", "#0072B2", "Kannst du Terme\nzusammenfassen?");
+  arrow(g, 610, 110, 700, 150, "Ja", "right");
+
+  // From worked example back
+  roundRect(g, 30, 260, 220, 40, "rgba(100, 116, 139, 0.08)", "#64748b", "Erneut versuchen");
+  arrow(g, 140, 225, 140, 260, null);
+  // Arrow from retry back up
+  g.append("path")
+    .attr("d", "M 250,280 Q 320,280 350,200 Q 380,120 450,60")
+    .attr("fill", "none").attr("stroke", "#64748b")
+    .attr("stroke-width", 1).attr("stroke-dasharray", "4,3");
+
+  // Can't combine terms
+  roundRect(g, 500, 290, 220, 55, "rgba(213, 94, 0, 0.08)", "#D55E00", "Completion Problem:\nx + 7 = 2x - 20 → ___ = x");
+  arrow(g, 620, 250, 610, 290, "Nein", "left");
+
+  // Can combine terms
+  roundRect(g, 750, 290, 180, 55, "#rgba(0, 114, 178, 0.08)", "#0072B2", "Nur Hinweis:\n«Fasse die Terme zusammen»");
+  arrow(g, 780, 250, 840, 290, "Ja", "right");
+
+  // Final
+  roundRect(g, 350, 430, 200, 50, "rgba(0, 114, 178, 0.15)", "#0072B2", "Eigenständig lösen\n(Fading complete)");
+  arrow(g, 610, 345, 520, 430, null);
+  arrow(g, 840, 345, 520, 430, null);
+
+  // Legend
+  const lg = svg.append("g").attr("transform", "translate(20, 460)");
+  lg.append("text").attr("x", 0).attr("y", 0).attr("font-size", "12px").attr("fill", "#6E6560")
+    .text("Prinzip 2: Diagnostische Fragen → Vorwissen einschätzen");
+  lg.append("text").attr("x", 0).attr("y", 20).attr("font-size", "12px").attr("fill", "#6E6560")
+    .text("Prinzip 3: Angepasstes Scaffolding → Intrinsische Last steuern");
+  lg.append("text").attr("x", 0).attr("y", 40).attr("font-size", "12px").attr("fill", "#6E6560")
+    .text("Prinzip 1: Klare, fokussierte Aufgaben → Extrinsische Last minimieren");
 
   return svg.node();
 }
 ```
 
 ::: {.notes}
-Hier ist mein alternativer Erklärungsrahmen. Studierende lösen implizit ein Optimierungsproblem mit drei Komponenten: Note jetzt, Aufwand und zukünftiger Lernwert. Wenn KI gute Produkte billig macht, sinkt der Aufwand drastisch, und Outsourcing wird zur rationalen Strategie. Das ist kein kognitives Versagen. Es ist eine rationale Antwort auf eine fehlausgerichtete Aufgabenumgebung.
+Hier das Flussdiagramm eines CLT-informierten Tools. Es beginnt mit der Aufgabe und stellt dann diagnostische Fragen. "Kannst du die Klammer auflösen?" Wenn nein, gibt es ein Worked Example für genau diesen Schritt, dann einen erneuten Versuch. Wenn ja, geht es weiter zur nächsten Teilkompetenz. Je nach Ergebnis gibt es entweder ein Completion Problem oder nur einen Hinweis. Am Ende steht eigenständiges Lösen. Das Tool implementiert alle drei CLT-Prinzipien: Diagnostische Fragen für Prinzip 2, angepasstes Scaffolding für Prinzip 3, und eine klare, fokussierte Struktur für Prinzip 1.
 :::
 
 
-## Warum 80% rational sein könnte {.smaller}
+## CLT-Prinzipien im Tool {.smaller}
 
-Ein einfaches Bayes'sches Argument:
+Jede Designentscheidung lässt sich auf ein CLT-Prinzip zurückführen:
 
 <br>
+
+| Designentscheidung | CLT-Prinzip | Wirkung |
+|---|---|---|
+| Diagnostische Fragen zu Beginn | **Vorwissen einschätzen** (Prinzip 2) | Scaffolding passt zum aktuellen Stand |
+| Worked Examples bei Wissenslücken | **Intrinsische Last steuern** (Prinzip 3) | Überforderte Lernende werden unterstützt |
+| Fading: schrittweiser Abbau der Hilfe | **Intrinsische Last steuern** (Prinzip 3) | Kognitive Eigenleistung steigt graduell |
+| Klare, fokussierte Aufgaben | **Extrinsische Last minimieren** (Prinzip 1) | Kapazität wird nicht verschwendet |
+| Kein vollständiges Lösen für den Lernenden | **Lernrelevante Verarbeitung sichern** | Schemata werden aufgebaut |
+
+<br>
+
+::: {style="text-align: center; font-size: 1.1em;"}
+Der Unterschied zu ChatGPT: [Wer macht die kognitive Arbeit?]{style="color: #0072B2; font-weight: bold;"}
+
+ChatGPT übernimmt die Arbeit. Ein CLT-Tool **verteilt** sie.
+:::
+
+::: {.notes}
+Diese Tabelle zeigt, wie jede Designentscheidung im Tool auf ein CLT-Prinzip zurückgeht. Diagnostische Fragen passen das Scaffolding ans Vorwissen an. Worked Examples steuern die intrinsische Last. Fading steigert die Eigenleistung graduell. Klare Aufgaben minimieren extrinsische Last. Und das Tool löst nie vollständig für den Lernenden. Der entscheidende Kontrast: ChatGPT übernimmt die kognitive Arbeit. Ein CLT-informiertes Tool verteilt sie so, dass Schemata aufgebaut werden.
+:::
+
+
+## ChatGPT vs. CLT-Tool {.smaller}
 
 ::::{.columns}
-:::{.column width="45%"}
+:::{.column width="50%"}
+::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.5em; border-radius: 8px;"}
+### ChatGPT (unstrukturiert)
 
-Teilnehmende haben einen **Prior** über die Genauigkeit von ChatGPT. Im Alltag ist GPT-4o bei solchen Aufgaben meistens richtig.
+**"Löse $-1(-x - 7) = 2x - 20$"**
 
-<br>
+→ Sofort vollständige Lösung
 
-Wenn man glaubt, dass die KI in **85% der Fälle** recht hat, und man selbst nur in **46%** (die Baseline), dann ist es **Bayes-optimal**, der KI zu folgen.
+- Keine Diagnose
+- Kein Fading
+- Keine Lücken
+- Flüssiger Output erzeugt Kompetenz-Illusion
 
-<br>
+**Wer denkt?** Die Maschine.
 
-::: {style="font-size: 1.05em;"}
-[Die Follow-Rate von 80% ist kein Defizit. Sie ist konsistent mit einer vernünftigen Einschätzung.]{style="color: #0072B2; font-weight: bold;"}
+**Ergebnis:** Produkt ohne Schemabildung.
 :::
 :::
 
-:::{.column width="55%"}
-```{ojs}
-//| echo: false
+:::{.column width="50%"}
+::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.5em; border-radius: 8px;"}
+### CLT-informiertes Tool
 
-viewof prior_ai = Inputs.range([0.5, 0.99], {
-  value: 0.85,
-  step: 0.01,
-  label: "Prior KI-Genauigkeit"
-})
-```
+**"Löse $-1(-x - 7) = 2x - 20$"**
 
-```{ojs}
-//| echo: false
+→ Erst Diagnose, dann angepasstes Scaffolding
 
-bayes_chart = {
-  const w = 450;
-  const h = 300;
-  const fs = "13px";
+- Diagnostiziert Vorwissen
+- Passt Unterstützung an
+- Lässt Lücken zum Selbstdenken
+- Baut Scaffolding schrittweise ab
 
-  const p_own = 0.458;
-  const p_ai = prior_ai;
+**Wer denkt?** Die Lernenden, mit Unterstützung.
 
-  // Simplified: P(follow AI) ≈ P(AI correct) when comparing AI vs own answer
-  // Using Bayesian weight: w_ai = p_ai / (p_ai + p_own * (1 - p_ai) / (1 - p_own))
-  // This is the posterior probability that AI is correct given it disagrees with you
-  const w_ai = p_ai * (1 - p_own) / (p_ai * (1 - p_own) + (1 - p_ai) * p_own);
-  const predicted_follow = w_ai;
-
-  const data = [
-    {Kategorie: "Vorhergesagt\n(Bayes)", Wert: predicted_follow * 100, color: "#0072B2"},
-    {Kategorie: "Beobachtet\n(Shaw & Nave)", Wert: 79.8, color: "#64748b"}
-  ];
-
-  return Plot.plot({
-    width: w,
-    height: h,
-    marginLeft: 60,
-    marginBottom: 60,
-    marginTop: 20,
-    style: {fontSize: fs, background: "transparent"},
-    x: {label: null, padding: 0.5},
-    y: {label: "Follow-Rate (%)", domain: [0, 100], ticks: [0, 20, 40, 60, 80, 100]},
-    color: {
-      domain: data.map(d => d.Kategorie),
-      range: data.map(d => d.color)
-    },
-    marks: [
-      Plot.barY(data, {x: "Kategorie", y: "Wert", fill: "Kategorie"}),
-      Plot.text(data, {
-        x: "Kategorie", y: "Wert",
-        text: d => d.Wert.toFixed(1) + "%",
-        dy: -12, fontWeight: "bold", fontSize: 15, fill: "#1A1714"
-      }),
-      Plot.ruleY([79.8], {stroke: "#A63D2F", strokeDasharray: "6,4", strokeWidth: 1.5})
-    ]
-  });
-}
-```
+**Ergebnis:** Schemabildung durch eigene Verarbeitung.
+:::
 :::
 ::::
 
 <br>
 
 ::: {style="text-align: center; font-size: 1.1em;"}
-[Was sich NICHT so erklären lässt: Die Konfidenz-Inflation.]{style="color: #A63D2F; font-weight: bold;"} Das ist der eigentlich interessante Befund.
+[Dasselbe Material. Dieselbe Technologie. Anderes Design. Anderes Lernergebnis.]{style="color: #0072B2; font-weight: bold;"}
 :::
 
 ::: {.notes}
-Das ist die Skizze eines formalen Arguments. Die Kernidee: Wenn man glaubt, dass ChatGPT in 85% der Fälle recht hat, und man selbst unsicher ist, dann ist es Bayes-optimal, der KI zu folgen. Bewegt den Slider: Bei einem Prior von 85% liegt die vorhergesagte Follow-Rate nahe an den beobachteten 80% von Shaw und Nave. Die Follow-Rate ist also keine kognitive Verzerrung. Sie ist konsistent mit einer vernünftigen Einschätzung der KI-Genauigkeit. Was sich nicht rational erklären lässt: dass die Konfidenz steigt. Rationale Delegation sollte die eigene Konfidenz nicht erhöhen. Dass sie es tut, ist der eigentlich interessante Befund, und Shaw und Nave analysieren ihn zu wenig.
+Hier der direkte Vergleich. Links: ChatGPT, unstrukturiert. Die Maschine denkt, das Produkt entsteht, aber keine Schemata. Rechts: Ein CLT-informiertes Tool. Es diagnostiziert, scaffoldet, und baut die Unterstützung ab. Die Lernenden denken, mit Unterstützung. Dasselbe Material, dieselbe Technologie, aber anderes Design und damit ein anderes Lernergebnis.
 :::
 
 
-## Verstehen kann man nicht auslagern {.smaller}
+# Zusammenfassung
 
-Warum ist Outsourcing so schädlich? Weil es eine **selbstverstärkende Falle** erzeugt.
 
-```{ojs}
-//| echo: false
+## Drei Erkenntnisse {.center}
 
-viewof show_outsourcing = {
-  const div = html`<div style="display:flex;align-items:center;gap:12px;font-size:14px;">
-    <span style="font-weight:600;">Strategie:</span>
-    <label style="cursor:pointer;"><input type="radio" name="strategy" value="effort" checked style="accent-color:#0072B2;"> Eigene Arbeit</label>
-    <label style="cursor:pointer;"><input type="radio" name="strategy" value="outsource" style="accent-color:#D55E00;"> Outsourcing</label>
-    <label style="cursor:pointer;"><input type="radio" name="strategy" value="both" style="accent-color:#64748b;"> Vergleich</label>
-  </div>`;
-  const radios = div.querySelectorAll("input[type=radio]");
-  function emit() {
-    const checked = div.querySelector("input:checked");
-    div.value = checked.value;
-    div.dispatchEvent(new Event("input", {bubbles: true}));
-  }
-  for (const r of radios) r.onchange = emit;
-  div.value = "effort";
-  return div;
-}
-```
+<br>
 
-```{ojs}
-//| echo: false
+::: {style="font-size: 1.2em; max-width: 85%; margin: 0 auto; line-height: 2;"}
 
-trap_chart = {
-  const w = 700;
-  const h = 350;
-  const fs = "13px";
-  const sel = show_outsourcing;
-  const n = 20;
+[1.]{style="color: #D55E00; font-weight: bold;"} **Extrinsische Last minimieren** ist der einfachste Hebel.
+Klare Aufgaben, konsistente Notation, integriertes Format.
 
-  const data = [];
-  for (let t = 1; t <= n; t++) {
-    if (sel === "effort" || sel === "both") {
-      data.push({t, Wert: 3 * t,       Variable: "Kompetenz",         Strategie: "Eigene Arbeit"});
-      data.push({t, Wert: 3 * t + 3,   Variable: "Selbsteinschätzung", Strategie: "Eigene Arbeit"});
-    }
-    if (sel === "outsource" || sel === "both") {
-      data.push({t, Wert: 0.5 * t,           Variable: "Kompetenz",         Strategie: "Outsourcing"});
-      data.push({t, Wert: 2.5 * t + 5,       Variable: "Selbsteinschätzung", Strategie: "Outsourcing"});
-    }
-  }
+<br>
 
-  return Plot.plot({
-    width: w,
-    height: h,
-    marginLeft: 50,
-    marginBottom: 45,
-    marginTop: 10,
-    marginRight: 20,
-    style: {fontSize: fs, background: "transparent"},
-    x: {label: "Zeit (Semester)", ticks: [1, 5, 10, 15, 20]},
-    y: {label: "Niveau", domain: [0, 75]},
-    color: {
-      domain: ["Kompetenz", "Selbsteinschätzung"],
-      range: ["#0072B2", "#D55E00"],
-      legend: true
-    },
-    marks: [
-      Plot.lineY(data, {
-        x: "t", y: "Wert",
-        stroke: "Variable",
-        strokeWidth: 2.5,
-        strokeDasharray: d => d.Strategie === "Outsourcing" ? "6,4" : null,
-        curve: "natural"
-      }),
-      // Gap annotation for outsourcing
-      ...(sel === "outsource" || sel === "both" ? [
-        Plot.text([{t: 18, Wert: 38}], {
-          x: "t", y: "Wert",
-          text: ["Wachsende\nLücke"],
-          fill: "#D55E00", fontSize: 12, fontWeight: "bold", lineAnchor: "middle"
-        })
-      ] : [])
-    ]
-  });
-}
-```
+[2.]{style="color: #64748b; font-weight: bold;"} **Vorwissen bestimmt das Aufgabendesign.**
+Ein Übungsblatt für alle ist für die meisten falsch. Diagnostik ist der Schlüssel.
 
-::: {style="font-size: 0.95em;"}
-**Eigene Arbeit:** Kompetenz und Selbsteinschätzung wachsen zusammen. Fehler werden erkannt.
+<br>
 
-**Outsourcing:** Kompetenz stagniert, aber Selbsteinschätzung steigt (flüssiger KI-Output erzeugt Kompetenz-Illusion). [Die Lücke wächst, und es gibt kein internes Signal, das warnt.]{style="color: #D55E00; font-weight: bold;"}
+[3.]{style="color: #0072B2; font-weight: bold;"} **KI kann CLT-Prinzipien umsetzen**, aber nur wenn sie dafür gebaut wird.
+ChatGPT ist kein Lerntool. Ein CLT-informiertes Tool kann eines sein.
+
 :::
 
 ::: {.notes}
-Hier sehen wir, warum die Kernaussage "Verstehen kann man nicht auslagern" so zentral ist. Wählt die Strategie "Eigene Arbeit": Kompetenz und Selbsteinschätzung wachsen zusammen. Das System ist kalibriert. Wechselt zu "Outsourcing": Die Kompetenz stagniert, aber die Selbsteinschätzung steigt weiter. Die Lücke wächst. Und das ist die Falle: Ohne die Kompetenz, KI-Output zu bewerten, gibt es kein internes Signal, das warnt. Das ist das Evaluationsparadox in dynamischer Form. Der Konfidenz-Befund von Shaw und Nave ist genau diese Dynamik in empirischen Daten: Kompetenz sinkt, Konfidenz steigt.
-:::
-
-
-# Was heisst das für die Lehre?
-
-
-## Das eigentliche Problem {.center}
-
-<br>
-
-::: {style="font-size: 1.3em; max-width: 80%; margin: 0 auto; line-height: 1.8;"}
-Das ist kein Problem, das einzelne Dozierende mit besserem Aufgabendesign lösen.
-
-<br>
-
-Noten belohnen Produkte. Produkte lassen sich outsourcen.
-
-<br>
-
-KI hat diese Fehlanpassung nicht erzeugt. Sie hat sie [sichtbar]{style="color: #D55E00; font-weight: bold;"} gemacht.
-
-<br>
-
-Die Frage ist nicht: *Wie verhindern wir Outsourcing?*
-
-Die Frage ist: [Wie sähe ein System aus, in dem Lernen die rationale Strategie ist?]{style="color: #0072B2; font-weight: bold;"}
-:::
-
-::: {.notes}
-Das eigentliche Problem ist strukturell. Noten belohnen Produkte. Produkte lassen sich outsourcen. Also wird outgesourced. Und das ist rational. KI hat diese Fehlanpassung nicht geschaffen. Sie war immer da. Gute Produkte ohne Verständnis waren früher einfach zu aufwändig. KI hat diese Korrelation gebrochen und damit die Schwäche im System sichtbar gemacht. Die richtige Frage ist nicht: Wie verhindern wir Outsourcing? Die richtige Frage ist: Wie sähe ein System aus, in dem Lernen die rationale Strategie ist?
-:::
-
-
-## Zwei Erkenntnisse {.center}
-
-<br><br>
-
-::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 2;"}
-
-[1.]{style="color: #A63D2F; font-weight: bold;"} Outsourcing ist ein **kognitiver Default**, keine individuelle Schwäche.
-80% folgen falscher KI. Das ist rational, kein Charakterfehler.
-
-<br>
-
-[2.]{style="color: #A63D2F; font-weight: bold;"} **Verstehen kann man nicht auslagern.**
-Wer die kognitive Arbeit delegiert, verliert nicht nur Kompetenz, sondern auch die Fähigkeit, diesen Verlust zu erkennen.
-:::
-
-::: {.notes}
-Zwei Erkenntnisse zum Mitnehmen. Erstens: Outsourcing ist der Default. Shaw und Nave haben das überzeugend quantifiziert: 80% folgen falscher KI. Und das ist rational, wenn man die Anreizstruktur betrachtet. Zweitens: Verstehen kann man nicht auslagern. Wer die kognitive Arbeit delegiert, verliert nicht nur Kompetenz, sondern auch die Fähigkeit, diesen Verlust zu erkennen. Die Falle schliesst sich.
+Drei Erkenntnisse zum Mitnehmen. Erstens: Extrinsische Last minimieren ist der einfachste Hebel und kostet nichts. Zweitens: Vorwissen bestimmt, wie die Aufgabe aussehen muss. Ein Übungsblatt für alle ist für die meisten falsch. Drittens: KI kann CLT-Prinzipien umsetzen, aber nur wenn sie dafür designt wird. Unstrukturiertes ChatGPT ist kein Lerntool. Ein CLT-informiertes Tool kann eines sein.
 :::
 
 
@@ -956,21 +943,22 @@ Zwei Erkenntnisse zum Mitnehmen. Erstens: Outsourcing ist der Default. Shaw und 
 
 <br><br>
 
-::: {style="font-size: 1.3em; text-align: center; max-width: 80%; margin: 0 auto; line-height: 1.8; color: #1A1714;"}
-Noten belohnen Produkte. Produkte lassen sich outsourcen.
+::: {style="font-size: 1.2em; text-align: center; max-width: 80%; margin: 0 auto; line-height: 1.8; color: #1A1714;"}
+CLT sagt: Das Problem ist nicht fehlende Motivation.
 
-[Wie sähe ein System aus, in dem Lernen die rationale Strategie ist?]{style="color: #0072B2; font-weight: bold;"}
+[Das Problem ist Aufgabendesign, das nicht zum Vorwissen passt.]{style="color: #0072B2; font-weight: bold;"}
 :::
 
 <br><br>
 
 ::: {style="text-align: center; font-size: 1.0em; color: #6E6560;"}
-Und konkreter: Wo in euren Kursen ist Outsourcing *bereits* die rationale Strategie?
-Und: Wie würde sich das ändern, wenn Lernen, nicht das Produkt, bewertet würde?
+Wo in euren Kursen gibt es Aufgaben, die für die meisten Studierenden zu viel oder zu wenig fordern?
+
+Und: Wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
 :::
 
 ::: {.notes}
-Offene Diskussion. Die zentrale Frage: Wie sähe ein System aus, in dem Lernen die rationale Strategie ist? Als Einstieg zwei konkretere Fragen: Wo in euren eigenen Kursen ist Outsourcing bereits die rationale Strategie? Und: Wie würde sich das ändern, wenn nicht das Produkt, sondern der Lernprozess bewertet würde?
+Offene Diskussion. CLT reframed das Problem: Es geht nicht um fehlende Motivation, sondern um Aufgabendesign, das nicht zum Vorwissen passt. Zwei konkrete Fragen: Wo in euren Kursen gibt es Aufgaben, die für die meisten Studierenden zu viel oder zu wenig fordern? Und wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
 :::
 
 
