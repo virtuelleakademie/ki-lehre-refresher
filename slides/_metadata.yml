@@ -4,7 +4,6 @@ author:
     affiliation: Virtuelle Akademie, Berner Fachhochschule
     affiliation-url: https://virtuelleakademie.ch
     orcid: 0000-0002-2788-936X
-lang: :"de"
 format:
   revealjs:
     theme: [simple, ../styles/custom-reveal.scss]
