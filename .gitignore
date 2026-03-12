@@ -27,6 +27,10 @@ ipython_config.py
 pages/*_cache/
 pages/*_files/
 /_do-not-build/**
+notes/
+**/*.quarto_ipynb
+presentation/TODO.md
+
 
 # Spelling
 /.cspell/
@@ -41,7 +45,3 @@ pages/config.yaml
 /assets/ppt/~*
 
 /.luarc.json
-
-
-**/*.quarto_ipynb
-presentation/TODO.md

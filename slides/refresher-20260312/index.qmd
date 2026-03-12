@@ -1,0 +1,839 @@
+---
+title: "Aufgabendesign nach Cognitive Load Theory"
+subtitle: "Von der kognitiven Architektur zum KI-gestützten Scaffolding"
+
+bibliography:
+  - ../../bibliography.bib
+  - ../../missing-refs.bib
+---
+
+
+## Drei Kurse, drei Perspektiven {.smaller}
+
+Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
+
+<br>
+
+::::{.columns}
+:::{.column width="33%"}
+### Beginner
+
+*Was ist KI?*
+
+- Ein Sprachmodell ist eine Textvorhersagemaschine
+- Dafür muss es viel Wissen erworben haben
+- Es kann jeden Dialog simulieren, auch Expertendialoge
+- Der Output ist oft schwer zu beurteilen und erfordert Fachwissen
+:::
+
+:::{.column width="33%"}
+### Intermediate
+
+*Wie funktioniert Lernen?*
+
+- Wir können nur wenig gleichzeitig im Arbeitsgedächtnis behalten
+- Lernen heisst: Wissen selbst aufbauen und vernetzen
+- Gutes Aufgabendesign unterstützt diesen Prozess
+<!-- - Das Evaluationsparadox: kompetente KI-Nutzung setzt Kompetenz voraus -->
+:::
+
+:::{.column width="33%"}
+### Advanced
+
+*Wie gestalten wir Aufgaben?*
+
+- KI-Tools lassen sich lernwissenschaftlich fundiert gestalten
+- Das Ziel: die kognitive Arbeit bleibt bei den Lernenden
+- KI unterstützt, statt zu ersetzen
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em; color: #6E6560;"}
+Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissenschaft, Werkzeugdesign.
+:::
+
+::: {.notes}
+Drei Kurse, drei Fragen. Heute gehen wir durch alle drei. Zuerst kurz: Was kann KI? Dann der Kern: Wie funktioniert Lernen? Und zum Schluss: Wie gestalten wir Tools?
+:::
+
+
+## Was ist ein Sprachmodell? {.smaller}
+
+<br>
+
+Der Mechanismus ist einfach: ein Sprachmodell sagt das Text vorher, Wort für Wort.
+
+Aus diesem einfachen Prinzip entsteht etwas Mächtiges:
+
+<br>
+
+::::{.columns}
+:::{.column width="30%"}
+::: {style="background: #f0f4f8; padding: 1.2em; border-radius: 8px; border-top: 3px solid #0072B2; min-height: 180px;"}
+[**Mathe-Tutorial**]{style="color: #0072B2; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
+
+"Erkläre mir die Ableitung von x²"
+
+→ ein vollständiges Tutorial mit Herleitung und Beispielen
+:::
+:::
+
+:::{.column width="30%"}
+::: {style="background: #f5f0eb; padding: 1.2em; border-radius: 8px; border-top: 3px solid #E69F00; min-height: 180px;"}
+[**Klinischer Bericht**]{style="color: #E69F00; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
+
+"Schreibe eine Differentialdiagnose für..."
+
+→ ein strukturierter Bericht mit Fachterminologie
+:::
+:::
+
+:::{.column width="30%"}
+::: {style="background: #faf0f0; padding: 1.2em; border-radius: 8px; border-top: 3px solid #D55E00; min-height: 180px;"}
+[**Musterlösung**]{style="color: #D55E00; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
+
+"Löse diese Gleichung Schritt für Schritt"
+
+→ eine detaillierte Lösung
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Um solche Texte zu erzeugen, muss das Modell enormes Wissen erworben haben. [Aber: der Output ist oft schwer zu beurteilen und erfordert Fachwissen.]{style="color: #D55E00;"}
+:::
+
+::: {style="text-align: center; font-size: 0.85em; color: #6E6560; margin-top: 0.5em;"}
+Vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/ki-lehre-beginner/)
+:::
+
+::: {.notes}
+Textvorhersage, Wort für Wort. Einfaches Prinzip, aber mächtiges Ergebnis. Drei Beispiele: Mathe-Tutorial, klinischer Bericht, Musterlösung. Entscheidend: Der Output liest sich wie Expertentext, egal ob er stimmt. → Überleitung: Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT.
+:::
+
+
+## Cognitive Load Theory in 60 Sekunden {.smaller}
+
+Warum ist das für Lernen relevant? Die **Cognitive Load Theory** [@swellerIntegratedHumanCognitive2025a] erklärt, wie das Arbeitsgedächtnis beim Lernen beansprucht wird.
+
+<br>
+
+```{ojs}
+//| echo: false
+
+bottleneck_fig = {
+  const w = 900, h = 130;
+  const svg = d3.create("svg")
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .attr("width", "100%")
+    .style("font-family", "Space Grotesk, sans-serif")
+    .style("background", "transparent")
+    .style("max-height", "130px");
+
+  const boxes = [
+    { x: 30, w: 200, label: "Sensorischer Input", sub: "Umwelt", color: "#94a3b8", fontColor: "#222" },
+    { x: 330, w: 240, label: "Arbeitsgedächtnis", sub: "~4 Elemente · 15–30 Sek.", color: "#E69F00", fontColor: "#222" },
+    { x: 670, w: 200, label: "Langzeitgedächtnis", sub: "Schemata · unbegrenzt", color: "#0072B2", fontColor: "#fff" }
+  ];
+
+  const r = 10, bh = 70, by = 30;
+
+  boxes.forEach(b => {
+    svg.append("rect").attr("x", b.x).attr("y", by).attr("width", b.w).attr("height", bh)
+      .attr("rx", r).attr("fill", b.color);
+    svg.append("text").attr("x", b.x + b.w/2).attr("y", by + 28)
+      .attr("text-anchor", "middle").attr("font-size", 14).attr("font-weight", "bold").attr("fill", b.fontColor).text(b.label);
+    svg.append("text").attr("x", b.x + b.w/2).attr("y", by + 48)
+      .attr("text-anchor", "middle").attr("font-size", 11).attr("fill", b.fontColor).attr("opacity", 0.85).text(b.sub);
+  });
+
+  // Arrows
+  svg.append("defs").append("marker").attr("id", "arr-bn")
+    .attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
+    .attr("markerWidth", 7).attr("markerHeight", 7).attr("orient", "auto")
+    .append("path").attr("d", "M 0 0 L 10 5 L 0 10 Z").attr("fill", "#666");
+
+  // Forward arrows
+  svg.append("line").attr("x1", 230).attr("y1", by + bh/2 - 4).attr("x2", 325).attr("y2", by + bh/2 - 4)
+    .attr("stroke", "#666").attr("stroke-width", 1.5).attr("marker-end", "url(#arr-bn)");
+  svg.append("text").attr("x", 278).attr("y", by + bh/2 - 12)
+    .attr("text-anchor", "middle").attr("font-size", 10).attr("fill", "#666").text("Aufmerksamkeit");
+
+  svg.append("line").attr("x1", 570).attr("y1", by + bh/2 - 4).attr("x2", 665).attr("y2", by + bh/2 - 4)
+    .attr("stroke", "#666").attr("stroke-width", 1.5).attr("marker-end", "url(#arr-bn)");
+  svg.append("text").attr("x", 618).attr("y", by + bh/2 - 12)
+    .attr("text-anchor", "middle").attr("font-size", 10).attr("fill", "#666").text("Schemabildung");
+
+  // Backward arrow (dashed)
+  svg.append("line").attr("x1", 665).attr("y1", by + bh/2 + 10).attr("x2", 575).attr("y2", by + bh/2 + 10)
+    .attr("stroke", "#666").attr("stroke-width", 1.5).attr("stroke-dasharray", "4,3").attr("marker-end", "url(#arr-bn)");
+  svg.append("text").attr("x", 618).attr("y", by + bh/2 + 26)
+    .attr("text-anchor", "middle").attr("font-size", 10).attr("fill", "#666").text("Abruf");
+
+  return svg.node();
+}
+```
+
+<br><br>
+
+::: {.fragment}
+::::{.columns}
+:::{.column width="33%"}
+::: {style="background: #faf0f0; padding: 1.0em; border-radius: 8px; border-top: 3px solid #D55E00;"}
+[**Extrinsische Belastung**]{style="color: #D55E00;"}
+
+Unnötige Belastung durch schlechtes Design.
+
+[→ Reduzieren!]{style="font-weight: bold;"}
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: #f0f4f8; padding: 1.0em; border-radius: 8px; border-top: 3px solid #0072B2;"}
+[**Intrinsische Belastung**]{style="color: #0072B2;"}
+
+Bestimmt durch Material und Vorwissen.
+
+[→ Steuern durch Aufgabendesign]{style="font-weight: bold;"}
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: #f5f5eb; padding: 1.0em; border-radius: 8px; border-top: 3px solid #1E3A5F;"}
+[**Lernrelevante Verarbeitung**]{style="color: #1E3A5F;"}
+
+Produktive Denkarbeit, die Schemata aufbaut.
+
+[→ Maximieren!]{style="font-weight: bold;"}
+:::
+:::
+::::
+
+::: {style="text-align: center; font-size: 1.0em; margin-top: 0.5em;"}
+Das Arbeitsgedächtnis hat **begrenzte Kapazität**.
+:::
+:::
+
+::: {.notes}
+Oben: das Grundmodell. Information rein, Arbeitsgedächtnis verarbeitet, Schemata entstehen. Unten (Klick): drei Lastarten. Extrinsisch = schlechtes Design, reduzieren. Intrinsisch = Material + Vorwissen, steuern. Lernrelevant = die produktive Denkarbeit, maximieren. Ziel: extrinsische Last senken → mehr Kapazität für lernrelevante Verarbeitung.
+:::
+
+
+## Das Arbeitsgedächtnis als Nadelöhr {.smaller}
+
+Alles Lernen muss durch einen **Engpass**: das Arbeitsgedächtnis.
+
+<br>
+
+::::{.columns}
+:::{.column width="45%"}
+| Eigenschaft | |
+|---|---|
+| **Kapazität** | ~4 Elemente |
+| **Dauer** | 15-30 Sekunden |
+| **Verarbeitung** | 1 Element aktiv |
+
+<br>
+
+Keine Technologie kann diesen Engpass umgehen. KI kann Information liefern, aber die **aktive Verarbeitung** muss im eigenen Kopf stattfinden.
+:::
+
+:::{.column width="55%"}
+```{ojs}
+//| echo: false
+
+viewof cl_controls = {
+  const div = html`<div style="display:flex;align-items:center;gap:10px;font-size:15px;">
+    <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
+    <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
+  </div>`;
+
+  const slider = div.querySelector("input[type=range]");
+  const label = div.querySelector("strong");
+
+  function emit() {
+    div.value = +slider.value;
+    div.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  slider.oninput = () => {
+    label.textContent = slider.value + "%";
+    emit();
+  };
+
+  div.value = 60;
+  return div;
+}
+```
+
+```{ojs}
+//| echo: false
+
+cognitive_load_chart = {
+  const w = 420;
+  const h = 320;
+
+  const intrinsic = 30;
+  const ext = Math.min(cl_controls, 100 - intrinsic);
+  const learning = Math.max(0, 100 - ext - intrinsic);
+
+  const colors = {
+    "Extrinsische Belastung": "#D55E00",
+    "Intrinsische Belastung": "#64748b",
+    "Lernrelevante Verarbeitung": "#0072B2",
+  };
+
+  const data = [
+    {type: "Extrinsische Belastung", value: ext, order: 3},
+    {type: "Lernrelevante Verarbeitung", value: learning, order: 2},
+    {type: "Intrinsische Belastung", value: intrinsic, order: 1},
+  ].filter(d => d.value > 0);
+
+  const marks = [
+    Plot.barY(data, Plot.stackY({
+      x: d => "",
+      y: "value",
+      fill: "type",
+      order: "order",
+      tip: true,
+      title: d => `${d.type}: ${d.value}%`
+    })),
+    Plot.ruleY([100], {stroke: "#1A1714", strokeDasharray: "6,4", strokeWidth: 1.5}),
+  ];
+
+  if (learning > 8) {
+    marks.push(
+      Plot.text([{y: intrinsic + learning / 2}],
+        {x: d => "", y: "y", text: [`${learning}%`], fill: "white", fontWeight: "bold", fontSize: 16})
+    );
+  }
+
+  return Plot.plot({
+    width: w,
+    height: h,
+    marginLeft: 60,
+    marginBottom: 30,
+    marginTop: 30,
+    style: {fontSize: "13px", background: "transparent"},
+    x: { label: null, padding: 0.7 },
+    y: {
+      label: "Arbeitsgedächtniskapazität",
+      domain: [0, 105],
+      ticks: [0, 25, 50, 75, 100],
+      tickFormat: d => d + "%"
+    },
+    color: {
+      domain: ["Lernrelevante Verarbeitung", "Intrinsische Belastung", "Extrinsische Belastung"],
+      range: [colors["Lernrelevante Verarbeitung"], colors["Intrinsische Belastung"], colors["Extrinsische Belastung"]],
+      legend: true
+    },
+    marks
+  });
+}
+```
+:::
+::::
+
+::: {.notes}
+Interaktiv: Slider bewegen. Hohe extrinsische Last → kaum Platz für Lernen. Last senken → sofort Kapazität frei. Die blaue Fläche ist das, was zählt. KI kann Information liefern, aber die Verarbeitung muss im eigenen Kopf stattfinden.
+:::
+
+
+## Expertise = vernetzte Schemata {.smaller}
+
+Wie überwindet man den Engpass? Durch **Vorwissen**. Wissen wird im Langzeitgedächtnis als **Schemata** gespeichert: mentale Strukturen, die viele Einzelelemente zu einer Einheit komprimieren. Je mehr Vorwissen, desto weniger Belastung für das Arbeitsgedächtnis.
+
+<br>
+
+```{ojs}
+//| echo: false
+
+schemas_width = 700
+schemas_height = 380
+schemas_font_size = "13px"
+```
+
+```{ojs}
+//| echo: false
+
+novice_expert_schemas = {
+  const w = schemas_width;
+  const h = schemas_height;
+  const fs = schemas_font_size;
+
+  const colNeg = "#D55E00";
+  const colPos = "#0072B2";
+  const colNeutral = "#64748b";
+  const colCross = "#B8821A";
+
+  const labels = [
+    "Fakt A", "Fakt B", "Fakt C",
+    "Regel 1", "Regel 2", "Regel 3",
+    "Def. X", "Def. Y", "Def. Z"
+  ];
+  const clusters = [0, 0, 0, 1, 1, 1, 2, 2, 2];
+
+  const novicePos = [
+    [0.12, 0.22], [0.38, 0.12], [0.65, 0.20],
+    [0.18, 0.50], [0.45, 0.48], [0.72, 0.55],
+    [0.08, 0.80], [0.42, 0.82], [0.70, 0.78]
+  ];
+
+  const expertPos = [
+    [0.15, 0.22], [0.30, 0.22], [0.225, 0.40],
+    [0.60, 0.22], [0.75, 0.22], [0.675, 0.40],
+    [0.33, 0.72], [0.48, 0.72], [0.405, 0.88]
+  ];
+
+  const intraEdges = [
+    [0, 1], [1, 2], [0, 2],
+    [3, 4], [4, 5], [3, 5],
+    [6, 7], [7, 8], [6, 8]
+  ];
+
+  const crossEdges = [[1, 3], [2, 6], [5, 7]];
+
+  const clusterBoxes = [
+    { x: 0.08, y: 0.12, w: 0.30, h: 0.38, label: "Schema 1" },
+    { x: 0.53, y: 0.12, w: 0.30, h: 0.38, label: "Schema 2" },
+    { x: 0.26, y: 0.62, w: 0.30, h: 0.36, label: "Schema 3" }
+  ];
+
+  const mx = 40, my = 30;
+  const cw = w - 2 * mx;
+  const ch = h - 2 * my;
+  const toX = (nx) => mx + nx * cw;
+  const toY = (ny) => my + ny * ch;
+
+  const svg = d3.create("svg")
+    .attr("width", w).attr("height", h)
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .style("background", "transparent")
+    .style("cursor", "pointer")
+    .style("user-select", "none");
+
+  const clusterGs = svg.selectAll("g.cluster-bg")
+    .data(clusterBoxes).join("g").attr("class", "cluster-bg");
+
+  clusterGs.append("rect")
+    .attr("x", d => toX(d.x)).attr("y", d => toY(d.y))
+    .attr("width", d => d.w * cw).attr("height", d => d.h * ch)
+    .attr("rx", 4).attr("fill", colPos).attr("fill-opacity", 0)
+    .attr("stroke", colPos).attr("stroke-opacity", 0)
+    .attr("stroke-width", 1.5).attr("stroke-dasharray", "6,4");
+
+  clusterGs.append("text")
+    .attr("x", d => toX(d.x + d.w / 2)).attr("y", d => toY(d.y) - 6)
+    .attr("text-anchor", "middle").style("font-size", "12px")
+    .style("fill", colPos).style("font-style", "italic").style("opacity", 0)
+    .text(d => d.label);
+
+  const intraLines = svg.selectAll("line.intra")
+    .data(intraEdges).join("line").attr("class", "intra")
+    .attr("x1", d => toX(novicePos[d[0]][0])).attr("y1", d => toY(novicePos[d[0]][1]))
+    .attr("x2", d => toX(novicePos[d[1]][0])).attr("y2", d => toY(novicePos[d[1]][1]))
+    .attr("stroke", colPos).attr("stroke-width", 2).attr("stroke-opacity", 0);
+
+  const crossLines = svg.selectAll("line.cross")
+    .data(crossEdges).join("line").attr("class", "cross")
+    .attr("x1", d => toX(novicePos[d[0]][0])).attr("y1", d => toY(novicePos[d[0]][1]))
+    .attr("x2", d => toX(novicePos[d[1]][0])).attr("y2", d => toY(novicePos[d[1]][1]))
+    .attr("stroke", colCross).attr("stroke-width", 1.5).attr("stroke-opacity", 0)
+    .attr("stroke-dasharray", "4,3");
+
+  const nodeR = 28;
+  const nodeGs = svg.selectAll("g.node")
+    .data(labels.map((l, i) => ({ label: l, i })))
+    .join("g").attr("class", "node")
+    .attr("transform", d => `translate(${toX(novicePos[d.i][0])},${toY(novicePos[d.i][1])})`);
+
+  nodeGs.append("rect")
+    .attr("x", -nodeR).attr("y", -14).attr("width", nodeR * 2).attr("height", 28)
+    .attr("rx", 4).attr("fill", colNeg).attr("fill-opacity", 0.8);
+
+  nodeGs.append("text")
+    .attr("text-anchor", "middle").attr("dy", "0.35em")
+    .style("font-size", "12px").style("font-weight", "bold").style("fill", "white")
+    .text(d => d.label);
+
+  const subtitle = svg.append("text")
+    .attr("x", w / 2).attr("y", h - 8)
+    .attr("text-anchor", "middle").style("font-size", fs).style("fill", colNeutral)
+    .text("Isolierte Fakten \u2014 klicken zum Vernetzen");
+
+  let expert = false;
+
+  svg.on("click", () => {
+    expert = !expert;
+    const dur = 1000;
+    const ease = d3.easeCubicInOut;
+
+    nodeGs.transition().duration(dur).ease(ease)
+      .attr("transform", d => {
+        const pos = expert ? expertPos[d.i] : novicePos[d.i];
+        return `translate(${toX(pos[0])},${toY(pos[1])})`;
+      });
+
+    nodeGs.select("rect").transition().duration(dur).ease(ease)
+      .attr("fill", expert ? colPos : colNeg);
+
+    intraLines.transition().duration(dur).ease(ease)
+      .attr("x1", d => toX((expert ? expertPos : novicePos)[d[0]][0]))
+      .attr("y1", d => toY((expert ? expertPos : novicePos)[d[0]][1]))
+      .attr("x2", d => toX((expert ? expertPos : novicePos)[d[1]][0]))
+      .attr("y2", d => toY((expert ? expertPos : novicePos)[d[1]][1]))
+      .attr("stroke-opacity", expert ? 0.6 : 0);
+
+    crossLines.transition().duration(dur).ease(ease)
+      .attr("x1", d => toX((expert ? expertPos : novicePos)[d[0]][0]))
+      .attr("y1", d => toY((expert ? expertPos : novicePos)[d[0]][1]))
+      .attr("x2", d => toX((expert ? expertPos : novicePos)[d[1]][0]))
+      .attr("y2", d => toY((expert ? expertPos : novicePos)[d[1]][1]))
+      .attr("stroke-opacity", expert ? 0.4 : 0);
+
+    clusterGs.select("rect").transition().duration(dur).ease(ease)
+      .attr("fill-opacity", expert ? 0.06 : 0)
+      .attr("stroke-opacity", expert ? 0.5 : 0);
+
+    clusterGs.select("text").transition().duration(dur).ease(ease)
+      .style("opacity", expert ? 1 : 0);
+
+    subtitle.transition().duration(300).style("opacity", 0)
+      .transition().delay(expert ? 600 : 0).duration(300).style("opacity", 1)
+      .text(expert
+        ? "Vernetzte Schemata \u2014 klicken zum Aufl\u00f6sen"
+        : "Isolierte Fakten \u2014 klicken zum Vernetzen");
+  });
+
+  return svg.node();
+}
+```
+
+::: {.notes}
+→ Überleitung: Wie überwindet man den Engpass? Durch Vorwissen, organisiert als Schemata. Grafik anklicken: isolierte Fakten → vernetzte Schemata. Ein Schema = viele Elemente als eine Einheit. Weniger Belastung fürs Arbeitsgedächtnis. Aber: Schemata aufbauen erfordert eigene Denkarbeit.
+:::
+
+
+## Extrinsische Last reduzieren {.smaller}
+
+Vorwissen entlastet das Arbeitsgedächtnis. Aber auch das **Design** einer Aufgabe beeinflusst die Belastung. Extrinsische Last entsteht durch unnötige Komplexität, die nichts mit dem Lerninhalt zu tun hat.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+::: {style="background: #faf0f0; padding: 1.2em; border-radius: 8px; border-left: 3px solid #D55E00;"}
+**Typische Quellen extrinsischer Last**
+
+- Information auf mehrere Quellen verteilt (Split-Attention)
+- Unklare oder mehrdeutige Aufgabenstellungen
+- Irrelevante Zusatzinformationen
+- Überladene Folien oder Arbeitsblätter
+:::
+:::
+
+:::{.column width="50%"}
+::: {style="background: #f0f4f8; padding: 1.2em; border-radius: 8px; border-left: 3px solid #0072B2;"}
+**Gegenstrategien**
+
+- Zusammengehörige Information integrieren
+- Aufgaben klar und eindeutig formulieren
+- Nur zeigen, was gerade gebraucht wird
+- Schritt für Schritt statt alles auf einmal
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Jede Reduktion extrinsischer Last schafft **Kapazität für lernrelevante Verarbeitung**.
+:::
+
+::: {.notes}
+→ Überleitung: Schemata helfen, aber auch das Aufgabendesign zählt. Erstes Prinzip: extrinsische Last reduzieren. Links: typische Quellen. Rechts: Gegenstrategien. Split-Attention ist das Paradebeispiel. Kernbotschaft: Jede Reduktion schafft Kapazität für lernrelevante Verarbeitung.
+:::
+
+
+## Vorwissen bestimmt das Aufgabendesign {.smaller}
+
+Dieselbe Aufgabe hat **unterschiedliche intrinsische Last** für verschiedene Lernende.
+
+<br>
+
+**Aufgabe:** Löse nach $x$ auf:  $$-1(-x - 7) = 14x - 6$$
+
+::::{.columns}
+:::{.column width="50%"}
+::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
+**Für Anfänger:innen**
+
+Hohe Komplexität:
+
+- Was bedeutet das Minuszeichen vor der Klammer?
+- Wie verteile ich?
+- Wie bringe ich $x$ auf eine Seite?
+- Welche Rechenregeln gelten?
+
+Jedes Element muss **einzeln** im Arbeitsgedächtnis gehalten werden.
+:::
+:::
+
+:::{.column width="50%"}
+::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
+**Für Fortgeschrittene**
+
+Niedrige Komplexität:
+
+- "Klammer auflösen" → ein Schema
+- "Terme zusammenfassen" → ein Schema
+- "Nach $x$ auflösen" → ein Schema
+
+Jeder Schritt ist eingeübt und läuft automatisch ab. Das Arbeitsgedächtnis wird kaum belastet.
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.1em; font-weight: bold; color: #D55E00;"}
+Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
+:::
+
+::: {.notes}
+→ Überleitung: Zweites Prinzip. Dieselbe Gleichung, aber völlig andere kognitive Kosten. Links: Anfänger, jedes Element einzeln. Rechts: Fortgeschrittene, drei automatisierte Schritte. Konsequenz: Ein Übungsblatt für alle ist für die meisten falsch.
+:::
+
+
+
+## Scaffolding steuert die intrinsische Last {.smaller}
+
+Wenn die intrinsische Last zu hoch ist, brauchen Lernende **Scaffolding**.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+**Vom Beispiel zum Problem (Fading)**
+
+| Schritt | Format |
+|---|---|
+| 1 | **Worked Example**: Vollständig durchgearbeitet |
+| 2 | **Completion Problem**: Teilweise gelöst, Lücken füllen |
+| 3 | **Hinweis-gestützt**: Nur strategische Hinweise |
+| 4 | **Eigenständig**: Ohne Unterstützung |
+
+<br>
+
+::: {style="font-size: 0.95em; color: #6E6560;"}
+Jede Stufe reduziert die Unterstützung und erhöht die kognitive Eigenleistung.
+:::
+:::
+
+:::{.column width="50%"}
+**Beispiel: Gleichung lösen**
+
+**Stufe 1** (Worked Example):
+
+::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
+$-1(-x - 7) = 14x - 6$
+
+Schritt 1: Klammer auflösen → $x + 7 = 14x - 6$
+
+Schritt 2: $x$ isolieren → $7 + 6 = 14x - x$ → $13 = 13x$
+
+Schritt 3: Vereinfachen → $x = 1$
+:::
+
+<br>
+
+**Stufe 2** (Completion):
+
+::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
+$-1(-x - 7) = 14x - 6$
+
+Schritt 1: Klammer auflösen → $\underline{\quad\quad\quad\quad}$
+
+Schritt 2: $x$ isolieren → $7 + 6 = 14x - x$ → $13 = 13x$
+
+Schritt 3: Vereinfachen → $x = 1$
+:::
+:::
+::::
+
+::: {.notes}
+→ Überleitung: Wenn die Last zu hoch ist, braucht es Scaffolding. Drittes Prinzip. Links: Fading-Sequenz von Worked Example bis eigenständig. Rechts: konkretes Beispiel. Stufe 1 zeigt alles, Stufe 2 lässt eine Lücke. Die Unterstützung wird schrittweise abgebaut.
+:::
+
+
+## Wie bringe ich ein KI-Tool dazu, pädagogisch sinnvoll zu helfen? {.smaller}
+
+Ohne gezielte Anleitung liefert ein Chatbot eher die **Lösung** als das **Scaffolding**.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
+**Was ein Chatbot ohne Anleitung tut**
+
+"Löse $-1(-x - 7) = 14x - 6$"
+
+→ Sofort die vollständige Lösung, korrekt formatiert, flüssig formuliert.
+
+- Keine Diagnose des Vorwissens
+- Keine angepasste Unterstützung
+- Keine Lücken zum Selbstdenken
+- Kein Fading
+
+[Eine korrekte Lösung ist noch kein pädagogisch gestaltetes Worked Example.]{style="color: #D55E00; font-weight: bold;"}
+:::
+:::
+
+:::{.column width="50%"}
+::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
+**Was mit der richtigen Anleitung möglich ist**
+
+Ein Chatbot kann CLT-Prinzipien umsetzen:
+
+- **Zuerst diagnostiziert**, was Lernende schon können
+- Scaffolding ans **Vorwissen anpasst**
+- Lücken lässt, die zum **Selbstdenken** einladen
+- Unterstützung schrittweise **ausblendet** (Fading)
+
+[Die lernrelevante Verarbeitung bleibt bei den Lernenden.]{style="color: #0072B2; font-weight: bold;"}
+:::
+:::
+::::
+
+::: {.notes}
+→ Überleitung: Jetzt kommt KI ins Spiel. Links: Was ein Chatbot ohne Anleitung tut. Lösung ja, Scaffolding nein. Rechts: Was möglich ist, wenn man es richtig anlegt. Diagnose, angepasstes Scaffolding, Fading. Kernpunkt: Eine korrekte Lösung ist nicht automatisch ein gutes Worked Example.
+:::
+
+
+## Beispiel: Gleichungen lösen {.smaller}
+
+**Aufgabe:** $-1(-x - 7) = 14x - 6$
+
+Diese Aufgabe erfordert drei Teilkompetenzen:
+
+<br>
+
+::::{.columns}
+:::{.column width="33%"}
+::: {style="background: rgba(0, 114, 178, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
+**Schritt 1**
+
+**Distribuieren**
+
+$-1 \cdot (-x) = x$
+
+$-1 \cdot (-7) = 7$
+
+→ $x + 7 = 14x - 6$
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: rgba(100, 116, 139, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
+**Schritt 2**
+
+**Terme zusammenfassen**
+
+$7 + 6 = 14x - x$
+
+→ $13 = 13x$
+:::
+:::
+
+:::{.column width="33%"}
+::: {style="background: rgba(213, 94, 0, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
+**Schritt 3**
+
+**Variable isolieren**
+
+$x = 1$
+
+Prüfung: $-1(-1-7) = 14(1)-6$
+
+$8 = 8$
+:::
+:::
+::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.05em;"}
+Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die Person bereits?]{style="color: #0072B2; font-weight: bold;"}
+:::
+
+. . .
+
+<br>
+
+::: {style="font-size: 0.9em; margin-top: 0.8em;"}
+
+| Diagnose | Scaffolding |
+|----------|-------------|
+| Schritt beherrscht | Nur ein Hinweis, selbst lösen lassen |
+| Schritt teilweise beherrscht | Completion Problem (Lücken ausfüllen) |
+| Schritt nicht beherrscht | Worked Example, dann erneut versuchen |
+
+:::
+
+::: {.notes}
+→ Konkretes Beispiel. Drei Teilkompetenzen, drei Karten. Klick: Tabelle zeigt die Logik. Beherrscht → Hinweis. Teilweise → Lücken. Nicht beherrscht → Worked Example. Das ist Fading, angepasst ans Vorwissen.
+:::
+
+
+## Erkenntnisse {.center}
+
+<br>
+
+::: {style="font-size: 1.2em; max-width: 85%; margin: 0 auto; line-height: 2;"}
+
+[1.]{style="color: #D55E00; font-weight: bold;"} **Extrinsische Last reduzieren:** Alles entfernen, was nicht zum Lernen beiträgt.
+
+<br>
+
+[2.]{style="color: #64748b; font-weight: bold;"} **Intrinsische Last ans Vorwissen anpassen:** Unterstützung dort geben, wo sie gebraucht wird, und dort zurücknehmen, wo sie überflüssig ist.
+
+<br>
+
+[3.]{style="color: #0072B2; font-weight: bold;"} **Lernrelevante Verarbeitung fördern:** KI-Tools so gestalten, dass die Denkarbeit bei den Lernenden bleibt.
+
+:::
+
+::: {.notes}
+Drei Erkenntnisse, je eine pro Lastart. 1: Extrinsisch reduzieren. 2: Intrinsisch ans Vorwissen anpassen. 3: Lernrelevante Verarbeitung fördern, nicht auslagern. → Überleitung zur Diskussion.
+:::
+
+
+## Diskussion
+
+Mögliche Fragen als Einstieg:
+
+<br>
+
+::: {style="font-size: 1.05em; max-width: 90%; margin: 0 auto; line-height: 2.2; color: #6E6560;"}
+
+- Wo in deinem Kurs nutzen Studierende KI als Abkürzung, und was geht dabei verloren?
+
+- Welche deiner Aufgaben könnten mit besserem Scaffolding wirksamer werden?
+
+- Woher weisst du, was deine Studierenden bereits können?
+
+- Wie könnte ein KI-Tool aussehen, das auf dein Fach zugeschnitten ist?
+
+:::
+
+::: {.notes}
+Offene Diskussion. Vier Fragen als Einstieg, je nach Interesse eine auswählen. 1: Eigene Erfahrung mit KI-Nutzung. 2: Aufgabendesign, auch ohne KI. 3: Diagnostik, die CLT-Kernfrage. 4: Ausblick auf fachspezifische Tools.
+:::
+
+
+## Referenzen

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Kognitive Grundlagen – KI in der Lehre: Refresher</title>
+<title>Werkzeugnutzung und Expertise – KI in der Lehre: Refresher</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../qa/erwuenschte-schwierigkeiten/index.html" rel="next">
-<link href="../../qa/paradox/index.html" rel="prev">
+<link href="../../qa/index.html" rel="prev">
 <link href="../..//assets/robot.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -40,14 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f7ea35562251465ded65364387175922.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e3824b1d8a639645d674ba9e3a49310b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8c6e03b010a68267edd980d4db07b818.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e3824b1d8a639645d674ba9e3a49310b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-713c84db3d8c5c849da945c78dfc710f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-713c84db3d8c5c849da945c78dfc710f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-713c84db3d8c5c849da945c78dfc710f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-346731b3ab14d72e40f670da30e7b4f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-346731b3ab14d72e40f670da30e7b4f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-346731b3ab14d72e40f670da30e7b4f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -89,71 +88,11 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
 div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
+  border-left-color: #1E3A5F;
 }
 div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+  background-color: rgba(30, 58, 95, 0.13);
 }
 div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
@@ -161,35 +100,11 @@ div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro
   content: '\e2ca';
   background-image: none;
 }
-div.callout-reflect.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
-  background-image: none;
-}
 div.callout-individual.callout {
-  border-left-color: #A3195B;
+  border-left-color: #A63D2F;
 }
 div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+  background-color: rgba(166, 61, 47, 0.13);
 }
 div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
@@ -198,10 +113,10 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
   background-image: none;
 }
 div.callout-demonstration.callout {
-  border-left-color: #333333;
+  border-left-color: #6E6560;
 }
 div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
+  background-color: rgba(110, 101, 96, 0.13);
 }
 div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
@@ -209,11 +124,95 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
   content: '\f51b';
   background-image: none;
 }
+div.callout-group.callout {
+  border-left-color: #A63D2F;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(166, 61, 47, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #1E3A5F;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(30, 58, 95, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #6E6560;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(110, 101, 96, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #1E3A5F;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(30, 58, 95, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #6E6560;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(110, 101, 96, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #1E3A5F;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(30, 58, 95, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A63D2F;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(166, 61, 47, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
+  background-image: none;
+}
 div.callout-warning.callout {
-  border-left-color: #A3195B;
+  border-left-color: #A63D2F;
 }
 div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+  background-color: rgba(166, 61, 47, 0.13);
 }
 div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
@@ -226,7 +225,7 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 
 <link rel="stylesheet" href="../../styles/styles.css">
 <link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
-<meta property="og:title" content="Kognitive Grundlagen – KI in der Lehre: Refresher">
+<meta property="og:title" content="Werkzeugnutzung und Expertise – KI in der Lehre: Refresher">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="KI in der Lehre: Refresher">
 </head>
@@ -254,11 +253,6 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 <span class="menu-text">Präsentation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../guide/index.html"> <i class="bi bi-book" role="img">
-</i> 
-<span class="menu-text">Leitfaden</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="../../qa/index.html" aria-current="page"> <i class="bi bi-chat-dots" role="img">
 </i> 
 <span class="menu-text">Q &amp; A</span></a>
@@ -271,8 +265,16 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-archiv">    
         <li>
-    <a class="dropdown-item" href="../../slides/archive/ai-higher-ed-2025/index.html">
- <span class="dropdown-text">Refresher 2025</span></a>
+    <a class="dropdown-item" href="../../slides/outsourcing-rational/index.html">
+ <span class="dropdown-text">Outsourcing rational (Entwurf)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/understanding-cant-be-offloaded/index.html">
+ <span class="dropdown-text">Verstehen kann man nicht auslagern (Entwurf)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/archive/refresher-20251217/index.html">
+ <span class="dropdown-text">Refresher 17.12.2025</span></a>
   </li>  
     </ul>
   </li>
@@ -289,7 +291,7 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../qa/paradox/index.html">Themen</a></li><li class="breadcrumb-item"><a href="../../qa/kognitive-grundlagen/index.html">Kognitive Grundlagen</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../qa/kognitive-grundlagen/index.html">Werkzeugnutzung und Expertise</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -307,71 +309,12 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
  <span class="menu-text">Anwendungsfragen</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Themen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/paradox/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Das Produktivitäts-Lern-Paradox</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../qa/kognitive-grundlagen/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Kognitive Grundlagen</span></a>
+ <span class="menu-text">Werkzeugnutzung und Expertise</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/erwuenschte-schwierigkeiten/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Erwünschte Schwierigkeiten</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/generierungseffekt/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Der Generierungseffekt</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/historische-analogien/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Historische Analogien</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/experten-vs-lernende/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Experten vs.&nbsp;Lernende</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/expertise-umkehr-effekt/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Der Expertise-Umkehr-Effekt</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/kritisches-denken/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Kritisches Denken und Fachwissen</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../qa/praktische-implikationen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Praktische Implikationen für die Lehre</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -382,23 +325,19 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#das-nadelöhr-des-lernens" id="toc-das-nadelöhr-des-lernens" class="nav-link active" data-scroll-target="#das-nadelöhr-des-lernens">Das Nadelöhr des Lernens</a></li>
-  <li><a href="#anwendungsfragen" id="toc-anwendungsfragen" class="nav-link" data-scroll-target="#anwendungsfragen">Anwendungsfragen</a>
-  <ul class="collapse">
-  <li><a href="#gesundheit-notfallsituationen-und-informationsverarbeitung" id="toc-gesundheit-notfallsituationen-und-informationsverarbeitung" class="nav-link" data-scroll-target="#gesundheit-notfallsituationen-und-informationsverarbeitung">Gesundheit: Notfallsituationen und Informationsverarbeitung</a></li>
-  <li><a href="#technik-und-informatik-code-verstehen-vs.-kopieren" id="toc-technik-und-informatik-code-verstehen-vs.-kopieren" class="nav-link" data-scroll-target="#technik-und-informatik-code-verstehen-vs.-kopieren">Technik und Informatik: Code verstehen vs.&nbsp;kopieren</a></li>
-  <li><a href="#wirtschaft-ki-zur-komplexitätsreduktion" id="toc-wirtschaft-ki-zur-komplexitätsreduktion" class="nav-link" data-scroll-target="#wirtschaft-ki-zur-komplexitätsreduktion">Wirtschaft: KI zur Komplexitätsreduktion</a></li>
-  <li><a href="#künste-kognitive-überlastung-durch-ki-output" id="toc-künste-kognitive-überlastung-durch-ki-output" class="nav-link" data-scroll-target="#künste-kognitive-überlastung-durch-ki-output">Künste: Kognitive Überlastung durch KI-Output</a></li>
-  </ul></li>
+  <li><a href="#auslagerung-vs.-ersetzung" id="toc-auslagerung-vs.-ersetzung" class="nav-link active" data-scroll-target="#auslagerung-vs.-ersetzung">Auslagerung vs.&nbsp;Ersetzung</a></li>
+  <li><a href="#warum-expertise-den-unterschied-macht" id="toc-warum-expertise-den-unterschied-macht" class="nav-link" data-scroll-target="#warum-expertise-den-unterschied-macht">Warum Expertise den Unterschied macht</a></li>
+  <li><a href="#die-konfidenzfalle" id="toc-die-konfidenzfalle" class="nav-link" data-scroll-target="#die-konfidenzfalle">Die Konfidenzfalle</a></li>
+  <li><a href="#wann-werkzeuge-einführen" id="toc-wann-werkzeuge-einführen" class="nav-link" data-scroll-target="#wann-werkzeuge-einführen">Wann Werkzeuge einführen</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../qa/paradox/index.html">Themen</a></li><li class="breadcrumb-item"><a href="../../qa/kognitive-grundlagen/index.html">Kognitive Grundlagen</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kognitive Grundlagen</h1>
+<h1 class="title">Werkzeugnutzung und Expertise</h1>
 </div>
 
 
@@ -415,121 +354,26 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 </header>
 
 
-<p><a href="../../qa/index.html" class="qa-nav-link">← Zurück zur Übersicht</a></p>
-<section id="das-nadelöhr-des-lernens" class="level2">
-<h2 class="anchored" data-anchor-id="das-nadelöhr-des-lernens">Das Nadelöhr des Lernens</h2>
-<p>Das Arbeitsgedächtnis hat eine stark begrenzte Kapazität von etwa 4 plus/minus 1 Elementen. Alles Lernen muss durch dieses Nadelöhr. Es gibt keinen Weg drumherum, keine Abkürzung, und keine KI kann diesen biologischen Engpass umgehen.</p>
-<p>Die Cognitive Load Theory unterscheidet drei Arten der Belastung:</p>
-<ul>
-<li><strong>Intrinsische Belastung:</strong> Inhärente Komplexität des Materials</li>
-<li><strong>Extrinsische Belastung:</strong> Schlecht gestaltete Instruktion (minimieren)</li>
-<li><strong>Lernförderliche Belastung:</strong> Produktive Anstrengung für Schemabildung (erhalten)</li>
-</ul>
+<section id="auslagerung-vs.-ersetzung" class="level2">
+<h2 class="anchored" data-anchor-id="auslagerung-vs.-ersetzung">Auslagerung vs.&nbsp;Ersetzung</h2>
+<p>Nicht jeder KI-Einsatz ist gleich. Die zentrale Unterscheidung: KI kann extrinsische Belastung <strong>auslagern</strong> (Formatierung, Recherche-Organisation, Zusammenfassungen als Ausgangspunkt) oder lernrelevante Verarbeitung <strong>ersetzen</strong> (die aktive Auseinandersetzung mit dem Material, durch die Schemata entstehen). Auslagerung ist sinnvoll. Ersetzung untergräbt den Lernprozess, auch wenn das Endprodukt korrekt ist.</p>
+<p>Ob ein bestimmter KI-Einsatz Auslagerung oder Ersetzung darstellt, hängt nicht vom Werkzeug ab, sondern vom Vorwissen der Person, die es nutzt.</p>
 </section>
-<section id="anwendungsfragen" class="level2">
-<h2 class="anchored" data-anchor-id="anwendungsfragen">Anwendungsfragen</h2>
-<section id="gesundheit-notfallsituationen-und-informationsverarbeitung" class="level3 discipline-section discipline-gesundheit">
-<h3 class="anchored" data-anchor-id="gesundheit-notfallsituationen-und-informationsverarbeitung">Gesundheit: Notfallsituationen und Informationsverarbeitung</h3>
-<p>Im Bachelor Pflege müssen Studierende in Notfallsituationen sehr schnell viele Informationen gleichzeitig verarbeiten: Vitalwerte, Symptome, Medikamentenwirkungen, und so weiter.</p>
-<p><strong>Frage:</strong> Wenn das Working Memory wirklich auf 4±1 Elemente beschränkt ist, wie kann man Studierende dann überhaupt auf solche komplexen Situationen vorbereiten? KI-gestützte Simulationen könnten helfen, aber wenn die kognitive Belastung nicht umgangen werden kann: Sollte dann vielleicht mehr auf klassische Chunking-Strategien gesetzt werden, wo zusammengehörige Informationen gebündelt werden?</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Hinweise zur Antwort
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Chunking ist tatsächlich der Schlüssel: Experten speichern Wissen in vernetzten Strukturen, die automatisch abgerufen werden. Diese “Chunks” müssen aber durch Übung aufgebaut werden. KI kann diesen Prozess nicht abkürzen, aber gut gestaltete Simulationen können helfen, Muster zu erkennen. Mehr dazu im Leitfaden unter <a href="../../guide/index.html#expertise">Wie Expertise entsteht</a> und <a href="../../guide/index.html#expertise">Was Experten sehen</a>.</p>
-</div>
-</div>
-</div>
+<section id="warum-expertise-den-unterschied-macht" class="level2">
+<h2 class="anchored" data-anchor-id="warum-expertise-den-unterschied-macht">Warum Expertise den Unterschied macht</h2>
+<p>Expert:innen verfügen über hoch vernetzte Schemata in ihrem Fachgebiet. Sie erkennen Muster, verarbeiten komplexe Situationen als einzelne Einheiten und können KI-Output kritisch bewerten, weil sie die zugrundeliegenden Zusammenhänge verstehen. Für sie ist KI ein Produktivitätswerkzeug: Sie nutzen es, um extrinsische Belastung zu reduzieren, während ihre eigene Verarbeitung aktiv bleibt.</p>
+<p>Anfänger:innen haben diese Schemata noch nicht aufgebaut. Dieselbe KI-Nutzung, die für Expert:innen produktiv ist, kann bei Anfänger:innen die Schemabildung überspringen. KI-Output wirkt plausibel, ohne dass sie Fehler oder Lücken erkennen können. Das ist das <strong>Evaluationsparadox</strong>: Um KI-Output in einem Fachgebiet beurteilen zu können, braucht man genau die Kompetenz, die die Aufgabe aufbauen sollte.</p>
 </section>
-<section id="technik-und-informatik-code-verstehen-vs.-kopieren" class="level3 discipline-section discipline-technik">
-<h3 class="anchored" data-anchor-id="technik-und-informatik-code-verstehen-vs.-kopieren">Technik und Informatik: Code verstehen vs.&nbsp;kopieren</h3>
-<p>Studierende im dritten Semester Informatik programmieren zunehmend mit GitHub Copilot und ChatGPT. Theoretisch umgeht das die kognitive Verarbeitung nicht wirklich: Sie müssen den generierten Code ja trotzdem verstehen und durchdenken.</p>
-<p><strong>Frage:</strong> Aber es zeigt sich, dass viele einfach Code kopieren, ohne ihn richtig zu durchdringen. Wie kann man Aufgabenstellungen so gestalten, dass der germane Load, also die lernrelevante Belastung, im Vordergrund steht? Sollten bewusst kleinere Code-Beispiele verwendet werden, damit Studierende innerhalb dieser 4±1 Elemente arbeiten können?</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Hinweise zur Antwort
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Das Problem ist, dass KI die lernförderliche Belastung eliminieren kann. Aufgabenstellungen sollten den Denkprozess fordern: Code erklären lassen, Varianten vergleichen, Fehler finden. Kleinere, fokussierte Beispiele können helfen, die kognitive Belastung zu managen. Mehr dazu im Leitfaden unter <a href="../../guide/index.html#expertise">Cognitive Load Theory</a> und <a href="../../guide/index.html#expertise">Drei Arten kognitiver Belastung</a>.</p>
-</div>
-</div>
-</div>
+<section id="die-konfidenzfalle" class="level2">
+<h2 class="anchored" data-anchor-id="die-konfidenzfalle">Die Konfidenzfalle</h2>
+<p>Shaw und Nave <span class="citation" data-cites="shawThinkingFastSlow2026">[-@shawThinkingFastSlow2026]</span> haben diesen Effekt quantifiziert: 80% der Teilnehmenden folgten einer KI-Empfehlung, auch wenn sie falsch war. Gleichzeitig stieg ihre Konfidenz um 12 Prozentpunkte. Selbst unter optimalen Bedingungen (finanzielle Anreize, direktes Feedback) folgten 58% der falschen KI.</p>
+<p>Das Problem ist nicht nur der Kompetenzverlust. Es ist, dass Outsourcing kein internes Warnsignal erzeugt. Im Gegenteil: Der flüssige KI-Output erzeugt eine Kompetenzillusion. Die Lücke zwischen tatsächlicher Kompetenz und Selbsteinschätzung wächst, und es gibt keinen Mechanismus, der darauf aufmerksam macht.</p>
 </section>
-<section id="wirtschaft-ki-zur-komplexitätsreduktion" class="level3 discipline-section discipline-wirtschaft">
-<h3 class="anchored" data-anchor-id="wirtschaft-ki-zur-komplexitätsreduktion">Wirtschaft: KI zur Komplexitätsreduktion</h3>
-<p>Im Kurs “Strategisches Management” wird viel mit komplexen Fallstudien gearbeitet: Marktanalysen, Finanzberichte, Wettbewerbsszenarien. Die Studierenden nutzen mittlerweile KI, um diese Fälle vorab zusammenzufassen.</p>
-<p><strong>Frage:</strong> Einerseits ist das Problem mit dem Working Memory klar: Wenn Studierende zu viele Variablen gleichzeitig jonglieren müssen, lernen sie nichts. Andererseits: Wenn KI ihnen hilft, die extrinsic load zu reduzieren, also überflüssige Komplexität wegzufiltern, ist das dann nicht sogar förderlich? Oder riskiert man damit, dass sie die Fähigkeit verlieren, selbst relevante von irrelevanten Informationen zu unterscheiden?</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Hinweise zur Antwort
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Das ist eine wichtige Unterscheidung: KI kann extrinsische Belastung reduzieren (gut) oder lernförderliche Belastung eliminieren (problematisch). Die Fähigkeit, Relevantes von Irrelevantem zu unterscheiden, ist selbst eine Expertise, die aufgebaut werden muss. Mehr dazu im Leitfaden unter <a href="../../guide/index.html#expertise">Welche Art der Belastung reduziert KI?</a>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="künste-kognitive-überlastung-durch-ki-output" class="level3 discipline-section discipline-kuenste">
-<h3 class="anchored" data-anchor-id="künste-kognitive-überlastung-durch-ki-output">Künste: Kognitive Überlastung durch KI-Output</h3>
-<p>In der Visuellen Kommunikation arbeiten Studierende oft sehr intuitiv und visuell. Viele experimentieren mit Midjourney oder DALL-E und generieren in kurzer Zeit sehr viele Designvarianten.</p>
-<p><strong>Frage:</strong> Wenn das Working Memory aber tatsächlich so limitiert ist: Überfordert es Studierende dann nicht kognitiv, wenn sie 50 KI-generierte Entwürfe durchgehen müssen, um den richtigen auszuwählen? Sollte man sie eher anleiten, weniger, aber bewusstere Iterationen zu machen? Kann die Flut an KI-Output den kreativen Lernprozess tatsächlich behindern, weil die kognitive Kapazität überlastet wird?</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Hinweise zur Antwort
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Ja, zu viele Optionen können das Arbeitsgedächtnis überlasten und den Lernprozess behindern. Bewusste Einschränkungen und fokussierte Iterationen können helfen. Der kreative Prozess des Skizzierens, Iterierens und Verwerfens hat einen eigenen Lernwert. Mehr dazu im Leitfaden unter <a href="../../guide/index.html#expertise">Das Nadelöhr des Lernens</a>.</p>
-</div>
-</div>
-</div>
-</section>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Vertiefte Informationen
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Mehr zu diesem Thema im Leitfaden:</p>
-<ul>
-<li><a href="../../guide/index.html#expertise">Cognitive Load Theory: Das Nadelöhr des Lernens</a></li>
-<li><a href="../../guide/index.html#expertise">Drei Arten kognitiver Belastung</a></li>
-<li><a href="../../guide/index.html#expertise">Wie Expertise entsteht</a></li>
-</ul>
-</div>
-</div>
+<section id="wann-werkzeuge-einführen" class="level2">
+<h2 class="anchored" data-anchor-id="wann-werkzeuge-einführen">Wann Werkzeuge einführen</h2>
+<p>Die Konsequenz ist nicht, KI zu verbieten, sondern den Einsatz zu <strong>sequenzieren</strong>. Fachwissen ist Voraussetzung für produktive KI-Nutzung. Wer die Grundlagen nicht beherrscht, kann weder gute Prompts formulieren noch die Qualität der Antworten beurteilen.</p>
+<p>Konkret bedeutet das: In frühen Lernphasen die kognitive Arbeit bei den Studierenden belassen. Aufgaben so gestalten, dass der Denkprozess sichtbar wird: eigene Entwürfe vor dem KI-Vergleich, mündliche Erklärungen, Begründungen für Entscheidungen. In fortgeschrittenen Phasen KI gezielt als Denkpartner einsetzen, nicht als Antwortgeber.</p>
+<p>Die Frage bei jeder Aufgabe lautet: Bleibt die lernrelevante Verarbeitung bei den Studierenden, oder übernimmt die KI genau den Teil, der Schemata aufbauen würde?</p>
 
 
 </section>
@@ -1002,14 +846,11 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../qa/paradox/index.html" class="pagination-link" aria-label="Das Produktivitäts-Lern-Paradox">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Das Produktivitäts-Lern-Paradox</span>
+      <a href="../../qa/index.html" class="pagination-link" aria-label="Anwendungsfragen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Anwendungsfragen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../qa/erwuenschte-schwierigkeiten/index.html" class="pagination-link" aria-label="Erwünschte Schwierigkeiten">
-        <span class="nav-page-text">Erwünschte Schwierigkeiten</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
