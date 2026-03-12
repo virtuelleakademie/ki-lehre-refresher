@@ -21,9 +21,7 @@ Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 *Was ist KI?*
 
 - Ein Sprachmodell ist eine Textvorhersagemaschine
-- Dafür muss es viel Wissen erworben haben
 - Es kann jeden Dialog simulieren, auch Expertendialoge
-- Der Output ist oft schwer zu beurteilen und erfordert Fachwissen
 :::
 
 :::{.column width="33%"}
@@ -34,7 +32,6 @@ Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 - Wir können nur wenig gleichzeitig im Arbeitsgedächtnis behalten
 - Lernen heisst: Wissen selbst aufbauen und vernetzen
 - Gutes Aufgabendesign unterstützt diesen Prozess
-<!-- - Das Evaluationsparadox: kompetente KI-Nutzung setzt Kompetenz voraus -->
 :::
 
 :::{.column width="33%"}
@@ -44,7 +41,6 @@ Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 
 - KI-Tools lassen sich lernwissenschaftlich fundiert gestalten
 - Das Ziel: die kognitive Arbeit bleibt bei den Lernenden
-- KI unterstützt, statt zu ersetzen
 :::
 ::::
 
@@ -55,7 +51,7 @@ Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissen
 :::
 
 ::: {.notes}
-- **Drei Kurse, drei Fragen** - heute gehen wir durch alle drei
+- **Drei Kurse, drei Fragen**: heute gehen wir durch alle drei
 - Zuerst: Was kann KI?
 - Dann der Kern: Wie funktioniert Lernen?
 - Zum Schluss: Wie gestalten wir Tools?
@@ -226,14 +222,14 @@ Produktive Denkarbeit, die Schemata aufbaut.
 
 Weniger unnötige Belastung bedeutet mehr Platz für lernrelevante Verarbeitung. 
 
-<br> <br> <br>
+ <br> <br>
 
-::: {style="display: flex; flex-direction: column; align-items: center;"}
+::: {style="display: flex; flex-direction: column; align-items: center;" .ojs-legend-lg}
 ```{ojs}
 //| echo: false
 
 viewof cl_controls = {
-  const div = html`<div style="display:flex;align-items:center;gap:10px;font-size:15px;">
+  const div = html`<div style="display:flex;align-items:center;gap:10px;font-size:16px;">
     <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
     <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
   </div>`;
@@ -260,8 +256,8 @@ viewof cl_controls = {
 //| echo: false
 
 cognitive_load_chart = {
-  const w = 600;
-  const h = 420;
+  const w = 700;
+  const h = 480;
 
   const intrinsic = 30;
   const ext = Math.min(cl_controls, 100 - intrinsic);
@@ -304,7 +300,7 @@ cognitive_load_chart = {
     marginLeft: 60,
     marginBottom: 30,
     marginTop: 30,
-    style: {fontSize: "13px", background: "transparent"},
+    style: {fontSize: "18px", background: "transparent"},
     x: { label: null, padding: 0.7 },
     y: {
       label: "Arbeitsgedächtniskapazität",
