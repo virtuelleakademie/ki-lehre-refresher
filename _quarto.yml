@@ -12,10 +12,8 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - presentation/**/*.qmd
     - slides/**/*.qmd
     - slides/archive/**/*.qmd
-    - qa/**/*.qmd
 
 website:
   title: "KI in der Lehre: Refresher"
@@ -32,22 +30,10 @@ website:
 
   navbar:
     background: light
-    left:
-      - icon: easel
-        href: presentation/index.qmd
-        text: Präsentation
-
-      # - icon: chat-dots
-      #   text: "Q & A"
-      #   href: qa/index.qmd
-
+    right:
       - icon: archive
         text: Archiv
         menu:
-          - text: "Outsourcing rational (Entwurf)"
-            href: slides/outsourcing-rational/index.qmd
-          - text: "Verstehen kann man nicht auslagern (Entwurf)"
-            href: slides/understanding-cant-be-offloaded/index.qmd
           - text: "Refresher 17.12.2025"
             href: slides/archive/refresher-20251217/index.qmd
 
@@ -60,15 +46,6 @@ website:
         text: Knowledge Base
         href: https://virtuelleakademie.ch/knowledge-base/
         target: _blank
-
-  sidebar:
-    - id: qa
-      title: "Q & A"
-      style: "docked"
-      background: light
-      contents:
-        - qa/index.qmd
-        - qa/kognitive-grundlagen/index.qmd
 
 page-footer:
     right:
