@@ -55,7 +55,7 @@ Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissen
 :::
 
 ::: {.notes}
-Für alle, die die Kurse nicht besucht haben: Hier das Wesentliche in Kurzform. Der Beginner-Kurs klärt, was KI ist und was sie kann. Der Intermediate-Kurs erklärt, wie Lernen funktioniert und warum KI-Einsatz beim Lernen riskant ist. Der Advanced-Kurs zeigt, wie man KI-gestützte Lerntools baut. In dieser Präsentation gehen wir durch alle drei Perspektiven, weil sie zusammen ein kohärentes Bild ergeben.
+Drei Kurse, drei Fragen. Heute gehen wir durch alle drei. Zuerst kurz: Was kann KI? Dann der Kern: Wie funktioniert Lernen? Und zum Schluss: Wie gestalten wir Tools?
 :::
 
 
@@ -112,7 +112,7 @@ Vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/k
 :::
 
 ::: {.notes}
-Ein Sprachmodell wie ChatGPT ist im Kern eine Textvorhersagemaschine. Es sagt das nächste Wort vorher, basierend auf dem bisherigen Kontext und dem, was es aus Trainingsdaten gelernt hat. Um Text vorhersagen zu können, muss es enorm viel Wissen erworben haben. Deshalb kann es jeden Dialog simulieren, auch Expertendialoge. Das Ergebnis liest sich wie ein Expertentext, unabhängig davon, ob der Inhalt stimmt. Der Output ist oft schwer zu beurteilen und erfordert Fachwissen. Warum das für Lernen relevant ist, erklärt die Cognitive Load Theory.
+Textvorhersage, Wort für Wort. Einfaches Prinzip, aber mächtiges Ergebnis. Drei Beispiele: Mathe-Tutorial, klinischer Bericht, Musterlösung. Entscheidend: Der Output liest sich wie Expertentext, egal ob er stimmt. → Überleitung: Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT.
 :::
 
 
@@ -219,7 +219,7 @@ Das Arbeitsgedächtnis hat **begrenzte Kapazität**.
 :::
 
 ::: {.notes}
-Die Cognitive Load Theory unterscheidet drei Arten der Belastung des Arbeitsgedächtnisses. Oben sehen wir das Grundmodell: Information kommt rein, wird im Arbeitsgedächtnis verarbeitet, und wenn diese Verarbeitung produktiv ist, entstehen Schemata im Langzeitgedächtnis. Extrinsische Belastung entsteht durch schlechtes Design und sollte minimiert werden. Intrinsische Belastung hängt vom Material und dem Vorwissen ab. Lernrelevante Verarbeitung ist die Denkarbeit, die Schemata aufbaut. Das Ziel: extrinsische Belastung senken, damit mehr Kapazität für lernrelevante Verarbeitung bleibt.
+Oben: das Grundmodell. Information rein, Arbeitsgedächtnis verarbeitet, Schemata entstehen. Unten (Klick): drei Lastarten. Extrinsisch = schlechtes Design, reduzieren. Intrinsisch = Material + Vorwissen, steuern. Lernrelevant = die produktive Denkarbeit, maximieren. Ziel: extrinsische Last senken → mehr Kapazität für lernrelevante Verarbeitung.
 :::
 
 
@@ -339,7 +339,7 @@ cognitive_load_chart = {
 ::::
 
 ::: {.notes}
-Das Arbeitsgedächtnis ist der Flaschenhals, durch den alles Lernen hindurch muss. Es kann ungefähr vier Elemente gleichzeitig halten, und zwar für 15 bis 30 Sekunden. Bewegt den Slider: Bei hoher extrinsischer Belastung bleibt kaum Kapazität für lernrelevante Verarbeitung. Schiebt die extrinsische Last nach unten, und sofort wird Kapazität frei.
+Interaktiv: Slider bewegen. Hohe extrinsische Last → kaum Platz für Lernen. Last senken → sofort Kapazität frei. Die blaue Fläche ist das, was zählt. KI kann Information liefern, aber die Verarbeitung muss im eigenen Kopf stattfinden.
 :::
 
 
@@ -514,7 +514,7 @@ novice_expert_schemas = {
 ```
 
 ::: {.notes}
-Wie überwindet man den Engpass? Durch Schemata. Ein Schema komprimiert viele Einzelelemente zu einer Einheit und belegt nur einen Slot im Arbeitsgedächtnis. Klickt auf die Grafik: Links seht ihr isolierte Fakten, wie sie Anfänger:innen im Arbeitsgedächtnis halten müssen. Nach dem Klick: vernetzte Schemata, wie sie Expert:innen haben. Die Progression von isolierten Fakten zu vernetzten Schemata erfordert eigene kognitive Arbeit.
+→ Überleitung: Wie überwindet man den Engpass? Durch Vorwissen, organisiert als Schemata. Grafik anklicken: isolierte Fakten → vernetzte Schemata. Ein Schema = viele Elemente als eine Einheit. Weniger Belastung fürs Arbeitsgedächtnis. Aber: Schemata aufbauen erfordert eigene Denkarbeit.
 :::
 
 
@@ -555,7 +555,7 @@ Jede Reduktion extrinsischer Last schafft **Kapazität für lernrelevante Verarb
 :::
 
 ::: {.notes}
-Extrinsische Last entsteht durch schlechtes Instruktionsdesign. Ein klassisches Beispiel ist der Split-Attention-Effekt: wenn Lernende zwischen einer Grafik und einer separaten Erklärung hin- und herspringen müssen, kostet jede Blickbewegung Arbeitsgedächtnis. Die Lösung: Information integrieren, Aufgaben klar formulieren, und nur zeigen, was gerade gebraucht wird. Jede Reduktion extrinsischer Last schafft Kapazität für die produktive Denkarbeit, die Schemata aufbaut.
+→ Überleitung: Schemata helfen, aber auch das Aufgabendesign zählt. Erstes Prinzip: extrinsische Last reduzieren. Links: typische Quellen. Rechts: Gegenstrategien. Split-Attention ist das Paradebeispiel. Kernbotschaft: Jede Reduktion schafft Kapazität für lernrelevante Verarbeitung.
 :::
 
 
@@ -605,7 +605,7 @@ Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
 :::
 
 ::: {.notes}
-Hier wird es für das Aufgabendesign entscheidend. Dieselbe Gleichung hat völlig unterschiedliche kognitive Kosten für verschiedene Lernende. Für Anfänger:innen ist jedes Element einzeln zu verarbeiten. Für Fortgeschrittene sind das drei automatisierte Schritte. Dieselbe Aufgabe, aber radikal verschiedene Anforderungen ans Arbeitsgedächtnis.
+→ Überleitung: Zweites Prinzip. Dieselbe Gleichung, aber völlig andere kognitive Kosten. Links: Anfänger, jedes Element einzeln. Rechts: Fortgeschrittene, drei automatisierte Schritte. Konsequenz: Ein Übungsblatt für alle ist für die meisten falsch.
 :::
 
 
@@ -666,7 +666,7 @@ Schritt 3: Vereinfachen → $x = 1$
 ::::
 
 ::: {.notes}
-Scaffolding ist das dritte Prinzip. Die effektivste Strategie ist Fading: Man beginnt mit vollständig durchgearbeiteten Beispielen, geht dann zu Completion Problems über, dann zu Hinweisen, und schliesslich zu eigenständigem Lösen. Bei unserem Gleichungsbeispiel: Stufe 1 zeigt die vollständige Lösung, Stufe 2 lässt den ersten Schritt offen.
+→ Überleitung: Wenn die Last zu hoch ist, braucht es Scaffolding. Drittes Prinzip. Links: Fading-Sequenz von Worked Example bis eigenständig. Rechts: konkretes Beispiel. Stufe 1 zeigt alles, Stufe 2 lässt eine Lücke. Die Unterstützung wird schrittweise abgebaut.
 :::
 
 
@@ -711,7 +711,7 @@ Ein Chatbot kann CLT-Prinzipien umsetzen:
 ::::
 
 ::: {.notes}
-Hier kommen wir zur entscheidenden Frage: Wie bringe ich ein KI-Tool dazu, pädagogisch sinnvoll zu helfen? Standardmässig liefert ChatGPT einfach die Lösung. Die sieht aus wie ein Worked Example, ist aber keines. Was wir brauchen, ist ein Tool, das zuerst diagnostiziert, dann angepasst scaffoldet, und die kognitive Arbeit bei den Lernenden lässt.
+→ Überleitung: Jetzt kommt KI ins Spiel. Links: Was ein Chatbot ohne Anleitung tut. Lösung ja, Scaffolding nein. Rechts: Was möglich ist, wenn man es richtig anlegt. Diagnose, angepasstes Scaffolding, Fading. Kernpunkt: Eine korrekte Lösung ist nicht automatisch ein gutes Worked Example.
 :::
 
 
@@ -786,7 +786,7 @@ Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die P
 :::
 
 ::: {.notes}
-Die Gleichung erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfassen, Variable isolieren. Ein CLT-informiertes Tool diagnostiziert zuerst: Welche dieser Teilkompetenzen beherrscht die Person bereits? Je nach Ergebnis wird unterschiedlich scaffoldet: Wer den Schritt beherrscht, bekommt nur einen Hinweis. Wer ihn teilweise beherrscht, bekommt ein Completion Problem. Wer ihn nicht beherrscht, bekommt ein Worked Example und versucht es dann nochmal. Das ist Fading, angepasst ans Vorwissen.
+→ Konkretes Beispiel. Drei Teilkompetenzen, drei Karten. Klick: Tabelle zeigt die Logik. Beherrscht → Hinweis. Teilweise → Lücken. Nicht beherrscht → Worked Example. Das ist Fading, angepasst ans Vorwissen.
 :::
 
 
@@ -809,30 +809,30 @@ Die Gleichung erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfasse
 :::
 
 ::: {.notes}
-Erkenntnisse zum Mitnehmen. Erstens: Extrinsische Last reduzieren, alles entfernen, was nicht zum Lernen beiträgt. Zweitens: Intrinsische Last ans Vorwissen anpassen, Unterstützung dort geben, wo sie nötig ist (scaffolding), und dort zurücknehmen, wo sie überflüssig ist (fading). Drittens: KI kann diese Prinzipien umsetzen, aber nur mit gezieltem Design.
+Drei Erkenntnisse, je eine pro Lastart. 1: Extrinsisch reduzieren. 2: Intrinsisch ans Vorwissen anpassen. 3: Lernrelevante Verarbeitung fördern, nicht auslagern. → Überleitung zur Diskussion.
 :::
 
 
-## Diskussion {.center}
+## Diskussion
 
-<br><br>
+Mögliche Fragen als Einstieg:
 
-::: {style="font-size: 1.2em; text-align: center; max-width: 80%; margin: 0 auto; line-height: 1.8; color: #1A1714;"}
-CLT sagt: Das Problem ist nicht fehlende Motivation.
+<br>
 
-[Das Problem ist Aufgabendesign, das nicht zum Vorwissen passt.]{style="color: #0072B2; font-weight: bold;"}
-:::
+::: {style="font-size: 1.05em; max-width: 90%; margin: 0 auto; line-height: 2.2; color: #6E6560;"}
 
-<br><br>
+- Wo in deinem Kurs nutzen Studierende KI als Abkürzung, und was geht dabei verloren?
 
-::: {style="text-align: center; font-size: 1.0em; color: #6E6560;"}
-Wo in euren Kursen gibt es Aufgaben, die für die meisten Studierenden zu viel oder zu wenig fordern?
+- Welche deiner Aufgaben könnten mit besserem Scaffolding wirksamer werden?
 
-Und: Wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
+- Woher weisst du, was deine Studierenden bereits können?
+
+- Wie könnte ein KI-Tool aussehen, das auf dein Fach zugeschnitten ist?
+
 :::
 
 ::: {.notes}
-Offene Diskussion. CLT reframed das Problem: Es geht nicht um fehlende Motivation, sondern um Aufgabendesign, das nicht zum Vorwissen passt. Zwei Fragen: Wo fordern eure Aufgaben zu viel oder zu wenig? Und wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
+Offene Diskussion. Vier Fragen als Einstieg, je nach Interesse eine auswählen. 1: Eigene Erfahrung mit KI-Nutzung. 2: Aufgabendesign, auch ohne KI. 3: Diagnostik, die CLT-Kernfrage. 4: Ausblick auf fachspezifische Tools.
 :::
 
 
