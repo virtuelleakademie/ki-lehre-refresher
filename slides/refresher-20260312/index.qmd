@@ -1,7 +1,7 @@
 ---
-title: "Aufgabendesign nach Cognitive Load Theory"
-subtitle: "Von der kognitiven Architektur zum KI-gestützten Scaffolding"
-
+title: "Von der kognitiven Architektur zum KI-gestützten Scaffolding"
+subtitle: "KI in der Lehre: Refresher"
+date: "12 March, 2026"
 bibliography:
   - ../../bibliography.bib
   - ../../missing-refs.bib
@@ -55,7 +55,10 @@ Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissen
 :::
 
 ::: {.notes}
-Drei Kurse, drei Fragen. Heute gehen wir durch alle drei. Zuerst kurz: Was kann KI? Dann der Kern: Wie funktioniert Lernen? Und zum Schluss: Wie gestalten wir Tools?
+- **Drei Kurse, drei Fragen** - heute gehen wir durch alle drei
+- Zuerst: Was kann KI?
+- Dann der Kern: Wie funktioniert Lernen?
+- Zum Schluss: Wie gestalten wir Tools?
 :::
 
 
@@ -103,7 +106,10 @@ Vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/k
 :::
 
 ::: {.notes}
-Textvorhersage, Wort für Wort. Einfaches Prinzip, aber mächtiges Ergebnis. 2 Beispiele: klinischer Bericht, Musterlösung. Entscheidend: Der Output liest sich wie Expertentext, egal ob er stimmt. → Überleitung: Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT.
+- **Mechanismus:** Textvorhersage, Wort für Wort
+- **2 Beispiele:** klinischer Bericht, Musterlösung
+- **Kernpunkt:** Output liest sich wie Expertentext, egal ob er stimmt
+- **Überleitung:** Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT
 :::
 
 
@@ -207,8 +213,12 @@ Produktive Denkarbeit, die Schemata aufbaut.
 :::
 
 ::: {.notes}
-Oben: das Grundmodell. Information rein, Arbeitsgedächtnis verarbeitet, Schemata entstehen. Keine Technologie kann diesen Engpass umgehen.
-Unten (Klick): drei Lastarten. Extrinsisch = schlechtes Design, reduzieren. Intrinsisch = Material + Vorwissen, steuern. Lernrelevant = die produktive Denkarbeit, maximieren. Ziel: extrinsische Last senken → mehr Kapazität für lernrelevante Verarbeitung.
+- **Oben:** Grundmodell (Input → Arbeitsgedächtnis → Schemata). Keine Technologie umgeht diesen Engpass.
+- **Unten (Klick):** drei Lastarten
+  - Extrinsisch = schlechtes Design → **reduzieren**
+  - Intrinsisch = Material + Vorwissen → **steuern**
+  - Lernrelevant = produktive Denkarbeit → **maximieren**
+- **Ziel:** extrinsische Last senken → mehr Kapazität für Lernen
 :::
 
 
@@ -314,7 +324,10 @@ cognitive_load_chart = {
 :::
 
 ::: {.notes}
-Interaktiv: Slider bewegen. Hohe extrinsische Last → kaum Platz für Lernen. Last senken → sofort Kapazität frei. Die blaue Fläche ist das, was zählt.
+- **Aktion:** Slider bewegen
+- Hohe extrinsische Last → kaum Platz für Lernen
+- Last senken → sofort Kapazität frei
+- **Blaue Fläche** = das, was zählt
 :::
 
 
@@ -493,7 +506,10 @@ novice_expert_schemas = {
 :::
 
 ::: {.notes}
-→ Überleitung: Wie überwindet man den Engpass? Durch Vorwissen, organisiert als Schemata. Grafik anklicken: isolierte Fakten → vernetzte Schemata. Ein Schema = viele Elemente als eine Einheit. Weniger Belastung fürs Arbeitsgedächtnis. Aber: Schemata aufbauen erfordert eigene Denkarbeit.
+- **Aktion:** Grafik anklicken (isolierte Fakten → vernetzte Schemata)
+- Ein Schema = viele Elemente als eine Einheit
+- Weniger Belastung fürs Arbeitsgedächtnis
+- **Aber:** Schemata aufbauen erfordert eigene Denkarbeit
 :::
 
 
@@ -532,7 +548,10 @@ Jede Reduktion extrinsischer Last schafft **Kapazität für lernrelevante Verarb
 :::
 
 ::: {.notes}
-→ Überleitung: Schemata helfen, aber auch das Aufgabendesign zählt. Erstes Prinzip: extrinsische Last reduzieren. Links: typische Quellen. Rechts: Gegenstrategien. Split-Attention ist das Paradebeispiel. Kernbotschaft: Jede Reduktion schafft Kapazität für lernrelevante Verarbeitung.
+- Schemata helfen, aber auch das **Aufgabendesign** zählt
+- **Links:** typische Quellen (Split-Attention = Paradebeispiel)
+- **Rechts:** Gegenstrategien
+- **Kernbotschaft:** Jede Reduktion schafft Kapazität für lernrelevante Verarbeitung
 :::
 
 
@@ -578,10 +597,10 @@ Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
 :::
 
 ::: {.notes}
-→ Überleitung: Zweites Prinzip. Dieselbe Gleichung, aber völlig andere kognitive Kosten. 
-Links: Anfänger: Jedes Element muss **einzeln** im Arbeitsgedächtnis gehalten werden. 
-
-Rechts: Fortgeschrittene: Jeder Schritt ist eingeübt und läuft automatisch ab. Das Arbeitsgedächtnis wird kaum belastet.
+- **Dieselbe Gleichung**, völlig andere kognitive Kosten
+- **Links (Anfänger):** jedes Element einzeln im Arbeitsgedächtnis
+- **Rechts (Fortgeschrittene):** eingeübte Schritte, kaum Belastung
+- Konsequenz: Ein Übungsblatt für alle ist für die meisten falsch
 :::
 
 
@@ -628,7 +647,10 @@ Schritt 3: Vereinfachen → $x = 1$
 ::::
 
 ::: {.notes}
-→ Überleitung: Wenn die Last zu hoch ist, braucht es Scaffolding. Drittes Prinzip. Links: Fading-Sequenz von Worked Example bis eigenständig. Rechts: konkretes Beispiel. Stufe 1 zeigt alles, Stufe 2 lässt eine Lücke. Die Unterstützung wird schrittweise abgebaut.
+- Zu hohe Last → **Scaffolding** nötig
+- **Links:** Fading-Sequenz (Worked Example → eigenständig)
+- **Rechts:** konkretes Beispiel (Stufe 2 lässt eine Lücke)
+- Unterstützung wird schrittweise abgebaut
 :::
 
 
@@ -672,7 +694,9 @@ Ein Chatbot kann CLT-Prinzipien umsetzen:
 ::::
 
 ::: {.notes}
-→ Überleitung: Jetzt kommt KI ins Spiel. Links: Was ein Chatbot ohne Anleitung tut. Lösung ja, Scaffolding nein. Rechts: Was möglich ist, wenn man es richtig anlegt. Diagnose, angepasstes Scaffolding, Fading. Kernpunkt: Eine korrekte Lösung ist nicht automatisch ein gutes Worked Example.
+- **Links:** Chatbot ohne Anleitung → Lösung ja, Scaffolding nein
+- **Rechts:** mit Anleitung → Diagnose, angepasstes Scaffolding, Fading
+- **Kernpunkt:** korrekte Lösung ≠ gutes Worked Example
 :::
 
 
@@ -747,7 +771,12 @@ Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die P
 :::
 
 ::: {.notes}
-→ Konkretes Beispiel. Drei Teilkompetenzen, drei Karten. Klick: Tabelle zeigt die Logik. Beherrscht → Hinweis. Teilweise → Lücken. Nicht beherrscht → Worked Example. Das ist Fading, angepasst ans Vorwissen.
+- **Drei Teilkompetenzen**, drei Karten
+- **Aktion:** Klick zeigt Diagnose-Tabelle
+  - Beherrscht → Hinweis
+  - Teilweise → Lücken
+  - Nicht beherrscht → Worked Example
+- Das ist **Fading, angepasst ans Vorwissen**
 :::
 
 
@@ -770,7 +799,11 @@ Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die P
 :::
 
 ::: {.notes}
-Drei Erkenntnisse, je eine pro Lastart. 1: Extrinsisch reduzieren. 2: Intrinsisch ans Vorwissen anpassen. 3: Lernrelevante Verarbeitung fördern, nicht auslagern. → Überleitung zur Diskussion.
+- **Drei Erkenntnisse**, je eine pro Lastart:
+  1. Extrinsisch **reduzieren**
+  2. Intrinsisch ans Vorwissen **anpassen**
+  3. Lernrelevante Verarbeitung **fördern**, nicht auslagern
+- **Überleitung** zur Diskussion
 :::
 
 
@@ -793,7 +826,11 @@ Mögliche Fragen als Einstieg:
 :::
 
 ::: {.notes}
-Offene Diskussion. Vier Fragen als Einstieg, je nach Interesse eine auswählen. 1: Eigene Erfahrung mit KI-Nutzung. 2: Aufgabendesign, auch ohne KI. 3: Diagnostik, die CLT-Kernfrage. 4: Ausblick auf fachspezifische Tools.
+- **Offene Diskussion** - je nach Interesse eine Frage auswählen
+  1. Eigene Erfahrung mit KI-Nutzung
+  2. Aufgabendesign (auch ohne KI)
+  3. Diagnostik (die CLT-Kernfrage)
+  4. Ausblick auf fachspezifische Tools
 :::
 
 

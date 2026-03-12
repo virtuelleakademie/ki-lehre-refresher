@@ -153,7 +153,7 @@ Realitätscheck: Vollständige Kontrolle über KI-Nutzung ist kaum möglich. Fok
 
 ### Cognitive Load Theory: Das Nadelöhr des Lernens
 
-Warum ist Übung so wichtig? Die Cognitive Load Theory [@swellerCognitiveLoadTheory2024] liefert die Antwort. Sie basiert auf zwei Gedächtnissystemen:
+Warum ist Übung so wichtig? Die Cognitive Load Theory [@swellerCognitiveLoadTheory2024a] liefert die Antwort. Sie basiert auf zwei Gedächtnissystemen:
 
 Arbeitsgedächtnis:
 

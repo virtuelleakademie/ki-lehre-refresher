@@ -267,7 +267,7 @@ ggplot() +
 . . .
 
 ::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 0; margin-top: 0.5em;"}
-{{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024].
+{{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024a].
 :::
 
 ::: {.notes}
