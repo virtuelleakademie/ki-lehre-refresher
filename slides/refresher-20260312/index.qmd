@@ -8,9 +8,6 @@ bibliography:
 ---
 
 
-# Überblick
-
-
 ## Drei Kurse, drei Perspektiven {.smaller}
 
 Die BFH bietet drei aufbauende Kurse zu KI in der Lehre an. Hier das Wesentliche:
@@ -58,9 +55,6 @@ Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissen
 ::: {.notes}
 Für alle, die die Kurse nicht besucht haben: Hier das Wesentliche in Kurzform. Der Beginner-Kurs klärt, was KI ist und was sie kann. Der Intermediate-Kurs erklärt, wie Lernen funktioniert und warum KI-Einsatz beim Lernen riskant ist. Der Advanced-Kurs zeigt, wie man KI-gestützte Lerntools baut. In dieser Präsentation gehen wir durch alle drei Perspektiven, weil sie zusammen ein kohärentes Bild ergeben.
 :::
-
-
-# Beginner: Was machen Sprachmodelle?
 
 
 ## LLMs als Textvorhersage {.smaller}
@@ -140,9 +134,6 @@ Die entscheidende Eigenschaft von LLMs für unsere Diskussion: Sie produzieren T
 :::
 
 
-# Intermediate: Cognitive Load Theory
-
-
 ## Das Arbeitsgedächtnis als Nadelöhr {.smaller}
 
 Alles Lernen muss durch einen **Engpass**: das Arbeitsgedächtnis.
@@ -166,65 +157,104 @@ Keine Technologie kann diesen Engpass umgehen. KI kann Information liefern, aber
 ```{ojs}
 //| echo: false
 
-cog_load_chart = {
+viewof cl_controls = {
+  const div = html`<div style="display:flex;flex-direction:column;gap:8px;font-size:15px;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
+      <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
+    </div>
+    <div>
+      <button style="padding:4px 14px;font-size:14px;border:1.5px solid #1E3A5F;border-radius:4px;background:transparent;color:#1E3A5F;cursor:pointer;white-space:nowrap;">Gutes Lerndesign</button>
+    </div>
+  </div>`;
+
+  const slider = div.querySelector("input[type=range]");
+  const label = div.querySelector("strong");
+  const resetBtn = div.querySelector("button");
+
+  function emit() {
+    div.value = +slider.value;
+    div.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  slider.oninput = () => {
+    label.textContent = slider.value + "%";
+    emit();
+  };
+
+  resetBtn.onclick = () => {
+    slider.value = 10;
+    label.textContent = "10%";
+    emit();
+  };
+
+  div.value = 60;
+  return div;
+}
+```
+
+```{ojs}
+//| echo: false
+
+cognitive_load_chart = {
   const w = 420;
   const h = 320;
-  const fs = "12px";
 
-  const scenarios = ["Schlechtes\nDesign", "Gutes\nDesign", "Outsourcing"];
-  const types = ["Extrinsische Last", "Intrinsische Last", "Lernrelevante Verarbeitung", "Ungenutzt"];
-  const colors = {"Extrinsische Last": "#D55E00", "Intrinsische Last": "#64748b", "Lernrelevante Verarbeitung": "#0072B2", "Ungenutzt": "#e5e7eb"};
+  const intrinsic = 30;
+  const ext = Math.min(cl_controls, 100 - intrinsic);
+  const learning = Math.max(0, 100 - ext - intrinsic);
 
-  const raw = [
-    [60, 30, 10, 0],
-    [10, 30, 60, 0],
-    [10, 30,  5, 55]
+  const colors = {
+    "Extrinsische Belastung": "#D55E00",
+    "Intrinsische Belastung": "#64748b",
+    "Lernrelevante Verarbeitung": "#0072B2",
+  };
+
+  const data = [
+    {type: "Extrinsische Belastung", value: ext, order: 3},
+    {type: "Lernrelevante Verarbeitung", value: learning, order: 2},
+    {type: "Intrinsische Belastung", value: intrinsic, order: 1},
+  ].filter(d => d.value > 0);
+
+  const marks = [
+    Plot.barY(data, Plot.stackY({
+      x: d => "",
+      y: "value",
+      fill: "type",
+      order: "order",
+      tip: true,
+      title: d => `${d.type}: ${d.value}%`
+    })),
+    Plot.ruleY([100], {stroke: "#1A1714", strokeDasharray: "6,4", strokeWidth: 1.5}),
   ];
 
-  const data = [];
-  for (let s = 0; s < 3; s++) {
-    let y0 = 0;
-    for (let t = 0; t < 4; t++) {
-      if (raw[s][t] > 0) {
-        data.push({scenario: scenarios[s], type: types[t], y0, y1: y0 + raw[s][t], val: raw[s][t]});
-        y0 += raw[s][t];
-      }
-    }
+  if (learning > 8) {
+    marks.push(
+      Plot.text([{y: intrinsic + learning / 2}],
+        {x: d => "", y: "y", text: [`${learning}%`], fill: "white", fontWeight: "bold", fontSize: 16})
+    );
   }
 
   return Plot.plot({
     width: w,
     height: h,
-    marginLeft: 10,
-    marginBottom: 60,
+    marginLeft: 60,
+    marginBottom: 30,
     marginTop: 30,
-    style: {fontSize: fs, background: "transparent"},
-    x: {label: null, padding: 0.35},
-    y: {label: null, domain: [0, 105], ticks: []},
+    style: {fontSize: "13px", background: "transparent"},
+    x: { label: null, padding: 0.7 },
+    y: {
+      label: "Arbeitsgedächtniskapazität",
+      domain: [0, 105],
+      ticks: [0, 25, 50, 75, 100],
+      tickFormat: d => d + "%"
+    },
     color: {
-      domain: types.slice(0, 3),
-      range: [colors["Extrinsische Last"], colors["Intrinsische Last"], colors["Lernrelevante Verarbeitung"]],
+      domain: ["Lernrelevante Verarbeitung", "Intrinsische Belastung", "Extrinsische Belastung"],
+      range: [colors["Lernrelevante Verarbeitung"], colors["Intrinsische Belastung"], colors["Extrinsische Belastung"]],
       legend: true
     },
-    marks: [
-      Plot.barY(data.filter(d => d.type !== "Ungenutzt"), {
-        x: "scenario", y1: "y0", y2: "y1", fill: "type",
-        sort: {x: null}
-      }),
-      Plot.barY(data.filter(d => d.type === "Ungenutzt"), {
-        x: "scenario", y1: "y0", y2: "y1", fill: "#e5e7eb",
-        sort: {x: null}
-      }),
-      Plot.text(data.filter(d => d.val >= 8 && d.type !== "Ungenutzt"), {
-        x: "scenario", y: d => (d.y0 + d.y1) / 2,
-        text: d => d.val + "%",
-        fill: "white", fontWeight: "bold", fontSize: 13
-      }),
-      Plot.ruleY([100], {stroke: "#1A1714", strokeDasharray: "6,4", strokeWidth: 1}),
-      Plot.text([{x: "Outsourcing", y: 103}], {
-        x: "x", y: "y", text: ["Kapazitätsgrenze"], fontSize: 11, fill: "#64748b"
-      })
-    ]
+    marks
   });
 }
 ```
@@ -232,115 +262,322 @@ cog_load_chart = {
 ::::
 
 ::: {.notes}
-Das Arbeitsgedächtnis ist der Flaschenhals, durch den alles Lernen hindurch muss. Es kann ungefähr vier Elemente gleichzeitig halten, und zwar für 15 bis 30 Sekunden. Nur ein Element wird aktiv verarbeitet. Die Grafik zeigt drei Szenarien. Schlechtes Design: Zu viel extrinsische Last, kein Raum für lernrelevante Verarbeitung. Gutes Design: Extrinsische Last minimiert, 60% der Kapazität für lernrelevante Verarbeitung. Outsourcing: Die lernrelevante Verarbeitung fällt fast komplett weg, weil die KI die Denkarbeit übernimmt. 55% der Kapazität bleiben ungenutzt. Die Arbeit findet nicht statt.
+Das Arbeitsgedächtnis ist der Flaschenhals, durch den alles Lernen hindurch muss. Es kann ungefähr vier Elemente gleichzeitig halten, und zwar für 15 bis 30 Sekunden. Bewegt den Slider: Bei hoher extrinsischer Belastung bleibt kaum Kapazität für lernrelevante Verarbeitung. Klickt auf "Gutes Lerndesign": Extrinsische Last auf 10%, und sofort wird Kapazität frei.
 :::
 
 
-## Drei Arten kognitiver Belastung {.smaller}
+## Expertise = vernetzte Schemata {.smaller}
 
-Die Cognitive Load Theory unterscheidet drei Arten von Belastung, die um dieselbe begrenzte Kapazität konkurrieren:
+Wie überwindet man den Engpass? Durch **Schemata**: mentale Strukturen, die viele Einzelelemente zu einer Einheit komprimieren.
 
 <br>
 
-::::{.columns}
-:::{.column width="33%"}
-::: {style="background: rgba(213, 94, 0, 0.08); padding: 1.2em; border-radius: 8px; border-top: 4px solid #D55E00; min-height: 280px;"}
-### Extrinsische Last
+```{ojs}
+//| echo: false
 
-Verursacht durch **schlechtes Design**
+schemas_width = 700
+schemas_height = 380
+schemas_font_size = "13px"
+```
 
-- Unklare Aufgabenstellung
-- Inkonsistente Notation
-- Irrelevante Informationen
+```{ojs}
+//| echo: false
 
-[Trägt nichts zum Lernen bei. Minimieren.]{style="color: #D55E00; font-weight: bold;"}
+novice_expert_schemas = {
+  const w = schemas_width;
+  const h = schemas_height;
+  const fs = schemas_font_size;
+
+  const colNeg = "#D55E00";
+  const colPos = "#0072B2";
+  const colNeutral = "#64748b";
+  const colCross = "#B8821A";
+
+  const labels = [
+    "Fakt A", "Fakt B", "Fakt C",
+    "Regel 1", "Regel 2", "Regel 3",
+    "Def. X", "Def. Y", "Def. Z"
+  ];
+  const clusters = [0, 0, 0, 1, 1, 1, 2, 2, 2];
+
+  const novicePos = [
+    [0.12, 0.22], [0.38, 0.12], [0.65, 0.20],
+    [0.18, 0.50], [0.45, 0.48], [0.72, 0.55],
+    [0.08, 0.80], [0.42, 0.82], [0.70, 0.78]
+  ];
+
+  const expertPos = [
+    [0.15, 0.22], [0.30, 0.22], [0.225, 0.40],
+    [0.60, 0.22], [0.75, 0.22], [0.675, 0.40],
+    [0.33, 0.72], [0.48, 0.72], [0.405, 0.88]
+  ];
+
+  const intraEdges = [
+    [0, 1], [1, 2], [0, 2],
+    [3, 4], [4, 5], [3, 5],
+    [6, 7], [7, 8], [6, 8]
+  ];
+
+  const crossEdges = [[1, 3], [2, 6], [5, 7]];
+
+  const clusterBoxes = [
+    { x: 0.08, y: 0.12, w: 0.30, h: 0.38, label: "Schema 1" },
+    { x: 0.53, y: 0.12, w: 0.30, h: 0.38, label: "Schema 2" },
+    { x: 0.26, y: 0.62, w: 0.30, h: 0.36, label: "Schema 3" }
+  ];
+
+  const mx = 40, my = 30;
+  const cw = w - 2 * mx;
+  const ch = h - 2 * my;
+  const toX = (nx) => mx + nx * cw;
+  const toY = (ny) => my + ny * ch;
+
+  const svg = d3.create("svg")
+    .attr("width", w).attr("height", h)
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .style("background", "transparent")
+    .style("cursor", "pointer")
+    .style("user-select", "none");
+
+  const clusterGs = svg.selectAll("g.cluster-bg")
+    .data(clusterBoxes).join("g").attr("class", "cluster-bg");
+
+  clusterGs.append("rect")
+    .attr("x", d => toX(d.x)).attr("y", d => toY(d.y))
+    .attr("width", d => d.w * cw).attr("height", d => d.h * ch)
+    .attr("rx", 4).attr("fill", colPos).attr("fill-opacity", 0)
+    .attr("stroke", colPos).attr("stroke-opacity", 0)
+    .attr("stroke-width", 1.5).attr("stroke-dasharray", "6,4");
+
+  clusterGs.append("text")
+    .attr("x", d => toX(d.x + d.w / 2)).attr("y", d => toY(d.y) - 6)
+    .attr("text-anchor", "middle").style("font-size", "12px")
+    .style("fill", colPos).style("font-style", "italic").style("opacity", 0)
+    .text(d => d.label);
+
+  const intraLines = svg.selectAll("line.intra")
+    .data(intraEdges).join("line").attr("class", "intra")
+    .attr("x1", d => toX(novicePos[d[0]][0])).attr("y1", d => toY(novicePos[d[0]][1]))
+    .attr("x2", d => toX(novicePos[d[1]][0])).attr("y2", d => toY(novicePos[d[1]][1]))
+    .attr("stroke", colPos).attr("stroke-width", 2).attr("stroke-opacity", 0);
+
+  const crossLines = svg.selectAll("line.cross")
+    .data(crossEdges).join("line").attr("class", "cross")
+    .attr("x1", d => toX(novicePos[d[0]][0])).attr("y1", d => toY(novicePos[d[0]][1]))
+    .attr("x2", d => toX(novicePos[d[1]][0])).attr("y2", d => toY(novicePos[d[1]][1]))
+    .attr("stroke", colCross).attr("stroke-width", 1.5).attr("stroke-opacity", 0)
+    .attr("stroke-dasharray", "4,3");
+
+  const nodeR = 28;
+  const nodeGs = svg.selectAll("g.node")
+    .data(labels.map((l, i) => ({ label: l, i })))
+    .join("g").attr("class", "node")
+    .attr("transform", d => `translate(${toX(novicePos[d.i][0])},${toY(novicePos[d.i][1])})`);
+
+  nodeGs.append("rect")
+    .attr("x", -nodeR).attr("y", -14).attr("width", nodeR * 2).attr("height", 28)
+    .attr("rx", 4).attr("fill", colNeg).attr("fill-opacity", 0.8);
+
+  nodeGs.append("text")
+    .attr("text-anchor", "middle").attr("dy", "0.35em")
+    .style("font-size", "12px").style("font-weight", "bold").style("fill", "white")
+    .text(d => d.label);
+
+  const subtitle = svg.append("text")
+    .attr("x", w / 2).attr("y", h - 8)
+    .attr("text-anchor", "middle").style("font-size", fs).style("fill", colNeutral)
+    .text("Isolierte Fakten \u2014 klicken zum Vernetzen");
+
+  let expert = false;
+
+  svg.on("click", () => {
+    expert = !expert;
+    const dur = 1000;
+    const ease = d3.easeCubicInOut;
+
+    nodeGs.transition().duration(dur).ease(ease)
+      .attr("transform", d => {
+        const pos = expert ? expertPos[d.i] : novicePos[d.i];
+        return `translate(${toX(pos[0])},${toY(pos[1])})`;
+      });
+
+    nodeGs.select("rect").transition().duration(dur).ease(ease)
+      .attr("fill", expert ? colPos : colNeg);
+
+    intraLines.transition().duration(dur).ease(ease)
+      .attr("x1", d => toX((expert ? expertPos : novicePos)[d[0]][0]))
+      .attr("y1", d => toY((expert ? expertPos : novicePos)[d[0]][1]))
+      .attr("x2", d => toX((expert ? expertPos : novicePos)[d[1]][0]))
+      .attr("y2", d => toY((expert ? expertPos : novicePos)[d[1]][1]))
+      .attr("stroke-opacity", expert ? 0.6 : 0);
+
+    crossLines.transition().duration(dur).ease(ease)
+      .attr("x1", d => toX((expert ? expertPos : novicePos)[d[0]][0]))
+      .attr("y1", d => toY((expert ? expertPos : novicePos)[d[0]][1]))
+      .attr("x2", d => toX((expert ? expertPos : novicePos)[d[1]][0]))
+      .attr("y2", d => toY((expert ? expertPos : novicePos)[d[1]][1]))
+      .attr("stroke-opacity", expert ? 0.4 : 0);
+
+    clusterGs.select("rect").transition().duration(dur).ease(ease)
+      .attr("fill-opacity", expert ? 0.06 : 0)
+      .attr("stroke-opacity", expert ? 0.5 : 0);
+
+    clusterGs.select("text").transition().duration(dur).ease(ease)
+      .style("opacity", expert ? 1 : 0);
+
+    subtitle.transition().duration(300).style("opacity", 0)
+      .transition().delay(expert ? 600 : 0).duration(300).style("opacity", 1)
+      .text(expert
+        ? "Vernetzte Schemata \u2014 klicken zum Aufl\u00f6sen"
+        : "Isolierte Fakten \u2014 klicken zum Vernetzen");
+  });
+
+  return svg.node();
+}
+```
+
+::: {.notes}
+Wie überwindet man den Engpass? Durch Schemata. Ein Schema komprimiert viele Einzelelemente zu einer Einheit und belegt nur einen Slot im Arbeitsgedächtnis. Klickt auf die Grafik: Links seht ihr isolierte Fakten, wie sie Anfänger:innen im Arbeitsgedächtnis halten müssen. Nach dem Klick: vernetzte Schemata, wie sie Expert:innen haben. Die Progression von isolierten Fakten zu vernetzten Schemata erfordert eigene kognitive Arbeit.
 :::
-:::
 
-:::{.column width="33%"}
-::: {style="background: rgba(100, 116, 139, 0.08); padding: 1.2em; border-radius: 8px; border-top: 4px solid #64748b; min-height: 280px;"}
-### Intrinsische Last
 
-Verursacht durch das **Material selbst**
+## Extrinsische Last: der Split-Attention-Effekt {.smaller}
 
-- Abhängig von der Elementinteraktivität
-- Bestimmt durch das Vorwissen der Lernenden
-- Kann durch Scaffolding gesteuert werden
-
-[Nicht eliminierbar, aber steuerbar.]{style="color: #64748b; font-weight: bold;"}
-:::
-:::
-
-:::{.column width="33%"}
-::: {style="background: rgba(0, 114, 178, 0.08); padding: 1.2em; border-radius: 8px; border-top: 4px solid #0072B2; min-height: 280px;"}
-### Lernrelevante Verarbeitung
-
-Die **produktive** kognitive Arbeit
-
-- Schemabildung
-- Integration neuer Information
-- Automatisierung von Prozeduren
-
-[Das Ziel: maximieren.]{style="color: #0072B2; font-weight: bold;"}
-:::
-:::
-::::
+Wenn Lernende zwischen zwei Informationsquellen hin- und herspringen müssen, entsteht unnötige kognitive Belastung.
 
 <br>
 
-::: {style="text-align: center; font-size: 1.05em;"}
-Aufgabendesign = extrinsische Last senken, intrinsische Last steuern, lernrelevante Verarbeitung maximieren.
+```{ojs}
+//| echo: false
+
+viewof format_toggle = {
+  const div = html`<div style="display:flex;align-items:center;gap:16px;font-size:0.85em;">
+    <label style="cursor:pointer;">
+      <input type="radio" name="fmt" value="split" checked style="accent-color:#D55E00;"> Split-Attention
+    </label>
+    <label style="cursor:pointer;">
+      <input type="radio" name="fmt" value="integrated" style="accent-color:#0072B2;"> Integriertes Format
+    </label>
+  </div>`;
+  const radios = div.querySelectorAll("input");
+  radios.forEach(r => r.oninput = () => {
+    div.value = r.value;
+    div.dispatchEvent(new Event("input", {bubbles: true}));
+  });
+  div.value = "split";
+  return div;
+}
+```
+
+```{ojs}
+//| echo: false
+
+split_attention_fig = {
+  const w = 960;
+  const h = 340;
+  const fs = 14;
+  const fsSmall = 12;
+  const integrated = format_toggle === "integrated";
+
+  const svg = d3.create("svg")
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .attr("width", "100%").attr("height", "100%")
+    .style("font-family", "system-ui, sans-serif")
+    .style("background", "transparent")
+    .style("max-height", "340px");
+
+  const triCx = integrated ? w / 2 : w * 0.25;
+  const triCy = integrated ? h * 0.45 : h * 0.48;
+  const sz = 105;
+
+  const A = { x: triCx, y: triCy - sz };
+  const B = { x: triCx - sz * 0.9, y: triCy + sz * 0.6 };
+  const C = { x: triCx + sz * 0.9, y: triCy + sz * 0.6 };
+
+  svg.append("polygon")
+    .attr("points", `${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`)
+    .attr("fill", "none").attr("stroke", "#1A1714").attr("stroke-width", 2);
+
+  const arcR = 22;
+  const angAB = Math.atan2(B.y - A.y, B.x - A.x);
+  const angAC = Math.atan2(C.y - A.y, C.x - A.x);
+  svg.append("path")
+    .attr("d", `M ${A.x + arcR * Math.cos(angAB)} ${A.y + arcR * Math.sin(angAB)} A ${arcR} ${arcR} 0 0 1 ${A.x + arcR * Math.cos(angAC)} ${A.y + arcR * Math.sin(angAC)}`)
+    .attr("fill", "none").attr("stroke", "#A63D2F").attr("stroke-width", 1.5);
+
+  const arcS = 16;
+  const bA1 = Math.atan2(A.y - B.y, A.x - B.x);
+  const bA2 = Math.atan2(C.y - B.y, C.x - B.x);
+  svg.append("path")
+    .attr("d", `M ${B.x + arcS * Math.cos(bA2)} ${B.y + arcS * Math.sin(bA2)} A ${arcS} ${arcS} 0 0 1 ${B.x + arcS * Math.cos(bA1)} ${B.y + arcS * Math.sin(bA1)}`)
+    .attr("fill", "none").attr("stroke", "#1E3A5F").attr("stroke-width", 1.5);
+  const cA1 = Math.atan2(B.y - C.y, B.x - C.x);
+  const cA2 = Math.atan2(A.y - C.y, A.x - C.x);
+  svg.append("path")
+    .attr("d", `M ${C.x + arcS * Math.cos(cA2)} ${C.y + arcS * Math.sin(cA2)} A ${arcS} ${arcS} 0 0 1 ${C.x + arcS * Math.cos(cA1)} ${C.y + arcS * Math.sin(cA1)}`)
+    .attr("fill", "none").attr("stroke", "#1E3A5F").attr("stroke-width", 1.5);
+
+  svg.append("text").attr("x", A.x).attr("y", A.y - 12).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("A");
+  svg.append("text").attr("x", B.x - 14).attr("y", B.y + 16).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("B");
+  svg.append("text").attr("x", C.x + 14).attr("y", C.y + 16).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("C");
+  svg.append("text").attr("x", A.x).attr("y", A.y + 38).attr("text-anchor", "middle").attr("font-size", fs).attr("fill", "#A63D2F").attr("font-weight", "600").text("68°");
+
+  const abNorm = Math.atan2(B.y - A.y, B.x - A.x) + Math.PI / 2;
+  svg.append("text")
+    .attr("x", (A.x + B.x) / 2 + 18 * Math.cos(abNorm))
+    .attr("y", (A.y + B.y) / 2 + 18 * Math.sin(abNorm))
+    .attr("text-anchor", "middle").attr("font-size", fsSmall).attr("fill", "#555")
+    .attr("transform", `rotate(${angAB * 180 / Math.PI}, ${(A.x + B.x) / 2 + 18 * Math.cos(abNorm)}, ${(A.y + B.y) / 2 + 18 * Math.sin(abNorm)})`)
+    .text("AB = AC");
+
+  const tickLen = 7;
+  const abMid = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2 };
+  const abAng = Math.atan2(B.y - A.y, B.x - A.x) + Math.PI / 2;
+  svg.append("line").attr("x1", abMid.x + tickLen * Math.cos(abAng)).attr("y1", abMid.y + tickLen * Math.sin(abAng)).attr("x2", abMid.x - tickLen * Math.cos(abAng)).attr("y2", abMid.y - tickLen * Math.sin(abAng)).attr("stroke", "#1A1714").attr("stroke-width", 1.5);
+  const acMid = { x: (A.x + C.x) / 2, y: (A.y + C.y) / 2 };
+  const acAng = Math.atan2(C.y - A.y, C.x - A.x) + Math.PI / 2;
+  svg.append("line").attr("x1", acMid.x + tickLen * Math.cos(acAng)).attr("y1", acMid.y + tickLen * Math.sin(acAng)).attr("x2", acMid.x - tickLen * Math.cos(acAng)).attr("y2", acMid.y - tickLen * Math.sin(acAng)).attr("stroke", "#1A1714").attr("stroke-width", 1.5);
+
+  if (integrated) {
+    svg.append("text").attr("x", triCx).attr("y", A.y - 30).attr("text-anchor", "middle").attr("font-size", fs).attr("fill", "#1E3A5F").attr("font-weight", "500").text("Gesucht: Winkel B und C");
+    svg.append("text").attr("x", B.x + 22).attr("y", B.y - 8).attr("text-anchor", "start").attr("font-size", fs).attr("fill", "#1E3A5F").attr("font-weight", "600").text("56°");
+    svg.append("text").attr("x", C.x - 22).attr("y", C.y - 8).attr("text-anchor", "end").attr("font-size", fs).attr("fill", "#1E3A5F").attr("font-weight", "600").text("56°");
+    const stepY = B.y + 36;
+    svg.append("text").attr("x", triCx).attr("y", stepY).attr("text-anchor", "middle").attr("font-size", fsSmall).attr("fill", "#555").attr("font-weight", "500").text("AB = AC  →  gleichschenkliges Dreieck  →  Winkel B = Winkel C");
+    svg.append("text").attr("x", triCx).attr("y", stepY + 20).attr("text-anchor", "middle").attr("font-size", fsSmall).attr("fill", "#A63D2F").attr("font-weight", "600").text("B = C = (180° − 68°) / 2 = 56°");
+  } else {
+    const boxX = w * 0.50, boxY = 10, boxW = w * 0.46, boxH = h - 20;
+    svg.append("rect").attr("x", boxX).attr("y", boxY).attr("width", boxW).attr("height", boxH).attr("fill", "#f8f6f0").attr("stroke", "#ccc").attr("stroke-width", 1).attr("rx", 2);
+    svg.append("text").attr("x", boxX + boxW / 2).attr("y", boxY + 22).attr("text-anchor", "middle").attr("font-size", fs).attr("font-weight", "bold").text("Lösungsschritte");
+    const steps = [
+      { text: "Schritt 1:", bold: true }, { text: "Erkenne, dass AB = AC" }, { text: "(gleichschenkliges Dreieck)." }, { text: "" },
+      { text: "Schritt 2:", bold: true }, { text: "In einem gleichschenkligen Dreieck" }, { text: "sind die Basiswinkel gleich: ∠B = ∠C." }, { text: "" },
+      { text: "Schritt 3:", bold: true }, { text: "Winkelsumme im Dreieck = 180°." }, { text: "∠B = ∠C = (180° − 68°) / 2" }, { text: "∠B = ∠C = 56°", color: "#A63D2F", bold: true },
+    ];
+    steps.forEach((s, i) => {
+      svg.append("text").attr("x", boxX + 14).attr("y", boxY + 44 + i * 16).attr("font-size", fsSmall - 1).attr("fill", s.color || "#1A1714").attr("font-weight", s.bold ? "600" : "400").text(s.text);
+    });
+    svg.append("defs").append("marker").attr("id", "arrowhead-split").attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto").append("path").attr("d", "M 0 0 L 10 5 L 0 10 Z").attr("fill", "#D55E00");
+    const arrowX1 = triCx + sz * 0.9 + 20, arrowX2 = boxX - 12, arrowY = h * 0.48;
+    svg.append("line").attr("x1", arrowX1).attr("y1", arrowY - 6).attr("x2", arrowX2).attr("y2", arrowY - 6).attr("stroke", "#D55E00").attr("stroke-width", 1.5).attr("stroke-dasharray", "5,4").attr("marker-end", "url(#arrowhead-split)");
+    svg.append("line").attr("x1", arrowX2).attr("y1", arrowY + 10).attr("x2", arrowX1).attr("y2", arrowY + 10).attr("stroke", "#D55E00").attr("stroke-width", 1.5).attr("stroke-dasharray", "5,4").attr("marker-end", "url(#arrowhead-split)");
+    svg.append("text").attr("x", (arrowX1 + arrowX2) / 2).attr("y", arrowY - 16).attr("text-anchor", "middle").attr("font-size", fsSmall - 1).attr("fill", "#D55E00").attr("font-weight", "600").text("Blickbewegung");
+  }
+
+  return svg.node();
+}
+```
+
+::: {style="text-align: center; font-size: 1.05em; color: #6E6560;"}
+Wechselt zwischen den Formaten. Integriertes Design eliminiert die unnötige kognitive Belastung.
 :::
 
 ::: {.notes}
-Die Cognitive Load Theory unterscheidet drei Arten von Belastung. Extrinsische Last wird durch schlechtes Design verursacht und trägt nichts zum Lernen bei. Intrinsische Last kommt vom Material selbst und hängt entscheidend vom Vorwissen ab. Lernrelevante Verarbeitung ist die produktive kognitive Arbeit, die Schemata aufbaut. Alle drei konkurrieren um dieselbe begrenzte Kapazität. Das Ziel von Aufgabendesign: extrinsische Last minimieren, intrinsische Last steuern, lernrelevante Verarbeitung maximieren.
+Der Split-Attention-Effekt ist ein klassisches Beispiel für extrinsische Last. Links das Split-Format: Die Lernenden müssen zwischen Dreieck und Lösungsschritten hin- und herspringen. Jede Blickbewegung kostet Arbeitsgedächtnis. Rechts das integrierte Format: Alles an einem Ort. Dieselbe Information, aber weniger extrinsische Last. Wechselt zwischen den Formaten, um den Unterschied zu sehen.
 :::
 
 
-## Prinzip 1: Extrinsische Last minimieren {.smaller}
-
-Extrinsische Last ist alles, was Arbeitsgedächtnis verbraucht, ohne zum Lernen beizutragen.
-
-<br>
-
-::::{.columns}
-:::{.column width="50%"}
-::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
-### Typische Quellen in Mathe-Übungen
-
-- **Unklare Aufgabenstellung**: Was genau soll gelöst werden?
-- **Inkonsistente Notation**: Mal $x$, mal $X$, mal kursiv, mal nicht
-- **Split Attention**: Aufgabe auf Seite 3, Formelsammlung auf Seite 12
-- **Redundanz**: Dieselbe Information in Text und Grafik, leicht unterschiedlich formuliert
-:::
-:::
-
-:::{.column width="50%"}
-::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
-### Gegenstrategien
-
-- **Integriertes Format**: Alle relevanten Informationen direkt bei der Aufgabe
-- **Konsistente Notation**: Ein Symbol, eine Bedeutung
-- **Klare Aufgabenstruktur**: Sofort erkennbar, was zu tun ist
-- **Entfernen von Irrelevantem**: Weniger ist mehr
-:::
-:::
-::::
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Extrinsische Last zu senken kostet nichts und gibt Kapazität frei.
-
-[Das ist der einfachste Hebel im Aufgabendesign.]{style="color: #0072B2; font-weight: bold;"}
-:::
-
-::: {.notes}
-Extrinsische Last ist der einfachste Hebel, weil sie nichts zum Lernen beiträgt. In typischen Mathe-Übungen gibt es viele Quellen: unklare Aufgabenstellungen, inkonsistente Notation, Split Attention zwischen Aufgabe und Referenzmaterial. Die Gegenstrategien sind einfach: integriertes Format, konsistente Notation, klare Struktur. Das kostet nichts und gibt sofort Kapazität frei für lernrelevante Verarbeitung.
-:::
-
-
-## Prinzip 2: Vorwissen bestimmt das Aufgabendesign {.smaller}
+## Vorwissen bestimmt das Aufgabendesign {.smaller}
 
 Dieselbe Aufgabe hat **unterschiedliche intrinsische Last** für verschiedene Lernende.
 
@@ -392,7 +629,7 @@ Drei Schritte, drei Slots. Problemlos.
 ::::
 
 ::: {.notes}
-Hier wird es für das Aufgabendesign entscheidend. Dieselbe Gleichung hat völlig unterschiedliche kognitive Kosten für verschiedene Lernende. Für Anfänger:innen ist jedes Element einzeln zu verarbeiten: Was bedeutet das Minus, wie verteile ich, wie bringe ich x auf eine Seite. Für Fortgeschrittene sind das drei automatisierte Schritte, drei Schemata, drei Slots. Dieselbe Aufgabe, aber radikal verschiedene Anforderungen ans Arbeitsgedächtnis.
+Hier wird es für das Aufgabendesign entscheidend. Dieselbe Gleichung hat völlig unterschiedliche kognitive Kosten für verschiedene Lernende. Für Anfänger:innen ist jedes Element einzeln zu verarbeiten. Für Fortgeschrittene sind das drei automatisierte Schritte. Dieselbe Aufgabe, aber radikal verschiedene Anforderungen ans Arbeitsgedächtnis.
 :::
 
 
@@ -405,48 +642,87 @@ Was für Anfänger:innen hilft, schadet Fortgeschrittenen, und umgekehrt.
 ```{ojs}
 //| echo: false
 
+viewof expertise_level = {
+  const div = html`<div style="display:flex;align-items:center;gap:12px;font-size:15px;">
+    <span style="white-space:nowrap;">Expertise-Level: <strong>Anfänger</strong></span>
+    <input type="range" min="0" max="10" step="0.5" value="2" style="width:250px;accent-color:#0072B2;">
+  </div>`;
+  const input = div.querySelector("input");
+  const label = div.querySelector("strong");
+  const levelName = (v) => v <= 3 ? "Anfänger" : v <= 7 ? "Mittel" : "Experte";
+  input.oninput = () => {
+    label.textContent = levelName(+input.value);
+    div.value = +input.value;
+    div.dispatchEvent(new Event("input", {bubbles: true}));
+  };
+  div.value = 2;
+  return div;
+}
+```
+
+```{ojs}
+//| echo: false
+
 expertise_chart = {
-  const w = 650;
-  const h = 350;
+  const w = 700;
+  const h = 300;
   const fs = "13px";
 
-  const levels = ["Anfänger:in", "Fortgeschritten", "Expert:in"];
-  const data = [
-    {Niveau: "Anfänger:in",    Methode: "Worked Examples",   Effektivität: 85},
-    {Niveau: "Anfänger:in",    Methode: "Problemlösen",      Effektivität: 35},
-    {Niveau: "Fortgeschritten", Methode: "Worked Examples",   Effektivität: 60},
-    {Niveau: "Fortgeschritten", Methode: "Problemlösen",      Effektivität: 65},
-    {Niveau: "Expert:in",      Methode: "Worked Examples",   Effektivität: 30},
-    {Niveau: "Expert:in",      Methode: "Problemlösen",      Effektivität: 80}
-  ];
+  const sigmoid = (x, midpoint, steepness) => 1 / (1 + Math.exp(-steepness * (x - midpoint)));
+  const worked = (x) => 85 - 55 * sigmoid(x, 5, 1.0);
+  const problem = (x) => 30 + 55 * sigmoid(x, 5, 1.0);
+  const crossing_x = 5;
+
+  const line_data = [];
+  for (let x = 0; x <= 10; x += 0.2) {
+    line_data.push({x, y: worked(x), method: "Worked Examples"});
+    line_data.push({x, y: problem(x), method: "Problemlösen"});
+  }
+
+  const ex = expertise_level;
+  const we = worked(ex);
+  const ps = problem(ex);
+  const diff = Math.abs(we - ps);
+
+  const weLabel = diff < 3 ? "" : we > ps
+    ? "Entlastet Arbeitsgedächtnis" : "Redundante Information";
+  const psLabel = diff < 3 ? "" : ps > we
+    ? "Verfeinert Schemata" : "Überfordert Arbeitsgedächtnis";
+  const annotation = diff < 3
+    ? "Umschlagpunkt: beide Methoden gleich effektiv"
+    : we > ps ? "Anleitung hilft" : "Anleitung schadet";
 
   return Plot.plot({
-    width: w,
-    height: h,
-    marginLeft: 50,
-    marginBottom: 50,
-    marginTop: 20,
+    width: w, height: h,
+    marginLeft: 55, marginBottom: 50, marginTop: 30, marginRight: 150,
     style: {fontSize: fs, background: "transparent"},
-    x: {label: null, domain: levels, padding: 0.3},
-    y: {label: "Lerneffektivität (%)", domain: [0, 100]},
+    x: {
+      label: "Expertise-Level", domain: [0, 10],
+      ticks: [0, 5, 10],
+      tickFormat: d => d === 0 ? "Anfänger" : d === 5 ? "Mittel" : "Experte"
+    },
+    y: {
+      label: "Lernergebnis", domain: [20, 95],
+      ticks: [25, 85],
+      tickFormat: d => d === 25 ? "Niedrig" : "Hoch"
+    },
     color: {
       domain: ["Worked Examples", "Problemlösen"],
-      range: ["#0072B2", "#D55E00"],
-      legend: true
+      range: ["#0072B2", "#E69F00"],
+      legend: false
     },
     marks: [
-      Plot.barY(data, {
-        x: "Niveau", y: "Effektivität", fill: "Methode",
-        fx: null,
-        dodge: "x"
-      }),
-      Plot.text(data, {
-        x: "Niveau", y: "Effektivität",
-        text: d => d.Effektivität + "%",
-        dy: -10, fontSize: 12, fontWeight: "bold",
-        fill: "#1A1714",
-        dodge: "x"
-      })
+      Plot.lineY(line_data, {x: "x", y: "y", stroke: "method", strokeWidth: 2.5, curve: "natural"}),
+      Plot.text([{x: 10, y: worked(10)}], {x: "x", y: "y", text: ["Worked Examples"], fill: "#0072B2", fontSize: 12, fontWeight: "bold", textAnchor: "start", dx: 10}),
+      Plot.text([{x: 10, y: problem(10)}], {x: "x", y: "y", text: ["Problemlösen"], fill: "#E69F00", fontSize: 12, fontWeight: "bold", textAnchor: "start", dx: 10}),
+      Plot.dot([{x: crossing_x, y: worked(crossing_x)}], {x: "x", y: "y", r: 6, fill: "white", stroke: "#1A1714", strokeWidth: 2}),
+      Plot.ruleX([ex], {stroke: "#1A1714", strokeDasharray: "4,3", strokeWidth: 1.5}),
+      Plot.dot([{x: ex, y: we}], {x: "x", y: "y", r: 7, fill: "#0072B2", stroke: "#1A1714", strokeWidth: 1.5}),
+      Plot.dot([{x: ex, y: ps}], {x: "x", y: "y", r: 7, fill: "#E69F00", stroke: "#1A1714", strokeWidth: 1.5}),
+      Plot.link([{x1: ex, y1: we, x2: ex, y2: ps}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#A63D2F", strokeWidth: 2.5, strokeDasharray: "3,2"}),
+      Plot.text([{x: ex, y: we}], {x: "x", y: "y", text: [weLabel], fill: "#0072B2", fontSize: 11, fontWeight: "600", dx: ex < 5 ? 10 : -10, textAnchor: ex < 5 ? "start" : "end", dy: -12}),
+      Plot.text([{x: ex, y: ps}], {x: "x", y: "y", text: [psLabel], fill: "#E69F00", fontSize: 11, fontWeight: "600", dx: ex < 5 ? 10 : -10, textAnchor: ex < 5 ? "start" : "end", dy: 16}),
+      Plot.text([{x: ex, y: 93}], {x: "x", y: "y", text: [annotation], fill: "#1A1714", fontWeight: "bold", fontSize: 13}),
     ]
   });
 }
@@ -455,17 +731,15 @@ expertise_chart = {
 <br>
 
 ::: {style="text-align: center; font-size: 1.1em;"}
-Ein Übungsblatt für alle ist **per Definition** für die meisten falsch.
-
 [Die Aufgabe muss zum Vorwissen passen, nicht umgekehrt.]{style="color: #0072B2; font-weight: bold;"}
 :::
 
 ::: {.notes}
-Der Expertise-Umkehr-Effekt zeigt: Was für Anfänger:innen hilft, schadet Fortgeschrittenen. Worked Examples sind für Anfänger:innen hochwirksam, weil sie die intrinsische Last managen. Für Expert:innen sind sie redundant und erzeugen unnötige extrinsische Last. Umgekehrt ist Problemlösen für Expert:innen effektiv, aber für Anfänger:innen überfordernd. Die Konsequenz: Ein Übungsblatt für alle ist per Definition für die meisten falsch. Die Aufgabe muss zum Vorwissen passen.
+Der Expertise-Umkehr-Effekt. Bewegt den Slider: Bei Anfängern sind Worked Examples klar überlegen. Bei Experten kehrt sich das um, Worked Examples werden redundant und stören. Am Umschlagpunkt sind beide Methoden gleich effektiv. Die Konsequenz: Ein Übungsblatt für alle ist per Definition für die meisten falsch.
 :::
 
 
-## Prinzip 3: Scaffolding steuert die intrinsische Last {.smaller}
+## Scaffolding steuert die intrinsische Last {.smaller}
 
 Wenn die intrinsische Last zu hoch ist, brauchen Lernende **Gerüste**, nicht einfach mehr Zeit.
 
@@ -477,7 +751,7 @@ Wenn die intrinsische Last zu hoch ist, brauchen Lernende **Gerüste**, nicht ei
 
 | Schritt | Format |
 |---|---|
-| 1 | **Worked Example**: Vollständig durchgearbeitetes Beispiel |
+| 1 | **Worked Example**: Vollständig durchgearbeitet |
 | 2 | **Completion Problem**: Teilweise gelöst, Lücken füllen |
 | 3 | **Hinweis-gestützt**: Nur strategische Hinweise |
 | 4 | **Eigenständig**: Ohne Unterstützung |
@@ -521,7 +795,7 @@ Schritt 3: Vereinfachen → $27 = x$
 ::::
 
 ::: {.notes}
-Scaffolding ist das dritte Prinzip. Wenn die intrinsische Last zu hoch ist, brauchen Lernende Gerüste. Die effektivste Strategie ist Fading: Man beginnt mit vollständig durchgearbeiteten Beispielen, geht dann zu Completion Problems über, wo Teile fehlen, dann zu Hinweisen, und schliesslich zu eigenständigem Lösen. Bei unserem Gleichungsbeispiel: Stufe 1 zeigt die vollständige Lösung, Stufe 2 lässt den ersten Schritt offen. Die kognitive Eigenleistung steigt graduell.
+Scaffolding ist das dritte Prinzip. Die effektivste Strategie ist Fading: Man beginnt mit vollständig durchgearbeiteten Beispielen, geht dann zu Completion Problems über, dann zu Hinweisen, und schliesslich zu eigenständigem Lösen. Bei unserem Gleichungsbeispiel: Stufe 1 zeigt die vollständige Lösung, Stufe 2 lässt den ersten Schritt offen.
 :::
 
 
@@ -566,14 +840,8 @@ ChatGPT-Output ist optimiert für **Korrektheit und Flüssigkeit**, nicht für S
 :::
 ::::
 
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Flüssiger Output erzeugt die **Illusion des Verstehens**. Die Lernenden merken nicht, dass die kognitive Arbeit fehlt.
-:::
-
 ::: {.notes}
-Hier treffen die LLM-Eigenschaft aus dem Beginner-Teil und die CLT-Prinzipien aufeinander. Wenn Studierende ChatGPT die Gleichung lösen lassen, bekommen sie eine korrekte, flüssig formulierte Lösung. Das sieht aus wie ein Worked Example, ist aber keines. Ein echtes Worked Example ist pädagogisch gestaltet: Die Schritte sind so gewählt, dass Schemata aufgebaut werden, und es ist Teil einer Fading-Sequenz. ChatGPT-Output ist für Korrektheit und Flüssigkeit optimiert, nicht für Schemabildung. Und weil der Output flüssig ist, entsteht die Illusion des Verstehens. Die Lernenden merken nicht, dass die kognitive Arbeit fehlt.
+Hier treffen die LLM-Eigenschaft und die CLT-Prinzipien aufeinander. ChatGPT-Output sieht aus wie ein Worked Example, ist aber keines. Ein echtes Worked Example ist pädagogisch gestaltet und Teil einer Fading-Sequenz. ChatGPT-Output ist für Korrektheit und Flüssigkeit optimiert, nicht für Schemabildung. Und weil der Output flüssig ist, entsteht die Illusion des Verstehens.
 :::
 
 
@@ -602,11 +870,8 @@ Flüssiger KI-Output unterdrückt den Zweifel.
 :::
 
 ::: {.notes}
-Das Evaluationsparadox schliesst den Kreis. Um zu beurteilen, ob ein KI-Output korrekt ist, braucht man genau die Schemata, die die Aufgabe aufbauen sollte. Ohne eigene Schemata gibt es kein internes Referenzsignal. Und weil der Output flüssig ist, wird der Zweifel unterdrückt. Das ist keine Frage der Motivation. Das ist kognitive Architektur. CLT erklärt, warum das passiert, und zeigt auch den Weg hinaus.
+Das Evaluationsparadox schliesst den Kreis. Um zu beurteilen, ob ein KI-Output korrekt ist, braucht man genau die Schemata, die die Aufgabe aufbauen sollte. Das ist keine Frage der Motivation. Das ist kognitive Architektur.
 :::
-
-
-# Advanced: KI-Tools nach CLT-Prinzipien
 
 
 ## Die Designfrage {.center}
@@ -628,7 +893,7 @@ Antwort: Ein Tool, das **zuerst diagnostiziert** und dann **angepasst scaffoldet
 :::
 
 ::: {.notes}
-Jetzt die Frage aus dem Advanced-Kurs: Wenn unstrukturierte ChatGPT-Nutzung das Problem ist, wie sähe ein KI-Tool aus, das CLT-Prinzipien umsetzt? Die Antwort: Ein Tool, das zuerst diagnostiziert, wo die Lernenden stehen, und dann die Unterstützung anpasst. Nicht eine Lösung für alle, sondern das richtige Scaffolding für das richtige Vorwissen.
+Wenn unstrukturierte ChatGPT-Nutzung das Problem ist, wie sähe ein KI-Tool aus, das CLT-Prinzipien umsetzt? Ein Tool, das zuerst diagnostiziert, wo die Lernenden stehen, und dann die Unterstützung anpasst.
 :::
 
 
@@ -677,7 +942,7 @@ $x = 27$
 
 Prüfung: $-1(-27-7) = 2(27)-20$
 
-$34 = 34$ ✓
+$34 = 34$
 :::
 :::
 ::::
@@ -689,7 +954,7 @@ Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die P
 :::
 
 ::: {.notes}
-Nehmen wir ein konkretes Beispiel: die Gleichung -1(-x - 7) = 2x - 20. Sie erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfassen, Variable isolieren. Ein CLT-informiertes Tool fragt nicht einfach "Löse die Gleichung", sondern diagnostiziert zuerst: Welche dieser Teilkompetenzen beherrscht die Person bereits? Je nach Antwort wird unterschiedlich scaffoldet.
+Die Gleichung erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfassen, Variable isolieren. Ein CLT-informiertes Tool diagnostiziert zuerst: Welche dieser Teilkompetenzen beherrscht die Person bereits? Je nach Antwort wird unterschiedlich scaffoldet.
 :::
 
 
@@ -708,152 +973,78 @@ flowchart = {
 
   const svg = d3.create("svg")
     .attr("viewBox", [0, 0, w, h])
-    .attr("width", w)
-    .attr("height", h)
+    .attr("width", w).attr("height", h)
     .style("background", "transparent")
     .style("font-family", "system-ui, sans-serif");
 
-  // Helper functions
   function roundRect(g, x, y, width, height, fill, stroke, text, fontSize) {
-    g.append("rect")
-      .attr("x", x).attr("y", y)
-      .attr("width", width).attr("height", height)
-      .attr("rx", 8).attr("fill", fill)
-      .attr("stroke", stroke).attr("stroke-width", 1.5);
+    g.append("rect").attr("x", x).attr("y", y).attr("width", width).attr("height", height).attr("rx", 8).attr("fill", fill).attr("stroke", stroke).attr("stroke-width", 1.5);
     const lines = text.split("\n");
     for (let i = 0; i < lines.length; i++) {
-      g.append("text")
-        .attr("x", x + width/2).attr("y", y + height/2 + (i - (lines.length-1)/2) * 18)
-        .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
-        .attr("fill", "#1A1714").attr("font-size", fontSize || "13px")
-        .text(lines[i]);
+      g.append("text").attr("x", x + width/2).attr("y", y + height/2 + (i - (lines.length-1)/2) * 18).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("fill", "#1A1714").attr("font-size", fontSize || "13px").text(lines[i]);
     }
   }
 
   function diamond(g, cx, cy, rx, ry, fill, stroke, text) {
     const points = `${cx},${cy-ry} ${cx+rx},${cy} ${cx},${cy+ry} ${cx-rx},${cy}`;
-    g.append("polygon")
-      .attr("points", points)
-      .attr("fill", fill).attr("stroke", stroke).attr("stroke-width", 1.5);
+    g.append("polygon").attr("points", points).attr("fill", fill).attr("stroke", stroke).attr("stroke-width", 1.5);
     const lines = text.split("\n");
     for (let i = 0; i < lines.length; i++) {
-      g.append("text")
-        .attr("x", cx).attr("y", cy + (i - (lines.length-1)/2) * 16)
-        .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
-        .attr("fill", "#1A1714").attr("font-size", "12px")
-        .text(lines[i]);
+      g.append("text").attr("x", cx).attr("y", cy + (i - (lines.length-1)/2) * 16).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("fill", "#1A1714").attr("font-size", "12px").text(lines[i]);
     }
   }
 
   function arrow(g, x1, y1, x2, y2, label, labelSide) {
-    g.append("line")
-      .attr("x1", x1).attr("y1", y1).attr("x2", x2).attr("y2", y2)
-      .attr("stroke", "#64748b").attr("stroke-width", 1.5)
-      .attr("marker-end", "url(#arrowhead)");
+    g.append("line").attr("x1", x1).attr("y1", y1).attr("x2", x2).attr("y2", y2).attr("stroke", "#64748b").attr("stroke-width", 1.5).attr("marker-end", "url(#arrowhead-flow)");
     if (label) {
-      const mx = (x1 + x2) / 2;
-      const my = (y1 + y2) / 2;
+      const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
       const dx = labelSide === "left" ? -20 : (labelSide === "right" ? 20 : 0);
-      g.append("text")
-        .attr("x", mx + dx).attr("y", my - 6)
-        .attr("text-anchor", "middle").attr("fill", "#64748b")
-        .attr("font-size", "11px").attr("font-weight", "600")
-        .text(label);
+      g.append("text").attr("x", mx + dx).attr("y", my - 6).attr("text-anchor", "middle").attr("fill", "#64748b").attr("font-size", "11px").attr("font-weight", "600").text(label);
     }
   }
 
-  // Arrowhead marker
-  svg.append("defs").append("marker")
-    .attr("id", "arrowhead").attr("viewBox", "0 0 10 7")
-    .attr("refX", 10).attr("refY", 3.5)
-    .attr("markerWidth", 8).attr("markerHeight", 6)
-    .attr("orient", "auto")
-    .append("polygon").attr("points", "0 0, 10 3.5, 0 7").attr("fill", "#64748b");
+  svg.append("defs").append("marker").attr("id", "arrowhead-flow").attr("viewBox", "0 0 10 7").attr("refX", 10).attr("refY", 3.5).attr("markerWidth", 8).attr("markerHeight", 6).attr("orient", "auto").append("polygon").attr("points", "0 0, 10 3.5, 0 7").attr("fill", "#64748b");
 
   const g = svg.append("g");
 
-  // Start
   roundRect(g, 350, 10, 200, 40, "#0072B2", "#0072B2", "Aufgabe präsentieren", "14px");
   g.select("rect").attr("fill", "#0072B2");
   g.selectAll("text").filter((d,i) => i === 0).attr("fill", "white").attr("font-weight", "bold");
 
-  // Diagnostic question 1
   diamond(g, 450, 110, 160, 50, "rgba(0, 114, 178, 0.1)", "#0072B2", "Kannst du\n-1(-x-7) auflösen?");
-
   arrow(g, 450, 50, 450, 60, null);
 
-  // Left: can't distribute
   roundRect(g, 30, 170, 220, 55, "rgba(213, 94, 0, 0.08)", "#D55E00", "Worked Example:\nDistribuieren Schritt für Schritt");
   arrow(g, 290, 110, 140, 170, "Nein", "left");
 
-  // Right: can distribute
   diamond(g, 700, 200, 160, 50, "rgba(0, 114, 178, 0.1)", "#0072B2", "Kannst du Terme\nzusammenfassen?");
   arrow(g, 610, 110, 700, 150, "Ja", "right");
 
-  // From worked example back
   roundRect(g, 30, 260, 220, 40, "rgba(100, 116, 139, 0.08)", "#64748b", "Erneut versuchen");
   arrow(g, 140, 225, 140, 260, null);
-  // Arrow from retry back up
-  g.append("path")
-    .attr("d", "M 250,280 Q 320,280 350,200 Q 380,120 450,60")
-    .attr("fill", "none").attr("stroke", "#64748b")
-    .attr("stroke-width", 1).attr("stroke-dasharray", "4,3");
+  g.append("path").attr("d", "M 250,280 Q 320,280 350,200 Q 380,120 450,60").attr("fill", "none").attr("stroke", "#64748b").attr("stroke-width", 1).attr("stroke-dasharray", "4,3");
 
-  // Can't combine terms
   roundRect(g, 500, 290, 220, 55, "rgba(213, 94, 0, 0.08)", "#D55E00", "Completion Problem:\nx + 7 = 2x - 20 → ___ = x");
   arrow(g, 620, 250, 610, 290, "Nein", "left");
 
-  // Can combine terms
-  roundRect(g, 750, 290, 180, 55, "#rgba(0, 114, 178, 0.08)", "#0072B2", "Nur Hinweis:\n«Fasse die Terme zusammen»");
+  roundRect(g, 750, 290, 180, 55, "rgba(0, 114, 178, 0.08)", "#0072B2", "Nur Hinweis:\n«Fasse die Terme zusammen»");
   arrow(g, 780, 250, 840, 290, "Ja", "right");
 
-  // Final
   roundRect(g, 350, 430, 200, 50, "rgba(0, 114, 178, 0.15)", "#0072B2", "Eigenständig lösen\n(Fading complete)");
   arrow(g, 610, 345, 520, 430, null);
   arrow(g, 840, 345, 520, 430, null);
 
-  // Legend
   const lg = svg.append("g").attr("transform", "translate(20, 460)");
-  lg.append("text").attr("x", 0).attr("y", 0).attr("font-size", "12px").attr("fill", "#6E6560")
-    .text("Prinzip 2: Diagnostische Fragen → Vorwissen einschätzen");
-  lg.append("text").attr("x", 0).attr("y", 20).attr("font-size", "12px").attr("fill", "#6E6560")
-    .text("Prinzip 3: Angepasstes Scaffolding → Intrinsische Last steuern");
-  lg.append("text").attr("x", 0).attr("y", 40).attr("font-size", "12px").attr("fill", "#6E6560")
-    .text("Prinzip 1: Klare, fokussierte Aufgaben → Extrinsische Last minimieren");
+  lg.append("text").attr("x", 0).attr("y", 0).attr("font-size", "12px").attr("fill", "#6E6560").text("Diagnostische Fragen → Vorwissen einschätzen");
+  lg.append("text").attr("x", 0).attr("y", 20).attr("font-size", "12px").attr("fill", "#6E6560").text("Angepasstes Scaffolding → Intrinsische Last steuern");
+  lg.append("text").attr("x", 0).attr("y", 40).attr("font-size", "12px").attr("fill", "#6E6560").text("Klare, fokussierte Aufgaben → Extrinsische Last minimieren");
 
   return svg.node();
 }
 ```
 
 ::: {.notes}
-Hier das Flussdiagramm eines CLT-informierten Tools. Es beginnt mit der Aufgabe und stellt dann diagnostische Fragen. "Kannst du die Klammer auflösen?" Wenn nein, gibt es ein Worked Example für genau diesen Schritt, dann einen erneuten Versuch. Wenn ja, geht es weiter zur nächsten Teilkompetenz. Je nach Ergebnis gibt es entweder ein Completion Problem oder nur einen Hinweis. Am Ende steht eigenständiges Lösen. Das Tool implementiert alle drei CLT-Prinzipien: Diagnostische Fragen für Prinzip 2, angepasstes Scaffolding für Prinzip 3, und eine klare, fokussierte Struktur für Prinzip 1.
-:::
-
-
-## CLT-Prinzipien im Tool {.smaller}
-
-Jede Designentscheidung lässt sich auf ein CLT-Prinzip zurückführen:
-
-<br>
-
-| Designentscheidung | CLT-Prinzip | Wirkung |
-|---|---|---|
-| Diagnostische Fragen zu Beginn | **Vorwissen einschätzen** (Prinzip 2) | Scaffolding passt zum aktuellen Stand |
-| Worked Examples bei Wissenslücken | **Intrinsische Last steuern** (Prinzip 3) | Überforderte Lernende werden unterstützt |
-| Fading: schrittweiser Abbau der Hilfe | **Intrinsische Last steuern** (Prinzip 3) | Kognitive Eigenleistung steigt graduell |
-| Klare, fokussierte Aufgaben | **Extrinsische Last minimieren** (Prinzip 1) | Kapazität wird nicht verschwendet |
-| Kein vollständiges Lösen für den Lernenden | **Lernrelevante Verarbeitung sichern** | Schemata werden aufgebaut |
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-Der Unterschied zu ChatGPT: [Wer macht die kognitive Arbeit?]{style="color: #0072B2; font-weight: bold;"}
-
-ChatGPT übernimmt die Arbeit. Ein CLT-Tool **verteilt** sie.
-:::
-
-::: {.notes}
-Diese Tabelle zeigt, wie jede Designentscheidung im Tool auf ein CLT-Prinzip zurückgeht. Diagnostische Fragen passen das Scaffolding ans Vorwissen an. Worked Examples steuern die intrinsische Last. Fading steigert die Eigenleistung graduell. Klare Aufgaben minimieren extrinsische Last. Und das Tool löst nie vollständig für den Lernenden. Der entscheidende Kontrast: ChatGPT übernimmt die kognitive Arbeit. Ein CLT-informiertes Tool verteilt sie so, dass Schemata aufgebaut werden.
+Das Flussdiagramm zeigt das Prinzip. Das Tool stellt diagnostische Fragen. Kann die Person die Klammer auflösen? Wenn nein: Worked Example für genau diesen Schritt, dann erneut versuchen. Wenn ja: weiter zur nächsten Teilkompetenz. Je nach Ergebnis gibt es ein Completion Problem oder nur einen Hinweis. Am Ende steht eigenständiges Lösen.
 :::
 
 
@@ -906,11 +1097,8 @@ Diese Tabelle zeigt, wie jede Designentscheidung im Tool auf ein CLT-Prinzip zur
 :::
 
 ::: {.notes}
-Hier der direkte Vergleich. Links: ChatGPT, unstrukturiert. Die Maschine denkt, das Produkt entsteht, aber keine Schemata. Rechts: Ein CLT-informiertes Tool. Es diagnostiziert, scaffoldet, und baut die Unterstützung ab. Die Lernenden denken, mit Unterstützung. Dasselbe Material, dieselbe Technologie, aber anderes Design und damit ein anderes Lernergebnis.
+Der direkte Vergleich. ChatGPT: Die Maschine denkt, keine Schemata. CLT-Tool: Die Lernenden denken, mit Unterstützung. Dasselbe Material, dieselbe Technologie, aber anderes Design und damit ein anderes Lernergebnis.
 :::
-
-
-# Zusammenfassung
 
 
 ## Drei Erkenntnisse {.center}
@@ -935,7 +1123,7 @@ ChatGPT ist kein Lerntool. Ein CLT-informiertes Tool kann eines sein.
 :::
 
 ::: {.notes}
-Drei Erkenntnisse zum Mitnehmen. Erstens: Extrinsische Last minimieren ist der einfachste Hebel und kostet nichts. Zweitens: Vorwissen bestimmt, wie die Aufgabe aussehen muss. Ein Übungsblatt für alle ist für die meisten falsch. Drittens: KI kann CLT-Prinzipien umsetzen, aber nur wenn sie dafür designt wird. Unstrukturiertes ChatGPT ist kein Lerntool. Ein CLT-informiertes Tool kann eines sein.
+Drei Erkenntnisse zum Mitnehmen. Erstens: Extrinsische Last minimieren kostet nichts. Zweitens: Vorwissen bestimmt, wie die Aufgabe aussehen muss. Drittens: KI kann CLT-Prinzipien umsetzen, aber nur wenn sie dafür designt wird.
 :::
 
 
@@ -958,7 +1146,7 @@ Und: Wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
 :::
 
 ::: {.notes}
-Offene Diskussion. CLT reframed das Problem: Es geht nicht um fehlende Motivation, sondern um Aufgabendesign, das nicht zum Vorwissen passt. Zwei konkrete Fragen: Wo in euren Kursen gibt es Aufgaben, die für die meisten Studierenden zu viel oder zu wenig fordern? Und wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
+Offene Diskussion. CLT reframed das Problem: Es geht nicht um fehlende Motivation, sondern um Aufgabendesign, das nicht zum Vorwissen passt. Zwei Fragen: Wo fordern eure Aufgaben zu viel oder zu wenig? Und wie könnte ein diagnostisches, scaffoldendes Tool dort aussehen?
 :::
 
 
