@@ -16,7 +16,7 @@ Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 
 ::::{.columns}
 :::{.column width="33%"}
-### Beginner
+### [Beginner](https://virtuelleakademie.github.io/ki-lehre-beginner/)
 
 *Was ist KI?*
 
@@ -27,7 +27,7 @@ Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 :::
 
 :::{.column width="33%"}
-### Intermediate
+### [Intermediate](https://virtuelleakademie.github.io/ki-lehre-intermediate/)
 
 *Wie funktioniert Lernen?*
 
@@ -38,7 +38,7 @@ Wir bieten drei aufbauende Kurse zu KI in der Lehre an:
 :::
 
 :::{.column width="33%"}
-### Advanced
+### [Advanced](https://virtuelleakademie.github.io/ki-lehre-advanced/)
 
 *Wie gestalten wir Aufgaben?*
 
@@ -65,22 +65,11 @@ Drei Kurse, drei Fragen. Heute gehen wir durch alle drei. Zuerst kurz: Was kann 
 
 Der Mechanismus ist einfach: ein Sprachmodell sagt das Text vorher, Wort für Wort.
 
-Aus diesem einfachen Prinzip entsteht etwas Mächtiges:
-
 <br>
 
 ::::{.columns}
-:::{.column width="30%"}
-::: {style="background: #f0f4f8; padding: 1.2em; border-radius: 8px; border-top: 3px solid #0072B2; min-height: 180px;"}
-[**Mathe-Tutorial**]{style="color: #0072B2; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
 
-"Erkläre mir die Ableitung von x²"
-
-→ ein vollständiges Tutorial mit Herleitung und Beispielen
-:::
-:::
-
-:::{.column width="30%"}
+:::{.column width="50%"}
 ::: {style="background: #f5f0eb; padding: 1.2em; border-radius: 8px; border-top: 3px solid #E69F00; min-height: 180px;"}
 [**Klinischer Bericht**]{style="color: #E69F00; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
 
@@ -90,7 +79,7 @@ Aus diesem einfachen Prinzip entsteht etwas Mächtiges:
 :::
 :::
 
-:::{.column width="30%"}
+:::{.column width="50%"}
 ::: {style="background: #faf0f0; padding: 1.2em; border-radius: 8px; border-top: 3px solid #D55E00; min-height: 180px;"}
 [**Musterlösung**]{style="color: #D55E00; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;"}
 
@@ -104,7 +93,9 @@ Aus diesem einfachen Prinzip entsteht etwas Mächtiges:
 <br>
 
 ::: {style="text-align: center; font-size: 1.05em;"}
-Um solche Texte zu erzeugen, muss das Modell enormes Wissen erworben haben. [Aber: der Output ist oft schwer zu beurteilen und erfordert Fachwissen.]{style="color: #D55E00;"}
+Um solche Texte zu erzeugen, muss das Modell enormes Wissen erworben haben. 
+
+[Der Output ist aber oft schwer zu beurteilen und erfordert Fachwissen.]{style="color: #D55E00;"}
 :::
 
 ::: {style="text-align: center; font-size: 0.85em; color: #6E6560; margin-top: 0.5em;"}
@@ -112,13 +103,13 @@ Vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/k
 :::
 
 ::: {.notes}
-Textvorhersage, Wort für Wort. Einfaches Prinzip, aber mächtiges Ergebnis. Drei Beispiele: Mathe-Tutorial, klinischer Bericht, Musterlösung. Entscheidend: Der Output liest sich wie Expertentext, egal ob er stimmt. → Überleitung: Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT.
+Textvorhersage, Wort für Wort. Einfaches Prinzip, aber mächtiges Ergebnis. 2 Beispiele: klinischer Bericht, Musterlösung. Entscheidend: Der Output liest sich wie Expertentext, egal ob er stimmt. → Überleitung: Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT.
 :::
 
 
 ## Cognitive Load Theory in 60 Sekunden {.smaller}
 
-Warum ist das für Lernen relevant? Die **Cognitive Load Theory** [@swellerIntegratedHumanCognitive2025a] erklärt, wie das Arbeitsgedächtnis beim Lernen beansprucht wird.
+Die **Cognitive Load Theory** [@swellerIntegratedHumanCognitive2025a] erklärt, wie das Arbeitsgedächtnis beim Lernen beansprucht wird.
 
 <br>
 
@@ -178,7 +169,7 @@ bottleneck_fig = {
 }
 ```
 
-<br><br>
+<br><br><br>
 
 ::: {.fragment}
 ::::{.columns}
@@ -213,36 +204,21 @@ Produktive Denkarbeit, die Schemata aufbaut.
 :::
 ::::
 
-::: {style="text-align: center; font-size: 1.0em; margin-top: 0.5em;"}
-Das Arbeitsgedächtnis hat **begrenzte Kapazität**.
-:::
 :::
 
 ::: {.notes}
-Oben: das Grundmodell. Information rein, Arbeitsgedächtnis verarbeitet, Schemata entstehen. Unten (Klick): drei Lastarten. Extrinsisch = schlechtes Design, reduzieren. Intrinsisch = Material + Vorwissen, steuern. Lernrelevant = die produktive Denkarbeit, maximieren. Ziel: extrinsische Last senken → mehr Kapazität für lernrelevante Verarbeitung.
+Oben: das Grundmodell. Information rein, Arbeitsgedächtnis verarbeitet, Schemata entstehen. Keine Technologie kann diesen Engpass umgehen.
+Unten (Klick): drei Lastarten. Extrinsisch = schlechtes Design, reduzieren. Intrinsisch = Material + Vorwissen, steuern. Lernrelevant = die produktive Denkarbeit, maximieren. Ziel: extrinsische Last senken → mehr Kapazität für lernrelevante Verarbeitung.
 :::
 
 
-## Das Arbeitsgedächtnis als Nadelöhr {.smaller}
+## Extrinsische Last senken = Kapazität für Lernen {.smaller}
 
-Alles Lernen muss durch einen **Engpass**: das Arbeitsgedächtnis.
+Weniger unnötige Belastung bedeutet mehr Platz für lernrelevante Verarbeitung. 
 
-<br>
+<br> <br> <br>
 
-::::{.columns}
-:::{.column width="45%"}
-| Eigenschaft | |
-|---|---|
-| **Kapazität** | ~4 Elemente |
-| **Dauer** | 15-30 Sekunden |
-| **Verarbeitung** | 1 Element aktiv |
-
-<br>
-
-Keine Technologie kann diesen Engpass umgehen. KI kann Information liefern, aber die **aktive Verarbeitung** muss im eigenen Kopf stattfinden.
-:::
-
-:::{.column width="55%"}
+::: {style="display: flex; flex-direction: column; align-items: center;"}
 ```{ojs}
 //| echo: false
 
@@ -274,8 +250,8 @@ viewof cl_controls = {
 //| echo: false
 
 cognitive_load_chart = {
-  const w = 420;
-  const h = 320;
+  const w = 600;
+  const h = 420;
 
   const intrinsic = 30;
   const ext = Math.min(cl_controls, 100 - intrinsic);
@@ -336,19 +312,21 @@ cognitive_load_chart = {
 }
 ```
 :::
-::::
 
 ::: {.notes}
-Interaktiv: Slider bewegen. Hohe extrinsische Last → kaum Platz für Lernen. Last senken → sofort Kapazität frei. Die blaue Fläche ist das, was zählt. KI kann Information liefern, aber die Verarbeitung muss im eigenen Kopf stattfinden.
+Interaktiv: Slider bewegen. Hohe extrinsische Last → kaum Platz für Lernen. Last senken → sofort Kapazität frei. Die blaue Fläche ist das, was zählt.
 :::
 
 
 ## Expertise = vernetzte Schemata {.smaller}
 
-Wie überwindet man den Engpass? Durch **Vorwissen**. Wissen wird im Langzeitgedächtnis als **Schemata** gespeichert: mentale Strukturen, die viele Einzelelemente zu einer Einheit komprimieren. Je mehr Vorwissen, desto weniger Belastung für das Arbeitsgedächtnis.
+Wie überwindet man den Engpass? Durch **Vorwissen**. 
+
+Wissen wird im Langzeitgedächtnis zu **Schemata** organisiert: Einzelelemente werden zu einer Einheit komprimieren.
 
 <br>
 
+::: {style="display: flex; flex-direction: column; align-items: center;"}
 ```{ojs}
 //| echo: false
 
@@ -512,6 +490,7 @@ novice_expert_schemas = {
   return svg.node();
 }
 ```
+:::
 
 ::: {.notes}
 → Überleitung: Wie überwindet man den Engpass? Durch Vorwissen, organisiert als Schemata. Grafik anklicken: isolierte Fakten → vernetzte Schemata. Ein Schema = viele Elemente als eine Einheit. Weniger Belastung fürs Arbeitsgedächtnis. Aber: Schemata aufbauen erfordert eigene Denkarbeit.
@@ -520,7 +499,7 @@ novice_expert_schemas = {
 
 ## Extrinsische Last reduzieren {.smaller}
 
-Vorwissen entlastet das Arbeitsgedächtnis. Aber auch das **Design** einer Aufgabe beeinflusst die Belastung. Extrinsische Last entsteht durch unnötige Komplexität, die nichts mit dem Lerninhalt zu tun hat.
+Extrinsische Last entsteht durch unnötige Komplexität im Aufgabendesign.
 
 <br>
 
@@ -532,7 +511,6 @@ Vorwissen entlastet das Arbeitsgedächtnis. Aber auch das **Design** einer Aufga
 - Information auf mehrere Quellen verteilt (Split-Attention)
 - Unklare oder mehrdeutige Aufgabenstellungen
 - Irrelevante Zusatzinformationen
-- Überladene Folien oder Arbeitsblätter
 :::
 :::
 
@@ -543,7 +521,6 @@ Vorwissen entlastet das Arbeitsgedächtnis. Aber auch das **Design** einer Aufga
 - Zusammengehörige Information integrieren
 - Aufgaben klar und eindeutig formulieren
 - Nur zeigen, was gerade gebraucht wird
-- Schritt für Schritt statt alles auf einmal
 :::
 :::
 ::::
@@ -578,8 +555,6 @@ Hohe Komplexität:
 - Wie verteile ich?
 - Wie bringe ich $x$ auf eine Seite?
 - Welche Rechenregeln gelten?
-
-Jedes Element muss **einzeln** im Arbeitsgedächtnis gehalten werden.
 :::
 :::
 
@@ -592,8 +567,6 @@ Niedrige Komplexität:
 - "Klammer auflösen" → ein Schema
 - "Terme zusammenfassen" → ein Schema
 - "Nach $x$ auflösen" → ein Schema
-
-Jeder Schritt ist eingeübt und läuft automatisch ab. Das Arbeitsgedächtnis wird kaum belastet.
 :::
 :::
 ::::
@@ -605,7 +578,10 @@ Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
 :::
 
 ::: {.notes}
-→ Überleitung: Zweites Prinzip. Dieselbe Gleichung, aber völlig andere kognitive Kosten. Links: Anfänger, jedes Element einzeln. Rechts: Fortgeschrittene, drei automatisierte Schritte. Konsequenz: Ein Übungsblatt für alle ist für die meisten falsch.
+→ Überleitung: Zweites Prinzip. Dieselbe Gleichung, aber völlig andere kognitive Kosten. 
+Links: Anfänger: Jedes Element muss **einzeln** im Arbeitsgedächtnis gehalten werden. 
+
+Rechts: Fortgeschrittene: Jeder Schritt ist eingeübt und läuft automatisch ab. Das Arbeitsgedächtnis wird kaum belastet.
 :::
 
 
@@ -637,20 +613,6 @@ Jede Stufe reduziert die Unterstützung und erhöht die kognitive Eigenleistung.
 :::{.column width="50%"}
 **Beispiel: Gleichung lösen**
 
-**Stufe 1** (Worked Example):
-
-::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
-$-1(-x - 7) = 14x - 6$
-
-Schritt 1: Klammer auflösen → $x + 7 = 14x - 6$
-
-Schritt 2: $x$ isolieren → $7 + 6 = 14x - x$ → $13 = 13x$
-
-Schritt 3: Vereinfachen → $x = 1$
-:::
-
-<br>
-
 **Stufe 2** (Completion):
 
 ::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
@@ -672,7 +634,6 @@ Schritt 3: Vereinfachen → $x = 1$
 
 ## Wie bringe ich ein KI-Tool dazu, pädagogisch sinnvoll zu helfen? {.smaller}
 
-Ohne gezielte Anleitung liefert ein Chatbot eher die **Lösung** als das **Scaffolding**.
 
 <br>
 
