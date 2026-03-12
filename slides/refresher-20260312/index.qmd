@@ -565,17 +565,14 @@ Dieselbe Aufgabe hat **unterschiedliche intrinsische Last** für verschiedene Le
 
 <br>
 
+**Aufgabe:** Löse nach $x$ auf:  $$-1(-x - 7) = 14x - 6$$
+
 ::::{.columns}
 :::{.column width="50%"}
-
-**Aufgabe:** Löse $-1(-x - 7) = 2x - 20$
-
-<br>
-
 ::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
-### Für Anfänger:innen
+**Für Anfänger:innen**
 
-Hohe Elementinteraktivität:
+Hohe Komplexität:
 
 - Was bedeutet das Minuszeichen vor der Klammer?
 - Wie verteile ich?
@@ -587,149 +584,41 @@ Jedes Element muss **einzeln** im Arbeitsgedächtnis gehalten werden.
 :::
 
 :::{.column width="50%"}
-
-<br><br>
-
 ::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
-### Für Fortgeschrittene
+**Für Fortgeschrittene**
 
-Niedrige Elementinteraktivität:
+Niedrige Komplexität:
 
 - "Klammer auflösen" → ein Schema
 - "Terme zusammenfassen" → ein Schema
 - "Nach $x$ auflösen" → ein Schema
 
-Drei Schritte, drei Slots. Problemlos.
-:::
-
-<br>
-
-::: {style="font-size: 1.05em; font-weight: bold; color: #D55E00;"}
-→ Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
+Jeder Schritt ist eingeübt und läuft automatisch ab. Das Arbeitsgedächtnis wird kaum belastet.
 :::
 :::
 ::::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.1em; font-weight: bold; color: #D55E00;"}
+Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
+:::
 
 ::: {.notes}
 Hier wird es für das Aufgabendesign entscheidend. Dieselbe Gleichung hat völlig unterschiedliche kognitive Kosten für verschiedene Lernende. Für Anfänger:innen ist jedes Element einzeln zu verarbeiten. Für Fortgeschrittene sind das drei automatisierte Schritte. Dieselbe Aufgabe, aber radikal verschiedene Anforderungen ans Arbeitsgedächtnis.
 :::
 
 
-## Der Expertise-Umkehr-Effekt {.smaller}
-
-Was für Anfänger:innen hilft, schadet Fortgeschrittenen, und umgekehrt.
-
-<br>
-
-```{ojs}
-//| echo: false
-
-viewof expertise_level = {
-  const div = html`<div style="display:flex;align-items:center;gap:12px;font-size:15px;">
-    <span style="white-space:nowrap;">Expertise-Level: <strong>Anfänger</strong></span>
-    <input type="range" min="0" max="10" step="0.5" value="2" style="width:250px;accent-color:#0072B2;">
-  </div>`;
-  const input = div.querySelector("input");
-  const label = div.querySelector("strong");
-  const levelName = (v) => v <= 3 ? "Anfänger" : v <= 7 ? "Mittel" : "Experte";
-  input.oninput = () => {
-    label.textContent = levelName(+input.value);
-    div.value = +input.value;
-    div.dispatchEvent(new Event("input", {bubbles: true}));
-  };
-  div.value = 2;
-  return div;
-}
-```
-
-```{ojs}
-//| echo: false
-
-expertise_chart = {
-  const w = 700;
-  const h = 300;
-  const fs = "13px";
-
-  const sigmoid = (x, midpoint, steepness) => 1 / (1 + Math.exp(-steepness * (x - midpoint)));
-  const worked = (x) => 85 - 55 * sigmoid(x, 5, 1.0);
-  const problem = (x) => 30 + 55 * sigmoid(x, 5, 1.0);
-  const crossing_x = 5;
-
-  const line_data = [];
-  for (let x = 0; x <= 10; x += 0.2) {
-    line_data.push({x, y: worked(x), method: "Worked Examples"});
-    line_data.push({x, y: problem(x), method: "Problemlösen"});
-  }
-
-  const ex = expertise_level;
-  const we = worked(ex);
-  const ps = problem(ex);
-  const diff = Math.abs(we - ps);
-
-  const weLabel = diff < 3 ? "" : we > ps
-    ? "Entlastet Arbeitsgedächtnis" : "Redundante Information";
-  const psLabel = diff < 3 ? "" : ps > we
-    ? "Verfeinert Schemata" : "Überfordert Arbeitsgedächtnis";
-  const annotation = diff < 3
-    ? "Umschlagpunkt: beide Methoden gleich effektiv"
-    : we > ps ? "Anleitung hilft" : "Anleitung schadet";
-
-  return Plot.plot({
-    width: w, height: h,
-    marginLeft: 55, marginBottom: 50, marginTop: 30, marginRight: 150,
-    style: {fontSize: fs, background: "transparent"},
-    x: {
-      label: "Expertise-Level", domain: [0, 10],
-      ticks: [0, 5, 10],
-      tickFormat: d => d === 0 ? "Anfänger" : d === 5 ? "Mittel" : "Experte"
-    },
-    y: {
-      label: "Lernergebnis", domain: [20, 95],
-      ticks: [25, 85],
-      tickFormat: d => d === 25 ? "Niedrig" : "Hoch"
-    },
-    color: {
-      domain: ["Worked Examples", "Problemlösen"],
-      range: ["#0072B2", "#E69F00"],
-      legend: false
-    },
-    marks: [
-      Plot.lineY(line_data, {x: "x", y: "y", stroke: "method", strokeWidth: 2.5, curve: "natural"}),
-      Plot.text([{x: 10, y: worked(10)}], {x: "x", y: "y", text: ["Worked Examples"], fill: "#0072B2", fontSize: 12, fontWeight: "bold", textAnchor: "start", dx: 10}),
-      Plot.text([{x: 10, y: problem(10)}], {x: "x", y: "y", text: ["Problemlösen"], fill: "#E69F00", fontSize: 12, fontWeight: "bold", textAnchor: "start", dx: 10}),
-      Plot.dot([{x: crossing_x, y: worked(crossing_x)}], {x: "x", y: "y", r: 6, fill: "white", stroke: "#1A1714", strokeWidth: 2}),
-      Plot.ruleX([ex], {stroke: "#1A1714", strokeDasharray: "4,3", strokeWidth: 1.5}),
-      Plot.dot([{x: ex, y: we}], {x: "x", y: "y", r: 7, fill: "#0072B2", stroke: "#1A1714", strokeWidth: 1.5}),
-      Plot.dot([{x: ex, y: ps}], {x: "x", y: "y", r: 7, fill: "#E69F00", stroke: "#1A1714", strokeWidth: 1.5}),
-      Plot.link([{x1: ex, y1: we, x2: ex, y2: ps}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#A63D2F", strokeWidth: 2.5, strokeDasharray: "3,2"}),
-      Plot.text([{x: ex, y: we}], {x: "x", y: "y", text: [weLabel], fill: "#0072B2", fontSize: 11, fontWeight: "600", dx: ex < 5 ? 10 : -10, textAnchor: ex < 5 ? "start" : "end", dy: -12}),
-      Plot.text([{x: ex, y: ps}], {x: "x", y: "y", text: [psLabel], fill: "#E69F00", fontSize: 11, fontWeight: "600", dx: ex < 5 ? 10 : -10, textAnchor: ex < 5 ? "start" : "end", dy: 16}),
-      Plot.text([{x: ex, y: 93}], {x: "x", y: "y", text: [annotation], fill: "#1A1714", fontWeight: "bold", fontSize: 13}),
-    ]
-  });
-}
-```
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-[Die Aufgabe muss zum Vorwissen passen, nicht umgekehrt.]{style="color: #0072B2; font-weight: bold;"}
-:::
-
-::: {.notes}
-Der Expertise-Umkehr-Effekt. Bewegt den Slider: Bei Anfängern sind Worked Examples klar überlegen. Bei Experten kehrt sich das um, Worked Examples werden redundant und stören. Am Umschlagpunkt sind beide Methoden gleich effektiv. Die Konsequenz: Ein Übungsblatt für alle ist per Definition für die meisten falsch.
-:::
-
 
 ## Scaffolding steuert die intrinsische Last {.smaller}
 
-Wenn die intrinsische Last zu hoch ist, brauchen Lernende **Gerüste**, nicht einfach mehr Zeit.
+Wenn die intrinsische Last zu hoch ist, brauchen Lernende **Scaffolding**.
 
 <br>
 
 ::::{.columns}
 :::{.column width="50%"}
-### Vom Beispiel zum Problem (Fading)
+**Vom Beispiel zum Problem (Fading)**
 
 | Schritt | Format |
 |---|---|
@@ -746,18 +635,18 @@ Jede Stufe reduziert die Unterstützung und erhöht die kognitive Eigenleistung.
 :::
 
 :::{.column width="50%"}
-### Beispiel: Gleichung lösen
+**Beispiel: Gleichung lösen**
 
 **Stufe 1** (Worked Example):
 
 ::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
-$-1(-x - 7) = 2x - 20$
+$-1(-x - 7) = 14x - 6$
 
-Schritt 1: Klammer auflösen → $x + 7 = 2x - 20$
+Schritt 1: Klammer auflösen → $x + 7 = 14x - 6$
 
-Schritt 2: $x$ isolieren → $7 + 20 = 2x - x$
+Schritt 2: $x$ isolieren → $7 + 6 = 14x - x$ → $13 = 13x$
 
-Schritt 3: Vereinfachen → $27 = x$
+Schritt 3: Vereinfachen → $x = 1$
 :::
 
 <br>
@@ -765,13 +654,13 @@ Schritt 3: Vereinfachen → $27 = x$
 **Stufe 2** (Completion):
 
 ::: {style="background: #f8f7f6; padding: 1em; border-radius: 6px; font-size: 0.9em;"}
-$-1(-x - 7) = 2x - 20$
+$-1(-x - 7) = 14x - 6$
 
 Schritt 1: Klammer auflösen → $\underline{\quad\quad\quad\quad}$
 
-Schritt 2: $x$ isolieren → $7 + 20 = 2x - x$
+Schritt 2: $x$ isolieren → $7 + 6 = 14x - x$ → $13 = 13x$
 
-Schritt 3: Vereinfachen → $27 = x$
+Schritt 3: Vereinfachen → $x = 1$
 :::
 :::
 ::::
@@ -781,18 +670,18 @@ Scaffolding ist das dritte Prinzip. Die effektivste Strategie ist Fading: Man be
 :::
 
 
-## Was passiert, wenn Studierende ChatGPT benutzen? {.smaller}
+## Wie bringe ich ein KI-Tool dazu, pädagogisch sinnvoll zu helfen? {.smaller}
 
-ChatGPT liefert die Lösung. Aber **nicht** das Scaffolding.
+Ohne gezielte Anleitung liefert ein Chatbot eher die **Lösung** als das **Scaffolding**.
 
 <br>
 
 ::::{.columns}
 :::{.column width="50%"}
 ::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.2em; border-radius: 8px;"}
-### ChatGPT-Antwort
+**Was ein Chatbot ohne Anleitung tut**
 
-"Löse $-1(-x - 7) = 2x - 20$"
+"Löse $-1(-x - 7) = 14x - 6$"
 
 → Sofort die vollständige Lösung, korrekt formatiert, flüssig formuliert.
 
@@ -801,87 +690,34 @@ ChatGPT liefert die Lösung. Aber **nicht** das Scaffolding.
 - Keine Lücken zum Selbstdenken
 - Kein Fading
 
-[Das Produkt sieht aus wie ein Worked Example, ist aber keines.]{style="color: #D55E00; font-weight: bold;"}
+[Eine korrekte Lösung ist noch kein pädagogisch gestaltetes Worked Example.]{style="color: #D55E00; font-weight: bold;"}
 :::
 :::
 
 :::{.column width="50%"}
 ::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.2em; border-radius: 8px;"}
-### Der Unterschied
+**Was mit der richtigen Anleitung möglich ist**
 
-Ein **Worked Example** ist pädagogisch gestaltet:
+Ein Chatbot kann CLT-Prinzipien umsetzen:
 
-- Schritte sind so gewählt, dass Schemata aufgebaut werden
-- Die Struktur lädt zur **Selbsterklärung** ein
-- Es ist Teil einer Fading-Sequenz
+- **Zuerst diagnostiziert**, was Lernende schon können
+- Scaffolding ans **Vorwissen anpasst**
+- Lücken lässt, die zum **Selbstdenken** einladen
+- Unterstützung schrittweise **ausblendet** (Fading)
 
-ChatGPT-Output ist optimiert für **Korrektheit und Flüssigkeit**, nicht für Schemabildung.
-
-[Wer die Lösung liest, ohne selbst zu verarbeiten, baut keine Schemata auf.]{style="color: #0072B2; font-weight: bold;"}
+[Die lernrelevante Verarbeitung bleibt bei den Lernenden.]{style="color: #0072B2; font-weight: bold;"}
 :::
 :::
 ::::
 
 ::: {.notes}
-Hier treffen die LLM-Eigenschaft und die CLT-Prinzipien aufeinander. ChatGPT-Output sieht aus wie ein Worked Example, ist aber keines. Ein echtes Worked Example ist pädagogisch gestaltet und Teil einer Fading-Sequenz. ChatGPT-Output ist für Korrektheit und Flüssigkeit optimiert, nicht für Schemabildung. Und weil der Output flüssig ist, entsteht die Illusion des Verstehens.
-:::
-
-
-## Das Evaluationsparadox {.center}
-
-<br><br>
-
-::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 1.8; text-align: center;"}
-Um KI-Output zu **beurteilen**,
-
-braucht man die Schemata,
-
-die die Aufgabe **aufbauen** sollte.
-:::
-
-<br>
-
-. . .
-
-::: {style="font-size: 1.1em; max-width: 80%; margin: 0 auto; text-align: center;"}
-Ohne eigene Schemata gibt es kein **internes Referenzsignal**.
-
-Flüssiger KI-Output unterdrückt den Zweifel.
-
-[Das ist keine Frage der Motivation. Das ist kognitive Architektur.]{style="color: #D55E00; font-weight: bold;"}
-:::
-
-::: {.notes}
-Das Evaluationsparadox schliesst den Kreis. Um zu beurteilen, ob ein KI-Output korrekt ist, braucht man genau die Schemata, die die Aufgabe aufbauen sollte. Das ist keine Frage der Motivation. Das ist kognitive Architektur.
-:::
-
-
-## Die Designfrage {.center}
-
-<br><br>
-
-::: {style="font-size: 1.3em; max-width: 85%; margin: 0 auto; line-height: 1.8; text-align: center;"}
-Wenn unstrukturierte ChatGPT-Nutzung das Problem ist:
-
-<br>
-
-[Wie sähe ein KI-Tool aus, das CLT-Prinzipien umsetzt?]{style="color: #0072B2; font-weight: bold;"}
-:::
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em; color: #6E6560;"}
-Antwort: Ein Tool, das **zuerst diagnostiziert** und dann **angepasst scaffoldet**.
-:::
-
-::: {.notes}
-Wenn unstrukturierte ChatGPT-Nutzung das Problem ist, wie sähe ein KI-Tool aus, das CLT-Prinzipien umsetzt? Ein Tool, das zuerst diagnostiziert, wo die Lernenden stehen, und dann die Unterstützung anpasst.
+Hier kommen wir zur entscheidenden Frage: Wie bringe ich ein KI-Tool dazu, pädagogisch sinnvoll zu helfen? Standardmässig liefert ChatGPT einfach die Lösung. Die sieht aus wie ein Worked Example, ist aber keines. Was wir brauchen, ist ein Tool, das zuerst diagnostiziert, dann angepasst scaffoldet, und die kognitive Arbeit bei den Lernenden lässt.
 :::
 
 
 ## Beispiel: Gleichungen lösen {.smaller}
 
-**Aufgabe:** $-1(-x - 7) = 2x - 20$
+**Aufgabe:** $-1(-x - 7) = 14x - 6$
 
 Diese Aufgabe erfordert drei Teilkompetenzen:
 
@@ -890,7 +726,7 @@ Diese Aufgabe erfordert drei Teilkompetenzen:
 ::::{.columns}
 :::{.column width="33%"}
 ::: {style="background: rgba(0, 114, 178, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
-### Schritt 1
+**Schritt 1**
 
 **Distribuieren**
 
@@ -898,33 +734,33 @@ $-1 \cdot (-x) = x$
 
 $-1 \cdot (-7) = 7$
 
-→ $x + 7 = 2x - 20$
+→ $x + 7 = 14x - 6$
 :::
 :::
 
 :::{.column width="33%"}
 ::: {style="background: rgba(100, 116, 139, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
-### Schritt 2
+**Schritt 2**
 
 **Terme zusammenfassen**
 
-$7 + 20 = 2x - x$
+$7 + 6 = 14x - x$
 
-→ $27 = x$
+→ $13 = 13x$
 :::
 :::
 
 :::{.column width="33%"}
 ::: {style="background: rgba(213, 94, 0, 0.08); padding: 1.2em; border-radius: 8px; text-align: center; min-height: 180px;"}
-### Schritt 3
+**Schritt 3**
 
 **Variable isolieren**
 
-$x = 27$
+$x = 1$
 
-Prüfung: $-1(-27-7) = 2(27)-20$
+Prüfung: $-1(-1-7) = 14(1)-6$
 
-$34 = 34$
+$8 = 8$
 :::
 :::
 ::::
@@ -935,177 +771,45 @@ $34 = 34$
 Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die Person bereits?]{style="color: #0072B2; font-weight: bold;"}
 :::
 
-::: {.notes}
-Die Gleichung erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfassen, Variable isolieren. Ein CLT-informiertes Tool diagnostiziert zuerst: Welche dieser Teilkompetenzen beherrscht die Person bereits? Je nach Antwort wird unterschiedlich scaffoldet.
-:::
-
-
-## Diagnostik und Scaffolding {.smaller}
-
-Das Tool passt die Unterstützung an das **diagnostizierte Vorwissen** an:
+. . .
 
 <br>
 
-```{ojs}
-//| echo: false
+::: {style="font-size: 0.9em; margin-top: 0.8em;"}
 
-flowchart = {
-  const w = 900;
-  const h = 520;
+| Diagnose | Scaffolding |
+|----------|-------------|
+| Schritt beherrscht | Nur ein Hinweis, selbst lösen lassen |
+| Schritt teilweise beherrscht | Completion Problem (Lücken ausfüllen) |
+| Schritt nicht beherrscht | Worked Example, dann erneut versuchen |
 
-  const svg = d3.create("svg")
-    .attr("viewBox", [0, 0, w, h])
-    .attr("width", w).attr("height", h)
-    .style("background", "transparent")
-    .style("font-family", "system-ui, sans-serif");
-
-  function roundRect(g, x, y, width, height, fill, stroke, text, fontSize) {
-    g.append("rect").attr("x", x).attr("y", y).attr("width", width).attr("height", height).attr("rx", 8).attr("fill", fill).attr("stroke", stroke).attr("stroke-width", 1.5);
-    const lines = text.split("\n");
-    for (let i = 0; i < lines.length; i++) {
-      g.append("text").attr("x", x + width/2).attr("y", y + height/2 + (i - (lines.length-1)/2) * 18).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("fill", "#1A1714").attr("font-size", fontSize || "13px").text(lines[i]);
-    }
-  }
-
-  function diamond(g, cx, cy, rx, ry, fill, stroke, text) {
-    const points = `${cx},${cy-ry} ${cx+rx},${cy} ${cx},${cy+ry} ${cx-rx},${cy}`;
-    g.append("polygon").attr("points", points).attr("fill", fill).attr("stroke", stroke).attr("stroke-width", 1.5);
-    const lines = text.split("\n");
-    for (let i = 0; i < lines.length; i++) {
-      g.append("text").attr("x", cx).attr("y", cy + (i - (lines.length-1)/2) * 16).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("fill", "#1A1714").attr("font-size", "12px").text(lines[i]);
-    }
-  }
-
-  function arrow(g, x1, y1, x2, y2, label, labelSide) {
-    g.append("line").attr("x1", x1).attr("y1", y1).attr("x2", x2).attr("y2", y2).attr("stroke", "#64748b").attr("stroke-width", 1.5).attr("marker-end", "url(#arrowhead-flow)");
-    if (label) {
-      const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
-      const dx = labelSide === "left" ? -20 : (labelSide === "right" ? 20 : 0);
-      g.append("text").attr("x", mx + dx).attr("y", my - 6).attr("text-anchor", "middle").attr("fill", "#64748b").attr("font-size", "11px").attr("font-weight", "600").text(label);
-    }
-  }
-
-  svg.append("defs").append("marker").attr("id", "arrowhead-flow").attr("viewBox", "0 0 10 7").attr("refX", 10).attr("refY", 3.5).attr("markerWidth", 8).attr("markerHeight", 6).attr("orient", "auto").append("polygon").attr("points", "0 0, 10 3.5, 0 7").attr("fill", "#64748b");
-
-  const g = svg.append("g");
-
-  roundRect(g, 350, 10, 200, 40, "#0072B2", "#0072B2", "Aufgabe präsentieren", "14px");
-  g.select("rect").attr("fill", "#0072B2");
-  g.selectAll("text").filter((d,i) => i === 0).attr("fill", "white").attr("font-weight", "bold");
-
-  diamond(g, 450, 110, 160, 50, "rgba(0, 114, 178, 0.1)", "#0072B2", "Kannst du\n-1(-x-7) auflösen?");
-  arrow(g, 450, 50, 450, 60, null);
-
-  roundRect(g, 30, 170, 220, 55, "rgba(213, 94, 0, 0.08)", "#D55E00", "Worked Example:\nDistribuieren Schritt für Schritt");
-  arrow(g, 290, 110, 140, 170, "Nein", "left");
-
-  diamond(g, 700, 200, 160, 50, "rgba(0, 114, 178, 0.1)", "#0072B2", "Kannst du Terme\nzusammenfassen?");
-  arrow(g, 610, 110, 700, 150, "Ja", "right");
-
-  roundRect(g, 30, 260, 220, 40, "rgba(100, 116, 139, 0.08)", "#64748b", "Erneut versuchen");
-  arrow(g, 140, 225, 140, 260, null);
-  g.append("path").attr("d", "M 250,280 Q 320,280 350,200 Q 380,120 450,60").attr("fill", "none").attr("stroke", "#64748b").attr("stroke-width", 1).attr("stroke-dasharray", "4,3");
-
-  roundRect(g, 500, 290, 220, 55, "rgba(213, 94, 0, 0.08)", "#D55E00", "Completion Problem:\nx + 7 = 2x - 20 → ___ = x");
-  arrow(g, 620, 250, 610, 290, "Nein", "left");
-
-  roundRect(g, 750, 290, 180, 55, "rgba(0, 114, 178, 0.08)", "#0072B2", "Nur Hinweis:\n«Fasse die Terme zusammen»");
-  arrow(g, 780, 250, 840, 290, "Ja", "right");
-
-  roundRect(g, 350, 430, 200, 50, "rgba(0, 114, 178, 0.15)", "#0072B2", "Eigenständig lösen\n(Fading complete)");
-  arrow(g, 610, 345, 520, 430, null);
-  arrow(g, 840, 345, 520, 430, null);
-
-  const lg = svg.append("g").attr("transform", "translate(20, 460)");
-  lg.append("text").attr("x", 0).attr("y", 0).attr("font-size", "12px").attr("fill", "#6E6560").text("Diagnostische Fragen → Vorwissen einschätzen");
-  lg.append("text").attr("x", 0).attr("y", 20).attr("font-size", "12px").attr("fill", "#6E6560").text("Angepasstes Scaffolding → Intrinsische Last steuern");
-  lg.append("text").attr("x", 0).attr("y", 40).attr("font-size", "12px").attr("fill", "#6E6560").text("Klare, fokussierte Aufgaben → Extrinsische Last minimieren");
-
-  return svg.node();
-}
-```
-
-::: {.notes}
-Das Flussdiagramm zeigt das Prinzip. Das Tool stellt diagnostische Fragen. Kann die Person die Klammer auflösen? Wenn nein: Worked Example für genau diesen Schritt, dann erneut versuchen. Wenn ja: weiter zur nächsten Teilkompetenz. Je nach Ergebnis gibt es ein Completion Problem oder nur einen Hinweis. Am Ende steht eigenständiges Lösen.
-:::
-
-
-## ChatGPT vs. CLT-Tool {.smaller}
-
-::::{.columns}
-:::{.column width="50%"}
-::: {style="background: rgba(213, 94, 0, 0.06); padding: 1.5em; border-radius: 8px;"}
-### ChatGPT (unstrukturiert)
-
-**"Löse $-1(-x - 7) = 2x - 20$"**
-
-→ Sofort vollständige Lösung
-
-- Keine Diagnose
-- Kein Fading
-- Keine Lücken
-- Flüssiger Output erzeugt Kompetenz-Illusion
-
-**Wer denkt?** Die Maschine.
-
-**Ergebnis:** Produkt ohne Schemabildung.
-:::
-:::
-
-:::{.column width="50%"}
-::: {style="background: rgba(0, 114, 178, 0.06); padding: 1.5em; border-radius: 8px;"}
-### CLT-informiertes Tool
-
-**"Löse $-1(-x - 7) = 2x - 20$"**
-
-→ Erst Diagnose, dann angepasstes Scaffolding
-
-- Diagnostiziert Vorwissen
-- Passt Unterstützung an
-- Lässt Lücken zum Selbstdenken
-- Baut Scaffolding schrittweise ab
-
-**Wer denkt?** Die Lernenden, mit Unterstützung.
-
-**Ergebnis:** Schemabildung durch eigene Verarbeitung.
-:::
-:::
-::::
-
-<br>
-
-::: {style="text-align: center; font-size: 1.1em;"}
-[Dasselbe Material. Dieselbe Technologie. Anderes Design. Anderes Lernergebnis.]{style="color: #0072B2; font-weight: bold;"}
 :::
 
 ::: {.notes}
-Der direkte Vergleich. ChatGPT: Die Maschine denkt, keine Schemata. CLT-Tool: Die Lernenden denken, mit Unterstützung. Dasselbe Material, dieselbe Technologie, aber anderes Design und damit ein anderes Lernergebnis.
+Die Gleichung erfordert drei Teilkompetenzen: Distribuieren, Terme zusammenfassen, Variable isolieren. Ein CLT-informiertes Tool diagnostiziert zuerst: Welche dieser Teilkompetenzen beherrscht die Person bereits? Je nach Ergebnis wird unterschiedlich scaffoldet: Wer den Schritt beherrscht, bekommt nur einen Hinweis. Wer ihn teilweise beherrscht, bekommt ein Completion Problem. Wer ihn nicht beherrscht, bekommt ein Worked Example und versucht es dann nochmal. Das ist Fading, angepasst ans Vorwissen.
 :::
 
 
-## Drei Erkenntnisse {.center}
+## Erkenntnisse {.center}
 
 <br>
 
 ::: {style="font-size: 1.2em; max-width: 85%; margin: 0 auto; line-height: 2;"}
 
-[1.]{style="color: #D55E00; font-weight: bold;"} **Extrinsische Last minimieren** ist der einfachste Hebel.
-Klare Aufgaben, konsistente Notation, integriertes Format.
+[1.]{style="color: #D55E00; font-weight: bold;"} **Extrinsische Last reduzieren:** Alles entfernen, was nicht zum Lernen beiträgt.
 
 <br>
 
-[2.]{style="color: #64748b; font-weight: bold;"} **Vorwissen bestimmt das Aufgabendesign.**
-Ein Übungsblatt für alle ist für die meisten falsch. Diagnostik ist der Schlüssel.
+[2.]{style="color: #64748b; font-weight: bold;"} **Intrinsische Last ans Vorwissen anpassen:** Unterstützung dort geben, wo sie gebraucht wird, und dort zurücknehmen, wo sie überflüssig ist.
 
 <br>
 
-[3.]{style="color: #0072B2; font-weight: bold;"} **KI kann CLT-Prinzipien umsetzen**, aber nur wenn sie dafür gebaut wird.
-ChatGPT ist kein Lerntool. Ein CLT-informiertes Tool kann eines sein.
+[3.]{style="color: #0072B2; font-weight: bold;"} **Lernrelevante Verarbeitung fördern:** KI-Tools so gestalten, dass die Denkarbeit bei den Lernenden bleibt.
 
 :::
 
 ::: {.notes}
-Drei Erkenntnisse zum Mitnehmen. Erstens: Extrinsische Last minimieren kostet nichts. Zweitens: Vorwissen bestimmt, wie die Aufgabe aussehen muss. Drittens: KI kann CLT-Prinzipien umsetzen, aber nur wenn sie dafür designt wird.
+Erkenntnisse zum Mitnehmen. Erstens: Extrinsische Last reduzieren, alles entfernen, was nicht zum Lernen beiträgt. Zweitens: Intrinsische Last ans Vorwissen anpassen, Unterstützung dort geben, wo sie nötig ist (scaffolding), und dort zurücknehmen, wo sie überflüssig ist (fading). Drittens: KI kann diese Prinzipien umsetzen, aber nur mit gezieltem Design.
 :::
 
 
