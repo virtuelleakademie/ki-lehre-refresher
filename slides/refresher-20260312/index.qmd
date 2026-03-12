@@ -51,7 +51,8 @@ Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissen
 :::
 
 ::: {.notes}
-- **Drei Kurse, drei Fragen**: heute gehen wir durch alle drei
+"Wir haben drei Kurse entwickelt, und heute gehen wir durch alle drei Perspektiven."
+
 - Zuerst: Was kann KI?
 - Dann der Kern: Wie funktioniert Lernen?
 - Zum Schluss: Wie gestalten wir Tools?
@@ -102,7 +103,8 @@ Vertiefte Einführung: [BFH Beginner-Kurs](https://virtuelleakademie.github.io/k
 :::
 
 ::: {.notes}
-- **Mechanismus:** Textvorhersage, Wort für Wort
+"Ein Sprachmodell macht im Grunde nur eines: es sagt das nächste Wort vorher."
+
 - **2 Beispiele:** klinischer Bericht, Musterlösung
 - **Kernpunkt:** Output liest sich wie Expertentext, egal ob er stimmt
 - **Überleitung:** Warum ist das fürs Lernen relevant? Dazu brauchen wir die CLT
@@ -209,121 +211,14 @@ Produktive Denkarbeit, die Schemata aufbaut.
 :::
 
 ::: {.notes}
+"Die Cognitive Load Theory erklärt, warum unser Arbeitsgedächtnis der Engpass beim Lernen ist."
+
 - **Oben:** Grundmodell (Input → Arbeitsgedächtnis → Schemata). Keine Technologie umgeht diesen Engpass.
 - **Unten (Klick):** drei Lastarten
   - Extrinsisch = schlechtes Design → **reduzieren**
   - Intrinsisch = Material + Vorwissen → **steuern**
   - Lernrelevant = produktive Denkarbeit → **maximieren**
 - **Ziel:** extrinsische Last senken → mehr Kapazität für Lernen
-:::
-
-
-## Extrinsische Last senken = Kapazität für Lernen {.smaller}
-
-Weniger unnötige Belastung bedeutet mehr Platz für lernrelevante Verarbeitung. 
-
- <br> <br>
-
-::: {style="display: flex; flex-direction: column; align-items: center;" .ojs-legend-lg}
-```{ojs}
-//| echo: false
-
-viewof cl_controls = {
-  const div = html`<div style="display:flex;align-items:center;gap:10px;font-size:16px;">
-    <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
-    <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
-  </div>`;
-
-  const slider = div.querySelector("input[type=range]");
-  const label = div.querySelector("strong");
-
-  function emit() {
-    div.value = +slider.value;
-    div.dispatchEvent(new Event("input", { bubbles: true }));
-  }
-
-  slider.oninput = () => {
-    label.textContent = slider.value + "%";
-    emit();
-  };
-
-  div.value = 60;
-  return div;
-}
-```
-
-```{ojs}
-//| echo: false
-
-cognitive_load_chart = {
-  const w = 700;
-  const h = 480;
-
-  const intrinsic = 30;
-  const ext = Math.min(cl_controls, 100 - intrinsic);
-  const learning = Math.max(0, 100 - ext - intrinsic);
-
-  const colors = {
-    "Extrinsische Belastung": "#D55E00",
-    "Intrinsische Belastung": "#64748b",
-    "Lernrelevante Verarbeitung": "#0072B2",
-  };
-
-  const data = [
-    {type: "Extrinsische Belastung", value: ext, order: 3},
-    {type: "Lernrelevante Verarbeitung", value: learning, order: 2},
-    {type: "Intrinsische Belastung", value: intrinsic, order: 1},
-  ].filter(d => d.value > 0);
-
-  const marks = [
-    Plot.barY(data, Plot.stackY({
-      x: d => "",
-      y: "value",
-      fill: "type",
-      order: "order",
-      tip: true,
-      title: d => `${d.type}: ${d.value}%`
-    })),
-    Plot.ruleY([100], {stroke: "#1A1714", strokeDasharray: "6,4", strokeWidth: 1.5}),
-  ];
-
-  if (learning > 8) {
-    marks.push(
-      Plot.text([{y: intrinsic + learning / 2}],
-        {x: d => "", y: "y", text: [`${learning}%`], fill: "white", fontWeight: "bold", fontSize: 16})
-    );
-  }
-
-  return Plot.plot({
-    width: w,
-    height: h,
-    marginLeft: 60,
-    marginBottom: 30,
-    marginTop: 30,
-    style: {fontSize: "18px", background: "transparent"},
-    x: { label: null, padding: 0.7 },
-    y: {
-      label: "Arbeitsgedächtniskapazität",
-      domain: [0, 105],
-      ticks: [0, 25, 50, 75, 100],
-      tickFormat: d => d + "%"
-    },
-    color: {
-      domain: ["Lernrelevante Verarbeitung", "Intrinsische Belastung", "Extrinsische Belastung"],
-      range: [colors["Lernrelevante Verarbeitung"], colors["Intrinsische Belastung"], colors["Extrinsische Belastung"]],
-      legend: true
-    },
-    marks
-  });
-}
-```
-:::
-
-::: {.notes}
-- **Aktion:** Slider bewegen
-- Hohe extrinsische Last → kaum Platz für Lernen
-- Last senken → sofort Kapazität frei
-- **Blaue Fläche** = das, was zählt
 :::
 
 
@@ -502,10 +397,123 @@ novice_expert_schemas = {
 :::
 
 ::: {.notes}
+"Wie überwindet man diesen Engpass? Durch Vorwissen, das zu Schemata organisiert wird."
+
 - **Aktion:** Grafik anklicken (isolierte Fakten → vernetzte Schemata)
 - Ein Schema = viele Elemente als eine Einheit
 - Weniger Belastung fürs Arbeitsgedächtnis
 - **Aber:** Schemata aufbauen erfordert eigene Denkarbeit
+:::
+
+
+## Extrinsische Last senken = Kapazität für Lernen {.smaller}
+
+Weniger unnötige Belastung bedeutet mehr Platz für lernrelevante Verarbeitung.
+
+ <br> <br>
+
+::: {style="display: flex; flex-direction: column; align-items: center;" .ojs-legend-lg}
+```{ojs}
+//| echo: false
+
+viewof cl_controls = {
+  const div = html`<div style="display:flex;align-items:center;gap:10px;font-size:16px;">
+    <span style="white-space:nowrap;">Extrinsische Belastung: <strong>60%</strong></span>
+    <input type="range" min="5" max="70" step="5" value="60" style="width:250px;accent-color:#D55E00;">
+  </div>`;
+
+  const slider = div.querySelector("input[type=range]");
+  const label = div.querySelector("strong");
+
+  function emit() {
+    div.value = +slider.value;
+    div.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  slider.oninput = () => {
+    label.textContent = slider.value + "%";
+    emit();
+  };
+
+  div.value = 60;
+  return div;
+}
+```
+
+```{ojs}
+//| echo: false
+
+cognitive_load_chart = {
+  const w = 700;
+  const h = 480;
+
+  const intrinsic = 30;
+  const ext = Math.min(cl_controls, 100 - intrinsic);
+  const learning = Math.max(0, 100 - ext - intrinsic);
+
+  const colors = {
+    "Extrinsische Belastung": "#D55E00",
+    "Intrinsische Belastung": "#64748b",
+    "Lernrelevante Verarbeitung": "#0072B2",
+  };
+
+  const data = [
+    {type: "Extrinsische Belastung", value: ext, order: 3},
+    {type: "Lernrelevante Verarbeitung", value: learning, order: 2},
+    {type: "Intrinsische Belastung", value: intrinsic, order: 1},
+  ].filter(d => d.value > 0);
+
+  const marks = [
+    Plot.barY(data, Plot.stackY({
+      x: d => "",
+      y: "value",
+      fill: "type",
+      order: "order",
+      tip: true,
+      title: d => `${d.type}: ${d.value}%`
+    })),
+    Plot.ruleY([100], {stroke: "#1A1714", strokeDasharray: "6,4", strokeWidth: 1.5}),
+  ];
+
+  if (learning > 8) {
+    marks.push(
+      Plot.text([{y: intrinsic + learning / 2}],
+        {x: d => "", y: "y", text: [`${learning}%`], fill: "white", fontWeight: "bold", fontSize: 16})
+    );
+  }
+
+  return Plot.plot({
+    width: w,
+    height: h,
+    marginLeft: 60,
+    marginBottom: 30,
+    marginTop: 30,
+    style: {fontSize: "18px", background: "transparent"},
+    x: { label: null, padding: 0.7 },
+    y: {
+      label: "Arbeitsgedächtniskapazität",
+      domain: [0, 105],
+      ticks: [0, 25, 50, 75, 100],
+      tickFormat: d => d + "%"
+    },
+    color: {
+      domain: ["Lernrelevante Verarbeitung", "Intrinsische Belastung", "Extrinsische Belastung"],
+      range: [colors["Lernrelevante Verarbeitung"], colors["Intrinsische Belastung"], colors["Extrinsische Belastung"]],
+      legend: true
+    },
+    marks
+  });
+}
+```
+:::
+
+::: {.notes}
+"Schauen wir uns an, was passiert, wenn wir die extrinsische Last verändern."
+
+- **Aktion:** Slider bewegen
+- Hohe extrinsische Last → kaum Platz für Lernen
+- Last senken → sofort Kapazität frei
+- **Blaue Fläche** = das, was zählt
 :::
 
 
@@ -544,7 +552,8 @@ Jede Reduktion extrinsischer Last schafft **Kapazität für lernrelevante Verarb
 :::
 
 ::: {.notes}
-- Schemata helfen, aber auch das **Aufgabendesign** zählt
+"Neben Schemata können wir auch durch besseres Aufgabendesign extrinsische Last reduzieren."
+
 - **Links:** typische Quellen (Split-Attention = Paradebeispiel)
 - **Rechts:** Gegenstrategien
 - **Kernbotschaft:** Jede Reduktion schafft Kapazität für lernrelevante Verarbeitung
@@ -593,7 +602,8 @@ Dieselbe Aufgabe, aber verschiedene kognitive Kosten.
 :::
 
 ::: {.notes}
-- **Dieselbe Gleichung**, völlig andere kognitive Kosten
+"Dieselbe Gleichung kann für verschiedene Lernende völlig unterschiedliche kognitive Kosten haben."
+
 - **Links (Anfänger):** jedes Element einzeln im Arbeitsgedächtnis
 - **Rechts (Fortgeschrittene):** eingeübte Schritte, kaum Belastung
 - Konsequenz: Ein Übungsblatt für alle ist für die meisten falsch
@@ -643,7 +653,8 @@ Schritt 3: Vereinfachen → $x = 1$
 ::::
 
 ::: {.notes}
-- Zu hohe Last → **Scaffolding** nötig
+"Wenn die intrinsische Last zu hoch ist, brauchen Lernende gezielte Unterstützung: Scaffolding."
+
 - **Links:** Fading-Sequenz (Worked Example → eigenständig)
 - **Rechts:** konkretes Beispiel (Stufe 2 lässt eine Lücke)
 - Unterstützung wird schrittweise abgebaut
@@ -690,6 +701,8 @@ Ein Chatbot kann CLT-Prinzipien umsetzen:
 ::::
 
 ::: {.notes}
+"Jetzt stellt sich die Frage: Was passiert, wenn wir ein KI-Tool einfach so auf diese Aufgabe loslassen?"
+
 - **Links:** Chatbot ohne Anleitung → Lösung ja, Scaffolding nein
 - **Rechts:** mit Anleitung → Diagnose, angepasstes Scaffolding, Fading
 - **Kernpunkt:** korrekte Lösung ≠ gutes Worked Example
@@ -767,7 +780,8 @@ Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die P
 :::
 
 ::: {.notes}
-- **Drei Teilkompetenzen**, drei Karten
+"Schauen wir uns ein konkretes Beispiel an: diese Gleichung erfordert drei Teilkompetenzen."
+
 - **Aktion:** Klick zeigt Diagnose-Tabelle
   - Beherrscht → Hinweis
   - Teilweise → Lücken
@@ -795,10 +809,12 @@ Ein CLT-informiertes Tool fragt: [Welche dieser Teilkompetenzen beherrscht die P
 :::
 
 ::: {.notes}
-- **Drei Erkenntnisse**, je eine pro Lastart:
-  1. Extrinsisch **reduzieren**
-  2. Intrinsisch ans Vorwissen **anpassen**
-  3. Lernrelevante Verarbeitung **fördern**, nicht auslagern
+"Fassen wir zusammen: drei Erkenntnisse, eine für jede Lastart."
+
+1. Extrinsisch **reduzieren**
+2. Intrinsisch ans Vorwissen **anpassen**
+3. Lernrelevante Verarbeitung **fördern**, nicht auslagern
+
 - **Überleitung** zur Diskussion
 :::
 
@@ -822,11 +838,12 @@ Mögliche Fragen als Einstieg:
 :::
 
 ::: {.notes}
-- **Offene Diskussion** - je nach Interesse eine Frage auswählen
-  1. Eigene Erfahrung mit KI-Nutzung
-  2. Aufgabendesign (auch ohne KI)
-  3. Diagnostik (die CLT-Kernfrage)
-  4. Ausblick auf fachspezifische Tools
+"Jetzt interessiert mich eure Perspektive. Ich habe ein paar Fragen vorbereitet, aber wir können auch ganz offen diskutieren."
+
+1. Eigene Erfahrung mit KI-Nutzung
+2. Aufgabendesign (auch ohne KI)
+3. Diagnostik (die CLT-Kernfrage)
+4. Ausblick auf fachspezifische Tools
 :::
 
 
