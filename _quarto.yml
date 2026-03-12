@@ -37,9 +37,9 @@ website:
         href: presentation/index.qmd
         text: Präsentation
 
-      - icon: chat-dots
-        text: "Q & A"
-        href: qa/index.qmd
+      # - icon: chat-dots
+      #   text: "Q & A"
+      #   href: qa/index.qmd
 
       - icon: archive
         text: Archiv
@@ -48,7 +48,7 @@ website:
             href: slides/outsourcing-rational/index.qmd
           - text: "Verstehen kann man nicht auslagern (Entwurf)"
             href: slides/understanding-cant-be-offloaded/index.qmd
-          - text: "Refresher 2025"
+          - text: "Refresher 17.12.2025"
             href: slides/archive/refresher-20251217/index.qmd
 
     tools:
@@ -68,17 +68,7 @@ website:
       background: light
       contents:
         - qa/index.qmd
-        - section: "Themen"
-          contents:
-            - qa/paradox/index.qmd
-            - qa/kognitive-grundlagen/index.qmd
-            - qa/erwuenschte-schwierigkeiten/index.qmd
-            - qa/generierungseffekt/index.qmd
-            - qa/historische-analogien/index.qmd
-            - qa/experten-vs-lernende/index.qmd
-            - qa/expertise-umkehr-effekt/index.qmd
-            - qa/kritisches-denken/index.qmd
-            - qa/praktische-implikationen/index.qmd
+        - qa/kognitive-grundlagen/index.qmd
 
 page-footer:
     right:
