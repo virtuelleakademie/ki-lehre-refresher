@@ -7,11 +7,11 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.27">
+  <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Andrew Ellis">
   <meta name="dcterms.date" content="2026-03-12">
@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -103,7 +106,6 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
-      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -120,7 +122,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-758389f4d7c93bf2567be312ae8f5dc6.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-a6b3a12dbc1cafcb3beb4cd0954e17f0.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -226,42 +228,6 @@
   <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
-  div.callout-reflect.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A63D2F;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(166, 61, 47, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #6E6560;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(110, 101, 96, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
-    background-image: none;
-  }
   div.callout-pro-tip.callout {
     border-left-color: #1E3A5F;
   }
@@ -272,18 +238,6 @@
   div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\e2ca';
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
     background-image: none;
   }
   div.callout-source-check.callout {
@@ -298,30 +252,6 @@
     content: '\f002';
     background-image: none;
   }
-  div.callout-demonstration.callout {
-    border-left-color: #6E6560;
-  }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(110, 101, 96, 0.13);
-  }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
-    background-image: none;
-  }
-  div.callout-experiment.callout {
-    border-left-color: #A63D2F;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(166, 61, 47, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
-    background-image: none;
-  }
   div.callout-prompt.callout {
     border-left-color: #6E6560;
   }
@@ -332,6 +262,30 @@
   div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f328';
+    background-image: none;
+  }
+  div.callout-individual.callout {
+    border-left-color: #A63D2F;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(166, 61, 47, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    background-image: none;
+  }
+  div.callout-reflect.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0eb';
     background-image: none;
   }
   div.callout-group.callout {
@@ -346,6 +300,18 @@
     content: '\f0c0';
     background-image: none;
   }
+  div.callout-demonstration.callout {
+    border-left-color: #6E6560;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(110, 101, 96, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
+    background-image: none;
+  }
   div.callout-warning.callout {
     border-left-color: #A63D2F;
   }
@@ -356,6 +322,42 @@
   div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f06a';
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
+  div.callout-scenario.callout {
+    border-left-color: #6E6560;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(110, 101, 96, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
+    background-image: none;
+  }
+  div.callout-experiment.callout {
+    border-left-color: #A63D2F;
+  }
+  div.callout-experiment.callout-style-default > .callout-header {
+    background-color: rgba(166, 61, 47, 0.13);
+  }
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c3';
     background-image: none;
   }
   </style>
@@ -1296,7 +1298,7 @@
 <h2>Referenzen</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-swellerIntegratedHumanCognitive2025a" class="csl-entry" role="listitem">
 Sweller, John. 2025. <span>„An <span>Integrated Human Cognitive Architecture</span>“</span>. <em>Educational Psychology Review</em> 37 (4): 108. <a href="https://doi.org/10.1007/s10648-025-10089-1">https://doi.org/10.1007/s10648-025-10089-1</a>.
 </div>

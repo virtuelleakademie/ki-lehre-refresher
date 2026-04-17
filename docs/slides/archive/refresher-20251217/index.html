@@ -7,12 +7,12 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.27">
+  <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Andrew Ellis">
   <title>KI in der Lehre: Refresher – KI in der Hochschulbildung</title>
@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -103,7 +106,6 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
-      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -120,7 +122,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-758389f4d7c93bf2567be312ae8f5dc6.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-a6b3a12dbc1cafcb3beb4cd0954e17f0.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -226,28 +228,40 @@
   <script type="module" src="../../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
-  div.callout-reflect.callout {
+  div.callout-key-point.callout {
     border-left-color: #1E3A5F;
   }
-  div.callout-reflect.callout-style-default > .callout-header {
+  div.callout-key-point.callout-style-default > .callout-header {
     background-color: rgba(30, 58, 95, 0.13);
   }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
+    content: '\f005';
     background-image: none;
   }
-  div.callout-experiment.callout {
-    border-left-color: #A63D2F;
+  div.callout-scenario.callout {
+    border-left-color: #6E6560;
   }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(166, 61, 47, 0.13);
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(110, 101, 96, 0.13);
   }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
+    content: '\f075';
+    background-image: none;
+  }
+  div.callout-pro-tip.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\e2ca';
     background-image: none;
   }
   div.callout-demonstration.callout {
@@ -260,18 +274,6 @@
   div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f51b';
-    background-image: none;
-  }
-  div.callout-source-check.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f002';
     background-image: none;
   }
   div.callout-individual.callout {
@@ -298,6 +300,42 @@
     content: '\f06a';
     background-image: none;
   }
+  div.callout-source-check.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
+  div.callout-reflect.callout {
+    border-left-color: #1E3A5F;
+  }
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(30, 58, 95, 0.13);
+  }
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0eb';
+    background-image: none;
+  }
+  div.callout-experiment.callout {
+    border-left-color: #A63D2F;
+  }
+  div.callout-experiment.callout-style-default > .callout-header {
+    background-color: rgba(166, 61, 47, 0.13);
+  }
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c3';
+    background-image: none;
+  }
   div.callout-group.callout {
     border-left-color: #A63D2F;
   }
@@ -310,30 +348,6 @@
     content: '\f0c0';
     background-image: none;
   }
-  div.callout-key-point.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #6E6560;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(110, 101, 96, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
-    background-image: none;
-  }
   div.callout-prompt.callout {
     border-left-color: #6E6560;
   }
@@ -344,18 +358,6 @@
   div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f328';
-    background-image: none;
-  }
-  div.callout-pro-tip.callout {
-    border-left-color: #1E3A5F;
-  }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(30, 58, 95, 0.13);
-  }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\e2ca';
     background-image: none;
   }
   </style>
@@ -671,7 +673,7 @@
 <p><br></p>
 <div style="text-align: center;">
 <p><strong>Das Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.</strong></p>
-<p><span style="color: #999; font-size: 0.8em;"><span class="citation" data-cites="dahmaniHabitualUseGPS2020 sparrowGoogleEffectsMemory2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Dahmani und Bohbot 2020</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Sparrow, Liu, und Wegner 2011</a>)</span></span></p>
+<p><span style="color: #999; font-size: 0.8em;"><span class="citation" data-cites="dahmaniHabitualUseGPS2020 sparrowGoogleEffectsMemory2011">(<a href="#/referenzen" role="doc-biblioref" onclick="">Dahmani und Bohbot 2020</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Sparrow u.&nbsp;a. 2011</a>)</span></span></p>
 </div>
 <aside class="notes">
 <ul>
@@ -1343,15 +1345,15 @@
 </section>
 <section id="referenzen" class="slide level2 smaller scrollable">
 <h2>Referenzen</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-bastaniGenerativeAIGuardrails2025" class="csl-entry" role="listitem">
 Bastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, und Rei Mariman. 2025. <span>„Generative <span>AI</span> Without Guardrails Can Harm Learning: <span>Evidence</span> from High School Mathematics“</span>. <em>Proceedings of the National Academy of Sciences of the United States of America</em> 122 (26): e2422633122. <a href="https://doi.org/10.1073/pnas.2422633122">https://doi.org/10.1073/pnas.2422633122</a>.
 </div>
 <div id="ref-bjorkMakingThingsHard2011" class="csl-entry" role="listitem">
-Bjork, Elizabeth Ligon, und Robert A. Bjork. 2011. <span>„Making Things Hard on Yourself, but in a Good Way: <span>Creating</span> Desirable Difficulties to Enhance Learning“</span>. In <em>Psychology and the Real World: <span>Essays</span> Illustrating Fundamental Contributions to Society</em>, 56–64. New York, NY, US: Worth Publishers.
+Bjork, Elizabeth Ligon, und Robert A. Bjork. 2011. <span>„Making Things Hard on Yourself, but in a Good Way: <span>Creating</span> Desirable Difficulties to Enhance Learning“</span>. In <em>Psychology and the Real World: <span>Essays</span> Illustrating Fundamental Contributions to Society</em>. Worth Publishers.
 </div>
 <div id="ref-chasePerceptionChess1973" class="csl-entry" role="listitem">
-Chase, William G., und Herbert A. Simon. 1973. <span>„Perception in Chess“</span>. <em>Cognitive Psychology</em> 4 (1): 55–81. <a href="https://doi.org/10.1016/0010-0285(73)90004-2">https://doi.org/10.1016/0010-0285(73)90004-2</a>.
+Chase, William G., und Herbert A. Simon. 1973. <span>„Perception in Chess“</span>. <em>Cognitive Psychology</em> (Netherlands) 4 (1): 55–81. <a href="https://doi.org/10.1016/0010-0285(73)90004-2">https://doi.org/10.1016/0010-0285(73)90004-2</a>.
 </div>
 <div id="ref-clarkExtendingMindsGenerative2025" class="csl-entry" role="listitem">
 Clark, Andy. 2025. <span>„Extending <span>Minds</span> with <span>Generative AI</span>“</span>. <em>Nature Communications</em> 16 (1): 4627. <a href="https://doi.org/10.1038/s41467-025-59906-9">https://doi.org/10.1038/s41467-025-59906-9</a>.
@@ -1363,10 +1365,10 @@ Dahmani, Louisa, und Véronique D. Bohbot. 2020. <span>„Habitual Use of <span>
 Groot, Adriaan D. De, und Adrianus Dingeman de Groot. 1978. <em>Thought and <span>Choice</span> in <span>Chess</span></em>. Walter de Gruyter. <a href="https://books.google.com?id=EI4gr42NwDQC">https://books.google.com?id=EI4gr42NwDQC</a>.
 </div>
 <div id="ref-kalyugaExpertiseReversalEffect2009" class="csl-entry" role="listitem">
-Kalyuga, Slava. 2009. <span>„The <span>Expertise Reversal Effect</span>“</span>. In <em>Managing <span>Cognitive Load</span> in <span>Adaptive Multimedia Learning</span></em>, 58–80. IGI Global Scientific Publishing. <a href="https://doi.org/10.4018/978-1-60566-048-6.ch003">https://doi.org/10.4018/978-1-60566-048-6.ch003</a>.
+Kalyuga, Slava. 2009. <span>„The <span>Expertise Reversal Effect</span>“</span>. In <em>Managing <span>Cognitive Load</span> in <span>Adaptive Multimedia Learning</span></em>. IGI Global Scientific Publishing. <a href="https://doi.org/10.4018/978-1-60566-048-6.ch003">https://doi.org/10.4018/978-1-60566-048-6.ch003</a>.
 </div>
 <div id="ref-slameckaGenerationEffectDelineation1978" class="csl-entry" role="listitem">
-Slamecka, Norman J., und Peter Graf. 1978. <span>„The Generation Effect: <span>Delineation</span> of a Phenomenon“</span>. <em>Journal of Experimental Psychology: Human Learning and Memory</em> 4 (6): 592–604. <a href="https://doi.org/10.1037/0278-7393.4.6.592">https://doi.org/10.1037/0278-7393.4.6.592</a>.
+Slamecka, Norman J., und Peter Graf. 1978. <span>„The Generation Effect: <span>Delineation</span> of a Phenomenon“</span>. <em>Journal of Experimental Psychology: Human Learning and Memory</em> (US) 4 (6): 592–604. <a href="https://doi.org/10.1037/0278-7393.4.6.592">https://doi.org/10.1037/0278-7393.4.6.592</a>.
 </div>
 <div id="ref-sparrowGoogleEffectsMemory2011" class="csl-entry" role="listitem">
 Sparrow, Betsy, Jenny Liu, und Daniel M. Wegner. 2011. <span>„Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips“</span>. <em>Science (New York, N.Y.)</em> 333 (6043): 776–78. <a href="https://doi.org/10.1126/science.1207745">https://doi.org/10.1126/science.1207745</a>.

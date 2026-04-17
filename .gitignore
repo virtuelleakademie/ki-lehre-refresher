@@ -46,10 +46,6 @@ pages/config.yaml
 
 # Copyrighted PDFs: do not track or publish
 assets/papers/*.pdf
-assets/pdfs/Burns et al*.pdf
-assets/pdfs/Shaw and Nave*.pdf
-docs/assets/papers/Willingham*.pdf
-docs/assets/pdfs/Burns et al*.pdf
-docs/assets/pdfs/Shaw and Nave*.pdf
 
 /.luarc.json
+/.remember/
