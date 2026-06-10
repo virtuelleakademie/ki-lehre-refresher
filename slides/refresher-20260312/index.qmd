@@ -65,7 +65,7 @@ Diese Präsentation führt durch alle drei Perspektiven: Technologie, Lernwissen
 
 <br>
 
-Der Mechanismus ist einfach: ein Sprachmodell sagt das Text vorher, Wort für Wort.
+Der Mechanismus ist einfach: Ein Sprachmodell sagt Text vorher, Wort für Wort.
 
 <br>
 
@@ -95,7 +95,7 @@ Der Mechanismus ist einfach: ein Sprachmodell sagt das Text vorher, Wort für Wo
 <br>
 
 ::: {style="text-align: center; font-size: 1.05em;"}
-Um solche Texte zu erzeugen, muss das Modell enormes Wissen erworben haben. 
+Um solche Texte zu erzeugen, muss das Modell enormes "Wissen" erworben haben. 
 
 [Der Output ist aber oft schwer zu beurteilen und erfordert Fachwissen.]{style="color: #D55E00;"}
 :::
