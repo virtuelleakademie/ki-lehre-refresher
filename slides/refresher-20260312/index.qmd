@@ -217,7 +217,7 @@ Produktive Denkarbeit, die Schemata aufbaut.
 "Die Cognitive Load Theory erklärt, warum unser Arbeitsgedächtnis der Engpass beim Lernen ist."
 
 - Oben: Grundmodell (Input → Arbeitsgedächtnis → Schemata). Keine Technologie umgeht diesen Engpass.
-- **Aktion:** Klick zeigt drei Lastarten:
+- **Aktion:** Klick zeigt drei Lastarten im Arbeitsgedächtnis:
   - Extrinsisch = schlechtes Design → reduzieren
   - Intrinsisch = Material + Vorwissen → steuern
   - Lernrelevant = produktive Denkarbeit → maximieren
